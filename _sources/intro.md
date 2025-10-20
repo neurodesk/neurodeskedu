@@ -7,9 +7,7 @@ If you want to run these notebooks in another neurodesk environment, make sure t
 git clone --depth 1 https://github.com/neurodesk/example-notebooks.git
 ```
 
-{{< alert color="info" >}}
-If you aren’t finding what you’re looking for, please <a href="https://neurodesk.org/contact/">contact us</a>.
-{{< /alert >}}
+**💡 Note:** If you aren't finding what you're looking for, , please <a href="https://neurodesk.org/contact/">contact us</a>.
 
 ## Neurodesk
 
