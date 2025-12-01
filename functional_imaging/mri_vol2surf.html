@@ -1,0 +1,1765 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>FreeSurfer: mri_vol2surf &#8212; Neurodesk</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-4Z9774J59Y"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-4Z9774J59Y');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-4Z9774J59Y');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'functional_imaging/mri_vol2surf';</script>
+    <link rel="canonical" href="https://neurodesk.github.io/example-notebooks/functional_imaging/mri_vol2surf.html" />
+    <link rel="icon" href="../_static/neurodesk_logo.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="tedana: TE Dependent ANAlysis" href="process_five_echo_dataset.html" />
+    <link rel="prev" title="Introduction to Preprocessing" href="intro_to_preprocessing.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/neurodesk_logo.svg" class="logo__image only-light" alt="Neurodesk - Home"/>
+    <script>document.write(`<img src="../_static/neurodesk_logo.svg" class="logo__image only-dark" alt="Neurodesk - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Neurodesk environment
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Workflows</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../workflows/AA_Neurodesk_demo_tour.html">Neurodesk Tools Demo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/MRIQC.html">MRIQC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/PyBIDS.html">PyBIDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/RISE_slideshow.html">RISE Slideshow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/bids_conversion.html">BIDS conversion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/nipype_full.html">Nipype on Neurodesk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/nipype_short.html">Basic Nipype</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../workflows/papermill-slurm-submission-example.html">Papermill Slurm Job Submission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/pydra_preproc_ants.html">Pydra</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Structural Imaging</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../structural_imaging/FSL_course_bet.html">FSL course - BET</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structural_imaging/brain_extraction_different_tools.html">Brain Extraction Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structural_imaging/freesurfer.html">FreeSurfer</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../structural_imaging/qsmxt.html">QSMxT</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../structural_imaging/sct_toolbox.html">SCT Toolbox</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Spectroscopy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../spectroscopy/lcmodel.html">MR Spectroscopy with LCModel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../spectroscopy/osprey.html">MR Spectroscopy with Osprey</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Diffusion Imaging</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../diffusion_imaging/Diffusion_TBSS_Demo.html">TBSS Tutorial</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../diffusion_imaging/MRtrix_1.html">MRtrix: Part 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion_imaging/MRtrix_2.html">MRtrix: Part 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion_imaging/MRtrix_3.html">MRtrix: Part 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion_imaging/mrtrix3tissue.html">MRtrix3Tissue</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Functional Imaging</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="AFNI_preprocessing_only.html">AFNI Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AFNI_preprocessing_plus_glm.html">AFNI Preprocessing and GLM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AFNI_preprocessing_plus_glm_group.html">AFNI Preprocessing &amp; Group Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FSL_preproc_glm.html">FSL Preprocessing and GLM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FSLnets_course_practical.html">Resting state with FSLnets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NiWrap.html">NiWrap and Connectome Workbench</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aslprep.html">ASLprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deepretinotopy.html">DeepRetinotopy</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="first_and_second_level_spm.html">Nipype-SPM fMRI Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fmriprep.html">fMRIprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fsl_all_levels_flanker_nipype.html">Nipype-FSL fMRI Analysis</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="intro_to_preprocessing.html">Introduction to Preprocessing</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">FreeSurfer: mri_vol2surf</a></li>
+<li class="toctree-l1"><a class="reference internal" href="process_five_echo_dataset.html">tedana: TE Dependent ANAlysis</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Electrophysiology</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../electrophysiology/eeg_with_mne.html">EEG Analysis with MNE</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://play-america.neurodesk.org/hub/user-redirect/git-pull?repo=https%3A//github.com/NeuroDesk/example-notebooks&urlpath=lab/tree/example-notebooks/books/functional_imaging/mri_vol2surf.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Run in America"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Run in America logo" src="../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">Run in America</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://play-europe.neurodesk.org/hub/user-redirect/git-pull?repo=https%3A//github.com/NeuroDesk/example-notebooks&urlpath=lab/tree/example-notebooks/books/functional_imaging/mri_vol2surf.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Run in Europe"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Run in Europe logo" src="../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">Run in Europe</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/NeuroDesk/example-notebooks" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/NeuroDesk/example-notebooks/edit/main/books/functional_imaging/mri_vol2surf.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/NeuroDesk/example-notebooks/issues/new?title=Issue%20on%20page%20%2Ffunctional_imaging/mri_vol2surf.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/functional_imaging/mri_vol2surf.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>FreeSurfer: mri_vol2surf</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling-fmri-signal-across-cortical-depths">Sampling fMRI signal across cortical depths</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#citation">Citation:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goal-of-this-example-notebook">Goal of this example notebook</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-python-packages">Install Python packages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-relevant-libraries">Import relevant libraries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-freesurfer">Load FreeSurfer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-data-from-the-openneuro">Download data from the OpenNeuro</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-fmri-data-across-layers">Sample fMRI data across layers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualize-the-data">Visualize the data</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="freesurfer-mri-vol2surf">
+<h1>FreeSurfer: mri_vol2surf<a class="headerlink" href="#freesurfer-mri-vol2surf" title="Link to this heading">#</a></h1>
+<section id="sampling-fmri-signal-across-cortical-depths">
+<h2>Sampling fMRI signal across cortical depths<a class="headerlink" href="#sampling-fmri-signal-across-cortical-depths" title="Link to this heading">#</a></h2>
+<p><strong>mri_vol2surf</strong> is a FreeSurfer based command that enables one to assign fMRI signal value to each surface vertex.</p>
+<p><strong>Authors:</strong> Fernanda L. Ribeiro</p>
+<section id="citation">
+<h3>Citation:<a class="headerlink" href="#citation" title="Link to this heading">#</a></h3>
+<p><strong>Open source Data from OpenNeuro:</strong></p>
+<ul class="simple">
+<li><p>Kelly Chang and Ione Fine and Geoffrey M. Boynton (2024). <a class="reference external" href="https://openneuro.org/datasets/ds004698/versions/2.0.0">CHN Retinotopic Mapping Dataset OpenNeuro</a> doi: doi:10.18112/openneuro.ds004698.v2.0.0</p></li>
+</ul>
+<p><strong>Original manuscript:</strong></p>
+<ul class="simple">
+<li><p>Chang, K., Fine, I., &amp; Boynton, G. M. (2025). Improving the reliability and accuracy of population receptive field measures using a logarithmically warped stimulus. Journal of Vision, 25(1), 5. <a class="reference external" href="https://doi.org/10.1167/jov.25.1.5">https://doi.org/10.1167/jov.25.1.5</a></p></li>
+</ul>
+</section>
+</section>
+<section id="goal-of-this-example-notebook">
+<h2>Goal of this example notebook<a class="headerlink" href="#goal-of-this-example-notebook" title="Link to this heading">#</a></h2>
+<p>In this example notebook we demonstrate how one can assign fMRI signal values to each cortical surface vertex across cortical depths. This can be relevant, for example, to assess how topographic maps may change across cortical depths and determine the potential impact of vasculature in the <a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/S1053811910007111?via%3Dihub">topological arrangement of such maps</a>.</p>
+<p>Although we do not attempt to reconstruct retinotopic maps in this tutorial, here we show how to perform such procedure using retinotopic mapping data.</p>
+</section>
+<section id="install-python-packages">
+<h2>Install Python packages<a class="headerlink" href="#install-python-packages" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%capture</span>
+<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">numpy</span> <span class="n">nilearn</span> <span class="n">nibabel</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="import-relevant-libraries">
+<h2>Import relevant libraries<a class="headerlink" href="#import-relevant-libraries" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">module</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">nibabel</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">nib</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="load-freesurfer">
+<h2>Load FreeSurfer<a class="headerlink" href="#load-freesurfer" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">await</span> <span class="n">module</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;freesurfer/7.3.2&#39;</span><span class="p">)</span>
+<span class="k">await</span> <span class="n">module</span><span class="o">.</span><span class="n">list</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;freesurfer/7.3.2&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="download-data-from-the-openneuro">
+<h2>Download data from the OpenNeuro<a class="headerlink" href="#download-data-from-the-openneuro" title="Link to this heading">#</a></h2>
+<div class="cell tag_scroll-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>datalad<span class="w"> </span>install<span class="w"> </span>https://github.com/OpenNeuroDatasets/ds004698.git<span class="w"> </span>#<span class="w"> </span>install<span class="w"> </span>NYU<span class="w"> </span>retinotopy<span class="w"> </span>dataset
+<span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s1">&#39;ds004698&#39;</span><span class="p">)</span> <span class="c1"># change directories</span>
+<span class="n">subject</span><span class="o">=</span><span class="s1">&#39;sub-01&#39;</span>
+<span class="n">cmd1</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;&quot;&quot;datalad get derivatives/freesurfer/</span><span class="si">{</span><span class="n">subject</span><span class="si">}</span><span class="s2">/*&quot;&quot;&quot;</span> <span class="c1"># download all freesurfer files from subject</span>
+<span class="n">cmd2</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;&quot;&quot;datalad get derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_*&quot;&quot;&quot;</span> <span class="c1">#download all preprocessed functional volumes from subject</span>
+<span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="n">cmd1</span><span class="p">)</span>
+<span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="n">cmd2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cloning:   0%|                             | 0.00/2.00 [00:00&lt;?, ? candidates/s]
+Enumerating: 0.00 Objects [00:00, ? Objects/s]
+                                              
+Counting:   0%|                              | 0.00/99.6k [00:00&lt;?, ? Objects/s]
+                                                                                
+Compressing:   0%|                           | 0.00/68.8k [00:00&lt;?, ? Objects/s]
+Compressing:  60%|███████████▍       | 41.3k/68.8k [00:00&lt;00:00, 390k Objects/s]
+                                                                                
+Receiving:   0%|                             | 0.00/99.6k [00:00&lt;?, ? Objects/s]
+Receiving:  14%|██▉                  | 13.9k/99.6k [00:00&lt;00:00, 133k Objects/s]
+Receiving:  37%|███████▊             | 36.9k/99.6k [00:00&lt;00:00, 188k Objects/s]
+Receiving:  59%|████████████▍        | 58.8k/99.6k [00:00&lt;00:00, 199k Objects/s]
+Receiving:  80%|████████████████▊    | 79.7k/99.6k [00:00&lt;00:00, 178k Objects/s]
+Receiving:  99%|████████████████████▊| 98.6k/99.6k [00:00&lt;00:00, 168k Objects/s]
+                                                                                
+Resolving:   0%|                              | 0.00/28.4k [00:00&lt;?, ? Deltas/s]
+Resolving:  82%|██████████████████    | 23.3k/28.4k [00:00&lt;00:00, 232k Deltas/s]
+[INFO   ] scanning for unlocked files (this may take some time)                 
+[INFO   ] Remote origin not usable by git-annex; setting annex-ignore 
+[INFO   ] Cannot run git-annex-remote-openneuro -- It is not installed in PATH (/usr/lib/git-core:/cvmfs/neurodesk.ardc.edu.au/containers/freesurfer_7.3.2_20220812:/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin) 
+[INFO   ] Cannot run git-annex-remote-openneuro -- It is not installed in PATH (/usr/lib/git-core:/cvmfs/neurodesk.ardc.edu.au/containers/freesurfer_7.3.2_20220812:/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin) 
+[INFO   ] unable to use external special remote git-annex-remote-openneuro 
+<span class=" -Color -Color-Bold">install</span>(<span class=" -Color -Color-Bold -Color-Bold-Green">ok</span>): /home/jovyan/Git_repositories/example-notebooks/books/functional_imaging/ds004698 (<span class=" -Color -Color-Bold -Color-Bold-Magenta">dataset</span>)
+get(ok): derivatives/freesurfer/sub-01/mri/T1.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/T2.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/T2.norm.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/T2.prenorm.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/aparc+aseg.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/aparc.DKTatlas+aseg.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/aparc.a2009s+aseg.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/aseg.auto.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/aseg.auto_noCCseg.label_intensities.txt (file)
+get(ok): derivatives/freesurfer/sub-01/mri/aseg.auto_noCCseg.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/aseg.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/aseg.presurf.hypos.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/aseg.presurf.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/brain.finalsurfs.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/brain.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/brainmask.auto.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/brainmask.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/ctrl_pts.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/filled.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/lh.ribbon.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/mri_nu_correct.mni.log (file)
+get(ok): derivatives/freesurfer/sub-01/mri/mri_nu_correct.mni.log.bak (file)
+get(ok): derivatives/freesurfer/sub-01/mri/norm.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/nu.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/orig.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/orig/001.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/orig/T2raw.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/orig_nu.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/rawavg.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/rh.ribbon.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/ribbon.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/segment.dat (file)
+get(ok): derivatives/freesurfer/sub-01/mri/talairach.label_intensities.txt (file)
+get(ok): derivatives/freesurfer/sub-01/mri/talairach.log (file)
+get(ok): derivatives/freesurfer/sub-01/mri/transforms/T2raw.auto.dat (file)
+get(ok): derivatives/freesurfer/sub-01/mri/transforms/T2raw.auto.dat.log (file)
+get(ok): derivatives/freesurfer/sub-01/mri/transforms/T2raw.auto.dat.mincost (file)
+get(ok): derivatives/freesurfer/sub-01/mri/transforms/T2raw.auto.dat.param (file)
+get(ok): derivatives/freesurfer/sub-01/mri/transforms/T2raw.auto.dat.sum (file)
+get(ok): derivatives/freesurfer/sub-01/mri/transforms/T2raw.auto.lta (file)
+get(ok): derivatives/freesurfer/sub-01/mri/transforms/T2raw.lta (file)
+get(ok): derivatives/freesurfer/sub-01/mri/transforms/cc_up.lta (file)
+get(ok): derivatives/freesurfer/sub-01/mri/transforms/talairach.auto.xfm (file)
+get(ok): derivatives/freesurfer/sub-01/mri/transforms/talairach.auto.xfm.lta (file)
+get(ok): derivatives/freesurfer/sub-01/mri/transforms/talairach.lta (file)
+get(ok): derivatives/freesurfer/sub-01/mri/transforms/talairach.m3z (file)
+get(ok): derivatives/freesurfer/sub-01/mri/transforms/talairach.xfm (file)
+get(ok): derivatives/freesurfer/sub-01/mri/transforms/talairach_avi.log (file)
+get(ok): derivatives/freesurfer/sub-01/mri/transforms/talairach_avi_QA.log (file)
+get(ok): derivatives/freesurfer/sub-01/mri/transforms/talsrcimg_to_711-2C_as_mni_average_305_t4_vox2vox.txt (file)
+get(ok): derivatives/freesurfer/sub-01/mri/wm.asegedit.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/wm.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/wm.seg.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/mri/wmparc.mgz (file)
+get(ok): derivatives/freesurfer/sub-01/touch/aparc.DKTatlas2aseg.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/aparc.a2009s2aseg.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/apas2aseg.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/asegmerge.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/ca_label.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/ca_normalize.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/ca_register.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/conform.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/cortical_ribbon.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/em_register.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/fill.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/inorm1.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/inorm2.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.aparc.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.aparc2.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.aparcstats.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.aparcstats2.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.aparcstats3.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.avgcurv.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.curvstats.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.final_surfaces.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.inflate.H.K.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.inflate1.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.inflate2.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.jacobian_white.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.pctsurfcon.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.pial_refine.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.pial_surface.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.qsphere.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.smoothwm1.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.smoothwm2.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.sphmorph.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.sphreg.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.surfvolume.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.tessellate.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.topofix.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.white.H.K.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/lh.white_surface.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/nu.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/relabelhypos.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.aparc.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.aparc2.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.aparcstats.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.aparcstats2.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.aparcstats3.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.avgcurv.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.curvstats.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.final_surfaces.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.inflate.H.K.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.inflate1.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.inflate2.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.jacobian_white.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.pctsurfcon.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.pial_refine.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.pial_surface.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.qsphere.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.smoothwm1.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.smoothwm2.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.sphmorph.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.sphreg.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.surfvolume.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.tessellate.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.topofix.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.white.H.K.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rh.white_surface.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rusage.mri_ca_register.dat (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rusage.mri_em_register.dat (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rusage.mris_fix_topology.lh.dat (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rusage.mris_fix_topology.rh.dat (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rusage.mris_inflate.lh.dat (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rusage.mris_inflate.rh.dat (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rusage.mris_register.lh.dat (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rusage.mris_register.rh.dat (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rusage.mris_sphere.lh.dat (file)
+get(ok): derivatives/freesurfer/sub-01/touch/rusage.mris_sphere.rh.dat (file)
+get(ok): derivatives/freesurfer/sub-01/touch/segstats.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/talairach.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/wmaparc.stats.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/wmaparc.touch (file)
+get(ok): derivatives/freesurfer/sub-01/touch/wmsegment.touch (file)
+get(ok): derivatives/freesurfer/sub-01/stats/aseg.stats (file)
+get(ok): derivatives/freesurfer/sub-01/stats/lh.BA_exvivo.stats (file)
+get(ok): derivatives/freesurfer/sub-01/stats/lh.BA_exvivo.thresh.stats (file)
+get(ok): derivatives/freesurfer/sub-01/stats/lh.aparc.DKTatlas.stats (file)
+get(ok): derivatives/freesurfer/sub-01/stats/lh.aparc.a2009s.stats (file)
+get(ok): derivatives/freesurfer/sub-01/stats/lh.aparc.pial.stats (file)
+get(ok): derivatives/freesurfer/sub-01/stats/lh.aparc.stats (file)
+get(ok): derivatives/freesurfer/sub-01/stats/lh.curv.stats (file)
+get(ok): derivatives/freesurfer/sub-01/stats/lh.w-g.pct.stats (file)
+get(ok): derivatives/freesurfer/sub-01/stats/rh.BA_exvivo.stats (file)
+get(ok): derivatives/freesurfer/sub-01/stats/rh.BA_exvivo.thresh.stats (file)
+get(ok): derivatives/freesurfer/sub-01/stats/rh.aparc.DKTatlas.stats (file)
+get(ok): derivatives/freesurfer/sub-01/stats/rh.aparc.a2009s.stats (file)
+get(ok): derivatives/freesurfer/sub-01/stats/rh.aparc.pial.stats (file)
+get(ok): derivatives/freesurfer/sub-01/stats/rh.aparc.stats (file)
+get(ok): derivatives/freesurfer/sub-01/stats/rh.curv.stats (file)
+get(ok): derivatives/freesurfer/sub-01/stats/rh.w-g.pct.stats (file)
+get(ok): derivatives/freesurfer/sub-01/stats/wmparc.stats (file)
+get(ok): derivatives/freesurfer/sub-01/scripts/build-stamp.txt (file)
+get(ok): derivatives/freesurfer/sub-01/scripts/expert-options (file)
+get(ok): derivatives/freesurfer/sub-01/scripts/lastcall.build-stamp.txt (file)
+get(ok): derivatives/freesurfer/sub-01/scripts/patchdir.txt (file)
+get(ok): derivatives/freesurfer/sub-01/scripts/pctsurfcon.log (file)
+get(ok): derivatives/freesurfer/sub-01/scripts/pctsurfcon.log.old (file)
+get(ok): derivatives/freesurfer/sub-01/scripts/ponscc.cut.log (file)
+get(ok): derivatives/freesurfer/sub-01/scripts/recon-all-lh.cmd (file)
+get(ok): derivatives/freesurfer/sub-01/scripts/recon-all-lh.log (file)
+get(ok): derivatives/freesurfer/sub-01/scripts/recon-all-rh.cmd (file)
+get(ok): derivatives/freesurfer/sub-01/scripts/recon-all-rh.log (file)
+get(ok): derivatives/freesurfer/sub-01/scripts/recon-all-status-lh.log (file)
+get(ok): derivatives/freesurfer/sub-01/scripts/recon-all-status-rh.log (file)
+get(ok): derivatives/freesurfer/sub-01/scripts/recon-all-status.log (file)
+get(ok): derivatives/freesurfer/sub-01/scripts/recon-all.cmd (file)
+get(ok): derivatives/freesurfer/sub-01/scripts/recon-all.done (file)
+get(ok): derivatives/freesurfer/sub-01/scripts/recon-all.env (file)
+get(ok): derivatives/freesurfer/sub-01/scripts/recon-all.env.bak (file)
+get(ok): derivatives/freesurfer/sub-01/scripts/recon-all.local-copy (file)
+get(ok): derivatives/freesurfer/sub-01/scripts/recon-all.log (file)
+get(ok): derivatives/freesurfer/sub-01/label/BA_exvivo.ctab (file)
+get(ok): derivatives/freesurfer/sub-01/label/BA_exvivo.thresh.ctab (file)
+get(ok): derivatives/freesurfer/sub-01/label/aparc.annot.DKTatlas.ctab (file)
+get(ok): derivatives/freesurfer/sub-01/label/aparc.annot.a2009s.ctab (file)
+get(ok): derivatives/freesurfer/sub-01/label/aparc.annot.ctab (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.BA1_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.BA1_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.BA2_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.BA2_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.BA3a_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.BA3a_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.BA3b_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.BA3b_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.BA44_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.BA44_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.BA45_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.BA45_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.BA4a_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.BA4a_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.BA4p_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.BA4p_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.BA6_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.BA6_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.BA_exvivo.annot (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.BA_exvivo.thresh.annot (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.MT_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.MT_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.V1_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.V1_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.V2_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.V2_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.aparc.DKTatlas.annot (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.aparc.a2009s.annot (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.aparc.annot (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.cortex.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.entorhinal_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.entorhinal_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.perirhinal_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/lh.perirhinal_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.BA1_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.BA1_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.BA2_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.BA2_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.BA3a_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.BA3a_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.BA3b_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.BA3b_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.BA44_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.BA44_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.BA45_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.BA45_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.BA4a_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.BA4a_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.BA4p_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.BA4p_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.BA6_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.BA6_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.BA_exvivo.annot (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.BA_exvivo.thresh.annot (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.MT_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.MT_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.V1_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.V1_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.V2_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.V2_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.aparc.DKTatlas.annot (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.aparc.a2009s.annot (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.aparc.annot (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.cortex.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.entorhinal_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.entorhinal_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.perirhinal_exvivo.label (file)
+get(ok): derivatives/freesurfer/sub-01/label/rh.perirhinal_exvivo.thresh.label (file)
+get(ok): derivatives/freesurfer/sub-01/tmp/cw256 (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.area (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.area.mid (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.area.pial (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.avg_curv (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.curv (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.curv.pial (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.defect_borders (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.defect_chull (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.defect_labels (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.inflated (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.inflated.H (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.inflated.K (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.inflated.nofix (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.jacobian_white (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.midthickness (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.orig (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.orig.nofix (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.pial (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.qsphere.nofix (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.retinotopy.sphere.reg (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.smoothwm (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.smoothwm.BE.crv (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.smoothwm.C.crv (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.smoothwm.FI.crv (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.smoothwm.H.crv (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.smoothwm.K.crv (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.smoothwm.K1.crv (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.smoothwm.K2.crv (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.smoothwm.S.crv (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.smoothwm.nofix (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.sphere (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.sphere.reg (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.sulc (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.thickness (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.volume (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.w-g.pct.mgh (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.white (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.white.H (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.white.K (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.white.preaparc (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.white.preaparc.H (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.white.preaparc.K (file)
+get(ok): derivatives/freesurfer/sub-01/surf/lh.woT2.pial (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.area (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.area.mid (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.area.pial (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.avg_curv (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.curv (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.curv.pial (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.defect_borders (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.defect_chull (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.defect_labels (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.inflated (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.inflated.H (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.inflated.K (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.inflated.nofix (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.jacobian_white (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.midthickness (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.orig (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.orig.nofix (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.pial (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.qsphere.nofix (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.retinotopy.sphere.reg (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.smoothwm (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.smoothwm.BE.crv (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.smoothwm.C.crv (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.smoothwm.FI.crv (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.smoothwm.H.crv (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.smoothwm.K.crv (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.smoothwm.K1.crv (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.smoothwm.K2.crv (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.smoothwm.S.crv (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.smoothwm.nofix (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.sphere (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.sphere.reg (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.sulc (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.thickness (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.volume (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.w-g.pct.mgh (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.white (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.white.H (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.white.K (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.white.preaparc (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.white.preaparc.H (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.white.preaparc.K (file)
+get(ok): derivatives/freesurfer/sub-01/surf/rh.woT2.pial (file)
+get(ok): derivatives/freesurfer/sub-01/mri (directory)
+get(ok): derivatives/freesurfer/sub-01/touch (directory)
+get(ok): derivatives/freesurfer/sub-01/stats (directory)
+get(ok): derivatives/freesurfer/sub-01/scripts (directory)
+get(ok): derivatives/freesurfer/sub-01/label (directory)
+get(ok): derivatives/freesurfer/sub-01/tmp (directory)
+get(ok): derivatives/freesurfer/sub-01/surf (directory)
+action summary:
+  get (ok: 339)
+get(ok): derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_desc-confounds_timeseries.tsv (file)
+get(ok): derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_space-MNI152NLin2009cAsym_desc-aseg_dseg.nii.gz (file)
+get(ok): derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz (file)
+get(ok): derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-brain_mask.nii.gz (file)
+get(ok): derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_space-MNI152NLin2009cAsym_desc-aparcaseg_dseg.nii.gz (file)
+get(ok): derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-aseg_dseg.nii.gz (file)
+get(ok): derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_space-MNI152NLin2009cAsym_desc-brain_mask.nii.gz (file)
+get(ok): derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_space-T1w_boldref.nii.gz (file)
+get(ok): derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_space-MNI152NLin2009cAsym_boldref.nii.gz (file)
+get(ok): derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_hemi-R_space-fsnative_bold.func.gii (file)
+get(ok): derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_hemi-L_space-fsnative_bold.func.gii (file)
+get(ok): derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-aparcaseg_dseg.nii.gz (file)
+get(ok): derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_from-T1w_to-scanner_mode-image_xfm.txt (file)
+get(ok): derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_from-scanner_to-T1w_mode-image_xfm.txt (file)
+get(ok): derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold.nii.gz (file)
+action summary:
+  get (notneeded: 7, ok: 15)
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="sample-fmri-data-across-layers">
+<h2>Sample fMRI data across layers<a class="headerlink" href="#sample-fmri-data-across-layers" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s1">&#39;../new_data&#39;</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="s1">&#39;../new_data&#39;</span><span class="p">)</span> <span class="c1"># create a directory to save the newly sampled fMRI data</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now, we can run <a class="reference external" href="https://surfer.nmr.mgh.harvard.edu/fswiki/mri_vol2surf">mri_vol2surf</a> to sample fMRI signal values from a volume to each surface vertex.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">depths</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">1.1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Functional data will be sample at the following depths: </span><span class="si">{</span><span class="n">depths</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Functional data will be sample at the following depths: [0.  0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. ]
+</pre></div>
+</div>
+</div>
+</div>
+<div style="background-color: #ABBAEF; padding: 10px; border-radius: 5px;">
+    <div style="background-color: #add8e6; padding: 5px; border-radius: 5px; font-weight: bold;">
+        <span style="font-size: 15px; color: #add8e6; background-color: white; border-radius: 50%; width: 20px; height: 20px; display: inline-block; text-align: center; line-height: 20px;">
+            !
+        </span> <span style="color: white;">Note:</span>
+    </div>
+    <p style="margin: 10px 0;">
+        Before assigning fMRI data to each surface vertex make sure that both the anatomical and functional data are aligned.
+    </p>
+</div><div class="cell tag_scroll-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">depth</span> <span class="ow">in</span> <span class="n">depths</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&quot;&quot;Processing depth: </span><span class="si">{</span><span class="n">depth</span><span class="si">}</span><span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+    <span class="n">cmd</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;mri_vol2surf --src derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold.nii.gz </span><span class="se">\</span>
+<span class="s2">                 --regheader sub-01 </span><span class="se">\</span>
+<span class="s2">                 --hemi lh </span><span class="se">\</span>
+<span class="s2">                 --surf white </span><span class="se">\</span>
+<span class="s2">                 --projfrac </span><span class="si">{</span><span class="n">depth</span><span class="si">}</span><span class="s2"> </span><span class="se">\</span>
+<span class="s2">                 --sd derivatives/freesurfer </span><span class="se">\</span>
+<span class="s2">                 --out ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-</span><span class="si">{</span><span class="n">depth</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">.func.mgh&quot;&quot;&quot;</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Processing depth: 0.0
+srcvol = derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold.nii.gz
+srcreg unspecified
+srcregold = 0
+srcwarp unspecified
+surf = white
+hemi = lh
+reshape = 0
+interp = nearest
+float2int = round
+GetProjMax = 0
+INFO: float2int code = 0
+Done loading volume
+Computing registration from header.
+  Using derivatives/freesurfer/sub-01/mri/orig.mgz as target reference.
+-------- original matrix -----------
+-1.00000   0.00000  -0.00000   0.12505;
+-0.00000  -0.00000   1.00000   2.69328;
+ 0.00000  -1.00000   0.00000   0.19273;
+ 0.00000   0.00000   0.00000   1.00000;
+-------- original matrix -----------
+Reading surface derivatives/freesurfer/sub-01/surf/lh.white
+Done reading source surface
+Mapping Source Volume onto Source Subject Surface
+Projecting 0 0 1
+ 1 0 0 0
+using old
+Done mapping volume to surface
+Number of source voxels hit = 28255
+Writing to ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.0.func.mgh
+Dim: 221709 1 1
+Processing depth: 0.1
+srcvol = derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold.nii.gz
+srcreg unspecified
+srcregold = 0
+srcwarp unspecified
+surf = white
+hemi = lh
+ProjFrac = 0.1
+thickness = thickness
+reshape = 0
+interp = nearest
+float2int = round
+GetProjMax = 0
+INFO: float2int code = 0
+Done loading volume
+Computing registration from header.
+  Using derivatives/freesurfer/sub-01/mri/orig.mgz as target reference.
+-------- original matrix -----------
+-1.00000   0.00000  -0.00000   0.12505;
+-0.00000  -0.00000   1.00000   2.69328;
+ 0.00000  -1.00000   0.00000   0.19273;
+ 0.00000   0.00000   0.00000   1.00000;
+-------- original matrix -----------
+Reading surface derivatives/freesurfer/sub-01/surf/lh.white
+Done reading source surface
+Reading thickness derivatives/freesurfer/sub-01/surf/lh.thickness
+Done
+Mapping Source Volume onto Source Subject Surface
+Projecting 0.1 0.1 1
+ 1 0.1 0.1 0.1
+using old
+Done mapping volume to surface
+Number of source voxels hit = 29515
+Writing to ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.1.func.mgh
+Dim: 221709 1 1
+Processing depth: 0.2
+srcvol = derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold.nii.gz
+srcreg unspecified
+srcregold = 0
+srcwarp unspecified
+surf = white
+hemi = lh
+ProjFrac = 0.2
+thickness = thickness
+reshape = 0
+interp = nearest
+float2int = round
+GetProjMax = 0
+INFO: float2int code = 0
+Done loading volume
+Computing registration from header.
+  Using derivatives/freesurfer/sub-01/mri/orig.mgz as target reference.
+-------- original matrix -----------
+-1.00000   0.00000  -0.00000   0.12505;
+-0.00000  -0.00000   1.00000   2.69328;
+ 0.00000  -1.00000   0.00000   0.19273;
+ 0.00000   0.00000   0.00000   1.00000;
+-------- original matrix -----------
+Reading surface derivatives/freesurfer/sub-01/surf/lh.white
+Done reading source surface
+Reading thickness derivatives/freesurfer/sub-01/surf/lh.thickness
+Done
+Mapping Source Volume onto Source Subject Surface
+Projecting 0.2 0.2 1
+ 1 0.2 0.2 0.2
+using old
+Done mapping volume to surface
+Number of source voxels hit = 30311
+Writing to ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.2.func.mgh
+Dim: 221709 1 1
+Processing depth: 0.30000000000000004
+srcvol = derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold.nii.gz
+srcreg unspecified
+srcregold = 0
+srcwarp unspecified
+surf = white
+hemi = lh
+ProjFrac = 0.3
+thickness = thickness
+reshape = 0
+interp = nearest
+float2int = round
+GetProjMax = 0
+INFO: float2int code = 0
+Done loading volume
+Computing registration from header.
+  Using derivatives/freesurfer/sub-01/mri/orig.mgz as target reference.
+-------- original matrix -----------
+-1.00000   0.00000  -0.00000   0.12505;
+-0.00000  -0.00000   1.00000   2.69328;
+ 0.00000  -1.00000   0.00000   0.19273;
+ 0.00000   0.00000   0.00000   1.00000;
+-------- original matrix -----------
+Reading surface derivatives/freesurfer/sub-01/surf/lh.white
+Done reading source surface
+Reading thickness derivatives/freesurfer/sub-01/surf/lh.thickness
+Done
+Mapping Source Volume onto Source Subject Surface
+Projecting 0.3 0.3 1
+ 1 0.3 0.3 0.3
+using old
+Done mapping volume to surface
+Number of source voxels hit = 30832
+Writing to ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.3.func.mgh
+Dim: 221709 1 1
+Processing depth: 0.4
+srcvol = derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold.nii.gz
+srcreg unspecified
+srcregold = 0
+srcwarp unspecified
+surf = white
+hemi = lh
+ProjFrac = 0.4
+thickness = thickness
+reshape = 0
+interp = nearest
+float2int = round
+GetProjMax = 0
+INFO: float2int code = 0
+Done loading volume
+Computing registration from header.
+  Using derivatives/freesurfer/sub-01/mri/orig.mgz as target reference.
+-------- original matrix -----------
+-1.00000   0.00000  -0.00000   0.12505;
+-0.00000  -0.00000   1.00000   2.69328;
+ 0.00000  -1.00000   0.00000   0.19273;
+ 0.00000   0.00000   0.00000   1.00000;
+-------- original matrix -----------
+Reading surface derivatives/freesurfer/sub-01/surf/lh.white
+Done reading source surface
+Reading thickness derivatives/freesurfer/sub-01/surf/lh.thickness
+Done
+Mapping Source Volume onto Source Subject Surface
+Projecting 0.4 0.4 1
+ 1 0.4 0.4 0.4
+using old
+Done mapping volume to surface
+Number of source voxels hit = 31178
+Writing to ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.4.func.mgh
+Dim: 221709 1 1
+Processing depth: 0.5
+srcvol = derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold.nii.gz
+srcreg unspecified
+srcregold = 0
+srcwarp unspecified
+surf = white
+hemi = lh
+ProjFrac = 0.5
+thickness = thickness
+reshape = 0
+interp = nearest
+float2int = round
+GetProjMax = 0
+INFO: float2int code = 0
+Done loading volume
+Computing registration from header.
+  Using derivatives/freesurfer/sub-01/mri/orig.mgz as target reference.
+-------- original matrix -----------
+-1.00000   0.00000  -0.00000   0.12505;
+-0.00000  -0.00000   1.00000   2.69328;
+ 0.00000  -1.00000   0.00000   0.19273;
+ 0.00000   0.00000   0.00000   1.00000;
+-------- original matrix -----------
+Reading surface derivatives/freesurfer/sub-01/surf/lh.white
+Done reading source surface
+Reading thickness derivatives/freesurfer/sub-01/surf/lh.thickness
+Done
+Mapping Source Volume onto Source Subject Surface
+Projecting 0.5 0.5 1
+ 1 0.5 0.5 0.5
+using old
+Done mapping volume to surface
+Number of source voxels hit = 31350
+Writing to ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.5.func.mgh
+Dim: 221709 1 1
+Processing depth: 0.6000000000000001
+srcvol = derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold.nii.gz
+srcreg unspecified
+srcregold = 0
+srcwarp unspecified
+surf = white
+hemi = lh
+ProjFrac = 0.6
+thickness = thickness
+reshape = 0
+interp = nearest
+float2int = round
+GetProjMax = 0
+INFO: float2int code = 0
+Done loading volume
+Computing registration from header.
+  Using derivatives/freesurfer/sub-01/mri/orig.mgz as target reference.
+-------- original matrix -----------
+-1.00000   0.00000  -0.00000   0.12505;
+-0.00000  -0.00000   1.00000   2.69328;
+ 0.00000  -1.00000   0.00000   0.19273;
+ 0.00000   0.00000   0.00000   1.00000;
+-------- original matrix -----------
+Reading surface derivatives/freesurfer/sub-01/surf/lh.white
+Done reading source surface
+Reading thickness derivatives/freesurfer/sub-01/surf/lh.thickness
+Done
+Mapping Source Volume onto Source Subject Surface
+Projecting 0.6 0.6 1
+ 1 0.6 0.6 0.6
+using old
+Done mapping volume to surface
+Number of source voxels hit = 31311
+Writing to ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.6.func.mgh
+Dim: 221709 1 1
+Processing depth: 0.7000000000000001
+srcvol = derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold.nii.gz
+srcreg unspecified
+srcregold = 0
+srcwarp unspecified
+surf = white
+hemi = lh
+ProjFrac = 0.7
+thickness = thickness
+reshape = 0
+interp = nearest
+float2int = round
+GetProjMax = 0
+INFO: float2int code = 0
+Done loading volume
+Computing registration from header.
+  Using derivatives/freesurfer/sub-01/mri/orig.mgz as target reference.
+-------- original matrix -----------
+-1.00000   0.00000  -0.00000   0.12505;
+-0.00000  -0.00000   1.00000   2.69328;
+ 0.00000  -1.00000   0.00000   0.19273;
+ 0.00000   0.00000   0.00000   1.00000;
+-------- original matrix -----------
+Reading surface derivatives/freesurfer/sub-01/surf/lh.white
+Done reading source surface
+Reading thickness derivatives/freesurfer/sub-01/surf/lh.thickness
+Done
+Mapping Source Volume onto Source Subject Surface
+Projecting 0.7 0.7 1
+ 1 0.7 0.7 0.7
+using old
+Done mapping volume to surface
+Number of source voxels hit = 31118
+Writing to ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.7.func.mgh
+Dim: 221709 1 1
+Processing depth: 0.8
+srcvol = derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold.nii.gz
+srcreg unspecified
+srcregold = 0
+srcwarp unspecified
+surf = white
+hemi = lh
+ProjFrac = 0.8
+thickness = thickness
+reshape = 0
+interp = nearest
+float2int = round
+GetProjMax = 0
+INFO: float2int code = 0
+Done loading volume
+Computing registration from header.
+  Using derivatives/freesurfer/sub-01/mri/orig.mgz as target reference.
+-------- original matrix -----------
+-1.00000   0.00000  -0.00000   0.12505;
+-0.00000  -0.00000   1.00000   2.69328;
+ 0.00000  -1.00000   0.00000   0.19273;
+ 0.00000   0.00000   0.00000   1.00000;
+-------- original matrix -----------
+Reading surface derivatives/freesurfer/sub-01/surf/lh.white
+Done reading source surface
+Reading thickness derivatives/freesurfer/sub-01/surf/lh.thickness
+Done
+Mapping Source Volume onto Source Subject Surface
+Projecting 0.8 0.8 1
+ 1 0.8 0.8 0.8
+using old
+Done mapping volume to surface
+Number of source voxels hit = 30573
+Writing to ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.8.func.mgh
+Dim: 221709 1 1
+Processing depth: 0.9
+srcvol = derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold.nii.gz
+srcreg unspecified
+srcregold = 0
+srcwarp unspecified
+surf = white
+hemi = lh
+ProjFrac = 0.9
+thickness = thickness
+reshape = 0
+interp = nearest
+float2int = round
+GetProjMax = 0
+INFO: float2int code = 0
+Done loading volume
+Computing registration from header.
+  Using derivatives/freesurfer/sub-01/mri/orig.mgz as target reference.
+-------- original matrix -----------
+-1.00000   0.00000  -0.00000   0.12505;
+-0.00000  -0.00000   1.00000   2.69328;
+ 0.00000  -1.00000   0.00000   0.19273;
+ 0.00000   0.00000   0.00000   1.00000;
+-------- original matrix -----------
+Reading surface derivatives/freesurfer/sub-01/surf/lh.white
+Done reading source surface
+Reading thickness derivatives/freesurfer/sub-01/surf/lh.thickness
+Done
+Mapping Source Volume onto Source Subject Surface
+Projecting 0.9 0.9 1
+ 1 0.9 0.9 0.9
+using old
+Done mapping volume to surface
+Number of source voxels hit = 29872
+Writing to ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.9.func.mgh
+Dim: 221709 1 1
+Processing depth: 1.0
+srcvol = derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold.nii.gz
+srcreg unspecified
+srcregold = 0
+srcwarp unspecified
+surf = white
+hemi = lh
+ProjFrac = 1
+thickness = thickness
+reshape = 0
+interp = nearest
+float2int = round
+GetProjMax = 0
+INFO: float2int code = 0
+Done loading volume
+Computing registration from header.
+  Using derivatives/freesurfer/sub-01/mri/orig.mgz as target reference.
+-------- original matrix -----------
+-1.00000   0.00000  -0.00000   0.12505;
+-0.00000  -0.00000   1.00000   2.69328;
+ 0.00000  -1.00000   0.00000   0.19273;
+ 0.00000   0.00000   0.00000   1.00000;
+-------- original matrix -----------
+Reading surface derivatives/freesurfer/sub-01/surf/lh.white
+Done reading source surface
+Reading thickness derivatives/freesurfer/sub-01/surf/lh.thickness
+Done
+Mapping Source Volume onto Source Subject Surface
+Projecting 1 1 1
+ 1 1 1 1
+using old
+Done mapping volume to surface
+Number of source voxels hit = 29162
+Writing to ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-1.0.func.mgh
+Dim: 221709 1 1
+</pre></div>
+</div>
+</div>
+</div>
+<p>Finally, we can convert our data to ‘func.gii’, so we can perform <a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/S1053811907008269?via%3Dihub">population receptive field modeling</a> using tools like <a class="reference external" href="https://github.com/samsrf/samsrf">SamSrf</a>.</p>
+<div class="cell tag_scroll-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">depth</span> <span class="ow">in</span> <span class="n">depths</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Processing depth: </span><span class="si">{</span><span class="n">depth</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">cmd</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;mri_convert ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-</span><span class="si">{</span><span class="n">depth</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">.func.mgh </span><span class="se">\</span>
+<span class="s2">                    ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-</span><span class="si">{</span><span class="n">depth</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">.func.gii&quot;&quot;&quot;</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Data has been converted!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Processing depth: 0.0
+/opt/freesurfer-7.3.2/bin/mri_convert ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.0.func.mgh ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.0.func.gii 
+reading from ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.0.func.mgh...
+TR=1200.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.0.func.gii...
+Data has been converted!
+Processing depth: 0.1
+/opt/freesurfer-7.3.2/bin/mri_convert ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.1.func.mgh ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.1.func.gii 
+reading from ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.1.func.mgh...
+TR=1200.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.1.func.gii...
+Data has been converted!
+Processing depth: 0.2
+/opt/freesurfer-7.3.2/bin/mri_convert ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.2.func.mgh ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.2.func.gii 
+reading from ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.2.func.mgh...
+TR=1200.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.2.func.gii...
+Data has been converted!
+Processing depth: 0.30000000000000004
+/opt/freesurfer-7.3.2/bin/mri_convert ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.3.func.mgh ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.3.func.gii 
+reading from ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.3.func.mgh...
+TR=1200.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.3.func.gii...
+Data has been converted!
+Processing depth: 0.4
+/opt/freesurfer-7.3.2/bin/mri_convert ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.4.func.mgh ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.4.func.gii 
+reading from ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.4.func.mgh...
+TR=1200.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.4.func.gii...
+Data has been converted!
+Processing depth: 0.5
+/opt/freesurfer-7.3.2/bin/mri_convert ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.5.func.mgh ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.5.func.gii 
+reading from ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.5.func.mgh...
+TR=1200.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.5.func.gii...
+Data has been converted!
+Processing depth: 0.6000000000000001
+/opt/freesurfer-7.3.2/bin/mri_convert ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.6.func.mgh ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.6.func.gii 
+reading from ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.6.func.mgh...
+TR=1200.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.6.func.gii...
+Data has been converted!
+Processing depth: 0.7000000000000001
+/opt/freesurfer-7.3.2/bin/mri_convert ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.7.func.mgh ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.7.func.gii 
+reading from ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.7.func.mgh...
+TR=1200.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.7.func.gii...
+Data has been converted!
+Processing depth: 0.8
+/opt/freesurfer-7.3.2/bin/mri_convert ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.8.func.mgh ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.8.func.gii 
+reading from ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.8.func.mgh...
+TR=1200.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.8.func.gii...
+Data has been converted!
+Processing depth: 0.9
+/opt/freesurfer-7.3.2/bin/mri_convert ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.9.func.mgh ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.9.func.gii 
+reading from ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.9.func.mgh...
+TR=1200.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-0.9.func.gii...
+Data has been converted!
+Processing depth: 1.0
+/opt/freesurfer-7.3.2/bin/mri_convert ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-1.0.func.mgh ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-1.0.func.gii 
+reading from ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-1.0.func.mgh...
+TR=1200.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to ../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-1.0.func.gii...
+Data has been converted!
+</pre></div>
+</div>
+</div>
+</div>
+<p>Before moving forward, make sure the newly sampled data has the same shape as previously preprocessed, sampled data.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">our_newly_sampled_data</span> <span class="o">=</span> <span class="n">nib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-1.0.func.gii&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">agg_data</span><span class="p">()</span>
+<span class="n">previous_sampled_data</span> <span class="o">=</span> <span class="n">nib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_hemi-L_space-fsnative_bold.func.gii&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">agg_data</span><span class="p">()</span>
+
+<span class="k">assert</span> <span class="n">our_newly_sampled_data</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="n">previous_sampled_data</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="s2">&quot;Sampled data is not correct!&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="visualize-the-data">
+<h2>Visualize the data<a class="headerlink" href="#visualize-the-data" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>mris_convert<span class="w"> </span>derivatives/freesurfer/sub-01/surf/lh.sphere<span class="w"> </span>derivatives/freesurfer/sub-01/surf/lh.sphere.gii
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Saving derivatives/freesurfer/sub-01/surf/lh.sphere.gii as a surface
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_scroll-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">nilearn</span><span class="w"> </span><span class="kn">import</span> <span class="n">plotting</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">ipywidgets</span><span class="w"> </span><span class="kn">import</span> <span class="n">Dropdown</span><span class="p">,</span> <span class="n">interact</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">nibabel</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">nib</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">plot_data</span><span class="p">(</span><span class="n">depth</span><span class="p">,</span> <span class="n">time_point</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">depth</span> <span class="o">!=</span><span class="s1">&#39;average&#39;</span><span class="p">:</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">nib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;../new_data/sub-01_ses-01_task-fixedbar_run-1_space-T1w_desc-preproc_bold_depth-&quot;</span>
+                                 <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">depth</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;.func.gii&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">agg_data</span><span class="p">())[:,</span><span class="n">time_point</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">nib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;derivatives/fmriprep/sub-01/ses-01/func/sub-01_ses-01_task-fixedbar_run-1_hemi-L_space-fsnative_bold.func.gii&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">agg_data</span><span class="p">())[:,</span><span class="n">time_point</span><span class="p">]</span>
+    <span class="n">view</span> <span class="o">=</span> <span class="n">plotting</span><span class="o">.</span><span class="n">view_surf</span><span class="p">(</span>
+    <span class="n">surf_mesh</span><span class="o">=</span><span class="s2">&quot;derivatives/freesurfer/sub-01/surf/lh.sphere.gii&quot;</span><span class="p">,</span>
+    <span class="n">surf_map</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">data</span><span class="p">[:],</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)),</span>
+    <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;Reds&quot;</span><span class="p">,</span> <span class="n">black_bg</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">symmetric_cmap</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">threshold</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span> <span class="n">darkness</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">view</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can generate some interactive plots with ipywidgets and nilearn.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">depth</span> <span class="o">=</span> <span class="n">Dropdown</span><span class="p">(</span><span class="n">options</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s1">&#39;average&#39;</span><span class="p">])</span>
+<span class="n">time_point</span> <span class="o">=</span> <span class="n">Dropdown</span><span class="p">(</span><span class="n">options</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">250</span><span class="p">,</span> <span class="mi">300</span><span class="p">])</span>
+
+<span class="nd">@interact</span><span class="p">(</span><span class="n">depth</span> <span class="o">=</span> <span class="n">depth</span><span class="p">,</span> <span class="n">time_point</span> <span class="o">=</span> <span class="n">time_point</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">plot1</span><span class="p">(</span><span class="n">depth</span><span class="p">,</span> <span class="n">time_point</span><span class="p">):</span>
+
+    <span class="k">return</span> <span class="n">plot_data</span><span class="p">(</span><span class="n">depth</span><span class="p">,</span> <span class="n">time_point</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "f3b5ae84ae78481392aa3b3a9ee14c90", "version_major": 2, "version_minor": 0}</script></div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./functional_imaging"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro_to_preprocessing.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Introduction to Preprocessing</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="process_five_echo_dataset.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">tedana: TE Dependent ANAlysis</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sampling-fmri-signal-across-cortical-depths">Sampling fMRI signal across cortical depths</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#citation">Citation:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goal-of-this-example-notebook">Goal of this example notebook</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-python-packages">Install Python packages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-relevant-libraries">Import relevant libraries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-freesurfer">Load FreeSurfer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-data-from-the-openneuro">Download data from the OpenNeuro</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-fmri-data-across-layers">Sample fMRI data across layers</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualize-the-data">Visualize the data</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Neurodesk Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

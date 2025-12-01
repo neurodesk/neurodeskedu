@@ -1,0 +1,2395 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>QSMxT &#8212; Neurodesk</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-4Z9774J59Y"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-4Z9774J59Y');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-4Z9774J59Y');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'structural_imaging/qsmxt';</script>
+    <link rel="canonical" href="https://neurodesk.github.io/example-notebooks/structural_imaging/qsmxt.html" />
+    <link rel="icon" href="../_static/neurodesk_logo.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="SCT Toolbox" href="sct_toolbox.html" />
+    <link rel="prev" title="FreeSurfer" href="freesurfer.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/neurodesk_logo.svg" class="logo__image only-light" alt="Neurodesk - Home"/>
+    <script>document.write(`<img src="../_static/neurodesk_logo.svg" class="logo__image only-dark" alt="Neurodesk - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Neurodesk environment
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Workflows</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../workflows/AA_Neurodesk_demo_tour.html">Neurodesk Tools Demo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/MRIQC.html">MRIQC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/PyBIDS.html">PyBIDS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/RISE_slideshow.html">RISE Slideshow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/bids_conversion.html">BIDS conversion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/nipype_full.html">Nipype on Neurodesk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/nipype_short.html">Basic Nipype</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../workflows/papermill-slurm-submission-example.html">Papermill Slurm Job Submission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../workflows/pydra_preproc_ants.html">Pydra</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Structural Imaging</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="FSL_course_bet.html">FSL course - BET</a></li>
+<li class="toctree-l1"><a class="reference internal" href="brain_extraction_different_tools.html">Brain Extraction Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="freesurfer.html">FreeSurfer</a></li>
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">QSMxT</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="sct_toolbox.html">SCT Toolbox</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Spectroscopy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../spectroscopy/lcmodel.html">MR Spectroscopy with LCModel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../spectroscopy/osprey.html">MR Spectroscopy with Osprey</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Diffusion Imaging</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../diffusion_imaging/Diffusion_TBSS_Demo.html">TBSS Tutorial</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="../diffusion_imaging/MRtrix_1.html">MRtrix: Part 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion_imaging/MRtrix_2.html">MRtrix: Part 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion_imaging/MRtrix_3.html">MRtrix: Part 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../diffusion_imaging/mrtrix3tissue.html">MRtrix3Tissue</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Functional Imaging</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../functional_imaging/AFNI_preprocessing_only.html">AFNI Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functional_imaging/AFNI_preprocessing_plus_glm.html">AFNI Preprocessing and GLM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functional_imaging/AFNI_preprocessing_plus_glm_group.html">AFNI Preprocessing &amp; Group Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functional_imaging/FSL_preproc_glm.html">FSL Preprocessing and GLM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functional_imaging/FSLnets_course_practical.html">Resting state with FSLnets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functional_imaging/NiWrap.html">NiWrap and Connectome Workbench</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functional_imaging/aslprep.html">ASLprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functional_imaging/deepretinotopy.html">DeepRetinotopy</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../functional_imaging/first_and_second_level_spm.html">Nipype-SPM fMRI Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functional_imaging/fmriprep.html">fMRIprep</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functional_imaging/fsl_all_levels_flanker_nipype.html">Nipype-FSL fMRI Analysis</a></li>
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="../functional_imaging/intro_to_preprocessing.html">Introduction to Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functional_imaging/mri_vol2surf.html">FreeSurfer: mri_vol2surf</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functional_imaging/process_five_echo_dataset.html">tedana: TE Dependent ANAlysis</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Electrophysiology</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../electrophysiology/eeg_with_mne.html">EEG Analysis with MNE</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://play-america.neurodesk.org/hub/user-redirect/git-pull?repo=https%3A//github.com/NeuroDesk/example-notebooks&urlpath=lab/tree/example-notebooks/books/structural_imaging/qsmxt.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Run in America"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Run in America logo" src="../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">Run in America</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://play-europe.neurodesk.org/hub/user-redirect/git-pull?repo=https%3A//github.com/NeuroDesk/example-notebooks&urlpath=lab/tree/example-notebooks/books/structural_imaging/qsmxt.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Run in Europe"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Run in Europe logo" src="../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">Run in Europe</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/NeuroDesk/example-notebooks" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/NeuroDesk/example-notebooks/edit/main/books/structural_imaging/qsmxt.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/NeuroDesk/example-notebooks/issues/new?title=Issue%20on%20page%20%2Fstructural_imaging/qsmxt.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/structural_imaging/qsmxt.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>QSMxT</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">QSMxT</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#output-cpu-information">Output CPU information</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#qsmxt-interactive-notebook">QSMxT Interactive Notebook</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-qsm">What is QSM?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-qsmxt">What is QSMxT?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-i-access-qsmxt">How do I access QSMxT?</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#download-example-dicoms">Download example DICOMs</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#load-qsmxt">Load QSMxT</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-standardisation">Data standardisation</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#convert-dicom-to-bids">Convert DICOM to BIDS</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#inspect-input-data">Inspect input data</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#run-qsmxt">Run QSMxT</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#view-results">View results</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qsm-results">QSM results</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#segmentations">Segmentations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-csvs">Analysis CSVs</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="qsmxt">
+<h1>QSMxT<a class="headerlink" href="#qsmxt" title="Link to this heading">#</a></h1>
+<p><strong>Author:</strong> Ashley Stewart</p>
+<p><strong>Citation:</strong></p>
+<ul class="simple">
+<li><p>QSMxT: Stewart AW, Robinson SD, O’Brien K, et al. QSMxT: Robust masking and artifact reduction for quantitative susceptibility mapping. Magnetic Resonance in Medicine. 2022;87(3):1289-1300. <a class="reference external" href="https://doi.org/10.1002/mrm.29048">doi:10.1002/mrm.29048</a></p></li>
+<li><p>QSMxT: Stewart AW, Bollman S, et al. QSMxT/QSMxT. GitHub; 2022<a class="reference external" href="https://github.com/QSMxT/QSMxT">. https://github.com/QSMxT/QSM</a></p></li>
+</ul>
+<section id="output-cpu-information">
+<h2>Output CPU information<a class="headerlink" href="#output-cpu-information" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>cat<span class="w"> </span>/proc/cpuinfo<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;vendor&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq
+<span class="o">!</span>cat<span class="w"> </span>/proc/cpuinfo<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;model name&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>vendor_id	: GenuineIntel
+model name	: Intel(R) Core(TM) Ultra 7 155U
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="qsmxt-interactive-notebook">
+<h1>QSMxT Interactive Notebook<a class="headerlink" href="#qsmxt-interactive-notebook" title="Link to this heading">#</a></h1>
+<p>This interactive notebook estimates Quantitative Susceptibility Maps (QSMs) for two gradient-echo (GRE) MRI acquisitions using <a class="reference external" href="https://github.com/QSMxT/QSMxT">QSMxT</a> provided by the <a class="reference external" href="https://neurodesk.org">Neurodesk</a> project.</p>
+<section id="what-is-qsm">
+<h2>What is QSM?<a class="headerlink" href="#what-is-qsm" title="Link to this heading">#</a></h2>
+<p>QSM is a form of quantitative MRI (qMRI) that estimates the magnetic susceptibility distribution across an imaged object. Magnetic susceptibility is the degree to which a material becomes magnetised by an external magnetic field. Major contributors to susceptibility include iron, calcium, and myelin, with the susceptibility of water typically approximating a zero-reference, though it is slightly diamagnetic. Read more about QSM <a class="reference external" href="https://doi.org/10.1002/mrm.25358">here</a>.</p>
+</section>
+<section id="what-is-qsmxt">
+<h2>What is QSMxT?<a class="headerlink" href="#what-is-qsmxt" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://qsmxt.github.io">QSMxT</a> is a suite of tools for building and running automated pipelines for QSM that:</p>
+<ul class="simple">
+<li><p>is available open-source without any licensing required;</p></li>
+<li><p>is distributed as a software container making it straightforward to access and install (Neurodesk!)</p></li>
+<li><p>scales its processing to execute across many acquisitions through jobs parallelisation (using multiple processors or HPCs) provided by <a class="reference external" href="https://nipype.readthedocs.io">Nipype</a>;</p></li>
+<li><p>automates steps that usually require manual intervention and scripting, including:</p>
+<ul>
+<li><p>DICOM to <a class="reference external" href="https://bids-specification.readthedocs.io/en/stable/index.html">BIDS</a> conversion;</p></li>
+<li><p>QSM reconstruction using a range of algorithms;</p></li>
+<li><p>segmentation using <a class="reference external" href="https://github.com/Deep-MI/FastSurfer">FastSurfer</a>;</p></li>
+<li><p>group space generation using <a class="reference external" href="https://github.com/ANTsX/ANTs">ANTs</a>;</p></li>
+<li><p>export of susceptibility statistics by subject and region of interest (ROI) to CSV.</p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="image.png" src="../_images/image.png" /></p>
+</section>
+<section id="how-do-i-access-qsmxt">
+<h2>How do I access QSMxT?<a class="headerlink" href="#how-do-i-access-qsmxt" title="Link to this heading">#</a></h2>
+<p>There are a few ways you can access QSMxT:</p>
+<ul class="simple">
+<li><p><strong>This notebook</strong>: You can access QSMxT in this notebook right now!</p>
+<ul>
+<li><p>If you are running this on a Neurodesk Play instance, you can upload your own data into the sidebar via drag-and-drop.</p></li>
+</ul>
+</li>
+<li><p><strong>Neurodesktop</strong>: QSMxT is in the applications menu of Neurodesktop.</p>
+<ul>
+<li><p>On Neurodesk Play, upload your own data into the desktop via drag-and-drop.</p></li>
+<li><p>On a local install of Neurodesk, bring any necessary files into the shared <code class="docutils literal notranslate"><span class="pre">~/neurodesktop-storage</span></code> directory</p></li>
+</ul>
+</li>
+<li><p><strong>Local install</strong>: QSMxT can also be installed via the <a class="reference external" href="https://qsmxt.github.io/QSMxT/installation">Docker container</a></p></li>
+<li><p><strong>HPC install</strong>: QSMxT can also be installed via the <a class="reference external" href="https://qsmxt.github.io/QSMxT/installation">Singularity container</a> for use on HPCs</p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="download-example-dicoms">
+<h1>Download example DICOMs<a class="headerlink" href="#download-example-dicoms" title="Link to this heading">#</a></h1>
+<p>Here, we download some example DICOMs from our OSF repository for QSMxT.</p>
+<p>These data include GRE and T1-weighted acquisitions for one subject (duplicated to act as two subjects).</p>
+<div class="cell tag_output_scroll docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>osf<span class="w"> </span>-p<span class="w"> </span>ru43c<span class="w"> </span>clone<span class="w"> </span>.<span class="w"> </span>&gt;<span class="w"> </span>/dev/null<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+<span class="o">!</span>tar<span class="w"> </span>xf<span class="w"> </span>osfstorage/dicoms-unsorted.tar
+<span class="o">!</span>rm<span class="w"> </span>-rf<span class="w"> </span>osfstorage/
+<span class="o">!</span>tree<span class="w"> </span>dicoms-unsorted<span class="w"> </span><span class="p">|</span><span class="w"> </span>head
+<span class="o">!</span><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;...\nThere are `ls dicoms-unsorted | wc -l` unsorted DICOMs in ./dicoms-unsorted/&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">dicoms-unsorted</span>
+├── MR.1.1.dcm
+├── MR.1.10.dcm
+├── MR.1.100.dcm
+├── MR.1.101.dcm
+├── MR.1.102.dcm
+├── MR.1.103.dcm
+├── MR.1.104.dcm
+├── MR.1.105.dcm
+├── MR.1.106.dcm
+...
+There are 1216 unsorted DICOMs in ./dicoms-unsorted/
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="load-qsmxt">
+<h1>Load QSMxT<a class="headerlink" href="#load-qsmxt" title="Link to this heading">#</a></h1>
+<p>To load QSMxT inside a notebook, we can use the available module system:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;MODULEPATH&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;/cvmfs/neurodesk.ardc.edu.au/containers/modules:&#39;</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;MODULEPATH&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">module</span>
+<span class="k">await</span> <span class="n">module</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;qsmxt/8.1.1&#39;</span><span class="p">)</span>
+<span class="o">!</span>qsmxt<span class="w"> </span>--version
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following have been reloaded with a version change:
+  1) qsmxt/7.2.2 =&gt; qsmxt/8.1.1
+
+
+[INFO]: QSMxT v8.1.1
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="data-standardisation">
+<h1>Data standardisation<a class="headerlink" href="#data-standardisation" title="Link to this heading">#</a></h1>
+<p>QSMxT requires input data to conform to the <a class="reference external" href="https://bids.neuroimaging.io/">Brain Imaging Data Structure (BIDS)</a>.</p>
+<p>Luckily, QSMxT also provides scripts that can convert unorganised NIfTI or DICOM images to BIDS. If you are using NIfTI images and do not have DICOMs, see <a class="reference external" href="https://qsmxt.github.io/QSMxT/using-qsmxt/data-preparation#nifti-to-bids">nifti-convert</a>.</p>
+<section id="convert-dicom-to-bids">
+<h2>Convert DICOM to BIDS<a class="headerlink" href="#convert-dicom-to-bids" title="Link to this heading">#</a></h2>
+<p>The DICOM to BIDS conversion must identify which series should be used for QSM reconstruction (e.g. MEGRE), and which series should be used for segmentation (T1-weighted). Because this information is not stored in the DICOM header in a standardised way, it can only be estimated based on other fields, or the user must identify series themselves.</p>
+<p>If QSMxT is run interactively, the user will be prompted to identify the relevant series. However, because we are running QSMxT in a notebook, we disable the interactivity using <code class="docutils literal notranslate"><span class="pre">--auto_yes</span></code> and allow QSMxT to guess the intended purpose of each acquisition. In this case, it makes the right guess:</p>
+<div class="cell tag_output_scroll docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>dicom-convert<span class="w"> </span>dicoms-unsorted<span class="w"> </span>bids<span class="w"> </span>--auto_yes
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/opt/miniconda-4.12.0/lib/python3.8/site-packages/dicompare/io.py:30: UserWarning: The DICOM readers are highly experimental, unstable, and only work for Siemens time-series at the moment
+Please use with caution.  We would be grateful for your help in improving them
+  from nibabel.nicom.csareader import get_csa_header
+[INFO]: Running QSMxT 8.1.1
+[INFO]: Command: /opt/miniconda-4.12.0/bin/dicom-convert dicoms-unsorted bids --auto_yes
+[INFO]: Python interpreter: /opt/miniconda-4.12.0/bin/python3.8
+Loading DICOM files: 100%|█████████████████| 1216/1216 [00:04&lt;00:00, 254.03it/s]
+[INFO]: Loaded DICOM session in 4.88 seconds
+/opt/miniconda-4.12.0/lib/python3.8/site-packages/dicompare/acquisition.py:144: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  session_df[&quot;BaseAcquisition&quot;] = &quot;acq-&quot; + session_df[acquisition_fields].apply(
+/opt/miniconda-4.12.0/lib/python3.8/site-packages/dicompare/acquisition.py:195: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  session_df.loc[param_group.index, &quot;AcquisitionSignature&quot;] = signature
+/opt/miniconda-4.12.0/lib/python3.8/site-packages/dicompare/acquisition.py:218: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  session_df[&quot;RunNumber&quot;] = 1
+/opt/miniconda-4.12.0/lib/python3.8/site-packages/dicompare/acquisition.py:301: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  session_df[&quot;Acquisition&quot;] = session_df[&quot;AcquisitionSignature&quot;].fillna(&quot;Unknown&quot;).astype(str)
+[INFO]: Auto-assigning initial labels
+[INFO]: Auto-assigned selections:
+                    Acquisition  ... Description
+0  acq-mp2ragehighres0p5isoslab  ...            
+1           acq-qsmp21mmisote20  ...            
+2           acq-qsmp21mmisote20  ...            
+
+[3 rows x 7 columns]
+[INFO]: Merging selections into dataframe...
+[INFO]: Processing base group: (&#39;dev_siemens^SB&#39;, 1, 20170705, &#39;acq-mp2ragehighres0p5isoslab&#39;, &#39;mp2rage_highRes_0p5iso_slab_UNI-DEN&#39;, 1, &#39;1.2.276.0.7230010.3.1.3.0.4480.1677042698.772469&#39;, &#39;NA&#39;)
+[INFO]: Found 1 unique Types in this group
+[INFO]: Processing Type group: T1w with 288 rows
+[INFO]: Found multiple DICOM paths for Type &#39;T1w&#39;, grouping by EchoNumber
+[INFO]: Processing Echo group: 1.0 with 288 rows
+[INFO]: Converting group with 288 rows
+[INFO]: Running command: &#39;&quot;dcm2niix&quot; -o &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/temp_convert&quot; -f &quot;temp_output&quot; -z n -m o &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/temp_convert&quot;&#39;
+Chris Rorden&#39;s dcm2niiX version v1.0.20240202  (JP2:OpenJPEG) (JP-LS:CharLS) GCC11.4.0 x86-64 (64-bit Linux)
+Found 288 DICOM file(s)
+Convert 288 DICOM as /home/ashley/repos/example-notebooks/books/structural_imaging/bids/temp_convert/temp_output (378x420x288x1)
+Conversion required 0.251406 seconds (0.249745 for core code).
+[INFO]: Processing base group: (&#39;dev_siemens^SB&#39;, 1, 20170705, &#39;acq-qsmp21mmisote20&#39;, &#39;QSM_p2_1mmIso_TE20&#39;, 1, &#39;1.3.12.2.1107.5.2.43.167001.2017070513471948579426649.0.0.0&#39;, &#39;HC1-7&#39;)
+[INFO]: Found 1 unique Types in this group
+[INFO]: Processing Type group: Mag with 160 rows
+[INFO]: Found multiple DICOM paths for Type &#39;Mag&#39;, grouping by EchoNumber
+[INFO]: Processing Echo group: 1.0 with 160 rows
+[INFO]: Converting group with 160 rows
+[INFO]: Running command: &#39;&quot;dcm2niix&quot; -o &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/temp_convert&quot; -f &quot;temp_output&quot; -z n -m o &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/temp_convert&quot;&#39;
+Chris Rorden&#39;s dcm2niiX version v1.0.20240202  (JP2:OpenJPEG) (JP-LS:CharLS) GCC11.4.0 x86-64 (64-bit Linux)
+Found 160 DICOM file(s)
+Convert 160 DICOM as /home/ashley/repos/example-notebooks/books/structural_imaging/bids/temp_convert/temp_output (224x224x160x1)
+Conversion required 0.066910 seconds (0.065767 for core code).
+[INFO]: Processing base group: (&#39;dev_siemens^SB&#39;, 1, 20170705, &#39;acq-qsmp21mmisote20&#39;, &#39;QSM_p2_1mmIso_TE20&#39;, 1, &#39;1.3.12.2.1107.5.2.43.167001.2017070513471948580526650.0.0.0&#39;, &#39;HC1-7&#39;)
+[INFO]: Found 1 unique Types in this group
+[INFO]: Processing Type group: Phase with 160 rows
+[INFO]: Found multiple DICOM paths for Type &#39;Phase&#39;, grouping by EchoNumber
+[INFO]: Processing Echo group: 1.0 with 160 rows
+[INFO]: Converting group with 160 rows
+[INFO]: Running command: &#39;&quot;dcm2niix&quot; -o &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/temp_convert&quot; -f &quot;temp_output&quot; -z n -m o &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/temp_convert&quot;&#39;
+Chris Rorden&#39;s dcm2niiX version v1.0.20240202  (JP2:OpenJPEG) (JP-LS:CharLS) GCC11.4.0 x86-64 (64-bit Linux)
+Found 160 DICOM file(s)
+Convert 160 DICOM as /home/ashley/repos/example-notebooks/books/structural_imaging/bids/temp_convert/temp_output_ph (224x224x160x1)
+Conversion required 0.078257 seconds (0.074531 for core code).
+[INFO]: Processing base group: (&#39;dev_siemens^SB&#39;, 2, 20170705, &#39;acq-mp2ragehighres0p5isoslab&#39;, &#39;mp2rage_highRes_0p5iso_slab_UNI-DEN&#39;, 1, 2, &#39;NA&#39;)
+[INFO]: Found 1 unique Types in this group
+[INFO]: Processing Type group: T1w with 288 rows
+[INFO]: Found multiple DICOM paths for Type &#39;T1w&#39;, grouping by EchoNumber
+[INFO]: Processing Echo group: 1.0 with 288 rows
+[INFO]: Converting group with 288 rows
+[INFO]: Running command: &#39;&quot;dcm2niix&quot; -o &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/temp_convert&quot; -f &quot;temp_output&quot; -z n -m o &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/temp_convert&quot;&#39;
+Chris Rorden&#39;s dcm2niiX version v1.0.20240202  (JP2:OpenJPEG) (JP-LS:CharLS) GCC11.4.0 x86-64 (64-bit Linux)
+Found 288 DICOM file(s)
+Convert 288 DICOM as /home/ashley/repos/example-notebooks/books/structural_imaging/bids/temp_convert/temp_output (378x420x288x1)
+Conversion required 0.260042 seconds (0.258533 for core code).
+[INFO]: Processing base group: (&#39;dev_siemens^SB&#39;, 2, 20170705, &#39;acq-qsmp21mmisote20&#39;, &#39;QSM_p2_1mmIso_TE20&#39;, 1, 1, &#39;HC1-7&#39;)
+[INFO]: Found 1 unique Types in this group
+[INFO]: Processing Type group: Mag with 160 rows
+[INFO]: Found multiple DICOM paths for Type &#39;Mag&#39;, grouping by EchoNumber
+[INFO]: Processing Echo group: 1.0 with 160 rows
+[INFO]: Converting group with 160 rows
+[INFO]: Running command: &#39;&quot;dcm2niix&quot; -o &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/temp_convert&quot; -f &quot;temp_output&quot; -z n -m o &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/temp_convert&quot;&#39;
+Chris Rorden&#39;s dcm2niiX version v1.0.20240202  (JP2:OpenJPEG) (JP-LS:CharLS) GCC11.4.0 x86-64 (64-bit Linux)
+Found 160 DICOM file(s)
+Convert 160 DICOM as /home/ashley/repos/example-notebooks/books/structural_imaging/bids/temp_convert/temp_output (224x224x160x1)
+Conversion required 0.077077 seconds (0.075843 for core code).
+[INFO]: Processing base group: (&#39;dev_siemens^SB&#39;, 2, 20170705, &#39;acq-qsmp21mmisote20&#39;, &#39;QSM_p2_1mmIso_TE20&#39;, 1, 3, &#39;HC1-7&#39;)
+[INFO]: Found 1 unique Types in this group
+[INFO]: Processing Type group: Phase with 160 rows
+[INFO]: Found multiple DICOM paths for Type &#39;Phase&#39;, grouping by EchoNumber
+[INFO]: Processing Echo group: 1.0 with 160 rows
+[INFO]: Converting group with 160 rows
+[INFO]: Running command: &#39;&quot;dcm2niix&quot; -o &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/temp_convert&quot; -f &quot;temp_output&quot; -z n -m o &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/temp_convert&quot;&#39;
+Chris Rorden&#39;s dcm2niiX version v1.0.20240202  (JP2:OpenJPEG) (JP-LS:CharLS) GCC11.4.0 x86-64 (64-bit Linux)
+Found 160 DICOM file(s)
+Convert 160 DICOM as /home/ashley/repos/example-notebooks/books/structural_imaging/bids/temp_convert/temp_output_ph (224x224x160x1)
+Conversion required 0.073196 seconds (0.072460 for core code).
+[INFO]: Scanning for multi-coil data to merge...
+[INFO]: Scanning for multi-coil runs to combine...
+[INFO]: Checking for complex or polar data requiring fixing...
+Loading NIfTIs: 100%|███████████████████████████| 6/6 [00:00&lt;00:00, 1443.16it/s]
+[INFO]: Finished
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>tree<span class="w"> </span>bids
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">bids</span>
+├── log_2025-08-25_03-39-16601683.txt
+├── log_2025-08-25_03-39-25951254.txt
+├── references.txt
+├── <span class=" -Color -Color-Bold -Color-Bold-Blue">sub-1</span>
+│   └── <span class=" -Color -Color-Bold -Color-Bold-Blue">ses-20170705</span>
+│       └── <span class=" -Color -Color-Bold -Color-Bold-Blue">anat</span>
+│           ├── sub-1_ses-20170705_acq-acqmp2ragehighres0p5isoslab_part-mag_T1w.json
+│           ├── sub-1_ses-20170705_acq-acqmp2ragehighres0p5isoslab_part-mag_T1w.nii
+│           ├── sub-1_ses-20170705_acq-acqqsmp21mmisote20_part-mag_T2starw.json
+│           ├── sub-1_ses-20170705_acq-acqqsmp21mmisote20_part-mag_T2starw.nii
+│           ├── sub-1_ses-20170705_acq-acqqsmp21mmisote20_part-phase_T2starw.json
+│           └── sub-1_ses-20170705_acq-acqqsmp21mmisote20_part-phase_T2starw.nii
+└── <span class=" -Color -Color-Bold -Color-Bold-Blue">sub-2</span>
+    └── <span class=" -Color -Color-Bold -Color-Bold-Blue">ses-20170705</span>
+        └── <span class=" -Color -Color-Bold -Color-Bold-Blue">anat</span>
+            ├── sub-2_ses-20170705_acq-acqmp2ragehighres0p5isoslab_part-mag_T1w.json
+            ├── sub-2_ses-20170705_acq-acqmp2ragehighres0p5isoslab_part-mag_T1w.nii
+            ├── sub-2_ses-20170705_acq-acqqsmp21mmisote20_part-mag_T2starw.json
+            ├── sub-2_ses-20170705_acq-acqqsmp21mmisote20_part-mag_T2starw.nii
+            ├── sub-2_ses-20170705_acq-acqqsmp21mmisote20_part-phase_T2starw.json
+            └── sub-2_ses-20170705_acq-acqqsmp21mmisote20_part-phase_T2starw.nii
+
+7 directories, 15 files
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="inspect-input-data">
+<h1>Inspect input data<a class="headerlink" href="#inspect-input-data" title="Link to this heading">#</a></h1>
+<p>Here we define a function we will use to visualise NIfTI images so we can view some of the input data:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%capture</span>
+<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">seaborn</span> <span class="n">numpy</span> <span class="n">nibabel</span> <span class="n">pandas</span> <span class="n">ipyniivue</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">glob</span><span class="w"> </span><span class="kn">import</span> <span class="n">glob</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">nibabel</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">nib</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">show_nii</span><span class="p">(</span><span class="n">nii_path</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">imshow_args</span><span class="p">):</span>
+    <span class="c1"># load data\n&quot;,</span>
+    <span class="n">data_1</span> <span class="o">=</span> <span class="n">nib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">nii_path</span><span class="p">)</span><span class="o">.</span><span class="n">get_fdata</span><span class="p">()</span>
+
+    <span class="c1"># get middle slices\n&quot;,</span>
+    <span class="n">slc_data1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">rot90</span><span class="p">(</span><span class="n">data_1</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">data_1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">//</span><span class="mi">2</span><span class="p">,:,:])</span>
+    <span class="n">slc_data2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">rot90</span><span class="p">(</span><span class="n">data_1</span><span class="p">[:,</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">data_1</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">//</span><span class="mi">2</span><span class="p">,:])</span>
+    <span class="n">slc_data3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">rot90</span><span class="p">(</span><span class="n">data_1</span><span class="p">[:,:,</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">data_1</span><span class="p">)[</span><span class="mi">2</span><span class="p">]</span><span class="o">//</span><span class="mi">2</span><span class="p">])</span>
+
+    <span class="c1"># show slices\n&quot;,</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="n">figsize</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">title</span><span class="p">:</span> <span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+
+    <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">slc_data1</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">cmap</span><span class="p">,</span> <span class="o">**</span><span class="n">imshow_args</span><span class="p">)</span>
+    <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">slc_data2</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">cmap</span><span class="p">,</span> <span class="o">**</span><span class="n">imshow_args</span><span class="p">)</span>
+    <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">slc_data3</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">cmap</span><span class="p">,</span> <span class="o">**</span><span class="n">imshow_args</span><span class="p">)</span>
+
+    <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
+    <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
+    <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
+
+    <span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">top</span><span class="o">=</span><span class="mf">1.55</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show_nii</span><span class="p">(</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;bids/sub-*/ses-*/anat/*mag*T2starw*nii*&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Magnitude&quot;</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+<span class="n">show_nii</span><span class="p">(</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;bids/sub-*/ses-*/anat/*phase*T2starw*nii*&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Phase&quot;</span><span class="p">)</span>
+<span class="n">show_nii</span><span class="p">(</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;bids/sub-*/ses-*/anat/*T1w*nii*&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;T1-weighted&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/0f16ed520ba96dc1834afab78602883a210b3aeb76f79155205bb1845a8c61f0.png" src="../_images/0f16ed520ba96dc1834afab78602883a210b3aeb76f79155205bb1845a8c61f0.png" />
+<img alt="../_images/c2a9ea3ab541e3908cf9ae518a5d66a9983edb070e418db4bcfc7f6d0a0df21e.png" src="../_images/c2a9ea3ab541e3908cf9ae518a5d66a9983edb070e418db4bcfc7f6d0a0df21e.png" />
+<img alt="../_images/fcaced730f7b547b9e18070da87ad67d73f0522fd16a0024fc7c9431f74c9055.png" src="../_images/fcaced730f7b547b9e18070da87ad67d73f0522fd16a0024fc7c9431f74c9055.png" />
+</div>
+</div>
+<p>Interactive Display using Niivue</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">ipyniivue</span><span class="w"> </span><span class="kn">import</span> <span class="n">NiiVue</span>
+
+<span class="n">nv_T1</span> <span class="o">=</span> <span class="n">NiiVue</span><span class="p">()</span>
+<span class="n">nv_T1</span><span class="o">.</span><span class="n">load_volumes</span><span class="p">([{</span><span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">glob</span><span class="p">(</span><span class="s2">&quot;bids/sub-*/ses-*/anat/*T1w*nii*&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]}])</span>
+<span class="c1"># Uncomment the following line to interact with the image</span>
+<span class="c1"># nv_T1</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="run-qsmxt">
+<h1>Run QSMxT<a class="headerlink" href="#run-qsmxt" title="Link to this heading">#</a></h1>
+<p>We are now ready to run QSMxT! We will generate susceptibility maps and segmentations, and export analysis CSVs to file.</p>
+<p>The usual way of running QSMxT is to use <code class="docutils literal notranslate"><span class="pre">qsmxt</span> <span class="pre">bids_dir</span></code>. This will launch an interactive command-line interface (CLI) to setup your desired pipelines. However, since we are running this in a notebook, we need to use command-line arguments to by-pass the interface and execute a pipeline.</p>
+<p>But first, let’s consider our pipeline settings. For QSM reconstruction, QSMxT provides a range of sensible defaults fit for different purposes. We can list the premade QSM pipelines using <code class="docutils literal notranslate"><span class="pre">--list_premades</span></code>. For the full pipeline details used for each premade pipeline, see <a class="reference external" href="https://github.com/QSMxT/QSMxT/blob/main/qsmxt/qsm_pipelines.json">qsm_pipelines.json</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>qsmxt<span class="w"> </span>--list_premades
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== Premade pipelines ===
+default: Default QSMxT settings (GRE; assumes human brain)
+gre: Applies suggested settings for 3D-GRE images
+epi: Applies suggested settings for 3D-EPI images (assumes human brain)
+bet: Applies a traditional BET-masking approach (artefact reduction unavailable; assumes human brain)
+fast: Applies a set of fast algorithms
+body: Applies suggested settings for non-brain applications
+nextqsm: Applies suggested settings for running the NeXtQSM algorithm (assumes human brain)
+[INFO]: Finished
+</pre></div>
+</div>
+</div>
+</div>
+<p>For this demonstration, we will go with the <code class="docutils literal notranslate"><span class="pre">fast</span></code> pipeline. To export segmentations and analysis results, we will use <code class="docutils literal notranslate"><span class="pre">--do_segmentation</span></code> and <code class="docutils literal notranslate"><span class="pre">--do_analysis</span></code>. The <code class="docutils literal notranslate"><span class="pre">--auto_yes</span></code> option avoid the interactive CLI interface that cannot be used in a notebook:</p>
+<div class="cell tag_output_scroll docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>qsmxt<span class="w"> </span>bids<span class="w"> </span><span class="err">\</span>
+    <span class="o">--</span><span class="n">premade</span> <span class="n">fast</span> \
+    <span class="o">--</span><span class="n">do_qsm</span> \
+    <span class="o">--</span><span class="n">do_segmentation</span> \
+    <span class="o">--</span><span class="n">do_analysis</span> \
+    <span class="o">--</span><span class="n">auto_yes</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[INFO]: QSMxT v8.1.1
+[INFO]: Python interpreter: /opt/miniconda-4.12.0/bin/python3.8
+[INFO]: Command: qsmxt /home/ashley/repos/example-notebooks/books/structural_imaging/bids --premade &#39;fast&#39; --do_qsm --do_segmentation --do_analysis --auto_yes
+[WARNING]: Pipeline is NOT guidelines compliant (see https://doi.org/10.1002/mrm.30006):; Phase-quality-based masking recommended
+[INFO]: Available memory: 12.85 GB
+[INFO]: Creating QSMxT workflow for sub-1.ses-20170705.acq-acqmp2ragehighres0p5isoslab.T1w...
+[INFO]: Creating QSMxT workflow for sub-1.ses-20170705.acq-acqqsmp21mmisote20.T2starw...
+[INFO]: Creating QSMxT workflow for sub-2.ses-20170705.acq-acqmp2ragehighres0p5isoslab.T1w...
+[INFO]: Creating QSMxT workflow for sub-2.ses-20170705.acq-acqqsmp21mmisote20.T2starw...
+[INFO]: Running using MultiProc plugin with n_procs=14
+250825-03:41:40,962 nipype.workflow INFO:
+	 Workflow qsmxt-workflow settings: [&#39;check&#39;, &#39;execution&#39;, &#39;logging&#39;, &#39;monitoring&#39;]
+250825-03:41:40,978 nipype.workflow INFO:
+	 Running in parallel.
+250825-03:41:40,984 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 24 jobs ready. Free memory (GB): 27.72/27.72, Free processors: 14/14.
+250825-03:41:41,75 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.func_read-json-me&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqmp2ragehighres0p5isoslab_T1w/func_read-json-me&quot;.
+250825-03:41:41,76 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.nibabel_as-canonical&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqmp2ragehighres0p5isoslab_T1w/nibabel_as-canonical&quot;.
+250825-03:41:41,77 nipype.workflow INFO:
+	 [Node] Executing &quot;func_read-json-me&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-03:41:41,78 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.fastsurfer_segment-t1&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqmp2ragehighres0p5isoslab_T1w/fastsurfer_segment-t1&quot;.
+250825-03:41:41,78 nipype.workflow INFO:
+	 [Node] Finished &quot;func_read-json-me&quot;, elapsed time 0.000476s.
+250825-03:41:41,78 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel_as-canonical&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-03:41:41,79 nipype.workflow INFO:
+	 [Node] Executing &quot;fastsurfer_segment-t1&quot; &lt;qsmxt.interfaces.nipype_interface_fastsurfer.FastSurferInterface&gt;
+250825-03:41:41,87 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel_as-canonical&quot;, elapsed time 0.007659s.
+250825-03:41:41,76 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.nibabel_read-nii&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqmp2ragehighres0p5isoslab_T1w/nibabel_read-nii&quot;.
+250825-03:41:41,77 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.func_read-json-me&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/func_read-json-me&quot;.
+250825-03:41:41,129 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel_read-nii&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-03:41:41,130 nipype.workflow INFO:
+	 [Node] Executing &quot;func_read-json-me&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-03:41:41,131 nipype.workflow INFO:
+	 [Node] Finished &quot;func_read-json-me&quot;, elapsed time 0.000454s.
+250825-03:41:41,133 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel_read-nii&quot;, elapsed time 0.002607s.
+250825-03:41:41,75 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.func_read-json-se&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqmp2ragehighres0p5isoslab_T1w/func_read-json-se&quot;.
+250825-03:41:41,78 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.func_read-json-se&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/func_read-json-se&quot;.
+250825-03:41:41,179 nipype.workflow INFO:
+	 [Node] Executing &quot;func_read-json-se&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-03:41:41,181 nipype.workflow INFO:
+	 [Node] Finished &quot;func_read-json-se&quot;, elapsed time 0.000784s.
+250825-03:41:41,181 nipype.workflow INFO:
+	 [Node] Executing &quot;func_read-json-se&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-03:41:41,183 nipype.workflow INFO:
+	 [Node] Finished &quot;func_read-json-se&quot;, elapsed time 0.0007s.
+250825-03:41:42,985 nipype.workflow INFO:
+	 [Job 0] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.func_read-json-me).
+250825-03:41:42,986 nipype.workflow INFO:
+	 [Job 1] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.func_read-json-se).
+250825-03:41:42,986 nipype.workflow INFO:
+	 [Job 2] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.nibabel_read-nii).
+250825-03:41:42,987 nipype.workflow INFO:
+	 [Job 3] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.nibabel_as-canonical).
+250825-03:41:42,987 nipype.workflow INFO:
+	 [Job 6] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.func_read-json-me).
+250825-03:41:42,987 nipype.workflow INFO:
+	 [Job 7] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.func_read-json-se).
+250825-03:41:42,988 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 18 jobs ready. Free memory (GB): 15.72/27.72, Free processors: 6/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.fastsurfer_segment-t1
+250825-03:41:43,44 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.ants_register-t1-to-qsm&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqmp2ragehighres0p5isoslab_T1w/ants_register-t1-to-qsm&quot;.
+250825-03:41:43,48 nipype.workflow INFO:
+	 [Node] Executing &quot;ants_register-t1-to-qsm&quot; &lt;nipype.interfaces.ants.registration.RegistrationSynQuick&gt;
+250825-03:41:44,986 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 17 jobs ready. Free memory (GB): 7.72/27.72, Free processors: 0/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.ants_register-t1-to-qsm
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.fastsurfer_segment-t1
+250825-03:46:45,202 nipype.workflow INFO:
+	 [Node] Finished &quot;ants_register-t1-to-qsm&quot;, elapsed time 302.14979s.
+250825-03:46:47,386 nipype.workflow INFO:
+	 [Job 5] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.ants_register-t1-to-qsm).
+250825-03:46:47,391 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 17 jobs ready. Free memory (GB): 15.72/27.72, Free processors: 6/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.fastsurfer_segment-t1
+250825-03:46:47,591 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_read-nii&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/nibabel_read-nii&quot;.
+250825-03:46:47,596 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.func_read-json-se&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqmp2ragehighres0p5isoslab_T1w/func_read-json-se&quot;.
+250825-03:46:47,597 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.nibabel_as-canonical&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqmp2ragehighres0p5isoslab_T1w/nibabel_as-canonical&quot;.
+250825-03:46:47,622 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel_read-nii&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-03:46:47,590 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_as-canonical&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/nibabel_as-canonical&quot;.
+250825-03:46:47,599 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.nibabel_read-nii&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqmp2ragehighres0p5isoslab_T1w/nibabel_read-nii&quot;.
+250825-03:46:47,658 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel_read-nii&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-03:46:47,668 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel_read-nii&quot;, elapsed time 0.007757s.
+250825-03:46:47,622 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel_as-canonical&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-03:46:47,622 nipype.workflow INFO:
+	 [Node] Executing &quot;func_read-json-se&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-03:46:47,685 nipype.workflow INFO:
+	 [Node] Finished &quot;func_read-json-se&quot;, elapsed time 0.002565s.
+250825-03:46:47,591 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.func_read-json-me&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqmp2ragehighres0p5isoslab_T1w/func_read-json-me&quot;.
+250825-03:46:47,645 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel_read-nii&quot;, elapsed time 0.018221s.
+250825-03:46:47,700 nipype.workflow INFO:
+	 [Node] Executing &quot;func_read-json-me&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-03:46:47,652 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel_as-canonical&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-03:46:47,704 nipype.workflow INFO:
+	 [Node] Finished &quot;func_read-json-me&quot;, elapsed time 0.001192s.
+250825-03:46:47,706 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel_as-canonical&quot;, elapsed time 0.028843s.
+250825-03:46:47,720 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel_as-canonical&quot;, elapsed time 0.013783s.
+250825-03:46:49,387 nipype.workflow INFO:
+	 [Job 8] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_read-nii).
+250825-03:46:49,389 nipype.workflow INFO:
+	 [Job 9] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_as-canonical).
+250825-03:46:49,391 nipype.workflow INFO:
+	 [Job 12] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.func_read-json-me).
+250825-03:46:49,392 nipype.workflow INFO:
+	 [Job 13] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.func_read-json-se).
+250825-03:46:49,393 nipype.workflow INFO:
+	 [Job 14] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.nibabel_read-nii).
+250825-03:46:49,394 nipype.workflow INFO:
+	 [Job 15] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.nibabel_as-canonical).
+250825-03:46:49,396 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 14 jobs ready. Free memory (GB): 15.72/27.72, Free processors: 6/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.fastsurfer_segment-t1
+250825-03:46:49,475 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.ants_register-t1-to-qsm&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/ants_register-t1-to-qsm&quot;.
+250825-03:46:49,486 nipype.workflow INFO:
+	 [Node] Executing &quot;ants_register-t1-to-qsm&quot; &lt;nipype.interfaces.ants.registration.RegistrationSynQuick&gt;
+250825-03:46:51,389 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 13 jobs ready. Free memory (GB): 7.72/27.72, Free processors: 0/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.ants_register-t1-to-qsm
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.fastsurfer_segment-t1
+250825-03:49:39,869 nipype.workflow INFO:
+	 [Node] Finished &quot;ants_register-t1-to-qsm&quot;, elapsed time 170.380782s.
+250825-03:49:41,621 nipype.workflow INFO:
+	 [Job 11] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.ants_register-t1-to-qsm).
+250825-03:49:41,623 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 13 jobs ready. Free memory (GB): 15.72/27.72, Free processors: 6/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.fastsurfer_segment-t1
+250825-03:49:41,679 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.ants_register-t1-to-qsm&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqmp2ragehighres0p5isoslab_T1w/ants_register-t1-to-qsm&quot;.
+250825-03:49:41,686 nipype.workflow INFO:
+	 [Node] Executing &quot;ants_register-t1-to-qsm&quot; &lt;nipype.interfaces.ants.registration.RegistrationSynQuick&gt;
+250825-03:49:43,626 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 12 jobs ready. Free memory (GB): 7.72/27.72, Free processors: 0/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.ants_register-t1-to-qsm
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.fastsurfer_segment-t1
+250825-03:50:45,932 nipype.workflow INFO:
+	 [Node] Finished &quot;fastsurfer_segment-t1&quot;, elapsed time 544.851713s.
+250825-03:50:47,699 nipype.workflow INFO:
+	 [Job 4] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.fastsurfer_segment-t1).
+250825-03:50:47,701 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 13 jobs ready. Free memory (GB): 19.72/27.72, Free processors: 8/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.ants_register-t1-to-qsm
+250825-03:50:47,782 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.fastsurfer_segment-t1&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/fastsurfer_segment-t1&quot;.
+250825-03:50:47,787 nipype.workflow INFO:
+	 [Node] Executing &quot;fastsurfer_segment-t1&quot; &lt;qsmxt.interfaces.nipype_interface_fastsurfer.FastSurferInterface&gt;
+250825-03:50:49,700 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 12 jobs ready. Free memory (GB): 7.72/27.72, Free processors: 0/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.fastsurfer_segment-t1
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.ants_register-t1-to-qsm
+250825-03:55:21,170 nipype.workflow INFO:
+	 [Node] Finished &quot;ants_register-t1-to-qsm&quot;, elapsed time 339.48211s.
+250825-03:55:22,49 nipype.workflow INFO:
+	 [Job 17] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.ants_register-t1-to-qsm).
+250825-03:55:22,51 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 12 jobs ready. Free memory (GB): 15.72/27.72, Free processors: 6/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.fastsurfer_segment-t1
+250825-03:55:22,172 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.func_read-json-me&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/func_read-json-me&quot;.
+250825-03:55:22,177 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.func_read-json-se&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/func_read-json-se&quot;.
+250825-03:55:22,190 nipype.workflow INFO:
+	 [Node] Executing &quot;func_read-json-se&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-03:55:22,190 nipype.workflow INFO:
+	 [Node] Executing &quot;func_read-json-me&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-03:55:22,188 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.func_getfirst-canonical-magnitude&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqmp2ragehighres0p5isoslab_T1w/func_getfirst-canonical-magnitude&quot;.
+250825-03:55:22,188 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_as-canonical&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/nibabel_as-canonical&quot;.
+250825-03:55:22,198 nipype.workflow INFO:
+	 [Node] Finished &quot;func_read-json-se&quot;, elapsed time 0.002381s.
+250825-03:55:22,200 nipype.workflow INFO:
+	 [Node] Finished &quot;func_read-json-me&quot;, elapsed time 0.004421s.
+250825-03:55:22,198 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.numpy_numpy_nibabel_mgz2nii&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqmp2ragehighres0p5isoslab_T1w/numpy_numpy_nibabel_mgz2nii&quot;.
+250825-03:55:22,202 nipype.workflow INFO:
+	 [Node] Executing &quot;func_getfirst-canonical-magnitude&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-03:55:22,205 nipype.workflow INFO:
+	 [Node] Finished &quot;func_getfirst-canonical-magnitude&quot;, elapsed time 0.0008s.
+250825-03:55:22,208 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel_as-canonical&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-03:55:22,225 nipype.workflow INFO:
+	 [Node] Executing &quot;numpy_numpy_nibabel_mgz2nii&quot; &lt;qsmxt.interfaces.nipype_interface_mgz2nii.Mgz2NiiInterface&gt;
+250825-03:55:22,240 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel_as-canonical&quot;, elapsed time 0.023386s.
+250825-03:55:22,190 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_read-nii&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/nibabel_read-nii&quot;.
+250825-03:55:22,253 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel_read-nii&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-03:55:22,274 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel_read-nii&quot;, elapsed time 0.017205s.
+250825-03:55:22,452 nipype.workflow INFO:
+	 [Node] Finished &quot;numpy_numpy_nibabel_mgz2nii&quot;, elapsed time 0.222932s.
+250825-03:55:24,51 nipype.workflow INFO:
+	 [Job 18] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.func_read-json-me).
+250825-03:55:24,53 nipype.workflow INFO:
+	 [Job 19] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.func_read-json-se).
+250825-03:55:24,54 nipype.workflow INFO:
+	 [Job 20] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_read-nii).
+250825-03:55:24,55 nipype.workflow INFO:
+	 [Job 21] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_as-canonical).
+250825-03:55:24,56 nipype.workflow INFO:
+	 [Job 24] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.func_getfirst-canonical-magnitude).
+250825-03:55:24,64 nipype.workflow INFO:
+	 [Job 25] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.numpy_numpy_nibabel_mgz2nii).
+250825-03:55:24,68 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 10 jobs ready. Free memory (GB): 15.72/27.72, Free processors: 6/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.fastsurfer_segment-t1
+250825-03:55:24,195 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.ants_register-t1-to-qsm&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/ants_register-t1-to-qsm&quot;.
+250825-03:55:24,207 nipype.workflow INFO:
+	 [Node] Executing &quot;ants_register-t1-to-qsm&quot; &lt;nipype.interfaces.ants.registration.RegistrationSynQuick&gt;
+250825-03:55:26,55 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 9 jobs ready. Free memory (GB): 7.72/27.72, Free processors: 0/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.ants_register-t1-to-qsm
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.fastsurfer_segment-t1
+250825-03:58:56,46 nipype.workflow INFO:
+	 [Node] Finished &quot;ants_register-t1-to-qsm&quot;, elapsed time 211.834933s.
+250825-03:58:56,404 nipype.workflow INFO:
+	 [Job 23] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.ants_register-t1-to-qsm).
+250825-03:58:56,406 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 9 jobs ready. Free memory (GB): 15.72/27.72, Free processors: 6/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.fastsurfer_segment-t1
+250825-03:58:56,492 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_scale-phase&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/nibabel_numpy_scale-phase&quot;.
+250825-03:58:56,496 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.func_getfirst-canonical-magnitude&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/func_getfirst-canonical-magnitude&quot;.
+250825-03:58:56,501 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_scale-phase&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/nibabel_numpy_scale-phase&quot;.
+250825-03:58:56,504 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.func_getfirst-canonical-magnitude&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqmp2ragehighres0p5isoslab_T1w/func_getfirst-canonical-magnitude&quot;.
+250825-03:58:56,515 nipype.workflow INFO:
+	 [Node] Executing &quot;func_getfirst-canonical-magnitude&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-03:58:56,521 nipype.workflow INFO:
+	 [Node] Finished &quot;func_getfirst-canonical-magnitude&quot;, elapsed time 0.002173s.
+250825-03:58:56,525 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel_numpy_scale-phase&quot; &lt;qsmxt.interfaces.nipype_interface_processphase.ScalePhaseInterface&gt;
+250825-03:58:56,526 nipype.workflow INFO:
+	 [Node] Executing &quot;func_getfirst-canonical-magnitude&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-03:58:56,528 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel_numpy_scale-phase&quot; &lt;qsmxt.interfaces.nipype_interface_processphase.ScalePhaseInterface&gt;
+250825-03:58:56,535 nipype.workflow INFO:
+	 [Node] Finished &quot;func_getfirst-canonical-magnitude&quot;, elapsed time 0.002478s.
+250825-03:58:56,497 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.nibabel_numpy_nilearn_t1w-seg-resampled&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqmp2ragehighres0p5isoslab_T1w/nibabel_numpy_nilearn_t1w-seg-resampled&quot;.
+250825-03:58:56,554 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel_numpy_nilearn_t1w-seg-resampled&quot; &lt;qsmxt.interfaces.nipype_interface_resample_like.ResampleLikeInterface&gt;
+250825-03:58:56,502 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.func_getfirst-canonical-magnitude&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/func_getfirst-canonical-magnitude&quot;.
+250825-03:58:56,574 nipype.workflow INFO:
+	 [Node] Executing &quot;func_getfirst-canonical-magnitude&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-03:58:56,581 nipype.workflow INFO:
+	 [Node] Finished &quot;func_getfirst-canonical-magnitude&quot;, elapsed time 0.002977s.
+250825-03:58:57,198 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel_numpy_scale-phase&quot;, elapsed time 0.666212s.
+250825-03:58:57,246 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel_numpy_scale-phase&quot;, elapsed time 0.713249s.
+250825-03:58:58,406 nipype.workflow INFO:
+	 [Job 26] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_scale-phase).
+250825-03:58:58,408 nipype.workflow INFO:
+	 [Job 27] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.func_getfirst-canonical-magnitude).
+250825-03:58:58,409 nipype.workflow INFO:
+	 [Job 29] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.func_getfirst-canonical-magnitude).
+250825-03:58:58,410 nipype.workflow INFO:
+	 [Job 31] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_scale-phase).
+250825-03:58:58,411 nipype.workflow INFO:
+	 [Job 32] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.func_getfirst-canonical-magnitude).
+250825-03:58:58,413 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 5 jobs ready. Free memory (GB): 13.72/27.72, Free processors: 5/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.nibabel_numpy_nilearn_t1w-seg-resampled
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.fastsurfer_segment-t1
+250825-03:58:58,556 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.ants_transform-segmentation-to-qsm&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqmp2ragehighres0p5isoslab_T1w/ants_transform-segmentation-to-qsm&quot;.
+250825-03:58:58,558 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_nilearn_axial-resampling&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/nibabel_numpy_nilearn_axial-resampling&quot;.
+250825-03:58:58,562 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_nilearn_axial-resampling&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/nibabel_numpy_nilearn_axial-resampling&quot;.
+250825-03:58:58,567 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel_numpy_nilearn_axial-resampling&quot; &lt;qsmxt.interfaces.nipype_interface_axialsampling.AxialSamplingInterface&gt;
+250825-03:58:58,574 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel_numpy_nilearn_axial-resampling&quot; &lt;qsmxt.interfaces.nipype_interface_axialsampling.AxialSamplingInterface&gt;
+250825-03:58:58,586 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel_numpy_nilearn_axial-resampling&quot;, elapsed time 0.016913s.
+250825-03:58:58,605 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel_numpy_nilearn_axial-resampling&quot;, elapsed time 0.026816s.
+250825-03:58:58,615 nipype.workflow INFO:
+	 [Node] Executing &quot;ants_transform-segmentation-to-qsm&quot; &lt;nipype.interfaces.ants.resampling.ApplyTransforms&gt;
+250825-03:59:00,412 nipype.workflow INFO:
+	 [Job 36] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_nilearn_axial-resampling).
+250825-03:59:00,433 nipype.workflow INFO:
+	 [Job 41] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_nilearn_axial-resampling).
+250825-03:59:00,455 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 6 jobs ready. Free memory (GB): 11.72/27.72, Free processors: 4/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.ants_transform-segmentation-to-qsm
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.nibabel_numpy_nilearn_t1w-seg-resampled
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.fastsurfer_segment-t1
+250825-03:59:00,773 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/qsm_workflow/mrt_romeo&quot;.
+250825-03:59:00,778 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/qsm_workflow/mrt_romeo&quot;.
+250825-03:59:00,820 nipype.workflow INFO:
+	 [Node] Executing &quot;mrt_romeo&quot; &lt;qsmxt.interfaces.nipype_interface_romeo.RomeoB0Interface&gt;
+250825-03:59:00,840 nipype.workflow INFO:
+	 [Node] Executing &quot;mrt_romeo&quot; &lt;qsmxt.interfaces.nipype_interface_romeo.RomeoB0Interface&gt;
+250825-03:59:02,435 nipype.workflow INFO:
+	 [MultiProc] Running 5 tasks, and 4 jobs ready. Free memory (GB): 7.04/27.72, Free processors: 2/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.ants_transform-segmentation-to-qsm
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.nibabel_numpy_nilearn_t1w-seg-resampled
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.fastsurfer_segment-t1
+250825-03:59:08,172 nipype.workflow INFO:
+	 [Node] Finished &quot;ants_transform-segmentation-to-qsm&quot;, elapsed time 9.55001s.
+250825-03:59:08,429 nipype.workflow INFO:
+	 [Job 35] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.ants_transform-segmentation-to-qsm).
+250825-03:59:08,444 nipype.workflow INFO:
+	 [MultiProc] Running 4 tasks, and 4 jobs ready. Free memory (GB): 9.04/27.72, Free processors: 3/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.nibabel_numpy_nilearn_t1w-seg-resampled
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.fastsurfer_segment-t1
+250825-03:59:14,847 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel_numpy_nilearn_t1w-seg-resampled&quot;, elapsed time 18.288881s.
+250825-03:59:16,449 nipype.workflow INFO:
+	 [Job 34] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.nibabel_numpy_nilearn_t1w-seg-resampled).
+250825-03:59:16,477 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 5 jobs ready. Free memory (GB): 11.04/27.72, Free processors: 4/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.fastsurfer_segment-t1
+250825-03:59:17,17 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.copyfile&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqmp2ragehighres0p5isoslab_T1w/copyfile&quot;.
+250825-03:59:17,72 nipype.workflow INFO:
+	 [Node] Executing &quot;copyfile&quot; &lt;qsmxt.interfaces.nipype_interface_copyfile.DynamicCopyFiles&gt;
+250825-03:59:18,484 nipype.workflow INFO:
+	 [MultiProc] Running 4 tasks, and 4 jobs ready. Free memory (GB): 10.84/27.72, Free processors: 3/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.copyfile
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.fastsurfer_segment-t1
+250825-03:59:19,38 nipype.workflow INFO:
+	 [Node] Finished &quot;copyfile&quot;, elapsed time 1.958106s.
+250825-03:59:20,459 nipype.workflow INFO:
+	 [Job 44] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.copyfile).
+250825-03:59:20,514 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 4 jobs ready. Free memory (GB): 11.04/27.72, Free processors: 4/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.fastsurfer_segment-t1
+250825-03:59:43,804 nipype.workflow INFO:
+	 [Node] Finished &quot;fastsurfer_segment-t1&quot;, elapsed time 536.014169s.
+250825-03:59:44,477 nipype.workflow INFO:
+	 [Job 10] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.fastsurfer_segment-t1).
+250825-03:59:44,480 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 5 jobs ready. Free memory (GB): 23.04/27.72, Free processors: 12/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo
+250825-03:59:44,538 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.numpy_numpy_nibabel_mgz2nii&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/numpy_numpy_nibabel_mgz2nii&quot;.
+250825-03:59:44,538 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.fastsurfer_segment-t1&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqmp2ragehighres0p5isoslab_T1w/fastsurfer_segment-t1&quot;.
+250825-03:59:44,540 nipype.workflow INFO:
+	 [Node] Executing &quot;fastsurfer_segment-t1&quot; &lt;qsmxt.interfaces.nipype_interface_fastsurfer.FastSurferInterface&gt;
+250825-03:59:44,540 nipype.workflow INFO:
+	 [Node] Executing &quot;numpy_numpy_nibabel_mgz2nii&quot; &lt;qsmxt.interfaces.nipype_interface_mgz2nii.Mgz2NiiInterface&gt;
+250825-03:59:44,683 nipype.workflow INFO:
+	 [Node] Finished &quot;numpy_numpy_nibabel_mgz2nii&quot;, elapsed time 0.142189s.
+250825-03:59:46,478 nipype.workflow INFO:
+	 [Job 28] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.numpy_numpy_nibabel_mgz2nii).
+250825-03:59:46,481 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 5 jobs ready. Free memory (GB): 11.04/27.72, Free processors: 4/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.fastsurfer_segment-t1
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo
+250825-03:59:46,538 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_nilearn_t1w-seg-resampled&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/nibabel_numpy_nilearn_t1w-seg-resampled&quot;.
+250825-03:59:46,539 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.ants_transform-segmentation-to-qsm&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/ants_transform-segmentation-to-qsm&quot;.
+250825-03:59:46,541 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel_numpy_nilearn_t1w-seg-resampled&quot; &lt;qsmxt.interfaces.nipype_interface_resample_like.ResampleLikeInterface&gt;
+250825-03:59:46,548 nipype.workflow INFO:
+	 [Node] Executing &quot;ants_transform-segmentation-to-qsm&quot; &lt;nipype.interfaces.ants.resampling.ApplyTransforms&gt;
+250825-03:59:47,32 nipype.workflow INFO:
+	 [Node] Finished &quot;ants_transform-segmentation-to-qsm&quot;, elapsed time 0.48324s.
+250825-03:59:48,480 nipype.workflow INFO:
+	 [Job 38] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.ants_transform-segmentation-to-qsm).
+250825-03:59:48,482 nipype.workflow INFO:
+	 [MultiProc] Running 4 tasks, and 4 jobs ready. Free memory (GB): 9.04/27.72, Free processors: 3/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_nilearn_t1w-seg-resampled
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.fastsurfer_segment-t1
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo
+250825-03:59:48,534 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.combine_lists2&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/combine_lists2&quot;.
+250825-03:59:48,536 nipype.workflow INFO:
+	 [Node] Executing &quot;combine_lists2&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-03:59:48,538 nipype.workflow INFO:
+	 [Node] Finished &quot;combine_lists2&quot;, elapsed time 0.001084s.
+250825-03:59:49,713 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel_numpy_nilearn_t1w-seg-resampled&quot;, elapsed time 3.171211s.
+250825-03:59:50,482 nipype.workflow INFO:
+	 [Job 37] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_nilearn_t1w-seg-resampled).
+250825-03:59:50,483 nipype.workflow INFO:
+	 [Job 47] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.combine_lists2).
+250825-03:59:50,485 nipype.workflow INFO:
+	 [MultiProc] Running 3 tasks, and 3 jobs ready. Free memory (GB): 11.04/27.72, Free processors: 4/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.fastsurfer_segment-t1
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo
+250825-04:07:17,604 nipype.workflow INFO:
+	 [Node] Finished &quot;mrt_romeo&quot;, elapsed time 496.77802s.
+250825-04:07:19,31 nipype.workflow INFO:
+	 [Job 50] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo).
+250825-04:07:19,34 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 4 jobs ready. Free memory (GB): 13.38/27.72, Free processors: 5/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.fastsurfer_segment-t1
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo
+250825-04:07:19,118 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.nibabel-numpy_normalize-phase&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/qsm_workflow/nibabel-numpy_normalize-phase&quot;.
+250825-04:07:19,130 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel-numpy_normalize-phase&quot; &lt;qsmxt.interfaces.nipype_interface_processphase.PhaseToNormalizedInterface&gt;
+250825-04:07:19,216 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel-numpy_normalize-phase&quot;, elapsed time 0.084208s.
+250825-04:07:21,33 nipype.workflow INFO:
+	 [Job 55] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.nibabel-numpy_normalize-phase).
+250825-04:07:21,34 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 3 jobs ready. Free memory (GB): 13.38/27.72, Free processors: 5/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.fastsurfer_segment-t1
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo
+250825-04:08:00,673 nipype.workflow INFO:
+	 [Node] Finished &quot;mrt_romeo&quot;, elapsed time 539.809623s.
+250825-04:08:01,78 nipype.workflow INFO:
+	 [Job 46] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.mrt_romeo).
+250825-04:08:01,80 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 4 jobs ready. Free memory (GB): 15.72/27.72, Free processors: 6/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.fastsurfer_segment-t1
+250825-04:08:01,156 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.nibabel-numpy_normalize-phase&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/qsm_workflow/nibabel-numpy_normalize-phase&quot;.
+250825-04:08:01,171 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel-numpy_normalize-phase&quot; &lt;qsmxt.interfaces.nipype_interface_processphase.PhaseToNormalizedInterface&gt;
+250825-04:08:01,350 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel-numpy_normalize-phase&quot;, elapsed time 0.177227s.
+250825-04:08:03,80 nipype.workflow INFO:
+	 [Job 53] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.nibabel-numpy_normalize-phase).
+250825-04:08:03,82 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 3 jobs ready. Free memory (GB): 15.72/27.72, Free processors: 6/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.fastsurfer_segment-t1
+250825-04:08:12,404 nipype.workflow INFO:
+	 [Node] Finished &quot;fastsurfer_segment-t1&quot;, elapsed time 507.863076s.
+250825-04:08:13,90 nipype.workflow INFO:
+	 [Job 16] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.fastsurfer_segment-t1).
+250825-04:08:13,92 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 4 jobs ready. Free memory (GB): 27.72/27.72, Free processors: 14/14.
+250825-04:08:13,132 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.numpy_numpy_nibabel_mgz2nii&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqmp2ragehighres0p5isoslab_T1w/numpy_numpy_nibabel_mgz2nii&quot;.
+250825-04:08:13,132 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.fastsurfer_segment-t1&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/fastsurfer_segment-t1&quot;.
+250825-04:08:13,134 nipype.workflow INFO:
+	 [Node] Executing &quot;numpy_numpy_nibabel_mgz2nii&quot; &lt;qsmxt.interfaces.nipype_interface_mgz2nii.Mgz2NiiInterface&gt;
+250825-04:08:13,135 nipype.workflow INFO:
+	 [Node] Executing &quot;fastsurfer_segment-t1&quot; &lt;qsmxt.interfaces.nipype_interface_fastsurfer.FastSurferInterface&gt;
+250825-04:08:13,268 nipype.workflow INFO:
+	 [Node] Finished &quot;numpy_numpy_nibabel_mgz2nii&quot;, elapsed time 0.132617s.
+250825-04:08:15,92 nipype.workflow INFO:
+	 [Job 30] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.numpy_numpy_nibabel_mgz2nii).
+250825-04:08:15,94 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 4 jobs ready. Free memory (GB): 15.72/27.72, Free processors: 6/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.fastsurfer_segment-t1
+250825-04:08:15,135 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.nibabel_numpy_nilearn_t1w-seg-resampled&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqmp2ragehighres0p5isoslab_T1w/nibabel_numpy_nilearn_t1w-seg-resampled&quot;.
+250825-04:08:15,137 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel_numpy_nilearn_t1w-seg-resampled&quot; &lt;qsmxt.interfaces.nipype_interface_resample_like.ResampleLikeInterface&gt;
+250825-04:08:15,135 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.ants_transform-segmentation-to-qsm&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqmp2ragehighres0p5isoslab_T1w/ants_transform-segmentation-to-qsm&quot;.
+250825-04:08:15,191 nipype.workflow INFO:
+	 [Node] Executing &quot;ants_transform-segmentation-to-qsm&quot; &lt;nipype.interfaces.ants.resampling.ApplyTransforms&gt;
+250825-04:08:15,975 nipype.workflow INFO:
+	 [Node] Finished &quot;ants_transform-segmentation-to-qsm&quot;, elapsed time 0.782673s.
+250825-04:08:17,94 nipype.workflow INFO:
+	 [Job 40] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.ants_transform-segmentation-to-qsm).
+250825-04:08:17,96 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 2 jobs ready. Free memory (GB): 13.72/27.72, Free processors: 5/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.nibabel_numpy_nilearn_t1w-seg-resampled
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.fastsurfer_segment-t1
+250825-04:08:17,621 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel_numpy_nilearn_t1w-seg-resampled&quot;, elapsed time 2.483173s.
+250825-04:08:19,96 nipype.workflow INFO:
+	 [Job 39] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.nibabel_numpy_nilearn_t1w-seg-resampled).
+250825-04:08:19,98 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 3 jobs ready. Free memory (GB): 15.72/27.72, Free processors: 6/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.fastsurfer_segment-t1
+250825-04:08:19,168 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.copyfile&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqmp2ragehighres0p5isoslab_T1w/copyfile&quot;.
+250825-04:08:19,173 nipype.workflow INFO:
+	 [Node] Executing &quot;copyfile&quot; &lt;qsmxt.interfaces.nipype_interface_copyfile.DynamicCopyFiles&gt;
+250825-04:08:19,359 nipype.workflow INFO:
+	 [Node] Finished &quot;copyfile&quot;, elapsed time 0.1851s.
+250825-04:08:21,99 nipype.workflow INFO:
+	 [Job 48] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqmp2ragehighres0p5isoslab_T1w.copyfile).
+250825-04:08:21,265 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 2 jobs ready. Free memory (GB): 15.72/27.72, Free processors: 6/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.fastsurfer_segment-t1
+250825-04:16:20,275 nipype.workflow INFO:
+	 [Node] Finished &quot;fastsurfer_segment-t1&quot;, elapsed time 487.088796s.
+250825-04:16:21,669 nipype.workflow INFO:
+	 [Job 22] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.fastsurfer_segment-t1).
+250825-04:16:21,670 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 3 jobs ready. Free memory (GB): 27.72/27.72, Free processors: 14/14.
+250825-04:16:21,726 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.numpy_numpy_nibabel_mgz2nii&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/numpy_numpy_nibabel_mgz2nii&quot;.
+250825-04:16:21,727 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.mask_workflow.fsl-bet&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/mask_workflow/fsl-bet&quot;.
+250825-04:16:21,729 nipype.workflow INFO:
+	 [Node] Executing &quot;numpy_numpy_nibabel_mgz2nii&quot; &lt;qsmxt.interfaces.nipype_interface_mgz2nii.Mgz2NiiInterface&gt;
+250825-04:16:21,731 nipype.workflow INFO:
+	 [Node] Executing &quot;fsl-bet&quot; &lt;qsmxt.interfaces.nipype_interface_bet2.Bet2Interface&gt;
+250825-04:16:21,869 nipype.workflow INFO:
+	 [Node] Finished &quot;numpy_numpy_nibabel_mgz2nii&quot;, elapsed time 0.140142s.
+250825-04:16:23,587 nipype.workflow INFO:
+	 [Node] Finished &quot;fsl-bet&quot;, elapsed time 1.855826s.
+250825-04:16:23,671 nipype.workflow INFO:
+	 [Job 33] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.numpy_numpy_nibabel_mgz2nii).
+250825-04:16:23,672 nipype.workflow INFO:
+	 [Job 45] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.mask_workflow.fsl-bet).
+250825-04:16:23,673 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 4 jobs ready. Free memory (GB): 27.72/27.72, Free processors: 14/14.
+250825-04:16:23,733 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_nilearn_t1w-seg-resampled&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/nibabel_numpy_nilearn_t1w-seg-resampled&quot;.
+250825-04:16:23,733 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.mask_workflow.fsl-bet&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/mask_workflow/fsl-bet&quot;.
+250825-04:16:23,734 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.mask_workflow.scipy_numpy_nibabel_bet_erode&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/mask_workflow/scipy_numpy_nibabel_bet_erode&quot;.
+250825-04:16:23,734 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel_numpy_nilearn_t1w-seg-resampled&quot; &lt;qsmxt.interfaces.nipype_interface_resample_like.ResampleLikeInterface&gt;
+250825-04:16:23,735 nipype.workflow INFO:
+	 [Node] Executing &quot;scipy_numpy_nibabel_bet_erode&quot; &lt;qsmxt.interfaces.nipype_interface_erode.ErosionInterface&gt;
+250825-04:16:23,737 nipype.workflow INFO:
+	 [Node] Executing &quot;fsl-bet&quot; &lt;qsmxt.interfaces.nipype_interface_bet2.Bet2Interface&gt;
+250825-04:16:23,733 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.ants_transform-segmentation-to-qsm&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/ants_transform-segmentation-to-qsm&quot;.
+250825-04:16:23,796 nipype.workflow INFO:
+	 [Node] Executing &quot;ants_transform-segmentation-to-qsm&quot; &lt;nipype.interfaces.ants.resampling.ApplyTransforms&gt;
+250825-04:16:24,180 nipype.workflow INFO:
+	 [Node] Finished &quot;ants_transform-segmentation-to-qsm&quot;, elapsed time 0.383082s.
+250825-04:16:24,428 nipype.workflow INFO:
+	 [Node] Finished &quot;scipy_numpy_nibabel_bet_erode&quot;, elapsed time 0.691406s.
+250825-04:16:25,577 nipype.workflow INFO:
+	 [Node] Finished &quot;fsl-bet&quot;, elapsed time 1.839091s.
+250825-04:16:25,673 nipype.workflow INFO:
+	 [Job 43] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.ants_transform-segmentation-to-qsm).
+250825-04:16:25,674 nipype.workflow INFO:
+	 [Job 49] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.mask_workflow.fsl-bet).
+250825-04:16:25,675 nipype.workflow INFO:
+	 [Job 52] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.mask_workflow.scipy_numpy_nibabel_bet_erode).
+250825-04:16:25,677 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 3 jobs ready. Free memory (GB): 25.72/27.72, Free processors: 13/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_nilearn_t1w-seg-resampled
+250825-04:16:25,723 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.combine_lists2&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/combine_lists2&quot;.
+250825-04:16:25,723 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.qsmjl_vsharp&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/qsm_workflow/qsmjl_vsharp&quot;.
+250825-04:16:25,725 nipype.workflow INFO:
+	 [Node] Executing &quot;combine_lists2&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-04:16:25,726 nipype.workflow INFO:
+	 [Node] Finished &quot;combine_lists2&quot;, elapsed time 0.000421s.
+250825-04:16:25,729 nipype.workflow INFO:
+	 [Node] Executing &quot;qsmjl_vsharp&quot; &lt;qsmxt.interfaces.nipype_interface_qsmjl.VsharpInterface&gt;
+250825-04:16:25,723 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.mask_workflow.scipy_numpy_nibabel_bet_erode&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/mask_workflow/scipy_numpy_nibabel_bet_erode&quot;.
+250825-04:16:25,776 nipype.workflow INFO:
+	 [Node] Executing &quot;scipy_numpy_nibabel_bet_erode&quot; &lt;qsmxt.interfaces.nipype_interface_erode.ErosionInterface&gt;
+250825-04:16:26,319 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel_numpy_nilearn_t1w-seg-resampled&quot;, elapsed time 2.583818s.
+250825-04:16:26,371 nipype.workflow INFO:
+	 [Node] Finished &quot;scipy_numpy_nibabel_bet_erode&quot;, elapsed time 0.594512s.
+250825-04:16:27,675 nipype.workflow INFO:
+	 [Job 42] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_nilearn_t1w-seg-resampled).
+250825-04:16:27,676 nipype.workflow INFO:
+	 [Job 51] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.combine_lists2).
+250825-04:16:27,676 nipype.workflow INFO:
+	 [Job 54] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.mask_workflow.scipy_numpy_nibabel_bet_erode).
+250825-04:16:27,677 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 25.72/27.72, Free processors: 12/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.qsmjl_vsharp
+250825-04:16:27,717 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.qsmjl_vsharp&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/qsm_workflow/qsmjl_vsharp&quot;.
+250825-04:16:27,721 nipype.workflow INFO:
+	 [Node] Executing &quot;qsmjl_vsharp&quot; &lt;qsmxt.interfaces.nipype_interface_qsmjl.VsharpInterface&gt;
+250825-04:16:29,677 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 0 jobs ready. Free memory (GB): 23.72/27.72, Free processors: 10/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.qsmjl_vsharp
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.qsmjl_vsharp
+250825-04:18:42,179 nipype.workflow INFO:
+	 [Node] Finished &quot;qsmjl_vsharp&quot;, elapsed time 136.449863s.
+250825-04:18:43,810 nipype.workflow INFO:
+	 [Job 56] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.qsmjl_vsharp).
+250825-04:18:43,815 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 25.72/27.72, Free processors: 12/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.qsmjl_vsharp
+250825-04:18:43,865 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.qsmjl_rts&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/qsm_workflow/qsmjl_rts&quot;.
+250825-04:18:43,868 nipype.workflow INFO:
+	 [Node] Executing &quot;qsmjl_rts&quot; &lt;qsmxt.interfaces.nipype_interface_qsmjl.RtsQsmInterface&gt;
+250825-04:18:45,70 nipype.workflow INFO:
+	 [Node] Finished &quot;qsmjl_vsharp&quot;, elapsed time 137.348991s.
+250825-04:18:45,812 nipype.workflow INFO:
+	 [Job 57] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.qsmjl_vsharp).
+250825-04:18:45,813 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 25.31/27.72, Free processors: 12/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.qsmjl_rts
+250825-04:18:45,855 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.qsmjl_rts&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/qsm_workflow/qsmjl_rts&quot;.
+250825-04:18:45,857 nipype.workflow INFO:
+	 [Node] Executing &quot;qsmjl_rts&quot; &lt;qsmxt.interfaces.nipype_interface_qsmjl.RtsQsmInterface&gt;
+250825-04:18:47,814 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 0 jobs ready. Free memory (GB): 22.90/27.72, Free processors: 10/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.qsmjl_rts
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.qsmjl_rts
+250825-04:19:33,687 nipype.workflow INFO:
+	 [Node] Finished &quot;qsmjl_rts&quot;, elapsed time 49.818341s.
+250825-04:19:33,859 nipype.workflow INFO:
+	 [Job 58] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.qsmjl_rts).
+250825-04:19:33,861 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 25.31/27.72, Free processors: 12/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.qsmjl_rts
+250825-04:19:33,907 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_qsm-average&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/nibabel_numpy_qsm-average&quot;.
+250825-04:19:33,909 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel_numpy_qsm-average&quot; &lt;qsmxt.interfaces.nipype_interface_nonzeroaverage.NonzeroAverageInterface&gt;
+250825-04:19:33,910 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel_numpy_qsm-average&quot;, elapsed time 0.000119s.
+250825-04:19:34,836 nipype.workflow INFO:
+	 [Node] Finished &quot;qsmjl_rts&quot;, elapsed time 48.978322s.
+250825-04:19:35,861 nipype.workflow INFO:
+	 [Job 59] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.qsm_workflow.qsmjl_rts).
+250825-04:19:35,863 nipype.workflow INFO:
+	 [Job 60] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_qsm-average).
+250825-04:19:35,865 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 2 jobs ready. Free memory (GB): 27.72/27.72, Free processors: 14/14.
+250825-04:19:35,905 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_qsm-average&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/nibabel_numpy_qsm-average&quot;.
+250825-04:19:35,905 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_nilearn_qsm-resampled&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/nibabel_numpy_nilearn_qsm-resampled&quot;.
+250825-04:19:35,907 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel_numpy_qsm-average&quot; &lt;qsmxt.interfaces.nipype_interface_nonzeroaverage.NonzeroAverageInterface&gt;
+250825-04:19:35,907 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel_numpy_qsm-average&quot;, elapsed time 9.4e-05s.
+250825-04:19:35,909 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel_numpy_nilearn_qsm-resampled&quot; &lt;qsmxt.interfaces.nipype_interface_resample_like.ResampleLikeInterface&gt;
+250825-04:19:35,913 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel_numpy_nilearn_qsm-resampled&quot;, elapsed time 0.002452s.
+250825-04:19:37,863 nipype.workflow INFO:
+	 [Job 61] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_qsm-average).
+250825-04:19:37,864 nipype.workflow INFO:
+	 [Job 62] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_nilearn_qsm-resampled).
+250825-04:19:37,865 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 3 jobs ready. Free memory (GB): 27.72/27.72, Free processors: 14/14.
+250825-04:19:37,905 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_qsm-referenced&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/nibabel_numpy_qsm-referenced&quot;.
+250825-04:19:37,907 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel_numpy_qsm-referenced&quot; &lt;qsmxt.interfaces.nipype_interface_qsm_referencing.ReferenceQSMInterface&gt;
+250825-04:19:37,905 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.combine_lists1&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/combine_lists1&quot;.
+250825-04:19:37,957 nipype.workflow INFO:
+	 [Node] Executing &quot;combine_lists1&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-04:19:37,958 nipype.workflow INFO:
+	 [Node] Finished &quot;combine_lists1&quot;, elapsed time 0.000764s.
+250825-04:19:37,905 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_nilearn_qsm-resampled&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/nibabel_numpy_nilearn_qsm-resampled&quot;.
+250825-04:19:38,9 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel_numpy_nilearn_qsm-resampled&quot; &lt;qsmxt.interfaces.nipype_interface_resample_like.ResampleLikeInterface&gt;
+250825-04:19:38,12 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel_numpy_nilearn_qsm-resampled&quot;, elapsed time 0.002644s.
+250825-04:19:38,277 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel_numpy_qsm-referenced&quot;, elapsed time 0.369526s.
+250825-04:19:39,865 nipype.workflow INFO:
+	 [Job 63] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_nilearn_qsm-resampled).
+250825-04:19:39,868 nipype.workflow INFO:
+	 [Job 64] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_qsm-referenced).
+250825-04:19:39,869 nipype.workflow INFO:
+	 [Job 65] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.combine_lists1).
+250825-04:19:39,870 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 4 jobs ready. Free memory (GB): 27.72/27.72, Free processors: 14/14.
+250825-04:19:39,912 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_qsm-referenced&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/nibabel_numpy_qsm-referenced&quot;.
+250825-04:19:39,912 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.copy_qsm_json_sidecar&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/copy_qsm_json_sidecar&quot;.
+250825-04:19:39,913 nipype.workflow INFO:
+	 [Node] Executing &quot;nibabel_numpy_qsm-referenced&quot; &lt;qsmxt.interfaces.nipype_interface_qsm_referencing.ReferenceQSMInterface&gt;
+250825-04:19:39,914 nipype.workflow INFO:
+	 [Node] Executing &quot;copy_qsm_json_sidecar&quot; &lt;qsmxt.interfaces.nipype_interface_copy_json_sidecar.CopyJsonSidecarInterface&gt;
+250825-04:19:39,917 nipype.workflow INFO:
+	 [Node] Finished &quot;copy_qsm_json_sidecar&quot;, elapsed time 0.002302s.
+250825-04:19:39,912 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.combine_lists1&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/combine_lists1&quot;.
+250825-04:19:39,912 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.create_permutations&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/create_permutations&quot;.
+250825-04:19:39,965 nipype.workflow INFO:
+	 [Node] Executing &quot;combine_lists1&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-04:19:39,966 nipype.workflow INFO:
+	 [Node] Finished &quot;combine_lists1&quot;, elapsed time 0.000361s.
+250825-04:19:39,967 nipype.workflow INFO:
+	 [Node] Executing &quot;create_permutations&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-04:19:39,968 nipype.workflow INFO:
+	 [Node] Finished &quot;create_permutations&quot;, elapsed time 0.000416s.
+250825-04:19:40,306 nipype.workflow INFO:
+	 [Node] Finished &quot;nibabel_numpy_qsm-referenced&quot;, elapsed time 0.392569s.
+250825-04:19:41,867 nipype.workflow INFO:
+	 [Job 66] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_qsm-referenced).
+250825-04:19:41,867 nipype.workflow INFO:
+	 [Job 67] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.combine_lists1).
+250825-04:19:41,868 nipype.workflow INFO:
+	 [Job 68] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.copy_qsm_json_sidecar).
+250825-04:19:41,868 nipype.workflow INFO:
+	 [Job 69] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.create_permutations).
+250825-04:19:41,869 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 3 jobs ready. Free memory (GB): 27.72/27.72, Free processors: 14/14.
+250825-04:19:41,906 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.create_permutations&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/create_permutations&quot;.
+250825-04:19:41,906 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.copy_qsm_json_sidecar&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/copy_qsm_json_sidecar&quot;.
+250825-04:19:41,908 nipype.workflow INFO:
+	 [Node] Executing &quot;create_permutations&quot; &lt;nipype.interfaces.utility.wrappers.Function&gt;
+250825-04:19:41,908 nipype.workflow INFO:
+	 [Node] Finished &quot;create_permutations&quot;, elapsed time 0.000223s.
+250825-04:19:41,908 nipype.workflow INFO:
+	 [Node] Executing &quot;copy_qsm_json_sidecar&quot; &lt;qsmxt.interfaces.nipype_interface_copy_json_sidecar.CopyJsonSidecarInterface&gt;
+250825-04:19:41,911 nipype.workflow INFO:
+	 [Node] Setting-up &quot;_nibabel_numpy_analyse-qsm0&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/nibabel_numpy_analyse-qsm/mapflow/_nibabel_numpy_analyse-qsm0&quot;.
+250825-04:19:41,911 nipype.workflow INFO:
+	 [Node] Finished &quot;copy_qsm_json_sidecar&quot;, elapsed time 0.002299s.
+250825-04:19:41,912 nipype.workflow INFO:
+	 [Node] Executing &quot;_nibabel_numpy_analyse-qsm0&quot; &lt;qsmxt.interfaces.nipype_interface_analyse.AnalyseInterface&gt;
+250825-04:19:43,869 nipype.workflow INFO:
+	 [Job 70] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.copy_qsm_json_sidecar).
+250825-04:19:43,870 nipype.workflow INFO:
+	 [Job 71] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.create_permutations).
+250825-04:19:43,872 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 25.72/27.72, Free processors: 13/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_analyse-qsm
+250825-04:19:43,937 nipype.workflow INFO:
+	 [Node] Setting-up &quot;_nibabel_numpy_analyse-qsm0&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/nibabel_numpy_analyse-qsm/mapflow/_nibabel_numpy_analyse-qsm0&quot;.
+250825-04:19:43,939 nipype.workflow INFO:
+	 [Node] Executing &quot;_nibabel_numpy_analyse-qsm0&quot; &lt;qsmxt.interfaces.nipype_interface_analyse.AnalyseInterface&gt;
+250825-04:19:45,872 nipype.workflow INFO:
+	 [MultiProc] Running 2 tasks, and 0 jobs ready. Free memory (GB): 23.72/27.72, Free processors: 12/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_analyse-qsm
+                       * qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_analyse-qsm
+250825-04:20:46,897 nipype.workflow INFO:
+	 [Node] Finished &quot;_nibabel_numpy_analyse-qsm0&quot;, elapsed time 64.984031s.
+250825-04:20:47,931 nipype.workflow INFO:
+	 [Job 72] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_analyse-qsm).
+250825-04:20:47,932 nipype.workflow INFO:
+	 [MultiProc] Running 1 tasks, and 1 jobs ready. Free memory (GB): 25.72/27.72, Free processors: 13/14.
+                     Currently running:
+                       * qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_analyse-qsm
+250825-04:20:47,982 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.copyfile&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-1/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/copyfile&quot;.
+250825-04:20:47,989 nipype.workflow INFO:
+	 [Node] Executing &quot;copyfile&quot; &lt;qsmxt.interfaces.nipype_interface_copyfile.DynamicCopyFiles&gt;
+250825-04:20:48,126 nipype.workflow INFO:
+	 [Node] Finished &quot;copyfile&quot;, elapsed time 0.13606s.
+250825-04:20:48,444 nipype.workflow INFO:
+	 [Node] Finished &quot;_nibabel_numpy_analyse-qsm0&quot;, elapsed time 64.504081s.
+250825-04:20:49,933 nipype.workflow INFO:
+	 [Job 73] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.nibabel_numpy_analyse-qsm).
+250825-04:20:49,934 nipype.workflow INFO:
+	 [Job 74] Completed (qsmxt-workflow.sub-1.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.copyfile).
+250825-04:20:49,934 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 1 jobs ready. Free memory (GB): 27.72/27.72, Free processors: 14/14.
+250825-04:20:49,977 nipype.workflow INFO:
+	 [Node] Setting-up &quot;qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.copyfile&quot; in &quot;/home/ashley/repos/example-notebooks/books/structural_imaging/bids/derivatives/workflow/qsmxt-workflow/sub-2/ses-20170705/qsm_acq-acqqsmp21mmisote20_T2starw/copyfile&quot;.
+250825-04:20:49,980 nipype.workflow INFO:
+	 [Node] Executing &quot;copyfile&quot; &lt;qsmxt.interfaces.nipype_interface_copyfile.DynamicCopyFiles&gt;
+250825-04:20:50,37 nipype.workflow INFO:
+	 [Node] Finished &quot;copyfile&quot;, elapsed time 0.056167s.
+250825-04:20:51,935 nipype.workflow INFO:
+	 [Job 75] Completed (qsmxt-workflow.sub-2.ses-20170705.qsm_acq-acqqsmp21mmisote20_T2starw.copyfile).
+250825-04:20:51,937 nipype.workflow INFO:
+	 [MultiProc] Running 0 tasks, and 0 jobs ready. Free memory (GB): 27.72/27.72, Free processors: 14/14.
+[INFO]: Warnings occurred!
+[INFO]: Finished
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="view-results">
+<h1>View results<a class="headerlink" href="#view-results" title="Link to this heading">#</a></h1>
+<p>Let’s have a look at the generated <code class="docutils literal notranslate"><span class="pre">qsm</span></code> folder:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>tree<span class="w"> </span>bids/derivatives/qsmxt-*-*<span class="w"> </span>--dirsfirst
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Bold -Color-Bold-Blue">bids/derivatives/qsmxt-2025-08-25-034120</span>
+├── <span class=" -Color -Color-Bold -Color-Bold-Blue">sub-1</span>
+│   └── <span class=" -Color -Color-Bold -Color-Bold-Blue">ses-20170705</span>
+│       ├── <span class=" -Color -Color-Bold -Color-Bold-Blue">anat</span>
+│       │   ├── sub-1_ses-20170705_acq-acqmp2ragehighres0p5isoslab_T1w_space-orig_dseg.nii
+│       │   ├── sub-1_ses-20170705_acq-acqmp2ragehighres0p5isoslab_T1w_space-qsm_dseg.nii
+│       │   ├── sub-1_ses-20170705_acq-acqqsmp21mmisote20_T2starw_Chimap.json
+│       │   ├── sub-1_ses-20170705_acq-acqqsmp21mmisote20_T2starw_Chimap.nii
+│       │   ├── sub-1_ses-20170705_acq-acqqsmp21mmisote20_T2starw_space-orig_dseg.nii
+│       │   └── sub-1_ses-20170705_acq-acqqsmp21mmisote20_T2starw_space-qsm_dseg.nii
+│       └── <span class=" -Color -Color-Bold -Color-Bold-Blue">extra_data</span>
+│           ├── sub-1_ses-20170705_acq-acqmp2ragehighres0p5isoslab_T1w_desc-t1w-to-qsm_transform.mat
+│           ├── sub-1_ses-20170705_acq-acqqsmp21mmisote20_T2starw_desc-t1w-to-qsm_transform.mat
+│           └── sub-1_ses-20170705_acq-acqqsmp21mmisote20_T2starw_qsm-analysis.csv
+├── <span class=" -Color -Color-Bold -Color-Bold-Blue">sub-2</span>
+│   └── <span class=" -Color -Color-Bold -Color-Bold-Blue">ses-20170705</span>
+│       ├── <span class=" -Color -Color-Bold -Color-Bold-Blue">anat</span>
+│       │   ├── sub-2_ses-20170705_acq-acqmp2ragehighres0p5isoslab_T1w_space-orig_dseg.nii
+│       │   ├── sub-2_ses-20170705_acq-acqmp2ragehighres0p5isoslab_T1w_space-qsm_dseg.nii
+│       │   ├── sub-2_ses-20170705_acq-acqqsmp21mmisote20_T2starw_Chimap.json
+│       │   ├── sub-2_ses-20170705_acq-acqqsmp21mmisote20_T2starw_Chimap.nii
+│       │   ├── sub-2_ses-20170705_acq-acqqsmp21mmisote20_T2starw_space-orig_dseg.nii
+│       │   └── sub-2_ses-20170705_acq-acqqsmp21mmisote20_T2starw_space-qsm_dseg.nii
+│       └── <span class=" -Color -Color-Bold -Color-Bold-Blue">extra_data</span>
+│           ├── sub-2_ses-20170705_acq-acqmp2ragehighres0p5isoslab_T1w_desc-t1w-to-qsm_transform.mat
+│           ├── sub-2_ses-20170705_acq-acqqsmp21mmisote20_T2starw_desc-t1w-to-qsm_transform.mat
+│           └── sub-2_ses-20170705_acq-acqqsmp21mmisote20_T2starw_qsm-analysis.csv
+├── command.txt
+├── pypeline.log
+├── qsmxt.log
+├── references.txt
+└── settings.json
+
+9 directories, 23 files
+</pre></div>
+</div>
+</div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">references.txt</span></code> file contains a list of all the algorithms used and relevant citations:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>cat<span class="w"> </span>bids/derivatives/qsmxt-*-*/references.txt
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>== References ==
+
+ - QSMxT: Stewart AW, Robinson SD, O&#39;Brien K, et al. QSMxT: Robust masking and artifact reduction for quantitative susceptibility mapping. Magnetic Resonance in Medicine. 2022;87(3):1289-1300. doi:10.1002/mrm.29048
+
+ - QSMxT: Stewart AW, Bollman S, et al. QSMxT/QSMxT. GitHub; 2022. https://github.com/QSMxT/QSMxT
+
+ - Python package - Nipype: Gorgolewski K, Burns C, Madison C, et al. Nipype: A Flexible, Lightweight and Extensible Neuroimaging Data Processing Framework in Python. Frontiers in Neuroinformatics. 2011;5. Accessed April 20, 2022. doi:10.3389/fninf.2011.00013
+
+ - Brain extraction: Smith SM. Fast robust automated brain extraction. Human Brain Mapping. 2002;17(3):143-155. doi:10.1002/hbm.10062
+
+ - Brain extraction: Liangfu Chen. liangfu/bet2 - Standalone Brain Extraction Tool. GitHub; 2015. https://github.com/liangfu/bet2
+
+ - Unwrapping algorithm - ROMEO: Dymerska B, Eckstein K, Bachrata B, et al. Phase unwrapping with a rapid opensource minimum spanning tree algorithm (ROMEO). Magnetic Resonance in Medicine. 2021;85(4):2294-2308. doi:10.1002/mrm.28563
+
+ - Background field removal - V-SHARP: Wu B, Li W, Guidon A et al. Whole brain susceptibility mapping using compressed sensing. Magnetic resonance in medicine. 2012 Jan;67(1):137-47. doi:10.1002/mrm.23000
+
+ - QSM algorithm - RTS: Kames C, Wiggermann V, Rauscher A. Rapid two-step dipole inversion for susceptibility mapping with sparsity priors. Neuroimage. 2018 Feb 15;167:276-83. doi:10.1016/j.neuroimage.2017.11.018
+
+ - Julia package - QSM.jl: kamesy. GitHub; 2022. https://github.com/kamesy/QSM.jl
+
+ - Julia package - MriResearchTools: Eckstein K. korbinian90/MriResearchTools.jl. GitHub; 2022. https://github.com/korbinian90/MriResearchTools.jl
+
+ - Python package - nibabel: Brett M, Markiewicz CJ, Hanke M, et al. nipy/nibabel. GitHub; 2019. https://github.com/nipy/nibabel
+
+ - Python package - scipy: Virtanen P, Gommers R, Oliphant TE, et al. SciPy 1.0: fundamental algorithms for scientific computing in Python. Nat Methods. 2020;17(3):261-272. doi:10.1038/s41592-019-0686-2
+
+ - Python package - numpy: Harris CR, Millman KJ, van der Walt SJ, et al. Array programming with NumPy. Nature. 2020;585(7825):357-362. doi:10.1038/s41586-020-2649-2
+
+ - FastSurfer: Henschel L, Conjeti S, Estrada S, Diers K, Fischl B, Reuter M. FastSurfer - A fast and accurate deep learning based neuroimaging pipeline. NeuroImage. 2020;219:117012. doi:10.1016/j.neuroimage.2020.117012
+
+ - ANTs: Avants BB, Tustison NJ, Johnson HJ. Advanced Normalization Tools. GitHub; 2022. https://github.com/ANTsX/ANTs
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s view one of the QSM results:</p>
+<section id="qsm-results">
+<h2>QSM results<a class="headerlink" href="#qsm-results" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show_nii</span><span class="p">(</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;bids/derivatives/qsmxt-*/sub-*/ses-*/anat/*Chimap.nii*&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Chimap&quot;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=-</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/1793834b4ee72135a15eeb92f58d9ce76a8f70582c68c745dfefc99cefd4db71.png" src="../_images/1793834b4ee72135a15eeb92f58d9ce76a8f70582c68c745dfefc99cefd4db71.png" />
+</div>
+</div>
+</section>
+<section id="segmentations">
+<h2>Segmentations<a class="headerlink" href="#segmentations" title="Link to this heading">#</a></h2>
+<p>Segmentations are generated in both the QSM space and the T1-weighted space. Transformations are also made available.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show_nii</span><span class="p">(</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;bids/derivatives/qsmxt-*/sub-*/ses-*/anat/*qsm_dseg.nii*&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Segmentation&quot;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Set3&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">96</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/64d07a66b65daca4990331d91acbf82aa9485e747598bf6f393275d279ab517f.png" src="../_images/64d07a66b65daca4990331d91acbf82aa9485e747598bf6f393275d279ab517f.png" />
+</div>
+</div>
+</section>
+<section id="analysis-csvs">
+<h2>Analysis CSVs<a class="headerlink" href="#analysis-csvs" title="Link to this heading">#</a></h2>
+<p>CSV files have been exported containing susceptibility values in regions of interest for each subject.</p>
+<p>Here we will load the CSVs, inspect the data and generate figures:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import modules</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The raw CSV files use names from FreeSurfer as exported by FastSurfer. The full list of regions is available <a class="reference external" href="https://github.com/QSMxT/QSMxT/blob/main/qsmxt/aseg_labels.csv">here</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;bids/derivatives/qsmxt-*-*/sub*/ses*/extra*/*.csv&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>roi</th>
+      <th>num_voxels</th>
+      <th>min</th>
+      <th>max</th>
+      <th>median</th>
+      <th>mean</th>
+      <th>std</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>3rd-Ventricle</td>
+      <td>606</td>
+      <td>-0.236484</td>
+      <td>0.194673</td>
+      <td>-0.020096</td>
+      <td>-0.022283</td>
+      <td>0.034961</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4th-Ventricle</td>
+      <td>1558</td>
+      <td>-0.128288</td>
+      <td>0.032236</td>
+      <td>-0.048718</td>
+      <td>-0.050211</td>
+      <td>0.028352</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Brain-Stem</td>
+      <td>19086</td>
+      <td>-0.142628</td>
+      <td>0.214565</td>
+      <td>-0.044262</td>
+      <td>-0.040350</td>
+      <td>0.028972</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>CSF</td>
+      <td>787</td>
+      <td>-1.398799</td>
+      <td>0.946090</td>
+      <td>0.024578</td>
+      <td>0.026632</td>
+      <td>0.142303</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Left-Accumbens-area</td>
+      <td>510</td>
+      <td>-0.143215</td>
+      <td>0.129016</td>
+      <td>0.021351</td>
+      <td>0.020700</td>
+      <td>0.029128</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>ctx-rh-superiorfrontal</td>
+      <td>29949</td>
+      <td>-0.133219</td>
+      <td>0.252426</td>
+      <td>-0.004022</td>
+      <td>-0.009384</td>
+      <td>0.024877</td>
+    </tr>
+    <tr>
+      <th>92</th>
+      <td>ctx-rh-superiorparietal</td>
+      <td>12138</td>
+      <td>-0.083912</td>
+      <td>0.307323</td>
+      <td>-0.015906</td>
+      <td>-0.015151</td>
+      <td>0.021828</td>
+    </tr>
+    <tr>
+      <th>93</th>
+      <td>ctx-rh-superiortemporal</td>
+      <td>16633</td>
+      <td>-0.091664</td>
+      <td>0.249151</td>
+      <td>0.006783</td>
+      <td>0.012637</td>
+      <td>0.024330</td>
+    </tr>
+    <tr>
+      <th>94</th>
+      <td>ctx-rh-supramarginal</td>
+      <td>12084</td>
+      <td>-0.082145</td>
+      <td>0.240087</td>
+      <td>0.018040</td>
+      <td>0.018828</td>
+      <td>0.022929</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>ctx-rh-transversetemporal</td>
+      <td>1255</td>
+      <td>-0.004546</td>
+      <td>0.111561</td>
+      <td>0.034362</td>
+      <td>0.034584</td>
+      <td>0.013029</td>
+    </tr>
+  </tbody>
+</table>
+<p>96 rows × 7 columns</p>
+</div></div></div>
+</div>
+<p>We will select a subset of these ROIs and give them more readable names:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># define regions of interest</span>
+<span class="c1"># see https://github.com/QSMxT/QSMxT/blob/main/qsmxt/aseg_labels.csv for a full list</span>
+<span class="n">rois</span> <span class="o">=</span> <span class="p">{</span> 
+    <span class="s2">&quot;Thalamus&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">49</span><span class="p">],</span>
+    <span class="s2">&quot;Pallidum&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">52</span><span class="p">,</span> <span class="mi">53</span><span class="p">],</span>
+    <span class="s2">&quot;Caudate&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">50</span><span class="p">],</span>
+    <span class="s2">&quot;Putamen&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">51</span><span class="p">],</span>
+    <span class="s2">&quot;Brain stem&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">16</span><span class="p">],</span>
+    <span class="s2">&quot;CSF&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">24</span><span class="p">,</span> <span class="mi">122</span><span class="p">,</span> <span class="mi">257</span><span class="p">,</span> <span class="mi">701</span><span class="p">],</span>
+    <span class="s2">&quot;White matter&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">46</span><span class="p">,</span> <span class="mi">177</span><span class="p">]</span>
+<span class="p">}</span>
+<span class="n">roi_names</span> <span class="o">=</span> <span class="p">{</span> <span class="n">value</span><span class="p">:</span> <span class="n">key</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">rois</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">rois</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="p">}</span>
+<span class="n">roi_ids</span> <span class="o">=</span> <span class="p">[</span><span class="n">value</span> <span class="k">for</span> <span class="n">roi</span> <span class="ow">in</span> <span class="n">rois</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">roi</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># load a reconstruction</span>
+<span class="n">qsm</span> <span class="o">=</span> <span class="n">nib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;bids/derivatives/qsmxt-*-*/sub*/ses*/anat*/*Chimap.nii*&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">get_fdata</span><span class="p">()</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+<span class="n">seg</span> <span class="o">=</span> <span class="n">nib</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;bids/derivatives/qsmxt-*-*/sub*/ses*/anat*/*space-qsm*dseg.nii*&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">get_fdata</span><span class="p">()</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># retain only the rois</span>
+<span class="n">qsm</span> <span class="o">=</span> <span class="n">qsm</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">seg</span><span class="p">,</span> <span class="n">roi_ids</span><span class="p">)]</span>
+<span class="n">seg</span> <span class="o">=</span> <span class="n">seg</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">seg</span><span class="p">,</span> <span class="n">roi_ids</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># convert to a dataframe for plotting purposes</span>
+<span class="n">seg</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">seg</span><span class="p">)</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">roi_names</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span> <span class="s1">&#39;qsm&#39;</span> <span class="p">:</span> <span class="n">qsm</span><span class="p">,</span> <span class="s1">&#39;seg&#39;</span> <span class="p">:</span> <span class="n">seg</span> <span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># summarise data by region including the average and standard deviation</span>
+<span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;seg&#39;</span><span class="p">)[</span><span class="s1">&#39;qsm&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">agg</span><span class="p">([</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="s1">&#39;std&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;mean&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">decimals</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>mean</th>
+      <th>std</th>
+    </tr>
+    <tr>
+      <th>seg</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Brain stem</th>
+      <td>-0.040</td>
+      <td>0.029</td>
+    </tr>
+    <tr>
+      <th>White matter</th>
+      <td>-0.002</td>
+      <td>0.028</td>
+    </tr>
+    <tr>
+      <th>CSF</th>
+      <td>0.027</td>
+      <td>0.142</td>
+    </tr>
+    <tr>
+      <th>Thalamus</th>
+      <td>0.030</td>
+      <td>0.035</td>
+    </tr>
+    <tr>
+      <th>Pallidum</th>
+      <td>0.033</td>
+      <td>0.059</td>
+    </tr>
+    <tr>
+      <th>Caudate</th>
+      <td>0.047</td>
+      <td>0.024</td>
+    </tr>
+    <tr>
+      <th>Putamen</th>
+      <td>0.048</td>
+      <td>0.033</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">medians</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;seg&#39;</span><span class="p">)[</span><span class="s1">&#39;qsm&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">()</span>
+<span class="n">order</span> <span class="o">=</span> <span class="n">medians</span><span class="o">.</span><span class="n">index</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># plot</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;qsm&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;seg&#39;</span><span class="p">,</span> <span class="n">fliersize</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;lightblue&#39;</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="n">order</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">ax</span><span class="o">.</span><span class="n">get_xticks</span><span class="p">())))</span>  <span class="c1"># Set tick positions explicitly</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">ax</span><span class="o">.</span><span class="n">get_xticklabels</span><span class="p">(),</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;pink&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">zorder</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Region of interest&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Susceptibility (ppm)&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;QSM&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/2188076306ab77ae1c723122bcbdd97c5e98c4a04814473f0d61b7322cf3170b.png" src="../_images/2188076306ab77ae1c723122bcbdd97c5e98c4a04814473f0d61b7322cf3170b.png" />
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./structural_imaging"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="freesurfer.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">FreeSurfer</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="sct_toolbox.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">SCT Toolbox</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">QSMxT</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#output-cpu-information">Output CPU information</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#qsmxt-interactive-notebook">QSMxT Interactive Notebook</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-qsm">What is QSM?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-qsmxt">What is QSMxT?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-i-access-qsmxt">How do I access QSMxT?</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#download-example-dicoms">Download example DICOMs</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#load-qsmxt">Load QSMxT</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-standardisation">Data standardisation</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#convert-dicom-to-bids">Convert DICOM to BIDS</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#inspect-input-data">Inspect input data</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#run-qsmxt">Run QSMxT</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#view-results">View results</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qsm-results">QSM results</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#segmentations">Segmentations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-csvs">Analysis CSVs</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Neurodesk Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
