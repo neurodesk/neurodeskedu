@@ -82,9 +82,10 @@ jobs:
       uses: tj-actions/changed-files@c3a1bb2c992d77180ae65be6ae6c166cf40f857c
       with:
         path: "./books"
-        #removing `*.md` for now to skip testing on markdown changes.
         files: |
           **/*.ipynb
+          # TEMPORARY: Support for MFCSC.md (will be converted to ipynb later)
+          **/*.md
         dir_names_exclude_current_dir: "true"
     - name: Filter down to changed notebooks
       id: list_changed_notebooks
@@ -98,7 +99,10 @@ jobs:
           changed_notebooks="${{ inputs.notebook_selector }}"
         else
           echo ${{ steps.find_changed_notebooks.outputs.all_changed_files }}
-          changed_notebooks=$(echo "${{ steps.find_changed_notebooks.outputs.all_changed_files }}")
+          # Original:
+          # changed_notebooks=$(echo "${{ steps.find_changed_notebooks.outputs.all_changed_files }}")
+          # TEMPORARY: sed fix for path resolution (needed for MFCSC.md)
+          changed_notebooks=$(echo "${{ steps.find_changed_notebooks.outputs.all_changed_files }}" | sed 's|books/||g')
         fi
         
         notebook_list='['
@@ -143,9 +147,21 @@ jobs:
         echo $GITHUB_WORKSPACE
         export PATH=/opt/conda/bin:$HOME/.local/bin:$PATH
         echo "PATH=$PATH"
-        echo "NOTEBOOK=$(basename -s .ipynb ${{ matrix.notebooks }})"
+        # Original:
+        # echo "NOTEBOOK=$(basename -s .ipynb ${{ matrix.notebooks }})"
+
+        # TEMPORARY: Logic to handle .md files (will be converted to ipynb later)
+        NOTEBOOK_FILENAME=$(basename "${{ matrix.notebooks }}")
+        if [[ "$NOTEBOOK_FILENAME" == *.ipynb ]]; then
+          NOTEBOOK="${NOTEBOOK_FILENAME%.ipynb}"
+        elif [[ "$NOTEBOOK_FILENAME" == *.md ]]; then
+          NOTEBOOK="${NOTEBOOK_FILENAME%.md}"
+        else
+          NOTEBOOK="$NOTEBOOK_FILENAME"
+        fi
+        echo "NOTEBOOK=$NOTEBOOK"
         echo "DIRNAME=$(dirname ${{ matrix.notebooks }})"
-        echo "NOTEBOOK=$(basename -s .ipynb ${{ matrix.notebooks }})" >> $GITHUB_ENV
+        echo "NOTEBOOK=$NOTEBOOK" >> $GITHUB_ENV
         echo "DIRNAME=$(dirname ${{ matrix.notebooks }})" >> $GITHUB_ENV
         
         # Debugging
