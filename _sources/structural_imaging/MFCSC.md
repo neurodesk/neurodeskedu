@@ -11,6 +11,7 @@ description: >
   A tutorial for using MFCSC to integrate connectomes from different modalities
 ---
 
+# Using MFCSC
 
 > _This tutorial was created by Oren Civier._ 
 >
