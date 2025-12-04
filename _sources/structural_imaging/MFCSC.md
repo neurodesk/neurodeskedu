@@ -1,5 +1,5 @@
 ---
-title: "Using MFCSC"
+title: "MFCSC"
 linkTitle: "MFCSC"
 weight: 1
 tags: ["multimodal", "preprocessing"]
@@ -11,7 +11,7 @@ description: >
   A tutorial for using MFCSC to integrate connectomes from different modalities
 ---
 
-# Using MFCSC
+# MFCSC
 
 > _This tutorial was created by Oren Civier._ 
 >
