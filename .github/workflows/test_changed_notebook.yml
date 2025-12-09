@@ -80,7 +80,6 @@ jobs:
         path: "./books"
         files: |
           **/*.ipynb
-          *.md
         dir_names_exclude_current_dir: "true"
     - name: Filter down to changed notebooks
       id: list_changed_notebooks
@@ -151,40 +150,43 @@ jobs:
         
         jupyter-book build ${{ matrix.notebooks }}
 
-    - name: Restructure
-      shell: bash
-      run: |
-        tree ./books/_build/**/**/html
-        mkdir -p ./books/_build/**/**/html/$DIRNAME
-        if [ "$NOTEBOOK" == "intro.md" ]; then
-          echo "The directories are the same. Skipping the next step."
-        else
-          cp -R ./books/_build/**/**/html/_static ./books/_build/**/**/html/$DIRNAME
-        fi
-        if [ -d ./books/_build/**/**/html/_images && "$NOTEBOOK" != "intro.md" ]; then
-          cp -R ./books/_build/**/**/html/_images ./books/_build/**/**/html/$DIRNAME
-        fi
-        if [ "$NOTEBOOK" == "intro.md" ]; then
-          echo "The files are the same. Skipping the next step."
-        else
-          cp ./books/_build/**/**/html/$NOTEBOOK.html ./books/_build/**/**/html/$DIRNAME
-        fi
-    - name: Increase git post buffer size
-      run: git config --global http.postBuffer 524288000
+    # The following steps are commented out because we moved deployment to the build-structure job.
+    # This prevents race conditions when multiple notebooks are tested in parallel.
+    # - name: Restructure
+    #   shell: bash
+    #   run: |
+    #     tree ./books/_build/**/**/html
+    #     mkdir -p ./books/_build/**/**/html/$DIRNAME
+    #     if [ "$NOTEBOOK" == "intro.md" ]; then
+    #       echo "The directories are the same. Skipping the next step."
+    #     else
+    #       cp -R ./books/_build/**/**/html/_static ./books/_build/**/**/html/$DIRNAME
+    #     fi
+    #     if [ -d ./books/_build/**/**/html/_images && "$NOTEBOOK" != "intro.md" ]; then
+    #       cp -R ./books/_build/**/**/html/_images ./books/_build/**/**/html/$DIRNAME
+    #     fi
+    #     if [ "$NOTEBOOK" == "intro.md" ]; then
+    #       echo "The files are the same. Skipping the next step."
+    #     else
+    #       cp ./books/_build/**/**/html/$NOTEBOOK.html ./books/_build/**/**/html/$DIRNAME
+    #     fi
+    # - name: Increase git post buffer size
+    #   run: git config --global http.postBuffer 524288000
       
-    - name: Push to GitHub Pages
-      uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e
-      if: github.event_name != 'pull_request' && (github.event_name != 'workflow_dispatch' || inputs.force_deploy_pages == true)
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./books/_build/**/**/html
-        keep_files: true
+    # - name: Push to GitHub Pages
+    #   uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e
+    #   if: github.event_name != 'pull_request' && (github.event_name != 'workflow_dispatch' || inputs.force_deploy_pages == true)
+    #   with:
+    #     github_token: ${{ secrets.GITHUB_TOKEN }}
+    #     publish_dir: ./books/_build/**/**/html
+    #     keep_files: true
 
-    - name: Clean build dir
-      run: |
-        rm -rf /home/ubuntu/actions_github_pages_*
+    # - name: Clean build dir
+    #   run: |
+    #     rm -rf /home/ubuntu/actions_github_pages_*
+
   build-structure:
-    if: ${{ always() && needs.test-notebooks.result != 'failure' }}
+    if: ${{ always() && (needs.test-notebooks.result == 'success' || needs.test-notebooks.result == 'skipped') }}
     needs: [ test-notebooks, select-runner ]
     runs-on: ubuntu-22.04
     container: 
