@@ -7,6 +7,9 @@ aliases:
 description: >
   Use mne-python to load, pre-process, and plot example EEG data in a jupyter notebook through vscode. 
 ---
+# Analysing EEG Data with MNE
+
+Use mne-python to load, pre-process, and plot example EEG data in a jupyter notebook through vscode. 
 
 ---
 > _This tutorial was created by Angela Renton._ 
