@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Getting started &#8212; Neurodesk</title>
+    <title>Analysing EEG Data with MNE &#8212; Neurodesk</title>
   
   
   
@@ -211,7 +211,6 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Structural Imaging</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../structural_imaging/FSL_course_bet.html">FSL course - BET</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../structural_imaging/MFCSC.html">MFCSC</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../structural_imaging/brain_extraction_different_tools.html">Brain Extraction Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../structural_imaging/freesurfer.html">FreeSurfer</a></li>
 
@@ -269,12 +268,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Getting started</a></li>
-
-
-
-
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Analysing EEG Data with MNE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="fieldtrip.html">Getting started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functional_imaging/connectomeWorkbench.html">Download data</a></li>
 
@@ -527,7 +521,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Getting started</h1>
+    <h1>Analysing EEG Data with MNE</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -537,14 +531,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Getting started</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#select-mne-python-kernel">Select MNE python kernel</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#activate-the-mne-conda-environment-in-the-terminal">Activate the MNE conda environment in the terminal</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#download-sample-data">Download sample data</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting-settings">Plotting settings</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-and-processing-data">Loading and processing data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started">Getting started</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-mne-python-kernel">Select MNE python kernel</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activate-the-mne-conda-environment-in-the-terminal">Activate the MNE conda environment in the terminal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-sample-data">Download sample data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting-settings">Plotting settings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-and-processing-data">Loading and processing data</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -555,7 +548,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <hr class="docutils" />
+  <section class="tex2jax_ignore mathjax_ignore" id="analysing-eeg-data-with-mne">
+<h1>Analysing EEG Data with MNE<a class="headerlink" href="#analysing-eeg-data-with-mne" title="Link to this heading">#</a></h1>
+<p>Use mne-python to load, pre-process, and plot example EEG data in a jupyter notebook through vscode.</p>
+<hr class="docutils" />
 <blockquote>
 <div><p><em>This tutorial was created by Angela Renton.</em></p>
 <p>Github: &#64;air2310</p>
@@ -565,7 +561,7 @@ document.write(`
 <p><a class="reference internal" href="../../intro.html"><span class="std std-doc">Getting Set Up with Neurodesk</span></a></p>
 <!-- -->
 <section id="getting-started">
-<h1>Getting started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h1>
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h2>
 <p>To begin, navigate to Neurodesk-&gt;Electrophysiology-&gt;mne-&gt;vscodeGUI 0.23.4 in the menu. This version of vscode has been installed in a software container together with the a conda environment containing MNE-python. Note that if you open any other version of vscode in Neurodesk, you will not be able to access the MNE conda environment.</p>
 <p><img alt="EEGtut0" src="static/tutorials-examples/tutorials/electrophysiology/eeg_mne-python/EEGtut0.png" /></p>
 <p><img alt="EEGtut1" src="static/tutorials-examples/tutorials/electrophysiology/eeg_mne-python/EEGtut1.png" /></p>
@@ -575,14 +571,14 @@ document.write(`
 <p><img alt="EEGtut3" src="static/tutorials-examples/tutorials/electrophysiology/eeg_mne-python/EEGtut3.png" /></p>
 </section>
 <section id="select-mne-python-kernel">
-<h1>Select MNE python kernel<a class="headerlink" href="#select-mne-python-kernel" title="Link to this heading">#</a></h1>
+<h2>Select MNE python kernel<a class="headerlink" href="#select-mne-python-kernel" title="Link to this heading">#</a></h2>
 <p>Next, we need to direct vscode to use the python kernel associated with MNE. In the top right corner of your empty jupyter notebook, click “Select Kernel”:</p>
 <p><img alt="EEGtut4" src="static/tutorials-examples/tutorials/electrophysiology/eeg_mne-python/EEGtut4.png" /></p>
 <p>Then, select mne-0.23.4 from the dropdown menu, which should look something like this:</p>
 <p><img alt="EEGtut5" src="static/tutorials-examples/tutorials/electrophysiology/eeg_mne-python/EEGtut5.png" /></p>
 </section>
 <section id="activate-the-mne-conda-environment-in-the-terminal">
-<h1>Activate the MNE conda environment in the terminal<a class="headerlink" href="#activate-the-mne-conda-environment-in-the-terminal" title="Link to this heading">#</a></h1>
+<h2>Activate the MNE conda environment in the terminal<a class="headerlink" href="#activate-the-mne-conda-environment-in-the-terminal" title="Link to this heading">#</a></h2>
 <p>Next, we’ll activate the same MNE environment in a terminal. From the top menu in vscode, select Terminal-&gt;New Terminal, or hit [Ctrl]+[Shift]+[`].</p>
 <p>If this is your first time using vscode in this container, you may have to initialise conda by typing <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">init</span> <span class="pre">bash</span></code> in the bash terminal. After initialising bash, you will have to close and then reopen the terminal.</p>
 <p>Once you have initialised conda, you can activate the MNE environment in the terminal:</p>
@@ -592,7 +588,7 @@ document.write(`
 <p>You should now see “(mne-0.23.4)” ahead of the current line in the terminal.</p>
 </section>
 <section id="download-sample-data">
-<h1>Download sample data<a class="headerlink" href="#download-sample-data" title="Link to this heading">#</a></h1>
+<h2>Download sample data<a class="headerlink" href="#download-sample-data" title="Link to this heading">#</a></h2>
 <p>In the terminal (in which you have activated the MNE environment), input the following code to download some BIDS formatted sample EEG data:</p>
 <blockquote>
 <div><p>Remember to update the path to the location you are storing this tutorial!</p>
@@ -605,7 +601,7 @@ document.write(`
 <p>This is a small dataset with only 5 EEG channels from a single participant. The participant is viewing a frequency tagged display and is cued to attend to dots tagged at one frequency or another (6 Hz, 7.5 Hz) for long, 15 s trials. To read more about the dataset, click <a class="reference external" href="https://osf.io/c689u/">here</a></p>
 </section>
 <section id="plotting-settings">
-<h1>Plotting settings<a class="headerlink" href="#plotting-settings" title="Link to this heading">#</a></h1>
+<h2>Plotting settings<a class="headerlink" href="#plotting-settings" title="Link to this heading">#</a></h2>
 <p>To make sure our plots retain their interactivity, set the following line at the top of your notebook:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">qt</span>
 </pre></div>
@@ -613,7 +609,7 @@ document.write(`
 <p>This will mean your figures pop out as individual, interactive plots that will allow you to explore the data, rather than as static, inline plots. You can switch “qt” to “inline” to switch back to default, inline plotting.</p>
 </section>
 <section id="loading-and-processing-data">
-<h1>Loading and processing data<a class="headerlink" href="#loading-and-processing-data" title="Link to this heading">#</a></h1>
+<h2>Loading and processing data<a class="headerlink" href="#loading-and-processing-data" title="Link to this heading">#</a></h2>
 <blockquote>
 <div><p>NOTE: MNE has many helpful tutorials which delve into data processing and analysis using MNE-python in much further detail. These can be found <a class="reference external" href="https://mne.tools/stable/auto_tutorials/index.html">here</a></p>
 </div></blockquote>
@@ -762,6 +758,7 @@ document.write(`
 <p><img alt="EEGtut10" src="static/tutorials-examples/tutorials/electrophysiology/eeg_mne-python/EEGtut10.PNG" /></p>
 <p>This plot shows that the SSVEPs were indeed modulated by attention in the direction we would expect! Congratulations! You’ve run your first analysis of EEG data in neurodesktop.</p>
 </section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -827,14 +824,13 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Getting started</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#select-mne-python-kernel">Select MNE python kernel</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#activate-the-mne-conda-environment-in-the-terminal">Activate the MNE conda environment in the terminal</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#download-sample-data">Download sample data</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting-settings">Plotting settings</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-and-processing-data">Loading and processing data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started">Getting started</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#select-mne-python-kernel">Select MNE python kernel</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activate-the-mne-conda-environment-in-the-terminal">Activate the MNE conda environment in the terminal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-sample-data">Download sample data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting-settings">Plotting settings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-and-processing-data">Loading and processing data</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>
