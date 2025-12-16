@@ -7,7 +7,9 @@ author: Oren Civier
 description: > 
   A tutorial for using MFCSC to integrate connectomes from different modalities
 ---
+# Using MFCSC
 
+A tutorial for using MFCSC to integrate connectomes from different modalities
 
 > _This tutorial was created by Oren Civier._ 
 >

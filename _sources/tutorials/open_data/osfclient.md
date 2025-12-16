@@ -9,13 +9,17 @@ aliases:
 description: >
   Using osfclient to publish and access open data on OSF
 ---
+# osfclient
+
+Using osfclient to publish and access open data on OSF.
+
 
 > _This tutorial was created by Steffen Bollmannn._
 >
 > Github: @stebo85
 
 <!-- Following line adds a link to getting set up with Neurodesk -->
-[Getting Set Up with Neurodesk](../../intro.md)
+[Getting Set Up with Neurodesk](https://neurodesk.org/getting-started/)
 <!-- -->
 
 The osfclient is an open-source tool to publish and access open datasets on the Open Science Framework (OSF): http://osf.io/

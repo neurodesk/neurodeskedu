@@ -9,6 +9,9 @@ aliases:
 description: > 
   Follow this tutorial as an example of how to batch script for the PhysIO toolbox using Neurodesk.
 ---
+# A batch scripting example for PhysIO toolbox
+
+Follow this tutorial as an example of how to batch script for the PhysIO toolbox using Neurodesk.
 
 > _This tutorial was created by Kelly G. Garner._ 
 >
@@ -18,7 +21,7 @@ description: >
 >
 
 <!-- Following line adds a link to getting set up with Neurodesk -->
-[Getting Set Up with Neurodesk](../../intro.md)
+[Getting Set Up with Neurodesk](https://neurodesk.org/getting-started/)
 <!-- -->
 
 This tutorial walks through 1 way to batch script the use of the PhysIO toolbox with Neurodesk.

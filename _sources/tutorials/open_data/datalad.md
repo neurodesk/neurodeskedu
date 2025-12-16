@@ -10,12 +10,16 @@ description: >
   Using datalad to publish and access open data on OSF
 ---
 
+# datalad
+
+Using datalad to publish and access open data on OSF.
+
 > _This tutorial was created by Steffen Bollmannn._
 >
 > Github: @stebo85
 
 <!-- Following line adds a link to getting set up with Neurodesk -->
-[Getting Set Up with Neurodesk](../../intro.md)
+[Getting Set Up with Neurodesk](https://neurodesk.org/getting-started/)
 <!-- -->
 
 DataLad is an open-source tool to publish and access open datasets. In addition to many open data sources (OpenNeuro, CBRAIN, brainlife.io, CONP, DANDI, Courtois Neuromod, Dataverse, Neurobagel), it can also connect to the Open Science Framework (OSF): http://osf.io/

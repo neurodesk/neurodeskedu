@@ -10,6 +10,9 @@ aliases:
 description: > 
   A brief guide to using fmriprep with neurodesk
 ---
+# Using fmriprep with neurodesk on an HPC
+
+A brief guide to using fmriprep with Neurodesk.
 
 
 > _This tutorial was created by Kelly G. Garner._ 
@@ -20,7 +23,7 @@ description: >
 > This workflow documents how to use fmriprep with neurodesk and provides some details that may help you troubleshoot some common problems I found along the way. 
 
 <!-- Following line adds a link to getting set up with Neurodesk -->
-[Getting Set Up with Neurodesk](../../intro.md)
+[Getting Set Up with Neurodesk](https://neurodesk.org/getting-started/)
 <!-- -->
 
 > _An example notebook can be found here:_

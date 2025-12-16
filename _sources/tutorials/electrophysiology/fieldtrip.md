@@ -9,7 +9,9 @@ aliases:
 description: > 
   A brief guide to using FieldTrip to analyse electrophysiological data within neurodesk.
 ---
+# Analysing M/EEG Data with FieldTrip
 
+A brief guide to using FieldTrip to analyse electrophysiological data within neurodesk.
 
 > _This tutorial was created by Judy D Zhu._ 
 >
@@ -22,7 +24,7 @@ description: >
 ---
 
 <!-- Following line adds a link to getting set up with Neurodesk -->
-[Getting Set Up with Neurodesk](../../intro.md)
+[Getting Set Up with Neurodesk](https://neurodesk.org/getting-started/)
 <!-- -->
 
 Please note that this container uses a compiled version of FieldTrip to run scripts (without needing a Matlab license). Code development is not currently supported within the container and needs to be carried out separately in Matlab.  

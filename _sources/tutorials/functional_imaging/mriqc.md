@@ -11,6 +11,9 @@ description: >
   A brief guide to using mriqc with neurodesk.
 ---
 
+# Using mriqc with neurodesk on HPC
+
+A brief guide to using mriqc with neurodesk.
 
 > _This tutorial was created by Kelly G. Garner._ 
 >
@@ -20,7 +23,7 @@ description: >
 > This workflow documents how to use MRIQC with neurodesk and provides some details that may help you troubleshoot some common problems I found along the way. 
 
 <!-- Following line adds a link to getting set up with Neurodesk -->
-[Getting Set Up with Neurodesk](../../intro.md)
+[Getting Set Up with Neurodesk](https://neurodesk.org/getting-started/)
 <!-- -->
 
 ---

@@ -10,6 +10,10 @@ description: >
   Using datalad run, you can precisely record results of your analysis scripts.
 ---
 
+# Reproducible script execution with DataLad
+
+Using datalad run, you can precisely record results of your analysis scripts.
+
 > _This tutorial was created by Sin Kim._
 >
 > Github: @kimsin98
@@ -17,7 +21,7 @@ description: >
 > Twitter: @SinKim98
 
 <!-- Following line adds a link to getting set up with Neurodesk -->
-[Getting Set Up with Neurodesk](../../intro.md)
+[Getting Set Up with Neurodesk](https://neurodesk.org/getting-started/)
 <!-- -->
 
 In addition to being a convenient method of sharing data, DataLad can also help

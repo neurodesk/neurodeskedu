@@ -7,6 +7,9 @@ aliases:
 description: >
   Example workflow for the PhysIO Toolbox
 ---
+# PhysIO
+
+Example workflow for the PhysIO Toolbox
 
 > _This tutorial was created by Lars Kasper._
 >
@@ -15,7 +18,7 @@ description: >
 > Twitter: @mrikasper
 
 <!-- Following line adds a link to getting set up with Neurodesk -->
-[Getting Set Up with Neurodesk](../../intro.md)
+[Getting Set Up with Neurodesk](https://neurodesk.org/getting-started/)
 <!-- -->
 
 ## Origin

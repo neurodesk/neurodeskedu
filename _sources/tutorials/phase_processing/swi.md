@@ -7,6 +7,12 @@ aliases:
 description: >
   Example workflow for SWI processing
 ---
+
+# SWI
+
+Example workflow for SWI processing
+
+
 > _This tutorial was created by Steffen Bollmann._
 >
 > Github: [@stebo85](https://github.com/stebo85)
@@ -14,7 +20,7 @@ description: >
 > Twitter: [@sbollmann_MRI](https://twitter.com/sbollmann_MRI)
 
 <!-- Following line adds a link to getting set up with Neurodesk -->
-[Getting Set Up with Neurodesk](../../intro.md)
+[Getting Set Up with Neurodesk](https://neurodesk.org/getting-started)
 <!-- -->
 
 ## Download demo data

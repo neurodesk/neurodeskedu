@@ -10,6 +10,10 @@ description: >
   A tutorial for running a functional MRI analysis in SPM.
 ---
 
+# Statistical Parametric Mapping (SPM)
+
+A tutorial for running a functional MRI analysis in SPM.
+
 
 > _This tutorial was created by Steffen Bollmann._ 
 >
@@ -22,7 +26,7 @@ description: >
 <!-- Fill in your personal details above so that we can credit the tutorial to you. Feel free to add any additional contact details i.e. website, or remove those that are irrelevant -->
 
 <!-- Following line adds a link to getting set up with Neurodesk -->
-[Getting Set Up with Neurodesk](../../intro.md)
+[Getting Set Up with Neurodesk](https://neurodesk.org/getting-started/)
 <!-- -->
 
 This tutorial is based on the excellent tutorial from Andy's Brain book: https://andysbrainbook.readthedocs.io/en/latest/SPM/SPM_Overview.html

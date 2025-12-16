@@ -10,12 +10,16 @@ description: >
   Using mrsiproc, you can reconstruct and analyze MR spectroscopy data.
 ---
 
+# Spectroscopy pipeline
+
+Using mrsiproc, you can reconstruct and analyze MR spectroscopy data.
+
 > _This tutorial was created by Korbinian Eckstein._
 >
 > Github: [@korbinian90](https://github.com/korbinian90/)
 
 <!-- Following line adds a link to getting set up with Neurodesk -->
-[Getting Set Up with Neurodesk](../../intro.md)
+[Getting Set Up with Neurodesk](https://neurodesk.org/getting-started/)
 <!-- -->
 
 ```{admonition} Processing MRSI

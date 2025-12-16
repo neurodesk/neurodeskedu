@@ -10,6 +10,9 @@ description: >
   A tutorial for setting up your matlab license on Neurodesk.
 ---
 
+# Matlab
+
+A tutorial for setting up your matlab license on Neurodesk.
 
 > _This tutorial was created by Fernanda L. Ribeiro._ 
 >
@@ -22,7 +25,7 @@ description: >
 <!-- Fill in your personal details above so that we can credit the tutorial to you. Feel free to add any additional contact details i.e. website, or remove those that are irrelevant -->
 
 <!-- Following line adds a link to getting set up with Neurodesk -->
-[Getting Set Up with Neurodesk](../../intro.md)
+[Getting Set Up with Neurodesk](https://neurodesk.org/getting-started/)
 <!-- -->
 
 This tutorial documents how to set up your matlab license on Neurodesk. 

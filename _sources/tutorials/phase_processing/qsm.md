@@ -7,6 +7,11 @@ aliases:
 description: >
   Example workflow for Quantitative Susceptibility Mapping
 ---
+# Quantitative Susceptibility Mapping
+
+Example workflow for Quantitative Susceptibility Mapping (QSM)
+
+
 > _This tutorial was created by Steffen Bollmann and Ashley Stewart._
 >
 > Github: [@stebo85](https://github.com/stebo85); [@astewartau](https://github.com/astewartau)
@@ -14,7 +19,7 @@ description: >
 > Twitter: [@sbollmann_MRI](https://twitter.com/sbollmann_MRI)
 
 <!-- Following line adds a link to getting set up with Neurodesk -->
-[Getting Set Up with Neurodesk](../../intro.md)
+[Getting Set Up with Neurodesk](https://neurodesk.org/getting-started/)
 <!-- -->
 
 > _An example notebook can be found here:_

@@ -18,7 +18,7 @@ Use mne-python to load, pre-process, and plot example EEG data in a jupyter note
 ---
 
 <!-- Following line adds a link to getting set up with Neurodesk -->
-[Getting Set Up with Neurodesk](../../intro.md)
+[Getting Set Up with Neurodesk](https://neurodesk.org/getting-started/)
 <!-- -->
 
 ## Getting started

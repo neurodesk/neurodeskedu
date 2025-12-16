@@ -8,6 +8,9 @@ description: >
   Example workflow for constructing strutural connectivity (Human connectome project: Single subject)
 ---
 
+# Structural connectivity dMRI
+
+Example workflow for constructing strutural connectivity (Human connectome project: Single subject)
 
 > _This tutorial was created by Joan Amos._ 
 >
@@ -15,7 +18,7 @@ description: >
 > Github: @Joanone
 
 <!-- Following line adds a link to getting set up with Neurodesk -->
-[Getting Set Up with Neurodesk](../../intro.md)
+[Getting Set Up with Neurodesk](https://neurodesk.org/getting-started/)
 <!-- -->
 
 ## References: 

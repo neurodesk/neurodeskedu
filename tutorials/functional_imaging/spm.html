@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Download data &#8212; Neurodesk</title>
+    <title>Statistical Parametric Mapping (SPM) &#8212; Neurodesk</title>
   
   
   
@@ -76,7 +76,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="&lt;no title&gt;" href="../intro.html" />
-    <link rel="prev" title="Getting started" href="physio_batch_workflow.html" />
+    <link rel="prev" title="A batch scripting example for PhysIO toolbox" href="physio_batch_workflow.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -269,56 +269,39 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../electrophysiology/EEG_mne-python.html">Analysing EEG Data with MNE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../electrophysiology/fieldtrip.html">Getting started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="connectomeWorkbench.html">Download data</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="fmriprep.html">Assumptions</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="mriqc.html">Assumptions</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="physio.html">Origin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../electrophysiology/fieldtrip.html">Analysing M/EEG Data with FieldTrip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connectomeWorkbench.html">Connectome Workbench</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fmriprep.html">Using fmriprep with neurodesk on an HPC</a></li>
 
 
+<li class="toctree-l1"><a class="reference internal" href="mriqc.html">Using mriqc with neurodesk on HPC</a></li>
 
 
-
-<li class="toctree-l1"><a class="reference internal" href="physio_batch_workflow.html">Getting started</a></li>
-
-
-
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Download data</a></li>
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="../open_data/datalad.html">Publish a dataset</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="../open_data/osfclient.html">Setup an OSF token</a></li>
-
-
-<li class="toctree-l1"><a class="reference internal" href="../phase_processing/swi.html">Download demo data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../phase_processing/unwrapping.html">Download demo data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../programming/conda.html">Conda/Mamba environment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../programming/matlab.html">Matlab license</a></li>
-
-
-<li class="toctree-l1"><a class="reference internal" href="../reproducibility/datalad-run.html">Create a DataLad project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="physio.html">PhysIO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="physio_batch_workflow.html">A batch scripting example for PhysIO toolbox</a></li>
 
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="../spectroscopy/mrsiproc.html">Starting Neurodesk</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Statistical Parametric Mapping (SPM)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../multimodal_imaging/MFCSC.html">Using MFCSC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../open_data/datalad.html">datalad</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="../structural_imaging/freesurfer.html">FreeSurfer Example using module load (e.g. on an HPC)</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="../structural_imaging/structuralconnectivity.html">References:</a></li>
-
-
-
+<li class="toctree-l1"><a class="reference internal" href="../open_data/osfclient.html">osfclient</a></li>
 
 
 
-
+<li class="toctree-l1"><a class="reference internal" href="../phase_processing/qsm.html">Quantitative Susceptibility Mapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phase_processing/swi.html">SWI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phase_processing/unwrapping.html">Unwrapping</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming/conda.html">Conda environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../programming/matlab.html">Matlab</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducibility/datalad-run.html">Reproducible script execution with DataLad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../spectroscopy/lcmodel.html">Spectroscopy with lcmodel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../spectroscopy/mrsiproc.html">Spectroscopy pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structural_imaging/freesurfer.html">FreeSurfer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../structural_imaging/structuralconnectivity.html">Structural connectivity dMRI</a></li>
 </ul>
 
     </div>
@@ -521,7 +504,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Download data</h1>
+    <h1>Statistical Parametric Mapping (SPM)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -531,25 +514,24 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Download data</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#starting-spm-and-visualizing-the-data">Starting SPM and visualizing the data</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-the-data">Preprocessing the data</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#realignment">Realignment</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#slice-timing-correction">Slice timing correction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coregistration">Coregistration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#segmentation">Segmentation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apply-normalization">Apply normalization</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checking-the-normalization">Checking the normalization</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#smoothing">Smoothing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-data">Download data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#starting-spm-and-visualizing-the-data">Starting SPM and visualizing the data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-the-data">Preprocessing the data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#realignment">Realignment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#slice-timing-correction">Slice timing correction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coregistration">Coregistration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#segmentation">Segmentation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#apply-normalization">Apply normalization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#checking-the-normalization">Checking the normalization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#smoothing">Smoothing</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analyzing-the-data">Analyzing the data</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-the-model">Estimating the model</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inference">Inference</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analyzing-the-data">Analyzing the data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-the-model">Estimating the model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inference">Inference</a></li>
 </ul>
 </li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -560,7 +542,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <blockquote>
+  <section class="tex2jax_ignore mathjax_ignore" id="statistical-parametric-mapping-spm">
+<h1>Statistical Parametric Mapping (SPM)<a class="headerlink" href="#statistical-parametric-mapping-spm" title="Link to this heading">#</a></h1>
+<p>A tutorial for running a functional MRI analysis in SPM.</p>
+<blockquote>
 <div><p><em>This tutorial was created by Steffen Bollmann.</em></p>
 <p>Email: s.bollmannn&#64;uq.edu.au</p>
 <p>Github: &#64;stebo85</p>
@@ -568,12 +553,12 @@ document.write(`
 </div></blockquote>
 <!-- Fill in your personal details above so that we can credit the tutorial to you. Feel free to add any additional contact details i.e. website, or remove those that are irrelevant -->
 <!-- Following line adds a link to getting set up with Neurodesk -->
-<p><a class="reference internal" href="../../intro.html"><span class="std std-doc">Getting Set Up with Neurodesk</span></a></p>
+<p><a class="reference external" href="https://neurodesk.org/getting-started/">Getting Set Up with Neurodesk</a></p>
 <!-- -->
 <p>This tutorial is based on the excellent tutorial from Andy’s Brain book: https://andysbrainbook.readthedocs.io/en/latest/SPM/SPM_Overview.html
 Our version here is a shortened and adjusted version for using on the Neurodesk platform.</p>
 <section id="download-data">
-<h1>Download data<a class="headerlink" href="#download-data" title="Link to this heading">#</a></h1>
+<h2>Download data<a class="headerlink" href="#download-data" title="Link to this heading">#</a></h2>
 <p>First, let’s download the data. We will use this open dataset: https://openneuro.org/datasets/ds000102/versions/00001/download</p>
 <p>Open a terminal and use datalad to install the dataset:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">neurodesktop</span><span class="o">-</span><span class="n">storage</span>
@@ -595,7 +580,7 @@ Our version here is a shortened and adjusted version for using on the Neurodesk 
 <p>The task used is described here: https://andysbrainbook.readthedocs.io/en/latest/SPM/SPM_Short_Course/SPM_02_Flanker.html</p>
 </section>
 <section id="starting-spm-and-visualizing-the-data">
-<h1>Starting SPM and visualizing the data<a class="headerlink" href="#starting-spm-and-visualizing-the-data" title="Link to this heading">#</a></h1>
+<h2>Starting SPM and visualizing the data<a class="headerlink" href="#starting-spm-and-visualizing-the-data" title="Link to this heading">#</a></h2>
 <p>Start spm12GUI from the Application Menu:
 <a class="reference internal" href="https://user-images.githubusercontent.com/4021595/197098330-3c6611a1-8bbb-49da-b6fb-3752452322cc.png"><img alt="image" src="https://user-images.githubusercontent.com/4021595/197098330-3c6611a1-8bbb-49da-b6fb-3752452322cc.png" style="width: 727px;" /></a></p>
 <p>When the SPM menu loaded, click on fMRI and the full SPM interface should open up:
@@ -617,9 +602,9 @@ Our version here is a shortened and adjusted version for using on the Neurodesk 
 <a class="reference internal" href="https://user-images.githubusercontent.com/4021595/197103016-509387f1-4d7e-4237-b745-ae7e837dba11.png"><img alt="image" src="https://user-images.githubusercontent.com/4021595/197103016-509387f1-4d7e-4237-b745-ae7e837dba11.png" style="width: 1045px;" /></a></p>
 </section>
 <section id="preprocessing-the-data">
-<h1>Preprocessing the data<a class="headerlink" href="#preprocessing-the-data" title="Link to this heading">#</a></h1>
+<h2>Preprocessing the data<a class="headerlink" href="#preprocessing-the-data" title="Link to this heading">#</a></h2>
 <section id="realignment">
-<h2>Realignment<a class="headerlink" href="#realignment" title="Link to this heading">#</a></h2>
+<h3>Realignment<a class="headerlink" href="#realignment" title="Link to this heading">#</a></h3>
 <p>Select <code class="docutils literal notranslate"><span class="pre">Realign</span> <span class="pre">(Est</span> <span class="pre">&amp;</span> <span class="pre">Reslice)</span></code> from the SPM Menu (the third option):
 <a class="reference internal" href="https://user-images.githubusercontent.com/4021595/197304865-3560f16d-2950-48f4-9b19-b60f63737dc4.png"><img alt="image" src="https://user-images.githubusercontent.com/4021595/197304865-3560f16d-2950-48f4-9b19-b60f63737dc4.png" style="width: 1121px;" /></a></p>
 <p>Then select the functional run (important: Select frames from 1:146 again!) and leave everything else as Defaults. Then hit run:
@@ -628,7 +613,7 @@ Our version here is a shortened and adjusted version for using on the Neurodesk 
 <a class="reference internal" href="https://user-images.githubusercontent.com/4021595/197106717-0850bb27-cb72-48b1-a532-90910e3267d4.png"><img alt="image" src="https://user-images.githubusercontent.com/4021595/197106717-0850bb27-cb72-48b1-a532-90910e3267d4.png" style="width: 623px;" /></a></p>
 </section>
 <section id="slice-timing-correction">
-<h2>Slice timing correction<a class="headerlink" href="#slice-timing-correction" title="Link to this heading">#</a></h2>
+<h3>Slice timing correction<a class="headerlink" href="#slice-timing-correction" title="Link to this heading">#</a></h3>
 <p>Click on <code class="docutils literal notranslate"><span class="pre">Slice</span> <span class="pre">timing</span></code> in the SPM menu to bring up the Slice Timing section in the batch editor:
 <a class="reference internal" href="https://user-images.githubusercontent.com/4021595/197303610-f0e989dc-8646-4c97-ae67-ac5a6b07d3e1.png"><img alt="image" src="https://user-images.githubusercontent.com/4021595/197303610-f0e989dc-8646-4c97-ae67-ac5a6b07d3e1.png" style="width: 1115px;" /></a></p>
 <p>Select the realigned images (use filter <code class="docutils literal notranslate"><span class="pre">rsub</span></code> and Frames 1:146) and then enter the parameters:</p>
@@ -643,7 +628,7 @@ Our version here is a shortened and adjusted version for using on the Neurodesk 
 </a>
 </section>
 <section id="coregistration">
-<h2>Coregistration<a class="headerlink" href="#coregistration" title="Link to this heading">#</a></h2>
+<h3>Coregistration<a class="headerlink" href="#coregistration" title="Link to this heading">#</a></h3>
 <p>Now, we coregister the functional scans and the anatomical scan.</p>
 <p>Click on <code class="docutils literal notranslate"><span class="pre">Coregister</span> <span class="pre">(Estimate</span> <span class="pre">&amp;</span> <span class="pre">Reslice)</span></code> (the third option) in the SPM menu to bring up the batch editor:
 <a class="reference internal" href="https://user-images.githubusercontent.com/4021595/197304758-19293222-3256-4a32-8901-6741522e28ea.png"><img alt="image" src="https://user-images.githubusercontent.com/4021595/197304758-19293222-3256-4a32-8901-6741522e28ea.png" style="width: 1119px;" /></a></p>
@@ -653,7 +638,7 @@ Our version here is a shortened and adjusted version for using on the Neurodesk 
 <a class="reference internal" href="https://user-images.githubusercontent.com/4021595/197305422-8798294f-50ae-4207-b014-9c2f416a6721.png"><img alt="image" src="https://user-images.githubusercontent.com/4021595/197305422-8798294f-50ae-4207-b014-9c2f416a6721.png" style="width: 621px;" /></a></p>
 </section>
 <section id="segmentation">
-<h2>Segmentation<a class="headerlink" href="#segmentation" title="Link to this heading">#</a></h2>
+<h3>Segmentation<a class="headerlink" href="#segmentation" title="Link to this heading">#</a></h3>
 <p>Click the <code class="docutils literal notranslate"><span class="pre">Segmentation</span></code> button in the SPM menu:
 <a class="reference internal" href="https://user-images.githubusercontent.com/4021595/197305608-08c0de6a-faf8-4ae9-ab07-664ce84df586.png"><img alt="image" src="https://user-images.githubusercontent.com/4021595/197305608-08c0de6a-faf8-4ae9-ab07-664ce84df586.png" style="width: 697px;" /></a></p>
 <p>Then change the following settings:</p>
@@ -665,7 +650,7 @@ Our version here is a shortened and adjusted version for using on the Neurodesk 
 <p>and hit Play again.</p>
 </section>
 <section id="apply-normalization">
-<h2>Apply normalization<a class="headerlink" href="#apply-normalization" title="Link to this heading">#</a></h2>
+<h3>Apply normalization<a class="headerlink" href="#apply-normalization" title="Link to this heading">#</a></h3>
 <p>Select <code class="docutils literal notranslate"><span class="pre">Normalize</span> <span class="pre">(Write)</span></code> from the SPM menu:
 <a class="reference internal" href="https://user-images.githubusercontent.com/4021595/197305894-36020b36-5e0f-4b06-8e8c-015b7e3b0ba7.png"><img alt="image" src="https://user-images.githubusercontent.com/4021595/197305894-36020b36-5e0f-4b06-8e8c-015b7e3b0ba7.png" style="width: 415px;" /></a></p>
 <p>For the Deformation Field select the y_rsub-08 file we created in the last step and for the Images to Write select the arsub-08 functional images (Filter ^ar and Frames 1:146):
@@ -673,13 +658,13 @@ Our version here is a shortened and adjusted version for using on the Neurodesk 
 <p>Hit Play again.</p>
 </section>
 <section id="checking-the-normalization">
-<h2>Checking the normalization<a class="headerlink" href="#checking-the-normalization" title="Link to this heading">#</a></h2>
+<h3>Checking the normalization<a class="headerlink" href="#checking-the-normalization" title="Link to this heading">#</a></h3>
 <p>Use CheckReg to make sure that the functional scans (starting with w to indicate that they were warped: warsub-08) align with the template (found in /opt/spm12/spm12_mcr/spm12/spm12/canonical/avg305T1.nii):</p>
 <a class="reference internal image-reference" href="https://user-images.githubusercontent.com/4021595/197306204-c635b3f5-6e89-40de-9c04-5d94dfec10fc.png"><img alt="image" src="https://user-images.githubusercontent.com/4021595/197306204-c635b3f5-6e89-40de-9c04-5d94dfec10fc.png" style="width: 621px;" />
 </a>
 </section>
 <section id="smoothing">
-<h2>Smoothing<a class="headerlink" href="#smoothing" title="Link to this heading">#</a></h2>
+<h3>Smoothing<a class="headerlink" href="#smoothing" title="Link to this heading">#</a></h3>
 <p>Click the <code class="docutils literal notranslate"><span class="pre">Smooth</span></code> button in the SPM menu and select the warped functional scans:
 <a class="reference internal" href="https://user-images.githubusercontent.com/4021595/197306354-60ee76e2-73ac-4fe8-8387-038d10580c99.png"><img alt="image" src="https://user-images.githubusercontent.com/4021595/197306354-60ee76e2-73ac-4fe8-8387-038d10580c99.png" style="width: 514px;" /></a></p>
 <p>Then click Play.</p>
@@ -688,7 +673,7 @@ Our version here is a shortened and adjusted version for using on the Neurodesk 
 </section>
 </section>
 <section id="analyzing-the-data">
-<h1>Analyzing the data<a class="headerlink" href="#analyzing-the-data" title="Link to this heading">#</a></h1>
+<h2>Analyzing the data<a class="headerlink" href="#analyzing-the-data" title="Link to this heading">#</a></h2>
 <p>Click on <code class="docutils literal notranslate"><span class="pre">Specify</span> <span class="pre">1st-level</span></code> - then set the following options:</p>
 <ul class="simple">
 <li><p>Directory: Select the sub-08 top level directory</p></li>
@@ -716,11 +701,11 @@ Our version here is a shortened and adjusted version for using on the Neurodesk 
 <p>We can Review the design by clicking on <code class="docutils literal notranslate"><span class="pre">Review</span></code> in the SPM menu and selecting the SPM.mat file in the model directory we specified earlier and it should look like this:
 <a class="reference internal" href="https://user-images.githubusercontent.com/4021595/197309811-da1fb6d2-1eb3-4ed8-9fe7-560292b645a4.png"><img alt="image" src="https://user-images.githubusercontent.com/4021595/197309811-da1fb6d2-1eb3-4ed8-9fe7-560292b645a4.png" style="width: 626px;" /></a></p>
 <section id="estimating-the-model">
-<h2>Estimating the model<a class="headerlink" href="#estimating-the-model" title="Link to this heading">#</a></h2>
+<h3>Estimating the model<a class="headerlink" href="#estimating-the-model" title="Link to this heading">#</a></h3>
 <p>Click on <code class="docutils literal notranslate"><span class="pre">Estimate</span></code> in the SPM menu and select the SPM.mat file, then hit the green Play button.</p>
 </section>
 <section id="inference">
-<h2>Inference<a class="headerlink" href="#inference" title="Link to this heading">#</a></h2>
+<h3>Inference<a class="headerlink" href="#inference" title="Link to this heading">#</a></h3>
 <p>Now open the <code class="docutils literal notranslate"><span class="pre">Results</span></code> section and select the SPM.mat file again. Then we can test our hypotheses:</p>
 <p>Define a new contrast as:</p>
 <ul class="simple">
@@ -737,6 +722,7 @@ Our version here is a shortened and adjusted version for using on the Neurodesk 
 </ul>
 <a class="reference internal image-reference" href="https://user-images.githubusercontent.com/4021595/197310053-cde3d7cb-9af1-4a5b-8923-6c26b7b2a5ee.png"><img alt="image" src="https://user-images.githubusercontent.com/4021595/197310053-cde3d7cb-9af1-4a5b-8923-6c26b7b2a5ee.png" style="width: 622px;" />
 </a>
+</section>
 </section>
 </section>
 
@@ -776,7 +762,7 @@ Our version here is a shortened and adjusted version for using on the Neurodesk 
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Getting started</p>
+        <p class="prev-next-title">A batch scripting example for PhysIO toolbox</p>
       </div>
     </a>
     <a class="right-next"
@@ -804,25 +790,24 @@ Our version here is a shortened and adjusted version for using on the Neurodesk 
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Download data</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#starting-spm-and-visualizing-the-data">Starting SPM and visualizing the data</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-the-data">Preprocessing the data</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#realignment">Realignment</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#slice-timing-correction">Slice timing correction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coregistration">Coregistration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#segmentation">Segmentation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#apply-normalization">Apply normalization</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checking-the-normalization">Checking the normalization</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#smoothing">Smoothing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-data">Download data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#starting-spm-and-visualizing-the-data">Starting SPM and visualizing the data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-the-data">Preprocessing the data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#realignment">Realignment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#slice-timing-correction">Slice timing correction</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coregistration">Coregistration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#segmentation">Segmentation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#apply-normalization">Apply normalization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#checking-the-normalization">Checking the normalization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#smoothing">Smoothing</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analyzing-the-data">Analyzing the data</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-the-model">Estimating the model</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inference">Inference</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analyzing-the-data">Analyzing the data</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estimating-the-model">Estimating the model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inference">Inference</a></li>
 </ul>
 </li>
 </ul>
-
   </nav></div>
 
 </div></div>

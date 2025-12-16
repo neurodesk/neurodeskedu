@@ -9,7 +9,9 @@ aliases:
 description: > 
   A tutorial for accessing and visualizing the 7T HCP Retinotopy Dataset on Connectome Workbench.
 ---
+# Connectome Workbench
 
+A tutorial for accessing and visualizing the 7T HCP Retinotopy Dataset on Connectome Workbench.
 
 > _This tutorial was created by Fernanda L. Ribeiro._ 
 >
@@ -23,7 +25,7 @@ description: >
 
 This tutorial documents how to use Connectome Workbench on neurodesk for visualizing the 7T HCP Retinotopy Dataset. 
 
-[Getting Set Up with Neurodesk](../../intro.md)
+[Getting Set Up with Neurodesk](https://neurodesk.org/getting-started/)
 
 ## Download data
 

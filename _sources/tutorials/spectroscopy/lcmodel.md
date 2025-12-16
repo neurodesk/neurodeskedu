@@ -10,6 +10,11 @@ description: >
   Using lcmodel, you can analyze MR spectroscopy data.
 ---
 
+# Spectroscopy with lcmodel
+
+Using lcmodel, you can analyze MR spectroscopy data.
+
+
 > _This tutorial was created by Steffen Bollmann._
 >
 > Github: [@stebo85](https://github.com/stebo85)
@@ -17,7 +22,7 @@ description: >
 > Twitter: [@sbollmann_MRI](https://twitter.com/sbollmann_MRI)
 
 <!-- Following line adds a link to getting set up with Neurodesk -->
-[Getting Set Up with Neurodesk](../../intro.md)
+[Getting Set Up with Neurodesk](https://neurodesk.org/getting-started/)
 <!-- -->
 
 Open lcmodel from the menu: Applications -> Spectroscopy -> lcmodel -> lcmodel 6.3
