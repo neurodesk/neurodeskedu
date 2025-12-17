@@ -53,29 +53,16 @@
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-4Z9774J59Y"></script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-4Z9774J59Y');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-4Z9774J59Y');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/phase_processing/unwrapping';</script>
     <link rel="canonical" href="https://neurodesk.github.io/neurodeskedu/tutorials/phase_processing/unwrapping.html" />
     <link rel="icon" href="../../_static/neurodesk_logo.svg"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Conda environments" href="../programming/conda.html" />
+    <link rel="next" title="Programming" href="../programming/intro.html" />
     <link rel="prev" title="SWI" href="swi.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -115,8 +102,8 @@
          class="form-control"
          name="q"
          id="search-input"
-         placeholder="Search this book..."
-         aria-label="Search this book..."
+         placeholder="Search..."
+         aria-label="Search..."
          autocomplete="off"
          autocorrect="off"
          autocapitalize="off"
@@ -186,16 +173,7 @@
  </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../../intro.html">
-                    NeurodeskEDU
-                </a>
-            </li>
-        </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contribute</span></p>
-<ul class="nav bd-sidenav">
+        <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../contribute/examples.html">Getting Started</a></li>
 
 
@@ -205,99 +183,196 @@
 
 
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Examples</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../examples/diffusion_imaging/Diffusion_TBSS_Demo.html">TBSS Tutorial</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../examples/diffusion_imaging/intro.html">Diffusion Imaging</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/diffusion_imaging/Diffusion_TBSS_Demo.html">TBSS Tutorial</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="../../examples/diffusion_imaging/MRtrix_1.html">MRtrix: Part 1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/diffusion_imaging/MRtrix_2.html">MRtrix: Part 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/diffusion_imaging/MRtrix_3.html">MRtrix: Part 3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/diffusion_imaging/mrtrix3tissue.html">MRtrix3Tissue</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/electrophysiology/eeg_with_mne.html">EEG Analysis with MNE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/functional_imaging/AFNI_preprocessing_only.html">AFNI Preprocessing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/functional_imaging/AFNI_preprocessing_plus_glm.html">AFNI Preprocessing and GLM</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/functional_imaging/AFNI_preprocessing_plus_glm_group.html">AFNI Preprocessing &amp; Group Analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/functional_imaging/FSL_preproc_glm.html">FSL Preprocessing and GLM</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/functional_imaging/FSLnets_course_practical.html">Resting state with FSLnets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/functional_imaging/NiWrap.html">NiWrap and Connectome Workbench</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/functional_imaging/aslprep.html">ASLprep</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/functional_imaging/deepretinotopy.html">DeepRetinotopy</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="../../examples/functional_imaging/first_and_second_level_spm.html">Nipype-SPM fMRI Analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/functional_imaging/fmriprep.html">fMRIprep</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/functional_imaging/fsl_all_levels_flanker_nipype.html">Nipype-FSL fMRI Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/diffusion_imaging/MRtrix_1.html">MRtrix: Part 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/diffusion_imaging/MRtrix_2.html">MRtrix: Part 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/diffusion_imaging/MRtrix_3.html">MRtrix: Part 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/diffusion_imaging/mrtrix3tissue.html">MRtrix3Tissue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/diffusion_imaging/Diffusion_TBSS_Demo.html">TBSS Tutorial</a></li>
 
 
-
-<li class="toctree-l1"><a class="reference internal" href="../../examples/functional_imaging/intro_to_preprocessing.html">Introduction to Preprocessing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/functional_imaging/mri_vol2surf.html">FreeSurfer: mri_vol2surf</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/functional_imaging/process_five_echo_dataset.html">tedana: TE Dependent ANAlysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/spectroscopy/lcmodel.html">MR Spectroscopy with LCModel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/spectroscopy/osprey.html">MR Spectroscopy with Osprey</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/structural_imaging/FSL_course_bet.html">FSL course - BET</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/structural_imaging/brain_extraction_different_tools.html">Brain Extraction Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/structural_imaging/freesurfer.html">FreeSurfer</a></li>
-
-
-<li class="toctree-l1"><a class="reference internal" href="../../examples/structural_imaging/qsmxt.html">QSMxT</a></li>
-
-
-
-
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="../../examples/structural_imaging/sct_toolbox.html">SCT Toolbox</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="../../examples/workflows/AA_Neurodesk_demo_tour.html">Neurodesk Tools Demo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/workflows/MRIQC.html">MRIQC</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/workflows/PyBIDS.html">PyBIDS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/workflows/RISE_slideshow.html">RISE Slideshow</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/workflows/bids_conversion.html">BIDS conversion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/workflows/nipype_full.html">Nipype on Neurodesk</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/workflows/nipype_short.html">Basic Nipype</a></li>
-
-
-<li class="toctree-l1"><a class="reference internal" href="../../examples/workflows/papermill-slurm-submission-example.html">Papermill Slurm Job Submission</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../examples/workflows/pydra_preproc_ants.html">Pydra</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/diffusion_imaging/MRtrix_1.html">MRtrix: Part 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/diffusion_imaging/MRtrix_2.html">MRtrix: Part 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/diffusion_imaging/MRtrix_3.html">MRtrix: Part 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/diffusion_imaging/mrtrix3tissue.html">MRtrix3Tissue</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../examples/electrophysiology/intro.html">Electrophysiology</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/electrophysiology/eeg_with_mne.html">EEG Analysis with MNE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/electrophysiology/eeg_with_mne.html">EEG Analysis with MNE</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../examples/functional_imaging/intro.html">Functional Imaging</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/AFNI_preprocessing_only.html">AFNI Preprocessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/AFNI_preprocessing_plus_glm.html">AFNI Preprocessing and GLM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/AFNI_preprocessing_plus_glm_group.html">AFNI Preprocessing &amp; Group Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/aslprep.html">ASLprep</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/deepretinotopy.html">DeepRetinotopy</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/first_and_second_level_spm.html">Nipype-SPM fMRI Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/fmriprep.html">fMRIprep</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/fsl_all_levels_flanker_nipype.html">Nipype-FSL fMRI Analysis</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/FSL_preproc_glm.html">FSL Preprocessing and GLM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/FSLnets_course_practical.html">Resting state with FSLnets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/intro_to_preprocessing.html">Introduction to Preprocessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/mri_vol2surf.html">FreeSurfer: mri_vol2surf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/NiWrap.html">NiWrap and Connectome Workbench</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/process_five_echo_dataset.html">tedana: TE Dependent ANAlysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/AFNI_preprocessing_only.html">AFNI Preprocessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/AFNI_preprocessing_plus_glm.html">AFNI Preprocessing and GLM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/AFNI_preprocessing_plus_glm_group.html">AFNI Preprocessing &amp; Group Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/FSL_preproc_glm.html">FSL Preprocessing and GLM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/FSLnets_course_practical.html">Resting state with FSLnets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/NiWrap.html">NiWrap and Connectome Workbench</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/aslprep.html">ASLprep</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/deepretinotopy.html">DeepRetinotopy</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/first_and_second_level_spm.html">Nipype-SPM fMRI Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/fmriprep.html">fMRIprep</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/fsl_all_levels_flanker_nipype.html">Nipype-FSL fMRI Analysis</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/intro_to_preprocessing.html">Introduction to Preprocessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/mri_vol2surf.html">FreeSurfer: mri_vol2surf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/functional_imaging/process_five_echo_dataset.html">tedana: TE Dependent ANAlysis</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../examples/spectroscopy/intro.html">Spectroscopy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/spectroscopy/lcmodel.html">MR Spectroscopy with LCModel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/spectroscopy/osprey.html">MR Spectroscopy with Osprey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/spectroscopy/lcmodel.html">MR Spectroscopy with LCModel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/spectroscopy/osprey.html">MR Spectroscopy with Osprey</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../examples/structural_imaging/intro.html">Structural Imaging</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/structural_imaging/brain_extraction_different_tools.html">Brain Extraction Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/structural_imaging/freesurfer.html">FreeSurfer</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../examples/structural_imaging/FSL_course_bet.html">FSL course - BET</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/structural_imaging/qsmxt.html">QSMxT</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../examples/structural_imaging/sct_toolbox.html">SCT Toolbox</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../../examples/structural_imaging/FSL_course_bet.html">FSL course - BET</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/structural_imaging/brain_extraction_different_tools.html">Brain Extraction Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/structural_imaging/freesurfer.html">FreeSurfer</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../examples/structural_imaging/qsmxt.html">QSMxT</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../examples/structural_imaging/sct_toolbox.html">SCT Toolbox</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../examples/workflows/intro.html">Workflows</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/workflows/AA_Neurodesk_demo_tour.html">Neurodesk Tools Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/workflows/bids_conversion.html">BIDS conversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/workflows/MRIQC.html">MRIQC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/workflows/nipype_full.html">Nipype on Neurodesk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/workflows/nipype_short.html">Basic Nipype</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../examples/workflows/papermill-slurm-submission-example.html">Papermill Slurm Job Submission</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/workflows/PyBIDS.html">PyBIDS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/workflows/pydra_preproc_ants.html">Pydra</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/workflows/RISE_slideshow.html">RISE Slideshow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/workflows/AA_Neurodesk_demo_tour.html">Neurodesk Tools Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/workflows/MRIQC.html">MRIQC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/workflows/PyBIDS.html">PyBIDS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/workflows/RISE_slideshow.html">RISE Slideshow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/workflows/bids_conversion.html">BIDS conversion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/workflows/nipype_full.html">Nipype on Neurodesk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/workflows/nipype_short.html">Basic Nipype</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../examples/workflows/papermill-slurm-submission-example.html">Papermill Slurm Job Submission</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../examples/workflows/pydra_preproc_ants.html">Pydra</a></li>
+</ul>
+</details></li>
+</ul>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../electrophysiology/EEG_mne-python.html">Analysing EEG Data with MNE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../electrophysiology/fieldtrip.html">Analysing M/EEG Data with FieldTrip</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../functional_imaging/connectomeWorkbench.html">Connectome Workbench</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../functional_imaging/fmriprep.html">Using fmriprep with neurodesk on an HPC</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../electrophysiology/intro.html">Electrophysiology</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../electrophysiology/EEG_mne-python.html">Analysing EEG Data with MNE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../electrophysiology/fieldtrip.html">Analysing M/EEG Data with FieldTrip</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../functional_imaging/intro.html">Functional Imaging</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../functional_imaging/connectomeWorkbench.html">Connectome Workbench</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functional_imaging/fmriprep.html">Using fmriprep with neurodesk on an HPC</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="../functional_imaging/mriqc.html">Using mriqc with neurodesk on HPC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functional_imaging/mriqc.html">Using mriqc with neurodesk on HPC</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="../functional_imaging/physio.html">PhysIO</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../functional_imaging/physio_batch_workflow.html">A batch scripting example for PhysIO toolbox</a></li>
-
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="../functional_imaging/spm.html">Statistical Parametric Mapping (SPM)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../multimodal_imaging/MFCSC.html">Using MFCSC</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../open_data/datalad.html">datalad</a></li>
-
-
-<li class="toctree-l1"><a class="reference internal" href="../open_data/osfclient.html">osfclient</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functional_imaging/physio.html">PhysIO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../functional_imaging/physio_batch_workflow.html">A batch scripting example for PhysIO toolbox</a></li>
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="qsm.html">Quantitative Susceptibility Mapping</a></li>
-<li class="toctree-l1"><a class="reference internal" href="swi.html">SWI</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Unwrapping</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../programming/conda.html">Conda environments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../programming/matlab.html">Matlab</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../reproducibility/datalad-run.html">Reproducible script execution with DataLad</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../spectroscopy/lcmodel.html">Spectroscopy with lcmodel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../spectroscopy/mrsiproc.html">Spectroscopy pipeline</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../structural_imaging/freesurfer.html">FreeSurfer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../structural_imaging/structuralconnectivity.html">Structural connectivity dMRI</a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../functional_imaging/spm.html">Statistical Parametric Mapping (SPM)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../multimodal_imaging/intro.html">Multimodal Imaging</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../multimodal_imaging/MFCSC.html">Using MFCSC</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../open_data/intro.html">Open Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../open_data/datalad.html">datalad</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../open_data/osfclient.html">osfclient</a></li>
+
+
+
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="intro.html">Phase Processing</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="qsm.html">Quantitative Susceptibility Mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="swi.html">SWI</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Unwrapping</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../programming/intro.html">Programming</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../programming/conda.html">Conda environments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../programming/matlab.html">Matlab</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../reproducibility/intro.html">Reproducibility</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../reproducibility/datalad-run.html">Reproducible script execution with DataLad</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../spectroscopy/intro.html">Spectroscopy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../spectroscopy/lcmodel.html">Spectroscopy with lcmodel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../spectroscopy/mrsiproc.html">Spectroscopy pipeline</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../structural_imaging/intro.html">Structural Imaging</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../structural_imaging/freesurfer.html">FreeSurfer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../structural_imaging/structuralconnectivity.html">Structural connectivity dMRI</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
@@ -339,70 +414,6 @@
         <div class="header-article-item">
 
 <div class="article-header-buttons">
-
-
-
-
-
-<div class="dropdown dropdown-source-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
-    <i class="fab fa-github"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://github.com/neurodesk/neurodeskedu" target="_blank"
-   class="btn btn-sm btn-source-repository-button dropdown-item"
-   title="Source repository"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="btn__text-container">Repository</span>
-</a>
-</li>
-      
-      
-      
-      
-      <li><a href="https://github.com/neurodesk/neurodeskedu/edit/main/books/tutorials/phase_processing/unwrapping.md" target="_blank"
-   class="btn btn-sm btn-source-edit-button dropdown-item"
-   title="Suggest edit"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-pencil-alt"></i>
-  </span>
-<span class="btn__text-container">Suggest edit</span>
-</a>
-</li>
-      
-      
-      
-      
-      <li><a href="https://github.com/neurodesk/neurodeskedu/issues/new?title=Issue%20on%20page%20%2Ftutorials/phase_processing/unwrapping.html&body=Your%20issue%20content%20here." target="_blank"
-   class="btn btn-sm btn-source-issues-button dropdown-item"
-   title="Open an issue"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="btn__text-container">Open issue</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
 
 
 
@@ -608,11 +619,11 @@ Twitter: <a class="reference external" href="https://twitter.com/sbollmann_MRI">
       </div>
     </a>
     <a class="right-next"
-       href="../programming/conda.html"
+       href="../programming/intro.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Conda environments</p>
+        <p class="prev-next-title">Programming</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

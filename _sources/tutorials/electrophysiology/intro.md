@@ -1,11 +1,7 @@
 ---
 title: "Electrophysiology"
-linkTitle: "Electrophysiology"
-weight: 2
-aliases:
-- /tutorials/electrophysiology
-description: >
-  Tutorials about processing of EEG/MEG/ECoG data
 ---
 
+# Electrophysiology
 
+Tutorial pages and notebooks related to EEG/MEG and other electrophysiology workflows.

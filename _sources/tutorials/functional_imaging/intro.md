@@ -1,9 +1,7 @@
 ---
 title: "Functional Imaging"
-linkTitle: "Functional Imaging"
-weight: 2
-aliases:
-- /tutorials/functional_imaging
-description: >
-  Tutorials about processing functional MRI data
 ---
+
+# Functional Imaging
+
+Tutorial pages and notebooks related to fMRI and functional imaging workflows.
