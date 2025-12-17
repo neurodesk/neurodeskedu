@@ -24,4 +24,4 @@ The interactive version of these notebooks is run in Europe by the EGI Federatio
 
 <img src="images/Wellcome_Trust_logo.png" width="150">
 <img src="images/czi_logo.png" width="250">
-<!-- Trigger: rebuild docs (2025-12-17) - harmless comment -->
+<!-- Trigger: update navigation_depth -> 3 (2025-12-17 06:30Z) - harmless comment -->
