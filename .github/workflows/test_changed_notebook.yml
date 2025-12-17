@@ -9,10 +9,12 @@ defaults:
 on:
   # Trigger the workflow on push or PR to any branch
   push:
+    branches: [ main ]
     paths:
       - '**/*.ipynb'
       - 'books/**/*.md'
   pull_request:
+    branches: [ main ]
     paths:
       - '**/*.ipynb'
       - 'books/**/*.md'
@@ -217,7 +219,7 @@ jobs:
 
     - name: Push to GitHub Pages
       uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e
-      if: github.event_name != 'pull_request' && (github.event_name != 'workflow_dispatch' || inputs.force_deploy_pages == true)
+      if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./books/_build/html
