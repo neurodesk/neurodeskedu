@@ -1,6 +1,8 @@
 # NeurodeskEDU
 
-<img src="static/neurodesk_tutorials_vs_examples.png">
+```{image} static/neurodesk_tutorials_vs_examples.png
+:alt: Neurodesk tutorials vs examples
+```
 
   Neurodesk offers two types of learning resources to help you get started with neuroimaging analysis: 
   
@@ -30,7 +32,9 @@ Neurodesk can be used on various platforms including a local PC, High-Performanc
 Once you've chosen your setup, follow the instructions provided in the link. 
 
 **For example**, if you're using Linux on a local PC with a desktop interface, you would follow the instructions at https://neurodesk.org/docs/getting-started/neurodesktop/linux/. 
-<img src="static/startup_table.png">
+```{image} static/startup_table.png
+:alt: Neurodesk setup table
+```
 
 ## 4. Video tutorial
 See below for a 4-minute tutorial on Installation, Usage and Data Access with Neurodesktop
@@ -59,6 +63,13 @@ The interactive version of these notebooks is run in the US by Jetstream2 (NSF a
 The interactive version of these notebooks is run in Europe by the EGI Federation with the dedicated support of CESNET-MCC. Computational resources were provided by the e-INFRA CZ project (ID:90254), supported by the Ministry of Education, Youth and Sports of the Czech Republic.
 
 
-<img src="static/Wellcome_Trust_logo.png">
-<img src="static/czi_logo.png">
+```{image} static/Wellcome_Trust_logo.png
+:width: 150px
+:alt: Wellcome Trust logo
+```
+
+```{image} static/czi_logo.png
+:width: 250px
+:alt: Chan Zuckerberg Initiative logo
+```
 <!-- Trigger: update navigation_depth -> 3 (2025-12-17 06:30Z) - harmless comment -->
