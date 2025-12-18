@@ -6,8 +6,6 @@ title: "Spectroscopy"
 
 Example notebooks for spectroscopy analyses.
 
-```{toctree}
+```{tableofcontents}
 :titlesonly:
-lcmodel
-osprey
 ```
