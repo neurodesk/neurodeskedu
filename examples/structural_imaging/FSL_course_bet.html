@@ -176,6 +176,8 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../intro.html">Examples</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="../diffusion_imaging/intro.html">Diffusion Imaging</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/DIPY_1.html">Basic Tracking with DIPY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/DIPY_2.html">Advanced Tracking with DIPY</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/Diffusion_TBSS_Demo.html">TBSS Tutorial</a></li>
 
 
@@ -193,12 +195,15 @@
 <li class="toctree-l3"><a class="reference internal" href="../functional_imaging/AFNI_preprocessing_only.html">AFNI Preprocessing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../functional_imaging/AFNI_preprocessing_plus_glm.html">AFNI Preprocessing and GLM</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../functional_imaging/AFNI_preprocessing_plus_glm_group.html">AFNI Preprocessing &amp; Group Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../functional_imaging/AFNI_processing_task_based.html">Processing task-based FMRI with AFNI and afni_proc.py</a></li>
+
+
+
 <li class="toctree-l3"><a class="reference internal" href="../functional_imaging/FSL_preproc_glm.html">FSL Preprocessing and GLM</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../functional_imaging/FSLnets_course_practical.html">Resting state with FSLnets</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../functional_imaging/NiWrap.html">NiWrap and Connectome Workbench</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../functional_imaging/aslprep.html">ASLprep</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../functional_imaging/deepretinotopy.html">DeepRetinotopy</a></li>
-
+<li class="toctree-l3"><a class="reference internal" href="../functional_imaging/deepretinotopy.html">DeepRetinotopy Toolbox</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../functional_imaging/first_and_second_level_spm.html">Nipype-SPM fMRI Analysis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../functional_imaging/fmriprep.html">fMRIprep</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../functional_imaging/fsl_all_levels_flanker_nipype.html">Nipype-FSL fMRI Analysis</a></li>
@@ -218,9 +223,9 @@
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="intro.html">Structural Imaging</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">FSL course - BET</a></li>
 <li class="toctree-l3"><a class="reference internal" href="brain_extraction_different_tools.html">Brain Extraction Tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="freesurfer-recon-all-clinical.html">FreeSurfer: recon-all-clinical</a></li>
+
 <li class="toctree-l3"><a class="reference internal" href="freesurfer.html">FreeSurfer</a></li>
-
-
 <li class="toctree-l3"><a class="reference internal" href="qsmxt.html">QSMxT</a></li>
 
 
@@ -241,7 +246,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../workflows/bids_conversion.html">BIDS conversion</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/nipype_full.html">Nipype on Neurodesk</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/nipype_short.html">Basic Nipype</a></li>
-
 
 <li class="toctree-l3"><a class="reference internal" href="../workflows/papermill-slurm-submission-example.html">Papermill Slurm Job Submission</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/pydra_preproc_ants.html">Pydra</a></li>
@@ -466,7 +470,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#output-cpu-information">Output CPU information</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citation-resources">Citation/ Resources:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-included-in-this-workflow">Tools included in this workflow</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">Dataset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#educational-resources">Educational resources</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-fsl">Load FSL</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-course-material">Download course material</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bet-basics">BET basics</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualization-with-ipyniivue">Visualization with ipyniivue</a></li>
@@ -475,7 +485,10 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-brain-extraction">Troubleshooting Brain Extraction</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cerebellum-underestimation-using-the-gradient-threshold-option-g">Cerebellum Underestimation: Using the gradient threshold option (-g)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dealing-with-large-fov-images">Dealing with large FOV images</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dealing-with-large-fov-images">Dealing with large FOV images</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dependencies-in-jupyter-python">Dependencies in Jupyter/Python</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -495,29 +508,33 @@ document.write(`
 <p>Brain extraction is a fundamental preprocessing step in neuroimaging analysis, particularly critical for structural image segmentation where precision matters most. While BET is straightforward to use, achieving optimal results often requires understanding how to fine-tune parameters for challenging datasets.
 This interactive version covers the core BET fundamentals, including parameter adjustment techniques for difficult images, and troubleshooting approaches for problematic cases. The hands-on format allows you to experiment with different settings and immediately see their effects on brain extraction quality.</p>
 <p><strong>Author:</strong> Monika Doerig</p>
-<p><strong>Citation/ Resources:</strong></p>
+<p><strong>Date:</strong> 13 June 2025</p>
+<section id="citation-resources">
+<h2>Citation/ Resources:<a class="headerlink" href="#citation-resources" title="Link to this heading">#</a></h2>
+<section id="tools-included-in-this-workflow">
+<h3>Tools included in this workflow<a class="headerlink" href="#tools-included-in-this-workflow" title="Link to this heading">#</a></h3>
+<p><strong>FSL - Brain Extraction Tool (BET)</strong></p>
 <ul class="simple">
-<li><p>Jenkinson, M., Beckmann, C. F., Behrens, T. E. J., Woolrich, M. W., &amp; Smith, S. M. (2012). FSL. NeuroImage, 62(2), 782–790. <a class="reference external" href="https://doi.org/10.1016/j.neuroimage.2011.09.015">https://doi.org/10.1016/j.neuroimage.2011.09.015</a></p></li>
-<li><p><a class="reference external" href="https://open.win.ox.ac.uk/pages/fslcourse/website/online_materials.html">FSL course online materials</a></p></li>
-<li><p><a class="reference external" href="https://open.win.ox.ac.uk/pages/fslcourse/practicals/intro2/index.html">FSL course practicals BET</a></p></li>
-<li><p><a class="reference external" href="https://fsl.fmrib.ox.ac.uk/fsl/docs/#/structural/bet?id=bet-brain-extraction-tool">FSL Wiki BET</a></p></li>
+<li><p>M. Jenkinson, C.F. Beckmann, T.E. Behrens, M.W. Woolrich, S.M. Smith. FSL. <a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/S1053811911010603?via%3Dihub">NeuroImage, 62:782-90, 2012</a></p></li>
+<li><p>Smith S. M. (2002). Fast robust automated brain extraction. Human brain mapping, 17(3), 143–155. <a class="reference external" href="https://doi.org/10.1002/hbm.10062">https://doi.org/10.1002/hbm.10062</a></p></li>
 </ul>
-<section id="output-cpu-information">
-<h2>Output CPU information<a class="headerlink" href="#output-cpu-information" title="Link to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>cat<span class="w"> </span>/proc/cpuinfo<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;vendor&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq
-<span class="o">!</span>cat<span class="w"> </span>/proc/cpuinfo<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;model name&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>vendor_id	: AuthenticAMD
-model name	: AMD EPYC-Milan Processor
-</pre></div>
-</div>
-</div>
-</div>
+</section>
+<section id="dataset">
+<h3>Dataset<a class="headerlink" href="#dataset" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://open.win.ox.ac.uk/pages/fslcourse/website/online_materials.html">FSL course online materials</a></p></li>
+</ul>
+</section>
+<section id="educational-resources">
+<h3>Educational resources<a class="headerlink" href="#educational-resources" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://open.win.ox.ac.uk/pages/fslcourse/practicals/intro2/index.html">FSL course practicals BET</a></p></li>
+<li><p><a class="reference external" href="https://fsl.fmrib.ox.ac.uk/fsl/docs/structural/bet.html">FSL Wiki BET</a></p></li>
+</ul>
+</section>
+</section>
+<section id="load-fsl">
+<h2>Load FSL<a class="headerlink" href="#load-fsl" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">module</span>
@@ -537,22 +554,22 @@ model name	: AMD EPYC-Milan Processor
 <h2>Download course material<a class="headerlink" href="#download-course-material" title="Link to this heading">#</a></h2>
 <div class="cell tag_scroll-output docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>wget<span class="w"> </span>-c<span class="w"> </span>-nc<span class="w"> </span>https://fsl.fmrib.ox.ac.uk/fslcourse/downloads/preCourse.tar.gz
-<span class="o">!</span>tar<span class="w"> </span>-xzvf<span class="w"> </span>preCourse.tar.gz<span class="w"> </span>--skip-old-files
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span><span class="w"> </span>wget<span class="w"> </span>-c<span class="w"> </span>-nc<span class="w"> </span>https://fsl.fmrib.ox.ac.uk/fslcourse/downloads/preCourse.tar.gz
+<span class="o">!</span><span class="w"> </span>tar<span class="w"> </span>-xzvf<span class="w"> </span>preCourse.tar.gz<span class="w"> </span>--skip-old-files
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--2025-12-16 19:00:17--  https://fsl.fmrib.ox.ac.uk/fslcourse/downloads/preCourse.tar.gz
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--2025-10-30 00:58:14--  https://fsl.fmrib.ox.ac.uk/fslcourse/downloads/preCourse.tar.gz
 Resolving fsl.fmrib.ox.ac.uk (fsl.fmrib.ox.ac.uk)... 129.67.248.66
 Connecting to fsl.fmrib.ox.ac.uk (fsl.fmrib.ox.ac.uk)|129.67.248.66|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 239640893 (229M) [application/x-gzip]
 Saving to: ‘preCourse.tar.gz’
 
-preCourse.tar.gz    100%[===================&gt;] 228.54M  31.0MB/s    in 8.1s    
+preCourse.tar.gz    100%[===================&gt;] 228.54M  82.4MB/s    in 2.8s    
 
-2025-12-16 19:00:26 (28.3 MB/s) - ‘preCourse.tar.gz’ saved [239640893/239640893]
+2025-10-30 00:58:17 (82.4 MB/s) - ‘preCourse.tar.gz’ saved [239640893/239640893]
 
 fsl_course_data/intro/
 fsl_course_data/intro/highres.nii.gz
@@ -1223,8 +1240,15 @@ Miscellaneous options:
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span><span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>output
-<span class="o">!</span><span class="w"> </span>bet<span class="w"> </span>./fsl_course_data/intro/structural.nii.gz<span class="w"> </span>./output/structural_brain<span class="w"> </span>-m<span class="w"> </span>-s
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create directory (won&#39;t error if it exists)</span>
+<span class="o">!</span><span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>./output
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span><span class="w"> </span>bet<span class="w"> </span>./fsl_course_data/intro/structural.nii.gz<span class="w"> </span>./output/structural_brain<span class="w"> </span>-m<span class="w"> </span>-s
 </pre></div>
 </div>
 </div>
@@ -1237,9 +1261,9 @@ Miscellaneous options:
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>total 3620
--rw-r--r-- 1 jovyan users 3516911 Dec 16 19:05 structural_brain.nii.gz
--rw-r--r-- 1 jovyan users   73650 Dec 16 19:05 structural_brain_mask.nii.gz
--rw-r--r-- 1 jovyan users  114340 Dec 16 19:05 structural_brain_skull.nii.gz
+-rw-r--r-- 1 jovyan users 3516911 Oct 30 01:04 structural_brain.nii.gz
+-rw-r--r-- 1 jovyan users   73650 Oct 30 01:04 structural_brain_mask.nii.gz
+-rw-r--r-- 1 jovyan users  114340 Oct 30 01:04 structural_brain_skull.nii.gz
 </pre></div>
 </div>
 </div>
@@ -1249,18 +1273,7 @@ Miscellaneous options:
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">ipyniivue</span><span class="w"> </span><span class="kn">import</span> <span class="n">NiiVue</span>
-<span class="n">nv</span> <span class="o">=</span> <span class="n">NiiVue</span><span class="p">()</span>
-<span class="n">nv</span><span class="o">.</span><span class="n">load_volumes</span><span class="p">(</span> <span class="p">[{</span><span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;./fsl_course_data/intro/structural.nii.gz&quot;</span><span class="p">,</span> <span class="s2">&quot;colormap&quot;</span><span class="p">:</span> <span class="s2">&quot;gray&quot;</span><span class="p">}])</span>
-<span class="n">nv</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<script type="application/vnd.jupyter.widget-view+json">{"model_id": "dfdc4b852b994d85a86d7cbafe22104f", "version_major": 2, "version_minor": 1}</script></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">ipyniivue</span><span class="w"> </span><span class="kn">import</span> <span class="n">NiiVue</span>
+
 <span class="n">nv</span> <span class="o">=</span> <span class="n">NiiVue</span><span class="p">()</span>
 <span class="n">nv</span><span class="o">.</span><span class="n">load_volumes</span><span class="p">(</span> <span class="p">[{</span><span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;./fsl_course_data/intro/structural.nii.gz&quot;</span><span class="p">,</span> <span class="s2">&quot;colormap&quot;</span><span class="p">:</span> <span class="s2">&quot;gray&quot;</span><span class="p">},</span>
                 <span class="p">{</span><span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;./output/structural_brain.nii.gz&quot;</span><span class="p">,</span> <span class="s2">&quot;colormap&quot;</span><span class="p">:</span> <span class="s2">&quot;red&quot;</span> <span class="p">},</span>
@@ -1270,84 +1283,18 @@ Miscellaneous options:
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span><span class="w"> </span><span class="nn">ipyniivue</span><span class="w"> </span><span class="kn">import</span> <span class="n">NiiVue</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">nv</span> <span class="o">=</span> <span class="n">NiiVue</span><span class="p">()</span>
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">nv</span><span class="o">.</span><span class="n">load_volumes</span><span class="p">(</span> <span class="p">[{</span><span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;./fsl_course_data/intro/structural.nii.gz&quot;</span><span class="p">,</span> <span class="s2">&quot;colormap&quot;</span><span class="p">:</span> <span class="s2">&quot;gray&quot;</span><span class="p">},</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span>                 <span class="p">{</span><span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;./output/structural_brain.nii.gz&quot;</span><span class="p">,</span> <span class="s2">&quot;colormap&quot;</span><span class="p">:</span> <span class="s2">&quot;red&quot;</span> <span class="p">},</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span>                  <span class="p">{</span><span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="s2">&quot;./output/structural_brain_skull.nii.gz&quot;</span><span class="p">,</span> <span class="s2">&quot;colormap&quot;</span><span class="p">:</span> <span class="s2">&quot;blue&quot;</span> <span class="p">}])</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">nv</span>
-
-<span class="nn">File /opt/conda/lib/python3.12/site-packages/ipyniivue/widget.py:427,</span> in <span class="ni">NiiVue.load_volumes</span><span class="nt">(self, volumes)</span>
-<span class="g g-Whitespace">    </span><span class="mi">406</span> <span class="k">def</span><span class="w"> </span><span class="nf">load_volumes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">volumes</span><span class="p">:</span> <span class="nb">list</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">407</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">408</span><span class="sd">     Load a list of volume objects.</span>
-<span class="g g-Whitespace">    </span><span class="mi">409</span><span class="sd"> </span>
-<span class="sd">   (...)    425 </span>
-<span class="g g-Whitespace">    </span><span class="mi">426</span><span class="sd">     &quot;&quot;&quot;</span>
-<span class="ne">--&gt; </span><span class="mi">427</span>     <span class="n">volumes</span> <span class="o">=</span> <span class="p">[</span><span class="n">Volume</span><span class="p">(</span><span class="o">**</span><span class="n">item</span><span class="p">)</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">volumes</span><span class="p">]</span>
-<span class="g g-Whitespace">    </span><span class="mi">428</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_volumes</span> <span class="o">=</span> <span class="n">volumes</span>
-
-<span class="nn">File /opt/conda/lib/python3.12/site-packages/ipyniivue/widget.py:199,</span> in <span class="ni">Volume.__init__</span><span class="nt">(self, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">197</span> <span class="k">if</span> <span class="s2">&quot;colormap_invert&quot;</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">198</span>     <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;colormap_invert&quot;</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">199</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-
-<span class="nn">File /opt/conda/lib/python3.12/site-packages/ipywidgets/widgets/widget.py:506,</span> in <span class="ni">Widget.__init__</span><span class="nt">(self, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">503</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">505</span> <span class="n">Widget</span><span class="o">.</span><span class="n">_call_widget_constructed</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">506</span> <span class="bp">self</span><span class="o">.</span><span class="n">open</span><span class="p">()</span>
-
-<span class="nn">File /opt/conda/lib/python3.12/site-packages/ipywidgets/widgets/widget.py:525,</span> in <span class="ni">Widget.open</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">523</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;Open a comm to the frontend if one isn&#39;t already open.&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">524</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">comm</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">525</span>     <span class="n">state</span><span class="p">,</span> <span class="n">buffer_paths</span><span class="p">,</span> <span class="n">buffers</span> <span class="o">=</span> <span class="n">_remove_buffers</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_state</span><span class="p">())</span>
-<span class="g g-Whitespace">    </span><span class="mi">527</span>     <span class="n">args</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">target_name</span><span class="o">=</span><span class="s1">&#39;jupyter.widget&#39;</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">528</span>                 <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;state&#39;</span><span class="p">:</span> <span class="n">state</span><span class="p">,</span> <span class="s1">&#39;buffer_paths&#39;</span><span class="p">:</span> <span class="n">buffer_paths</span><span class="p">},</span>
-<span class="g g-Whitespace">    </span><span class="mi">529</span>                 <span class="n">buffers</span><span class="o">=</span><span class="n">buffers</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">530</span>                 <span class="n">metadata</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;version&#39;</span><span class="p">:</span> <span class="n">__protocol_version__</span><span class="p">}</span>
-<span class="g g-Whitespace">    </span><span class="mi">531</span>                 <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">532</span>     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_model_id</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-
-<span class="nn">File /opt/conda/lib/python3.12/site-packages/ipywidgets/widgets/widget.py:615,</span> in <span class="ni">Widget.get_state</span><span class="nt">(self, key, drop_defaults)</span>
-<span class="g g-Whitespace">    </span><span class="mi">613</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">614</span>     <span class="n">to_json</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">trait_metadata</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="s1">&#39;to_json&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_trait_to_json</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">615</span>     <span class="n">value</span> <span class="o">=</span> <span class="n">to_json</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">k</span><span class="p">),</span> <span class="bp">self</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">616</span>     <span class="k">if</span> <span class="ow">not</span> <span class="n">drop_defaults</span> <span class="ow">or</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_compare</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">traits</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">.</span><span class="n">default_value</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">617</span>         <span class="n">state</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
-
-<span class="nn">File /opt/conda/lib/python3.12/site-packages/ipyniivue/utils.py:49,</span> in <span class="ni">file_serializer</span><span class="nt">(instance, widget)</span>
-<span class="g g-Whitespace">     </span><span class="mi">47</span>     <span class="c1"># Make sure we have a pathlib.Path instance</span>
-<span class="g g-Whitespace">     </span><span class="mi">48</span>     <span class="n">instance</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">instance</span><span class="p">)</span>
-<span class="ne">---&gt; </span><span class="mi">49</span> <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="n">instance</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="n">instance</span><span class="o">.</span><span class="n">read_bytes</span><span class="p">()}</span>
-
-<span class="nn">File /opt/conda/lib/python3.12/pathlib.py:1019,</span> in <span class="ni">Path.read_bytes</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1015</span> <span class="k">def</span><span class="w"> </span><span class="nf">read_bytes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="g g-Whitespace">   </span><span class="mi">1016</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">   </span><span class="mi">1017</span><span class="sd">     Open the file in bytes mode, read it, and close the file.</span>
-<span class="g g-Whitespace">   </span><span class="mi">1018</span><span class="sd">     &quot;&quot;&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">1019</span>     <span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1020</span>         <span class="k">return</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-
-<span class="nn">File /opt/conda/lib/python3.12/pathlib.py:1013,</span> in <span class="ni">Path.open</span><span class="nt">(self, mode, buffering, encoding, errors, newline)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1011</span> <span class="k">if</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">mode</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1012</span>     <span class="n">encoding</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">text_encoding</span><span class="p">(</span><span class="n">encoding</span><span class="p">)</span>
-<span class="ne">-&gt; </span><span class="mi">1013</span> <span class="k">return</span> <span class="n">io</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">buffering</span><span class="p">,</span> <span class="n">encoding</span><span class="p">,</span> <span class="n">errors</span><span class="p">,</span> <span class="n">newline</span><span class="p">)</span>
-
-<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;output/structural_brain.nii.gz&#39;
-</pre></div>
-</div>
-</div>
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "e9e66f1bf54d464d9cbb2470696d5cb5", "version_major": 2, "version_minor": 0}</script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
+
 <span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s1">&#39;https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/fsl_course_bet05.png&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><img src="https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/fsl_course_bet05.png"/></div></div>
 </div>
 </section>
 <section id="varying-the-fractional-intensity-threshold-parameter-f">
@@ -1377,6 +1324,8 @@ Miscellaneous options:
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "bf9a46345db548e3b36075fbe28a4176", "version_major": 2, "version_minor": 0}</script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1384,6 +1333,8 @@ Miscellaneous options:
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><img src="https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/fsl_course_bet_f.png"/></div></div>
 </div>
 </section>
 </section>
@@ -1409,6 +1360,8 @@ Miscellaneous options:
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "65c91deac5544c23bb6f7bff14062c6a", "version_major": 2, "version_minor": 0}</script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1416,6 +1369,8 @@ Miscellaneous options:
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><img src="https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/fsl_course_bet_sub3m0.png"/></div></div>
 </div>
 <ul class="simple">
 <li><p><strong>Solution:</strong> Use gradient threshold (-g) to vary the intensity threshold linearly by slice (getting smaller at the bottom and bigger at the top, or vice versa)</p></li>
@@ -1437,6 +1392,8 @@ Miscellaneous options:
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "63062167c1384aa1ad74eece2aaffc95", "version_major": 2, "version_minor": 0}</script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1444,6 +1401,8 @@ Miscellaneous options:
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><img src="https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/fsl_course_bet_sub3m0_g.png"/></div></div>
 </div>
 </section>
 <section id="dealing-with-large-fov-images">
@@ -1468,6 +1427,8 @@ Miscellaneous options:
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "42b8b02fb40347659dd4a97d3af07946", "version_major": 2, "version_minor": 0}</script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1475,6 +1436,8 @@ Miscellaneous options:
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><img src="https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/fsl_course_bet_bighead.png"/></div></div>
 </div>
 <ul class="simple">
 <li><p><strong>Solutions:</strong></p></li>
@@ -1491,6 +1454,12 @@ Miscellaneous options:
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Final FOV is: 
+0.000000 160.000000 0.000000 224.000000 61.000000 170.000000
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1502,6 +1471,8 @@ Miscellaneous options:
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "54314b12852a45f3a8c10e7397f75c4b", "version_major": 2, "version_minor": 0}</script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1509,6 +1480,8 @@ Miscellaneous options:
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><img src="https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/fsl_course_bet_bighead_crop.png"/></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1527,6 +1500,8 @@ Miscellaneous options:
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "d4d2a90e1dc9488eb53e0f5d9b38278d", "version_major": 2, "version_minor": 0}</script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1534,7 +1509,45 @@ Miscellaneous options:
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><img src="https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/fsl_course_bet_bighead_crop_brain.png"/></div></div>
 </div>
+<section id="dependencies-in-jupyter-python">
+<h4>Dependencies in Jupyter/Python<a class="headerlink" href="#dependencies-in-jupyter-python" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Using the package <a class="reference external" href="https://github.com/rasbt/watermark">watermark</a> to document system environment and software versions used in this notebook</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> watermark
+
+<span class="o">%</span><span class="k">watermark</span>
+<span class="o">%</span><span class="k">watermark</span> --iversions
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Last updated: 2025-10-30T01:05:11.538945+00:00
+
+Python implementation: CPython
+Python version       : 3.11.6
+IPython version      : 8.16.1
+
+Compiler    : GCC 12.3.0
+OS          : Linux
+Release     : 5.4.0-204-generic
+Machine     : x86_64
+Processor   : x86_64
+CPU cores   : 32
+Architecture: 64bit
+
+IPython  : 8.16.1
+ipyniivue: 2.3.2
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 </section>
 </section>
@@ -1548,16 +1561,16 @@ Miscellaneous options:
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "conda-base-py"
+            mode: "python"
         },
         kernelOptions: {
-            name: "conda-base-py",
+            name: "python3",
             path: "./examples/structural_imaging"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'conda-base-py'</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -1603,7 +1616,13 @@ Miscellaneous options:
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#output-cpu-information">Output CPU information</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citation-resources">Citation/ Resources:</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-included-in-this-workflow">Tools included in this workflow</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">Dataset</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#educational-resources">Educational resources</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#load-fsl">Load FSL</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-course-material">Download course material</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bet-basics">BET basics</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualization-with-ipyniivue">Visualization with ipyniivue</a></li>
@@ -1612,7 +1631,10 @@ Miscellaneous options:
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#troubleshooting-brain-extraction">Troubleshooting Brain Extraction</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cerebellum-underestimation-using-the-gradient-threshold-option-g">Cerebellum Underestimation: Using the gradient threshold option (-g)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dealing-with-large-fov-images">Dealing with large FOV images</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dealing-with-large-fov-images">Dealing with large FOV images</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dependencies-in-jupyter-python">Dependencies in Jupyter/Python</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

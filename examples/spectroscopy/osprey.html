@@ -176,6 +176,8 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../intro.html">Examples</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="../diffusion_imaging/intro.html">Diffusion Imaging</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/DIPY_1.html">Basic Tracking with DIPY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/DIPY_2.html">Advanced Tracking with DIPY</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/Diffusion_TBSS_Demo.html">TBSS Tutorial</a></li>
 
 
@@ -193,12 +195,15 @@
 <li class="toctree-l3"><a class="reference internal" href="../functional_imaging/AFNI_preprocessing_only.html">AFNI Preprocessing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../functional_imaging/AFNI_preprocessing_plus_glm.html">AFNI Preprocessing and GLM</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../functional_imaging/AFNI_preprocessing_plus_glm_group.html">AFNI Preprocessing &amp; Group Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../functional_imaging/AFNI_processing_task_based.html">Processing task-based FMRI with AFNI and afni_proc.py</a></li>
+
+
+
 <li class="toctree-l3"><a class="reference internal" href="../functional_imaging/FSL_preproc_glm.html">FSL Preprocessing and GLM</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../functional_imaging/FSLnets_course_practical.html">Resting state with FSLnets</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../functional_imaging/NiWrap.html">NiWrap and Connectome Workbench</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../functional_imaging/aslprep.html">ASLprep</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../functional_imaging/deepretinotopy.html">DeepRetinotopy</a></li>
-
+<li class="toctree-l3"><a class="reference internal" href="../functional_imaging/deepretinotopy.html">DeepRetinotopy Toolbox</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../functional_imaging/first_and_second_level_spm.html">Nipype-SPM fMRI Analysis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../functional_imaging/fmriprep.html">fMRIprep</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../functional_imaging/fsl_all_levels_flanker_nipype.html">Nipype-FSL fMRI Analysis</a></li>
@@ -218,9 +223,9 @@
 <li class="toctree-l2 has-children"><a class="reference internal" href="../structural_imaging/intro.html">Structural Imaging</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="../structural_imaging/FSL_course_bet.html">FSL course - BET</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../structural_imaging/brain_extraction_different_tools.html">Brain Extraction Tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../structural_imaging/freesurfer-recon-all-clinical.html">FreeSurfer: recon-all-clinical</a></li>
+
 <li class="toctree-l3"><a class="reference internal" href="../structural_imaging/freesurfer.html">FreeSurfer</a></li>
-
-
 <li class="toctree-l3"><a class="reference internal" href="../structural_imaging/qsmxt.html">QSMxT</a></li>
 
 
@@ -241,7 +246,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../workflows/bids_conversion.html">BIDS conversion</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/nipype_full.html">Nipype on Neurodesk</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/nipype_short.html">Basic Nipype</a></li>
-
 
 <li class="toctree-l3"><a class="reference internal" href="../workflows/papermill-slurm-submission-example.html">Papermill Slurm Job Submission</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/pydra_preproc_ants.html">Pydra</a></li>
@@ -469,10 +473,13 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analyzing-mr-spectra-from-the-human-brain-using-single-voxel-spectroscopy-svs">Analyzing MR Spectra from the Human Brain using Single Voxel Spectroscopy (SVS)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mr-spectroscopy-mrs">MR Spectroscopy (MRS)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#citation-and-resources">Citation and Resources:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#citation-and-resources">Citation and Resources:</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-included-in-this-workflow">Tools included in this workflow</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">Dataset</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#osprey-input">Osprey input</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#osprey-output">Osprey output</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#check-cpu-vendor-and-model-for-compatibility-or-performance-considerations">Check CPU vendor and model for compatibility or performance considerations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-software-tools-and-import-python-libraries">Load software tools and import python libraries</a></li>
 </ul>
 </li>
@@ -481,7 +488,10 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#results">Results</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#t1s-with-the-mrs-voxel-aligned">T1s with the MRS voxel aligned</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spectral-modelling">Spectral modelling</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metabolite-concetrations">Metabolite concetrations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metabolite-concetrations">Metabolite concetrations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dependencies-in-jupyter-python">Dependencies in Jupyter/Python</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -500,6 +510,7 @@ document.write(`
 <section id="analyzing-mr-spectra-from-the-human-brain-using-single-voxel-spectroscopy-svs">
 <h2>Analyzing MR Spectra from the Human Brain using Single Voxel Spectroscopy (SVS)<a class="headerlink" href="#analyzing-mr-spectra-from-the-human-brain-using-single-voxel-spectroscopy-svs" title="Link to this heading">#</a></h2>
 <p><strong>Author</strong>: Michal Toth</p>
+<p><strong>Date</strong>: 24 Sep 2025</p>
 <p>This notebook was prepared for an audience of clinicians at the 2025 PACTALS (Pan-Asian consortium of Treatment and Research in ALS) conference in Melbourne (<a class="reference external" href="https://www.pactalscongress.com/programme">link</a>)</p>
 <div style="border:2px solid #1976D2; border-radius:10px; padding:15px; background-color:#f0f3f5;">
 <h2 style="color:#0D47A1;">📘 How to Use This Notebook</h2>
@@ -539,6 +550,8 @@ The computer will either:
 <p>This example demonstrates the processing of MR spectra acquired from the human motor cortex using <code class="docutils literal notranslate"><span class="pre">Osprey</span></code>, a standalone tool for processing and quantification of magnetic resonance spectroscopy (MRS) data.</p>
 <section id="citation-and-resources">
 <h3>Citation and Resources:<a class="headerlink" href="#citation-and-resources" title="Link to this heading">#</a></h3>
+<section id="tools-included-in-this-workflow">
+<h4>Tools included in this workflow<a class="headerlink" href="#tools-included-in-this-workflow" title="Link to this heading">#</a></h4>
 <p><strong>Osprey</strong>:</p>
 <ul class="simple">
 <li><p>Oeltzschner, G., Zöllner, H. J., Hui, S. C. N., Mikkelsen, M., Saleh, M. G., Tapper, S., &amp; Edden, R. A. E. (2020). Osprey: Open-source processing, reconstruction &amp; estimation of magnetic resonance spectroscopy data. Journal of Neuroscience Methods, 343, 108827. <a class="reference external" href="https://doi.org/10.1016/j.jneumeth.2020.108827">https://doi.org/10.1016/j.jneumeth.2020.108827</a></p></li>
@@ -548,7 +561,9 @@ The computer will either:
 <ul class="simple">
 <li><p>Python Software Foundation. (2023). Python (Version 3.11.6) [Software]. Available at <a class="reference external" href="https://www.python.org/">https://www.python.org/</a></p></li>
 </ul>
-<p><strong>Dataset</strong>:</p>
+</section>
+<section id="dataset">
+<h4>Dataset<a class="headerlink" href="#dataset" title="Link to this heading">#</a></h4>
 <ul class="simple">
 <li><p>Collected at UQ as part of the BeLong study</p></li>
 <li><p>T1 weighted MP2RAGE at 3T (healthy control)</p></li>
@@ -560,6 +575,7 @@ The computer will either:
 </ul>
 </li>
 </ul>
+</section>
 </section>
 <section id="osprey-input">
 <h3>Osprey input<a class="headerlink" href="#osprey-input" title="Link to this heading">#</a></h3>
@@ -617,23 +633,6 @@ The computer will either:
 </table>
 </div>
 </section>
-<section id="check-cpu-vendor-and-model-for-compatibility-or-performance-considerations">
-<h3>Check CPU vendor and model for compatibility or performance considerations<a class="headerlink" href="#check-cpu-vendor-and-model-for-compatibility-or-performance-considerations" title="Link to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>cat<span class="w"> </span>/proc/cpuinfo<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;vendor&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq
-<span class="o">!</span>cat<span class="w"> </span>/proc/cpuinfo<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s1">&#39;model name&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>uniq
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>vendor_id	: GenuineIntel
-model name	: Intel(R) Xeon(R) Gold 6126 CPU @ 2.60GHz
-</pre></div>
-</div>
-</div>
-</div>
-</section>
 <section id="load-software-tools-and-import-python-libraries">
 <h3>Load software tools and import python libraries<a class="headerlink" href="#load-software-tools-and-import-python-libraries" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
@@ -663,7 +662,7 @@ model name	: Intel(R) Xeon(R) Gold 6126 CPU @ 2.60GHz
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span> <span class="k">as</span> <span class="n">ipython_image</span><span class="p">,</span> <span class="n">display</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span> <span class="k">as</span> <span class="n">ipython_image</span><span class="p">,</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span><span class="p">,</span> <span class="n">ImageDraw</span><span class="p">,</span> <span class="n">ImageFont</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">ipyniivue</span><span class="w"> </span><span class="kn">import</span> <span class="n">NiiVue</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">nibabel</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">nib</span>
@@ -710,7 +709,7 @@ Archive:  ./data_osprey/osprey.zip
   inflating: ./data_osprey/sub-002/ses-01/mrs/meas_MID00103_FID130220_svs_slaser_dkd_ul.dat
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100%|██████████| 150M/150M [00:13&lt;00:00, 10.9Mbytes/s]
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100%|██████████| 150M/150M [00:16&lt;00:00, 9.38Mbytes/s]
 </pre></div>
 </div>
 </div>
@@ -846,8 +845,8 @@ Setting up environment variables
 LD_LIBRARY_PATH is .:/opt/MCR/R2023a//runtime/glnxa64:/opt/MCR/R2023a//bin/glnxa64:/opt/MCR/R2023a//sys/os/glnxa64:/opt/MCR/R2023a//sys/opengl/lib/glnxa64
 Spectral fitting parameters will not be saved (default). Please indicate otherwise in the csv-file or the GUI 
 /home/jovyan/Git_repositories/example-notebooks/books/spectroscopy/osprey-job.json
-Timestamp September 24, 2025 02:18:38 Osprey 2.9.0
-Timestamp September 24, 2025 02:18:38 Osprey 2.9.0  OspreyLoad
+Timestamp October 30, 2025 00:07:41 Osprey 2.9.0
+Timestamp October 30, 2025 00:07:41 Osprey 2.9.0  OspreyLoad
 Loading raw data from dataset   1 out of   1 total datasets...
 Software version: VD (!?)
 Reader version: 1496740353 (UTC: 06-Jun-2017 09:12:33)
@@ -875,79 +874,79 @@ ans =
 multi RAID file detected.
 
 ... done.
- Elapsed time 15.375816 seconds
-Timestamp September 24, 2025 02:18:54 Osprey 2.9.0  OspreyProcess
+ Elapsed time 15.933984 seconds
+Timestamp October 30, 2025 00:07:57 Osprey 2.9.0  OspreyProcess
 Processing data from dataset   1 out of   1 total datasets...
 
 ... done.
- Elapsed time 68.660608 seconds
+ Elapsed time 57.194783 seconds
 Writing table to file = /home/jovyan/Git_repositories/example-notebooks/books/spectroscopy/osprey-output/QM_processed_spectra.tsv
 Writing table to file = /home/jovyan/Git_repositories/example-notebooks/books/spectroscopy/osprey-output/QM_processed_spectra.json
-Timestamp September 24, 2025 02:20:04 Osprey 2.9.0  OspreyFit
+Timestamp October 30, 2025 00:08:56 Osprey 2.9.0  OspreyFit
 Fitting metabolite spectra from dataset   1 out of   1 total datasets...
 
 ... done.
- Elapsed time 4.866655 seconds
+ Elapsed time 4.912133 seconds
 
 ... done.
- Elapsed time 4.866655 seconds
+ Elapsed time 4.912133 seconds
 Writing table to file = /home/jovyan/Git_repositories/example-notebooks/books/spectroscopy/osprey-output/QM_processed_spectra.tsv
 Writing table to file = /home/jovyan/Git_repositories/example-notebooks/books/spectroscopy/osprey-output/QM_processed_spectra.json
-Timestamp September 24, 2025 02:20:15 Osprey 2.9.0  OspreyCoreg
+Timestamp October 30, 2025 00:09:07 Osprey 2.9.0  OspreyCoreg
 Coregistering voxel from dataset   1 out of   1 total datasets...
 
 ... done.
- Elapsed time 7.306444 seconds
-Timestamp September 24, 2025 02:20:23 Osprey 2.9.0  OspreySeg
+ Elapsed time 6.378909 seconds
+Timestamp October 30, 2025 00:09:14 Osprey 2.9.0  OspreySeg
 
 Segmenting structural image from dataset   1 out of   1 total datasets...
 
 
 ------------------------------------------------------------------------
-24-Sep-2025 02:20:31 - Running job #1
+30-Oct-2025 00:09:22 - Running job #1
 ------------------------------------------------------------------------
-24-Sep-2025 02:20:31 - Running &#39;Segment&#39;
+30-Oct-2025 00:09:22 - Running &#39;Segment&#39;
 
-SPM12: spm_preproc_run (v7670)                     02:20:31 - 24/09/2025
+SPM12: spm_preproc_run (v7670)                     00:09:22 - 30/10/2025
 ========================================================================
 Segment /home/jovyan/Git_repositories/example-notebooks/books/spectroscopy/data_osprey/sub-002/ses-01/anat/sub-002_ses-01_acq-MP2RAGE_desc-defaced_T1w.nii,1
-Completed                               :          02:23:48 - 24/09/2025
-24-Sep-2025 02:23:48 - Done    &#39;Segment&#39;
-24-Sep-2025 02:23:48 - Done
+Completed                               :          00:12:55 - 30/10/2025
+30-Oct-2025 00:12:55 - Done    &#39;Segment&#39;
+30-Oct-2025 00:12:55 - Done
 
 
 
 ------------------------------------------------------------------------
-24-Sep-2025 02:23:51 - Running job #1
+30-Oct-2025 00:12:59 - Running job #1
 ------------------------------------------------------------------------
-24-Sep-2025 02:23:51 - Running &#39;Normalise: Write&#39;
-24-Sep-2025 02:23:56 - Done    &#39;Normalise: Write&#39;
-24-Sep-2025 02:23:56 - Done
+30-Oct-2025 00:12:59 - Running &#39;Normalise: Write&#39;
+30-Oct-2025 00:13:10 - Done    &#39;Normalise: Write&#39;
+30-Oct-2025 00:13:10 - Done
 
 
 
 ------------------------------------------------------------------------
-24-Sep-2025 02:24:00 - Running job #1
+30-Oct-2025 00:13:14 - Running job #1
 ------------------------------------------------------------------------
-24-Sep-2025 02:24:00 - Running &#39;Image Calculator&#39;
+30-Oct-2025 00:13:14 - Running &#39;Image Calculator&#39;
 
-SPM12: spm_imcalc (v6961)                          02:24:00 - 24/09/2025
+SPM12: spm_imcalc (v6961)                          00:13:14 - 30/10/2025
 ========================================================================
 ImCalc Image: /home/jovyan/Git_repositories/example-notebooks/books/spectroscopy/osprey-output/VoxelMasks/MID00103_FID130220_svs_slaser_dkd_ul_space-spm152_mask_VoxelOverlap.nii
-24-Sep-2025 02:24:01 - Done    &#39;Image Calculator&#39;
-24-Sep-2025 02:24:01 - Done
+30-Oct-2025 00:13:15 - Done    &#39;Image Calculator&#39;
+30-Oct-2025 00:13:15 - Done
 
 
 ... done.
- Elapsed time 210.691464 seconds
+ Elapsed time 234.532095 seconds
 Writing table to file = /home/jovyan/Git_repositories/example-notebooks/books/spectroscopy/osprey-output/SegMaps/TissueFractions_Voxel_1.tsv
 Writing table to file = /home/jovyan/Git_repositories/example-notebooks/books/spectroscopy/osprey-output/SegMaps/TissueFractions_Voxel_1.json
-Timestamp September 24, 2025 02:24:01 Osprey 2.9.0  OspreyQuantify
+Timestamp October 30, 2025 00:13:16 Osprey 2.9.0  OspreyQuantify
 
 Quantifying dataset   1 out of   1 total datasets...
 
 ... done.
- Elapsed time 0.056855 seconds
+ Elapsed time 0.064912 seconds
 Writing table to file = /home/jovyan/Git_repositories/example-notebooks/books/spectroscopy/osprey-output/QuantifyResults/A_amplMets_Voxel_1_Basis_1.tsv
 Writing table to file = /home/jovyan/Git_repositories/example-notebooks/books/spectroscopy/osprey-output/QuantifyResults/A_amplMets_Voxel_1_Basis_1.json
 Writing table to file = /home/jovyan/Git_repositories/example-notebooks/books/spectroscopy/osprey-output/QuantifyResults/A_tCr_Voxel_1_Basis_1.tsv
@@ -966,7 +965,7 @@ Writing table to file = /home/jovyan/Git_repositories/example-notebooks/books/sp
 Writing table to file = /home/jovyan/Git_repositories/example-notebooks/books/spectroscopy/osprey-output/QuantifyResults/A_CRLB_Voxel_1_Basis_1.json
 Writing table to file = /home/jovyan/Git_repositories/example-notebooks/books/spectroscopy/osprey-output/QuantifyResults/A_h2oarea_Voxel_1_Basis_1.tsv
 Writing table to file = /home/jovyan/Git_repositories/example-notebooks/books/spectroscopy/osprey-output/QuantifyResults/A_h2oarea_Voxel_1_Basis_1.json
-Timestamp September 24, 2025 02:24:03 Osprey 2.9.0  OspreyOverview
+Timestamp October 30, 2025 00:13:18 Osprey 2.9.0  OspreyOverview
 
 Gathering spectra from subspectrum 1 out of 2 total subspectra..Gathering spectra from subspectrum 1 out of 2 total subspectra..Gathering spectra from subspectrum 2 out of 2 total subspectra...
 ... done.
@@ -980,16 +979,16 @@ Scaling data from dataset 1 out of 1 total datasets.Scaling data from dataset 1 
 Writing table to file = /home/jovyan/Git_repositories/example-notebooks/books/spectroscopy/osprey-output/subject_names_and_excluded.tsv
 Writing table to file = /home/jovyan/Git_repositories/example-notebooks/books/spectroscopy/osprey-output/subject_names_and_excluded.json
 ... done.
- Elapsed time 0.120314 seconds
+ Elapsed time 0.289561 seconds
 Runtime Breakdown................
-OspreyLoad runtime: 15.375816 seconds
-OspreyProcess runtime: 68.660608 seconds
-OspreyFit runtime: 4.866655 seconds
-	OspreyFit metab runtime: 4.866655 seconds
-OspreyCoreg runtime: 7.306444 seconds
-OspreySeg runtime: 210.691464 seconds
-OspreyOverview runtime: 0.120314 seconds
-Full Osprey runtime: 307.078156 seconds
+OspreyLoad runtime: 15.933984 seconds
+OspreyProcess runtime: 57.194783 seconds
+OspreyFit runtime: 4.912133 seconds
+	OspreyFit metab runtime: 4.912133 seconds
+OspreyCoreg runtime: 6.378909 seconds
+OspreySeg runtime: 234.532095 seconds
+OspreyOverview runtime: 0.289561 seconds
+Full Osprey runtime: 319.306377 seconds
 </pre></div>
 </div>
 </div>
@@ -1088,7 +1087,7 @@ Full Osprey runtime: 307.078156 seconds
 </div>
 </div>
 <div class="cell_output docutils container">
-<script type="application/vnd.jupyter.widget-view+json">{"model_id": "32b1bf581e684d4ab1e761476a499403", "version_major": 2, "version_minor": 0}</script></div>
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "43c923c0fb9e4190a16067addf9472ac", "version_major": 2, "version_minor": 0}</script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1155,13 +1154,11 @@ Full Osprey runtime: 307.078156 seconds
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Markdown</span><span class="p">,</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">Image</span>
-
-<span class="c1"># Centered title</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Centered title</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;h2 style=&#39;text-align: center;&#39;&gt;Averaged Spectra&lt;/h2&gt;&quot;</span><span class="p">))</span>
 
 <span class="c1"># Image (keeps default alignment unless styled otherwise)</span>
-<span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">output_path</span><span class="si">}</span><span class="s2">/Reports/reportFigures/sub-002/sub-002_metab_A.jpg&quot;</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">ipython_image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">output_path</span><span class="si">}</span><span class="s2">/Reports/reportFigures/sub-002/sub-002_metab_A.jpg&quot;</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -1202,7 +1199,7 @@ Full Osprey runtime: 307.078156 seconds
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/b2ba2c75285beb563a58f45d24ef3b5202fdc39bca7264a95d885946f70d0f55.png" src="../../_images/b2ba2c75285beb563a58f45d24ef3b5202fdc39bca7264a95d885946f70d0f55.png" />
+<img alt="../../_images/ec1407ac17360a12855512c8ae8b43d93c7723b0491328d5cc218aa4ab6f2791.png" src="../../_images/ec1407ac17360a12855512c8ae8b43d93c7723b0491328d5cc218aa4ab6f2791.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1213,9 +1210,52 @@ Full Osprey runtime: 307.078156 seconds
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/14b3ae04e8499ee5118fe504f3f5e251b3baa25ee6d851ff1a2e17f1880c42b6.png" src="../../_images/14b3ae04e8499ee5118fe504f3f5e251b3baa25ee6d851ff1a2e17f1880c42b6.png" />
+<img alt="../../_images/b1c4a74effa5a2240631f710ecd7c609222632e37acaee8846ec5ed707fb8255.png" src="../../_images/b1c4a74effa5a2240631f710ecd7c609222632e37acaee8846ec5ed707fb8255.png" />
 </div>
 </div>
+<section id="dependencies-in-jupyter-python">
+<h4>Dependencies in Jupyter/Python<a class="headerlink" href="#dependencies-in-jupyter-python" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Using the package <a class="reference external" href="https://github.com/rasbt/watermark">watermark</a> to document system environment and software versions used in this notebook</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> watermark
+
+<span class="o">%</span><span class="k">watermark</span>
+<span class="o">%</span><span class="k">watermark</span> --iversions
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Last updated: 2025-10-30T00:13:39.768416+00:00
+
+Python implementation: CPython
+Python version       : 3.11.6
+IPython version      : 8.16.1
+
+Compiler    : GCC 12.3.0
+OS          : Linux
+Release     : 5.4.0-204-generic
+Machine     : x86_64
+Processor   : x86_64
+CPU cores   : 32
+Architecture: 64bit
+
+PIL       : 10.3.0
+matplotlib: 3.8.4
+numpy     : 2.2.6
+ipywidgets: 8.1.2
+nibabel   : 5.2.1
+json      : 2.0.9
+ipyniivue : 2.3.2
+IPython   : 8.16.1
+pandas    : 2.3.3
+</pre></div>
+</div>
+</div>
+</div>
+</section>
 </section>
 </section>
 </section>
@@ -1287,10 +1327,13 @@ Full Osprey runtime: 307.078156 seconds
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analyzing-mr-spectra-from-the-human-brain-using-single-voxel-spectroscopy-svs">Analyzing MR Spectra from the Human Brain using Single Voxel Spectroscopy (SVS)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mr-spectroscopy-mrs">MR Spectroscopy (MRS)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#citation-and-resources">Citation and Resources:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#citation-and-resources">Citation and Resources:</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-included-in-this-workflow">Tools included in this workflow</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">Dataset</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#osprey-input">Osprey input</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#osprey-output">Osprey output</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#check-cpu-vendor-and-model-for-compatibility-or-performance-considerations">Check CPU vendor and model for compatibility or performance considerations</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-software-tools-and-import-python-libraries">Load software tools and import python libraries</a></li>
 </ul>
 </li>
@@ -1299,7 +1342,10 @@ Full Osprey runtime: 307.078156 seconds
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#results">Results</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#t1s-with-the-mrs-voxel-aligned">T1s with the MRS voxel aligned</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spectral-modelling">Spectral modelling</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metabolite-concetrations">Metabolite concetrations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metabolite-concetrations">Metabolite concetrations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dependencies-in-jupyter-python">Dependencies in Jupyter/Python</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
