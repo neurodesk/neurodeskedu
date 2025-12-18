@@ -58,7 +58,7 @@ The interactive version of these notebooks is run in the US by Jetstream2 (NSF a
 
 The interactive version of these notebooks is run in Europe by the EGI Federation with the dedicated support of CESNET-MCC. Computational resources were provided by the e-INFRA CZ project (ID:90254), supported by the Ministry of Education, Youth and Sports of the Czech Republic.
 
-
 <img src="static/Wellcome_Trust_logo.png" width="150">
-<img src="static/czi_logo.png" width="250">
+<img src="books/static/czi_logo.png" width="250">
+
 <!-- Trigger: update navigation_depth -> 3 (2025-12-17 06:30Z) - harmless comment -->
