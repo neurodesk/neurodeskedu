@@ -42,6 +42,9 @@ sphinx:
     nb_merge_streams: true
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
     html_theme_options:
+      repository_url: https://github.com/neurodesk/neurodeskedu
+      path_to_docs: books
+      repository_branch: main
       show_navbar_depth: 2
       navigation_depth: 3
       launch_buttons:
