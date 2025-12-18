@@ -1,12 +1,15 @@
 #!/bin/bash
 
-# Build a two-level TOC: part (top folder) -> subfolder intro (real file) -> sections (pages/notebooks)
+# Build a 3-tier TOC that is actually visible in the theme:
+#   Examples -> (topic) -> (notebooks)
+#   Tutorials -> (topic) -> (pages)
+#   Contribute -> (guides)
 #
-# NOTE: Jupyter Book's external TOC schema requires every item under `chapters:` to contain one of:
-#   - file
-#   - url
-#   - glob
-# Caption-only headings are not valid at that position.
+# We intentionally generate top-level `chapters:` (not `parts:`) because the
+# sidebar/theme commonly flattens/hides part labels.
+#
+# NOTE: Jupyter Book's external TOC schema requires every item under `chapters:` / `sections:`
+# to contain one of: file/url/glob.
 
 set -eo pipefail
 
@@ -20,9 +23,10 @@ readarray -t notebook_list < <(find . -type f \( -name "*.ipynb" -o -name "*.md"
   ! -path "./_build/*" ! -path "./.git/*" | sed 's|^\./||' | sort)
 
 declare -A section_entries   # key: "parent|||subfolder" -> list of section lines (4-space indent)
-declare -A direct_entries    # key: parent -> list of direct chapter lines (2-space indent)
+declare -A direct_entries    # key: parent -> list of direct section lines (6-space indent)
 declare -A subfolders        # key: parent -> space-delimited subfolder list
 declare -A subfolder_intro   # key: "parent|||subfolder" -> intro file path (no ext)
+declare -A parent_intro      # key: parent -> intro file path (no ext)
 declare -A parents_seen
 parents=()
 
@@ -45,7 +49,12 @@ for file in "${notebook_list[@]}"; do
   # If there is no deeper subfolder, treat the file as a direct chapter under the part
   if [[ "$rest" != */* ]]; then
     file_no_ext="${file%.*}"
-    direct_entries[$parent]+="  - file: $file_no_ext\n"
+    if [[ "$rest" == "intro.md" ]]; then
+      parent_intro[$parent]="$file_no_ext"
+    else
+      # direct pages under parent (rare); include them under the parent's intro page
+      direct_entries[$parent]+="      - file: $file_no_ext\n"
+    fi
     continue
   fi
 
@@ -65,26 +74,46 @@ for file in "${notebook_list[@]}"; do
     subfolders[$parent]+=" ${subfolder}"
   fi
 
-  section_entries[$key]+="    - file: $file_no_ext\n"
+  section_entries[$key]+="          - file: $file_no_ext\n"
 done
 
 # Write the TOC
 {
   echo "format: jb-book"
   echo "root: intro"
-  echo "parts:"
+  echo "chapters:"
 
-  # Sort parents alphabetically for deterministic output
-  for parent in $(printf "%s\n" "${parents[@]}" | sort); do
-    echo "- part: $(capitalize "$parent")"
-    echo "  chapters:"
+  # Explicit order to match desired UX
+  ordered_parents=(examples tutorials contribute)
 
-    # Direct chapters (files directly under the parent folder)
+  # Append any other parents (alphabetical), just in case
+  extras=$(printf "%s\n" "${parents[@]}" | sort)
+  for p in $extras; do
+    case "$p" in
+      examples|tutorials|contribute) ;;
+      *) ordered_parents+=("$p") ;;
+    esac
+  done
+
+  for parent in "${ordered_parents[@]}"; do
+    [[ -z "${parents_seen[$parent]:-}" ]] && continue
+
+    parent_intro_no_ext="${parent_intro[$parent]:-${parent}/intro}"
+    if [[ ! -f "${parent_intro_no_ext}.md" ]]; then
+      echo "ERROR: Missing required parent intro page: ${parent_intro_no_ext}.md" >&2
+      echo "Create it (minimal is fine) so the TOC can show a visible top-level entry." >&2
+      exit 1
+    fi
+
+    echo "  - file: ${parent_intro_no_ext}"
+    echo "    sections:"
+
+    # Parent direct pages (if any)
     if [[ -n "${direct_entries[$parent]:-}" ]]; then
       echo -e "${direct_entries[$parent]}"
     fi
 
-    # Subfolder intro + sections per subfolder
+    # Subfolder intro -> sections under it
     read -ra subs <<< "${subfolders[$parent]:-}"
     if (( ${#subs[@]} )); then
       for subfolder in $(printf "%s\n" "${subs[@]}" | sort); do
@@ -96,9 +125,8 @@ done
           exit 1
         fi
 
-        echo "  - file: ${intro_no_ext}"
-        echo "    sections:"
-        # Only emit sections if there are pages/notebooks under this subfolder
+        echo "      - file: ${intro_no_ext}"
+        echo "        sections:"
         if [[ -n "${section_entries[$key]:-}" ]]; then
           echo -e "${section_entries[$key]}"
         fi
