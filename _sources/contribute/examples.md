@@ -14,7 +14,6 @@ We welcome example notebooks that demonstrate how to use tools within Neurodesk.
 Example notebooks are hosted in the [`neurodesk/example-notebooks`](https://github.com/Neurodesk/example-notebooks) repository and are intended to be lightweight, self-contained, and easy to follow.
 
 ---
-# Contribute Example Notebooks
 
 ## Getting Started
 

@@ -1,4 +1,4 @@
-# NeurodeskEDU
+# NeurodEL
 ## Neurodesk's Education and Learning hub
 
 Each Jupyter notebook in the repository is equipped with a Jupyter Hub button (the little rocket) at the top. This button will allow you to interact with the notebooks in a cloud-based environment. The environment is pre-configured to support Neurodesk, so you can start experimenting with the notebooks right away without having to install any additional software or packages.
@@ -24,4 +24,3 @@ The interactive version of these notebooks is run in Europe by the EGI Federatio
 
 <img src="images/Wellcome_Trust_logo.png" width="150">
 <img src="images/czi_logo.png" width="250">
-<!-- Trigger: update navigation_depth -> 3 (2025-12-17 06:30Z) - harmless comment -->

@@ -10,11 +10,10 @@ tags: ["template", "documentation"]
 description: >
   A brief guide for contributing new tutorials.
 ---
-# Contribute Tutorials
 
 We welcome tutorials that walk users through using tools or workflows available in Neurodesk. These tutorials are valuable learning resources that support accessible, reproducible neuroimaging.
 
-Tutorials are written in Markdown and hosted in the [`neurodesk.github.io:tutorials`](https://github.com/neurodesk/neurodesk.github.io/tree/main/content/en/learning-resources/tutorials) repository, where they appear as part of the documentation site.
+Tutorials are written in Markdown and hosted in the [`neurodeskedu:tutorials`](https://github.com/neurodesk/neurodeskedu/tree/main/books/tutorials) repository, where they appear as part of the documentation site.
 
 ---
 
