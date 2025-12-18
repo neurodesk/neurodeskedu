@@ -571,7 +571,7 @@ The output format of the regressor files are directly compatible for use with SP
 <p>I made some simple functions in python that would extract my desired movement regressors and save them to the space separated .txt file as is required by SPM. They can be found <a class="reference external" href="https://github.com/garner-code/imaging_cert_value_7T_pipeline/tree/master/physiol_regress/get_movement_regressors">here</a>.</p>
 <p>Once I had my .log files and .txt motion regressors file, I followed the instructions <a class="reference external" href="https://gitlab.ethz.ch/physio/physio-doc/-/wikis/QUICKSTART">here</a> to get going with the Batch editor, and used <a class="reference external" href="https://doi.org/10.1016/j.jneumeth.2016.10.019">this paper</a> to aid my understanding of how to complete the fields requested by the Batch editor.</p>
 <p>I wound up with a Batch script for the PhysIO toolbox that looked a little bit like this:</p>
-<p><img alt="PhysIOBatch1" src="static/tutorials-examples/tutorials/functional_imaging/PhysIO_Batch/PhysIOBatch1.png" /> <!-- ![filename without extension](/subfolder_name/filename.png '[filename without extension')  --></p>
+<p><img alt="PhysIOBatch1" src="../../_images/PhysIOBatch1.png" /> <!-- ![filename without extension](/subfolder_name/filename.png '[filename without extension')  --></p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="generalise-the-script-for-use-with-any-participant">
 <h1>2. Generalise the script for use with any participant<a class="headerlink" href="#generalise-the-script-for-use-with-any-participant" title="Link to this heading">#</a></h1>
@@ -689,7 +689,7 @@ The output format of the regressor files are directly compatible for use with SP
 <p>Now we have a batch script, we’re ready to run this on Neurodesk - yay! <p></p>
 <p>First make sure the details at the top of the script are correct. You can see that this script could easily be amended to run multiple subjects.</p>
 <p>On Neurodesk, go to the PhysIO toolbox, but select the command line tool rather than the GUI interface (‘physio r7771 instead of physioGUI r7771). This will take you to the container for the PhysIO toolbox <p></p>
-<p><img alt="PhysIOBatch2" src="static/tutorials-examples/tutorials/functional_imaging/PhysIO_Batch/PhysIOBatch2.png" /> <!-- ![filename without extension](/subfolder_name/filename.png '[filename without extension')  --></p>
+<p><img alt="PhysIOBatch2" src="../../_images/PhysIOBatch2.png" /> <!-- ![filename without extension](/subfolder_name/filename.png '[filename without extension')  --></p>
 <p>Now to run your PhysIO batch script, type the command:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">run_spm12</span><span class="o">.</span><span class="n">sh</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">mcr</span><span class="o">/</span><span class="n">v99</span><span class="o">/</span> <span class="n">batch</span> <span class="o">/</span><span class="n">your</span><span class="o">/</span><span class="n">batch</span><span class="o">/</span><span class="n">script</span><span class="o">/</span><span class="n">named_something</span><span class="o">.</span><span class="n">m</span>
 

@@ -1,8 +1,6 @@
 # NeurodeskEDU
 
-<img src="static/Wellcome_Trust_logo.png" width="150">
-
-<img src="/static/neurodesk_tutorials_vs_examples.png" width="250">
+<img src="/static/neurodesk_tutorials_vs_examples.png">
 
   Neurodesk offers two types of learning resources to help you get started with neuroimaging analysis: 
   
@@ -22,7 +20,7 @@ Neurodesk can be used on various platforms including a local PC, High-Performanc
 Once you've chosen your setup, follow the instructions provided in the link. 
 
 {{< alert title="For example" >}} if you're using Linux on a local PC with a desktop interface, you would follow the instructions at https://neurodesk.org/docs/getting-started/neurodesktop/linux/. 
-<img src="/static/startup_table.png" width="250">
+<img src="/static/startup_table.png">
 
 ## 4. Video tutorial
 See below for a 4-minute tutorial on Installation, Usage and Data Access with Neurodesktop

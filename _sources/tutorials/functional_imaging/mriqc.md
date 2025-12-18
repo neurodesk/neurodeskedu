@@ -47,21 +47,21 @@ export neurodesk_singularity_opts="--home $HOME:/home"
 
 From the launcher, click the Neurodesktop icon:
 
-![launch_neurodesk](/static/tutorials-examples/tutorials/functional_imaging/mriqc/launch_neurodesk.png 'launch_neurodesk') <!-- ![filename without extension](/subfolder_name/filename.png '[filename without extension')  -->
+![launch_neurodesk](/static/tutorials/functional_imaging/mriqc/launch_neurodesk.png 'launch_neurodesk') <!-- ![filename without extension](/subfolder_name/filename.png '[filename without extension')  -->
 
 ## Open MRIQC
 
 Now you're in Neurodesk, use the menus to first open the neurodesk options
 
-![neurodesk_menu](/static/tutorials-examples/tutorials/functional_imaging/mriqc/neurodesk_menu.png 'neurodesk_menu') <!-- ![filename without extension](/subfolder_name/filename.png '[filename without extension')  -->
+![neurodesk_menu](/static/tutorials/functional_imaging/mriqc/neurodesk_menu.png 'neurodesk_menu') <!-- ![filename without extension](/subfolder_name/filename.png '[filename without extension')  -->
 
 and then select MRIQC. Note that the latest version will be the lowest on the dropdown list:
 
-![open_mriqc](/static/tutorials-examples/tutorials/functional_imaging/mriqc/open_mriqc.png 'open_mriqc') <!-- ![filename without extension](/subfolder_name/filename.png '[filename without extension')  -->
+![open_mriqc](/static/tutorials/functional_imaging/mriqc/open_mriqc.png 'open_mriqc') <!-- ![filename without extension](/subfolder_name/filename.png '[filename without extension')  -->
 
 This will open a terminal window where MRIQC is ready and waiting at your fingertips - woohoo!
 
-![mriqc_bash](/static/tutorials-examples/tutorials/functional_imaging/mriqc/mriqc_bash.png 'mriqc_bash') <!-- ![filename without extension](/subfolder_name/filename.png '[filename without extension')  -->
+![mriqc_bash](/static/tutorials/functional_imaging/mriqc/mriqc_bash.png 'mriqc_bash') <!-- ![filename without extension](/subfolder_name/filename.png '[filename without extension')  -->
 
 ## Setting up mriqc command
 
