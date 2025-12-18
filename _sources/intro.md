@@ -1,9 +1,8 @@
 # NeurodeskEDU
 
+<img src="static/Wellcome_Trust_logo.png" width="150">
 
-<div style="max-width: 900px; margin-left: 0;">
-    <img src="{{< relurl "/static/learning-resources/neurodesk_tutorials_vs_examples.png" >}}" alt="tutorials VS examples" style="width: 100%; height: auto;">
-  </div>
+<img src="/static/neurodesk_tutorials_vs_examples.png" width="250">
 
   Neurodesk offers two types of learning resources to help you get started with neuroimaging analysis: 
   
@@ -14,25 +13,32 @@
   Choose the format that best matches your learning style and experience level. Both resources use the same containerised neuroimaging tools available in Neurodesk. You can also contribute both tutorials and examples. 
 
 ### 1. Understand Neurodesk: 
-Neurodesk is a flexible and scalable data analysis environment for reproducible neuroimaging. In the NeurodeskApp, it combines both computational notebooks and a graphical user interface. In this section, you will find learning resources for both of these tools. [More info](/docs/overview)
+Neurodesk is a flexible and scalable data analysis environment for reproducible neuroimaging. In the NeurodeskApp, it combines both computational notebooks and a graphical user interface. In this section, you will find learning resources for both of these tools. [More info](https://neurodesk.org/docs/overview)
 
 ### 2. Choose Your Setup: 
-Neurodesk can be used on various platforms including a local PC, High-Performance Computing (HPC), Cloud, and Google Colab. It supports Linux, Mac, and Windows operating systems. You can interact with it through a desktop interface, command line, container, or VSCode. Choose the setup that best suits your needs based on [this table](/docs/getting-started/).
+Neurodesk can be used on various platforms including a local PC, High-Performance Computing (HPC), Cloud, and Google Colab. It supports Linux, Mac, and Windows operating systems. You can interact with it through a desktop interface, command line, container, or VSCode. Choose the setup that best suits your needs based on [this table](https://neurodesk.org/docs/getting-started/).
 
 ### 3. Follow the Instructions: 
 Once you've chosen your setup, follow the instructions provided in the link. 
 
 {{< alert title="For example" >}} if you're using Linux on a local PC with a desktop interface, you would follow the instructions at https://neurodesk.org/docs/getting-started/neurodesktop/linux/. 
-  <div style="max-width: 900px; margin-left: 0;">
-    <img src="{{< relurl "/static/learning-resources/startup_table.png" >}}" alt="startup" style="width: 100%; height: auto;">
-  </div>{{< /alert >}}
+<img src="/static/startup_table.png" width="250">
 
 ## 4. Video tutorial
 See below for a 4-minute tutorial on Installation, Usage and Data Access with Neurodesktop
 
 <div style="max-width: 900px; margin-left: 0;">
-  {{< youtube BffOZcV2oaY >}}
+  <iframe
+    width="900"
+    height="506"
+    src="https://www.youtube.com/embed/BffOZcV2oaY"
+    title="YouTube video"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
 </div>
+
 
 ## Neurodesk's Education and Learning hub
 
@@ -57,6 +63,6 @@ The interactive version of these notebooks is run in the US by Jetstream2 (NSF a
 The interactive version of these notebooks is run in Europe by the EGI Federation with the dedicated support of CESNET-MCC. Computational resources were provided by the e-INFRA CZ project (ID:90254), supported by the Ministry of Education, Youth and Sports of the Czech Republic.
 
 
-<img src="images/Wellcome_Trust_logo.png" width="150">
-<img src="images/czi_logo.png" width="250">
+<img src="static/Wellcome_Trust_logo.png" width="150">
+<img src="static/czi_logo.png" width="250">
 <!-- Trigger: update navigation_depth -> 3 (2025-12-17 06:30Z) - harmless comment -->
