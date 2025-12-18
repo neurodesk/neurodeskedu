@@ -36,7 +36,7 @@ repository:
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   favicon: "images/neurodesk_logo.svg"
-  baseurl: https://neurodesk.github.io/neurodeskedu
+  baseurl: https://neurodesk.org/edu
   repository_url: https://github.com/neurodesk/neurodeskedu
   use_issues_button: true
   use_repository_button: true
