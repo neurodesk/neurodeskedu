@@ -11,9 +11,10 @@ description: >
 
 We welcome example notebooks that demonstrate how to use tools within Neurodesk. These notebooks serve as valuable learning resources and promote reproducible workflows across the neuroimaging community.
 
-Example notebooks are hosted in the [`neurodesk/example-notebooks`](https://github.com/Neurodesk/example-notebooks) repository and are intended to be lightweight, self-contained, and easy to follow.
+Example notebooks are hosted in the [`neurodesk/neurodeskedu`](https://github.com/neurodesk/neurodeskedu) repository and are intended to be lightweight, self-contained, and easy to follow.
 
 ---
+# Contribute Example Notebooks
 
 ## Getting Started
 
@@ -21,7 +22,7 @@ To contribute a new notebook, follow the steps below:
 
 ### 1. Start from the template
 
-Use the official [example notebook template](https://github.com/Neurodesk/example-notebooks/blob/main/template.ipynb) as a starting point. It includes guidance on formatting, structure, metadata, and citation instructions.
+Use the official [example notebook template](https://github.com/neurodesk/neurodeskedu/blob/main/template.ipynb) as a starting point. It includes guidance on formatting, structure, metadata, and citation instructions.
 
 Each notebook should contain:
 
@@ -42,7 +43,7 @@ please consult the python packages included in the base image [see list here](ht
 - Use publicly accessible datasets
 - Include inline comments and Markdown cells for explanation
 
-For more detail, consult the [README in the example-notebooks repository](https://github.com/Neurodesk/example-notebooks#readme).
+For more detail, consult the [README in the example-notebooks repository](https://github.com/neurodesk/neurodeskedu/blob/main/README.md).
 
 ---
 
@@ -50,9 +51,9 @@ For more detail, consult the [README in the example-notebooks repository](https:
 
 1. Add your completed notebook to the appropriate folder under:
 
-   [`/books/`](https://github.com/Neurodesk/example-notebooks/tree/main/books)
+   [`/books/examples/`](https://github.com/neurodesk/neurodeskedu/tree/main/books/examples)
 
-2. Open a pull request in the [example-notebooks repository](https://github.com/Neurodesk/example-notebooks)
+2. Open a pull request in the [example-notebooks repository](https://github.com/neurodesk/neurodeskedu)
 
 3. In your pull request, include:
    - A short description of your notebook
