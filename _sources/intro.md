@@ -4,23 +4,23 @@
 :alt: Neurodesk tutorials vs examples
 ```
 
-  Neurodesk offers two types of learning resources to help you get started with neuroimaging analysis: 
-  
-  Tutorials are static, step-by-step guides that walk you through analyses using graphical user interfaces (GUIs). They include screenshots, detailed instructions, and visual documentation—perfect for beginners or those who prefer point-and-click workflows. 
-  
-  Examples are interactive computational notebooks that you can run, modify, and experiment with. These Jupyter notebooks contain executable code and are ideal for users who want to automate analyses, build reproducible workflows, or dive deeper into scripting-based neuroimaging. 
+Neurodesk offers two types of learning resources to help you get started with neuroimaging analysis:
 
-  Each Jupyter notebook in the repository is equipped with a Jupyter Hub button (the little rocket) at the top. This button will allow you to interact with the notebooks in a cloud-based environment. The environment is pre-configured to support Neurodesk, so you can start experimenting with the notebooks right away without having to install any additional software or packages.
+**Tutorials** are static, step-by-step guides that walk you through analyses using graphical user interfaces (GUIs). They include screenshots, detailed instructions, and visual documentation—perfect for beginners or those who prefer point-and-click workflows. 
+
+**Examples** are interactive computational notebooks that you can run, modify, and experiment with. These Jupyter notebooks contain executable code and are ideal for users who want to automate analyses, build reproducible workflows, or dive deeper into scripting-based neuroimaging. 
+
+Each Jupyter notebook in the repository is equipped with a Jupyter Hub button (<i class="fas fa-rocket" aria-hidden="true"></i>) at the top. This button will allow you to interact with the notebooks in a cloud-based environment. The environment is pre-configured to support Neurodesk, so you can start experimenting with the notebooks right away without having to install any additional software or packages.
 
 If you want to run these notebooks in another neurodesk environment, make sure to clone the example notebooks in this repository first:
-```
+```bash
 git clone --depth 1 --filter=blob:none https://github.com/neurodesk/neurodeskedu.git
 cd neurodeskedu
 git sparse-checkout init --cone
 git sparse-checkout set books/examples
 ```
   
-  Choose the format that best matches your learning style and experience level. Both resources use the same containerised neuroimaging tools available in Neurodesk. You can also contribute both tutorials and examples. 
+Choose the format that best matches your learning style and experience level. Both resources use the same containerised neuroimaging tools available in Neurodesk. You can also contribute both tutorials and examples. 
 
 
 **💡 Note:** If you aren't finding what you're looking for, please <a href="https://neurodesk.org/contact/">contact us</a>.
