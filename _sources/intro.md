@@ -7,8 +7,18 @@
   Tutorials are static, step-by-step guides that walk you through analyses using graphical user interfaces (GUIs). They include screenshots, detailed instructions, and visual documentation—perfect for beginners or those who prefer point-and-click workflows. 
   
   Examples are interactive computational notebooks that you can run, modify, and experiment with. These Jupyter notebooks contain executable code and are ideal for users who want to automate analyses, build reproducible workflows, or dive deeper into scripting-based neuroimaging. 
+
+  Each Jupyter notebook in the repository is equipped with a Jupyter Hub button (the little rocket) at the top. This button will allow you to interact with the notebooks in a cloud-based environment. The environment is pre-configured to support Neurodesk, so you can start experimenting with the notebooks right away without having to install any additional software or packages.
+
+If you want to run these notebooks in another neurodesk environment, make sure to clone this repository first:
+```
+git clone --depth 1 https://github.com/neurodesk/example-notebooks.git
+```
   
   Choose the format that best matches your learning style and experience level. Both resources use the same containerised neuroimaging tools available in Neurodesk. You can also contribute both tutorials and examples. 
+
+
+**💡 Note:** If you aren't finding what you're looking for, please <a href="https://neurodesk.org/contact/">contact us</a>.
 
 ### 1. Understand Neurodesk: 
 Neurodesk is a flexible and scalable data analysis environment for reproducible neuroimaging. In the NeurodeskApp, it combines both computational notebooks and a graphical user interface. In this section, you will find learning resources for both of these tools. [More info](https://neurodesk.org/docs/overview)
@@ -19,7 +29,7 @@ Neurodesk can be used on various platforms including a local PC, High-Performanc
 ### 3. Follow the Instructions: 
 Once you've chosen your setup, follow the instructions provided in the link. 
 
-{{< alert title="For example" >}} if you're using Linux on a local PC with a desktop interface, you would follow the instructions at https://neurodesk.org/docs/getting-started/neurodesktop/linux/. 
+**For example**, if you're using Linux on a local PC with a desktop interface, you would follow the instructions at https://neurodesk.org/docs/getting-started/neurodesktop/linux/. 
 <img src="/static/startup_table.png">
 
 ## 4. Video tutorial
@@ -38,20 +48,8 @@ See below for a 4-minute tutorial on Installation, Usage and Data Access with Ne
 </div>
 
 
-## Neurodesk's Education and Learning hub
 
-Each Jupyter notebook in the repository is equipped with a Jupyter Hub button (the little rocket) at the top. This button will allow you to interact with the notebooks in a cloud-based environment. The environment is pre-configured to support Neurodesk, so you can start experimenting with the notebooks right away without having to install any additional software or packages.
 
-If you want to run these notebooks in another neurodesk environment, make sure to clone this repository first:
-```
-git clone --depth 1 https://github.com/neurodesk/example-notebooks.git
-```
-
-**💡 Note:** If you aren't finding what you're looking for, please <a href="https://neurodesk.org/contact/">contact us</a>.
-
-## Neurodesk
-
-For more information about how to develop these notebooks or explore the tools in Neurodesk, please visit [our website neurodesk.org](https://neurodesk.org/).
 
 ## Acknowledgements
 This example repository is funded by the Wellcome Trust with a Wellcome Discretionary Award as part of the Chan Zuckerberg Initiative (CZI), The Kavli Foundation and Wellcome’s Essential Open Source Software for Science (Cycle 6) Program [313306/Z/24/Z]
