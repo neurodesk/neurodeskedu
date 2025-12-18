@@ -6,6 +6,7 @@ title: "Structural Imaging"
 
 Example notebooks for structural imaging workflows.
 
-```{tableofcontents}
+```{toctree}
 :titlesonly:
+:maxdepth: 1
 ```

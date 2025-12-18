@@ -6,6 +6,7 @@ title: "Spectroscopy"
 
 Example notebooks for spectroscopy analyses.
 
-```{tableofcontents}
+```{toctree}
 :titlesonly:
+:maxdepth: 1
 ```

@@ -6,6 +6,7 @@ title: "Functional Imaging"
 
 Example notebooks for fMRI preprocessing and analysis.
 
-```{tableofcontents}
+```{toctree}
 :titlesonly:
+:maxdepth: 1
 ```
