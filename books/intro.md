@@ -12,9 +12,12 @@
 
   Each Jupyter notebook in the repository is equipped with a Jupyter Hub button (the little rocket) at the top. This button will allow you to interact with the notebooks in a cloud-based environment. The environment is pre-configured to support Neurodesk, so you can start experimenting with the notebooks right away without having to install any additional software or packages.
 
-If you want to run these notebooks in another neurodesk environment, make sure to clone this repository first:
+If you want to run these notebooks in another neurodesk environment, make sure to clone the example notebooks in this repository first:
 ```
-git clone --depth 1 https://github.com/neurodesk/example-notebooks.git
+git clone --depth 1 --filter=blob:none https://github.com/neurodesk/neurodeskedu.git
+cd neurodeskedu
+git sparse-checkout init --cone
+git sparse-checkout set books/examples
 ```
   
   Choose the format that best matches your learning style and experience level. Both resources use the same containerised neuroimaging tools available in Neurodesk. You can also contribute both tutorials and examples. 
