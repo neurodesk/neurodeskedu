@@ -1,8 +1,6 @@
 format: jb-book
 root: intro
 chapters:
-  - url: https://neurodesk.org
-    title: Neurodesk Home Page
   - file: examples/intro
     sections:
       - file: examples/diffusion_imaging/intro

@@ -47,6 +47,11 @@ sphinx:
       repository_branch: main
       show_navbar_depth: 2
       navigation_depth: 3
+      icon_links:
+        - name: Return to neurodesk.org
+          url: https://neurodesk.org
+          icon: fa-solid fa-house
+          type: fontawesome
       launch_buttons:
         jupyterhub_url: "https://play-america.neurodesk.org"
         notebook_interface: "jupyterlab"
