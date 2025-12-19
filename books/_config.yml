@@ -51,10 +51,16 @@ sphinx:
         jupyterhub_url: "https://play-america.neurodesk.org"
         notebook_interface: "jupyterlab"
         jupyterhub_servers:
-          - text: "Run in America"
-            url: "https://play-america.neurodesk.org"
+          - text: "Run in Australia"
+            url: "https://play.neurodesk.cloud.edu.au"
           - text: "Run in Europe"
             url: "https://play-europe.neurodesk.org"
+          - text: "Run in America"
+            url: "https://play-america.neurodesk.org"
+          - text: "Run in Global Server 1"
+            url: "https://play-europe.neurodesk.org"
+          - text: "Run in Global Server 2"
+            url: "https://play-america.neurodesk.org"
   local_extensions:
     multiple_jupyterhub: _ext
 
