@@ -32,9 +32,7 @@ Each notebook should contain:
 - Code cells with explanatory comments
 - Example data (or guidance on how to access it)
 
-{{< alert title="Python packages" >}}
-please consult the python packages included in the base image [see list here](https://github.com/neurodesk/neurodesktop/blob/main/Dockerfile). If you are using python packages different than these, be sure to `pip install` them in the workflow
-{{< /alert >}}
+**Python packages** please consult the python packages included in the base image [see list here](https://github.com/neurodesk/neurodesktop/blob/main/Dockerfile). If you are using python packages different than these, be sure to `pip install` them in the workflow
 
 ### 2. Follow best practices
 
