@@ -29,7 +29,7 @@ To contribute a new tutorial, follow the steps below:
 
 ### 1. Start from the template
 
-Download the <a href="https://github.com/Neurodesk/neurodeskedu/blob/main/.github/content-templates/tutoriatutorial" target="_blank" rel="noopener"> Markdown template
+Download the <a href="https://github.com/neurodesk/neurodeskedu/blob/main/.github/content-templates/tutorial-template.md" target="_blank" rel="noopener"> Markdown template
 </a> file from GitHub and edit it locally with your own content. 
 
 
