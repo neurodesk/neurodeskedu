@@ -48,7 +48,7 @@ Each notebook should contain:
 - Include inline comments and Markdown cells for explanation
 
 For more detail, consult the <a href="https://github.com/neurodesk/neurodeskedu/blob/main/README.md" target="_blank" rel="noopener">
-  README in the example-notebooks repository
+  README in the neurodeskedu repository
 </a>.
 
 
