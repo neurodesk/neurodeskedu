@@ -24,7 +24,7 @@ To contribute a new notebook, follow the steps below:
 
 ### 1. Start from the template
 
-Use the official <a href="https://github.com/neurodesk/neurodeskedu/blob/main/template.ipynb" target="_blank" rel="noopener">
+Use the official <a href="https://github.com/neurodesk/neurodeskedu/tree/main/books/examples/template.ipynb" target="_blank" rel="noopener">
   example notebook template
 </a> as a starting point. It includes guidance on formatting, structure, metadata, and citation instructions.
 
