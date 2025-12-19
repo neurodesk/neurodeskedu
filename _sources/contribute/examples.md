@@ -11,7 +11,9 @@ description: >
 
 We welcome example notebooks that demonstrate how to use tools within Neurodesk. These notebooks serve as valuable learning resources and promote reproducible workflows across the neuroimaging community.
 
-Example notebooks are hosted in the [`neurodesk/neurodeskedu`](https://github.com/neurodesk/neurodeskedu) repository and are intended to be lightweight, self-contained, and easy to follow.
+Example notebooks are hosted in the <a href="https://github.com/neurodesk/neurodeskedu/tree/main/books/examples" target="_blank" rel="noopener">
+  `neurodesk/neurodeskedu:examples`
+</a> repository and are intended to be lightweight, self-contained, and easy to follow.
 
 ---
 # Contribute Example Notebooks
@@ -22,7 +24,9 @@ To contribute a new notebook, follow the steps below:
 
 ### 1. Start from the template
 
-Use the official [example notebook template](https://github.com/neurodesk/neurodeskedu/blob/main/template.ipynb) as a starting point. It includes guidance on formatting, structure, metadata, and citation instructions.
+Use the official <a href="https://github.com/neurodesk/neurodeskedu/blob/main/template.ipynb" target="_blank" rel="noopener">
+  example notebook template
+</a> as a starting point. It includes guidance on formatting, structure, metadata, and citation instructions.
 
 Each notebook should contain:
 
@@ -32,7 +36,9 @@ Each notebook should contain:
 - Code cells with explanatory comments
 - Example data (or guidance on how to access it)
 
-**Python packages** please consult the python packages included in the base image [see list here](https://github.com/neurodesk/neurodesktop/blob/main/Dockerfile). If you are using python packages different than these, be sure to `pip install` them in the workflow
+**Python packages** please consult the python packages included in the base image <a href="https://github.com/neurodesk/neurodesktop/blob/main/Dockerfile" target="_blank" rel="noopener">
+  see list here
+</a>. If you are using python packages different than these, be sure to `pip install` them in the workflow
 
 ### 2. Follow best practices
 
@@ -41,7 +47,10 @@ Each notebook should contain:
 - Use publicly accessible datasets
 - Include inline comments and Markdown cells for explanation
 
-For more detail, consult the [README in the example-notebooks repository](https://github.com/neurodesk/neurodeskedu/blob/main/README.md).
+For more detail, consult the <a href="https://github.com/neurodesk/neurodeskedu/blob/main/README.md" target="_blank" rel="noopener">
+  README in the example-notebooks repository
+</a>.
+
 
 ---
 
@@ -49,9 +58,13 @@ For more detail, consult the [README in the example-notebooks repository](https:
 
 1. Add your completed notebook to the appropriate folder under:
 
-   [`/books/examples/`](https://github.com/neurodesk/neurodeskedu/tree/main/books/examples)
+   <a href="https://github.com/neurodesk/neurodeskedu/tree/main/books/examples" target="_blank" rel="noopener">
+  `/books/examples/`
+</a>
 
-2. Open a pull request in the [example-notebooks repository](https://github.com/neurodesk/neurodeskedu)
+2. Open a pull request in the <a href="https://github.com/neurodesk/neurodeskedu" target="_blank" rel="noopener">
+  neurodeskedu repository
+</a>
 
 3. In your pull request, include:
    - A short description of your notebook
@@ -61,10 +74,12 @@ For more detail, consult the [README in the example-notebooks repository](https:
 
 ## Attribution
 
-All notebook contributors are acknowledged on the Neurodesk [Contributors page](/developers/contributors/).  
-Please include your name and a short description in your pull request using [this format](https://github.com/neurodesk/neurodesk.github.io/blob/main/.github/content-templates/contributor-format.md).
-
-Each example notebook receives a DOI for formal citation via Zenodo, ensuring your work is citable in academic contexts.
+All notebooks contributors are acknowledged on the <a href="https://neurodesk.org/developers/contributors/" target="_blank" rel="noopener">
+  Contributors page
+</a>.  
+To be listed, include your name and a short description in your pull request using <a href="https://github.com/neurodesk/neurodesk.github.io/blob/main/.github/content-templates/contributor-format.md" target="_blank" rel="noopener">
+  this format
+</a>.
 
 ---
 

@@ -17,7 +17,7 @@ We welcome tutorials that walk users through using tools or workflows available 
 ## Overview
 
 Tutorials are written in Markdown and hosted in the <a href="https://github.com/neurodesk/neurodeskedu/tree/main/books/tutorials" target="_blank" rel="noopener">
-  neurodeskedu:tutorials
+  `neurodeskedu:tutorials`
 </a> repository, where they appear as part of the documentation site.
 
 
@@ -29,7 +29,8 @@ To contribute a new tutorial, follow the steps below:
 
 ### 1. Start from the template
 
-Download the [tutorial Markdown template](https://github.com/Neurodesk/neurodeskedu/blob/main/.github/content-templates/tutorial-template.md) file from GitHub and edit it locally with your own content. 
+Download the <a href="https://github.com/Neurodesk/neurodeskedu/blob/main/.github/content-templates/tutoriatutorial" target="_blank" rel="noopener"> Markdown template
+</a> file from GitHub and edit it locally with your own content. 
 
 
 The template includes:
@@ -50,15 +51,21 @@ See existing [tutorials](/neurodeskedu/tutorials/) for reference.
 ---
 ## Saving and Submitting
 
-Follow the steps for [contributing content to NeurodeskEDU](https://neurodesk.org/developers/documentation/creating-website-content/)
+Follow the steps for <a href="https://neurodesk.org/developers/documentation/creating-website-content/" target="_blank" rel="noopener">
+  contributing content to NeurodeskEDU
+</a>
 
 1. Place your completed `.md` file in the appropriate subfolder under:
 
-   [`/books/tutorials/`](https://github.com/neurodesk/neurodeskedu/tree/main/books/tutorials)
+   <a href="https://github.com/neurodesk/neurodeskedu/tree/main/books/tutorials" target="_blank" rel="noopener">
+  `/books/tutorials/`
+</a>
 
 2. Store any images in a matching subfolder in `/static/tutorials/`
 
-3. Open a pull request in the [neurodeskedu repository](https://github.com/neurodesk/neurodesk.edu)
+3. Open a pull request in the <a href="https://github.com/neurodesk/neurodesk.edu" target="_blank" rel="noopener">
+  `neurodeskedu repository`
+</a>
 
 4. In your pull request, include:
    - A short summary of your tutorial
@@ -68,8 +75,12 @@ Follow the steps for [contributing content to NeurodeskEDU](https://neurodesk.or
 
 ## Attribution
 
-All tutorial contributors are acknowledged on the [Contributors page](/developers/contributors/).  
-To be listed, include your name and a short description in your pull request using [this format](https://github.com/neurodesk/neurodesk.github.io/blob/main/.github/content-templates/contributor-format.md).
+All tutorial contributors are acknowledged on the <a href="https://neurodesk.org/developers/contributors/" target="_blank" rel="noopener">
+  Contributors page
+</a>.  
+To be listed, include your name and a short description in your pull request using <a href="https://github.com/neurodesk/neurodesk.github.io/blob/main/.github/content-templates/contributor-format.md" target="_blank" rel="noopener">
+  this format
+</a>.
 
 ---
 
@@ -77,6 +88,8 @@ To be listed, include your name and a short description in your pull request usi
 
 If you have questions or would like feedback before submitting:
 
-- Open a [discussion](https://github.com/neurodesk/neurodesk.github.io/discussions)
+- Open a <a href="https://github.com/neurodesk/neurodesk.github.io/discussions" target="_blank" rel="noopener">
+  discussion
+</a>
 
 We appreciate your contribution to the Neurodesk community and reproducible science.
