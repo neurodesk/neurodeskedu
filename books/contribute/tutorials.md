@@ -14,7 +14,12 @@ description: >
 
 We welcome tutorials that walk users through using tools or workflows available in Neurodesk. These tutorials are valuable learning resources that support accessible, reproducible neuroimaging.
 
-Tutorials are written in Markdown and hosted in the [`neurodeskedu:tutorials`](https://github.com/neurodesk/neurodeskedu/tree/main/books/tutorials) repository, where they appear as part of the documentation site.
+## Overview
+
+Tutorials are written in Markdown and hosted in the <a href="https://github.com/neurodesk/neurodeskedu/tree/main/books/tutorials" target="_blank" rel="noopener">
+  neurodeskedu:tutorials
+</a> repository, where they appear as part of the documentation site.
+
 
 ---
 
@@ -40,8 +45,8 @@ The template includes:
 - Store images in the appropriate `/static/` folder and link them with full paths
 - Write in plain Markdown, using Hugo formatting where needed
 
-See existing [tutorial ](/neurodeskedu/tutorials/) for reference.
-d
+See existing [tutorials](/neurodeskedu/tutorials/) for reference. 
+
 ---
 ## Saving and Submitting
 

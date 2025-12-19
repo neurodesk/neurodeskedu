@@ -1,4 +1,4 @@
-# example-notebooks
+# NeurodeskEDU - writing example notebooks
 
 #### Table of Contents
 **[Getting Started](#getting-started)**<br>
