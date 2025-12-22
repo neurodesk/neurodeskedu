@@ -1,4 +1,4 @@
-# NeurodeskEDU
+# NeurodeskEDU - Neurodesk's education and learning resources
 
 ```{image} static/neurodesk_tutorials_vs_examples.png
 :alt: Neurodesk tutorials vs examples
