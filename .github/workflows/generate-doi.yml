@@ -58,7 +58,7 @@ jobs:
               NOTEBOOK_BUILDDATE="${NOTEBOOK_NAME}_${BUILDDATE}"
               sed -i "s/^        license = get_license(args.container_name, args.gh_token)/        license = 'mit'/" .github/scripts/publish-doi.py
               if DOI_URL=$(python3 .github/scripts/publish-doi.py \
-                    --container_filepath="https://raw.githubusercontent.com/neurodesk/neurodeskedu/refs/heads/main/${{ matrix.notebooks }}" \
+                    --container_filepath="https://raw.githubusercontent.com/Neurodesk/example-notebooks/refs/heads/main/${{ matrix.notebooks }}" \
                     --container_name=${NOTEBOOK_BUILDDATE} \
                     --zenodo_token=${{ secrets.ZENODO_TOKEN }} \
                     --gh_token=${{ secrets.GITHUB_TOKEN }} | tail -n 1)
