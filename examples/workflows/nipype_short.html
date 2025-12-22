@@ -195,8 +195,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/DIPY_1.html">Basic Tracking with DIPY</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/DIPY_2.html">Advanced Tracking with DIPY</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/Diffusion_TBSS_Demo.html">TBSS Tutorial</a></li>
-
-
 <li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/MRtrix_1.html">MRtrix: Part 1</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/MRtrix_2.html">MRtrix: Part 2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/MRtrix_3.html">MRtrix: Part 3</a></li>
@@ -260,6 +258,7 @@
 <li class="toctree-l3"><a class="reference internal" href="PyBIDS.html">PyBIDS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="RISE_slideshow.html">RISE Slideshow</a></li>
 <li class="toctree-l3"><a class="reference internal" href="bids_conversion.html">BIDS conversion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ipyniivue_ipywidgets.html">Ipyniivue and Ipywidgets</a></li>
 <li class="toctree-l3"><a class="reference internal" href="nipype_full.html">Nipype on Neurodesk</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Basic Nipype</a></li>
 
@@ -943,12 +942,13 @@ nipype_full.ipynb
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
-<span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s1">&#39;https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/sub-01_ses-01_7T_T1w_defaced_brain.png&#39;</span><span class="p">)</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;../../static/examples/workflows/nipype_short/sub-01_ses-01_7T_T1w_defaced_brain.png&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/sub-01_ses-01_7T_T1w_defaced_brain.png"/></div></div>
+<img alt="../../_images/be86fcb8ffd21c505ab2ae81f01b254a43e825784e35598e7df7cfcbdec4f64f.png" src="../../_images/be86fcb8ffd21c505ab2ae81f01b254a43e825784e35598e7df7cfcbdec4f64f.png" />
+</div>
 </div>
 <p>SPM can also be used in such a workflow, but unfortunately, this will trigger a warning “stty: ‘standard input’: Inappropriate ioctl for device”, which you can ignore (or help us to find out where it comes from):</p>
 <div class="cell docutils container">
@@ -995,12 +995,13 @@ stty: &#39;standard input&#39;: Inappropriate ioctl for device
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s1">&#39;https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/wsub-01_ses-01_7T_T1w_defaced.png&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;../../static/examples/workflows/nipype_short/wsub-01_ses-01_7T_T1w_defaced.png&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/wsub-01_ses-01_7T_T1w_defaced.png"/></div></div>
+<img alt="../../_images/52b7ff6d4f77436743102bf3a892fe8ef86b6f1096b86a847fffd210530aa005.png" src="../../_images/52b7ff6d4f77436743102bf3a892fe8ef86b6f1096b86a847fffd210530aa005.png" />
+</div>
 </div>
 <section id="dependencies-in-jupyter-python">
 <h3>Dependencies in Jupyter/Python<a class="headerlink" href="#dependencies-in-jupyter-python" title="Link to this heading">#</a></h3>

@@ -195,8 +195,6 @@
 <li class="toctree-l3"><a class="reference internal" href="DIPY_1.html">Basic Tracking with DIPY</a></li>
 <li class="toctree-l3"><a class="reference internal" href="DIPY_2.html">Advanced Tracking with DIPY</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Diffusion_TBSS_Demo.html">TBSS Tutorial</a></li>
-
-
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">MRtrix: Part 1</a></li>
 <li class="toctree-l3"><a class="reference internal" href="MRtrix_2.html">MRtrix: Part 2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="MRtrix_3.html">MRtrix: Part 3</a></li>
@@ -260,6 +258,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../workflows/PyBIDS.html">PyBIDS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/RISE_slideshow.html">RISE Slideshow</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/bids_conversion.html">BIDS conversion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflows/ipyniivue_ipywidgets.html">Ipyniivue and Ipywidgets</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/nipype_full.html">Nipype on Neurodesk</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/nipype_short.html">Basic Nipype</a></li>
 
@@ -1041,12 +1040,13 @@ If the number of volumes in your dataset and the number of bvals and bvecs do no
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s1">&#39;https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/mrtrix_1_vol0.png&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;../../static/examples/diffusion_imaging/MRtrix_1/mrtrix_1_vol0.png&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/mrtrix_1_vol0.png"/></div></div>
+<img alt="../../_images/a0e605f1c1b6a27c6c9046543542a3fab80a18abc5dc5fc57edad819c0173425.png" src="../../_images/a0e605f1c1b6a27c6c9046543542a3fab80a18abc5dc5fc57edad819c0173425.png" />
+</div>
 </div>
 <p>The first volume that is displayed, which has a time-series index of 0 (i.e., 0 indicates the first volumes in the time-series, 1 indicates the second volume, and so on), looks like a typical T2-weighted functional image. We can verify this by comparing it with the b-value for the first volume in the time-series.</p>
 <p>If you look at the bval file, note the intensity differences and how they correspond to their respective b-values.</p>
@@ -1481,12 +1481,13 @@ mrconvert: [100%] copying from &quot;sub-02_masked_mask.nii.gz&quot; to &quot;ma
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s1">&#39;https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/mrtrix_1_mask_bet.png&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;../../static/examples/diffusion_imaging/MRtrix_1/mrtrix_1_mask_bet.png&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/mrtrix_1_mask_bet.png"/></div></div>
+<img alt="../../_images/4a5913ac2672c9f0d2b0f73a509fb09212751e2ff7061c6277e37080a5df1107.png" src="../../_images/4a5913ac2672c9f0d2b0f73a509fb09212751e2ff7061c6277e37080a5df1107.png" />
+</div>
 </div>
 </section>
 <section id="dependencies-in-jupyter-python">

@@ -1,0 +1,2088 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Ipyniivue and Ipywidgets &#8212; Neurodesk</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'examples/workflows/ipyniivue_ipywidgets';</script>
+    <link rel="canonical" href="https://neurodesk.org/edu/examples/workflows/ipyniivue_ipywidgets.html" />
+    <link rel="icon" href="../../_static/neurodesk_logo.svg"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Nipype on Neurodesk" href="nipype_full.html" />
+    <link rel="prev" title="BIDS conversion" href="bids_conversion.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/neurodesk_logo.svg" class="logo__image only-light" alt="Neurodesk - Home"/>
+    <script>document.write(`<img src="../../_static/neurodesk_logo.svg" class="logo__image only-dark" alt="Neurodesk - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://neurodesk.org" title="Return to neurodesk.org" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-house fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Return to neurodesk.org</span></a>
+        </li>
+</ul></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../intro.html">Examples</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../template.html">Example Notebook Template</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../diffusion_imaging/intro.html">Diffusion Imaging</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/DIPY_1.html">Basic Tracking with DIPY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/DIPY_2.html">Advanced Tracking with DIPY</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/Diffusion_TBSS_Demo.html">TBSS Tutorial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/MRtrix_1.html">MRtrix: Part 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/MRtrix_2.html">MRtrix: Part 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/MRtrix_3.html">MRtrix: Part 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/mrtrix3tissue.html">MRtrix3Tissue</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../electrophysiology/intro.html">Electrophysiology</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../electrophysiology/eeg_with_mne.html">EEG Analysis with MNE</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../functional_imaging/intro.html">Functional Imaging</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../functional_imaging/AFNI_preprocessing_only.html">AFNI Preprocessing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../functional_imaging/AFNI_preprocessing_plus_glm.html">AFNI Preprocessing and GLM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../functional_imaging/AFNI_preprocessing_plus_glm_group.html">AFNI Preprocessing &amp; Group Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../functional_imaging/AFNI_processing_task_based.html">Processing task-based FMRI with AFNI and afni_proc.py</a></li>
+
+
+
+<li class="toctree-l3"><a class="reference internal" href="../functional_imaging/FSL_preproc_glm.html">FSL Preprocessing and GLM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../functional_imaging/FSLnets_course_practical.html">Resting state with FSLnets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../functional_imaging/NiWrap.html">NiWrap and Connectome Workbench</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../functional_imaging/aslprep.html">ASLprep</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../functional_imaging/deepretinotopy.html">DeepRetinotopy Toolbox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../functional_imaging/first_and_second_level_spm.html">Nipype-SPM fMRI Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../functional_imaging/fmriprep.html">fMRIprep</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../functional_imaging/fsl_all_levels_flanker_nipype.html">Nipype-FSL fMRI Analysis</a></li>
+
+
+
+<li class="toctree-l3"><a class="reference internal" href="../functional_imaging/intro_to_preprocessing.html">Introduction to Preprocessing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../functional_imaging/mri_vol2surf.html">FreeSurfer: mri_vol2surf</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../functional_imaging/process_five_echo_dataset.html">tedana: TE Dependent ANAlysis</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../spectroscopy/intro.html">Spectroscopy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../spectroscopy/lcmodel.html">MR Spectroscopy with LCModel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../spectroscopy/osprey.html">MR Spectroscopy with Osprey</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../structural_imaging/intro.html">Structural Imaging</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../structural_imaging/FSL_course_bet.html">FSL course - BET</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../structural_imaging/brain_extraction_different_tools.html">Brain Extraction Tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../structural_imaging/freesurfer-recon-all-clinical.html">FreeSurfer: recon-all-clinical</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../structural_imaging/freesurfer.html">FreeSurfer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../structural_imaging/qsmxt.html">QSMxT</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l3"><a class="reference internal" href="../structural_imaging/sct_toolbox.html">SCT Toolbox</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="intro.html">Workflows</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="AA_Neurodesk_demo_tour.html">Neurodesk Tools Demo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MRIQC.html">MRIQC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PyBIDS.html">PyBIDS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RISE_slideshow.html">RISE Slideshow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bids_conversion.html">BIDS conversion</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Ipyniivue and Ipywidgets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nipype_full.html">Nipype on Neurodesk</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nipype_short.html">Basic Nipype</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="papermill-slurm-submission-example.html">Papermill Slurm Job Submission</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pydra_preproc_ants.html">Pydra</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../tutorials/intro.html">Tutorials</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../tutorials/electrophysiology/intro.html">Electrophysiology</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorials/electrophysiology/EEG_mne-python.html">Analysing EEG Data with MNE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorials/electrophysiology/fieldtrip.html">Analysing M/EEG Data with FieldTrip</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../tutorials/functional_imaging/intro.html">Functional Imaging</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorials/functional_imaging/connectomeWorkbench.html">Connectome Workbench</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorials/functional_imaging/fmriprep.html">Using fmriprep with neurodesk on an HPC</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../tutorials/functional_imaging/mriqc.html">Using mriqc with neurodesk on HPC</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../tutorials/functional_imaging/physio.html">PhysIO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorials/functional_imaging/physio_batch_workflow.html">A batch scripting example for PhysIO toolbox</a></li>
+
+
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../tutorials/functional_imaging/spm.html">Statistical Parametric Mapping (SPM)</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../tutorials/multimodal_imaging/intro.html">Multimodal Imaging</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorials/multimodal_imaging/MFCSC.html">Using MFCSC</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../tutorials/open_data/intro.html">Open Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorials/open_data/datalad.html">datalad</a></li>
+
+
+<li class="toctree-l3"><a class="reference internal" href="../../tutorials/open_data/osfclient.html">osfclient</a></li>
+
+
+
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../tutorials/phase_processing/intro.html">Phase Processing</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorials/phase_processing/qsm.html">Quantitative Susceptibility Mapping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorials/phase_processing/swi.html">SWI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorials/phase_processing/unwrapping.html">Unwrapping</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../tutorials/programming/intro.html">Programming</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorials/programming/conda.html">Conda environments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorials/programming/matlab.html">Matlab</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../tutorials/reproducibility/intro.html">Reproducibility</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorials/reproducibility/datalad-run.html">Reproducible script execution with DataLad</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../tutorials/spectroscopy/intro.html">Spectroscopy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorials/spectroscopy/lcmodel.html">Spectroscopy with lcmodel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorials/spectroscopy/mrsiproc.html">Spectroscopy pipeline</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../tutorials/structural_imaging/intro.html">Structural Imaging</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorials/structural_imaging/freesurfer.html">FreeSurfer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorials/structural_imaging/structuralconnectivity.html">Structural connectivity dMRI</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../contribute/intro.html">Contribute</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../contribute/examples.html">Contribute Example Notebooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contribute/tutorials.html">Contribute Tutorials</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://play.neurodesk.cloud.edu.au/hub/user-redirect/git-pull?repo=https%3A//github.com/neurodesk/neurodeskedu&urlpath=lab/tree/neurodeskedu/books/examples/workflows/ipyniivue_ipywidgets.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Run in Australia"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Run in Australia logo" src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">Run in Australia</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://play-europe.neurodesk.org/hub/user-redirect/git-pull?repo=https%3A//github.com/neurodesk/neurodeskedu&urlpath=lab/tree/neurodeskedu/books/examples/workflows/ipyniivue_ipywidgets.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Run in Europe"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Run in Europe logo" src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">Run in Europe</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://play-america.neurodesk.org/hub/user-redirect/git-pull?repo=https%3A//github.com/neurodesk/neurodeskedu&urlpath=lab/tree/neurodeskedu/books/examples/workflows/ipyniivue_ipywidgets.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Run in America"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Run in America logo" src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">Run in America</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://play-europe.neurodesk.org/hub/user-redirect/git-pull?repo=https%3A//github.com/neurodesk/neurodeskedu&urlpath=lab/tree/neurodeskedu/books/examples/workflows/ipyniivue_ipywidgets.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Run in Global Server 1"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Run in Global Server 1 logo" src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">Run in Global Server 1</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://play-america.neurodesk.org/hub/user-redirect/git-pull?repo=https%3A//github.com/neurodesk/neurodeskedu&urlpath=lab/tree/neurodeskedu/books/examples/workflows/ipyniivue_ipywidgets.ipynb&branch=main" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Run in Global Server 2"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Run in Global Server 2 logo" src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">Run in Global Server 2</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/examples/workflows/ipyniivue_ipywidgets.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Ipyniivue and Ipywidgets</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-diverse-neuroimaging-formats">Visualizing Diverse Neuroimaging Formats</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#citation-and-resources">Citation and Resources:</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-included-in-this-workflow">Tools included in this workflow</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#educational-resources">Educational resources</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-python-libraries">Import Python libraries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-required-data">Download required data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#volumetric-neuroimaging-formats">1. Volumetric Neuroimaging Formats</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multi-volume-overlay">Multi-Volume Overlay</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-anatomical-and-statistical-maps-simultaneously-in-3d">Visualizing anatomical and statistical maps simultaneously in 3D</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#afni-volumes">AFNI Volumes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#create-other-buttons-checkboxes">Create other buttons/checkboxes</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#implement-the-callbacks">Implement the callbacks</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#create-animate-button">Create animate button</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reset-frame-index-on-image-loaded">Reset frame index on image loaded</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#display-all">Display all</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diffusion-derived-volumes-fa-and-v1">Diffusion-Derived Volumes (FA and V1)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surface-based-representations">2. Surface-Based Representations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#freesurfer-surfaces">FreeSurfer Surfaces</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-mesh-time-series-cifti-2">4D Mesh Time Series (CIFTI-2)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#applying-cifti-dense-time-series-to-a-standard-surface-mesh">Applying CIFTI Dense Time Series to a Standard Surface Mesh</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brainvoyager">BrainVoyager</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rendering-srf-surfaces-with-smp-curvature-and-statistical-maps">Rendering SRF Surfaces with SMP Curvature and Statistical Maps</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mesh-curvature-and-per-vertex-scalars">Mesh curvature and Per-Vertex Scalars</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tractography">4. Tractography</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dsi-studio-tiny-tract-files-tt">DSI-Studio tiny-tract files (TT)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-tractography-with-multiple-formats-and-brain-surface">Advanced Tractography with Multiple Formats and Brain Surface</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dependencies-in-jupyter-python">Dependencies in Jupyter/Python</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="ipyniivue-and-ipywidgets">
+<h1>Ipyniivue and Ipywidgets<a class="headerlink" href="#ipyniivue-and-ipywidgets" title="Link to this heading">#</a></h1>
+<section id="visualizing-diverse-neuroimaging-formats">
+<h2>Visualizing Diverse Neuroimaging Formats<a class="headerlink" href="#visualizing-diverse-neuroimaging-formats" title="Link to this heading">#</a></h2>
+<p><strong>Author</strong>: Monika Doerig</p>
+<p><strong>Date</strong>: 12 Dec 2025</p>
+<section id="citation-and-resources">
+<h3>Citation and Resources:<a class="headerlink" href="#citation-and-resources" title="Link to this heading">#</a></h3>
+<section id="tools-included-in-this-workflow">
+<h4>Tools included in this workflow<a class="headerlink" href="#tools-included-in-this-workflow" title="Link to this heading">#</a></h4>
+<p><strong>Ipyniivue</strong></p>
+<ul class="simple">
+<li><p>niivue/ipyniivue (2025): A WebGL-powered Jupyter Widget for Niivue based on anywidget. [Computer software]. <a class="github reference external" href="https://github.com/niivue/ipyniivue">niivue/ipyniivue</a></p></li>
+<li><p>Taylor Hanayik, Chris Rorden, Christopher Drake, Jens Ochsenmeier, Matt McCormick, alexis, John lee, Paul Taylor, Edwin Bennink, Paul Wighton, Shun, Anthony Androulakis, Nell Hardcastle, Yaroslav Halchenko, Florian Rupprecht, Guilherme Povala, Korbinian Eckstein, Paul McCarthy, Sumit Jha, … Adam Basha. (2025). niivue/niivue: &#64;niivue/niivue-v0.66.0 (&#64;niivue/niivue-v0.66.0). Zenodo. <a class="reference external" href="https://doi.org/10.5281/zenodo.5786269">https://doi.org/10.5281/zenodo.5786269</a></p></li>
+</ul>
+<p><strong>Ipywidgets</strong></p>
+<ul class="simple">
+<li><p>Jupyter Widgets Community. (2015). Jupyter-widgets/ipywidgets (Version 8.1.7) [TypeScript]. Jupyter Widgets. <a class="github reference external" href="https://github.com/jupyter-widgets/ipywidgets">jupyter-widgets/ipywidgets</a> (Original work published 2015)</p></li>
+</ul>
+</section>
+<section id="educational-resources">
+<h4>Educational resources<a class="headerlink" href="#educational-resources" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/niivue/ipyniivue/tree/main/examples">Ipyniivue Examples</a></p></li>
+<li><p><a class="reference external" href="https://niivue.github.io/ipyniivue/index.html">Ipynivue Documentation</a></p></li>
+<li><p><a class="reference external" href="https://niivue.com/">NiiVue</a></p></li>
+<li><p><a class="reference external" href="https://ipywidgets.readthedocs.io/en/stable/">Ipywidgets Documentation</a></p></li>
+<li><p><a class="reference external" href="https://github.com/jupyter-widgets/ipywidgets/blob/main/docs/source/examples/Index.ipynb">Demo Notebook of Interactive Widgets</a></p></li>
+</ul>
+</section>
+<section id="data">
+<h4>Data<a class="headerlink" href="#data" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Example neuroimaging images were obtained from the NiiVue demos resources</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>This notebook demonstrates how to load, visualize, and interact with a range of common neuroimaging data formats in a Jupyter notebook using Ipyniivue, a Python interface to the Niivue web-based neuroimaging viewer. Examples combine <strong>ipyniivue</strong> with <strong>ipywidgets</strong> to enable interactive exploration and dynamic control of visualization parameters.</p>
+<p>The notebook covers voxel-based images, including structural and diffusion-derived volumes (e.g., fractional anisotropy and principal diffusion directions), as well as surface meshes, per-vertex scalar data, CIFTI files, and tractography representations. Together, these examples illustrate how diverse neuroimaging modalities can be displayed within a unified, browser-based visualization environment without requiring a standalone desktop application.</p>
+<p>The emphasis is on interactive visualization and data inspection, rather than preprocessing or statistical analysis, with each section highlighting practical patterns for working with different file formats and rendering modes supported by Ipyniivue.</p>
+<p>All exampels are inspired by the <a class="reference external" href="https://github.com/niivue/ipyniivue/tree/main/examples">ipyniivues example repository</a> and have been adapted where necessary to work with <strong>ipyniivue version 2.3.2</strong>.</p>
+</section>
+<section id="import-python-libraries">
+<h2>Import Python libraries<a class="headerlink" href="#import-python-libraries" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%capture</span>
+<span class="err">!</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">ipyniivue</span><span class="o">==</span><span class="mf">2.3.2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">asyncio</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pathlib</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">ipywidgets</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">widgets</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Image</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">ipyniivue</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">ipyniivue</span><span class="w"> </span><span class="kn">import</span> <span class="n">NiiVue</span><span class="p">,</span> <span class="n">ShowRender</span><span class="p">,</span> <span class="n">SliceType</span><span class="p">,</span> <span class="n">download_dataset</span><span class="p">,</span> <span class="n">DragMode</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="download-required-data">
+<h2>Download required data<a class="headerlink" href="#download-required-data" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># -----------------------------</span>
+<span class="c1"># Folders</span>
+<span class="c1"># -----------------------------</span>
+<span class="n">DATA_FOLDER</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;./images&quot;</span><span class="p">)</span>
+<span class="n">DATA_FOLDER</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">MATCAP_FOLDER</span> <span class="o">=</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;./matcaps&quot;</span><span class="p">)</span>
+<span class="n">MATCAP_FOLDER</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Dataset definitions</span>
+
+<span class="n">DATASETS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c1"># Main neuroimaging datasets</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;api_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://niivue.com/demos/images/&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;dest_folder&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span><span class="p">,</span>
+        <span class="s2">&quot;files&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;example4d+orig.HEAD&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;example4d+orig.BRIK.gz&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;mni152.nii.gz&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;narps-4965_9U7M-hypo1_unthresh.nii.gz&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;narps-4735_50GV-hypo1_unthresh.nii.gz&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;sub-test02_left_hemisphere.srf.gz&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;sub-test02_left_hemisphere_4_curvature_maps.smp.gz&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;fs_LR.32k.L.inflated.surf.gii&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;fs_LR.32k.LR.curvature.dscalar.nii&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Conte69.L.inflated.32k_fs_LR.surf.gii&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Conte69.MyelinAndCorrThickness.32k_fs_LR.dtseries.nii&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;FA.nii.gz&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;V1.nii.gz&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;TR_S_R.tt.gz&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;tract.FAT_R.vtk&quot;</span><span class="p">,</span> <span class="c1">#</span>
+            <span class="s2">&quot;tract.IFOF_R.trk&quot;</span><span class="p">,</span> <span class="c1">#</span>
+            <span class="s2">&quot;tract.SLF1_R.tck&quot;</span><span class="p">,</span> <span class="c1">#</span>
+            <span class="s2">&quot;BrainMesh_ICBM152.lh.mz3&quot;</span> <span class="c1">#</span>
+        <span class="p">],</span>
+    <span class="p">},</span>
+    <span class="c1"># FreeSurfer files</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;api_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://niivue.com/demos/images/fs/&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;dest_folder&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span><span class="p">,</span> 
+        <span class="s2">&quot;files&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;brainmask.mgz&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;rh.pial&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;lh.pial&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;rh.white&quot;</span><span class="p">,</span>
+        <span class="p">],</span>
+    <span class="p">},</span>
+    <span class="c1"># Matcap images</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;api_url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://niivue.com/demos/matcaps&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;dest_folder&quot;</span><span class="p">:</span> <span class="n">MATCAP_FOLDER</span><span class="p">,</span>
+        <span class="s2">&quot;files&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;Shiny.jpg&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Cortex.jpg&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Cream.jpg&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Fuzzy.jpg&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Peach.jpg&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Plastic.jpg&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Gold.jpg&quot;</span><span class="p">,</span>
+        <span class="p">],</span>
+    <span class="p">},</span>
+<span class="p">]</span>
+
+<span class="c1"># Download all datasets</span>
+
+<span class="k">for</span> <span class="n">ds</span> <span class="ow">in</span> <span class="n">DATASETS</span><span class="p">:</span>
+    <span class="n">ds</span><span class="p">[</span><span class="s2">&quot;dest_folder&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">download_dataset</span><span class="p">(</span>
+        <span class="n">api_url</span><span class="o">=</span><span class="n">ds</span><span class="p">[</span><span class="s2">&quot;api_url&quot;</span><span class="p">],</span>
+        <span class="n">dest_folder</span><span class="o">=</span><span class="n">ds</span><span class="p">[</span><span class="s2">&quot;dest_folder&quot;</span><span class="p">],</span>
+        <span class="n">files</span><span class="o">=</span><span class="n">ds</span><span class="p">[</span><span class="s2">&quot;files&quot;</span><span class="p">],</span>
+    <span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All datasets and matcaps downloaded successfully.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading example4d+orig.HEAD...
+Downloading example4d+orig.BRIK.gz...
+Downloading mni152.nii.gz...
+Downloading narps-4965_9U7M-hypo1_unthresh.nii.gz...
+Downloading narps-4735_50GV-hypo1_unthresh.nii.gz...
+Downloading sub-test02_left_hemisphere.srf.gz...
+Downloading sub-test02_left_hemisphere_4_curvature_maps.smp.gz...
+Downloading fs_LR.32k.L.inflated.surf.gii...
+Downloading fs_LR.32k.LR.curvature.dscalar.nii...
+Downloading Conte69.L.inflated.32k_fs_LR.surf.gii...
+Downloading Conte69.MyelinAndCorrThickness.32k_fs_LR.dtseries.nii...
+Downloading FA.nii.gz...
+Downloading V1.nii.gz...
+Downloading TR_S_R.tt.gz...
+Downloading tract.FAT_R.vtk...
+Downloading tract.IFOF_R.trk...
+Downloading tract.SLF1_R.tck...
+Downloading BrainMesh_ICBM152.lh.mz3...
+Dataset downloaded successfully to images.
+Downloading brainmask.mgz...
+Downloading rh.pial...
+Downloading lh.pial...
+Downloading rh.white...
+Dataset downloaded successfully to images.
+Downloading Shiny.jpg...
+Downloading Cortex.jpg...
+Downloading Cream.jpg...
+Downloading Fuzzy.jpg...
+Downloading Peach.jpg...
+Downloading Plastic.jpg...
+Downloading Gold.jpg...
+Dataset downloaded successfully to matcaps.
+All datasets and matcaps downloaded successfully.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="volumetric-neuroimaging-formats">
+<h2>1. Volumetric Neuroimaging Formats<a class="headerlink" href="#volumetric-neuroimaging-formats" title="Link to this heading">#</a></h2>
+<section id="multi-volume-overlay">
+<h3>Multi-Volume Overlay<a class="headerlink" href="#multi-volume-overlay" title="Link to this heading">#</a></h3>
+<section id="visualizing-anatomical-and-statistical-maps-simultaneously-in-3d">
+<h4>Visualizing anatomical and statistical maps simultaneously in 3D<a class="headerlink" href="#visualizing-anatomical-and-statistical-maps-simultaneously-in-3d" title="Link to this heading">#</a></h4>
+<p>This example demonstrates the visualization of multiple neuroimaging volumes in a single 3D viewer.</p>
+<ul class="simple">
+<li><p>The base anatomical volume (<code class="docutils literal notranslate"><span class="pre">mni152.nii.gz</span></code>) is displayed in grayscale</p></li>
+<li><p>Two statistical maps are overlaid with different colormaps:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">narps-4965_9U7M-hypo1_unthresh.nii.gz</span></code> in red</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">narps-4735_50GV-hypo1_unthresh.nii.gz</span></code> in green</p></li>
+</ul>
+</li>
+<li><p>Interactive sliders adjust the minimum intensity threshold (<code class="docutils literal notranslate"><span class="pre">cal_min</span></code>) for each overlay</p></li>
+<li><p>The 3D crosshair allows inspection of voxel locations</p></li>
+<li><p>Colorbar indicates intensity ranges for the overlay volumes.</p></li>
+</ul>
+<p>This setup highlights how multiple volumetric datasets can be integrated and visualized interactively, allowing exploration of anatomical structure alongside functional or statistical results in a single environment.</p>
+<p>This example is an adaptation from this <a class="reference external" href="https://niivue.com/demos/features/additive.voxels.html">NiiVue demo</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">volumes</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;mni152.nii.gz&quot;</span><span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;narps-4965_9U7M-hypo1_unthresh.nii.gz&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;colormap&quot;</span><span class="p">:</span> <span class="s2">&quot;red&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;cal_min&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+        <span class="s2">&quot;cal_max&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;narps-4735_50GV-hypo1_unthresh.nii.gz&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;colormap&quot;</span><span class="p">:</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;cal_min&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+        <span class="s2">&quot;cal_max&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">]</span>
+<span class="n">nv1</span> <span class="o">=</span> <span class="n">NiiVue</span><span class="p">(</span>
+    <span class="n">back_color</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+    <span class="n">show_3D_crosshair</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">is_colorbar</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+   
+<span class="p">)</span>
+
+<span class="n">nv1</span><span class="o">.</span><span class="n">load_volumes</span><span class="p">(</span><span class="n">volumes</span><span class="p">)</span>
+<span class="n">nv1</span><span class="o">.</span><span class="n">volumes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">colorbar_visible</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="c1"># Users can dynamically change the minimum intensity (cal_min) for the red and green overlays.</span>
+<span class="c1"># This allows exploration of which voxels are visible at different thresholds.</span>
+<span class="c1"># --- Sliders for interactive thresholds ---</span>
+<span class="n">sred</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatSlider</span><span class="p">(</span>
+    <span class="nb">min</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mf">4.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> 
+    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Red Min&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">sgreen</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatSlider</span><span class="p">(</span>
+    <span class="nb">min</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mf">4.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> 
+    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Green Min&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="c1"># Link sliders to overlay volumes</span>
+<span class="n">widgets</span><span class="o">.</span><span class="n">link</span><span class="p">((</span><span class="n">sred</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">nv1</span><span class="o">.</span><span class="n">volumes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s2">&quot;cal_min&quot;</span><span class="p">))</span>
+<span class="n">widgets</span><span class="o">.</span><span class="n">link</span><span class="p">((</span><span class="n">sgreen</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">),</span> <span class="p">(</span><span class="n">nv1</span><span class="o">.</span><span class="n">volumes</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;cal_min&quot;</span><span class="p">))</span>
+
+<span class="c1"># --- Combine viewer and sliders in one display ---</span>
+<span class="n">controls</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">([</span><span class="n">sred</span><span class="p">,</span> <span class="n">sgreen</span><span class="p">])</span>
+<span class="n">display</span><span class="p">(</span><span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">([</span><span class="n">nv1</span><span class="p">,</span> <span class="n">controls</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "f53f809da851451c9181119b7e893bd4", "version_major": 2, "version_minor": 0}</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;../../static/examples/workflows/ipyniivue_ipywidgets/01_multi_volume.png&#39;</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/30325ef770826760e746c9c98e381cb384a5f4740f44b655f4f15479e3093763.png" src="../../_images/30325ef770826760e746c9c98e381cb384a5f4740f44b655f4f15479e3093763.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="afni-volumes">
+<h3>AFNI Volumes<a class="headerlink" href="#afni-volumes" title="Link to this heading">#</a></h3>
+<p>This example demonstrates interactive exploration of a 4D AFNI dataset. The viewer displays multiplanar slices alongside NiiVue’s built-in graph panel, which plots the voxel-wise time series at the current crosshair position.</p>
+<p>As you navigate through frames or use the animation controls, the graph updates to show intensity values across all timepoints for the selected voxel. The controls allow you to:</p>
+<ul class="simple">
+<li><p>Step through frames manually (Back/Forward buttons)</p></li>
+<li><p>Automatically cycle through all frames (Animate button)</p></li>
+<li><p>Optionally normalize the graph display for better visualization</p></li>
+</ul>
+<p>This setup demonstrates how 4D neuroimaging data can be explored both spatially (through the multiplanar views) and temporally (through the time series graph), providing a comprehensive view of how signal intensity varies across time at any brain location.</p>
+<p>This example mirrors <a class="reference external" href="https://niivue.com/demos/features/afni.html">this NiiVue demo</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create the NiiVue widget</span>
+<span class="n">nv2</span> <span class="o">=</span> <span class="n">NiiVue</span><span class="p">()</span>
+
+<span class="n">nv2</span><span class="o">.</span><span class="n">set_radiological_convention</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">nv2</span><span class="o">.</span><span class="n">set_slice_type</span><span class="p">(</span><span class="n">SliceType</span><span class="o">.</span><span class="n">MULTIPLANAR</span><span class="p">)</span>
+<span class="n">nv2</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">crosshair_width</span><span class="o">=</span><span class="mf">0.2</span>
+<span class="n">nv2</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">multiplanar_show_render</span> <span class="o">=</span> <span class="n">ShowRender</span><span class="o">.</span><span class="n">ALWAYS</span>
+
+<span class="c1"># Configure graph values</span>
+<span class="n">nv2</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">auto_size_multiplanar</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">nv2</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">normalize_values</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">nv2</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">opacity</span> <span class="o">=</span> <span class="mf">1.0</span>
+
+<span class="c1"># Load 4D volume with paired HEAD and BRIK files</span>
+<span class="n">nv2</span><span class="o">.</span><span class="n">load_volumes</span><span class="p">(</span>
+    <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;example4d+orig.HEAD&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;paired_img_path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;example4d+orig.BRIK.gz&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;colormap&quot;</span><span class="p">:</span> <span class="s2">&quot;gray&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;opacity&quot;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span>
+            <span class="s2">&quot;visible&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="p">},</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="create-other-buttons-checkboxes">
+<h4>Create other buttons/checkboxes<a class="headerlink" href="#create-other-buttons-checkboxes" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display_frame</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s2">&quot;Volume: 0&quot;</span><span class="p">)</span>
+
+<span class="n">normalize_checkbox</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Checkbox</span><span class="p">(</span>
+    <span class="n">value</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Normalize Graph&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">prev_button</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Back&quot;</span><span class="p">)</span>
+<span class="n">next_button</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Forward&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="implement-the-callbacks">
+<h4>Implement the callbacks<a class="headerlink" href="#implement-the-callbacks" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">on_normalize_change</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Normalize graph.&quot;&quot;&quot;</span>
+    <span class="n">nv2</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">normalize_values</span> <span class="o">=</span> <span class="n">change</span><span class="p">[</span><span class="s2">&quot;new&quot;</span><span class="p">]</span>
+
+
+<span class="n">normalize_checkbox</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">on_normalize_change</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_prev_button_clicked</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Decrement the frame index.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">nv2</span><span class="o">.</span><span class="n">volumes</span><span class="p">:</span>
+        <span class="n">current_frame</span> <span class="o">=</span> <span class="n">nv2</span><span class="o">.</span><span class="n">volumes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">frame4D</span>
+        <span class="n">new_frame</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">current_frame</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">nv2</span><span class="o">.</span><span class="n">volumes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">frame4D</span> <span class="o">=</span> <span class="n">new_frame</span>
+        <span class="n">display_frame</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Volume: </span><span class="si">{</span><span class="n">new_frame</span><span class="si">}</span><span class="s2">&quot;</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_next_button_clicked</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Increment the frame index.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">nv2</span><span class="o">.</span><span class="n">volumes</span><span class="p">:</span>
+        <span class="n">current_frame</span> <span class="o">=</span> <span class="n">nv2</span><span class="o">.</span><span class="n">volumes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">frame4D</span>
+        <span class="n">n_frames</span> <span class="o">=</span> <span class="n">nv2</span><span class="o">.</span><span class="n">volumes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">n_frame4D</span> 
+        <span class="n">new_frame</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">current_frame</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">n_frames</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">nv2</span><span class="o">.</span><span class="n">volumes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">frame4D</span> <span class="o">=</span> <span class="n">new_frame</span>
+        <span class="n">display_frame</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Volume: </span><span class="si">{</span><span class="n">new_frame</span><span class="si">}</span><span class="s2">&quot;</span>
+
+
+<span class="n">prev_button</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">on_prev_button_clicked</span><span class="p">)</span>
+<span class="n">next_button</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">on_next_button_clicked</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="create-animate-button">
+<h4>Create animate button<a class="headerlink" href="#create-animate-button" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">animate_button</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Animate&quot;</span><span class="p">)</span>
+
+<span class="n">animation_running</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">animation_task</span> <span class="o">=</span> <span class="kc">None</span>
+
+
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">animate_frames</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Animation loop.&quot;&quot;&quot;</span>
+    <span class="k">global</span> <span class="n">animation_running</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">nv2</span><span class="o">.</span><span class="n">volumes</span><span class="p">:</span>
+        <span class="k">return</span>
+    <span class="n">n_frames</span> <span class="o">=</span> <span class="n">nv2</span><span class="o">.</span><span class="n">volumes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">n_frame4D</span> <span class="c1">#n_frame_4d</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">while</span> <span class="n">animation_running</span><span class="p">:</span>
+            <span class="n">current_frame</span> <span class="o">=</span> <span class="n">nv2</span><span class="o">.</span><span class="n">volumes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">frame4D</span>
+            <span class="n">current_frame</span> <span class="o">=</span> <span class="p">(</span><span class="n">current_frame</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">n_frames</span>
+            <span class="n">nv2</span><span class="o">.</span><span class="n">volumes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">frame4D</span> <span class="o">=</span> <span class="n">current_frame</span>
+            <span class="n">display_frame</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Volume: </span><span class="si">{</span><span class="n">current_frame</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+    <span class="k">except</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">CancelledError</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_animate_button_clicked</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Define &#39;Animate&#39; button click handler.&quot;&quot;&quot;</span>
+    <span class="k">global</span> <span class="n">animation_running</span><span class="p">,</span> <span class="n">animation_task</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">animation_running</span><span class="p">:</span>
+        <span class="c1"># Start animation</span>
+        <span class="n">animation_running</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">animate_button</span><span class="o">.</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Stop&quot;</span>
+        <span class="c1"># Schedule the animation coroutine and store the future</span>
+        <span class="n">animation_task</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">ensure_future</span><span class="p">(</span><span class="n">animate_frames</span><span class="p">())</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># Stop animation</span>
+        <span class="n">animation_running</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="n">animate_button</span><span class="o">.</span><span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Animate&quot;</span>
+        <span class="c1"># Cancel the running task if it&#39;s active</span>
+        <span class="k">if</span> <span class="n">animation_task</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">animation_task</span><span class="o">.</span><span class="n">cancel</span><span class="p">()</span>
+            <span class="n">animation_task</span> <span class="o">=</span> <span class="kc">None</span>
+
+
+<span class="n">animate_button</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">on_animate_button_clicked</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="reset-frame-index-on-image-loaded">
+<h4>Reset frame index on image loaded<a class="headerlink" href="#reset-frame-index-on-image-loaded" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nd">@nv2</span><span class="o">.</span><span class="n">on_image_loaded</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">update_number_of_frames</span><span class="p">(</span><span class="n">volume</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Reset to first frame.&quot;&quot;&quot;</span>
+    <span class="n">nv2</span><span class="o">.</span><span class="n">volumes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">frame4D</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">display_frame</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s2">&quot;Volume: 0&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="display-all">
+<h4>Display all<a class="headerlink" href="#display-all" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">controls</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">(</span>
+    <span class="p">[</span>
+        <span class="n">normalize_checkbox</span><span class="p">,</span>
+        <span class="n">prev_button</span><span class="p">,</span>
+        <span class="n">next_button</span><span class="p">,</span>
+        <span class="n">animate_button</span><span class="p">,</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">([</span><span class="n">controls</span><span class="p">,</span> <span class="n">display_frame</span><span class="p">,</span> <span class="n">nv2</span><span class="p">]))</span>
+     
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "7ff6ed931cd34ec78f6ba22cbe4e35ab", "version_major": 2, "version_minor": 0}</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;../../static/examples/workflows/ipyniivue_ipywidgets/02_afni_volumes.png&#39;</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/69bcd5c79cd257e41be9d0c23b3dcb5b7f4849c2526cb81292b6e2582e0fede6.png" src="../../_images/69bcd5c79cd257e41be9d0c23b3dcb5b7f4849c2526cb81292b6e2582e0fede6.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="diffusion-derived-volumes-fa-and-v1">
+<h3>Diffusion-Derived Volumes (FA and V1)<a class="headerlink" href="#diffusion-derived-volumes-fa-and-v1" title="Link to this heading">#</a></h3>
+<p>This example demonstrates interactive exploration of voxel-based diffusion metrics. We load fractional anisotropy (FA) and a V1 image as volumetric scalar maps. The V1 image encodes the principal diffusion direction (primary eigenvector) at each voxel, typically representing white matter fiber orientation. Interactive widgets allow you to visualize FA and V1 individually, overlay them, or apply a “Lines” effect (via the V1 slice shader) to highlight directional fiber architecture. The controls let you toggle which volume is visible, apply alpha clipping to improve contrast, and adjust FA intensity ranges. This approach enables examination of diffusion anisotropy alongside fiber orientation patterns without requiring complex modulation methods.</p>
+<p>This example mirrors this <a class="reference external" href="https://niivue.com/demos/features/modulate.html">NiiVue demo</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># --- Initialize Viewer ---</span>
+<span class="n">nv3</span> <span class="o">=</span> <span class="n">NiiVue</span><span class="p">(</span>
+    <span class="n">back_color</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+    <span class="n">show_3d_crosshair</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">multiplanar_show_render</span><span class="o">=</span><span class="n">ShowRender</span><span class="o">.</span><span class="n">NEVER</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">nv3</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">drag_mode</span> <span class="o">=</span> <span class="n">DragMode</span><span class="o">.</span><span class="n">PAN</span>
+<span class="n">nv3</span><span class="o">.</span><span class="n">set_crosshair_width</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+
+<span class="c1"># --- Load Volumes ---</span>
+<span class="n">nv3</span><span class="o">.</span><span class="n">load_volumes</span><span class="p">([</span>
+    <span class="p">{</span><span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;FA.nii.gz&quot;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;V1.nii.gz&quot;</span><span class="p">},</span>
+<span class="p">])</span>
+
+<span class="c1"># Set initial properties</span>
+<span class="n">nv3</span><span class="o">.</span><span class="n">volumes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">opacity</span> <span class="o">=</span> <span class="mf">1.0</span>  <span class="c1"># FA visible</span>
+<span class="n">nv3</span><span class="o">.</span><span class="n">volumes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">opacity</span> <span class="o">=</span> <span class="mf">0.0</span>  <span class="c1"># V1 hidden</span>
+<span class="n">nv3</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">is_v1_slice_shader</span> <span class="o">=</span> <span class="kc">False</span> <span class="c1"># renders directional values as line patterns that visualize fiber orientations</span>
+
+<span class="c1"># --- Define Modes Mapping ---</span>
+<span class="c1"># Each mode maps to: (FA opacity, V1 opacity, use V1 slice shader)</span>
+<span class="n">mode_map</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;FA&quot;</span><span class="p">:</span>          <span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+    <span class="s2">&quot;V1&quot;</span><span class="p">:</span>          <span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+    <span class="s2">&quot;V1xFA&quot;</span><span class="p">:</span>       <span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+    <span class="s2">&quot;Lines&quot;</span><span class="p">:</span>       <span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+    <span class="s2">&quot;LinesxFA&quot;</span><span class="p">:</span>    <span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>  <span class="c1"># Approximate modulation by combining FA opacity + V1 slice shader</span>
+<span class="p">}</span>
+
+<span class="c1"># --- UI Widgets ---</span>
+<span class="n">modulate_dropdown</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">mode_map</span><span class="o">.</span><span class="n">keys</span><span class="p">()),</span>
+    <span class="n">value</span><span class="o">=</span><span class="s2">&quot;FA&quot;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Display:&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">dark_check</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Checkbox</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Clip Dark&quot;</span><span class="p">)</span>
+
+<span class="n">slider_min</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;FAmin&quot;</span><span class="p">)</span>
+<span class="n">slider_max</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;FAmax&quot;</span><span class="p">)</span>
+
+<span class="n">location_label</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="s2">&quot;Location: &quot;</span><span class="p">)</span>
+
+<span class="c1"># --- Callbacks ---</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">update_display</span><span class="p">(</span><span class="n">change</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">mode</span> <span class="o">=</span> <span class="n">modulate_dropdown</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">fa_op</span><span class="p">,</span> <span class="n">v1_op</span><span class="p">,</span> <span class="n">shader_flag</span> <span class="o">=</span> <span class="n">mode_map</span><span class="p">[</span><span class="n">mode</span><span class="p">]</span>
+    <span class="n">nv3</span><span class="o">.</span><span class="n">volumes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">opacity</span> <span class="o">=</span> <span class="n">fa_op</span>
+    <span class="n">nv3</span><span class="o">.</span><span class="n">volumes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">opacity</span> <span class="o">=</span> <span class="n">v1_op</span>
+    <span class="n">nv3</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">is_v1_slice_shader</span> <span class="o">=</span> <span class="n">shader_flag</span>
+
+<span class="n">modulate_dropdown</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">update_display</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">update_clip</span><span class="p">(</span><span class="n">change</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">nv3</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">is_alpha_clip_dark</span> <span class="o">=</span> <span class="n">dark_check</span><span class="o">.</span><span class="n">value</span>
+
+<span class="n">dark_check</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">update_clip</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">update_contrast</span><span class="p">(</span><span class="n">change</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">mn</span><span class="p">,</span> <span class="n">mx</span> <span class="o">=</span> <span class="n">slider_min</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="n">slider_max</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">nv3</span><span class="o">.</span><span class="n">volumes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">cal_min</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">mn</span><span class="p">,</span> <span class="n">mx</span><span class="p">)</span>
+    <span class="n">nv3</span><span class="o">.</span><span class="n">volumes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">cal_max</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">mn</span><span class="p">,</span> <span class="n">mx</span><span class="p">)</span>
+
+<span class="n">slider_min</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">update_contrast</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+<span class="n">slider_max</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">update_contrast</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_location_change</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="k">if</span> <span class="s2">&quot;string&quot;</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+        <span class="n">location_label</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s2">&quot;Location: &quot;</span> <span class="o">+</span> <span class="n">data</span><span class="p">[</span><span class="s2">&quot;string&quot;</span><span class="p">]</span>
+
+<span class="n">nv3</span><span class="o">.</span><span class="n">on_location_change</span><span class="p">(</span><span class="n">on_location_change</span><span class="p">)</span>
+
+<span class="c1"># --- Initialize ---</span>
+<span class="n">update_clip</span><span class="p">()</span>
+<span class="n">update_contrast</span><span class="p">()</span>
+<span class="n">update_display</span><span class="p">()</span>
+
+
+<span class="c1"># --- Layout ---</span>
+<span class="n">ui</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">([</span>
+    <span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">([</span><span class="n">modulate_dropdown</span><span class="p">,</span> <span class="n">dark_check</span><span class="p">]),</span>
+    <span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">([</span><span class="n">slider_min</span><span class="p">,</span> <span class="n">slider_max</span><span class="p">]),</span>
+    <span class="n">nv3</span><span class="p">,</span>
+    <span class="n">location_label</span>
+<span class="p">])</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">ui</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "69a5516b9cec4e9798f19791072d104b", "version_major": 2, "version_minor": 0}</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;../../static/examples/workflows/ipyniivue_ipywidgets/03_diffusion_metrics.png&#39;</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/1d8ee22b6021fb29a044538c9304e2e6594d7a14fc666ec6e3bf8d6a3230ec3c.png" src="../../_images/1d8ee22b6021fb29a044538c9304e2e6594d7a14fc666ec6e3bf8d6a3230ec3c.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="surface-based-representations">
+<h2>2. Surface-Based Representations<a class="headerlink" href="#surface-based-representations" title="Link to this heading">#</a></h2>
+<p>Surface-based neuroimaging methods represent cortical structure and function directly on a two-dimensional mesh that conforms to the cortical sheet. Rather than sampling data in volumetric space, these formats associate scalar values with individual surface vertices, enabling high-resolution visualization of folding patterns, morphometry, and functional or statistical maps. NiiVue supports several widely used surface standards, including FreeSurfer meshes, CIFTI/fsLR hemisphere surfaces, and BrainVoyager SRF/SMP files. The following examples illustrate how to load and render each format, attach per-vertex data layers, and interactively explore mesh-based neuroimaging data.</p>
+<section id="freesurfer-surfaces">
+<h3>FreeSurfer Surfaces<a class="headerlink" href="#freesurfer-surfaces" title="Link to this heading">#</a></h3>
+<p>FreeSurfer generates subject-specific cortical surface meshes that explicitly encode geometry and topology in native anatomical space. These surfaces are stored in FreeSurfer’s own binary formats (e.g., <code class="docutils literal notranslate"><span class="pre">white</span></code>, <code class="docutils literal notranslate"><span class="pre">pial</span></code>, <code class="docutils literal notranslate"><span class="pre">inflated</span></code>) and represent the cortical sheet as a triangulated mesh with vertex-wise morphometric information. Unlike CIFTI files, FreeSurfer surfaces directly store geometry, allowing per-vertex measurements to be intrinsically defined on the mesh itself.</p>
+<p>NiiVue can load FreeSurfer surface files directly, enabling interactive visualization of native-space cortical meshes and their associated morphometric properties.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># --- Initialize viewer ---</span>
+<span class="n">nv4</span> <span class="o">=</span> <span class="n">NiiVue</span><span class="p">(</span><span class="n">slice_type</span><span class="o">=</span><span class="n">SliceType</span><span class="o">.</span><span class="n">RENDER</span><span class="p">)</span>
+<span class="n">nv4</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">show_3d_crosshair</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">nv4</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">back_color</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+
+<span class="c1"># --- Load a background volume for clipping ---</span>
+<span class="n">nv4</span><span class="o">.</span><span class="n">load_volumes</span><span class="p">([</span>
+    <span class="p">{</span><span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;mni152.nii.gz&quot;</span><span class="p">,</span> <span class="s2">&quot;colormap&quot;</span><span class="p">:</span> <span class="s2">&quot;gray&quot;</span><span class="p">,</span> <span class="s2">&quot;opacity&quot;</span><span class="p">:</span> <span class="mf">0.9</span><span class="p">}</span>
+<span class="p">])</span>
+
+<span class="c1"># --- Load surfaces on top ---</span>
+<span class="n">nv4</span><span class="o">.</span><span class="n">load_meshes</span><span class="p">([</span>
+    <span class="p">{</span><span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;lh.pial&quot;</span><span class="p">,</span> <span class="s2">&quot;rgba255&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">64</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">222</span><span class="p">,</span> <span class="mi">255</span><span class="p">]},</span>
+    <span class="p">{</span><span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;rh.white&quot;</span><span class="p">,</span> <span class="s2">&quot;rgba255&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">222</span><span class="p">,</span> <span class="mi">194</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">]},</span>
+<span class="p">])</span>
+
+<span class="c1"># --- Optional: enable clipping plane ---</span>
+<span class="n">default_depth</span><span class="p">,</span> <span class="n">default_azimuth</span><span class="p">,</span> <span class="n">default_elevation</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mi">270</span><span class="p">,</span> <span class="mi">0</span>
+<span class="n">nv4</span><span class="o">.</span><span class="n">set_clip_plane</span><span class="p">(</span><span class="n">depth</span><span class="o">=</span><span class="n">default_depth</span><span class="p">,</span> <span class="n">azimuth</span><span class="o">=</span><span class="n">default_azimuth</span><span class="p">,</span> <span class="n">elevation</span><span class="o">=</span><span class="n">default_elevation</span><span class="p">)</span>
+
+<span class="c1"># --- Available shaders ---</span>
+<span class="n">shader_names</span> <span class="o">=</span> <span class="n">nv4</span><span class="o">.</span><span class="n">mesh_shader_names</span><span class="p">()</span>
+
+<span class="c1"># Use the first shader as default</span>
+<span class="n">default_shader</span> <span class="o">=</span> <span class="n">shader_names</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="n">shader_names</span> <span class="k">else</span> <span class="kc">None</span>
+<span class="k">if</span> <span class="n">default_shader</span> <span class="ow">and</span> <span class="n">nv4</span><span class="o">.</span><span class="n">meshes</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">mesh</span> <span class="ow">in</span> <span class="n">nv4</span><span class="o">.</span><span class="n">meshes</span><span class="p">:</span>
+        <span class="n">nv4</span><span class="o">.</span><span class="n">set_mesh_shader</span><span class="p">(</span><span class="n">mesh</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">default_shader</span><span class="p">)</span>
+
+<span class="c1"># Dropdown to change shaders interactively</span>
+<span class="n">shader_dropdown</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="n">shader_names</span><span class="p">,</span>
+    <span class="n">value</span><span class="o">=</span><span class="n">default_shader</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Shader&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_shader_change</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">nv4</span><span class="o">.</span><span class="n">meshes</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">mesh</span> <span class="ow">in</span> <span class="n">nv4</span><span class="o">.</span><span class="n">meshes</span><span class="p">:</span>
+            <span class="n">nv4</span><span class="o">.</span><span class="n">set_mesh_shader</span><span class="p">(</span><span class="n">mesh</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">change</span><span class="p">[</span><span class="s2">&quot;new&quot;</span><span class="p">])</span>
+
+<span class="n">shader_dropdown</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">on_shader_change</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+
+<span class="c1"># --- Display viewer with controls ---</span>
+<span class="n">display</span><span class="p">(</span><span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">([</span><span class="n">shader_dropdown</span><span class="p">,</span> <span class="n">nv4</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "84dee6f2fb4e423c82dc5aaece5b98d9", "version_major": 2, "version_minor": 0}</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;../../static/examples/workflows/ipyniivue_ipywidgets/04_freesurfer.png&#39;</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/7a07bed38499e9148e7c9561272e81c33148f8f0242288601ba09c980f410321.png" src="../../_images/7a07bed38499e9148e7c9561272e81c33148f8f0242288601ba09c980f410321.png" />
+</div>
+</div>
+<blockquote>
+<div><p><strong>Interactive Clipping Plane</strong></p>
+<p>When visualizing surfaces together with a reference volume, NiiVue can apply an interactive clipping plane to reveal internal anatomy.</p>
+<ul class="simple">
+<li><p>Right-click and drag to adjust the clipping plane’s angle (azimuth and elevation)</p></li>
+<li><p>Scroll to move the clipping plane along its current orientation</p></li>
+</ul>
+<p>The clipping plane is optional but particularly useful for understanding the spatial relationship between surface reconstructions and volumetric data.</p>
+</div></blockquote>
+</section>
+<section id="d-mesh-time-series-cifti-2">
+<h3>4D Mesh Time Series (CIFTI-2)<a class="headerlink" href="#d-mesh-time-series-cifti-2" title="Link to this heading">#</a></h3>
+<section id="applying-cifti-dense-time-series-to-a-standard-surface-mesh">
+<h4>Applying CIFTI Dense Time Series to a Standard Surface Mesh<a class="headerlink" href="#applying-cifti-dense-time-series-to-a-standard-surface-mesh" title="Link to this heading">#</a></h4>
+<blockquote>
+<div><p>Unlike FreeSurfer surface files, CIFTI files typically do not store surface geometry themselves; instead, they reference a standardized surface mesh onto which data are mapped..</p>
+</div></blockquote>
+<p>CIFT-2I files encode data defined on standardized cortical surface vertices and, optionally, subcortical voxels, unified within a single matrix representation.
+Conceptually, a CIFTI file is a labeled data matrix whose dimensions are mapped to brain locations, allowing surface-based and voxel-based structures to be represented together while excluding non-informative regions such as the medial wall.
+In the fsLR framework, per-vertex measurements (e.g., myelin maps, cortical thickness, or functional time series) are aligned to a common surface mesh, enabling consistent visualization and comparison across hemispheres and subjects. In this example, a CIFTI-2 dense time series (<code class="docutils literal notranslate"><span class="pre">dtseries</span></code>) is attached as a per-vertex data layer to an inflated fsLR surface, demonstrating how NiiVue maps time-varying surface data to mesh geometry and enables interactive exploration across time, opacity, and rendering shaders..</p>
+<p>This example mirrors this <a class="reference external" href="https://niivue.com/demos/features/cifti.4D.html">NiiVue demo</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize NiiVue widget</span>
+<span class="n">nv5</span> <span class="o">=</span> <span class="n">NiiVue</span><span class="p">()</span>
+<span class="n">nv5</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">show_3d_crosshair</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">nv5</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">back_color</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.9</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">nv5</span><span class="o">.</span><span class="n">set_slice_type</span><span class="p">(</span><span class="n">SliceType</span><span class="o">.</span><span class="n">RENDER</span><span class="p">)</span>
+
+<span class="c1">#Define Mesh and Layers</span>
+<span class="n">mesh_layer_config</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;Conte69.MyelinAndCorrThickness.32k_fs_LR.dtseries.nii&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;cal_min&quot;</span><span class="p">:</span> <span class="mf">0.01</span><span class="p">,</span>
+    <span class="s2">&quot;cal_max&quot;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">,</span>
+    <span class="s2">&quot;colormap&quot;</span><span class="p">:</span> <span class="s2">&quot;rocket&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;opacity&quot;</span><span class="p">:</span> <span class="mf">0.7</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">mesh_config</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;Conte69.L.inflated.32k_fs_LR.surf.gii&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;rgba255&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">],</span>
+    <span class="s2">&quot;layers&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">mesh_layer_config</span><span class="p">],</span>
+<span class="p">}</span>
+
+<span class="c1"># Load the mesh</span>
+<span class="n">nv5</span><span class="o">.</span><span class="n">load_meshes</span><span class="p">([</span><span class="n">mesh_config</span><span class="p">])</span>
+
+
+<span class="c1"># --- UI Controls ---</span>
+
+<span class="c1"># Timepoint Slider</span>
+<span class="n">timepoint_slider</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span>
+    <span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Timepoint:&quot;</span><span class="p">,</span> <span class="n">continuous_update</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_timepoint_change</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Handle timepoint change.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">nv5</span><span class="o">.</span><span class="n">meshes</span> <span class="ow">and</span> <span class="n">nv5</span><span class="o">.</span><span class="n">meshes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">layers</span><span class="p">:</span>
+        <span class="n">nv5</span><span class="o">.</span><span class="n">meshes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">layers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">frame_4d</span> <span class="o">=</span> <span class="n">change</span><span class="p">[</span><span class="s2">&quot;new&quot;</span><span class="p">]</span>
+
+
+<span class="n">timepoint_slider</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">on_timepoint_change</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+
+<span class="c1"># Opacity Slider</span>
+<span class="n">opacity_slider</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatSlider</span><span class="p">(</span>
+    <span class="n">value</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
+    <span class="nb">min</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+    <span class="nb">max</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+    <span class="n">step</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Opacity:&quot;</span><span class="p">,</span>
+    <span class="n">continuous_update</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_opacity_change</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Handle opacity change.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">nv5</span><span class="o">.</span><span class="n">meshes</span> <span class="ow">and</span> <span class="n">nv5</span><span class="o">.</span><span class="n">meshes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">layers</span><span class="p">:</span>
+        <span class="n">nv5</span><span class="o">.</span><span class="n">meshes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">layers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">opacity</span> <span class="o">=</span> <span class="n">change</span><span class="p">[</span><span class="s2">&quot;new&quot;</span><span class="p">]</span>
+
+
+<span class="n">opacity_slider</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">on_opacity_change</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+
+<span class="c1"># Shader Buttons</span>
+<span class="n">shader_names</span> <span class="o">=</span> <span class="n">nv5</span><span class="o">.</span><span class="n">mesh_shader_names</span><span class="p">()</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">create_shader_button</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Create a shader button.&quot;&quot;&quot;</span>
+    <span class="n">btn</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">on_click</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">nv5</span><span class="o">.</span><span class="n">meshes</span><span class="p">:</span>
+            <span class="n">nv5</span><span class="o">.</span><span class="n">set_mesh_shader</span><span class="p">(</span><span class="n">nv4</span><span class="o">.</span><span class="n">meshes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+
+    <span class="n">btn</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">on_click</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">btn</span>
+
+
+<span class="n">shader_buttons</span> <span class="o">=</span> <span class="p">[</span><span class="n">create_shader_button</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">shader_names</span><span class="p">]</span>
+
+<span class="c1"># Organize shader buttons in a grid</span>
+<span class="n">num_cols</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">num_rows</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">shader_buttons</span><span class="p">)</span> <span class="o">/</span> <span class="n">num_cols</span><span class="p">)</span>
+<span class="n">shader_grid</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_rows</span><span class="p">):</span>
+    <span class="n">row_buttons</span> <span class="o">=</span> <span class="n">shader_buttons</span><span class="p">[</span><span class="n">i</span> <span class="o">*</span> <span class="n">num_cols</span> <span class="p">:</span> <span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">num_cols</span><span class="p">]</span>
+    <span class="n">shader_grid</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">(</span><span class="n">row_buttons</span><span class="p">))</span>
+
+<span class="n">shader_buttons_widget</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">(</span><span class="n">shader_grid</span><span class="p">)</span>
+
+<span class="c1"># Display Layout</span>
+<span class="n">controls_header</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">([</span><span class="n">timepoint_slider</span><span class="p">,</span> <span class="n">opacity_slider</span><span class="p">])</span>
+
+<span class="n">display</span><span class="p">(</span>
+    <span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">(</span>
+        <span class="p">[</span><span class="n">controls_header</span><span class="p">,</span> <span class="n">nv5</span><span class="p">,</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="s2">&quot;Shaders:&quot;</span><span class="p">),</span> <span class="n">shader_buttons_widget</span><span class="p">]</span>
+            <span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "c4617123a26c4e41b02921847d5bbd73", "version_major": 2, "version_minor": 0}</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;../../static/examples/workflows/ipyniivue_ipywidgets/05_cifti.png&#39;</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/c6385d9626166e4a1bfce179d83bc655ae856c5c7f626156e9de2301aa750914.png" src="../../_images/c6385d9626166e4a1bfce179d83bc655ae856c5c7f626156e9de2301aa750914.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="brainvoyager">
+<h3>BrainVoyager<a class="headerlink" href="#brainvoyager" title="Link to this heading">#</a></h3>
+<section id="rendering-srf-surfaces-with-smp-curvature-and-statistical-maps">
+<h4>Rendering SRF Surfaces with SMP Curvature and Statistical Maps<a class="headerlink" href="#rendering-srf-surfaces-with-smp-curvature-and-statistical-maps" title="Link to this heading">#</a></h4>
+<p>This example uses a high-resolution cortical surface of the left hemisphere from BrainVoyager’s sample dataset. The surface mesh (<code class="docutils literal notranslate"><span class="pre">.srf</span></code>) represents the folded cortical geometry, and the accompanying scalar map (<code class="docutils literal notranslate"><span class="pre">.smp</span></code>) encodes per-vertex measurements such as curvature or statistical values. BrainVoyager uses native surface and surface-map formats, in which geometry and per-vertex data are stored as separate but directly corresponding files in a shared surface space.</p>
+<p>By loading the surface and associated scalar maps as layers in ipyniivue, the cortical mesh can be rendered with configurable colormaps, opacity settings, and mesh shaders, enabling visual inspection of surface-based measurements on the reconstructed anatomy.</p>
+<p>This examples mirrors this <a class="reference external" href="https://niivue.com/demos/features/brainvoyager.html">NiiVue demo</a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize NiiVue</span>
+<span class="n">nv6</span> <span class="o">=</span> <span class="n">ipyniivue</span><span class="o">.</span><span class="n">NiiVue</span><span class="p">()</span>
+<span class="n">nv6</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">show_3d_crosshair</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">nv6</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">back_color</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+
+<span class="c1"># Set Slice Type to Render</span>
+<span class="n">nv6</span><span class="o">.</span><span class="n">set_slice_type</span><span class="p">(</span><span class="n">ipyniivue</span><span class="o">.</span><span class="n">SliceType</span><span class="o">.</span><span class="n">RENDER</span><span class="p">)</span>
+
+<span class="c1"># Load Mesh with a Layer (scalar information mapped onto the mesh)</span>
+<span class="n">mesh_layer</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;sub-test02_left_hemisphere_4_curvature_maps.smp.gz&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;colormap&quot;</span><span class="p">:</span> <span class="s2">&quot;rocket&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;cal_min&quot;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span>
+    <span class="s2">&quot;cal_max&quot;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
+    <span class="s2">&quot;opacity&quot;</span><span class="p">:</span> <span class="mf">0.7</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">nv6</span><span class="o">.</span><span class="n">load_meshes</span><span class="p">(</span>
+    <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;sub-test02_left_hemisphere.srf.gz&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;rgba255&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">],</span>
+            <span class="s2">&quot;layers&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">mesh_layer</span><span class="p">],</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+
+
+<span class="c1"># Create Interface Controls using ipywidgets</span>
+
+<span class="c1"># Timepoint Slider</span>
+<span class="n">time_slider</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Timepoint&quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_time_change</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Handle time change.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">nv6</span><span class="o">.</span><span class="n">meshes</span><span class="p">:</span>
+        <span class="n">nv6</span><span class="o">.</span><span class="n">meshes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">layers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">frame_4d</span> <span class="o">=</span> <span class="n">change</span><span class="p">[</span><span class="s2">&quot;new&quot;</span><span class="p">]</span>
+
+
+<span class="n">time_slider</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">on_time_change</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+
+<span class="c1"># Opacity Slider - controls how strongly the layer’s colors are blended with the underlying mesh, rather than making the surface physically transparent.</span>
+<span class="n">opacity_slider</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatSlider</span><span class="p">(</span>
+    <span class="nb">min</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Opacity&quot;</span>
+<span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_opacity_change</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Handle opacity change.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">nv6</span><span class="o">.</span><span class="n">meshes</span><span class="p">:</span>
+        <span class="n">nv6</span><span class="o">.</span><span class="n">meshes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">layers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">opacity</span> <span class="o">=</span> <span class="n">change</span><span class="p">[</span><span class="s2">&quot;new&quot;</span><span class="p">]</span>
+
+
+<span class="n">opacity_slider</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">on_opacity_change</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+
+<span class="c1"># Shader Selection (Dropdown)</span>
+<span class="n">shader_dropdown</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="n">nv6</span><span class="o">.</span><span class="n">mesh_shader_names</span><span class="p">(),</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;Phong&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Shader&quot;</span>
+<span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_shader_change</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Handle shader change.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">nv6</span><span class="o">.</span><span class="n">meshes</span><span class="p">:</span>
+        <span class="n">nv6</span><span class="o">.</span><span class="n">set_mesh_shader</span><span class="p">(</span><span class="n">nv6</span><span class="o">.</span><span class="n">meshes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">change</span><span class="p">[</span><span class="s2">&quot;new&quot;</span><span class="p">])</span>
+
+
+<span class="n">shader_dropdown</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">on_shader_change</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+
+<span class="c1"># Layout and Display</span>
+<span class="n">controls</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">([</span><span class="n">time_slider</span><span class="p">,</span> <span class="n">opacity_slider</span><span class="p">,</span> <span class="n">shader_dropdown</span><span class="p">])</span>
+<span class="n">display</span><span class="p">(</span><span class="n">controls</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">nv6</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "f269166a1bd94341968ec29a000bea2d", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "362f1c2d514a472fa7a5e4d2b085b52d", "version_major": 2, "version_minor": 0}</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;../../static/examples/workflows/ipyniivue_ipywidgets/06_brainvoyager.png&#39;</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/4f17c81279c28987dfd8cc82438cf3035e745fb336f8fa43f0416fc71739e699.png" src="../../_images/4f17c81279c28987dfd8cc82438cf3035e745fb336f8fa43f0416fc71739e699.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="mesh-curvature-and-per-vertex-scalars">
+<h3>Mesh curvature and Per-Vertex Scalars<a class="headerlink" href="#mesh-curvature-and-per-vertex-scalars" title="Link to this heading">#</a></h3>
+<p>This example demonstrates rendering an inflated cortical surface with a per-vertex curvature map. The inflated surface geometry is stored in a GIFTI file (<code class="docutils literal notranslate"><span class="pre">.surf.gii</span></code>), while the curvature data is provided as a CIFTI scalar file (<code class="docutils literal notranslate"><span class="pre">.dscalar.nii</span></code>), which assigns a scalar value to each vertex on the mesh. The inflated surface preserves the cortical topology while smoothing out folds, and the curvature layer encodes local folding patterns (gyrification) across the cortical sheet.</p>
+<p>The curvature layer encodes local surface bending, providing a compact representation of sulcal and gyral structure in surface space. Interactive controls allow adjustment of layer opacity, application of MatCap textures, and selection of different mesh shaders, enabling flexible visualization of surface geometry together with vertex-wise scalar data. This example illustrates how NiiVue combines surface meshes and per-vertex measurements for surface-based visualization.</p>
+<p>This example mirrors this <a class="reference external" href="https://niivue.com/demos/features/mesh.curv.html">NiiVue demo</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize viewer</span>
+<span class="n">nv7</span> <span class="o">=</span> <span class="n">NiiVue</span><span class="p">()</span>
+<span class="n">nv7</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">back_color</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">nv7</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">show_3d_crosshair</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="c1">#  UI Controls</span>
+<span class="n">opacity_slider</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatSlider</span><span class="p">(</span>
+    <span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">222</span><span class="o">/</span><span class="mi">255</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Curve&quot;</span><span class="p">,</span> <span class="n">continuous_update</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+
+<span class="n">high_dpi_check</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Checkbox</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;HighDPI&quot;</span><span class="p">)</span>
+
+<span class="n">matcap_names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Shiny&quot;</span><span class="p">,</span> <span class="s2">&quot;Cortex&quot;</span><span class="p">,</span> <span class="s2">&quot;Cream&quot;</span><span class="p">,</span> <span class="s2">&quot;Fuzzy&quot;</span><span class="p">,</span> <span class="s2">&quot;Peach&quot;</span><span class="p">,</span> <span class="s2">&quot;Plastic&quot;</span><span class="p">]</span>
+<span class="n">matcap_dropdown</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="n">matcap_names</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;Shiny&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;MatCap&quot;</span>
+<span class="p">)</span>
+
+<span class="n">shader_dropdown</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="n">nv7</span><span class="o">.</span><span class="n">mesh_shader_names</span><span class="p">(),</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;Matcap&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Shaders&quot;</span>
+<span class="p">)</span>
+
+<span class="c1"># Callbacks</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">on_opacity_change</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">nv7</span><span class="o">.</span><span class="n">meshes</span><span class="p">:</span>
+        <span class="n">nv7</span><span class="o">.</span><span class="n">set_mesh_layer_property</span><span class="p">(</span><span class="n">nv7</span><span class="o">.</span><span class="n">meshes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;opacity&quot;</span><span class="p">,</span> <span class="n">change</span><span class="p">[</span><span class="s2">&quot;new&quot;</span><span class="p">])</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_high_dpi_change</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+    <span class="n">nv7</span><span class="o">.</span><span class="n">set_high_resolution_capable</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="n">change</span><span class="p">[</span><span class="s2">&quot;new&quot;</span><span class="p">]))</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_matcap_change</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">nv7</span><span class="o">.</span><span class="n">meshes</span><span class="p">:</span>
+        <span class="n">nv7</span><span class="o">.</span><span class="n">set_mesh_shader</span><span class="p">(</span><span class="n">nv7</span><span class="o">.</span><span class="n">meshes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="s2">&quot;Matcap&quot;</span><span class="p">)</span>
+        <span class="n">shader_dropdown</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s2">&quot;Matcap&quot;</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">change</span><span class="p">[</span><span class="s2">&quot;new&quot;</span><span class="p">]</span>
+        <span class="n">matcap_path</span> <span class="o">=</span> <span class="n">MATCAP_FOLDER</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">.jpg&quot;</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">matcap_path</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">nv7</span><span class="o">.</span><span class="n">load_mat_cap_texture</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_shader_change</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">nv7</span><span class="o">.</span><span class="n">meshes</span><span class="p">:</span>
+        <span class="n">nv7</span><span class="o">.</span><span class="n">set_mesh_shader</span><span class="p">(</span><span class="n">nv7</span><span class="o">.</span><span class="n">meshes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">change</span><span class="p">[</span><span class="s2">&quot;new&quot;</span><span class="p">])</span>
+
+<span class="n">opacity_slider</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">on_opacity_change</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+<span class="n">high_dpi_check</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">on_high_dpi_change</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+<span class="n">matcap_dropdown</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">on_matcap_change</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+<span class="n">shader_dropdown</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">on_shader_change</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+
+<span class="c1"># Load mesh</span>
+<span class="n">mesh_layer</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;fs_LR.32k.LR.curvature.dscalar.nii&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;colormap&quot;</span><span class="p">:</span> <span class="s2">&quot;gray&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;cal_min&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mf">0.15</span><span class="p">,</span>
+    <span class="s2">&quot;cal_max&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mf">0.001</span><span class="p">,</span>
+    <span class="s2">&quot;opacity&quot;</span><span class="p">:</span> <span class="mi">222</span><span class="o">/</span><span class="mi">255</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">nv7</span><span class="o">.</span><span class="n">load_meshes</span><span class="p">([</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;fs_LR.32k.L.inflated.surf.gii&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;layers&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">mesh_layer</span><span class="p">],</span>
+    <span class="p">}</span>
+<span class="p">])</span>
+
+<span class="n">on_matcap_change</span><span class="p">({</span><span class="s2">&quot;new&quot;</span><span class="p">:</span> <span class="s2">&quot;Shiny&quot;</span><span class="p">})</span>
+
+<span class="c1"># Display</span>
+<span class="n">display</span><span class="p">(</span>
+    <span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">([</span>
+        <span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">([</span><span class="n">opacity_slider</span><span class="p">,</span> <span class="n">high_dpi_check</span><span class="p">]),</span>
+        <span class="n">nv7</span><span class="p">,</span>
+        <span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">([</span><span class="n">shader_dropdown</span><span class="p">,</span> <span class="n">matcap_dropdown</span><span class="p">])</span>
+    <span class="p">])</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "4b63a6810303436f85b8d5f8a0f20f59", "version_major": 2, "version_minor": 0}</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;../../static/examples/workflows/ipyniivue_ipywidgets/07_mesh_curv.png&#39;</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/0e6d90dc1cd1c61f6b9e37fdba50e31a27020cf25ab33b0cfd1d32b27ae4e348.png" src="../../_images/0e6d90dc1cd1c61f6b9e37fdba50e31a27020cf25ab33b0cfd1d32b27ae4e348.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="tractography">
+<h2>4. Tractography<a class="headerlink" href="#tractography" title="Link to this heading">#</a></h2>
+<section id="dsi-studio-tiny-tract-files-tt">
+<h3>DSI-Studio tiny-tract files (TT)<a class="headerlink" href="#dsi-studio-tiny-tract-files-tt" title="Link to this heading">#</a></h3>
+<p>This example demonstrates interactive visualization of diffusion MRI tractography. The tractography data is stored as a TinyTrack file (<code class="docutils literal notranslate"><span class="pre">.tt.gz</span></code>), a compact format used in DSI Studio to store track coordinates. Fiber tracts are represented as 3D streamline meshes, and a background anatomical volume (MNI152 template) provides spatial context. Interactive controls allow you to adjust fiber radius for visibility, apply dither to reduce visual clutter in dense fiber bundles, select color schemes (Global for direction-based coloring, Local for tract-specific patterns, or Fixed for uniform color), control X-ray transparency to see through tracts, and switch rendering shaders to explore different visual styles. These controls enable detailed examination of white matter pathway organization and geometry.</p>
+<p>The background anatomy is provided as a standard NIfTI volume. Fiber tracts are represented as 3D streamline meshes, and a background anatomical volume provides spatial context. You can adjust fiber radius, apply dither, select color schemes, control X-ray transparency, and switch shaders to explore the organization and geometry of the fiber pathways.</p>
+<p>This example mirrors this <a class="reference external" href="https://niivue.com/demos/features/tracts.dsi.html">NiiVue demo</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize</span>
+<span class="n">nv8</span> <span class="o">=</span> <span class="n">NiiVue</span><span class="p">()</span>
+<span class="n">nv8</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">back_color</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">nv8</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">show_3d_crosshair</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">nv8</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">drag_mode</span> <span class="o">=</span> <span class="n">DragMode</span><span class="o">.</span><span class="n">PAN</span>
+<span class="n">nv8</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">multiplanar_show_render</span> <span class="o">=</span> <span class="n">ShowRender</span><span class="o">.</span><span class="n">ALWAYS</span>
+<span class="n">nv8</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">yoke_3d_to_2d_zoom</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="c1"># Load volume and mesh via local path</span>
+<span class="n">nv8</span><span class="o">.</span><span class="n">load_volumes</span><span class="p">([{</span><span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;mni152.nii.gz&quot;</span><span class="p">}])</span>
+<span class="n">nv8</span><span class="o">.</span><span class="n">load_meshes</span><span class="p">([{</span><span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;TR_S_R.tt.gz&quot;</span><span class="p">,</span> <span class="s2">&quot;rgba255&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">]}])</span>
+
+<span class="c1"># Optional: configure viewer</span>
+<span class="n">nv8</span><span class="o">.</span><span class="n">set_clip_plane</span><span class="p">(</span><span class="mf">0.05</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
+
+<span class="c1"># Widgets</span>
+<span class="n">fiber_radius</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Radius&quot;</span><span class="p">)</span>
+<span class="n">fiber_dither</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Dither&quot;</span><span class="p">)</span>
+<span class="n">fiber_color</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Global&quot;</span><span class="p">,</span> <span class="s2">&quot;Local&quot;</span><span class="p">,</span> <span class="s2">&quot;Fixed&quot;</span><span class="p">],</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;Global&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Fiber Color&quot;</span>
+<span class="p">)</span>
+<span class="n">x_ray</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;XRay&quot;</span><span class="p">)</span>
+<span class="n">shader_dropdown</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="n">nv8</span><span class="o">.</span><span class="n">mesh_shader_names</span><span class="p">(),</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;Specular&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Shaders&quot;</span>
+<span class="p">)</span>
+
+
+<span class="c1"># Handlers</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">on_radius_change</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Handle radius change.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">nv8</span><span class="o">.</span><span class="n">meshes</span><span class="p">:</span>
+        <span class="n">nv8</span><span class="o">.</span><span class="n">set_mesh_property</span><span class="p">(</span><span class="n">nv8</span><span class="o">.</span><span class="n">meshes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="s2">&quot;fiber_radius&quot;</span><span class="p">,</span> <span class="n">change</span><span class="p">[</span><span class="s2">&quot;new&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="mf">0.1</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_dither_change</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Handle dither change.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">nv8</span><span class="o">.</span><span class="n">meshes</span><span class="p">:</span>
+        <span class="n">nv8</span><span class="o">.</span><span class="n">set_mesh_property</span><span class="p">(</span><span class="n">nv8</span><span class="o">.</span><span class="n">meshes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="s2">&quot;fiber_dither&quot;</span><span class="p">,</span> <span class="n">change</span><span class="p">[</span><span class="s2">&quot;new&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="mf">0.1</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_color_change</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Handle fiber color change.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">nv8</span><span class="o">.</span><span class="n">meshes</span><span class="p">:</span>
+        <span class="n">nv8</span><span class="o">.</span><span class="n">set_mesh_property</span><span class="p">(</span><span class="n">nv8</span><span class="o">.</span><span class="n">meshes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="s2">&quot;fiber_color&quot;</span><span class="p">,</span> <span class="n">change</span><span class="p">[</span><span class="s2">&quot;new&quot;</span><span class="p">])</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_xray_change</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Handle xray change.&quot;&quot;&quot;</span>
+    <span class="n">nv8</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">mesh_xray</span> <span class="o">=</span> <span class="n">change</span><span class="p">[</span><span class="s2">&quot;new&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="mf">20.0</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_shader_change</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Handle shader change.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">nv8</span><span class="o">.</span><span class="n">meshes</span><span class="p">:</span>
+        <span class="n">nv8</span><span class="o">.</span><span class="n">set_mesh_shader</span><span class="p">(</span><span class="n">nv8</span><span class="o">.</span><span class="n">meshes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">change</span><span class="p">[</span><span class="s2">&quot;new&quot;</span><span class="p">])</span>
+
+
+<span class="c1"># Bind Observers</span>
+<span class="n">fiber_radius</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">on_radius_change</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+<span class="n">fiber_dither</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">on_dither_change</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+<span class="n">fiber_color</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">on_color_change</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+<span class="n">x_ray</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">on_xray_change</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+<span class="n">shader_dropdown</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">on_shader_change</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+
+<span class="c1"># Auto-set defaults</span>
+<span class="n">on_radius_change</span><span class="p">({</span><span class="s2">&quot;new&quot;</span><span class="p">:</span> <span class="n">fiber_radius</span><span class="o">.</span><span class="n">value</span><span class="p">})</span>
+<span class="n">on_dither_change</span><span class="p">({</span><span class="s2">&quot;new&quot;</span><span class="p">:</span> <span class="n">fiber_dither</span><span class="o">.</span><span class="n">value</span><span class="p">})</span>
+<span class="n">on_color_change</span><span class="p">({</span><span class="s2">&quot;new&quot;</span><span class="p">:</span> <span class="n">fiber_color</span><span class="o">.</span><span class="n">value</span><span class="p">})</span>
+<span class="n">on_xray_change</span><span class="p">({</span><span class="s2">&quot;new&quot;</span><span class="p">:</span> <span class="n">x_ray</span><span class="o">.</span><span class="n">value</span><span class="p">})</span>
+<span class="n">on_shader_change</span><span class="p">({</span><span class="s2">&quot;new&quot;</span><span class="p">:</span> <span class="n">shader_dropdown</span><span class="o">.</span><span class="n">value</span><span class="p">})</span>
+
+<span class="c1"># Layout</span>
+<span class="n">controls</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">(</span>
+    <span class="p">[</span><span class="n">fiber_radius</span><span class="p">,</span> <span class="n">fiber_dither</span><span class="p">,</span> <span class="n">fiber_color</span><span class="p">,</span> <span class="n">x_ray</span><span class="p">,</span> <span class="n">shader_dropdown</span><span class="p">]</span>
+<span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">([</span><span class="n">controls</span><span class="p">,</span> <span class="n">nv8</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "9bdc2c093acb4987b3d5c8fd54c50805", "version_major": 2, "version_minor": 0}</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;../../static/examples/workflows/ipyniivue_ipywidgets/08_dsi_tractography.png&#39;</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/f23731ab0f992274c5f02af7cf32c9d58a4f72426f401ee886a8815b8a34a75b.png" src="../../_images/f23731ab0f992274c5f02af7cf32c9d58a4f72426f401ee886a8815b8a34a75b.png" />
+</div>
+</div>
+</section>
+<section id="advanced-tractography-with-multiple-formats-and-brain-surface">
+<h3>Advanced Tractography with Multiple Formats and Brain Surface<a class="headerlink" href="#advanced-tractography-with-multiple-formats-and-brain-surface" title="Link to this heading">#</a></h3>
+<p>This example demonstrates advanced visualization combining multiple tractography datasets with anatomical surface rendering. Three white matter tracts are loaded from different file formats—VTK, TRK, and TCK—representing the right frontal aslant tract (FAT_R), inferior fronto-occipital fasciculus (IFOF_R), and superior longitudinal fasciculus (SLF1_R). A semi-transparent brain surface mesh (MZ3 format) provides anatomical context. Interactive controls allow you to adjust the shader applied to the brain surface for different visual styles, modify fiber coloring schemes (Global for direction-based coloring across the entire scene, Local for per-tract directional coloring, or Fixed to use each tract’s assigned color), change fiber radius for better visibility, and control X-ray transparency to see internal structures through the brain surface. This setup is useful for examining the spatial relationships between multiple fiber pathways and cortical anatomy, demonstrating interoperability across common tractography file formats.</p>
+<p>This example mirrors this <a class="reference external" href="https://niivue.com/demos/features/tracts2.html">NiiVue demo</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize NiiVue</span>
+<span class="n">nv9</span> <span class="o">=</span> <span class="n">NiiVue</span><span class="p">()</span>
+<span class="n">nv9</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">show_3d_crosshair</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">nv9</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">back_color</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">nv9</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">is_orient_cube</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">nv9</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">slice_type</span> <span class="o">=</span> <span class="n">SliceType</span><span class="o">.</span><span class="n">RENDER</span>
+<span class="n">nv9</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">yoke_3d_to_2d_zoom</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="c1"># Load volume</span>
+<span class="n">nv9</span><span class="o">.</span><span class="n">add_volume</span><span class="p">({</span><span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;mni152.nii.gz&quot;</span><span class="p">})</span>
+
+<span class="c1"># Load meshes</span>
+<span class="n">meshes</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c1"># Tract 0</span>
+    <span class="p">{</span><span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;tract.FAT_R.vtk&quot;</span><span class="p">,</span> <span class="s2">&quot;rgba255&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">180</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">]},</span>
+    <span class="c1"># Tract 1</span>
+    <span class="p">{</span><span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;tract.IFOF_R.trk&quot;</span><span class="p">,</span> <span class="s2">&quot;rgba255&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">]},</span>
+    <span class="c1"># Tract 2</span>
+    <span class="p">{</span><span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;tract.SLF1_R.tck&quot;</span><span class="p">,</span> <span class="s2">&quot;rgba255&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">]},</span>
+    <span class="c1"># Brain Mesh (Index 3)</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;path&quot;</span><span class="p">:</span> <span class="n">DATA_FOLDER</span> <span class="o">/</span> <span class="s2">&quot;BrainMesh_ICBM152.lh.mz3&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;rgba255&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">242</span><span class="p">,</span> <span class="mi">174</span><span class="p">,</span> <span class="mi">177</span><span class="p">,</span> <span class="mi">255</span><span class="p">],</span>
+        <span class="s2">&quot;opacity&quot;</span><span class="p">:</span> <span class="mf">0.2</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">]</span>
+<span class="n">nv9</span><span class="o">.</span><span class="n">load_meshes</span><span class="p">(</span><span class="n">meshes</span><span class="p">)</span>
+
+<span class="c1"># Set initial scene props</span>
+<span class="n">nv9</span><span class="o">.</span><span class="n">set_clip_plane</span><span class="p">(</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
+<span class="n">nv9</span><span class="o">.</span><span class="n">set_render_azimuth_elevation</span><span class="p">(</span><span class="mi">135</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
+
+<span class="c1"># Create ui widgets</span>
+<span class="n">shader_drop</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Edge&quot;</span><span class="p">,</span> <span class="s2">&quot;Flat&quot;</span><span class="p">,</span> <span class="s2">&quot;Matcap&quot;</span><span class="p">,</span> <span class="s2">&quot;Matte&quot;</span><span class="p">,</span> <span class="s2">&quot;Outline&quot;</span><span class="p">,</span> <span class="s2">&quot;Phong&quot;</span><span class="p">,</span> <span class="s2">&quot;Toon&quot;</span><span class="p">],</span>
+    <span class="n">value</span><span class="o">=</span><span class="s2">&quot;Outline&quot;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Shader:&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">color_drop</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span>
+    <span class="n">options</span><span class="o">=</span><span class="p">[</span>
+        <span class="p">(</span><span class="s2">&quot;Global direction&quot;</span><span class="p">,</span> <span class="s2">&quot;Global&quot;</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;Local direction&quot;</span><span class="p">,</span> <span class="s2">&quot;Local&quot;</span><span class="p">),</span>
+        <span class="p">(</span><span class="s2">&quot;Fixed&quot;</span><span class="p">,</span> <span class="s2">&quot;Fixed&quot;</span><span class="p">),</span>
+    <span class="p">],</span>
+    <span class="n">value</span><span class="o">=</span><span class="s2">&quot;Fixed&quot;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Color:&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">fiber_radius</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatSlider</span><span class="p">(</span>
+    <span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Radius&quot;</span>
+<span class="p">)</span>
+
+<span class="n">xray_slider</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatSlider</span><span class="p">(</span>
+    <span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;MeshXRay&quot;</span>
+<span class="p">)</span>
+
+<span class="n">zoom_slider</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">FloatSlider</span><span class="p">(</span>
+    <span class="nb">min</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Zoom&quot;</span>
+<span class="p">)</span>
+
+
+<span class="c1"># Define callbacks</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">on_shader_change</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Apply shader to the brain mesh (index 3).&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">nv9</span><span class="o">.</span><span class="n">meshes</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="n">nv9</span><span class="o">.</span><span class="n">set_mesh_shader</span><span class="p">(</span><span class="n">nv9</span><span class="o">.</span><span class="n">meshes</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">change</span><span class="p">[</span><span class="s2">&quot;new&quot;</span><span class="p">])</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_color_change</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Apply fiber color to the tracts (indices 0, 1, 2).&quot;&quot;&quot;</span>
+    <span class="n">val</span> <span class="o">=</span> <span class="n">change</span><span class="p">[</span><span class="s2">&quot;new&quot;</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">nv9</span><span class="o">.</span><span class="n">meshes</span><span class="p">):</span>
+            <span class="n">nv9</span><span class="o">.</span><span class="n">meshes</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">fiber_color</span> <span class="o">=</span> <span class="n">val</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_radius_change</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Apply radius to the tracts (indices 0, 1, 2).&quot;&quot;&quot;</span>
+    <span class="n">val</span> <span class="o">=</span> <span class="n">change</span><span class="p">[</span><span class="s2">&quot;new&quot;</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">nv9</span><span class="o">.</span><span class="n">meshes</span><span class="p">):</span>
+            <span class="n">nv9</span><span class="o">.</span><span class="n">meshes</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">fiber_radius</span> <span class="o">=</span> <span class="n">val</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">on_xray_change</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Handle xray change.&quot;&quot;&quot;</span>
+    <span class="n">nv9</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">mesh_xray</span> <span class="o">=</span> <span class="n">change</span><span class="p">[</span><span class="s2">&quot;new&quot;</span><span class="p">]</span>
+
+
+<span class="c1"># Bind Callbacks</span>
+<span class="n">shader_drop</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">on_shader_change</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+<span class="n">color_drop</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">on_color_change</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+<span class="n">fiber_radius</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">on_radius_change</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+<span class="n">xray_slider</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">on_xray_change</span><span class="p">,</span> <span class="n">names</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+
+<span class="c1"># Set Initial Values</span>
+<span class="n">nv9</span><span class="o">.</span><span class="n">opts</span><span class="o">.</span><span class="n">mesh_xray</span> <span class="o">=</span> <span class="n">xray_slider</span><span class="o">.</span><span class="n">value</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="n">nv9</span><span class="o">.</span><span class="n">meshes</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">fiber_color</span> <span class="o">=</span> <span class="n">color_drop</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">nv9</span><span class="o">.</span><span class="n">meshes</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">fiber_radius</span> <span class="o">=</span> <span class="n">fiber_radius</span><span class="o">.</span><span class="n">value</span>
+
+<span class="n">nv9</span><span class="o">.</span><span class="n">set_mesh_shader</span><span class="p">(</span><span class="n">nv9</span><span class="o">.</span><span class="n">meshes</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">shader_drop</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+
+
+<span class="c1"># Display all</span>
+<span class="n">ui</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">(</span>
+    <span class="p">[</span>
+        <span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">([</span><span class="n">shader_drop</span><span class="p">,</span> <span class="n">color_drop</span><span class="p">]),</span>
+        <span class="n">widgets</span><span class="o">.</span><span class="n">HBox</span><span class="p">([</span><span class="n">fiber_radius</span><span class="p">,</span> <span class="n">xray_slider</span><span class="p">]),</span>
+        <span class="n">nv9</span><span class="p">,</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">ui</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "646f94e678114c8c8014ea4515c14536", "version_major": 2, "version_minor": 0}</script></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;../../static/examples/workflows/ipyniivue_ipywidgets/09_advanced_tractography.png&#39;</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/794a24a3810c7ba64b83cb7e40faef00f0b2cd03f80ce3d7c847ae1957282ac4.png" src="../../_images/794a24a3810c7ba64b83cb7e40faef00f0b2cd03f80ce3d7c847ae1957282ac4.png" />
+</div>
+</div>
+</section>
+<section id="dependencies-in-jupyter-python">
+<h3>Dependencies in Jupyter/Python<a class="headerlink" href="#dependencies-in-jupyter-python" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Using the package <a class="reference external" href="https://github.com/rasbt/watermark">watermark</a> to document system environment and software versions used in this notebook</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> watermark
+
+<span class="o">%</span><span class="k">watermark</span>
+<span class="o">%</span><span class="k">watermark</span> --iversions
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Last updated: 2025-12-16T12:51:57.193365+00:00
+
+Python implementation: CPython
+Python version       : 3.12.10
+IPython version      : 9.6.0
+
+Compiler    : GCC 13.3.0
+OS          : Linux
+Release     : 5.4.0-204-generic
+Machine     : x86_64
+Processor   : x86_64
+CPU cores   : 32
+Architecture: 64bit
+
+IPython   : 9.6.0
+ipywidgets: 8.1.7
+ipyniivue : 2.3.2
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./examples/workflows"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="bids_conversion.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">BIDS conversion</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="nipype_full.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Nipype on Neurodesk</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-diverse-neuroimaging-formats">Visualizing Diverse Neuroimaging Formats</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#citation-and-resources">Citation and Resources:</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-included-in-this-workflow">Tools included in this workflow</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#educational-resources">Educational resources</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-python-libraries">Import Python libraries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-required-data">Download required data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#volumetric-neuroimaging-formats">1. Volumetric Neuroimaging Formats</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multi-volume-overlay">Multi-Volume Overlay</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-anatomical-and-statistical-maps-simultaneously-in-3d">Visualizing anatomical and statistical maps simultaneously in 3D</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#afni-volumes">AFNI Volumes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#create-other-buttons-checkboxes">Create other buttons/checkboxes</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#implement-the-callbacks">Implement the callbacks</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#create-animate-button">Create animate button</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reset-frame-index-on-image-loaded">Reset frame index on image loaded</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#display-all">Display all</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diffusion-derived-volumes-fa-and-v1">Diffusion-Derived Volumes (FA and V1)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surface-based-representations">2. Surface-Based Representations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#freesurfer-surfaces">FreeSurfer Surfaces</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-mesh-time-series-cifti-2">4D Mesh Time Series (CIFTI-2)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#applying-cifti-dense-time-series-to-a-standard-surface-mesh">Applying CIFTI Dense Time Series to a Standard Surface Mesh</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brainvoyager">BrainVoyager</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#rendering-srf-surfaces-with-smp-curvature-and-statistical-maps">Rendering SRF Surfaces with SMP Curvature and Statistical Maps</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mesh-curvature-and-per-vertex-scalars">Mesh curvature and Per-Vertex Scalars</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tractography">4. Tractography</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dsi-studio-tiny-tract-files-tt">DSI-Studio tiny-tract files (TT)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-tractography-with-multiple-formats-and-brain-surface">Advanced Tractography with Multiple Formats and Brain Surface</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dependencies-in-jupyter-python">Dependencies in Jupyter/Python</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Neurodesk Team
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

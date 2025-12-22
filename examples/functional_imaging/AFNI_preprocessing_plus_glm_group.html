@@ -195,8 +195,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/DIPY_1.html">Basic Tracking with DIPY</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/DIPY_2.html">Advanced Tracking with DIPY</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/Diffusion_TBSS_Demo.html">TBSS Tutorial</a></li>
-
-
 <li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/MRtrix_1.html">MRtrix: Part 1</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/MRtrix_2.html">MRtrix: Part 2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../diffusion_imaging/MRtrix_3.html">MRtrix: Part 3</a></li>
@@ -260,6 +258,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../workflows/PyBIDS.html">PyBIDS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/RISE_slideshow.html">RISE Slideshow</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/bids_conversion.html">BIDS conversion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflows/ipyniivue_ipywidgets.html">Ipyniivue and Ipywidgets</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/nipype_full.html">Nipype on Neurodesk</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/nipype_short.html">Basic Nipype</a></li>
 
@@ -1450,7 +1449,7 @@ action summary:
 </div>
 <section id="creating-timing-files">
 <h3>Creating Timing Files<a class="headerlink" href="#creating-timing-files" title="Link to this heading">#</a></h3>
-<p>Condition-specific timing files are generated using the same approach described in the <a class="reference external" href="https://neurodesk.org/example-notebooks/functional_imaging/AFNI_preprocessing_plus_glm.html"><em>Preprocessing and GLM</em></a> notebook. In brief:</p>
+<p>Condition-specific timing files are generated using the same approach described in the <a class="reference external" href="https://neurodesk.org/edu/examples/functional_imaging/AFNI_preprocessing_plus_glm.html"><em>Preprocessing and GLM</em></a> notebook. In brief:</p>
 <ul class="simple">
 <li><p>Onset times and durations are extracted from each subject’s <code class="docutils literal notranslate"><span class="pre">events.tsv</span></code> file.</p></li>
 <li><p>Trials are categorized into <strong>congruent</strong> and <strong>incongruent</strong> conditions.</p></li>
@@ -1625,7 +1624,7 @@ ds000102/make_Timin 100%[===================&gt;]     953  --.-KB/s    in 0s
 </section>
 <section id="running-preprocessing-and-first-level-analysis-for-all-subjects">
 <h2>2. Running Preprocessing and First-Level Analysis for All Subjects<a class="headerlink" href="#running-preprocessing-and-first-level-analysis-for-all-subjects" title="Link to this heading">#</a></h2>
-<p>All of the preprocessing and regression steps for subject <code class="docutils literal notranslate"><span class="pre">sub-08</span></code> were introduced and explained in the example notebooks <a class="reference external" href="https://neurodesk.org/example-notebooks/functional_imaging/AFNI_preprocessing_only.html">Preprocessing with AFNI</a> and <a class="reference external" href="https://neurodesk.org/example-notebooks/functional_imaging/AFNI_preprocessing_plus_glm.html">AFNI Preprocessing and GLM</a>, both of which are highly inspired by <a class="reference external" href="https://andysbrainbook.readthedocs.io/en/latest/AFNI/AFNI_Short_Course/AFNI_04_Preprocessing.html">Andy’s Brain Book’s tutorial</a>.<br />
+<p>All of the preprocessing and regression steps for subject <code class="docutils literal notranslate"><span class="pre">sub-08</span></code> were introduced and explained in the example notebooks <a class="reference external" href="https://neurodesk.org/edu/examples/functional_imaging/AFNI_preprocessing_only.html">Preprocessing with AFNI</a> and <a class="reference external" href="https://neurodesk.org/edu/examples/functional_imaging/AFNI_preprocessing_plus_glm.html">AFNI Preprocessing and GLM</a>, both of which are highly inspired by <a class="reference external" href="https://andysbrainbook.readthedocs.io/en/latest/AFNI/AFNI_Short_Course/AFNI_04_Preprocessing.html">Andy’s Brain Book’s tutorial</a>.<br />
 These notebooks demonstrate how to use <code class="docutils literal notranslate"><span class="pre">afni_proc.py</span></code> to generate an automated pipeline and interpret each preprocessing and regression block.</p>
 <div style="background-color: #e8f5e9; padding: 12px; border-left: 6px solid #66bb6a; margin: 10px 0; font-size: 14px;">
 <b>Preprocessing and GLM Workflow:</b><br><br>

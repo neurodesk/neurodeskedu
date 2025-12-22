@@ -195,8 +195,6 @@
 <li class="toctree-l3"><a class="reference internal" href="DIPY_1.html">Basic Tracking with DIPY</a></li>
 <li class="toctree-l3"><a class="reference internal" href="DIPY_2.html">Advanced Tracking with DIPY</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">TBSS Tutorial</a></li>
-
-
 <li class="toctree-l3"><a class="reference internal" href="MRtrix_1.html">MRtrix: Part 1</a></li>
 <li class="toctree-l3"><a class="reference internal" href="MRtrix_2.html">MRtrix: Part 2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="MRtrix_3.html">MRtrix: Part 3</a></li>
@@ -260,6 +258,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../workflows/PyBIDS.html">PyBIDS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/RISE_slideshow.html">RISE Slideshow</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/bids_conversion.html">BIDS conversion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflows/ipyniivue_ipywidgets.html">Ipyniivue and Ipywidgets</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/nipype_full.html">Nipype on Neurodesk</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/nipype_short.html">Basic Nipype</a></li>
 
@@ -589,7 +588,6 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">TBSS Tutorial</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citation-and-resources">Citation and Resources:</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-included-in-this-workflow">Tools included in this workflow</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#educational-resources">Educational resources</a></li>
@@ -609,18 +607,13 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#topup">topup</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fitting-the-tensors">Fitting the Tensors</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fitting-the-tensors">Fitting the Tensors</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tbss-preprocessing">TBSS Preprocessing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#epilogue">Epilogue</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dependencies-in-jupyter-python">Dependencies in Jupyter/Python</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#epilogue">Epilogue</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dependencies-in-jupyter-python">Dependencies in Jupyter/Python</a></li>
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -1400,17 +1393,17 @@ If the number of volumes in your dataset and the number of bvals and bvecs do no
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s1">&#39;https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/tbss_AP_brain_mask.png&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;../../static/examples/diffusion_imaging/diffusion_tbss_demo/tbss_AP_brain_mask.png&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/tbss_AP_brain_mask.png"/></div></div>
+<img alt="../../_images/c5251b323f722c404e7c6f88da66f7274feba75ce5fdd7250e185c037b209663.png" src="../../_images/c5251b323f722c404e7c6f88da66f7274feba75ce5fdd7250e185c037b209663.png" />
+</div>
 </div>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="fitting-the-tensors">
-<h1>Fitting the Tensors<a class="headerlink" href="#fitting-the-tensors" title="Link to this heading">#</a></h1>
+<section id="fitting-the-tensors">
+<h2>Fitting the Tensors<a class="headerlink" href="#fitting-the-tensors" title="Link to this heading">#</a></h2>
 <p>Now that we have unwarped the data, we are ready to fit a tensor at each voxel, representing the direction and the magnitude of diffusion. For a review of what a tensor is and how it is modeled, see the section “Putting it all together: Modeling the tensor” in <a href="https://andysbrainbook.readthedocs.io/en/latest/MRtrix/MRtrix_Course/MRtrix_00_Diffusion_Overview.html#mrtrix-00-diffusion-overview" style="color: #007bff; text-decoration: none;">this chapter</a>.</p>
 <p>The easiest way to fit the tensors is to use the Graphical User Interface by typing the command <code class="docutils literal notranslate"><span class="pre">Fdt_gui</span></code>, selecting <code class="docutils literal notranslate"><span class="pre">DTIFIT</span> <span class="pre">Reconstruct</span> <span class="pre">diffusion</span> <span class="pre">tensors</span></code> from the dropdown menu, and filling in each of the fields. You can also run it from the command line by using the following code:</p>
 <div class="cell tag_scroll-output docutils container">
@@ -1486,6 +1479,7 @@ If the number of volumes in your dataset and the number of bvals and bvecs do no
 </div>
 </div>
 <p>When it is done, load the files <code class="docutils literal notranslate"><span class="pre">dti_V1</span></code> and <code class="docutils literal notranslate"><span class="pre">dti_FA</span></code> in fsleyes. With the file <code class="docutils literal notranslate"><span class="pre">dti_V1</span></code> highlighted, click on the “Modulate by” menu and select <code class="docutils literal notranslate"><span class="pre">dti_FA</span></code>. This will create an image that shows the primary direction of diffusion at each voxel, with red representing diffusion that is primarily left to right, green representing back to forward, and blue representing bottom to top. If the tensors were fit correctly, you should see mostly red in the corpus callosum and blue in the corona radiata, since those fiber bundles are mostly restricted to the left to right and bottom to top directions.</p>
+</section>
 <section id="tbss-preprocessing">
 <h2>TBSS Preprocessing<a class="headerlink" href="#tbss-preprocessing" title="Link to this heading">#</a></h2>
 <p>Fortunately, each of the preprocessing steps is simple and straightforward to run; each command has the string “tbss” in it, with a number indicating which step to do, and in which order.</p>
@@ -1655,20 +1649,20 @@ tbss_4_prestats &lt;threshold&gt;
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s1">&#39;https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/tbss_dti_DEC.png&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;../../static/examples/diffusion_imaging/diffusion_tbss_demo/tbss_dti_DEC.png&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/tbss_dti_DEC.png"/></div></div>
+<img alt="../../_images/7328b66ffb5375411808cd2cbc979603502a8e77ec615a09120bc5998fb6a10c.png" src="../../_images/7328b66ffb5375411808cd2cbc979603502a8e77ec615a09120bc5998fb6a10c.png" />
+</div>
 </div>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="epilogue">
-<h1>Epilogue<a class="headerlink" href="#epilogue" title="Link to this heading">#</a></h1>
+<section id="epilogue">
+<h2>Epilogue<a class="headerlink" href="#epilogue" title="Link to this heading">#</a></h2>
 <p>This demonstration has showed you how to unwarp and preprocess a diffusion-weighted image for a single subject, which generates an FA image which you can use for statistical analysis. As an exercise, trying adapting this notebook to analyze a handful of subjects from the same dataset, calculate their FA images, and then submit them to a group-level analysis.</p>
 <section id="dependencies-in-jupyter-python">
-<h2>Dependencies in Jupyter/Python<a class="headerlink" href="#dependencies-in-jupyter-python" title="Link to this heading">#</a></h2>
+<h3>Dependencies in Jupyter/Python<a class="headerlink" href="#dependencies-in-jupyter-python" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Using the package <a class="reference external" href="https://github.com/rasbt/watermark">watermark</a> to document system environment and software versions used in this notebook</p></li>
 </ul>
@@ -1706,6 +1700,7 @@ numpy     : 2.2.4
 </div>
 </div>
 </div>
+</section>
 </section>
 </section>
 
@@ -1773,7 +1768,6 @@ numpy     : 2.2.4
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">TBSS Tutorial</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citation-and-resources">Citation and Resources:</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tools-included-in-this-workflow">Tools included in this workflow</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#educational-resources">Educational resources</a></li>
@@ -1793,18 +1787,13 @@ numpy     : 2.2.4
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#topup">topup</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fitting-the-tensors">Fitting the Tensors</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fitting-the-tensors">Fitting the Tensors</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tbss-preprocessing">TBSS Preprocessing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#epilogue">Epilogue</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dependencies-in-jupyter-python">Dependencies in Jupyter/Python</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#epilogue">Epilogue</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dependencies-in-jupyter-python">Dependencies in Jupyter/Python</a></li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>

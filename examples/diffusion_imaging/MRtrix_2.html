@@ -195,8 +195,6 @@
 <li class="toctree-l3"><a class="reference internal" href="DIPY_1.html">Basic Tracking with DIPY</a></li>
 <li class="toctree-l3"><a class="reference internal" href="DIPY_2.html">Advanced Tracking with DIPY</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Diffusion_TBSS_Demo.html">TBSS Tutorial</a></li>
-
-
 <li class="toctree-l3"><a class="reference internal" href="MRtrix_1.html">MRtrix: Part 1</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">MRtrix: Part 2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="MRtrix_3.html">MRtrix: Part 3</a></li>
@@ -260,6 +258,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../workflows/PyBIDS.html">PyBIDS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/RISE_slideshow.html">RISE Slideshow</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/bids_conversion.html">BIDS conversion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflows/ipyniivue_ipywidgets.html">Ipyniivue and Ipywidgets</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/nipype_full.html">Nipype on Neurodesk</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/nipype_short.html">Basic Nipype</a></li>
 
@@ -673,7 +672,7 @@ document.write(`
 </ul>
 <p><strong>Tutorial on Neurodesk:</strong></p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://neurodesk.org/tutorials-examples/tutorials/open_data/osfclient/">Publishing and Accessing Open Data on OSF with <code class="docutils literal notranslate"><span class="pre">osfclient</span></code> on Neurodesk</a></p></li>
+<li><p><a class="reference external" href="https://neurodesk.org/edu/tutorials/open_data/osfclient.html">Publishing and Accessing Open Data on OSF with <code class="docutils literal notranslate"><span class="pre">osfclient</span></code> on Neurodesk</a></p></li>
 </ul>
 </section>
 <section id="dataset">
@@ -693,7 +692,7 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%capture</span>
-<span class="err">!</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">numpy</span><span class="o">==</span><span class="mf">1.26.4</span> <span class="n">vtk</span><span class="o">==</span><span class="mf">9.4.0</span> <span class="n">fury</span><span class="o">==</span><span class="mf">0.11.0</span> <span class="n">dipy</span><span class="o">==</span><span class="mf">1.9.0</span> <span class="n">nibabel</span><span class="o">==</span><span class="mf">5.3.2</span>
+<span class="err">!</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">numpy</span><span class="o">==</span><span class="mf">1.26.4</span> <span class="n">vtk</span><span class="o">==</span><span class="mf">9.4.0</span> <span class="n">fury</span><span class="o">==</span><span class="mf">0.11.0</span> <span class="n">dipy</span><span class="o">==</span><span class="mf">1.9.0</span> <span class="n">nibabel</span><span class="o">==</span><span class="mf">5.3.2</span> <span class="n">ipyniivue</span><span class="o">==</span><span class="mf">2.3.2</span>
 </pre></div>
 </div>
 </div>
@@ -1277,12 +1276,13 @@ mrconvert: [100%] copying from &quot;MRtrix_pre...-CON02_ses-preop_T1w.nii.gz&qu
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s1">&#39;https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/mrtrix_2_tissuetypes.png&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;../../static/examples/diffusion_imaging/MRtrix_2/mrtrix_2_tissuetypes.png&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/mrtrix_2_tissuetypes.png"/></div></div>
+<img alt="../../_images/eafa80d64e1d04fd728feeb3c018662521be249aafee918885e90ff85845ae84.png" src="../../_images/eafa80d64e1d04fd728feeb3c018662521be249aafee918885e90ff85845ae84.png" />
+</div>
 </div>
 <div style="background-color: #f0f8ff; padding: 10px; border-radius: 5px;">
     <div style="background-color: #add8e6; padding: 5px; border-radius: 5px; font-weight: bold;">

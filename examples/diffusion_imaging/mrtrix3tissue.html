@@ -57,6 +57,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'examples/diffusion_imaging/mrtrix3tissue';</script>
     <link rel="canonical" href="https://neurodesk.org/edu/examples/diffusion_imaging/mrtrix3tissue.html" />
     <link rel="icon" href="../../_static/neurodesk_logo.svg"/>
@@ -195,8 +197,6 @@
 <li class="toctree-l3"><a class="reference internal" href="DIPY_1.html">Basic Tracking with DIPY</a></li>
 <li class="toctree-l3"><a class="reference internal" href="DIPY_2.html">Advanced Tracking with DIPY</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Diffusion_TBSS_Demo.html">TBSS Tutorial</a></li>
-
-
 <li class="toctree-l3"><a class="reference internal" href="MRtrix_1.html">MRtrix: Part 1</a></li>
 <li class="toctree-l3"><a class="reference internal" href="MRtrix_2.html">MRtrix: Part 2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="MRtrix_3.html">MRtrix: Part 3</a></li>
@@ -260,6 +260,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../workflows/PyBIDS.html">PyBIDS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/RISE_slideshow.html">RISE Slideshow</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/bids_conversion.html">BIDS conversion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflows/ipyniivue_ipywidgets.html">Ipyniivue and Ipywidgets</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/nipype_full.html">Nipype on Neurodesk</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/nipype_short.html">Basic Nipype</a></li>
 
@@ -1285,10 +1286,11 @@ mrcalc: [100%] computing: (extracted_adc.mif * csf_maskcombined.mif)?7h?7l
 <section id="temperature-estimation">
 <h3>Temperature estimation<a class="headerlink" href="#temperature-estimation" title="Link to this heading">#</a></h3>
 <p>We calculate the temperature of cerebrospinal ﬂuid (CSF) using the following equation from <a class="reference external" href="https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/10.1002/nbm.1656">this study</a>:</p>
-<p>\begin{gather*}
+<div class="math notranslate nohighlight">
+\[
 T = \frac{2256.74}{\ln\left(\frac{4.39221}{D}\right)} - 273
-\end{gather*}</p>
-<p>where D is the diffusion constant.</p>
+\]</div>
+<p>where ( D ) is the diffusion constant.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>mrcalc<span class="w"> </span><span class="m">2256</span>.74<span class="w"> </span><span class="m">4</span>.39221<span class="w"> </span>masked_adc.mif<span class="w"> </span>-divide<span class="w"> </span>-log<span class="w"> </span>-divide<span class="w"> </span><span class="m">273</span>.15<span class="w"> </span>-subtract<span class="w"> </span>masked_temperature.mif

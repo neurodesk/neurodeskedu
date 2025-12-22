@@ -195,8 +195,6 @@
 <li class="toctree-l3"><a class="reference internal" href="DIPY_1.html">Basic Tracking with DIPY</a></li>
 <li class="toctree-l3"><a class="reference internal" href="DIPY_2.html">Advanced Tracking with DIPY</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Diffusion_TBSS_Demo.html">TBSS Tutorial</a></li>
-
-
 <li class="toctree-l3"><a class="reference internal" href="MRtrix_1.html">MRtrix: Part 1</a></li>
 <li class="toctree-l3"><a class="reference internal" href="MRtrix_2.html">MRtrix: Part 2</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">MRtrix: Part 3</a></li>
@@ -260,6 +258,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../workflows/PyBIDS.html">PyBIDS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/RISE_slideshow.html">RISE Slideshow</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/bids_conversion.html">BIDS conversion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../workflows/ipyniivue_ipywidgets.html">Ipyniivue and Ipywidgets</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/nipype_full.html">Nipype on Neurodesk</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows/nipype_short.html">Basic Nipype</a></li>
 
@@ -691,7 +690,7 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%capture</span>
-<span class="err">!</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">numpy</span><span class="o">==</span><span class="mf">1.26.4</span> <span class="n">vtk</span><span class="o">==</span><span class="mf">9.4.0</span> <span class="n">fury</span><span class="o">==</span><span class="mf">0.11.0</span> <span class="n">dipy</span><span class="o">==</span><span class="mf">1.9.0</span> <span class="n">nibabel</span><span class="o">==</span><span class="mf">5.3.2</span> 
+<span class="err">!</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">numpy</span><span class="o">==</span><span class="mf">1.26.4</span> <span class="n">vtk</span><span class="o">==</span><span class="mf">9.4.0</span> <span class="n">fury</span><span class="o">==</span><span class="mf">0.11.0</span> <span class="n">dipy</span><span class="o">==</span><span class="mf">1.9.0</span> <span class="n">nibabel</span><span class="o">==</span><span class="mf">5.3.2</span> <span class="n">ipynivue</span><span class="o">==</span><span class="mf">2.3.2</span>
 </pre></div>
 </div>
 </div>
@@ -956,12 +955,13 @@ mrconvert: [100%] copying from &quot;./MRtrix_fod/5tt_coreg.mif&quot; to &quot;.
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s1">&#39;https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/mrtrix_3_coregistration.png&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;../../static/examples/diffusion_imaging/MRtrix_3/mrtrix_3_coregistration.png&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/mrtrix_3_coregistration.png"/></div></div>
+<img alt="../../_images/44dd7063d0544e419c648496f6188e8e61827861e17761824e836548b37f3e9f.png" src="../../_images/44dd7063d0544e419c648496f6188e8e61827861e17761824e836548b37f3e9f.png" />
+</div>
 </div>
 <p>The last step to create the “seed” boundary - the boundary separating the grey from the white matter, which we will use to create the seeds for our streamlines - is created with the command <code class="docutils literal notranslate"><span class="pre">5tt2gmwmi</span></code> (which stands for “5 Tissue Type (segmentation) to Grey Matter / White Matter Interface).</p>
 <div class="cell docutils container">
@@ -1000,12 +1000,13 @@ mrconvert: [100%] copying from &quot;./MRtrix_fod/5tt_coreg.mif&quot; to &quot;.
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s1">&#39;https://raw.githubusercontent.com/neurodesk/example-notebooks/refs/heads/main/books/images/mrtrix_3_boundary_gm_wm.png&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;../../static/examples/diffusion_imaging/MRtrix_3/mrtrix_3_boundary_gm_wm.png&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="https://raw.githubusercontent.com/neurodesk/example-notebooks/refs/heads/main/books/images/mrtrix_3_boundary_gm_wm.png"/></div></div>
+<img alt="../../_images/1e949ca7f7e2fb9ff265aec50045247f7516f746f621cb7f1c998c578248fe48.png" src="../../_images/1e949ca7f7e2fb9ff265aec50045247f7516f746f621cb7f1c998c578248fe48.png" />
+</div>
 </div>
 <p>Now that we have determined where the boundary is between the grey matter and the white matter, we are ready to begin generating streamlines in order to reconstruct the major white matter pathways of the brain.</p>
 </section>
@@ -1170,12 +1171,13 @@ Showing this surface makes it clear where the streamlines originate and how ACT 
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s1">&#39;https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/mrtrix3_streamlines_ipyniivue.png&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;../../static/examples/diffusion_imaging/MRtrix_3/mrtrix3_streamlines_ipyniivue.png&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><img src="https://raw.githubusercontent.com/NeuroDesk/example-notebooks/refs/heads/main/books/images/mrtrix3_streamlines_ipyniivue.png"/></div></div>
+<img alt="../../_images/71586c321a46dc0e6aa99dba12b02541cf59cc68274fa11dcda6bde851f6ac63.png" src="../../_images/71586c321a46dc0e6aa99dba12b02541cf59cc68274fa11dcda6bde851f6ac63.png" />
+</div>
 </div>
 <p>Remember to inspect this image to make sure that the streamlines end where you think they should; in other words, the streamlines should be constrained to the white matter, and they should be color-coded appropriately. For example, the corpus callosum should be mostly red, and the corona radiata should be mostly blue.</p>
 <p>Although we have created a diffusion image with reasonable streamlines, also known as a tractogram, we still have a problem with some of the white matter tracts being over-fitted, and others being under-fitted. This can be addressed with the <code class="docutils literal notranslate"><span class="pre">tcksift2</span></code> command.</p>
