@@ -871,6 +871,20 @@ jobs:
             echo "=== Debug complete ==="
           '
 
+      # TEMPORARY INSTRUMENTATION (heavy work-dir sizing). Remove after measuring.
+      - name: Start work-dir disk sampler (temporary)
+        run: |
+          # Samples the runner work dir (backed by the heavy pool 64Gi work PVC) every 10s
+          # and records peak used-MB, to test whether the ">16Gi work-dir" routing is real.
+          echo 0 > /tmp/peak_workdir_mb
+          nohup bash -c 'while true; do
+              U=$(df -m --output=used "$GITHUB_WORKSPACE" 2>/dev/null | tail -1 | tr -d " ")
+              M=$(cat /tmp/peak_workdir_mb 2>/dev/null || echo 0)
+              if [ -n "$U" ] && [ "$U" -gt "$M" ]; then echo "$U" > /tmp/peak_workdir_mb; fi
+              sleep 10
+            done' >/dev/null 2>&1 &
+          echo "work-dir sampler started"
+
       - name: Execute notebook in container
         if: steps.promote.outputs.promoted != 'true'
         timeout-minutes: 780
@@ -1247,6 +1261,20 @@ jobs:
           fi
 
           exit "$CHECK_RC"
+
+      # TEMPORARY INSTRUMENTATION. Remove after measuring.
+      - name: Report peak work-dir usage (temporary)
+        if: always()
+        run: |
+          PEAK=$(cat /tmp/peak_workdir_mb 2>/dev/null || echo 0)
+          echo "=========================================="
+          echo "PEAK WORK-DIR USED: ${PEAK} MB (~$((PEAK/1024)) GiB)"
+          echo "heavy pool PVC is 64Gi; routing claims >16Gi needed"
+          echo "--- filesystem now ---"
+          df -h "$GITHUB_WORKSPACE" || true
+          echo "--- where the space went (top dirs, end-state) ---"
+          du -h -d 2 -x "$GITHUB_WORKSPACE" 2>/dev/null | sort -rh | head -15 || true
+          echo "=========================================="
 
       - name: Upload executed notebook artifact
         if: success()  # Only upload if notebook executed without errors
