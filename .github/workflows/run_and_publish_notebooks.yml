@@ -167,12 +167,36 @@ jobs:
             # Neurodesk users run (and catches the same errors). Executed via lean nbconvert
             # (no Jupyter server, via the `sleep infinity` CMD override below). image_override
             # still works for one-offs, e.g. slim py-stack benchmarking.
-            NEURODESKTOP_VERSION=$(curl -s https://raw.githubusercontent.com/neurodesk/neurodesk.github.io/main/data/neurodesktop.toml | grep '^jupyter_neurodesk_version' | sed 's/.*= *"\(.*\)"/\1/')
+            # Pinned deliberately. The old lookup fetched the version from
+            # neurodesk.github.io/data/neurodesktop.toml. That URL now 404s because the site
+            # repo was RENAMED to neurodesk.github.io-hugo (now archived) and a different,
+            # newer Astro repo took over the neurodesk.github.io name; it never had a data/
+            # directory. Broke between 2026-08-28 and 2026-09-05.
+            # 2026-07-11 preserves existing behaviour exactly: the archived toml still reads
+            # 2026-07-11 and was last changed on 2026-07-11, so the "dynamic" lookup had been
+            # returning this same value for two months. It is validated: the 2026-08-01 drift
+            # check ran 56/56 notebooks green on this tag with real execution.
+            # Do NOT repoint at neurodesk/play (frozen at 2025-12-03) or at the archived hugo
+            # repo. TRADE-OFF: the scheduled drift check can no longer catch IMAGE drift, only
+            # package drift inside this frozen image. To adopt a newer tag: run this workflow
+            # manually (workflow_dispatch) with image_override set to the candidate tag, and if
+            # it passes, bump the line below. The drift check itself cannot do this - it calls
+            # the workflow via workflow_call, which does not expose image_override.
+            # Previous auto-lookup kept for one-line revert:
+            #   NEURODESKTOP_VERSION=$(curl -s https://raw.githubusercontent.com/neurodesk/neurodesk.github.io/main/data/neurodesktop.toml | grep '^jupyter_neurodesk_version' | sed 's/.*= *"\(.*\)"/\1/')
+            NEURODESKTOP_VERSION="2026-07-11"
             echo "neurodesk_image=ghcr.io/neurodesk/neurodesktop:${NEURODESKTOP_VERSION}" >> $GITHUB_OUTPUT
             # Slim py-stack default kept for one-line revert:
             #   echo "neurodesk_image=ghcr.io/neurodesk/neurocommand:py-stack" >> $GITHUB_OUTPUT
           fi
-          echo "Using image: $(grep neurodesk_image $GITHUB_OUTPUT | cut -d= -f2)"
+          IMAGE=$(grep neurodesk_image $GITHUB_OUTPUT | cut -d= -f2)
+          # Sanity-check the tag, but FAIL SOFT: this step is the single choke point for
+          # the whole pipeline, and a hard network dependency here is exactly what took CI
+          # down (the old curl lookup). A genuinely bad tag still fails at the image pull.
+          if ! docker manifest inspect "$IMAGE" >/dev/null 2>&1; then
+            echo "::warning::Could not confirm $IMAGE in the registry (bad tag, or transient registry/auth issue). Continuing; the image pull will fail loudly if the tag is really missing."
+          fi
+          echo "Using image: $IMAGE"
 
 
       # --- Pip Cache Warmer ---
