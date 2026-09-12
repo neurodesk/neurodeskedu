@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-09-12T00:01:22+00:00",
+  "generated_at": "2026-09-12T06:01:14+00:00",
   "source": {
     "type": "github-issues",
     "repo": "neurodesk/neurodeskedu-reviews"
@@ -510,17 +510,6 @@
       "source_path": "examples/functional_imaging/fMRI_tutorial_in_R_magic.ipynb",
       "review_content_hash": "b7406a4f1d000a1fdd6a6048cf21827b9bb6c883c4731be1fdcc4941432e4f48"
     },
-    "85e6e128-5ac1-4a9e-9aef-de9b537e8b16": {
-      "state": "reviewed",
-      "review_issue_url": "https://github.com/neurodesk/neurodeskedu-reviews/issues/11",
-      "reviewers": [
-        "giuliabaracc"
-      ],
-      "reviewed_at": "2026-03-06",
-      "review_commit_sha": "62a503b00a5ee77872135733d944ec0b31991d46",
-      "source_path": "examples/functional_imaging/first_and_second_level_spm.ipynb",
-      "review_content_hash": "d782444e905841bbd08bba22fcf94b8834cc3598dcc09b7d1e1ce47af13bcc57"
-    },
     "20e4499d-61ef-44df-a5c1-6fd48cc5d23f": {
       "state": "reviewed",
       "review_issue_url": "https://github.com/neurodesk/neurodeskedu-reviews/issues/21",
@@ -531,6 +520,17 @@
       "review_commit_sha": "62a503b00a5ee77872135733d944ec0b31991d46",
       "source_path": "examples/spectroscopy/osprey.ipynb",
       "review_content_hash": "d6f6487a88996254ed63f978a35c513d4cc389b2557e175c6d4eaa82ff0c2f57"
+    },
+    "85e6e128-5ac1-4a9e-9aef-de9b537e8b16": {
+      "state": "reviewed",
+      "review_issue_url": "https://github.com/neurodesk/neurodeskedu-reviews/issues/11",
+      "reviewers": [
+        "giuliabaracc"
+      ],
+      "reviewed_at": "2026-03-06",
+      "review_commit_sha": "62a503b00a5ee77872135733d944ec0b31991d46",
+      "source_path": "examples/functional_imaging/first_and_second_level_spm.ipynb",
+      "review_content_hash": "d782444e905841bbd08bba22fcf94b8834cc3598dcc09b7d1e1ce47af13bcc57"
     },
     "9dab0bae-455d-46a8-a15f-f3d449581ce9": {
       "state": "reviewed",
