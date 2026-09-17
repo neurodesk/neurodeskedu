@@ -1,11 +1,19 @@
 {
   "version": 2,
-  "generated_at": "2026-09-16T18:01:14+00:00",
+  "generated_at": "2026-09-17T00:01:18+00:00",
   "source": {
     "type": "github-issues",
     "repo": "neurodesk/neurodeskedu-reviews"
   },
   "reviews": {
+    "e007b633-50a5-4109-baa8-3d0a6c19467f": {
+      "state": "in-progress",
+      "review_issue_url": "https://github.com/neurodesk/neurodeskedu-reviews/issues/43",
+      "reviewers": [
+        "micmas"
+      ],
+      "source_path": "examples/structural_imaging/SYNcro.ipynb"
+    },
     "3e97519f-e80b-463c-849c-0cd479fc72df": {
       "state": "in-progress",
       "review_issue_url": "https://github.com/neurodesk/neurodeskedu-reviews/issues/61",
@@ -70,14 +78,6 @@
         "micmas"
       ],
       "source_path": "examples/structural_imaging/freesurfer.ipynb"
-    },
-    "e007b633-50a5-4109-baa8-3d0a6c19467f": {
-      "state": "in-progress",
-      "review_issue_url": "https://github.com/neurodesk/neurodeskedu-reviews/issues/43",
-      "reviewers": [
-        "micmas"
-      ],
-      "source_path": "examples/structural_imaging/SYNcro.ipynb"
     },
     "0148a586-1857-4ac0-b3b8-f59ee9be2f64": {
       "state": "reviewed",
