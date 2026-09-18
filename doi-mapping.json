@@ -491,11 +491,13 @@
     "doi_url": "https://doi.org/10.5281/zenodo.18728796",
     "website_url": "https://neurodesk.org/edu/tutorials/about_neurodesk/RISE_slideshow.html",
     "concept_recid": "18728796",
-    "record_id": "18728797",
+    "record_id": "22821846",
     "content_type": "notebook",
-    "checksum": "73a4342237b1462333ff9dbf5ae652c9",
-    "authors": [],
-    "updated_at": "2026-02-22T03:24:29Z"
+    "checksum": "45815c9e21586e932ca39d96f88e8cb9",
+    "authors": [
+      "Monika Doerig"
+    ],
+    "updated_at": "2026-09-18T01:15:17Z"
   },
   "books/examples/workflows/pydra_preproc_ants.ipynb": {
     "doi_url": "https://doi.org/10.5281/zenodo.18728798",
