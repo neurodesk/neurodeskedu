@@ -1,11 +1,19 @@
 {
   "version": 2,
-  "generated_at": "2026-09-18T00:01:36+00:00",
+  "generated_at": "2026-09-18T06:01:00+00:00",
   "source": {
     "type": "github-issues",
     "repo": "neurodesk/neurodeskedu-reviews"
   },
   "reviews": {
+    "ce423cf1-cbb0-4ac5-bf58-b3a52ad441c4": {
+      "state": "unreviewed",
+      "review_issue_url": "https://github.com/neurodesk/neurodeskedu-reviews/issues/37",
+      "reviewers": [
+        "micmas"
+      ],
+      "source_path": "examples/workflows/RISE_slideshow.ipynb"
+    },
     "378baf4c-c107-47b9-a8bf-cc286d89d91e": {
       "state": "in-progress",
       "review_issue_url": "https://github.com/neurodesk/neurodeskedu-reviews/issues/33",
@@ -62,14 +70,6 @@
         "neurolabusc"
       ],
       "source_path": "examples/functional_imaging/AFNI_preprocessing_plus_glm.ipynb"
-    },
-    "ce423cf1-cbb0-4ac5-bf58-b3a52ad441c4": {
-      "state": "in-progress",
-      "review_issue_url": "https://github.com/neurodesk/neurodeskedu-reviews/issues/37",
-      "reviewers": [
-        "micmas"
-      ],
-      "source_path": "examples/workflows/RISE_slideshow.ipynb"
     },
     "776677f3-4ea4-4810-a314-4212d09cb31a": {
       "state": "in-progress",
