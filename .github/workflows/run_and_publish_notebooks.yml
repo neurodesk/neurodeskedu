@@ -209,14 +209,14 @@ jobs:
         uses: actions/cache@v5.0.1
         with:
           path: ${{ github.workspace }}/.cache/pip
-          key: pip-book-${{ hashFiles('books/_config.yml') }}
+          key: pip-book-${{ hashFiles('books/_config.yml', '.github/scripts/book-requirements.txt') }}
 
       - name: Install Dependencies (Warm Cache)
         env:
           PIP_CACHE_DIR: ${{ github.workspace }}/.cache/pip
         run: |
           mkdir -p ${{ github.workspace }}/.cache/pip
-          pip install "jupyter-book<2.0.0" ghp-import "huggingface_hub>=0.32.0"
+          python3 -m pip install -r .github/scripts/book-requirements.txt ghp-import "huggingface_hub>=0.32.0"
 
   # ---------------------------------------------------------------------------
   # SELECT NOTEBOOKS: Determine which notebooks to run (changed or manually selected)
@@ -1726,7 +1726,7 @@ jobs:
         uses: actions/cache@v5.0.1
         with:
           path: ${{ github.workspace }}/.cache/pip
-          key: pip-book-${{ hashFiles('books/_config.yml') }}
+          key: pip-book-${{ hashFiles('books/_config.yml', '.github/scripts/book-requirements.txt') }}
           restore-keys: |
             pip-book-
 
@@ -2021,18 +2021,7 @@ jobs:
             set -e
             export PATH=/opt/conda/bin:$HOME/.local/bin:$PATH
 
-            # Install dependencies
-            # We use pip --user to take advantage of the mounted .cache/pip
-            pip install --user "jupyter-book<2.0.0" ghp-import
-
-            # Generate table of contents
-            /bin/bash ../.github/scripts/write-toc-entry.sh
-
-            # Disable notebook execution (already executed in run-notebooks job)
-            sed -i "s/execute_notebooks: .*/execute_notebooks: off/" _config.yml
-            
-            # Build the book
-            jupyter-book build .
+            bash /home/jovyan/workspace/.github/scripts/build_book.sh /home/jovyan/workspace/books
           '
 
       - name: Cleanup container

@@ -1,0 +1,37 @@
+name: Test book build environment
+
+on:
+  pull_request:
+    paths:
+      - '.github/scripts/build_book.sh'
+      - '.github/scripts/book-requirements.txt'
+      - '.github/scripts/test_book_build.py'
+      - '.github/scripts/write-toc-entry.sh'
+      - '.github/workflows/test-book-build.yml'
+      - '.github/workflows/run_and_publish_notebooks.yml'
+      - 'books/_config.yml'
+      - 'books/_ext/**'
+  push:
+    branches: [main]
+    paths:
+      - '.github/scripts/build_book.sh'
+      - '.github/scripts/book-requirements.txt'
+      - '.github/scripts/test_book_build.py'
+      - '.github/scripts/write-toc-entry.sh'
+      - '.github/workflows/test-book-build.yml'
+      - '.github/workflows/run_and_publish_notebooks.yml'
+      - 'books/_config.yml'
+      - 'books/_ext/**'
+
+permissions:
+  contents: read
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python .github/scripts/test_book_build.py
