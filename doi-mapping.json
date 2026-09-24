@@ -563,14 +563,14 @@
     "doi_url": "https://doi.org/10.5281/zenodo.18728808",
     "website_url": "https://neurodesk.org/edu/examples/structural_imaging/SYNcro.html",
     "concept_recid": "18728808",
-    "record_id": "18779865",
+    "record_id": "22928252",
     "content_type": "notebook",
-    "checksum": "d1c6014e01b2fc61474cce0f10f953df",
+    "checksum": "e5ced873dec5990a15ae593c3ce6ff04",
     "authors": [
-      "Chris Rorden",
-      "Steffen Bollmann"
+      "Chris Rorden, Steffen Bollmann",
+      "Mich\u00e8le Masson-Trottier"
     ],
-    "updated_at": "2026-02-26T04:30:02Z"
+    "updated_at": "2026-09-24T01:27:54Z"
   },
   "books/examples/diffusion_imaging/Diffusion_TBSS_Demo.ipynb": {
     "doi_url": "https://doi.org/10.5281/zenodo.18728812",
@@ -759,13 +759,14 @@
     "doi_url": "https://doi.org/10.5281/zenodo.18843449",
     "website_url": "https://neurodesk.org/edu/examples/structural_imaging/freesurfer.html",
     "concept_recid": "18843449",
-    "record_id": "19491025",
+    "record_id": "22928251",
     "content_type": "notebook",
-    "checksum": "73161b9a4c1910ef2bd7b7e4d73b134e",
+    "checksum": "bf3e719dacb2016b7081e27e7e4ff806",
     "authors": [
-      "Steffen Bollmann"
+      "Steffen Bollmann",
+      "Mich\u00e8le Masson-Trottier"
     ],
-    "updated_at": "2026-04-10T03:38:57Z"
+    "updated_at": "2026-09-24T01:27:29Z"
   },
   "books/examples/diffusion_imaging/MRtrix_1.ipynb": {
     "doi_url": "https://doi.org/10.5281/zenodo.18872514",
