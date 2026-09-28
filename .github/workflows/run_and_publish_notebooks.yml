@@ -182,12 +182,10 @@ jobs:
             # newer Astro repo took over the neurodesk.github.io name; it never had a data/
             # directory. Broke between 2026-08-28 and 2026-09-05.
             # Do NOT repoint at neurodesk/play (frozen at 2025-12-03) or at the archived hugo repo.
-            # Pinned so contributors' pushes are reproducible. The monthly drift check overrides
-            # this with neurodesktop:latest, so image drift is still caught. To adopt a newer tag:
-            # dispatch "Scheduled corpus drift check" with image_override set to that dated tag;
-            # if the corpus passes, bump the line below.
-            # 2026-09-23: validated 2026-09-24/28 (53/56 in drift run 35955513158, plus both heavy
-            # notebooks after the kernelspec fix).
+            # Pinned so contributors' pushes are reproducible. The monthly drift check tests the
+            # newest dated neurodesktop tag instead, and if the whole corpus passes it opens a PR
+            # bumping the line below. Merge that PR to adopt the new image. Validation evidence is
+            # linked in the PR; git log on this line shows when each version was adopted.
             # Previous auto-lookup kept for one-line revert:
             #   NEURODESKTOP_VERSION=$(curl -s https://raw.githubusercontent.com/neurodesk/neurodesk.github.io/main/data/neurodesktop.toml | grep '^jupyter_neurodesk_version' | sed 's/.*= *"\(.*\)"/\1/')
             NEURODESKTOP_VERSION="2026-09-23"

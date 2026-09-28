@@ -25,7 +25,7 @@ on:
   workflow_dispatch:
     inputs:
       image_override:
-        description: 'Image to test (default: ghcr.io/neurodesk/neurodesktop:latest). Pin an explicit dated tag when you intend to bump NEURODESKTOP_VERSION to it.'
+        description: 'Image to test. Default: the newest dated neurodesktop tag on GHCR. A dated tag (YYYY-MM-DD) that passes the whole corpus gets a pin-bump PR.'
         required: false
         type: string
         default: ''
@@ -38,6 +38,8 @@ jobs:
     runs-on: ubuntu-22.04
     outputs:
       run: ${{ steps.check.outputs.run }}
+      image: ${{ steps.image.outputs.image }}
+      tag: ${{ steps.image.outputs.tag }}
     steps:
       - id: check
         run: |
@@ -52,6 +54,39 @@ jobs:
             echo "run=false" >> "$GITHUB_OUTPUT"
           fi
 
+      # Decide which image to test. Resolve the newest DATED tag rather than testing
+      # :latest, because :latest moves: a pin must name exactly the image that was tested.
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+        if: ${{ steps.check.outputs.run == 'true' }}
+      - id: image
+        if: ${{ steps.check.outputs.run == 'true' }}
+        env:
+          OVERRIDE: ${{ inputs.image_override }}
+        run: |
+          F=.github/workflows/run_and_publish_notebooks.yml
+          PIN=$(sed -nE 's/^[[:space:]]*NEURODESKTOP_VERSION="([0-9-]+)".*/\1/p' "$F" | head -1)
+          if [ -n "$OVERRIDE" ]; then
+            IMAGE="$OVERRIDE"
+          else
+            # Fail SOFT: if the registry lookup breaks, test the current pin instead of
+            # failing the run (a hard failure here is what took CI down in September).
+            TAG=$( (
+              TOKEN=$(curl -fsS "https://ghcr.io/token?scope=repository:neurodesk/neurodesktop:pull&service=ghcr.io" \
+                | python3 -c 'import sys,json; print(json.load(sys.stdin)["token"])')
+              curl -fsS -H "Authorization: Bearer $TOKEN" "https://ghcr.io/v2/neurodesk/neurodesktop/tags/list?n=10000" \
+                | python3 -c 'import sys,json,re; t=[x for x in json.load(sys.stdin)["tags"] if re.fullmatch(r"20\d\d-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])", x)]; print(max(t))'
+            ) 2>/dev/null ) || TAG=""
+            if [ -n "$TAG" ]; then
+              IMAGE="ghcr.io/neurodesk/neurodesktop:$TAG"
+            else
+              echo "::warning::Could not resolve the newest neurodesktop tag; testing the current pin ($PIN). No bump will be proposed."
+              IMAGE="ghcr.io/neurodesk/neurodesktop:$PIN"
+            fi
+          fi
+          echo "Testing image: $IMAGE (current pin: $PIN)"
+          echo "image=$IMAGE" >> "$GITHUB_OUTPUT"
+          echo "tag=${IMAGE##*:}" >> "$GITHUB_OUTPUT"
+
   # 2. Run the full corpus via the reusable workflow, in drift-check mode
   #    (force all, no cache-promote, no side effects).
   corpus:
@@ -61,11 +96,10 @@ jobs:
     uses: ./.github/workflows/run_and_publish_notebooks.yml
     with:
       drift_check: true
-      # Run against the CURRENT image, not the pinned one. The pipeline pins
-      # NEURODESKTOP_VERSION so contributors' pushes stay reproducible; this monthly
-      # run deliberately overrides that to test what users actually get. Without it
-      # the drift check can only see package drift, never image drift.
-      image_override: ${{ inputs.image_override || 'ghcr.io/neurodesk/neurodesktop:latest' }}
+      # Test the image the guard resolved (newest dated tag, or the dispatch override),
+      # not the pinned one. Pushes stay pinned for reproducibility; this monthly run is
+      # what catches image drift.
+      image_override: ${{ needs.guard.outputs.image }}
     secrets: inherit
 
   # 3. If anything failed, open or update a single rolling corpus-drift issue.
@@ -140,3 +174,49 @@ jobs:
               const created = await github.rest.issues.create({ owner, repo, title, body, labels: [label] });
               core.notice(`Opened drift issue #${created.data.number}`);
             }
+
+  # 4. If the whole corpus passed on a newer dated tag, open a PR bumping the pin.
+  #    Never auto-merges: a human reviews and merges it.
+  propose-bump:
+    name: Propose pin bump
+    needs: [guard, corpus]
+    if: ${{ needs.corpus.result == 'success' }}
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+        with:
+          ref: main
+      - name: Open pin-bump PR
+        env:
+          TAG: ${{ needs.guard.outputs.tag }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          F=.github/workflows/run_and_publish_notebooks.yml
+          PIN=$(sed -nE 's/^[[:space:]]*NEURODESKTOP_VERSION="([0-9-]+)".*/\1/p' "$F" | head -1)
+          if ! [[ "$TAG" =~ ^20[0-9]{2}-[0-9]{2}-[0-9]{2}$ ]]; then
+            echo "Tested '$TAG' is not a dated tag; nothing to propose."; exit 0
+          fi
+          if [[ ! "$TAG" > "$PIN" ]]; then
+            echo "Tested $TAG is not newer than the pin ($PIN); nothing to propose."; exit 0
+          fi
+          BRANCH="chore/bump-neurodesktop-$TAG"
+          if git ls-remote --exit-code origin "refs/heads/$BRANCH" >/dev/null 2>&1; then
+            echo "$BRANCH already exists; not opening a duplicate PR."; exit 0
+          fi
+          sed -i -E "s/^([[:space:]]*NEURODESKTOP_VERSION=\")[0-9-]+(\")/\1${TAG}\2/" "$F"
+          if git diff --quiet; then echo "::error::Pin line not found or unchanged"; exit 1; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git commit -am "chore: bump neurodesktop pin to $TAG"
+          git push origin "$BRANCH"
+          BODY="The scheduled drift check ran the full corpus on neurodesktop:$TAG and every notebook passed.
+
+          This bumps NEURODESKTOP_VERSION from $PIN to $TAG.
+
+          Evidence: $RUN_URL"
+          gh pr create --base main --head "$BRANCH" --title "chore: bump neurodesktop pin to $TAG" --body "$BODY"
