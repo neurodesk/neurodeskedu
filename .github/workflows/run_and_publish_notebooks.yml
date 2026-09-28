@@ -723,6 +723,31 @@ jobs:
             pip install -q "huggingface_hub>=0.32.0"
           '
 
+      # neurodesktop images built from 2026-08-27 (neurodesktop d518a7bd) patch ipyniivue so
+      # each NiiVue widget loads its ~5 MB viewer from the running JupyterLab server. That is
+      # fine on Play, but our pages are static HTML with no server, so those viewers fail to
+      # render there. Reinstall the upstream wheel (same version) so saved notebooks embed the
+      # full viewer. No-op on images without the patch. Fails soft: the static-render check
+      # below fails any notebook that would still publish a broken viewer.
+      - name: Restore self-contained ipyniivue for the static site
+        run: |
+          docker exec --user root "$CONTAINER_NAME" bash -c '
+            export PATH=/opt/conda/bin:$PATH
+            JS=$(python -c "import ipyniivue, pathlib; print(pathlib.Path(ipyniivue.__file__).parent / \"static\" / \"widget.js\")" 2>/dev/null) \
+              || { echo "ipyniivue not installed; nothing to restore"; exit 0; }
+            if ! grep -q neurodesktop-ipyniivue-shared-bundle "$JS"; then
+              echo "ipyniivue already self-contained; nothing to restore"; exit 0
+            fi
+            VER=$(python -c "import importlib.metadata as m; print(m.version(\"ipyniivue\"))")
+            echo "Image ships server-dependent ipyniivue $VER; reinstalling the upstream wheel"
+            if pip install -q --no-deps --force-reinstall --no-cache-dir "ipyniivue==$VER" \
+               && ! grep -q neurodesktop-ipyniivue-shared-bundle "$JS"; then
+              echo "ipyniivue $VER restored: $(wc -c < "$JS") bytes of self-contained viewer"
+            else
+              echo "::warning::Could not restore upstream ipyniivue $VER; notebooks with NiiVue viewers will fail the static-render check"
+            fi
+          '
+
       - name: Fix notebook kernelspec if needed
         env:
           NOTEBOOK_REL: ${{ matrix.notebooks }}
@@ -1264,6 +1289,31 @@ jobs:
           fi
 
           exit "$CHECK_RC"
+
+      # A notebook can execute cleanly yet save widgets that cannot render on the static site
+      # (for example, widget code that loads from a live Jupyter server). Fail those here so
+      # nothing below publishes them and the site keeps its last good copy.
+      - name: Check widgets render on the static site
+        env:
+          NOTEBOOK_REL: ${{ matrix.notebooks }}
+        run: |
+          docker exec -e NOTEBOOK_REL="$NOTEBOOK_REL" "$CONTAINER_NAME" su --preserve-environment jovyan -s /bin/bash -c '
+            export PATH=/opt/conda/bin:$PATH
+            python - <<"EOF"
+          import json, os, sys
+          path = os.path.join("/home/jovyan/workspace/books", os.environ["NOTEBOOK_REL"])
+          nb = json.load(open(path, encoding="utf-8"))
+          state = (nb.get("metadata", {}).get("widgets", {})
+                   .get("application/vnd.jupyter.widget-state+json", {}).get("state", {}))
+          bad = [(k, v.get("model_name")) for k, v in state.items()
+                 if "jupyter-config-data" in (v.get("state", {}).get("_esm") or "")]
+          for k, name in bad:
+              print(f"::error::{name} widget {k} loads its code from a live Jupyter server and will not render on the static site")
+          if bad:
+              sys.exit(1)
+          print(f"Static-render check OK ({len(state)} widget models)")
+          EOF
+          '
 
       - name: Upload executed notebook artifact
         if: success()  # Only upload if notebook executed without errors
