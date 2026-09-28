@@ -186,11 +186,14 @@ jobs:
             # this with neurodesktop:latest, so image drift is still caught. To adopt a newer tag:
             # dispatch "Scheduled corpus drift check" with image_override set to that dated tag;
             # if the corpus passes, bump the line below.
-            # 2026-09-23: validated 2026-09-24/28 (53/56 in drift run 35955513158, plus both heavy
-            # notebooks after the kernelspec fix).
+            # HELD AT 2026-07-11 (rolled back 2026-09-29). Images built from neurodesktop d518a7bd
+            # (2026-08-27) onward patch ipyniivue so each viewer loads its code from the running
+            # JupyterLab server. That works on Play but breaks every NiiVue widget on the static
+            # site (no server). Do not bump past 2026-07-11 until CI restores the self-contained
+            # viewer at publish time.
             # Previous auto-lookup kept for one-line revert:
             #   NEURODESKTOP_VERSION=$(curl -s https://raw.githubusercontent.com/neurodesk/neurodesk.github.io/main/data/neurodesktop.toml | grep '^jupyter_neurodesk_version' | sed 's/.*= *"\(.*\)"/\1/')
-            NEURODESKTOP_VERSION="2026-09-23"
+            NEURODESKTOP_VERSION="2026-07-11"
             echo "neurodesk_image=ghcr.io/neurodesk/neurodesktop:${NEURODESKTOP_VERSION}" >> $GITHUB_OUTPUT
             # Slim py-stack default kept for one-line revert:
             #   echo "neurodesk_image=ghcr.io/neurodesk/neurocommand:py-stack" >> $GITHUB_OUTPUT
