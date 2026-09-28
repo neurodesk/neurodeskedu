@@ -1,11 +1,19 @@
 {
   "version": 2,
-  "generated_at": "2026-09-28T00:01:16+00:00",
+  "generated_at": "2026-09-28T06:01:53+00:00",
   "source": {
     "type": "github-issues",
     "repo": "neurodesk/neurodeskedu-reviews"
   },
   "reviews": {
+    "3e97519f-e80b-463c-849c-0cd479fc72df": {
+      "state": "in-progress",
+      "review_issue_url": "https://github.com/neurodesk/neurodeskedu-reviews/issues/61",
+      "reviewers": [
+        "lowripowell"
+      ],
+      "source_path": "examples/diffusion_imaging/qsirecon.ipynb"
+    },
     "776677f3-4ea4-4810-a314-4212d09cb31a": {
       "state": "in-progress",
       "review_issue_url": "https://github.com/neurodesk/neurodeskedu-reviews/issues/25",
@@ -34,14 +42,6 @@
         "astewartau"
       ],
       "source_path": "examples/workflows/nextflow_neurodesk.ipynb"
-    },
-    "3e97519f-e80b-463c-849c-0cd479fc72df": {
-      "state": "in-progress",
-      "review_issue_url": "https://github.com/neurodesk/neurodeskedu-reviews/issues/61",
-      "reviewers": [
-        "lowripowell"
-      ],
-      "source_path": "examples/diffusion_imaging/qsirecon.ipynb"
     },
     "5bf2221b-7324-4a1d-be9c-df07b9bb4d2a": {
       "state": "unreviewed",
