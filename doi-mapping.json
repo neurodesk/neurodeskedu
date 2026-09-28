@@ -759,14 +759,14 @@
     "doi_url": "https://doi.org/10.5281/zenodo.18843449",
     "website_url": "https://neurodesk.org/edu/examples/structural_imaging/freesurfer.html",
     "concept_recid": "18843449",
-    "record_id": "22928251",
+    "record_id": "23010496",
     "content_type": "notebook",
-    "checksum": "bf3e719dacb2016b7081e27e7e4ff806",
+    "checksum": "dcbeaa831217df52c833bae7dd84042c",
     "authors": [
       "Steffen Bollmann",
       "Mich\u00e8le Masson-Trottier"
     ],
-    "updated_at": "2026-09-24T01:27:29Z"
+    "updated_at": "2026-09-28T08:50:06Z"
   },
   "books/examples/diffusion_imaging/MRtrix_1.ipynb": {
     "doi_url": "https://doi.org/10.5281/zenodo.18872514",
