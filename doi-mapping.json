@@ -935,12 +935,12 @@
     "doi_url": "https://doi.org/10.5281/zenodo.21403392",
     "website_url": "https://neurodesk.org/edu/examples/diffusion_imaging/qsirecon.html",
     "concept_recid": "21403392",
-    "record_id": "21403393",
+    "record_id": "23026937",
     "content_type": "notebook",
-    "checksum": "77484d434d38c53203f4e9443e398a62",
+    "checksum": "ee3fc34937019a881a599fa6ad449680",
     "authors": [
       "Monika Doerig"
     ],
-    "updated_at": "2026-07-17T01:17:59Z"
+    "updated_at": "2026-09-29T00:17:25Z"
   }
 }
