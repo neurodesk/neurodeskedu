@@ -182,10 +182,10 @@ jobs:
             # newer Astro repo took over the neurodesk.github.io name; it never had a data/
             # directory. Broke between 2026-08-28 and 2026-09-05.
             # Do NOT repoint at neurodesk/play (frozen at 2025-12-03) or at the archived hugo repo.
-            # Pinned so contributors' pushes are reproducible. The monthly drift check overrides
-            # this with neurodesktop:latest, so image drift is still caught. To adopt a newer tag:
-            # dispatch "Scheduled corpus drift check" with image_override set to that dated tag;
-            # if the corpus passes, bump the line below.
+            # Pinned so contributors' pushes are reproducible. The monthly drift check tests the
+            # newest dated neurodesktop tag instead, and if the whole corpus passes it opens a PR
+            # bumping the line below. Merge that PR to adopt the new image. Validation evidence is
+            # linked in the PR; git log on this line shows when each version was adopted.
             # Images built from neurodesktop d518a7bd (2026-08-27) onward patch ipyniivue so each
             # NiiVue viewer loads its code from a live JupyterLab server, which breaks the viewers
             # on our static site. "Restore self-contained ipyniivue for the static site" undoes
