@@ -563,14 +563,14 @@
     "doi_url": "https://doi.org/10.5281/zenodo.18728808",
     "website_url": "https://neurodesk.org/edu/examples/structural_imaging/SYNcro.html",
     "concept_recid": "18728808",
-    "record_id": "23005185",
+    "record_id": "23027491",
     "content_type": "notebook",
-    "checksum": "91d8e2a5b21de20dfa0f1cf41b61b473",
+    "checksum": "c40260b7ca5c890e25f3b5b9344e2f11",
     "authors": [
       "Chris Rorden, Steffen Bollmann",
       "Mich\u00e8le Masson-Trottier"
     ],
-    "updated_at": "2026-09-28T02:20:42Z"
+    "updated_at": "2026-09-29T00:49:56Z"
   },
   "books/examples/diffusion_imaging/Diffusion_TBSS_Demo.ipynb": {
     "doi_url": "https://doi.org/10.5281/zenodo.18728812",
