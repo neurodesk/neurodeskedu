@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-09-29T00:01:41+00:00",
+  "generated_at": "2026-09-29T06:01:08+00:00",
   "source": {
     "type": "github-issues",
     "repo": "neurodesk/neurodeskedu-reviews"
@@ -13,22 +13,6 @@
         "lowripowell"
       ],
       "source_path": "examples/diffusion_imaging/qsirecon.ipynb"
-    },
-    "776677f3-4ea4-4810-a314-4212d09cb31a": {
-      "state": "in-progress",
-      "review_issue_url": "https://github.com/neurodesk/neurodeskedu-reviews/issues/25",
-      "reviewers": [
-        "MoniDoerig"
-      ],
-      "source_path": "examples/structural_imaging/freesurfer.ipynb"
-    },
-    "e007b633-50a5-4109-baa8-3d0a6c19467f": {
-      "state": "in-progress",
-      "review_issue_url": "https://github.com/neurodesk/neurodeskedu-reviews/issues/43",
-      "reviewers": [
-        "MoniDoerig"
-      ],
-      "source_path": "examples/structural_imaging/SYNcro.ipynb"
     },
     "ce423cf1-cbb0-4ac5-bf58-b3a52ad441c4": {
       "state": "unreviewed",
@@ -75,6 +59,28 @@
         "neurolabusc"
       ],
       "source_path": "examples/functional_imaging/AFNI_preprocessing_plus_glm.ipynb"
+    },
+    "776677f3-4ea4-4810-a314-4212d09cb31a": {
+      "state": "reviewed",
+      "review_issue_url": "https://github.com/neurodesk/neurodeskedu-reviews/issues/25",
+      "reviewers": [
+        "MoniDoerig"
+      ],
+      "reviewed_at": "2026-09-29",
+      "review_commit_sha": "bebb43ecde50391258eed1dc2aa25272d9360963",
+      "source_path": "examples/structural_imaging/freesurfer.ipynb",
+      "review_content_hash": "4aab34beeb7a0975419ba983f6aeff106860d59c515e3ae67fb685278b2e62c6"
+    },
+    "e007b633-50a5-4109-baa8-3d0a6c19467f": {
+      "state": "reviewed",
+      "review_issue_url": "https://github.com/neurodesk/neurodeskedu-reviews/issues/43",
+      "reviewers": [
+        "MoniDoerig"
+      ],
+      "reviewed_at": "2026-09-29",
+      "review_commit_sha": "ae652a2570f800941c633f4e7236ffabb309a0fb",
+      "source_path": "examples/structural_imaging/SYNcro.ipynb",
+      "review_content_hash": "a8ad3ad5eecb71e8b0f6e3e43cb7444bdbc673bbb707b5642587929fe37044f4"
     },
     "0148a586-1857-4ac0-b3b8-f59ee9be2f64": {
       "state": "reviewed",
