@@ -92,7 +92,6 @@ chapters:
 
       - file: tutorials/phase_processing/intro
         sections:
-          - file: tutorials/phase_processing/qsm
           - file: tutorials/phase_processing/swi
           - file: tutorials/phase_processing/unwrapping
 
