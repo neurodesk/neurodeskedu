@@ -55,19 +55,44 @@ jobs:
         with:
           ref: gh-pages
 
-      - name: lychee Link Checker
+      - name: Install lychee
+        env:
+          LYCHEE_VERSION: v0.24.2
+          # sha256 of lychee-x86_64-unknown-linux-gnu.tar.gz in the lychee-v0.24.2 release
+          LYCHEE_SHA256: 1f4e0ef7f6554a6ed33dd7ac144fb2e1bbed98598e7af973042fc5cd43951c9a
         run: |
-          curl -sSf 'https://sh.rustup.rs' | sh -s -- -y
-          sudo apt install gcc pkg-config libc6-dev libssl-dev -y
-          cargo install lychee
+          cd "$RUNNER_TEMP"
+          curl -sSfL -o lychee.tar.gz "https://github.com/lycheeverse/lychee/releases/download/lychee-${LYCHEE_VERSION}/lychee-x86_64-unknown-linux-gnu.tar.gz"
+          echo "${LYCHEE_SHA256}  lychee.tar.gz" | sha256sum -c -
+          tar -xzf lychee.tar.gz
+          sudo install lychee-x86_64-unknown-linux-gnu/lychee /usr/local/bin/lychee
+          lychee --version
 
       - name: Check broken links
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -o pipefail
           notebook_list='${{ needs.get-notebooks.outputs.notebook_list }}'
           echo "notebook_list=${notebook_list}"
+          report="$RUNNER_TEMP/broken-links.md"
+          total=0
+          failed=0
+          # Check every page and record failures instead of stopping at the first one
           for notebook in $(echo $notebook_list | jq -r '.[]'); do
+            total=$((total + 1))
             echo "Checking links in $notebook"
-            lychee https://neurodesk.org/edu/${notebook} --remap "https://neurodesk.org/edu/intro.html https://neurodesk.org/edu" --accept 200..=206,403,429 --exclude "https:\/\/doi\.org\/[^\/]+\/zenodo.*"
+            if ! lychee https://neurodesk.org/edu/${notebook} --remap "https://neurodesk.org/edu/intro.html https://neurodesk.org/edu" --accept 200..=206,403,429 --exclude "https:\/\/doi\.org\/[^\/]+\/zenodo.*" 2>&1 | tee "$RUNNER_TEMP/lychee.log"; then
+              failed=$((failed + 1))
+              { echo "### https://neurodesk.org/edu/${notebook}"; echo '```'; cat "$RUNNER_TEMP/lychee.log"; echo '```'; } >> "$report"
+            fi
           done
+          if [ "$total" -eq 0 ]; then
+            echo "::error::No pages were checked"
+            exit 1
+          fi
+          if [ "$failed" -gt 0 ]; then
+            { echo "## Broken links on ${failed} of ${total} pages"; cat "$report"; } | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          echo "## No broken links on ${total} pages" | tee -a "$GITHUB_STEP_SUMMARY"
