@@ -828,11 +828,14 @@
     "doi_url": "https://doi.org/10.5281/zenodo.19043245",
     "website_url": "https://neurodesk.org/edu/tutorials/phase_processing/swi.html",
     "concept_recid": "19043245",
-    "record_id": "19043246",
+    "record_id": "23126453",
     "content_type": "notebook",
-    "checksum": "e7058aca0783fcca2ac16fd1fd2dd7e7",
-    "authors": [],
-    "updated_at": "2026-03-16T04:30:21Z"
+    "checksum": "19cf18ed34a3b0945dc3232a9f59ba74",
+    "authors": [
+      "Steffen Bollmann",
+      "Mich\u00e8le Masson-Trottier"
+    ],
+    "updated_at": "2026-10-03T19:22:51Z"
   },
   "books/tutorials/phase_processing/unwrapping.ipynb": {
     "doi_url": "https://doi.org/10.5281/zenodo.19043247",
