@@ -5,10 +5,12 @@ import tempfile
 import subprocess
 import sys
 import unittest
+from unittest import mock
 from urllib.parse import parse_qs, urlparse
 
 import yaml
 
+import build_book
 from build_book import adapt_markdown, controls, discover, embed_widgets, finish, prepare
 from verify_book import PageLinks
 
@@ -135,10 +137,8 @@ class BookBuildTests(unittest.TestCase):
         embed_widgets(self.notebook, stage, self.source, "/edu")
         assets = list((stage / "_static/widgets").glob("*.html"))
         self.assertEqual(len(assets), 1)
-        text = assets[0].read_text()
-        state = text.split('type="application/vnd.jupyter.widget-state+json">')[1].split('</script>')[0]
-        self.assertEqual(json.loads(state)["state"], {k: models[k] for k in ["viewer", "volume"]})
-        self.assertNotIn("</script>", state)
+        self.assertEqual(json.loads(self.widget_state(assets[0]))["state"],
+                         {k: models[k] for k in ["viewer", "volume"]})
         output = self.notebook["cells"][1]["outputs"][0]["data"]["text/html"]
         self.assertIn("/edu/_static/widgets/" + assets[0].name, output)
         self.assertNotIn("widgets", self.notebook["metadata"])
@@ -161,23 +161,27 @@ class BookBuildTests(unittest.TestCase):
         embed_widgets(self.notebook, self.root / "stage", self.source, "/edu")
         self.assertEqual(self.notebook["cells"][1]["outputs"][0]["data"], {"text/plain": "Progress"})
 
-    def test_oversized_widget_assets_are_replaced_instead_of_blocking_publication(self):
+    def widget_state(self, page: Path) -> str:
+        parts = json.loads(page.read_text().split("Promise.all(")[1].split(".map(")[0])
+        return "".join((page.parent / part).read_text() for part in parts)
+
+    def test_large_widget_state_is_split_into_publishable_parts(self):
+        mime = "application/vnd.jupyter.widget-view+json"
+        self.notebook["cells"][1]["outputs"] = [{"output_type": "display_data", "metadata": {},
+                                               "data": {mime: {"model_id": "viewer"}}}]
+        models = {"viewer": {"state": {"volume": "é" * 200}}}
+        self.notebook["metadata"]["widgets"] = {"application/vnd.jupyter.widget-state+json": {
+            "version_major": 2, "version_minor": 0, "state": models,
+        }}
         stage = self.root / "stage"
-        built = stage / "_build/html"
-        content = stage / "_build/site/content"
-        content.mkdir(parents=True)
-        route = "examples/topic/test-one"
-        (content / "page.json").write_text(json.dumps({"location": "/" + str(self.source),
-                                                       "slug": route.replace("/", ".")}))
-        (built / route).mkdir(parents=True)
-        (built / route / "index.html").write_text("<html><head></head><body></body></html>")
-        widget = built / "_static/widgets/big.html"
-        widget.parent.mkdir(parents=True)
-        with widget.open("wb") as f:
-            f.truncate(100 * 1024**2)
-        output = self.root / "output"
-        finish(stage, self.book, output, [self.source], self.settings)
-        self.assertIn("too large", (output / "_static/widgets/big.html").read_text())
+        with mock.patch.object(build_book, "WIDGET_PART_SIZE", 64):
+            embed_widgets(self.notebook, stage, self.source, "/edu")
+        folder = stage / "_static/widgets"
+        parts = sorted(folder.glob("*.txt"))
+        self.assertGreater(len(parts), 10)
+        self.assertTrue(all(part.stat().st_size <= 64 for part in parts))
+        page = next(folder.glob("*.html"))
+        self.assertEqual(json.loads(self.widget_state(page))["state"], models)
 
     def test_export_requires_every_page_and_preserves_raw_downloads_and_aliases(self):
         stage = self.root / "stage"

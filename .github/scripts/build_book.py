@@ -85,6 +85,10 @@ def adapt_markdown(text: str, headings: set[str]) -> str:
     return re.sub(r"\]\(#([^\s)]+)\)", target, text)
 
 
+# GitHub Pages rejects files of 100 MB or more, so widget state is split into parts.
+WIDGET_PART_SIZE = 50 * 1024**2
+
+
 def embed_widgets(notebook: dict, stage: Path, source: Path, base_url: str) -> None:
     mime = "application/vnd.jupyter.widget-view+json"
     outputs = [output for cell in notebook["cells"] for output in cell.get("outputs", [])
@@ -111,16 +115,27 @@ def embed_widgets(notebook: dict, stage: Path, source: Path, base_url: str) -> N
         if selected is None:
             del output["data"][mime]
             continue
-        filename = hashlib.sha256(f"{source}:{view['model_id']}".encode()).hexdigest()[:24] + ".html"
-        widget_state = json.dumps({**state, "state": selected}).replace("<", "\\u003c")
+        stem = hashlib.sha256(f"{source}:{view['model_id']}".encode()).hexdigest()[:24]
+        filename = stem + ".html"
+        widget_state = json.dumps({**state, "state": selected})
+        parts = []
+        for start in range(0, len(widget_state), WIDGET_PART_SIZE):
+            parts.append(f"{stem}.{len(parts)}.txt")
+            (folder / parts[-1]).write_text(widget_state[start:start + WIDGET_PART_SIZE])
         widget_view = json.dumps(view).replace("<", "\\u003c")
         (folder / filename).write_text(
             '<!doctype html><html><head><meta charset="utf-8"><title>Interactive notebook output</title>'
             '<style>body{margin:0}.jupyter-widgets{max-width:100%}</style></head><body>'
             '<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>'
-            '<script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@1.0.14/dist/embed-amd.js"></script>'
-            f'<script type="application/vnd.jupyter.widget-state+json">{widget_state}</script>'
-            f'<script type="{mime}">{widget_view}</script></body></html>'
+            f'<script type="{mime}">{widget_view}</script>'
+            '<script>Promise.all(' + json.dumps(parts) + '.map(part => fetch(part).then(response => {'
+            'if (!response.ok) throw new Error(part + ": " + response.status); return response.text();'
+            '}))).then(texts => {const state = document.createElement("script");'
+            'state.type = "application/vnd.jupyter.widget-state+json"; state.textContent = texts.join("");'
+            'document.body.append(state); const embed = document.createElement("script");'
+            'embed.src = "https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@1.0.14/dist/embed-amd.js";'
+            'document.body.append(embed);}).catch(error => {document.body.textContent = '
+            '"This interactive output could not be loaded (" + error.message + ").";});</script></body></html>'
         )
         output["data"] = {"text/html": (
             f'<iframe src="{html.escape(base_url, quote=True)}/_static/widgets/{filename}" '
@@ -265,14 +280,7 @@ def finish(stage: Path, raw: Path, output: Path, pages: list[Path], settings: di
         )
     (built / ".nojekyll").touch()
     (built / "neurodesk-pages.json").write_text(json.dumps(routes, indent=2) + "\n")
-    limit = 100 * 1024**2
-    for widget in (built / "_static/widgets").glob("*.html"):
-        if widget.stat().st_size >= limit:
-            print(f"::warning::Replacing oversized widget output: {widget.name}")
-            widget.write_text('<!doctype html><html><head><meta charset="utf-8"></head><body>'
-                              "<p>This interactive output is too large to publish online. "
-                              "Run the notebook to explore it.</p></body></html>\n")
-    oversized = [str(p.relative_to(built)) for p in built.rglob("*") if p.is_file() and p.stat().st_size >= limit]
+    oversized = [str(p.relative_to(built)) for p in built.rglob("*") if p.is_file() and p.stat().st_size >= 100 * 1024**2]
     if oversized:
         raise ValueError(f"Files exceed the GitHub Pages publication limit: {oversized}")
     if output.exists():
