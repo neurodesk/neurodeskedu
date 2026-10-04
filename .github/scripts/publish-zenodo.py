@@ -246,14 +246,25 @@ def publish_content(content_path, content_key, doi_mapping_path,
             record_id = existing["record_id"]
             print(f"Creating new version of record {record_id}...")
 
-            resp = api_request(
-                f"{api_url}/api/deposit/depositions/{record_id}/actions/newversion",
-                method="POST", token=zenodo_token,
-            )
+            try:
+                resp = api_request(
+                    f"{api_url}/api/deposit/depositions/{record_id}/actions/newversion",
+                    method="POST", token=zenodo_token,
+                )
+            except urllib.error.HTTPError as exc:
+                # Zenodo allows one unpublished new version per record. A run whose
+                # newversion call timed out can leave one behind, so resume it.
+                if exc.code != 400:
+                    raise
+                print("  An unpublished new version already exists; reusing it...")
+                resp = api_request(f"{api_url}/api/deposit/depositions/{record_id}",
+                                   token=zenodo_token)
 
             # The response contains a link to the new draft
             new_draft_url = resp["links"]["latest_draft"]
             draft = api_request(new_draft_url, token=zenodo_token)
+            if draft.get("submitted"):
+                raise RuntimeError(f"No unpublished draft found for record {record_id}")
             draft_id = draft["id"]
             print(f"  New version draft: {draft_id}")
 

@@ -9,9 +9,25 @@ in a later markdown cell, so their author was silently dropped and the Zenodo
 publisher fell back to the generic "Neurodesk Project" creator.
 """
 
+import tempfile
+
 from notebook_metadata import (
+    extract_authors_from_markdown,
     extract_authors_from_notebook,
     extract_authors_from_first_cell_source,
+)
+
+MYST_FRONT_MATTER = (
+    "---\n"
+    "title: Working with MyST\n"
+    "authors:\n"
+    "  - name: Monika Doerig\n"
+    "    orcid: 0009-0008-3617-2185\n"
+    "    affiliations:\n"
+    "    - School of Electrical Engineering and Computer Science\n"
+    "  - name: Jane Doe\n"
+    "license: CC-BY-4.0\n"
+    "---"
 )
 
 
@@ -82,6 +98,25 @@ def test_leading_raw_cell_is_skipped_not_boundary():
         ]
     }
     assert extract_authors_from_notebook(nb) == ["Grace Hopper"]
+
+
+def test_myst_front_matter_without_trailing_newline_yields_author_names():
+    nb = _md(MYST_FRONT_MATTER)
+    assert extract_authors_from_notebook(nb) == ["Monika Doerig", "Jane Doe"]
+
+
+def test_markdown_myst_front_matter_yields_author_names():
+    with tempfile.NamedTemporaryFile("w", suffix=".md") as fh:
+        fh.write(MYST_FRONT_MATTER + "\n# Title\n")
+        fh.flush()
+        assert extract_authors_from_markdown(fh.name) == ["Monika Doerig", "Jane Doe"]
+
+
+def test_front_matter_string_and_list_authors():
+    assert extract_authors_from_notebook(_md("---\nauthor: Jane Doe and John Smith\n---\n")) == [
+        "Jane Doe", "John Smith"]
+    assert extract_authors_from_notebook(_md("---\nauthors: [Jane Doe, John Smith]\n---\n")) == [
+        "Jane Doe", "John Smith"]
 
 
 def test_no_author_returns_empty():

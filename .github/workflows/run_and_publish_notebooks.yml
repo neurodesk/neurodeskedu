@@ -1583,6 +1583,9 @@ jobs:
           pattern: executed-*
           path: executed-artifacts
 
+      - name: Install Zenodo publisher dependencies
+        run: python3 -m pip install --user pyyaml
+
       - name: Publish notebooks and tutorials to Zenodo
         env:
           ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}

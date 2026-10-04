@@ -7,6 +7,8 @@ import json
 import re
 from typing import List
 
+import yaml
+
 
 # Require a ':' after the label. Without it, a sentence line such as the template's
 # "Author of this template : ..." instruction is mistaken for an author field. The
@@ -17,7 +19,7 @@ _STOP_LINE_RE = re.compile(
     r"^(date|title|license|doi|institution|affiliation|contact|email|version)\b",
     re.IGNORECASE,
 )
-_FRONT_MATTER_RE = re.compile(r"(?s)\A---\n(.*?)\n---\n")
+_FRONT_MATTER_RE = re.compile(r"(?s)\A---\r?\n(.*?)\r?\n---[ \t]*(?:\r?\n|\Z)")
 
 
 def _strip_markdown(text: str) -> str:
@@ -129,7 +131,13 @@ def extract_authors_from_notebook(notebook_obj: dict) -> List[str]:
             continue
         source = cell.get("source", [])
         cell_source = "".join(source) if isinstance(source, list) else str(source)
-        authors = extract_authors_from_first_cell_source(cell_source)
+        match = _FRONT_MATTER_RE.match(cell_source)
+        if match:
+            authors = _extract_authors_from_front_matter(match.group(1))
+            cell_source = cell_source[match.end():]
+        else:
+            authors = []
+        authors = authors or extract_authors_from_first_cell_source(cell_source)
         if authors:
             return authors
     return []
@@ -149,41 +157,22 @@ def _extract_front_matter(markdown_text: str) -> str:
 
 
 def _extract_authors_from_front_matter(front_matter: str) -> List[str]:
-    """Extract author/authors from markdown front matter."""
-    if not front_matter:
+    """Extract author names from YAML front matter, including MyST author objects."""
+    try:
+        data = yaml.safe_load(front_matter)
+    except yaml.YAMLError:
         return []
-
-    lines = front_matter.splitlines()
-    for idx, line in enumerate(lines):
-        match = re.match(r"^\s*authors?\s*:\s*(.*)$", line, flags=re.IGNORECASE)
-        if not match:
-            continue
-
-        inline_value = match.group(1).strip()
-        if inline_value and inline_value not in ("|", ">"):
-            if inline_value.startswith("[") and inline_value.endswith("]"):
-                inline_value = inline_value[1:-1]
-            return _split_authors(inline_value)
-
-        collected: List[str] = []
-        for next_line in lines[idx + 1 :]:
-            if re.match(r"^\s*[A-Za-z0-9_-]+\s*:", next_line):
-                break
-            list_match = re.match(r"^\s*-\s*(.+)\s*$", next_line)
-            if list_match:
-                collected.append(list_match.group(1).strip())
-                continue
-            if next_line.strip():
-                collected.append(next_line.strip())
-                continue
-            if collected:
-                break
-
-        if collected:
-            return _split_authors(" & ".join(collected))
+    if not isinstance(data, dict):
         return []
-
-    return []
+    value = data.get("authors", data.get("author"))
+    entries = value if isinstance(value, list) else [value]
+    names: List[str] = []
+    for entry in entries:
+        if isinstance(entry, dict):
+            entry = entry.get("name")
+        if isinstance(entry, str):
+            names.extend(name for name in _split_authors(entry) if name not in names)
+    return names
 
 
 def _extract_authors_from_markdown_body(markdown_text: str) -> List[str]:
