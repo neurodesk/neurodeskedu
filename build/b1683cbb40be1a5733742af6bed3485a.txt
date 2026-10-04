@@ -1,0 +1,381 @@
+ing existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev2p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev2p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev1.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev1.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev5p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev5p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev6.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev6.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zfstat1.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zfstat1.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zstat3.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zstat3.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev6.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev6.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev4p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev4p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zstat4p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zstat4p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev3p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev3p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_index.html
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_index.html: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev1.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev1.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev4.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev4.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev2.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev2.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev3.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev3.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev4.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev4.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat5.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat5.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev4.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev4.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev3.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev3.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev6p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev6p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat2.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat2.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev3.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev3.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev5.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev5.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev1p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev1p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev3.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev3.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev2p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev2p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev5p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev5p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev5.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev5.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat5.html
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat5.html: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev2.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev2.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev1p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev1p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev4.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev4.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zfstat1_ev2p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zfstat1_ev2p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev3p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev3p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev3p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev3p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev1.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev1.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev6.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev6.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev1.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev1.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev1.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev1.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev6.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev6.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev6.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev6.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat1.html
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat1.html: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev6.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev6.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev5p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev5p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zfstat1_ev6p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zfstat1_ev6p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev6p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev6p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev1p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev1p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev1.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev1.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat2p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat2p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zstat1.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zstat1.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat3_ev4p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat3_ev4p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev2.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev2.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev4.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev4.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev2.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev2.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev3p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev3p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev3.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev3.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev5.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev5.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev5.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev5.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev1.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev1.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev5p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev5p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zstat2p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zstat2p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev6.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev6.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev2p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev2p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat4.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat4.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev5.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev5.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev2.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev2.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev3.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev3.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev5.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev5.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev4.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev4.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev2.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev2.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat3.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat3.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev2.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev2.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev5.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev5.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat3_ev4.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat3_ev4.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev1p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev1p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev2.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev2.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev6p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev6p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zfstat1_ev4.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zfstat1_ev4.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev5.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev5.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zfstat1_ev3.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zfstat1_ev3.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat3_ev3.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat3_ev3.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev6.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev6.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zstat5.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zstat5.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev6.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev6.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev3p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev3p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zstat2.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zstat2.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev1.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev1.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev4p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev4p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev1.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev1.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat3_ev1.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat3_ev1.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zfstat1_ev1.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zfstat1_ev1.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev1p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev1p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zfstat1_ev6.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zfstat1_ev6.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat3_ev6.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat3_ev6.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev3p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev3p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev3.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev3.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev5.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev5.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev3.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev3.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev1p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev1p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev5p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev5p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev4.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev4.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat3_ev2p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat3_ev2p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev4.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev4.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev2.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev2.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat4p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat4p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev5p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev5p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zfstat1_ev4p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zfstat1_ev4p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev4.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev4.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev2.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev2.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat3.html
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat3.html: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zfstat1.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zfstat1.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev5.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev5.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev3p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev3p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev4p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev4p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev3.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev3.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev1p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev1p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat1.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat1.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev6.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev6.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat3_ev6p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat3_ev6p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev1.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev1.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev5p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev5p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev6p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev6p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zstat3.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zstat3.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zfstat1.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zfstat1.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev6.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev6.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev1p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev1p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev1.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev1.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zfstat1_ev1p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zfstat1_ev1p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zstat4.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zstat4.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev2p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev2p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev4.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev4.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zfstat1_ev2.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zfstat1_ev2.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat3_ev2.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat3_ev2.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat3_ev5.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat3_ev5.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev4p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev4p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat5p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat5p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev3.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev3.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat3_ev3p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat3_ev3p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zfstat1_ev5.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zfstat1_ev5.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev5.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev5.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zfstat1_ev5p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zfstat1_ev5p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev3.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev3.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev4p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev4p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat2.html
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat2.html: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat2.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat2.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev3.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev3.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev6p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev6p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev4.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev4.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev2p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev2p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat5.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat5.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev4.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev4.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev3.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev3.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev2.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev2.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev5p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev5p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev4.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev4.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev1.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev1.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat1p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplot_zstat1p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev4p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev4p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev6.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev6.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev6.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev6.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev6.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev6.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev1.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev1.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zstat3p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zstat3p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev4p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat2_ev4p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev1.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat5_ev1.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev6.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zfstat1_ev6.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev1.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat1_ev1.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev3p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev3p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev4.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev4.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev6p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev6p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev1p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev1p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev2.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev2.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev5.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat4_ev5.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev3.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat3_ev3.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev5.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev5.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev5.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev5.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev3.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev3.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev2.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat1_ev2.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev4.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev4.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zstat1.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/tsplotc_zstat1.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev2.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat5_ev2.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev1.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev1.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev2p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplotc_zstat2_ev2p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev6.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev6.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev5p.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/tsplot/ps_tsplot_zstat4_ev5p.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/rendered_thresh_zfstat1.nii.gz
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/rendered_thresh_zfstat1.nii.gz: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/report_prestats.html
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/report_prestats.html: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/cluster_zstat1_std.html
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/cluster_zstat1_std.html: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/cluster_zstat1.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/cluster_zstat1.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/filtered_func_data.nii.gz
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/filtered_func_data.nii.gz: skipping existing file

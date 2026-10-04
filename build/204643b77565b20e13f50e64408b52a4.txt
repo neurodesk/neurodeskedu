@@ -1,0 +1,368 @@
+fsl_course_data/fmri/ptt/at/at_left.feat/design.fts
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/design.fts: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/lmax_zstat3_std.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/lmax_zstat3_std.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/cluster_zfstat1.html
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/cluster_zfstat1.html: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/cluster_zfstat1_std.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/cluster_zfstat1_std.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/lmax_zstat2.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/lmax_zstat2.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf_abs_mean.rms
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf_abs_mean.rms: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf_abs.rms
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf_abs.rms: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.par
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.par: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf_rel_mean.rms
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf_rel_mean.rms: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/rot.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/rot.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/trans.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/trans.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0037
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0037: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0040
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0040: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0078
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0078: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0096
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0096: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0102
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0102: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0072
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0072: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0005
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0005: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0108
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0108: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0024
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0024: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0053
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0053: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0059
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0059: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0061
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0061: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0016
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0016: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0085
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0085: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0111
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0111: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0011
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0011: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0066
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0066: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0088
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0088: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0116
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0116: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0082
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0082: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0054
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0054: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0023
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0023: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0029
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0029: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0105
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0105: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0091
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0091: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0008
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0008: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0002
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0002: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0075
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0075: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0047
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0047: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0030
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0030: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0043
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0043: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0034
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0034: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0049
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0049: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0006
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0006: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0071
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0071: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0095
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0095: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0101
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0101: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0120
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0120: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0050
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0050: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0027
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0027: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0086
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0086: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0112
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0112: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0068
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0068: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0118
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0118: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0015
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0015: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0062
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0062: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0018
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0018: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0115
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0115: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0081
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0081: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0065
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0065: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0012
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0012: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0020
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0020: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0057
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0057: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0098
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0098: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0076
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0076: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0001
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0001: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0106
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0106: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0092
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0092: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0033
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0033: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0044
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0044: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0039
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0039: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0074
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0074: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0003
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0003: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0104
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0104: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0090
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0090: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0009
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0009: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0031
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0031: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0046
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0046: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0117
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0117: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0083
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0083: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0067
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0067: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0010
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0010: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0089
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0089: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0028
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0028: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0022
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0022: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0055
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0055: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0058
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0058: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0052
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0052: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0025
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0025: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0084
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0084: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0110
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0110: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0017
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0017: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0060
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0060: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0041
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0041: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0036
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0036: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0004
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0004: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0073
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0073: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0109
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0109: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0079
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0079: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0097
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0097: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0103
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0103: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0107
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0107: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0093
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0093: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0099
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0099: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0000
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0000: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0077
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0077: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0038
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0038: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0045
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0045: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0032
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0032: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0013
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0013: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0064
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0064: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0019
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0019: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0114
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0114: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0080
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0080: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0056
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0056: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0021
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0021: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0026
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0026: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0051
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0051: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0121
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0121: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0119
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0119: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0063
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0063: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0014
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0014: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0087
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0087: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0113
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0113: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0069
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0069: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0048
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0048: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0035
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0035: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0042
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0042: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0094
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0094: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0100
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0100: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0070
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0070: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0007
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf.mat/MAT_0007: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/disp.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/disp.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf_rel.rms
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mc/prefiltered_func_data_mcf_rel.rms: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/thresh_zfstat1.nii.gz
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/thresh_zfstat1.nii.gz: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/lmax_zstat5.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/lmax_zstat5.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/cluster_zstat1.html
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/cluster_zstat1.html: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/mask.nii.gz
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/mask.nii.gz: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/rendered_thresh_zstat5.nii.gz
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/rendered_thresh_zstat5.nii.gz: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/rendered_thresh_zfstat1.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/rendered_thresh_zfstat1.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/cluster_zstat5.html
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/cluster_zstat5.html: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/cluster_zstat3_std.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/cluster_zstat3_std.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/lmax_zstat1.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/lmax_zstat1.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/design.frf
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/design.frf: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/lmax_zstat1_std.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/lmax_zstat1_std.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/cluster_mask_zstat4.nii.gz
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/cluster_mask_zstat4.nii.gz: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/design.trg
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/design.trg: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/lmax_zstat5_std.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/lmax_zstat5_std.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/design_cov.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/design_cov.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/thresh_zstat5.nii.gz
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/thresh_zstat5.nii.gz: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/cluster_zstat4_std.html
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/cluster_zstat4_std.html: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/thresh_zfstat1.vol
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/thresh_zfstat1.vol: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/design.png
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/design.png: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/lmax_zfstat1_std.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/lmax_zfstat1_std.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/cluster_zstat4.txt
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/cluster_zstat4.txt: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/logs/
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/logs: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat4_post.o684739
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat4_post.o684739: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat4_post.e684741
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat4_post.e684741: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat5_reg
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat5_reg: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat5_stop.o684742
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat5_stop.o684742: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat4_post
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat4_post: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat3_film
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat3_film: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat3_film.e684738
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat3_film.e684738: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat1
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat1: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat5_reg.e684740
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat5_reg.e684740: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat2_pre.e684737
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat2_pre.e684737: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat2_pre
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat2_pre: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat5_stop.e684742
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat5_stop.e684742: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat9
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat9: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat3_film.o684738
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat3_film.o684738: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat5_reg.o684740
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat5_reg.o684740: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat2_pre.o684737
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat2_pre.o684737: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat4_post.e684739
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat4_post.e684739: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat4_post.o684741
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat4_post.o684741: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat0
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/logs/feat0: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/report_stats.html
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/report_stats.html: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/reg_standard/
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/reg_standard: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/reg_standard/mean_func.nii.gz
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/reg_standard/mean_func.nii.gz: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/reg_standard/mask.nii.gz
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/reg_standard/mask.nii.gz: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/reg_standard/reg/
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/reg_standard/reg: skipping existing file
+fsl_course_data/fmri/ptt/at/at_left.feat/reg_standard/reg/highres.nii.gz
+tar: fsl_course_data/fmri/ptt/at/at_left.feat/reg_standard/reg/highres.nii.gz: skipping existing file
