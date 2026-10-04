@@ -247,13 +247,16 @@ def publish_content(content_path, content_key, doi_mapping_path,
             print(f"Creating new version of record {record_id}...")
 
             resp = api_request(
-                f"{api_url}/api/deposit/depositions/{record_id}/actions/newversion",
+                f"{api_url}/api/records/{record_id}/versions",
                 method="POST", token=zenodo_token,
             )
 
-            # The response contains a link to the new draft
-            new_draft_url = resp["links"]["latest_draft"]
+            # The current API resumes an existing draft without re-importing files.
+            # Read its legacy representation for the upload and metadata APIs below.
+            new_draft_url = f"{api_url}/api/deposit/depositions/{resp['id']}"
             draft = api_request(new_draft_url, token=zenodo_token)
+            if draft.get("submitted") is not False or str(draft["id"]) == str(record_id):
+                raise ValueError("Zenodo did not return an unpublished new-version draft")
             draft_id = draft["id"]
             print(f"  New version draft: {draft_id}")
 
