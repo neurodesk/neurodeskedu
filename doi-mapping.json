@@ -75,50 +75,13 @@
     "doi_url": "https://doi.org/10.5281/zenodo.18718426",
     "website_url": "https://neurodesk.org/edu/tutorials/electrophysiology/EEG_mne-python.html",
     "concept_recid": "18718426",
-    "record_id": "18718427",
+    "record_id": "23166303",
     "content_type": "tutorial",
-    "checksum": "f8aff5fc3382e7b26793f337fc7e13e1",
+    "checksum": "a59a7bb7195ac07c563117bc52b122fc",
     "authors": [
       "Angela Renton"
     ],
-    "updated_at": "2026-02-21T00:56:31Z"
-  },
-  "books/tutorials/phase_processing/qsm.md": {
-    "doi_url": "https://doi.org/10.5281/zenodo.18718428",
-    "website_url": "https://neurodesk.org/edu/tutorials/phase_processing/qsm.html",
-    "concept_recid": "18718428",
-    "record_id": "18718429",
-    "content_type": "tutorial",
-    "checksum": "eda0d475248fcc67c691a7ccd7185399",
-    "authors": [
-      "Steffen Bollmann",
-      "Ashley Stewart"
-    ],
-    "updated_at": "2026-02-21T00:56:35Z"
-  },
-  "books/tutorials/phase_processing/unwrapping.md": {
-    "doi_url": "https://doi.org/10.5281/zenodo.18718432",
-    "website_url": "https://neurodesk.org/edu/tutorials/phase_processing/unwrapping.html",
-    "concept_recid": "18718432",
-    "record_id": "18718433",
-    "content_type": "tutorial",
-    "checksum": "51044337411cb49470bc1d223bc2e444",
-    "authors": [
-      "Steffen Bollmann"
-    ],
-    "updated_at": "2026-02-21T00:56:39Z"
-  },
-  "books/tutorials/phase_processing/swi.md": {
-    "doi_url": "https://doi.org/10.5281/zenodo.18718434",
-    "website_url": "https://neurodesk.org/edu/tutorials/phase_processing/swi.html",
-    "concept_recid": "18718434",
-    "record_id": "18718435",
-    "content_type": "tutorial",
-    "checksum": "feb6cfd67e52b3ff1ded97dec3e2d22a",
-    "authors": [
-      "Steffen Bollmann"
-    ],
-    "updated_at": "2026-02-21T00:56:42Z"
+    "updated_at": "2026-10-05T15:32:48Z"
   },
   "books/tutorials/functional_imaging/mriqc.md": {
     "doi_url": "https://doi.org/10.5281/zenodo.18718436",
@@ -326,13 +289,13 @@
     "doi_url": "https://doi.org/10.5281/zenodo.18728766",
     "website_url": "https://neurodesk.org/edu/examples/functional_imaging/mri_vol2surf.html",
     "concept_recid": "18728766",
-    "record_id": "18882602",
+    "record_id": "23166273",
     "content_type": "notebook",
-    "checksum": "1ebc8fdd32b6ef96f550dbf4bbc232f2",
+    "checksum": "97f1a419f3cf7ca367b1a12995f9a80a",
     "authors": [
       "Fernanda L. Ribeiro"
     ],
-    "updated_at": "2026-03-05T23:01:48Z"
+    "updated_at": "2026-10-05T15:31:48Z"
   },
   "books/examples/template.ipynb": {
     "doi_url": "https://doi.org/10.5281/zenodo.18728768",
@@ -539,25 +502,25 @@
     "doi_url": "https://doi.org/10.5281/zenodo.18728804",
     "website_url": "https://neurodesk.org/edu/examples/workflows/MRIQC.html",
     "concept_recid": "18728804",
-    "record_id": "18930656",
+    "record_id": "23166285",
     "content_type": "notebook",
-    "checksum": "c74dbdf3f54ea0d87130de5186fc5e81",
+    "checksum": "1b3c23d24efc1101aba58e714e2d52fc",
     "authors": [
       "Monika Doerig"
     ],
-    "updated_at": "2026-03-10T00:31:10Z"
+    "updated_at": "2026-10-05T15:32:43Z"
   },
   "books/examples/functional_imaging/AFNI_processing_task_based.ipynb": {
     "doi_url": "https://doi.org/10.5281/zenodo.18728806",
     "website_url": "https://neurodesk.org/edu/examples/functional_imaging/AFNI_processing_task_based.html",
     "concept_recid": "18728806",
-    "record_id": "23146612",
+    "record_id": "23166267",
     "content_type": "notebook",
-    "checksum": "2d301cb6a24740868a883ca7ed3c8438",
+    "checksum": "2b2575ae34a1da938cd35f3464e72ab8",
     "authors": [
       "Paul A. Taylor (SSCC, NIMH, NIH, USA)"
     ],
-    "updated_at": "2026-10-04T22:40:55Z"
+    "updated_at": "2026-10-05T15:31:29Z"
   },
   "books/examples/structural_imaging/SYNcro.ipynb": {
     "doi_url": "https://doi.org/10.5281/zenodo.18728808",
@@ -637,13 +600,13 @@
     "doi_url": "https://doi.org/10.5281/zenodo.18740141",
     "website_url": "https://neurodesk.org/edu/examples/functional_imaging/FSLnets_course_practical.html",
     "concept_recid": "18740141",
-    "record_id": "18934066",
+    "record_id": "23166280",
     "content_type": "notebook",
-    "checksum": "287903cca7c10bf03e38a26625ddb2e5",
+    "checksum": "a105abb36c584f3d288f11cd338c88ff",
     "authors": [
       "Monika Doerig"
     ],
-    "updated_at": "2026-03-10T07:26:41Z"
+    "updated_at": "2026-10-05T15:31:57Z"
   },
   "books/examples/diffusion_imaging/mrtrix3tissue.ipynb": {
     "doi_url": "https://doi.org/10.5281/zenodo.18740151",
@@ -662,14 +625,14 @@
     "doi_url": "https://doi.org/10.5281/zenodo.18740153",
     "website_url": "https://neurodesk.org/edu/examples/functional_imaging/process_five_echo_dataset.html",
     "concept_recid": "18740153",
-    "record_id": "21276607",
+    "record_id": "23166268",
     "content_type": "notebook",
-    "checksum": "0c4da40ac5601c342d522fa522be413a",
+    "checksum": "1f3d5a1c272071eaa6b51cd0939c8156",
     "authors": [
       "Daniel Handwerker",
       "Monika Doerig"
     ],
-    "updated_at": "2026-07-09T09:06:03Z"
+    "updated_at": "2026-10-05T15:31:35Z"
   },
   "books/examples/functional_imaging/fmriprep.ipynb": {
     "doi_url": "https://doi.org/10.5281/zenodo.18740155",
@@ -749,11 +712,13 @@
     "doi_url": "https://doi.org/10.5281/zenodo.18835281",
     "website_url": "https://neurodesk.org/edu/examples/workflows/nipype_full.html",
     "concept_recid": "18835281",
-    "record_id": "21270809",
+    "record_id": "22684953",
     "content_type": "notebook",
-    "checksum": "c9fa839cf573a9945eec9695c8d0d3b2",
-    "authors": [],
-    "updated_at": "2026-07-09T00:57:02Z"
+    "checksum": "ba48aea0dfc4dc4001118367837cd7f5",
+    "authors": [
+      "Monika Doerig"
+    ],
+    "updated_at": "2026-10-05T15:31:41Z"
   },
   "books/examples/structural_imaging/freesurfer.ipynb": {
     "doi_url": "https://doi.org/10.5281/zenodo.18843449",
@@ -804,16 +769,6 @@
     ],
     "updated_at": "2026-10-04T22:41:25Z"
   },
-  "books/tutorials/neurodesk_workflows/accessing_neurodesk_tools.ipynb": {
-    "doi_url": "https://doi.org/10.5281/zenodo.18991604",
-    "website_url": "https://neurodesk.org/edu/tutorials/neurodesk_workflows/accessing_neurodesk_tools.html",
-    "concept_recid": "18991604",
-    "record_id": "18995771",
-    "content_type": "notebook",
-    "checksum": "dc699174320ca44e598e9ccb7a377352",
-    "authors": [],
-    "updated_at": "2026-03-13T05:48:18Z"
-  },
   "books/tutorials/about_neurodesk/accessing_neurodesk_tools.ipynb": {
     "doi_url": "https://doi.org/10.5281/zenodo.18995883",
     "website_url": "https://neurodesk.org/edu/tutorials/about_neurodesk/accessing_neurodesk_tools.html",
@@ -849,16 +804,6 @@
       "Mich\u00e8le Masson-Trottier"
     ],
     "updated_at": "2026-10-04T22:41:06Z"
-  },
-  "books/tutorials/phase_processing/qsm.ipynb": {
-    "doi_url": "https://doi.org/10.5281/zenodo.19043249",
-    "website_url": "https://neurodesk.org/edu/tutorials/phase_processing/qsm.html",
-    "concept_recid": "19043249",
-    "record_id": "19043250",
-    "content_type": "notebook",
-    "checksum": "acb79414fd72c86e247ec834a6ceca3e",
-    "authors": [],
-    "updated_at": "2026-03-16T04:30:27Z"
   },
   "books/examples/functional_imaging/Demo_fmriprep_FEAT.ipynb": {
     "doi_url": "https://doi.org/10.5281/zenodo.19627256",
