@@ -878,24 +878,24 @@
     "doi_url": "https://doi.org/10.5281/zenodo.21369394",
     "website_url": "https://neurodesk.org/edu/examples/diffusion_imaging/qsiprep.html",
     "concept_recid": "21369394",
-    "record_id": "21369395",
+    "record_id": "23166396",
     "content_type": "notebook",
-    "checksum": "f78d71be3b4db3fef40a4ebe0fda85a5",
+    "checksum": "55d78111eea80ef72aa213b8d0d6083d",
     "authors": [
       "Monika Doerig"
     ],
-    "updated_at": "2026-07-15T06:23:19Z"
+    "updated_at": "2026-10-05T15:39:44Z"
   },
   "books/examples/diffusion_imaging/qsirecon.ipynb": {
     "doi_url": "https://doi.org/10.5281/zenodo.21403392",
     "website_url": "https://neurodesk.org/edu/examples/diffusion_imaging/qsirecon.html",
     "concept_recid": "21403392",
-    "record_id": "23026937",
+    "record_id": "23166408",
     "content_type": "notebook",
-    "checksum": "ee3fc34937019a881a599fa6ad449680",
+    "checksum": "63d437516eaed26acef23a0b8dafd0c7",
     "authors": [
       "Monika Doerig"
     ],
-    "updated_at": "2026-09-29T00:17:25Z"
+    "updated_at": "2026-10-05T15:40:17Z"
   }
 }
