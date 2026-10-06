@@ -371,13 +371,13 @@
     "doi_url": "https://doi.org/10.5281/zenodo.18728780",
     "website_url": "https://neurodesk.org/edu/examples/structural_imaging/FSL_course_bet.html",
     "concept_recid": "18728780",
-    "record_id": "19491028",
+    "record_id": "23191512",
     "content_type": "notebook",
-    "checksum": "1219ecd494fe20ed120cbaddeb8f1e8f",
+    "checksum": "57a09212de63b4aa4a66e286c91267c6",
     "authors": [
       "Monika Doerig"
     ],
-    "updated_at": "2026-04-10T03:39:05Z"
+    "updated_at": "2026-10-06T15:03:35Z"
   },
   "books/examples/workflows/ipyniivue_ipywidgets.ipynb": {
     "doi_url": "https://doi.org/10.5281/zenodo.18728782",
