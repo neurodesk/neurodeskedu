@@ -1,0 +1,332 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":dependencyDashboard",
+    "helpers:pinGitHubActionDigests",
+    ":semanticCommitsDisabled"
+  ],
+  "timezone": "Australia/Brisbane",
+  "schedule": [
+    "before 6am on monday"
+  ],
+  "prConcurrentLimit": 5,
+  "labels": [
+    "dependencies"
+  ],
+  "ignorePaths": [
+    "**/node_modules/**"
+  ],
+  "pip_requirements": {
+    "managerFilePatterns": [
+      "/(^|/)[\\w-]*requirements([-._]\\w+)?\\.(txt|pip)$/",
+      "/^requirements-[\\w-]+\\.txt$/"
+    ]
+  },
+  "cdnurl": {
+    "managerFilePatterns": [
+      "/^\\.github/scripts/build_book\\.py$/"
+    ]
+  },
+  "customDatasources": {
+    "neurodesk-modules": {
+      "description": "Neurodesk application catalogue (neurocommand apps.json): {tool: {apps: {'tool version' or 'xGUI-tool version': ...}}}; GUI launchers repeat the container version, hence $distinct.",
+      "defaultRegistryUrlTemplate": "https://raw.githubusercontent.com/neurodesk/neurocommand/main/neurodesk/apps.json",
+      "format": "json",
+      "transformTemplates": [
+        "{\"releases\": [$distinct($keys($lookup($, \"{{{packageName}}}\").apps).$substringAfter($, \" \")).{\"version\": $}]}"
+      ]
+    }
+  },
+  "packageRules": [
+    {
+      "description": "Workflow actions, grouped into one review (as in neurodesk.github.io).",
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchDepTypes": [
+        "action"
+      ],
+      "groupName": "github actions"
+    },
+    {
+      "description": "Toolchain versions set through setup-* actions.",
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchDepTypes": [
+        "uses-with"
+      ],
+      "groupName": "workflow runtimes"
+    },
+    {
+      "description": "Runner OS upgrades change the notebook execution environment; approve deliberately.",
+      "matchDatasources": [
+        "github-runners"
+      ],
+      "groupName": "github runner images",
+      "dependencyDashboardApproval": true
+    },
+    {
+      "description": "The org's reusable workflow intentionally follows main; do not pin it to a digest.",
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchDepNames": [
+        "NeuroDesk/neurodesk.github.io"
+      ],
+      "pinDigests": false
+    },
+    {
+      "description": "Book build requirements.",
+      "matchManagers": [
+        "pip_requirements"
+      ],
+      "groupName": "book build"
+    },
+    {
+      "description": "Book page assets loaded from CDNs.",
+      "matchManagers": [
+        "cdnurl"
+      ],
+      "matchFileNames": [
+        ".github/scripts/build_book.py"
+      ],
+      "groupName": "book build"
+    },
+    {
+      "description": "html-manager 1.x pairs with ipywidgets 8; a major needs the widget stack checked.",
+      "matchDepNames": [
+        "@jupyter-widgets/html-manager",
+        "require.js"
+      ],
+      "groupName": "book build",
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "dependencyDashboardApproval": true
+    },
+    {
+      "description": "Notebook dependencies: one PR per notebook, so CI executes exactly the notebook that changed.",
+      "matchFileNames": [
+        "books/**/*.ipynb"
+      ],
+      "matchDatasources": [
+        "pypi",
+        "github-tags",
+        "cdnjs"
+      ],
+      "groupName": "notebook dependencies",
+      "additionalBranchPrefix": "{{{replace '[^A-Za-z0-9]+' '-' (lowercase packageFile)}}}-",
+      "commitMessageSuffix": "in {{{packageFile}}}",
+      "schedule": [
+        "before 6am on the first day of the month"
+      ]
+    },
+    {
+      "description": "A major release in a published tutorial needs a reviewer's eye on the narrative and outputs.",
+      "matchFileNames": [
+        "books/**/*.ipynb"
+      ],
+      "matchDatasources": [
+        "pypi",
+        "github-tags",
+        "cdnjs"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "dependencyDashboardApproval": true
+    },
+    {
+      "description": "DIPY, FURY and VTK must stay mutually compatible inside a notebook.",
+      "matchDepNames": [
+        "dipy",
+        "fury",
+        "vtk"
+      ],
+      "matchFileNames": [
+        "books/**/*.ipynb"
+      ],
+      "prBodyNotes": [
+        "> [!WARNING]\n> DIPY notebooks assert the installed DIPY version; keep `fury` and `vtk` compatible with it."
+      ]
+    },
+    {
+      "description": "Tutorial modules are pinned for reproducibility: list newer catalogue versions on the dashboard, raise a PR (one per file) only when a maintainer ticks it.",
+      "matchDatasources": [
+        "custom.neurodesk-modules"
+      ],
+      "dependencyDashboardApproval": true,
+      "groupName": "neurodesk modules",
+      "additionalBranchPrefix": "{{{replace '[^A-Za-z0-9]+' '-' (lowercase packageFile)}}}-",
+      "commitMessageSuffix": "in {{{packageFile}}}",
+      "prBodyNotes": [
+        "> [!WARNING]\n> Re-run this tutorial on Neurodesk and review outputs and text before merging; results can change with the tool version."
+      ]
+    },
+    {
+      "description": "Hold: the TBSS demo pins fsl/6.0.3 and says it needs that version for the TBSS commands to work (cell 8 comment). Re-validate TBSS on a newer FSL before lifting this.",
+      "matchFileNames": [
+        "books/examples/diffusion_imaging/Diffusion_TBSS_Demo.ipynb"
+      ],
+      "matchDatasources": [
+        "custom.neurodesk-modules"
+      ],
+      "matchDepNames": [
+        "fsl"
+      ],
+      "enabled": false
+    },
+    {
+      "description": "The papermill/Slurm example loads modules from an HPC site's own module tree, not Neurodesk.",
+      "matchFileNames": [
+        "books/examples/workflows/papermill-slurm-submission-example.ipynb"
+      ],
+      "matchDatasources": [
+        "custom.neurodesk-modules"
+      ],
+      "enabled": false
+    },
+    {
+      "description": "SPM12 releases are numbered r<revision> (e.g. r7771), which loose versioning cannot parse.",
+      "matchDatasources": [
+        "custom.neurodesk-modules"
+      ],
+      "matchDepNames": [
+        "spm12"
+      ],
+      "versioning": "regex:^r(?<major>\\d+)$"
+    },
+    {
+      "description": "Supply-chain guard: let new npm and PyPI releases age three days before proposing them.",
+      "matchDatasources": [
+        "npm",
+        "pypi"
+      ],
+      "minimumReleaseAge": "3 days"
+    }
+  ],
+  "customManagers": [
+    {
+      "description": "Exact pip pins in notebook CODE-cell source: `pip install` lines (!pip, %pip, python -m pip, uv pip) and the subprocess argument-list form [.., \"pip\", \"install\", \"pkg==x\", ..]. Markdown cells and outputs are never matched (structural JSON anchors, negative-tested).",
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^books/.+\\.ipynb$/"
+      ],
+      "matchStringsStrategy": "recursive",
+      "matchStrings": [
+        "\\n {3}\"cell_type\": \"code\",[\\s\\S]*?\\n {3}\"source\": (?:\\[(?:\\s*\"(?:[^\"\\\\]|\\\\.)*\",?)*\\s*\\]|\"(?:[^\"\\\\]|\\\\.)*\")",
+        "\\n {3}\"source\": (?:\\[(?:\\s*\"(?:[^\"\\\\]|\\\\.)*\",?)*\\s*\\]|\"(?:[^\"\\\\]|\\\\.)*\")",
+        "\"(?:[^\"\\\\]|\\\\.)*pip install (?:[^\"\\\\]|\\\\.)*\"|\\\\\"pip\\\\\", \\\\\"install\\\\\",[^\\]]*\\]",
+        "(?<depName>[A-Za-z][A-Za-z0-9._-]*)==(?<currentValue>\\d[^\\s\\\"'\\\\,\\]]*)"
+      ],
+      "depNameTemplate": "{{{replace '[-_.]+' '-' (lowercase depName)}}}",
+      "datasourceTemplate": "pypi"
+    },
+    {
+      "description": "DIPY notebooks assert the installed version in code; keep the assertion equal to the pip pin.",
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^books/.+\\.ipynb$/"
+      ],
+      "matchStringsStrategy": "recursive",
+      "matchStrings": [
+        "\\n {3}\"cell_type\": \"code\",[\\s\\S]*?\\n {3}\"source\": (?:\\[(?:\\s*\"(?:[^\"\\\\]|\\\\.)*\",?)*\\s*\\]|\"(?:[^\"\\\\]|\\\\.)*\")",
+        "\\n {3}\"source\": (?:\\[(?:\\s*\"(?:[^\"\\\\]|\\\\.)*\",?)*\\s*\\]|\"(?:[^\"\\\\]|\\\\.)*\")",
+        "expected_dipy_version = \\\\\"(?<currentValue>\\d[^\"\\\\]*)\\\\\""
+      ],
+      "depNameTemplate": "dipy",
+      "datasourceTemplate": "pypi"
+    },
+    {
+      "description": "R package installed from a GitHub tag in the R-magic tutorial (code cells only).",
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^books/.+\\.ipynb$/"
+      ],
+      "matchStringsStrategy": "recursive",
+      "matchStrings": [
+        "\\n {3}\"cell_type\": \"code\",[\\s\\S]*?\\n {3}\"source\": (?:\\[(?:\\s*\"(?:[^\"\\\\]|\\\\.)*\",?)*\\s*\\]|\"(?:[^\"\\\\]|\\\\.)*\")",
+        "\\n {3}\"source\": (?:\\[(?:\\s*\"(?:[^\"\\\\]|\\\\.)*\",?)*\\s*\\]|\"(?:[^\"\\\\]|\\\\.)*\")",
+        "remotes::install_github\\(\\\\\"ggseg/ggseg\\\\\", ref = \\\\\"(?<currentValue>v[^\"\\\\]+)\\\\\""
+      ],
+      "depNameTemplate": "ggseg/ggseg",
+      "datasourceTemplate": "github-tags"
+    },
+    {
+      "description": "cdnjs assets referenced from notebook cell source (never from outputs).",
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^books/.+\\.ipynb$/"
+      ],
+      "matchStringsStrategy": "recursive",
+      "matchStrings": [
+        "\\n {3}\"cell_type\": \"(?:code|markdown|raw)\",[\\s\\S]*?\\n {3}\"source\": (?:\\[(?:\\s*\"(?:[^\"\\\\]|\\\\.)*\",?)*\\s*\\]|\"(?:[^\"\\\\]|\\\\.)*\")",
+        "\\n {3}\"source\": (?:\\[(?:\\s*\"(?:[^\"\\\\]|\\\\.)*\",?)*\\s*\\]|\"(?:[^\"\\\\]|\\\\.)*\")",
+        "cdnjs\\.cloudflare\\.com/ajax/libs/(?<depName>[^/\\\"\\\\]+)/(?<currentValue>\\d[^/\\\"\\\\]*)/"
+      ],
+      "datasourceTemplate": "cdnjs"
+    },
+    {
+      "description": "Neurodesk tool modules loaded in notebook code or named in markdown cells, looked up in the neurocommand app catalogue so only versions Neurodesk ships are proposed.",
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^books/.+\\.ipynb$/"
+      ],
+      "matchStringsStrategy": "recursive",
+      "matchStrings": [
+        "\\n {3}\"cell_type\": \"(?:code|markdown|raw)\",[\\s\\S]*?\\n {3}\"source\": (?:\\[(?:\\s*\"(?:[^\"\\\\]|\\\\.)*\",?)*\\s*\\]|\"(?:[^\"\\\\]|\\\\.)*\")",
+        "\\n {3}\"source\": (?:\\[(?:\\s*\"(?:[^\"\\\\]|\\\\.)*\",?)*\\s*\\]|\"(?:[^\"\\\\]|\\\\.)*\")",
+        "(?:module\\.load\\(\\s*\\\\?['\\\"]|(?:module load|\\bml) )(?<depName>[a-z][a-z0-9_-]*)/(?<currentValue>[A-Za-z0-9._+-]+)"
+      ],
+      "datasourceTemplate": "custom.neurodesk-modules",
+      "versioningTemplate": "loose"
+    },
+    {
+      "description": "Neurodesk tool modules named in markdown tutorials and loaded by the CI module smoke test.",
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^books/.+\\.md$/",
+        "/^\\.github/workflows/run_and_publish_notebooks\\.yml$/"
+      ],
+      "matchStrings": [
+        "(?:module\\.load\\(\\s*\\\\?['\\\"]|(?:module load|\\bml) )(?<depName>[a-z][a-z0-9_-]*)/(?<currentValue>[A-Za-z0-9._+-]+)"
+      ],
+      "datasourceTemplate": "custom.neurodesk-modules",
+      "versioningTemplate": "loose"
+    },
+    {
+      "description": "Jupyter widgets HTML manager loaded from jsDelivr by the book builder.",
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^\\.github/scripts/build_book\\.py$/"
+      ],
+      "matchStrings": [
+        "cdn\\.jsdelivr\\.net/npm/(?<depName>@jupyter-widgets/html-manager)@(?<currentValue>[^/]+)/"
+      ],
+      "datasourceTemplate": "npm"
+    },
+    {
+      "description": "jupyterlmod pinned by the CVMFS setup script used in CI.",
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^\\.github/scripts/setup-cvmfs\\.sh$/"
+      ],
+      "matchStrings": [
+        "jupyterlmod==(?<currentValue>\\d[^\\s\\\"'\\\\]*)"
+      ],
+      "depNameTemplate": "jupyterlmod",
+      "datasourceTemplate": "pypi"
+    }
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "schedule": [
+      "at any time"
+    ],
+    "labels": [
+      "security"
+    ]
+  }
+}
