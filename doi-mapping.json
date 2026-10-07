@@ -265,13 +265,13 @@
     "doi_url": "https://doi.org/10.5281/zenodo.18728761",
     "website_url": "https://neurodesk.org/edu/examples/spectroscopy/osprey.html",
     "concept_recid": "18728761",
-    "record_id": "19180703",
+    "record_id": "23224484",
     "content_type": "notebook",
-    "checksum": "f61f23402ce8485269a230c458abcd1a",
+    "checksum": "2ee2d69b0c11884d585e8a62af9f61bb",
     "authors": [
       "Michal Toth"
     ],
-    "updated_at": "2026-03-23T07:29:51Z"
+    "updated_at": "2026-10-07T22:25:34Z"
   },
   "books/examples/functional_imaging/intro_to_preprocessing.ipynb": {
     "doi_url": "https://doi.org/10.5281/zenodo.18728764",
