@@ -1,0 +1,876 @@
+[?25l[2K[0G[+] 0.0s
+Fetch Shard Index for conda-forge/linux-64                                                ✔ Done (0.1 sec)
+Fetch Shard Index for conda-forge/noarch                                                  ✔ Done (0.1 sec)
+Fetching and Parsing Packages' Shards                                                     ✔ Done (6.6 sec)
+
+Pinned packages:
+
+  - python=3.13
+
+Pinned packages:
+
+  - python=3.13
+
+Resolving Environment                                                                     ✔ Done (2.7 sec)
+
+Transaction
+
+  Prefix: /opt/conda
+
+  Updating specs:
+
+   - r-essentials
+   - rpy2
+
+
+  Package                         Version  Build                 Channel          Size
+────────────────────────────────────────────────────────────────────────────────────────
+  Install:
+────────────────────────────────────────────────────────────────────────────────────────
+
+  [32m+ _r-mutex                 [0m       1.0.1  anacondar_1           conda-forge       4kB
+  [32m+ binutils_impl_linux-64   [0m      2.46.1  default_hfdba357_102  conda-forge       4MB
+  [32m+ binutils_linux-64        [0m      2.46.1  default_h4852527_102  conda-forge      36kB
+  [32m+ bwidget                  [0m      1.10.1  hfc2019e_3            conda-forge     135kB
+  [32m+ cairo                    [0m      1.18.6  h3c89d7e_0            conda-forge       1MB
+  [32m+ curl                     [0m      8.22.0  ha042cf0_0            conda-forge     197kB
+  [32m+ font-ttf-dejavu-sans-mono[0m        2.37  hab24e00_0            conda-forge     397kB
+  [32m+ font-ttf-inconsolata     [0m       3.000  h77eed37_0            conda-forge      97kB
+  [32m+ font-ttf-source-code-pro [0m       2.038  h77eed37_0            conda-forge     701kB
+  [32m+ font-ttf-ubuntu          [0m        0.83  h77eed37_3            conda-forge       2MB
+  [32m+ fontconfig               [0m      2.18.3  h4db4eae_1            conda-forge     296kB
+  [32m+ fonts-conda-ecosystem    [0m           1  0                     conda-forge       4kB
+  [32m+ fonts-conda-forge        [0m           1  hc364b38_1            conda-forge       4kB
+  [32m+ freetype                 [0m      2.14.3  ha770c72_2            conda-forge     175kB
+  [32m+ fribidi                  [0m      1.0.17  h7cc23a3_0            conda-forge      64kB
+  [32m+ gcc_impl_linux-64        [0m      16.2.0  h9891192_7            conda-forge      86MB
+  [32m+ gcc_linux-64             [0m      16.2.0  h0ab548f_2            conda-forge      30kB
+  [32m+ gfortran_impl_linux-64   [0m      16.2.0  hf930d89_7            conda-forge      21MB
+  [32m+ graphite2                [0m      1.3.15  h54a6638_1            conda-forge     103kB
+  [32m+ gsl                      [0m         2.7  he838d99_0            conda-forge       3MB
+  [32m+ gxx_impl_linux-64        [0m      16.2.0  h0d273dc_7            conda-forge      17MB
+  [32m+ gxx_linux-64             [0m      16.2.0  h23aca61_2            conda-forge      29kB
+  [32m+ harfbuzz                 [0m      14.5.1  ha770c72_0            conda-forge      11kB
+  [32m+ kernel-headers_linux-64  [0m      6.12.0  he073ed8_6            conda-forge       2MB
+  [32m+ lerc                     [0m       4.2.0  hdb68285_0            conda-forge     271kB
+  [32m+ libblas                  [0m      3.11.0  11_h4a7cf45_openblas  conda-forge      18kB
+  [32m+ libcblas                 [0m      3.11.0  11_h0358290_openblas  conda-forge      18kB
+  [32m+ libdeflate               [0m        1.25  hd45a770_1            conda-forge      74kB
+  [32m+ libfreetype              [0m      2.14.3  ha770c72_2            conda-forge       8kB
+  [32m+ libfreetype6             [0m      2.14.3  h5e6c136_2            conda-forge     388kB
+  [32m+ libgcc-devel_linux-64    [0m      16.2.0  he3ce08f_107          conda-forge       3MB
+  [32m+ libgcc-ng                [0m      16.2.0  h69a702a_5            conda-forge      29kB
+  [32m+ libgfortran              [0m      16.2.0  h69a702a_7            conda-forge      29kB
+  [32m+ libgfortran5             [0m      16.2.0  h6b99dfc_7            conda-forge       3MB
+  [32m+ libglib                  [0m      2.90.0  h569388d_0            conda-forge       5MB
+  [32m+ libharfbuzz              [0m      14.5.1  h23af247_0            conda-forge       1MB
+  [32m+ libharfbuzz-devel        [0m      14.5.1  h23af247_0            conda-forge       2MB
+  [32m+ libjpeg-turbo            [0m       3.2.0  hb03c661_1            conda-forge     650kB
+  [32m+ liblapack                [0m      3.11.0  11_h47877c9_openblas  conda-forge      18kB
+  [32m+ libopenblas              [0m      0.3.34  pthreads_hf13c14d_2   conda-forge       7MB
+  [32m+ libpng                   [0m      1.6.59  h922cc85_0            conda-forge     317kB
+  [32m+ libsanitizer             [0m      16.2.0  h3048135_7            conda-forge       8MB
+  [32m+ libstdcxx-devel_linux-64 [0m      16.2.0  h86e191b_107          conda-forge      23MB
+  [32m+ libtiff                  [0m       4.7.2  hcc2c06a_1            conda-forge     460kB
+  [32m+ libuv                    [0m      1.52.1  h280c20c_1            conda-forge     420kB
+  [32m+ libwebp-base             [0m       1.6.0  hd42ef1d_1            conda-forge     428kB
+  [32m+ libxcb                   [0m      1.17.0  hb83e432_2            conda-forge     395kB
+  [32m+ make                     [0m       4.4.1  hb03c661_3            conda-forge     511kB
+  [32m+ pandoc                   [0m        3.12  ha770c72_0            conda-forge      23MB
+  [32m+ pango                    [0m      1.58.2  h7bb47b9_1            conda-forge     472kB
+  [32m+ pcre2                    [0m       10.47  h8b3dc9c_1            conda-forge       1MB
+  [32m+ pixman                   [0m      0.46.4  h54a6638_3            conda-forge     377kB
+  [32m+ pthread-stubs            [0m         0.4  h7cc23a3_1004         conda-forge      10kB
+  [32m+ r-askpass                [0m       1.2.1  r45h54b55ab_1         conda-forge      32kB
+  [32m+ r-assertthat             [0m       0.2.1  r45hc72bb7e_6         conda-forge      73kB
+  [32m+ r-backports              [0m       1.5.1  r45h54b55ab_0         conda-forge     131kB
+  [32m+ r-base                   [0m       4.5.3  h502d0c9_3            conda-forge      27MB
+  [32m+ r-base64enc              [0m       0.1_6  r45h54b55ab_0         conda-forge      49kB
+  [32m+ r-bit                    [0m       4.6.0  r45h54b55ab_1         conda-forge     621kB
+  [32m+ r-bit64                  [0m       4.8.6  r45hddc5280_0         conda-forge     575kB
+  [32m+ r-blob                   [0m       1.3.0  r45hc72bb7e_0         conda-forge      70kB
+  [32m+ r-boot                   [0m      1.3_32  r45hc72bb7e_1         conda-forge     645kB
+  [32m+ r-broom                  [0m      1.0.13  r45hc72bb7e_0         conda-forge       2MB
+  [32m+ r-bslib                  [0m      0.12.0  r45hc72bb7e_0         conda-forge       6MB
+  [32m+ r-cachem                 [0m       1.1.0  r45h54b55ab_2         conda-forge      77kB
+  [32m+ r-callr                  [0m       3.7.6  r45hc72bb7e_2         conda-forge     454kB
+  [32m+ r-caret                  [0m       7.0_1  r45h54b55ab_0         conda-forge       4MB
+  [32m+ r-cellranger             [0m       1.1.0  r45hc72bb7e_1008      conda-forge     112kB
+  [32m+ r-class                  [0m      7.3_24  r45h54b55ab_0         conda-forge     110kB
+  [32m+ r-cli                    [0m       3.6.6  r45h3697838_0         conda-forge       1MB
+  [32m+ r-clipr                  [0m       0.8.1  r45hc72bb7e_0         conda-forge      73kB
+  [32m+ r-clock                  [0m       0.7.4  r45h3697838_0         conda-forge       2MB
+  [32m+ r-cluster                [0m     2.1.8.3  r45heaba542_0         conda-forge     592kB
+  [32m+ r-codetools              [0m      0.2_20  r45hc72bb7e_2         conda-forge     109kB
+  [32m+ r-colorspace             [0m       2.1_3  r45h54b55ab_0         conda-forge       3MB
+  [32m+ r-commonmark             [0m       2.0.0  r45h54b55ab_1         conda-forge     140kB
+  [32m+ r-conflicted             [0m       1.2.0  r45h785f33e_3         conda-forge      64kB
+  [32m+ r-cpp11                  [0m       0.5.5  r45h785f33e_0         conda-forge     246kB
+  [32m+ r-crayon                 [0m       1.5.3  r45hc72bb7e_2         conda-forge     168kB
+  [32m+ r-crul                   [0m       1.6.0  r45hc72bb7e_1         conda-forge     646kB
+  [32m+ r-curl                   [0m       8.0.0  r45h444973c_0         conda-forge     500kB
+  [32m+ r-data.table             [0m    1.18.6.1  r45hbd9402d_0         conda-forge       3MB
+  [32m+ r-dbi                    [0m       1.3.0  r45hc72bb7e_0         conda-forge     893kB
+  [32m+ r-dbplyr                 [0m       2.6.0  r45hc72bb7e_0         conda-forge       1MB
+  [32m+ r-diagram                [0m       1.6.5  r45ha770c72_4         conda-forge     678kB
+  [32m+ r-digest                 [0m      0.6.39  r45h3697838_0         conda-forge     218kB
+  [32m+ r-dplyr                  [0m       1.2.1  r45h3697838_0         conda-forge       1MB
+  [32m+ r-dtplyr                 [0m       1.3.3  r45hc72bb7e_0         conda-forge     411kB
+  [32m+ r-e1071                  [0m      1.7_17  r45h3697838_0         conda-forge     598kB
+  [32m+ r-ellipsis               [0m       0.3.3  r45h54b55ab_0         conda-forge      33kB
+  [32m+ r-essentials             [0m         4.5  r45hd8ed1ab_2006      conda-forge       8kB
+  [32m+ r-evaluate               [0m       1.0.5  r45hc72bb7e_1         conda-forge     112kB
+  [32m+ r-fansi                  [0m       1.0.7  r45h54b55ab_0         conda-forge     329kB
+  [32m+ r-farver                 [0m       2.1.2  r45h3697838_2         conda-forge       1MB
+  [32m+ r-fastmap                [0m       1.2.0  r45h3697838_2         conda-forge      74kB
+  [32m+ r-fontawesome            [0m       0.5.3  r45hc72bb7e_1         conda-forge       1MB
+  [32m+ r-forcats                [0m       1.0.1  r45hc72bb7e_0         conda-forge     424kB
+  [32m+ r-foreach                [0m       1.5.2  r45hc72bb7e_4         conda-forge     141kB
+  [32m+ r-foreign                [0m      0.8_91  r45h54b55ab_0         conda-forge     270kB
+  [32m+ r-formatr                [0m        1.14  r45hc72bb7e_3         conda-forge     166kB
+  [32m+ r-fs                     [0m       2.1.0  r45h3697838_0         conda-forge     243kB
+  [32m+ r-future                 [0m      1.76.0  r45hacb3a79_0         conda-forge     991kB
+  [32m+ r-future.apply           [0m      1.20.2  r45hc72bb7e_0         conda-forge     208kB
+  [32m+ r-gargle                 [0m       1.6.1  r45h785f33e_0         conda-forge     724kB
+  [32m+ r-generics               [0m       0.1.4  r45hc72bb7e_1         conda-forge      88kB
+  [32m+ r-ggplot2                [0m       4.0.3  r45h785f33e_0         conda-forge       8MB
+  [32m+ r-gistr                  [0m       0.9.0  r45hc72bb7e_4         conda-forge     775kB
+  [32m+ r-glmnet                 [0m         5.0  r45ha36cffa_0         conda-forge       2MB
+  [32m+ r-globals                [0m      0.19.1  r45hc72bb7e_0         conda-forge     182kB
+  [32m+ r-glue                   [0m       1.8.1  r45h54b55ab_0         conda-forge     172kB
+  [32m+ r-googledrive            [0m       2.1.2  r45hc72bb7e_1         conda-forge       1MB
+  [32m+ r-googlesheets4          [0m       1.1.2  r45h785f33e_1         conda-forge     524kB
+  [32m+ r-gower                  [0m       1.0.2  r45h54b55ab_0         conda-forge     227kB
+  [32m+ r-gtable                 [0m       0.3.6  r45hc72bb7e_1         conda-forge     229kB
+  [32m+ r-hardhat                [0m       1.4.3  r45hc72bb7e_0         conda-forge     867kB
+  [32m+ r-haven                  [0m       2.5.5  r45h6d565e7_1         conda-forge     385kB
+  [32m+ r-hexbin                 [0m      1.28.6  r45heaba542_0         conda-forge       2MB
+  [32m+ r-highr                  [0m        0.12  r45hc72bb7e_0         conda-forge      57kB
+  [32m+ r-hms                    [0m       1.1.4  r45hc72bb7e_0         conda-forge     113kB
+  [32m+ r-htmltools              [0m       0.5.9  r45h3697838_0         conda-forge     367kB
+  [32m+ r-htmlwidgets            [0m       1.6.4  r45h785f33e_4         conda-forge     426kB
+  [32m+ r-httpcode               [0m       0.3.0  r45ha770c72_5         conda-forge      40kB
+  [32m+ r-httpuv                 [0m      1.6.17  r45h6d565e7_0         conda-forge     554kB
+  [32m+ r-httr                   [0m       1.4.9  r45hacb3a79_0         conda-forge     473kB
+  [32m+ r-ids                    [0m       1.0.1  r45hc72bb7e_5         conda-forge     130kB
+  [32m+ r-ipred                  [0m      0.9_15  r45h54b55ab_2         conda-forge     397kB
+  [32m+ r-irdisplay              [0m         1.1  r45hd8ed1ab_4         conda-forge      40kB
+  [32m+ r-irkernel               [0m       1.3.2  r45h785f33e_3         conda-forge     235kB
+  [32m+ r-isoband                [0m       0.3.0  r45h3697838_0         conda-forge       2MB
+  [32m+ r-iterators              [0m      1.0.14  r45hc72bb7e_4         conda-forge     350kB
+  [32m+ r-jquerylib              [0m       0.1.4  r45hc72bb7e_4         conda-forge     307kB
+  [32m+ r-jsonlite               [0m       2.0.0  r45h54b55ab_1         conda-forge     639kB
+  [32m+ r-kernsmooth             [0m     2.23_27  r45hf1ecf5c_0         conda-forge     103kB
+  [32m+ r-knitr                  [0m        1.52  r45hacb3a79_0         conda-forge       1MB
+  [32m+ r-labeling               [0m       0.4.3  r45hc72bb7e_2         conda-forge      70kB
+  [32m+ r-later                  [0m       1.4.8  r45h3697838_0         conda-forge     153kB
+  [32m+ r-lattice                [0m      0.23_1  r45hddc5280_0         conda-forge       1MB
+  [32m+ r-lava                   [0m       1.9.3  r45hacb3a79_0         conda-forge       2MB
+  [32m+ r-lazyeval               [0m       0.2.3  r45h54b55ab_0         conda-forge     192kB
+  [32m+ r-lifecycle              [0m       1.0.5  r45hc72bb7e_0         conda-forge     133kB
+  [32m+ r-listenv                [0m       1.0.0  r45hc72bb7e_0         conda-forge     142kB
+  [32m+ r-lobstr                 [0m       1.2.2  r45hfa9885e_0         conda-forge     217kB
+  [32m+ r-lubridate              [0m       1.9.5  r45h54b55ab_0         conda-forge     977kB
+  [32m+ r-magrittr               [0m       2.0.5  r45h54b55ab_0         conda-forge     211kB
+  [32m+ r-maps                   [0m       3.4.3  r45h54b55ab_1         conda-forge       2MB
+  [32m+ r-mass                   [0m      7.3_66  r45h54b55ab_0         conda-forge       1MB
+  [32m+ r-matrix                 [0m       1.7_6  r45h0e4624f_0         conda-forge       4MB
+  [32m+ r-memoise                [0m       2.0.1  r45hc72bb7e_4         conda-forge      58kB
+  [32m+ r-mgcv                   [0m       1.9_4  r45h0e4624f_0         conda-forge       4MB
+  [32m+ r-mime                   [0m        0.13  r45h54b55ab_1         conda-forge      65kB
+  [32m+ r-modelmetrics           [0m     1.2.2.2  r45h3697838_5         conda-forge     179kB
+  [32m+ r-modelr                 [0m      0.1.11  r45hc72bb7e_3         conda-forge     221kB
+  [32m+ r-munsell                [0m       0.5.1  r45hc72bb7e_2         conda-forge     247kB
+  [32m+ r-nlme                   [0m     3.1_170  r45heaba542_0         conda-forge       2MB
+  [32m+ r-nnet                   [0m      7.3_21  r45hddc5280_0         conda-forge     133kB
+  [32m+ r-numderiv               [0m  2016.8_1.1  r45hc72bb7e_7         conda-forge     129kB
+  [32m+ r-openssl                [0m       2.4.2  r45h68c19f5_0         conda-forge     681kB
+  [32m+ r-otel                   [0m       0.2.0  r45hc72bb7e_1         conda-forge     286kB
+  [32m+ r-parallelly             [0m      1.48.0  r45h54b55ab_0         conda-forge     643kB
+  [32m+ r-pbdzmq                 [0m      0.3_14  r45hded8526_1         conda-forge     531kB
+  [32m+ r-pillar                 [0m      1.11.1  r45hc72bb7e_0         conda-forge     630kB
+  [32m+ r-pkgconfig              [0m       2.0.3  r45hc72bb7e_5         conda-forge      27kB
+  [32m+ r-plyr                   [0m       1.8.9  r45h3697838_3         conda-forge     788kB
+  [32m+ r-prettyunits            [0m       1.2.0  r45hc72bb7e_2         conda-forge     161kB
+  [32m+ r-proc                   [0m      1.19.1  r45hfa9885e_0         conda-forge       1MB
+  [32m+ r-processx               [0m       3.9.0  r45h54b55ab_0         conda-forge     411kB
+  [32m+ r-prodlim                [0m  2026.03.11  r45h3697838_0         conda-forge     551kB
+  [32m+ r-progress               [0m       1.2.3  r45hc72bb7e_2         conda-forge      96kB
+  [32m+ r-progressr              [0m       1.0.0  r45hc72bb7e_0         conda-forge     531kB
+  [32m+ r-promises               [0m       1.5.0  r45hc72bb7e_1         conda-forge       2MB
+  [32m+ r-proxy                  [0m      0.4_29  r45h54b55ab_0         conda-forge     184kB
+  [32m+ r-pryr                   [0m       0.1.6  r45h3697838_3         conda-forge     225kB
+  [32m+ r-ps                     [0m       1.9.3  r45h54b55ab_0         conda-forge     415kB
+  [32m+ r-purrr                  [0m       1.2.2  r45h54b55ab_0         conda-forge     547kB
+  [32m+ r-quantmod               [0m      0.4.29  r45hc72bb7e_0         conda-forge       1MB
+  [32m+ r-r6                     [0m       2.6.1  r45hc72bb7e_1         conda-forge      95kB
+  [32m+ r-ragg                   [0m       1.5.2  r45h9f1dc4d_0         conda-forge     597kB
+  [32m+ r-randomforest           [0m     4.7_1.2  r45heaba542_1         conda-forge     239kB
+  [32m+ r-rappdirs               [0m       0.3.4  r45h54b55ab_0         conda-forge      54kB
+  [32m+ r-rbokeh                 [0m       0.5.2  r45hc72bb7e_5         conda-forge       1MB
+  [32m+ r-rcolorbrewer           [0m       1.1_3  r45h785f33e_4         conda-forge      68kB
+  [32m+ r-rcpp                   [0m       1.1.2  r45h3697838_0         conda-forge       2MB
+  [32m+ r-rcppeigen              [0m   0.3.4.0.2  r45h3704496_1         conda-forge       1MB
+  [32m+ r-readr                  [0m       2.2.0  r45h3697838_0         conda-forge     809kB
+  [32m+ r-readxl                 [0m     1.5.0.1  r45h305bd6a_0         conda-forge     748kB
+  [32m+ r-recipes                [0m       1.4.0  r45hacb3a79_0         conda-forge       2MB
+  [32m+ r-recommended            [0m         4.5  r45hd8ed1ab_1008      conda-forge      19kB
+  [32m+ r-rematch                [0m       2.0.0  r45hc72bb7e_2         conda-forge      26kB
+  [32m+ r-rematch2               [0m       2.1.2  r45hc72bb7e_5         conda-forge      56kB
+  [32m+ r-repr                   [0m       1.1.7  r45h785f33e_2         conda-forge     147kB
+  [32m+ r-reprex                 [0m       2.1.1  r45hc72bb7e_2         conda-forge     502kB
+  [32m+ r-reshape2               [0m       1.4.5  r45h3697838_0         conda-forge     128kB
+  [32m+ r-rlang                  [0m       1.3.0  r45h3697838_0         conda-forge       2MB
+  [32m+ r-rmarkdown              [0m        2.32  r45hacb3a79_0         conda-forge       2MB
+  [32m+ r-rpart                  [0m      4.1.27  r45h54b55ab_0         conda-forge     704kB
+  [32m+ r-rstudioapi             [0m      0.19.0  r45hc72bb7e_0         conda-forge     357kB
+  [32m+ r-rvest                  [0m       1.0.5  r45hc72bb7e_1         conda-forge     305kB
+  [32m+ r-s7                     [0m       0.2.2  r45h54b55ab_0         conda-forge     312kB
+  [32m+ r-sass                   [0m      0.4.10  r45h3697838_1         conda-forge       2MB
+  [32m+ r-scales                 [0m       1.4.0  r45hc72bb7e_1         conda-forge     778kB
+  [32m+ r-selectr                [0m       0.6_0  r45hc72bb7e_0         conda-forge     495kB
+  [32m+ r-shape                  [0m     1.4.6.1  r45ha770c72_2         conda-forge     766kB
+  [32m+ r-shiny                  [0m      1.14.0  r45h785f33e_0         conda-forge       4MB
+  [32m+ r-sourcetools            [0m     0.1.7_2  r45h3697838_0         conda-forge      55kB
+  [32m+ r-sparsevctrs            [0m       0.3.6  r45h54b55ab_0         conda-forge     205kB
+  [32m+ r-spatial                [0m      7.3_19  r45h54b55ab_0         conda-forge     158kB
+  [32m+ r-squarem                [0m      2026.1  r45hc72bb7e_0         conda-forge     197kB
+  [32m+ r-stringi                [0m       1.8.9  r45h3d52c89_0         conda-forge     950kB
+  [32m+ r-stringr                [0m       1.6.0  r45h785f33e_0         conda-forge     319kB
+  [32m+ r-survival               [0m      3.8_12  r45hddc5280_0         conda-forge       8MB
+  [32m+ r-sys                    [0m       3.4.3  r45h54b55ab_1         conda-forge      50kB
+  [32m+ r-systemfonts            [0m       1.3.2  r45h74f4acd_0         conda-forge     710kB
+  [32m+ r-textshaping            [0m       1.0.5  r45h74f4acd_0         conda-forge     190kB
+  [32m+ r-tibble                 [0m       3.3.1  r45h54b55ab_0         conda-forge     590kB
+  [32m+ r-tidyr                  [0m       1.3.2  r45h3697838_0         conda-forge       1MB
+  [32m+ r-tidyselect             [0m       1.2.1  r45hc72bb7e_2         conda-forge     220kB
+  [32m+ r-tidyverse              [0m       2.0.0  r45h785f33e_3         conda-forge     427kB
+  [32m+ r-timechange             [0m       0.4.0  r45h3697838_0         conda-forge     194kB
+  [32m+ r-timedate               [0m    4052.112  r45hc72bb7e_0         conda-forge       1MB
+  [32m+ r-tinytex                [0m        0.60  r45hc72bb7e_0         conda-forge     158kB
+  [32m+ r-triebeard              [0m       0.4.1  r45h3697838_4         conda-forge     185kB
+  [32m+ r-ttr                    [0m      0.24.4  r45h54b55ab_2         conda-forge     537kB
+  [32m+ r-tzdb                   [0m       0.5.0  r45h3697838_2         conda-forge     555kB
+  [32m+ r-urltools               [0m     1.7.3.1  r45h3697838_1         conda-forge     305kB
+  [32m+ r-utf8                   [0m       1.2.6  r45h54b55ab_1         conda-forge     147kB
+  [32m+ r-uuid                   [0m       1.2_2  r45h54b55ab_0         conda-forge      58kB
+  [32m+ r-vctrs                  [0m       0.7.3  r45h3697838_0         conda-forge       2MB
+  [32m+ r-viridislite            [0m       0.4.3  r45hc72bb7e_0         conda-forge       1MB
+  [32m+ r-vroom                  [0m       1.7.1  r45h3697838_0         conda-forge     934kB
+  [32m+ r-withr                  [0m       3.0.3  r45hc72bb7e_0         conda-forge     235kB
+  [32m+ r-xfun                   [0m        0.61  r45hddc5280_1         conda-forge     651kB
+  [32m+ r-xml2                   [0m       1.6.0  r45he78afff_0         conda-forge     354kB
+  [32m+ r-xtable                 [0m       1.8_8  r45hc72bb7e_0         conda-forge     744kB
+  [32m+ r-xts                    [0m      0.14.3  r45hddc5280_0         conda-forge     777kB
+  [32m+ r-yaml                   [0m      2.3.12  r45h54b55ab_0         conda-forge     124kB
+  [32m+ r-zoo                    [0m       1.9_0  r45h54b55ab_0         conda-forge     965kB
+  [32m+ rpy2                     [0m       3.6.8  py313r45hfd6fa06_0    conda-forge       2MB
+  [32m+ sed                      [0m        4.10  h19d0853_0            conda-forge     268kB
+  [32m+ sysroot_linux-64         [0m        2.39  hc4b9eeb_6            conda-forge      42MB
+  [32m+ tktable                  [0m        2.10  h0eb2ad0_11           conda-forge     104kB
+  [32m+ tzlocal                  [0m       5.4.4  pyh8f84b5b_0          conda-forge      24kB
+  [32m+ xorg-libice              [0m       1.1.2  h280c20c_0            conda-forge      63kB
+  [32m+ xorg-libsm               [0m       1.2.6  h0d788c3_1            conda-forge      31kB
+  [32m+ xorg-libx11              [0m      1.8.13  he1eb515_1            conda-forge     840kB
+  [32m+ xorg-libxau              [0m      1.0.12  h7cc23a3_2            conda-forge      19kB
+  [32m+ xorg-libxdmcp            [0m       1.1.5  h7cc23a3_2            conda-forge      23kB
+  [32m+ xorg-libxext             [0m       1.3.7  h7cc23a3_1            conda-forge      53kB
+  [32m+ xorg-libxrender          [0m      0.9.12  hb03c661_1            conda-forge      35kB
+  [32m+ xorg-libxt               [0m       1.3.1  h7cc23a3_1            conda-forge     384kB
+
+  Summary:
+
+  Install: 249 packages
+
+  Total download: 431MB
+
+────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+Transaction starting
+[?25l[2K[0G[+] 0.0s
+Downloading      ╸[33m━━━━━━━━━━━━━━━━━━━━━━[0m   0.0 B                            0.0s
+Extracting       [90m━━━━━━━━━━━━━━━━━━━━━━━[0m       0                            0.0s[2K[1A[2K[1A[2K[0G[+] 0.1s
+Downloading  (5) [33m━━━━━━━━━━━━━━━━━━━━━━━[0m 801.1kB gcc_impl_linux-64          0.0s
+Extracting       [90m━━━━━━━━━━━━━━━━━━━━━━━[0m       0                            0.0s[2K[1A[2K[1A[2K[0G[+] 0.2s
+Downloading  (5) ━╸[33m━━━━━━━━━━━━━━━━━━━━━[0m  19.4MB gcc_impl_linux-64          0.1s
+Extracting       [90m━━━━━━━━━━━━━━━━━━━━━━━[0m       0                            0.0s[2K[1A[2K[1A[2K[0G[+] 0.3s
+Downloading  (5) ━━━━╸[33m━━━━━━━━━━━━━━━━━━[0m  45.4MB gcc_impl_linux-64          0.2s
+Extracting       [90m━━━━━━━━━━━━━━━━━━━━━━━[0m       0                            0.0s[2K[1A[2K[1A[2K[0G[+] 0.4s
+Downloading  (5) ━━━━━━━╸[33m━━━━━━━━━━━━━━━[0m  71.8MB gcc_impl_linux-64          0.3s
+Extracting       [90m━━━━━━━━━━━━━━━━━━━━━━━[0m       0                            0.0s[2K[1A[2K[1A[2K[0Gpandoc                                              23.0MB @  47.2MB/s  0.4s
+[+] 0.5s
+Downloading  (5) ━━━━━━━━━╸[33m━━━━━━━━━━━━━[0m 101.4MB gfortran_impl_linux-64     0.4s
+Extracting       [90m━━━━━━━━━━━━━━━━━━━━━━━[0m       0                            0.0s[2K[1A[2K[1A[2K[0Glibstdcxx-devel_linux-64                            23.3MB @  44.7MB/s  0.5s
+[+] 0.6s
+Downloading  (5) ━━━━━━━━━━╸[33m━━━━━━━━━━━━[0m 126.6MB gfortran_impl_linux-64     0.5s
+Extracting   (2) [90m━╸[0m[33m━━━━━━━━━━━━━━━╸[0m[90m━━━━━[0m       0 libstdcxx-devel_linux-64   0.0s[2K[1A[2K[1A[2K[0Gr-base                                              27.4MB @  44.4MB/s  0.6s
+[+] 0.7s
+Downloading  (5) ━━━━━━━━━━━━━╸[33m━━━━━━━━━[0m 153.0MB gfortran_impl_linux-64     0.6s
+Extracting   (3) [90m━━╸[0m[33m━━━━━━━━━━━━━━━╸[0m[90m━━━━[0m       0 libstdcxx-devel_linux-64   0.1s[2K[1A[2K[1A[2K[0G[+] 0.8s
+Downloading  (5) ━━━━━━━━━━━━━━━╸[33m━━━━━━━[0m 178.4MB gfortran_impl_linux-64     0.7s
+Extracting   (3) [90m━━━╸[0m[33m━━━━━━━━━━━━━━━╸[0m[90m━━━[0m       0 libstdcxx-devel_linux-64   0.2s[2K[1A[2K[1A[2K[0Glibsanitizer                                         8.1MB @  43.8MB/s  0.2s
+gxx_impl_linux-64                                   17.0MB @  54.0MB/s  0.3s
+gfortran_impl_linux-64                              21.1MB @  51.8MB/s  0.4s
+[+] 0.9s
+Downloading  (5) ━━━━━━━━━━━━━━━━╸[33m━━━━━━[0m 203.4MB gcc_impl_linux-64          0.8s
+Extracting   (3) [90m━━━━╸[0m[33m━━━━━━━━━━━━━━━╸[0m[90m━━[0m       2 gxx_impl_linux-64          0.3s[2K[1A[2K[1A[2K[0Gsysroot_linux-64                                    42.0MB @  43.5MB/s  0.9s
+r-survival                                           7.9MB @  41.4MB/s  0.2s
+r-ggplot2                                            7.8MB @  46.6MB/s  0.1s
+[+] 1.0s
+Downloading  (5) ━━━━━━━━━━━━━━━━━╸[33m━━━━━[0m 231.3MB gcc_impl_linux-64          0.9s
+Extracting   (4) [90m━━━━━━╸[0m[33m━━━━━━━━━━━━━━━━[0m       4 gxx_impl_linux-64          0.4s[2K[1A[2K[1A[2K[0Glibopenblas                                          6.8MB @  47.3MB/s  0.1s
+r-matrix                                             4.3MB @  39.8MB/s  0.1s
+libglib                                              4.8MB @  45.6MB/s  0.1s
+[+] 1.1s
+Downloading  (5) ━━━━━━━━━━━━━━━━━━╸[33m━━━━[0m 255.8MB gcc_impl_linux-64          1.0s
+Extracting   (5) [90m━━━━━━━╸[0m[33m━━━━━━━━━━━━━━━[0m       7 gfortran_impl_linux-64     0.5s[2K[1A[2K[1A[2K[0Gr-bslib                                              5.5MB @  42.9MB/s  0.1s
+r-shiny                                              3.8MB @  37.9MB/s  0.1s
+binutils_impl_linux-64                               3.7MB @  37.1MB/s  0.1s
+r-mgcv                                               3.6MB @  35.3MB/s  0.1s
+gsl                                                  3.4MB @  39.7MB/s  0.1s
+[+] 1.2s
+Downloading  (5) ━━━━━━━━━━━━━━━━━━━╸[33m━━━[0m 281.0MB gcc_impl_linux-64          1.1s
+Extracting   (7) [90m━━━━━━━━╸[0m[33m━━━━━━━━━━━━━━[0m      10 binutils_impl_linux-64     0.6s[2K[1A[2K[1A[2K[0Gr-caret                                              3.6MB @  32.6MB/s  0.1s
+r-data.table                                         2.6MB @  42.1MB/s  0.1s
+libgcc-devel_linux-64                                3.1MB @  23.6MB/s  0.1s
+r-colorspace                                         2.5MB @  40.9MB/s  0.1s
+libgfortran5                                         2.5MB @  33.9MB/s  0.1s
+r-glmnet                                             2.4MB @  40.5MB/s  0.1s
+r-lava                                               2.4MB @  ??.?MB/s  0.1s
+[+] 1.3s
+Downloading  (5) ━━━━━━━━━━━━━━━━━━━━╸[33m━━[0m 305.9MB libharfbuzz-devel          1.2s
+Extracting   (8) ╸[33m━╸[0m[90m━━━━━━━━━━━━━━━━━━━━[0m      17 gsl                        0.7s[2K[1A[2K[1A[2K[0Gr-maps                                               2.4MB @  38.8MB/s  0.1s
+r-nlme                                               2.4MB @  26.9MB/s  0.1s
+r-sass                                               2.3MB @  34.9MB/s  0.1s
+libharfbuzz-devel                                    2.2MB @  43.7MB/s  0.1s
+r-rcpp                                               2.1MB @  38.5MB/s  0.1s
+r-rmarkdown                                          2.1MB @  40.8MB/s  0.1s
+r-vctrs                                              1.8MB @  ??.?MB/s  0.0s
+[+] 1.4s
+Downloading  (4) ━━━━━━━━━━━━━━━━━━━━╸[33m━━[0m 326.8MB gcc_impl_linux-64          1.3s
+Extracting   (7) ━╸[33m╸[0m[90m━━━━━━━━━━━━━━━━━━━━[0m      24 gsl                        0.8s[2K[1A[2K[1A[2K[0Grpy2                                                 1.9MB @  ??.?MB/s  0.1s
+r-clock                                              1.8MB @  26.5MB/s  0.1s
+r-recipes                                            1.7MB @  ??.?MB/s  0.1s
+r-isoband                                            1.7MB @  32.4MB/s  0.1s
+font-ttf-ubuntu                                      1.6MB @  ??.?MB/s  0.1s
+r-promises                                           1.6MB @  28.3MB/s  0.1s
+r-hexbin                                             1.6MB @  30.1MB/s  0.1s
+[+] 1.5s
+Downloading  (5) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 342.6MB gcc_impl_linux-64          1.4s
+Extracting   (8) ━╸[33m━╸[0m[90m━━━━━━━━━━━━━━━━━━━[0m      31 gsl                        0.9s[2K[1A[2K[1A[2K[0Gr-rlang                                              1.6MB @  ??.?MB/s  0.1s
+r-broom                                              1.6MB @  13.7MB/s  0.1s
+kernel-headers_linux-64                              1.5MB @  11.7MB/s  0.1s
+r-rcppeigen                                          1.5MB @  25.4MB/s  0.1s
+r-dplyr                                              1.4MB @  ??.?MB/s  0.0s
+r-farver                                             1.4MB @  ??.?MB/s  0.0s
+gcc_impl_linux-64                                   86.1MB @  54.2MB/s  1.5s
+[+] 1.6s
+Downloading  (4) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 355.2MB libharfbuzz                1.5s
+Extracting   (6) ━━╸[33m━╸[0m[90m━━━━━━━━━━━━━━━━━━[0m      38 gsl                        1.0s[2K[1A[2K[1A[2K[0Gr-lattice                                            1.4MB @  ??.?MB/s  0.0s
+r-fontawesome                                        1.3MB @  ??.?MB/s  0.0s
+r-cli                                                1.3MB @  ??.?MB/s  0.0s
+libharfbuzz                                          1.4MB @  ??.?MB/s  0.1s
+r-timedate                                           1.3MB @  15.6MB/s  0.1s
+r-viridislite                                        1.3MB @  ??.?MB/s  0.1s
+r-dbplyr                                             1.3MB @  ??.?MB/s  0.0s
+r-googledrive                                        1.2MB @  ??.?MB/s  0.0s
+[+] 1.7s
+Downloading  (4) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 366.3MB pcre2                      1.6s
+Extracting   (8) ━━━╸[33m╸[0m[90m━━━━━━━━━━━━━━━━━━[0m      45 kernel-headers_linux-64    1.1s[2K[1A[2K[1A[2K[0Gr-rbokeh                                             1.2MB @   7.1MB/s  0.1s
+r-mass                                               1.1MB @  10.4MB/s  0.1s
+pcre2                                                1.2MB @   6.0MB/s  0.1s
+cairo                                                1.0MB @  ??.?MB/s  0.0s
+r-proc                                               1.0MB @  ??.?MB/s  0.0s
+r-tidyr                                              1.1MB @   6.6MB/s  0.1s
+r-quantmod                                           1.1MB @  20.7MB/s  0.1s
+[+] 1.8s
+Downloading  (5) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 373.6MB r-future                   1.7s
+Extracting   (7) ━━━╸[33m━╸[0m[90m━━━━━━━━━━━━━━━━━[0m      53 cairo                      1.2s[2K[1A[2K[1A[2K[0Gr-knitr                                              1.0MB @   2.9MB/s  0.1s
+r-future                                           991.1kB @  16.5MB/s  0.1s
+r-lubridate                                        977.1kB @  14.1MB/s  0.1s
+r-zoo                                              964.9kB @  17.3MB/s  0.1s
+r-stringi                                          949.7kB @  17.2MB/s  0.1s
+r-hardhat                                          866.6kB @  14.0MB/s  0.1s
+xorg-libx11                                        839.6kB @  14.0MB/s  0.1s
+r-readr                                            808.6kB @  12.8MB/s  0.1s
+r-vroom                                            934.3kB @  16.0MB/s  0.1s
+[+] 1.9s
+Downloading  (4) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 382.8MB r-dbi                      1.8s
+Extracting   (7) ━━━━╸[33m━╸[0m[90m━━━━━━━━━━━━━━━━[0m      62 gcc_impl_linux-64          1.3s[2K[1A[2K[1A[2K[0Gr-dbi                                              892.8kB @  17.2MB/s  0.1s
+r-plyr                                             787.5kB @  15.6MB/s  0.1s
+r-scales                                           777.8kB @  15.4MB/s  0.1s
+r-xts                                              777.0kB @  15.4MB/s  0.1s
+r-gistr                                            775.2kB @  ??.?MB/s  0.1s
+r-shape                                            765.7kB @  ??.?MB/s  0.1s
+[+] 2.0s
+Downloading  (5) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 386.7MB r-gargle                   1.9s
+Extracting   (5) ━━━━━╸[33m╸[0m[90m━━━━━━━━━━━━━━━━[0m      70 gcc_impl_linux-64          1.4s[2K[1A[2K[1A[2K[0Gr-gargle                                           724.1kB @  ??.?MB/s  0.0s
+r-rpart                                            704.0kB @  ??.?MB/s  0.0s
+r-readxl                                           747.8kB @  ??.?MB/s  0.0s
+r-xtable                                           744.3kB @  ??.?MB/s  0.1s
+r-systemfonts                                      710.1kB @  ??.?MB/s  0.1s
+r-openssl                                          680.7kB @  ??.?MB/s  0.0s
+font-ttf-source-code-pro                           700.8kB @  ??.?MB/s  0.0s
+[+] 2.1s
+Downloading  (5) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 391.7MB libjpeg-turbo              2.0s
+Extracting   (5) ━━━━━━╸[33m╸[0m[90m━━━━━━━━━━━━━━━[0m      77 gcc_impl_linux-64          1.5s[2K[1A[2K[1A[2K[0Gr-diagram                                          678.1kB @  ??.?MB/s  0.0s
+r-xfun                                             651.4kB @  ??.?MB/s  0.0s
+r-crul                                             646.4kB @  ??.?MB/s  0.0s
+r-boot                                             644.8kB @  ??.?MB/s  0.0s
+libjpeg-turbo                                      650.4kB @  ??.?MB/s  0.1s
+r-parallelly                                       642.7kB @  12.7MB/s  0.1s
+r-jsonlite                                         638.6kB @  ??.?MB/s  0.0s
+r-pillar                                           629.9kB @  ??.?MB/s  0.0s
+r-bit                                              621.5kB @  ??.?MB/s  0.0s
+r-e1071                                            598.4kB @  ??.?MB/s  0.0s
+[+] 2.2s
+Downloading  (5) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 398.1MB r-bit64                    2.1s
+Extracting   (6) ━━━━━━━╸[33m╸[0m[90m━━━━━━━━━━━━━━[0m      87 gcc_impl_linux-64          1.6s[2K[1A[2K[1A[2K[0Gr-ragg                                             596.6kB @   8.5MB/s  0.1s
+r-cluster                                          591.8kB @  ??.?MB/s  0.0s
+r-tibble                                           589.7kB @  ??.?MB/s  0.0s
+r-bit64                                            574.8kB @  ??.?MB/s  0.0s
+r-tzdb                                             555.4kB @  ??.?MB/s  0.0s
+r-httpuv                                           553.9kB @  10.9MB/s  0.1s
+r-prodlim                                          550.9kB @  10.9MB/s  0.1s
+r-purrr                                            547.0kB @  10.8MB/s  0.1s
+r-ttr                                              537.0kB @  ??.?MB/s  0.0s
+[+] 2.3s
+Downloading  (5) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 403.6MB make                       2.2s
+Extracting   (5) ━━━━━━━╸[33m━╸[0m[90m━━━━━━━━━━━━━[0m      96 r-httpuv                   1.7s[2K[1A[2K[1A[2K[0Gr-progressr                                        530.8kB @   5.5MB/s  0.1s
+r-pbdzmq                                           530.8kB @  ??.?MB/s  0.0s
+r-googlesheets4                                    523.7kB @  ??.?MB/s  0.1s
+make                                               510.7kB @  ??.?MB/s  0.0s
+r-reprex                                           502.3kB @  ??.?MB/s  0.0s
+r-curl                                             499.6kB @   9.6MB/s  0.1s
+r-selectr                                          494.9kB @   9.5MB/s  0.1s
+[+] 2.4s
+Downloading  (5) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 406.8MB libtiff                    2.3s
+Extracting   (5) ━━━━━━━━╸[33m╸[0m[90m━━━━━━━━━━━━━[0m     103 gcc_impl_linux-64          1.8s[2K[1A[2K[1A[2K[0Gr-httr                                             473.0kB @  ??.?MB/s  0.1s
+pango                                              471.8kB @  ??.?MB/s  0.1s
+libtiff                                            459.8kB @  ??.?MB/s  0.0s
+libwebp-base                                       428.4kB @  ??.?MB/s  0.0s
+r-tidyverse                                        427.3kB @  ??.?MB/s  0.0s
+r-htmlwidgets                                      426.0kB @  ??.?MB/s  0.0s
+r-forcats                                          424.1kB @  ??.?MB/s  0.0s
+r-callr                                            454.1kB @  ??.?MB/s  0.1s
+libuv                                              420.0kB @  ??.?MB/s  0.0s
+[+] 2.5s
+Downloading  (5) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 410.8MB font-ttf-dejavu-sans-mono  2.4s
+Extracting   (5) ━━━━━━━━━╸[33m╸[0m[90m━━━━━━━━━━━━[0m     112 gcc_impl_linux-64          1.9s[2K[1A[2K[1A[2K[0Gr-dtplyr                                           411.1kB @  ??.?MB/s  0.0s
+r-ps                                               414.7kB @  ??.?MB/s  0.0s
+r-processx                                         411.0kB @  ??.?MB/s  0.0s
+font-ttf-dejavu-sans-mono                          397.4kB @  ??.?MB/s  0.1s
+r-ipred                                            396.9kB @  ??.?MB/s  0.0s
+libxcb                                             395.1kB @  ??.?MB/s  0.0s
+libfreetype6                                       387.7kB @  ??.?MB/s  0.0s
+r-haven                                            384.6kB @  ??.?MB/s  0.0s
+[+] 2.6s
+Downloading  (4) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 414.4MB pixman                     2.5s
+Extracting   (6) ━━━━━━━━━╸[33m━╸[0m[90m━━━━━━━━━━━[0m     119 gcc_impl_linux-64          2.0s[2K[1A[2K[1A[2K[0Gr-htmltools                                        367.1kB @  ??.?MB/s  0.1s
+pixman                                             376.7kB @  ??.?MB/s  0.0s
+r-rstudioapi                                       357.1kB @  ??.?MB/s  0.0s
+xorg-libxt                                         384.3kB @   7.7MB/s  0.1s
+r-xml2                                             354.0kB @  ??.?MB/s  0.1s
+r-iterators                                        350.2kB @   6.5MB/s  0.1s
+r-fansi                                            329.4kB @  ??.?MB/s  0.0s
+libpng                                             316.9kB @  ??.?MB/s  0.0s
+r-s7                                               311.5kB @  ??.?MB/s  0.0s
+[+] 2.7s
+Downloading  (4) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 417.5MB fontconfig                 2.6s
+Extracting   (4) ━━━━━━━━━━━╸[33m╸[0m[90m━━━━━━━━━━[0m     131 libpng                     2.1s[2K[1A[2K[1A[2K[0Gr-stringr                                          319.3kB @  ??.?MB/s  0.1s
+r-jquerylib                                        307.1kB @  ??.?MB/s  0.0s
+r-rvest                                            305.2kB @  ??.?MB/s  0.0s
+r-urltools                                         305.0kB @  ??.?MB/s  0.1s
+fontconfig                                         296.3kB @  ??.?MB/s  0.1s
+r-otel                                             286.3kB @  ??.?MB/s  0.0s
+r-foreign                                          269.6kB @  ??.?MB/s  0.0s
+lerc                                               271.2kB @  ??.?MB/s  0.0s
+[+] 2.8s
+Downloading  (5) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 419.5MB r-cpp11                    2.7s
+Extracting   (3) ━━━━━━━━━━━╸[33m━╸[0m[90m━━━━━━━━━[0m     139 fontconfig                 2.2s[2K[1A[2K[1A[2K[0Gsed                                                268.5kB @  ??.?MB/s  0.0s
+r-munsell                                          247.2kB @  ??.?MB/s  0.0s
+r-cpp11                                            246.2kB @  ??.?MB/s  0.0s
+r-fs                                               243.3kB @  ??.?MB/s  0.0s
+r-randomforest                                     239.3kB @   4.4MB/s  0.1s
+r-gtable                                           228.9kB @  ??.?MB/s  0.0s
+r-gower                                            226.9kB @  ??.?MB/s  0.0s
+r-withr                                            235.3kB @  ??.?MB/s  0.0s
+r-irkernel                                         235.2kB @  ??.?MB/s  0.0s
+r-pryr                                             224.9kB @  ??.?MB/s  0.0s
+[+] 2.9s
+Downloading  (2) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 421.9MB r-modelr                   2.8s
+Extracting   (5) ━━━━━━━━━━━━╸[33m━╸[0m[90m━━━━━━━━[0m     148 r-gower                    2.3s[2K[1A[2K[1A[2K[0Gr-modelr                                           221.3kB @  ??.?MB/s  0.1s
+r-tidyselect                                       220.2kB @  ??.?MB/s  0.0s
+r-lobstr                                           216.6kB @  ??.?MB/s  0.0s
+r-magrittr                                         211.1kB @  ??.?MB/s  0.0s
+r-digest                                           218.4kB @  ??.?MB/s  0.0s
+r-future.apply                                     207.9kB @  ??.?MB/s  0.0s
+r-sparsevctrs                                      205.4kB @  ??.?MB/s  0.0s
+curl                                               196.6kB @  ??.?MB/s  0.0s
+r-squarem                                          196.5kB @  ??.?MB/s  0.0s
+[+] 3.0s
+Downloading  (1) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 424.0MB r-timechange               2.9s
+Extracting   (4) ━━━━━━━━━━━━━╸[33m╸[0m[90m━━━━━━━━[0m     157 curl                       2.4s[2K[1A[2K[1A[2K[0Gr-timechange                                       193.8kB @   2.7MB/s  0.1s
+r-lazyeval                                         192.3kB @  ??.?MB/s  0.0s
+r-textshaping                                      189.9kB @  ??.?MB/s  0.0s
+r-triebeard                                        185.3kB @  ??.?MB/s  0.0s
+r-proxy                                            184.0kB @  ??.?MB/s  0.0s
+[+] 3.1s
+Downloading  (1) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 424.9MB r-globals                  3.0s
+Extracting   (4) ━━━━━━━━━━━━━╸[33m━╸[0m[90m━━━━━━━[0m     162 r-lazyeval                 2.5s[2K[1A[2K[1A[2K[0Gr-globals                                          181.5kB @   3.2MB/s  0.1s
+r-modelmetrics                                     178.7kB @  ??.?MB/s  0.0s
+r-glue                                             171.6kB @  ??.?MB/s  0.0s
+r-crayon                                           168.2kB @  ??.?MB/s  0.0s
+freetype                                           175.2kB @  ??.?MB/s  0.0s
+r-formatr                                          165.7kB @  ??.?MB/s  0.0s
+r-prettyunits                                      161.0kB @  ??.?MB/s  0.0s
+r-tinytex                                          158.2kB @  ??.?MB/s  0.0s
+r-spatial                                          158.1kB @  ??.?MB/s  0.0s
+r-later                                            153.5kB @  ??.?MB/s  0.0s
+r-repr                                             147.3kB @  ??.?MB/s  0.0s
+[+] 3.2s
+Downloading  (1) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 426.6MB r-utf8                     3.1s
+Extracting   (4) ━━━━━━━━━━━━━━╸[33m━╸[0m[90m━━━━━━[0m     173 r-later                    2.6s[2K[1A[2K[1A[2K[0Gr-foreach                                          140.9kB @  ??.?MB/s  0.0s
+r-utf8                                             147.2kB @  ??.?MB/s  0.0s
+bwidget                                            134.6kB @  ??.?MB/s  0.0s
+r-listenv                                          141.7kB @  ??.?MB/s  0.0s
+r-commonmark                                       139.8kB @  ??.?MB/s  0.0s
+r-nnet                                             133.2kB @  ??.?MB/s  0.0s
+[+] 3.3s
+Downloading  (5) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 427.4MB r-backports                3.2s
+Extracting   (5) ━━━━━━━━━━━━━━━╸[33m╸[0m[90m━━━━━━[0m     179 bwidget                    2.7s[2K[1A[2K[1A[2K[0Gr-lifecycle                                        132.6kB @  ??.?MB/s  0.0s
+r-backports                                        131.4kB @  ??.?MB/s  0.0s
+r-ids                                              129.9kB @  ??.?MB/s  0.0s
+r-numderiv                                         128.9kB @  ??.?MB/s  0.0s
+r-reshape2                                         127.8kB @  ??.?MB/s  0.0s
+r-evaluate                                         111.9kB @  ??.?MB/s  0.0s
+r-yaml                                             124.5kB @  ??.?MB/s  0.0s
+r-hms                                              112.8kB @  ??.?MB/s  0.0s
+r-cellranger                                       111.8kB @  ??.?MB/s  0.0s
+r-class                                            109.8kB @  ??.?MB/s  0.0s
+[+] 3.4s
+Downloading  (1) ━━━━━━━━━━━━━━━━━━━━━━━ 428.7MB r-codetools                3.3s
+Extracting   (4) ━━━━━━━━━━━━━━━━╸[33m╸[0m[90m━━━━━[0m     189 r-cellranger               2.8s[2K[1A[2K[1A[2K[0Gr-codetools                                        109.2kB @   2.1MB/s  0.1s
+r-kernsmooth                                       102.6kB @  ??.?MB/s  0.0s
+tktable                                            103.9kB @  ??.?MB/s  0.0s
+graphite2                                          102.8kB @  ??.?MB/s  0.0s
+font-ttf-inconsolata                                96.5kB @  ??.?MB/s  0.0s
+r-progress                                          96.3kB @  ??.?MB/s  0.0s
+[+] 3.5s
+Downloading  (2) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 429.3MB r-generics                 3.4s
+Extracting   (4) ━━━━━━━━━━━━━━━━━╸[33m╸[0m[90m━━━━[0m     195 font-ttf-inconsolata       2.9s[2K[1A[2K[1A[2K[0Gr-r6                                                95.1kB @   1.7MB/s  0.1s
+r-fastmap                                           73.9kB @  ??.?MB/s  0.0s
+libdeflate                                          73.7kB @  ??.?MB/s  0.0s
+r-generics                                          88.2kB @  ??.?MB/s  0.0s
+r-cachem                                            76.9kB @  ??.?MB/s  0.0s
+r-clipr                                             73.5kB @  ??.?MB/s  0.0s
+r-assertthat                                        72.5kB @  ??.?MB/s  0.0s
+r-labeling                                          70.2kB @  ??.?MB/s  0.0s
+[+] 3.6s
+Downloading  (5) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 429.9MB fribidi                    3.5s
+Extracting   (4) ━━━━━━━━━━━━━━━━━╸[33m━╸[0m[90m━━━[0m     203 r-assertthat               3.0s[2K[1A[2K[1A[2K[0Gr-blob                                              70.1kB @  ??.?MB/s  0.0s
+r-rcolorbrewer                                      68.0kB @  ??.?MB/s  0.0s
+r-mime                                              64.9kB @  ??.?MB/s  0.0s
+r-conflicted                                        64.1kB @  ??.?MB/s  0.0s
+fribidi                                             64.1kB @  ??.?MB/s  0.0s
+xorg-libice                                         62.5kB @  ??.?MB/s  0.0s
+r-memoise                                           57.8kB @  ??.?MB/s  0.0s
+r-uuid                                              57.6kB @  ??.?MB/s  0.0s
+[+] 3.7s
+Downloading  (2) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 430.4MB r-highr                    3.6s
+Extracting   (3) ━━━━━━━━━━━━━━━━━━╸[33m╸[0m[90m━━━[0m     212 r-memoise                  3.1s[2K[1A[2K[1A[2K[0Gr-highr                                             57.3kB @   1.1MB/s  0.1s
+r-rematch2                                          56.2kB @  ??.?MB/s  0.0s
+r-sourcetools                                       54.6kB @  ??.?MB/s  0.0s
+r-rappdirs                                          54.4kB @  ??.?MB/s  0.0s
+xorg-libxext                                        53.1kB @  ??.?MB/s  0.0s
+r-sys                                               50.4kB @  ??.?MB/s  0.0s
+r-base64enc                                         48.6kB @ 957.6kB/s  0.1s
+r-irdisplay                                         39.9kB @  ??.?MB/s  0.0s
+binutils_linux-64                                   36.3kB @  ??.?MB/s  0.0s
+xorg-libxrender                                     34.6kB @  ??.?MB/s  0.0s
+[+] 3.8s
+Downloading  (3) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 430.9MB r-askpass                  3.7s
+Extracting   (4) ━━━━━━━━━━━━━━━━━━━╸[33m╸[0m[90m━━[0m     221 binutils_linux-64          3.2s[2K[1A[2K[1A[2K[0Gr-httpcode                                          40.4kB @  ??.?MB/s  0.0s
+r-ellipsis                                          33.4kB @  ??.?MB/s  0.0s
+r-askpass                                           32.0kB @  ??.?MB/s  0.0s
+xorg-libsm                                          30.7kB @  ??.?MB/s  0.0s
+gcc_linux-64                                        30.4kB @  ??.?MB/s  0.0s
+gxx_linux-64                                        28.8kB @ 530.8kB/s  0.1s
+libgfortran                                         28.6kB @  ??.?MB/s  0.0s
+libgcc-ng                                           28.5kB @  ??.?MB/s  0.0s
+r-pkgconfig                                         27.2kB @  ??.?MB/s  0.0s
+r-rematch                                           25.7kB @  ??.?MB/s  0.0s
+xorg-libxdmcp                                       22.6kB @  ??.?MB/s  0.0s
+[+] 3.9s
+Downloading  (1) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 431.2MB tzlocal                    3.8s
+Extracting   (4) ━━━━━━━━━━━━━━━━━━━━╸[33m╸[0m[90m━[0m     231 libgcc-ng                  3.3s[2K[1A[2K[1A[2K[0Gtzlocal                                             24.1kB @  ??.?MB/s  0.1s
+xorg-libxau                                         18.8kB @  ??.?MB/s  0.0s
+libblas                                             18.2kB @  ??.?MB/s  0.0s
+liblapack                                           18.2kB @  ??.?MB/s  0.0s
+libcblas                                            18.2kB @  ??.?MB/s  0.0s
+r-recommended                                       18.6kB @ 327.7kB/s  0.1s
+harfbuzz                                            11.0kB @  ??.?MB/s  0.0s
+[+] 4.0s
+Downloading  (5) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m 431.3MB fonts-conda-ecosystem      3.9s
+Extracting   (3) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m     240 harfbuzz                   3.4s[2K[1A[2K[1A[2K[0Gpthread-stubs                                        9.6kB @  ??.?MB/s  0.0s
+libfreetype                                          8.4kB @  ??.?MB/s  0.0s
+r-essentials                                         8.1kB @  ??.?MB/s  0.0s
+fonts-conda-forge                                    4.1kB @  58.7kB/s  0.1s
+fonts-conda-ecosystem                                3.7kB @  ??.?MB/s  0.1s
+_r-mutex                                             3.6kB @  ??.?MB/s  0.0s
+[+] 4.1s
+Downloading      ━━━━━━━━━━━━━━━━━━━━━━━ 431.4MB                            4.0s
+Extracting   (3) ━━━━━━━━━━━━━━━━━━━━━╸[33m━[0m     246 _r-mutex                   3.5s[2K[1A[2K[1A[2K[0G[?25hLinking curl-8.22.0-ha042cf0_0
+Linking libgcc-ng-16.2.0-h69a702a_5
+Linking libgfortran5-16.2.0-h6b99dfc_7
+Linking pcre2-10.47-h8b3dc9c_1
+Linking sed-4.10-h19d0853_0
+Linking lerc-4.2.0-hdb68285_0
+Linking make-4.4.1-hb03c661_3
+Linking libjpeg-turbo-3.2.0-hb03c661_1
+Linking libdeflate-1.25-hd45a770_1
+Linking bwidget-1.10.1-hfc2019e_3
+Linking libpng-1.6.59-h922cc85_0
+Linking libwebp-base-1.6.0-hd42ef1d_1
+Linking libsanitizer-16.2.0-h3048135_7
+Linking pandoc-3.12-ha770c72_0
+Linking libuv-1.52.1-h280c20c_1
+Linking pthread-stubs-0.4-h7cc23a3_1004
+Linking pixman-0.46.4-h54a6638_3
+Linking fribidi-1.0.17-h7cc23a3_0
+Linking xorg-libice-1.1.2-h280c20c_0
+Linking xorg-libxdmcp-1.1.5-h7cc23a3_2
+Linking xorg-libxau-1.0.12-h7cc23a3_2
+Linking graphite2-1.3.15-h54a6638_1
+Linking libgfortran-16.2.0-h69a702a_7
+Linking libglib-2.90.0-h569388d_0
+Linking libfreetype6-2.14.3-h5e6c136_2
+Linking libtiff-4.7.2-hcc2c06a_1
+Linking xorg-libsm-1.2.6-h0d788c3_1
+Linking libxcb-1.17.0-hb83e432_2
+Linking libopenblas-0.3.34-pthreads_hf13c14d_2
+Linking libfreetype-2.14.3-ha770c72_2
+Linking xorg-libx11-1.8.13-he1eb515_1
+Linking libblas-3.11.0-11_h4a7cf45_openblas
+Linking freetype-2.14.3-ha770c72_2
+Linking fontconfig-2.18.3-h4db4eae_1
+Linking xorg-libxrender-0.9.12-hb03c661_1
+Linking xorg-libxext-1.3.7-h7cc23a3_1
+Linking xorg-libxt-1.3.1-h7cc23a3_1
+Linking tktable-2.10-h0eb2ad0_11
+Linking libcblas-3.11.0-11_h0358290_openblas
+Linking liblapack-3.11.0-11_h47877c9_openblas
+Linking gsl-2.7-he838d99_0
+Linking tzlocal-5.4.4-pyh8f84b5b_0
+Linking _r-mutex-1.0.1-anacondar_1
+Linking libstdcxx-devel_linux-64-16.2.0-h86e191b_107
+Linking libgcc-devel_linux-64-16.2.0-he3ce08f_107
+Linking kernel-headers_linux-64-6.12.0-he073ed8_6
+Linking font-ttf-dejavu-sans-mono-2.37-hab24e00_0
+Linking font-ttf-inconsolata-3.000-h77eed37_0
+Linking font-ttf-source-code-pro-2.038-h77eed37_0
+Linking font-ttf-ubuntu-0.83-h77eed37_3
+Linking sysroot_linux-64-2.39-hc4b9eeb_6
+Linking fonts-conda-forge-1-hc364b38_1
+Linking fonts-conda-ecosystem-1-0
+Linking binutils_impl_linux-64-2.46.1-default_hfdba357_102
+Linking cairo-1.18.6-h3c89d7e_0
+Linking gcc_impl_linux-64-16.2.0-h9891192_7
+Linking binutils_linux-64-2.46.1-default_h4852527_102
+Linking libharfbuzz-14.5.1-h23af247_0
+Linking gxx_impl_linux-64-16.2.0-h0d273dc_7
+Linking gfortran_impl_linux-64-16.2.0-hf930d89_7
+Linking gcc_linux-64-16.2.0-h0ab548f_2
+Linking libharfbuzz-devel-14.5.1-h23af247_0
+Linking pango-1.58.2-h7bb47b9_1
+Linking gxx_linux-64-16.2.0-h23aca61_2
+Linking harfbuzz-14.5.1-ha770c72_0
+Linking r-base-4.5.3-h502d0c9_3
+Linking r-parallelly-1.48.0-r45h54b55ab_0
+Linking r-proxy-0.4_29-r45h54b55ab_0
+Linking r-gower-1.0.2-r45h54b55ab_0
+Linking r-ps-1.9.3-r45h54b55ab_0
+Linking r-bit-4.6.0-r45h54b55ab_1
+Linking r-foreign-0.8_91-r45h54b55ab_0
+Linking r-cluster-2.1.8.3-r45heaba542_0
+Linking r-kernsmooth-2.23_27-r45hf1ecf5c_0
+Linking r-rpart-4.1.27-r45h54b55ab_0
+Linking r-spatial-7.3_19-r45h54b55ab_0
+Linking r-mass-7.3_66-r45h54b55ab_0
+Linking r-s7-0.2.2-r45h54b55ab_0
+Linking r-xfun-0.61-r45hddc5280_1
+Linking r-sourcetools-0.1.7_2-r45h3697838_0
+Linking r-yaml-2.3.12-r45h54b55ab_0
+Linking r-rappdirs-0.3.4-r45h54b55ab_0
+Linking r-fs-2.1.0-r45h3697838_0
+Linking r-stringi-1.8.9-r45h3d52c89_0
+Linking r-base64enc-0.1_6-r45h54b55ab_0
+Linking r-backports-1.5.1-r45h54b55ab_0
+Linking r-uuid-1.2_2-r45h54b55ab_0
+Linking r-sys-3.4.3-r45h54b55ab_1
+Linking r-digest-0.6.39-r45h3697838_0
+Linking r-colorspace-2.1_3-r45h54b55ab_0
+Linking r-fansi-1.0.7-r45h54b55ab_0
+Linking r-lattice-0.23_1-r45hddc5280_0
+Linking r-cli-3.6.6-r45h3697838_0
+Linking r-utf8-1.2.6-r45h54b55ab_1
+Linking r-glue-1.8.1-r45h54b55ab_0
+Linking r-rlang-1.3.0-r45h3697838_0
+Linking r-curl-8.0.0-r45h444973c_0
+Linking r-rcpp-1.1.2-r45h3697838_0
+Linking r-commonmark-2.0.0-r45h54b55ab_1
+Linking r-data.table-1.18.6.1-r45hbd9402d_0
+Linking r-magrittr-2.0.5-r45h54b55ab_0
+Linking r-fastmap-1.2.0-r45h3697838_2
+Linking r-httpcode-0.3.0-r45ha770c72_5
+Linking r-mime-0.13-r45h54b55ab_1
+Linking r-farver-2.1.2-r45h3697838_2
+Linking r-pbdzmq-0.3_14-r45hded8526_1
+Linking r-maps-3.4.3-r45h54b55ab_1
+Linking r-randomforest-4.7_1.2-r45heaba542_1
+Linking r-jsonlite-2.0.0-r45h54b55ab_1
+Linking rpy2-3.6.8-py313r45hfd6fa06_0
+Linking r-bit64-4.8.6-r45hddc5280_0
+Linking r-nnet-7.3_21-r45hddc5280_0
+Linking r-class-7.3_24-r45h54b55ab_0
+Linking r-askpass-1.2.1-r45h54b55ab_1
+Linking r-matrix-1.7_6-r45h0e4624f_0
+Linking r-nlme-3.1_170-r45heaba542_0
+Linking r-hexbin-1.28.6-r45heaba542_0
+Linking r-zoo-1.9_0-r45h54b55ab_0
+Linking r-lazyeval-0.2.3-r45h54b55ab_0
+Linking r-ellipsis-0.3.3-r45h54b55ab_0
+Linking r-xml2-1.6.0-r45he78afff_0
+Linking r-later-1.4.8-r45h3697838_0
+Linking r-triebeard-0.4.1-r45h3697838_4
+Linking r-plyr-1.8.9-r45h3697838_3
+Linking r-modelmetrics-1.2.2.2-r45h3697838_5
+Linking r-cachem-1.1.0-r45h54b55ab_2
+Linking r-e1071-1.7_17-r45h3697838_0
+Linking r-openssl-2.4.2-r45h68c19f5_0
+Linking r-rcppeigen-0.3.4.0.2-r45h3704496_1
+Linking r-survival-3.8_12-r45hddc5280_0
+Linking r-mgcv-1.9_4-r45h0e4624f_0
+Linking r-xts-0.14.3-r45hddc5280_0
+Linking r-htmltools-0.5.9-r45h3697838_0
+Linking r-urltools-1.7.3.1-r45h3697838_1
+Linking r-proc-1.19.1-r45hfa9885e_0
+Linking r-ttr-0.24.4-r45h54b55ab_2
+Linking r-listenv-1.0.0-r45hc72bb7e_0
+Linking r-squarem-2026.1-r45hc72bb7e_0
+Linking r-numderiv-2016.8_1.1-r45hc72bb7e_7
+Linking r-timedate-4052.112-r45hc72bb7e_0
+Linking r-shape-1.4.6.1-r45ha770c72_2
+Linking r-iterators-1.0.14-r45hc72bb7e_4
+Linking r-otel-0.2.0-r45hc72bb7e_1
+Linking r-xtable-1.8_8-r45hc72bb7e_0
+Linking r-rstudioapi-0.19.0-r45hc72bb7e_0
+Linking r-viridislite-0.4.3-r45hc72bb7e_0
+Linking r-withr-3.0.3-r45hc72bb7e_0
+Linking r-clipr-0.8.1-r45hc72bb7e_0
+Linking r-cpp11-0.5.5-r45h785f33e_0
+Linking r-dbi-1.3.0-r45hc72bb7e_0
+Linking r-generics-0.1.4-r45hc72bb7e_1
+Linking r-pkgconfig-2.0.3-r45hc72bb7e_5
+Linking r-rematch-2.0.0-r45hc72bb7e_2
+Linking r-assertthat-0.2.1-r45hc72bb7e_6
+Linking r-labeling-0.4.3-r45hc72bb7e_2
+Linking r-rcolorbrewer-1.1_3-r45h785f33e_4
+Linking r-r6-2.6.1-r45hc72bb7e_1
+Linking r-codetools-0.2_20-r45hc72bb7e_2
+Linking r-boot-1.3_32-r45hc72bb7e_1
+Linking r-evaluate-1.0.5-r45hc72bb7e_1
+Linking r-crayon-1.5.3-r45hc72bb7e_2
+Linking r-formatr-1.14-r45hc72bb7e_3
+Linking r-tinytex-0.60-r45hc72bb7e_0
+Linking r-highr-0.12-r45hc72bb7e_0
+Linking r-progressr-1.0.0-r45hc72bb7e_0
+Linking r-munsell-0.5.1-r45hc72bb7e_2
+Linking r-lifecycle-1.0.5-r45hc72bb7e_0
+Linking r-memoise-2.0.1-r45hc72bb7e_4
+Linking r-ids-1.0.1-r45hc72bb7e_5
+Linking r-jquerylib-0.1.4-r45hc72bb7e_4
+Linking r-fontawesome-0.5.3-r45hc72bb7e_1
+Linking r-quantmod-0.4.29-r45hc72bb7e_0
+Linking r-diagram-1.6.5-r45ha770c72_4
+Linking r-prettyunits-1.2.0-r45hc72bb7e_2
+Linking r-selectr-0.6_0-r45hc72bb7e_0
+Linking r-httr-1.4.9-r45hacb3a79_0
+Linking r-globals-0.19.1-r45hc72bb7e_0
+Linking r-foreach-1.5.2-r45hc72bb7e_4
+Linking r-recommended-4.5-r45hd8ed1ab_1008
+Linking r-knitr-1.52-r45hacb3a79_0
+Linking r-promises-1.5.0-r45hc72bb7e_1
+Linking r-gtable-0.3.6-r45hc72bb7e_1
+Linking r-crul-1.6.0-r45hc72bb7e_1
+Linking r-scales-1.4.0-r45hc72bb7e_1
+Linking r-conflicted-1.2.0-r45h785f33e_3
+Linking r-gargle-1.6.1-r45h785f33e_0
+Linking r-future-1.76.0-r45hacb3a79_0
+Linking r-future.apply-1.20.2-r45hc72bb7e_0
+Linking r-lava-1.9.3-r45hacb3a79_0
+Linking r-isoband-0.3.0-r45h3697838_0
+Linking r-timechange-0.4.0-r45h3697838_0
+Linking r-tzdb-0.5.0-r45h3697838_2
+Linking r-processx-3.9.0-r45h54b55ab_0
+Linking r-sass-0.4.10-r45h3697838_1
+Linking r-systemfonts-1.3.2-r45h74f4acd_0
+Linking r-vctrs-0.7.3-r45h3697838_0
+Linking r-lobstr-1.2.2-r45hfa9885e_0
+Linking r-glmnet-5.0-r45ha36cffa_0
+Linking r-httpuv-1.6.17-r45h6d565e7_0
+Linking r-lubridate-1.9.5-r45h54b55ab_0
+Linking r-textshaping-1.0.5-r45h74f4acd_0
+Linking r-sparsevctrs-0.3.6-r45h54b55ab_0
+Linking r-clock-0.7.4-r45h3697838_0
+Linking r-purrr-1.2.2-r45h54b55ab_0
+Linking r-ragg-1.5.2-r45h9f1dc4d_0
+Linking r-callr-3.7.6-r45hc72bb7e_2
+Linking r-bslib-0.12.0-r45hc72bb7e_0
+Linking r-blob-1.3.0-r45hc72bb7e_0
+Linking r-pillar-1.11.1-r45hc72bb7e_0
+Linking r-hms-1.1.4-r45hc72bb7e_0
+Linking r-stringr-1.6.0-r45h785f33e_0
+Linking r-ggplot2-4.0.3-r45h785f33e_0
+Linking r-tidyselect-1.2.1-r45hc72bb7e_2
+Linking r-shiny-1.14.0-r45h785f33e_0
+Linking r-rmarkdown-2.32-r45hacb3a79_0
+Linking r-repr-1.1.7-r45h785f33e_2
+Linking r-progress-1.2.3-r45hc72bb7e_2
+Linking r-htmlwidgets-1.6.4-r45h785f33e_4
+Linking r-reprex-2.1.1-r45hc72bb7e_2
+Linking r-irdisplay-1.1-r45hd8ed1ab_4
+Linking r-irkernel-1.3.2-r45h785f33e_3
+Linking r-tibble-3.3.1-r45h54b55ab_0
+Linking r-reshape2-1.4.5-r45h3697838_0
+Linking r-pryr-0.1.6-r45h3697838_3
+Linking r-prodlim-2026.03.11-r45h3697838_0
+Linking r-vroom-1.7.1-r45h3697838_0
+Linking r-dplyr-1.2.1-r45h3697838_0
+Linking r-ipred-0.9_15-r45h54b55ab_2
+Linking r-readr-2.2.0-r45h3697838_0
+Linking r-tidyr-1.3.2-r45h3697838_0
+Linking r-hardhat-1.4.3-r45hc72bb7e_0
+Linking r-forcats-1.0.1-r45hc72bb7e_0
+Linking r-cellranger-1.1.0-r45hc72bb7e_1008
+Linking r-rematch2-2.1.2-r45hc72bb7e_5
+Linking r-googledrive-2.1.2-r45hc72bb7e_1
+Linking r-rvest-1.0.5-r45hc72bb7e_1
+Linking r-dtplyr-1.3.3-r45hc72bb7e_0
+Linking r-gistr-0.9.0-r45hc72bb7e_4
+Linking r-dbplyr-2.6.0-r45hc72bb7e_0
+Linking r-broom-1.0.13-r45hc72bb7e_0
+Linking r-recipes-1.4.0-r45hacb3a79_0
+Linking r-googlesheets4-1.1.2-r45h785f33e_1
+Linking r-rbokeh-0.5.2-r45hc72bb7e_5
+Linking r-modelr-0.1.11-r45hc72bb7e_3
+Linking r-haven-2.5.5-r45h6d565e7_1
+Linking r-readxl-1.5.0.1-r45h305bd6a_0
+Linking r-caret-7.0_1-r45h54b55ab_0
+Linking r-tidyverse-2.0.0-r45h785f33e_3
+Linking r-essentials-4.5-r45hd8ed1ab_2006
+
+Transaction finished
+

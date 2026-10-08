@@ -1,0 +1,182 @@
+:root {
+  --nd-review-reviewed-bg: #0a7b34;
+  --nd-review-reviewed-fg: #ffffff;
+  --nd-review-inprogress-bg: #1d4ed8;
+  --nd-review-inprogress-fg: #ffffff;
+  --nd-review-unreviewed-bg: #6b7280;
+  --nd-review-unreviewed-fg: #ffffff;
+  --nd-review-stale-bg: #b45309;
+  --nd-review-stale-fg: #ffffff;
+  --nd-review-border: rgba(0, 0, 0, 0.12);
+}
+
+.nd-review-badge {
+  display: block;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.5;
+  border: 1px solid var(--nd-review-border);
+}
+
+/* Doubled class beats the theme's dark:bg-myst-bg-secondary on admonitions. */
+.nd-review-badge.nd-review-badge--reviewed {
+  background: var(--nd-review-reviewed-bg);
+  color: var(--nd-review-reviewed-fg);
+}
+
+.nd-review-badge.nd-review-badge--in-progress {
+  background: var(--nd-review-inprogress-bg);
+  color: var(--nd-review-inprogress-fg);
+}
+
+.nd-review-badge.nd-review-badge--unreviewed {
+  background: var(--nd-review-unreviewed-bg);
+  color: var(--nd-review-unreviewed-fg);
+}
+
+.nd-review-badge.nd-review-badge--stale {
+  background: var(--nd-review-stale-bg);
+  color: var(--nd-review-stale-fg);
+}
+
+.nd-review-badge a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 700;
+}
+
+.nd-review-badge .myst-admonition-header {
+  background: transparent;
+  color: inherit;
+}
+
+.nd-review-badge p {
+  margin: 0.25rem 0;
+}
+
+/* Cells tagged scroll-output scroll inside a fixed height, as they did in Jupyter Book 1. */
+.nd-scroll-output [data-name="outputs-container"] {
+  max-height: 24em;
+  overflow-y: auto;
+}
+
+/* Wrap long log lines instead of giving every stream output its own horizontal scrollbar. */
+.myst-jp-stream-output {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* Make the theme's frontmatter DOI (under the authors) stand out as a labelled badge. */
+.myst-fm-doi-badge {
+  display: inline-block;
+  margin: 0.5rem 0;
+  padding: 0.25rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--nd-review-border);
+  background: #024b74;
+  color: #ffffff;
+}
+
+.myst-fm-doi-badge::before {
+  content: "DOI: ";
+  font-weight: 700;
+}
+
+.myst-fm-doi-badge .myst-fm-doi-link {
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Launch menu added to the page header by launch-menu.js. */
+.nd-launch-menu {
+  position: relative;
+  margin-left: 0.5rem;
+}
+
+.nd-launch-menu > summary {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.375rem;
+  background: #e18435;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+
+.nd-launch-menu > summary::-webkit-details-marker {
+  display: none;
+}
+
+.nd-launch-menu > summary:hover {
+  background: #c46a1f;
+}
+
+.nd-launch-menu > ul {
+  position: absolute;
+  right: 0;
+  z-index: 30;
+  min-width: 14rem;
+  margin: 0.25rem 0 0;
+  padding: 0.25rem 0;
+  list-style: none;
+  background: #ffffff;
+  border: 1px solid var(--nd-review-border);
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.35);
+}
+
+.dark .nd-launch-menu > ul {
+  background: #292524;
+}
+
+.nd-launch-menu li a {
+  display: block;
+  padding: 0.4rem 0.75rem;
+  color: inherit;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.nd-launch-menu li a:hover {
+  background: rgba(225, 132, 53, 0.15);
+}
+
+/* The header menu replaces the in-page dropdown, which stays as the fallback without JavaScript. */
+article:has(.nd-launch-menu) .nd-launch {
+  display: none;
+}
+
+/* Light/dark image variants: the theme toggles the `dark` class on <html>. */
+.nd-dark-only {
+  display: none !important;
+}
+
+.dark .nd-light-only {
+  display: none !important;
+}
+
+.dark .nd-dark-only {
+  display: block !important;
+}
+
+/* Black-on-transparent logos (e.g. Wellcome Trust) turn white in dark mode. */
+.dark .nd-invert-dark {
+  filter: invert(1);
+}
+
+
+/* The homepage shows the stacked NeurodeskEDU logo instead of its title. Hide only the title (not
+   the whole title block) so the page keeps its GitHub, edit and download buttons. */
+article:has(.nd-home-logo) .myst-fm-block-title {
+  display: none;
+}
