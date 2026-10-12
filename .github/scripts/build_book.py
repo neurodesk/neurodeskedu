@@ -311,11 +311,19 @@ def finish(stage: Path, raw: Path, output: Path, pages: list[Path], settings: di
             routes[source] = route
     if set(routes) != {p.as_posix() for p in pages}:
         raise ValueError(f"Missing exported pages: {set(map(str, pages)) - set(routes)}")
-    # MyST pages only work under base_url. Copies served elsewhere (neurodesk.github.io/neurodeskedu,
-    # neurodesk.org/example-notebooks) forward to the same page on the canonical site.
+    # MyST assets are base-specific. Keep the production bundle at the publication
+    # root for downstream consumers, but send GitHub Pages visitors to its own build.
     base = settings["base_url"] + "/"
-    guard = (f"<script>if (!location.pathname.startsWith({json.dumps(base)})) location.replace("
-             f"{json.dumps(settings['site_url'] + base)} + location.pathname.split('/').slice(2).join('/')"
+    preview = ""
+    if settings.get("with_preview"):
+        preview = (
+            'if (location.hostname === "neurodesk.github.io" && '
+            '(location.pathname === "/neurodeskedu" || location.pathname.startsWith("/neurodeskedu/"))) '
+            'location.replace("/neurodeskedu/preview/" + location.pathname.split("/").slice(2).join("/")'
+            ' + location.search + location.hash); else '
+        )
+    guard = (f"<script>{preview}if (!location.pathname.startsWith({json.dumps(base)})) location.replace("
+             f"{json.dumps(settings['site_url'] + base)} + location.pathname.split('/').slice({len(base.strip('/').split('/')) + 1}).join('/')"
              " + location.search + location.hash);</script>")
     launch = "".join(f'<script src="{html.escape(base, quote=True)}_static/{name}" defer></script>'
                      for name in ("launch-menu.js", "home-button.js"))
@@ -323,7 +331,8 @@ def finish(stage: Path, raw: Path, output: Path, pages: list[Path], settings: di
         page = built / routes[source.as_posix()] / "index.html"
         text = page.read_text()
         authors = extract_authors_from_content(str(raw / source))
-        tags = [f'<meta name="citation_author" content="{html.escape(name, quote=True)}">' for name in authors]
+        tags = ['<meta name="robots" content="noindex">'] if settings.get("preview") else []
+        tags += [f'<meta name="citation_author" content="{html.escape(name, quote=True)}">' for name in authors]
         if authors:
             names = html.escape(", ".join(authors), quote=True)
             tags += [f'<meta name="author" content="{names}">', f'<meta property="article:author" content="{names}">']
@@ -374,21 +383,31 @@ def main() -> None:
     parser.add_argument("--raw-books", type=Path)
     parser.add_argument("--doi-mapping", type=Path, default=Path("doi-mapping.json"))
     parser.add_argument("--base-url")
+    parser.add_argument("--with-preview", action="store_true",
+                        help="Also build independent GitHub Pages staging under preview/")
     args = parser.parse_args()
     book = args.book.resolve()
     raw = (args.raw_books or book).resolve()
     stage = book / "_build/myst-source"
-    if stage.exists():
-        shutil.rmtree(stage)
     settings = yaml.safe_load((book / "publishing.yml").read_text())
     if args.base_url is not None:
         settings["base_url"] = args.base_url.rstrip("/")
     pages, toc = discover(book)
     dois = json.loads(args.doi_mapping.read_text()) if args.doi_mapping.exists() else {}
-    prepare(book, stage, pages, toc, settings, dois)
-    subprocess.run(["jupyter-book", "build", "--html", "--ci"], cwd=stage,
-                   env={**os.environ, "BASE_URL": settings["base_url"]}, check=True)
-    finish(stage, raw, book / "_build/html", pages, settings)
+    output = book / "_build/html"
+    builds = [(settings, output)]
+    if args.with_preview:
+        settings["with_preview"] = True
+        builds.append(({**settings, "base_url": "/neurodeskedu/preview",
+                        "site_url": "https://neurodesk.github.io", "with_preview": False,
+                        "preview": True}, output / "preview"))
+    for build_settings, destination in builds:
+        if stage.exists():
+            shutil.rmtree(stage)
+        prepare(book, stage, pages, toc, build_settings, dois)
+        subprocess.run(["jupyter-book", "build", "--html", "--ci"], cwd=stage,
+                       env={**os.environ, "BASE_URL": build_settings["base_url"]}, check=True)
+        finish(stage, raw, destination, pages, build_settings)
 
 
 if __name__ == "__main__":

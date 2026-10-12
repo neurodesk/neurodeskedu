@@ -1,5 +1,7 @@
 import json
 import os
+import re
+import shutil
 from pathlib import Path
 import tempfile
 import subprocess
@@ -311,6 +313,93 @@ class BookBuildTests(unittest.TestCase):
         self.assertIn("location.search + location.hash", alias)
         self.assertTrue((output / ".nojekyll").exists())
 
+    def test_preview_build_keeps_production_destination_and_uses_same_sources(self):
+        (self.book / "publishing.yml").write_text(yaml.safe_dump(self.settings))
+        raw = self.root / "raw-books"
+        with mock.patch.object(sys, "argv", ["build_book.py", "--book", str(self.book),
+                                             "--raw-books", str(raw), "--with-preview"]), \
+                mock.patch.object(build_book, "prepare") as prepare_build, \
+                mock.patch.object(build_book.subprocess, "run") as engine, \
+                mock.patch.object(build_book, "finish") as finish_build:
+            build_book.main()
+        self.assertEqual([call.kwargs["env"]["BASE_URL"] for call in engine.call_args_list],
+                         ["/edu", "/neurodeskedu/preview"])
+        self.assertEqual([call.args[2] for call in finish_build.call_args_list],
+                         [self.book / "_build/html", self.book / "_build/html/preview"])
+        self.assertEqual([call.args[1] for call in finish_build.call_args_list], [raw, raw])
+        self.assertEqual([call.args[0] for call in prepare_build.call_args_list], [self.book, self.book])
+        self.assertTrue(finish_build.call_args_list[0].args[4]["with_preview"])
+        self.assertFalse(finish_build.call_args_list[1].args[4]["with_preview"])
+
+    def test_production_and_preview_redirects_preserve_routes_and_origins(self):
+        stage = self.root / "stage"
+        built = stage / "_build/html"
+        content = stage / "_build/site/content"
+        content.mkdir(parents=True)
+        route = "examples/topic/test-one/"
+        (content / "page.json").write_text(json.dumps({
+            "location": "/" + str(self.source), "slug": "examples.topic.test-one"}))
+        (built / route).mkdir(parents=True)
+        page = built / route / "index.html"
+        settings = {**self.settings, "with_preview": True}
+        (content / "intro.json").write_text(json.dumps({"location": "/intro.md", "slug": "index"}))
+        production_files = {}
+        for preview in (False, True):
+            shutil.rmtree(built)
+            page.parent.mkdir(parents=True)
+            if preview:
+                settings = {**settings, "with_preview": False, "preview": True,
+                            "base_url": "/neurodeskedu/preview", "site_url": "https://neurodesk.github.io"}
+            page.write_text("<html><head></head><body>saved output</body></html>")
+            (built / "index.html").write_text("<html><head></head><body>Introduction</body></html>")
+            output = self.root / "production"
+            if preview:
+                output /= "preview"
+            finish(stage, self.book, output, [Path("intro.md"), self.source], settings)
+            self.assertEqual(PageLinks((output / "intro.html").read_text()).refresh, "./")
+            self.assertIn("location.search + location.hash", (output / "intro.html").read_text())
+            if preview:
+                for path, original in production_files.items():
+                    self.assertEqual(path.read_bytes(), original, path)
+            else:
+                production_files = {path: path.read_bytes() for path in output.rglob("*") if path.is_file()}
+            text = (output / route / "index.html").read_text()
+            self.assertEqual('name="robots" content="noindex"' in text, preview)
+            self.assertIn(f'src="{settings["base_url"]}/_static/launch-menu.js"', text)
+            script = re.search(r"<script>(.*?)</script>", text)[1]
+            if preview:
+                cases = [
+                    ("neurodesk.github.io", "/neurodeskedu/preview/" + route, None),
+                    ("neurodesk.github.io", "/neurodeskedu/preview/", None),
+                    ("neurodesk.org", "/edu/preview/" + route,
+                     "https://neurodesk.github.io/neurodeskedu/preview/" + route),
+                ]
+            else:
+                cases = [
+                    ("neurodesk.org", "/edu/" + route, None),
+                    ("neurodesk.org", "/edu/", None),
+                    ("neurodesk.github.io", "/edu/" + route, None),
+                    ("neurodesk.github.io", "/neurodeskedu/" + route, "/neurodeskedu/preview/" + route),
+                    ("neurodesk.github.io", "/neurodeskedu/", "/neurodeskedu/preview/"),
+                    ("neurodesk.github.io", "/neurodeskedu", "/neurodeskedu/preview/"),
+                    ("other.example", "/neurodeskedu/" + route, "https://neurodesk.org/edu/" + route),
+                    ("neurodesk.github.io.evil.example", "/neurodeskedu/" + route,
+                     "https://neurodesk.org/edu/" + route),
+                    ("neurodesk.github.io", "/neurodeskedu-other/" + route,
+                     "https://neurodesk.org/edu/" + route),
+                    ("neurodesk.org", "/example-notebooks/" + route, "https://neurodesk.org/edu/" + route),
+                ]
+            for hostname, pathname, expected in cases:
+                with self.subTest(preview=preview, hostname=hostname, pathname=pathname):
+                    location = {"hostname": hostname, "pathname": pathname,
+                                "search": "?x=1&next=https://other.example", "hash": "#saved-output"}
+                    program = (f"const location = {json.dumps(location)}; let target = null; "
+                               "location.replace = value => { target = value; }; " + script +
+                               "console.log(JSON.stringify(target));")
+                    result = subprocess.run(["node", "-e", program], check=True, text=True, capture_output=True)
+                    self.assertEqual(json.loads(result.stdout),
+                                     expected + location["search"] + location["hash"] if expected else None)
+
     @unittest.skipUnless(os.environ.get("BOOK_INTEGRATION_TEST"), "set BOOK_INTEGRATION_TEST=1 to run Jupyter Book")
     def test_real_engine_uses_saved_outputs_without_executing(self):
         (self.book / "publishing.yml").write_text(yaml.safe_dump(self.settings))
@@ -320,7 +409,7 @@ class BookBuildTests(unittest.TestCase):
         }))
         self.notebook["metadata"].pop("widgets")
         (self.book / self.source).write_text(json.dumps(self.notebook))
-        subprocess.run([sys.executable, ".github/scripts/build_book.py", "--book", str(self.book)], check=True)
+        subprocess.run([sys.executable, ".github/scripts/build_book.py", "--book", str(self.book), "--with-preview"], check=True)
         output = self.book / "_build/html"
         page = output / "examples/topic/test-one/index.html"
         self.assertIn("saved output", page.read_text())
@@ -333,6 +422,14 @@ class BookBuildTests(unittest.TestCase):
         self.assertEqual(len(launches), 5)
         article = json.loads((self.book / "_build/myst-source/_build/site/content/examples.topic.test-one.json").read_text())
         self.assertEqual(article["frontmatter"]["execute"], {"skip": True})
+        preview = output / "preview"
+        preview_text = (preview / "examples/topic/test-one/index.html").read_text()
+        self.assertIn("saved output", preview_text)
+        self.assertIn("/neurodeskedu/preview/_sources/", preview_text)
+        self.assertIn('name="robots" content="noindex"', preview_text)
+        self.assertEqual((preview / "_sources" / self.source).read_bytes(), (self.book / self.source).read_bytes())
+        self.assertEqual(json.loads((output / "neurodesk-pages.json").read_text()),
+                         json.loads((preview / "neurodesk-pages.json").read_text()))
 
 
 if __name__ == "__main__":

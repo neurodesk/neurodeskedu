@@ -44,12 +44,13 @@ jobs:
           BOOK_INTEGRATION_TEST: '1'
         run: python -m unittest discover -s .github/scripts -p test_build_book.py -v
       - run: python -m unittest discover -s .github/scripts -p test_offload_widget_volumes.py -v
-      - run: python .github/scripts/build_book.py
-      - run: python .github/scripts/verify_book.py
+      - run: python .github/scripts/build_book.py --with-preview
+      - run: python .github/scripts/verify_book.py --with-preview
       - name: Check downloads and navigation in a browser
         run: |
           mkdir -p "$RUNNER_TEMP/site"
           ln -s "$GITHUB_WORKSPACE/books/_build/html" "$RUNNER_TEMP/site/edu"
+          ln -s "$GITHUB_WORKSPACE/books/_build/html" "$RUNNER_TEMP/site/neurodeskedu"
           python -m http.server --bind 127.0.0.1 --directory "$RUNNER_TEMP/site" 8000 &
           preview_pid=$!
           trap 'kill "$preview_pid"' EXIT
@@ -58,3 +59,4 @@ jobs:
             sleep 1
           done
           python .github/scripts/verify_book_browser.py http://127.0.0.1:8000/edu
+          python .github/scripts/verify_book_browser.py http://127.0.0.1:8000/neurodeskedu/preview

@@ -116,6 +116,23 @@ access to load the runtime and any hosted imaging data.
 Source notebooks without saved widget state show their text fallback. CI uses
 the executed artifacts that contain this state.
 
+### GitHub Pages staging
+
+Publication uses `build_book.py --with-preview` to keep the production `/edu`
+bundle at the root of `gh-pages` and build a second, independent bundle for
+`https://neurodesk.github.io/neurodeskedu/preview/`. Existing GitHub Pages entry
+links (including `intro.html`) forward into this preview, preserving the page,
+query string and fragment. The preview is marked `noindex`.
+
+The production promotion workflow copies the `gh-pages` root into `/edu`, so its
+root layout and production base must not change. The nested preview also gets
+copied by that consumer; it has its own base and forwards to GitHub Pages when
+opened under production. A single build with a changed base, or removing the
+wrong-base redirect, would break links and assets on one of the two hosts.
+
+Both builds use the same saved outputs and raw-source snapshot; neither executes
+notebooks. A regular local build without `--with-preview` still emits one bundle.
+
 ### Publication reruns
 
 CI runs notebooks containing local NiiVue files twice: once to produce results,

@@ -28,9 +28,11 @@ class PageLinks(HTMLParser):
             self.refresh = attrs["content"].split("url=", 1)[1]
 
 
-def verify(book: Path, raw: Path) -> None:
+def verify(book: Path, raw: Path, preview: bool = False) -> None:
     pages, _ = discover(book)
     output = book / "_build/html"
+    if preview:
+        output /= "preview"
     routes = json.loads((output / "neurodesk-pages.json").read_text())
     settings = yaml.safe_load((book / "publishing.yml").read_text())
     assert set(routes) == {p.as_posix() for p in pages}, "Exported page inventory differs from the sources"
@@ -87,5 +89,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--book", type=Path, default=Path("books"))
     parser.add_argument("--raw-books", type=Path)
+    parser.add_argument("--with-preview", action="store_true")
     args = parser.parse_args()
     verify(args.book, args.raw_books or args.book)
+    if args.with_preview:
+        verify(args.book, args.raw_books or args.book, preview=True)

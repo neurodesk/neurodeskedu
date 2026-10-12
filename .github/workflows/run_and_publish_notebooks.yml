@@ -2008,8 +2008,8 @@ jobs:
           python -m venv "$RUNNER_TEMP/book-venv"
           source "$RUNNER_TEMP/book-venv/bin/activate"
           pip install -r requirements-book.txt
-          python .github/scripts/build_book.py --raw-books "$RUNNER_TEMP/source-books"
-          python .github/scripts/verify_book.py --raw-books "$RUNNER_TEMP/source-books"
+          python .github/scripts/build_book.py --with-preview --raw-books "$RUNNER_TEMP/source-books"
+          python .github/scripts/verify_book.py --with-preview --raw-books "$RUNNER_TEMP/source-books"
 
       - name: Verify build output
         run: |
