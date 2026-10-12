@@ -36,7 +36,7 @@ jobs:
           python-version: '3.12'
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version: '22'
+          node-version: '24'
       - run: pip install -r requirements-book-browser.txt
       - run: playwright install --with-deps chromium
       - name: Test metadata, redirects, and saved output rendering
