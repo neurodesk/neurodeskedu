@@ -1,4 +1,11 @@
 import json
+import io
+import hashlib
+import shutil
+import struct
+import tarfile
+import zlib
+from contextlib import redirect_stdout
 import os
 from pathlib import Path
 import tempfile
@@ -11,6 +18,7 @@ from urllib.parse import parse_qs, urlparse
 import yaml
 
 import build_book
+import install_oxipng
 from build_book import adapt_markdown, controls, discover, embed_widgets, finish, merge_streams, prepare
 from verify_book import PageLinks
 
@@ -333,6 +341,145 @@ class BookBuildTests(unittest.TestCase):
         self.assertEqual(len(launches), 5)
         article = json.loads((self.book / "_build/myst-source/_build/site/content/examples.topic.test-one.json").read_text())
         self.assertEqual(article["frontmatter"]["execute"], {"skip": True})
+
+
+class PngOptimizationTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.root = Path(self.temp.name)
+        self.path = self.root / "figure.png"
+
+    def write_png(self):
+        from PIL import Image
+        Image.new("RGBA", (64, 64), (15, 30, 45, 255)).save(self.path, compress_level=0)
+        return self.path.read_bytes()
+
+    def test_decoder_failures_warn_and_preserve_input(self):
+        for data in (b"\xff\xd8\xff\xe0 a JPEG", self.write_png()[:40]):
+            with self.subTest(data=data):
+                self.path.write_bytes(data)
+                with redirect_stdout(io.StringIO()) as output:
+                    build_book.optimize_png(self.path)
+                self.assertIn("::warning::Left figure.png unoptimized:", output.getvalue())
+                self.assertEqual(self.path.read_bytes(), data)
+
+    def test_native_16_bit_rgb_samples_survive_optimization(self):
+        def chunk(kind, data):
+            return struct.pack(">I", len(data)) + kind + data + struct.pack(">I", zlib.crc32(kind + data))
+
+        width, height = 64, 64
+        samples = bytes().join(struct.pack(">HHH", x * 997, y * 991, (x * y * 31) % 65536)
+                              for y in range(height) for x in range(width))
+        rows = b"".join(b"\0" + samples[y * width * 6:(y + 1) * width * 6] for y in range(height))
+        original = (b"\x89PNG\r\n\x1a\n"
+                    + chunk(b"IHDR", struct.pack(">IIBBBBB", width, height, 16, 2, 0, 0, 0))
+                    + chunk(b"IDAT", zlib.compress(rows, level=0)) + chunk(b"IEND", b""))
+        self.path.write_bytes(original)
+        build_book.optimize_png(self.path)
+        optimized = self.path.read_bytes()
+        self.assertLess(len(optimized), len(original))
+        self.assertEqual(struct.unpack(">IIBBBBB", optimized[16:29]), (64, 64, 16, 2, 0, 0, 0))
+        compressed = b""
+        offset = 8
+        while offset < len(optimized):
+            length = struct.unpack(">I", optimized[offset:offset + 4])[0]
+            if optimized[offset + 4:offset + 8] == b"IDAT":
+                compressed += optimized[offset + 8:offset + 8 + length]
+            offset += length + 12
+        filtered = zlib.decompress(compressed)
+        decoded = bytearray()
+        previous = bytearray(width * 6)
+        for y in range(height):
+            offset = y * (width * 6 + 1)
+            filter_type = filtered[offset]
+            row = bytearray(filtered[offset + 1:offset + 1 + width * 6])
+            for x in range(len(row)):
+                left = row[x - 6] if x >= 6 else 0
+                above = previous[x]
+                upper_left = previous[x - 6] if x >= 6 else 0
+                prediction = left + above - upper_left
+                paeth = min((left, above, upper_left), key=lambda value: abs(prediction - value))
+                predictors = (0, left, above, (left + above) // 2, paeth)
+                row[x] = (row[x] + predictors[filter_type]) % 256
+            decoded.extend(row)
+            previous = row
+        self.assertEqual(decoded, samples)
+
+    def test_missing_input_fails(self):
+        with self.assertRaisesRegex(RuntimeError, "oxipng failed"):
+            build_book.optimize_png(self.path)
+
+    def test_missing_tool_fails_before_build_and_during_optimization(self):
+        self.write_png()
+        with mock.patch.dict(os.environ, {"PATH": str(self.root)}):
+            with self.assertRaises(FileNotFoundError):
+                build_book.optimize_png(self.path)
+            result = subprocess.run([sys.executable, ".github/scripts/build_book.py", "--book", str(self.root)],
+                                    capture_output=True, text=True)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("run python .github/scripts/install_oxipng.py", result.stderr)
+            with self.assertRaisesRegex(FileNotFoundError, "oxipng is required"):
+                finish(self.root, self.root, self.root, [], {})
+
+    def test_nonexecutable_tool_fails(self):
+        binary = self.root / "oxipng"
+        shutil.copyfile(shutil.which("oxipng"), binary)
+        binary.chmod(0o644)
+        with mock.patch.dict(os.environ, {"PATH": str(self.root)}):
+            with self.assertRaises(PermissionError):
+                build_book.optimize_png(self.path)
+
+    @unittest.skipIf(hasattr(os, "geteuid") and os.geteuid() == 0, "root bypasses file permissions")
+    def test_file_access_failures_propagate_without_warning(self):
+        original = self.write_png()
+        for mode in (0o000, 0o444):
+            with self.subTest(mode=mode):
+                self.path.chmod(mode)
+                try:
+                    with redirect_stdout(io.StringIO()) as output:
+                        with self.assertRaisesRegex(RuntimeError, "Failed to open file for reading|Permission denied"):
+                            build_book.optimize_png(self.path)
+                    self.assertEqual(output.getvalue(), "")
+                finally:
+                    self.path.chmod(0o600)
+                self.assertEqual(self.path.read_bytes(), original)
+
+
+class OxipngInstallerTests(unittest.TestCase):
+    def test_archive_integrity_and_atomic_replacement(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            destination = Path(temporary)
+            installed = destination / "oxipng"
+            installed.write_bytes(b"previous installation")
+            for scenario in ("checksum", "symlink", "version", "success", "success"):
+                with self.subTest(scenario=scenario):
+                    archive_bytes = io.BytesIO()
+                    with tarfile.open(fileobj=archive_bytes, mode="w:gz") as archive:
+                        member = tarfile.TarInfo(f"oxipng-{install_oxipng.VERSION}-test/oxipng")
+                        version = "wrong" if scenario == "version" else install_oxipng.VERSION
+                        executable = f"#!/bin/sh\necho oxipng {version}\n".encode()
+                        if scenario == "symlink":
+                            member.type = tarfile.SYMTYPE
+                            member.linkname = "../../outside"
+                        else:
+                            member.size = len(executable)
+                        archive.addfile(member, io.BytesIO(executable))
+                    data = archive_bytes.getvalue()
+                    digest = "wrong" if scenario == "checksum" else hashlib.sha256(data).hexdigest()
+                    host = (install_oxipng.platform.system(), install_oxipng.platform.machine())
+                    before = installed.read_bytes()
+                    with mock.patch.object(install_oxipng, "ASSETS", {host: ("test", digest)}), \
+                         mock.patch.object(install_oxipng, "urlopen", return_value=io.BytesIO(data)):
+                        if scenario == "success":
+                            self.assertEqual(install_oxipng.install(destination), installed)
+                            self.assertEqual(installed.read_bytes(), executable)
+                            self.assertTrue(os.access(installed, os.X_OK))
+                        else:
+                            with self.assertRaises(RuntimeError):
+                                install_oxipng.install(destination)
+                            self.assertEqual(installed.read_bytes(), before)
+                    self.assertEqual(list(destination.iterdir()), [installed])
 
 
 if __name__ == "__main__":

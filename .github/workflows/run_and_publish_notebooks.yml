@@ -29,6 +29,7 @@ on:
       - 'books/_static/**'
       - 'requirements-book.txt'
       - '.github/scripts/build_book.py'
+      - '.github/scripts/install_oxipng.py'
       - '.github/scripts/test_build_book.py'
       - '.github/scripts/verify_book.py'
       - '.github/scripts/notebook_metadata.py'
@@ -1992,7 +1993,7 @@ jobs:
 
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
-          python-version: '3.12'
+          python-version: '3.15'
 
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
@@ -2003,6 +2004,7 @@ jobs:
           python -m venv "$RUNNER_TEMP/book-venv"
           source "$RUNNER_TEMP/book-venv/bin/activate"
           pip install -r requirements-book.txt
+          python .github/scripts/install_oxipng.py
           python .github/scripts/build_book.py --raw-books "$RUNNER_TEMP/source-books"
           python .github/scripts/verify_book.py --raw-books "$RUNNER_TEMP/source-books"
 

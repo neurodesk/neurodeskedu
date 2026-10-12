@@ -68,17 +68,22 @@ Our example notebooks follow best practices from [Rule et al. (2019) "Ten simple
 
 ### Build the website locally
 
-The website uses Jupyter Book 2 and the MyST book theme. Install Python 3.12
+The website uses Jupyter Book 2 and the MyST book theme. Install Python 3.15
 and Node.js 22, then run these commands from the repository root:
 
 ```bash
 python -m venv .venv-book
 source .venv-book/bin/activate
 pip install -r requirements-book.txt
+python .github/scripts/install_oxipng.py
 python .github/scripts/build_book.py --base-url ''
 python .github/scripts/verify_book.py
 python -m http.server --directory books/_build/html 8000
 ```
+
+The installer adds the pinned oxipng CLI to the active virtual environment.
+It supports Linux x86_64 and macOS x86_64 or Apple Silicon. To use another
+directory on `PATH`, pass `--destination /path/to/bin`.
 
 Open `http://localhost:8000`. The build reads saved notebook outputs and never
 executes code cells. CI executes notebooks separately before it builds the site.

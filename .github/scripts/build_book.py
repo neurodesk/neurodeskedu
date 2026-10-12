@@ -15,7 +15,6 @@ import shutil
 import subprocess
 from urllib.parse import quote, unquote, urlencode
 
-import oxipng
 import yaml
 
 from notebook_metadata import extract_authors_from_content
@@ -162,12 +161,24 @@ def embed_widgets(notebook: dict, stage: Path, source: Path, base_url: str) -> N
     del notebook["metadata"]["widgets"]
 
 
+def require_oxipng() -> None:
+    if shutil.which("oxipng") is None:
+        raise FileNotFoundError("oxipng is required; run python .github/scripts/install_oxipng.py")
+
+
 def optimize_png(path: Path) -> None:
-    try:
-        oxipng.optimize(path, level=2, strip=oxipng.StripChunks.safe())
-    except oxipng.PngError as error:
-        # e.g. a JPEG saved with a .png name: publish it unchanged rather than fail the deploy.
-        print(f"::warning::Left {path.name} unoptimized: {error}")
+    result = subprocess.run(["oxipng", "-o", "2", "--strip", "safe", "--", str(path)],
+                            capture_output=True, text=True)
+    if result.returncode:
+        diagnostic = result.stderr.strip().splitlines()[-1] if result.stderr.strip() else ""
+        decoder_errors = {
+            f"{path}: Invalid PNG header detected",
+            f"{path}: Missing data in the file; the file is truncated",
+        }
+        if result.returncode == 1 and diagnostic in decoder_errors:
+            print(f"::warning::Left {path.name} unoptimized: {diagnostic}")
+        else:
+            raise RuntimeError(f"oxipng failed for {path} (exit {result.returncode}): {result.stderr.strip()}")
 
 
 def merge_streams(outputs: list[dict]) -> list[dict]:
@@ -299,6 +310,7 @@ def prepare(book: Path, stage: Path, pages: list[Path], toc: list[dict], setting
 
 
 def finish(stage: Path, raw: Path, output: Path, pages: list[Path], settings: dict) -> None:
+    require_oxipng()
     built = stage / "_build/html"
     routes = {}
     for path in (stage / "_build/site/content").glob("*.json"):
@@ -375,6 +387,7 @@ def main() -> None:
     parser.add_argument("--doi-mapping", type=Path, default=Path("doi-mapping.json"))
     parser.add_argument("--base-url")
     args = parser.parse_args()
+    require_oxipng()
     book = args.book.resolve()
     raw = (args.raw_books or book).resolve()
     stage = book / "_build/myst-source"
