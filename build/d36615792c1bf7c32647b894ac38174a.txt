@@ -1,0 +1,239 @@
+------------------------------------------------------------------
+  Running MRIQC version 24.1.0.dev0+gd5b13cb5.d20240826
+  ----------------------------------------------------------------
+
+  NOTICE
+  Copyright © The NiPreps Developers.
+  
+  This product includes software developed by
+  the NiPreps Community (https://nipreps.org/).
+  
+  Portions of this software were developed at the Department of
+  Psychology at Stanford University, Stanford, CA, US.
+  
+  This software contains code ultimately derived from the
+  PCP Quality Assessment Protocol (QAP;
+  http://preprocessed-connectomes-project.org/quality-assessment-protocol)
+  by C. Craddock, S. Giavasis, D. Clark, Z. Shezhad, and J. Pellman.
+  
+  This software is also distributed as a Docker container image.
+  The bootstrapping file for the image ("Dockerfile") is licensed
+  under the MIT License.
+
+  ----------------------------------------------------------------
+
+  * BIDS dataset path: /home/jovyan/workspace/books/examples/workflows/ds001226.
+  * Output folder: MRIQC.
+  * Analysis levels: ['participant'].
+------------------------------------------------------------------
+
+2026-10-08 17:31:32 |[33;20m IMPORTANT [0m|[33;20m mriqc            [0m|[33;20m DataLad dataset identified, attempting to `datalad get` unavailable files.[0m
+action summary:
+  get (notneeded: 4)
+2026-10-08 17:31:32 |[33;20m IMPORTANT [0m|[33;20m mriqc            [0m|[33;20m Extracting metadata and entities for 1 input runs of modality 't1w'...[0m
+2026-10-08 17:31:32 |[33;20m IMPORTANT [0m|[33;20m mriqc            [0m|[33;20m File size ('t1w'): 0.01|0.01 GB [maximum|average].[0m
+2026-10-08 17:31:32 |[33;20m IMPORTANT [0m|[33;20m mriqc            [0m|[33;20m Extracting metadata and entities for 1 input runs of modality 'bold'...[0m
+2026-10-08 17:31:32 |[33;20m IMPORTANT [0m|[33;20m mriqc            [0m|[33;20m File size ('bold'): 0.04|0.04 GB [maximum|average].[0m
+2026-10-08 17:31:32 |[33;20m IMPORTANT [0m|[33;20m mriqc            [0m|[33;20m Extracting metadata and entities for 2 input runs of modality 'dwi'...[0m
+2026-10-08 17:31:32 |[93;20m WARNING  [0m|[93;20m nipype.workflow  [0m|[93;20m 1 cannot be processed (too short or too long)[0m
+2026-10-08 17:31:32 |[33;20m IMPORTANT [0m|[33;20m mriqc            [0m|[33;20m File size ('dwi'): 0.04|0.04 GB [maximum|average].[0m
+2026-10-08 17:31:32 |[34;20m INFO     [0m|[34;20m mriqc            [0m|[34;20m MRIQC config file: /home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/config-20261008-173131_76a1a5ca-10c4-4490-bb17-2a8ee03eb73a.toml.[0m
+2026-10-08 17:31:39 |[33;20m IMPORTANT [0m|[33;20m mriqc            [0m|[33;20m Building MRIQC's workflows...[0m
+2026-10-08 17:31:39 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m Building functional MRIQC workflow for 1 BOLD runs..[0m
+2026-10-08 17:31:40 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m Building diffusion MRIQC workflow for 1 NIfTI files..[0m
+2026-10-08 17:31:40 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m Building anatomical MRIQC workflow for 1 NIfTI files..[0m
+2026-10-08 17:31:45 |[33;20m IMPORTANT [0m|[33;20m mriqc            [0m|[33;20m Workflow building finished (exit code 0).[0m
+2026-10-08 17:31:51 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m Workflow mriqc_wf settings: ['check', 'execution', 'logging', 'monitoring'][0m
+2026-10-08 17:31:51 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.dwiMRIQC.load_bmat".[0m
+2026-10-08 17:31:51 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.dwiMRIQC.load_bmat" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/dwiMRIQC/edbb42c7bf5828aa552d68da572c7aebc01fdb50/load_bmat".[0m
+2026-10-08 17:31:51 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.dwiMRIQC.load_bmat".[0m
+2026-10-08 17:31:51 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "load_bmat" <mriqc.interfaces.diffusion.ReadDWIMetadata>[0m
+2026-10-08 17:31:51 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "load_bmat", elapsed time 0.181225s.[0m
+2026-10-08 17:31:55 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_background".[0m
+2026-10-08 17:31:55 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_background" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/anatMRIQC/anat_report_wf/867c4dee1c01330cc041483ba84642cbd1c2d8b1/ds_report_background".[0m
+2026-10-08 17:31:55 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_background".[0m
+2026-10-08 17:31:55 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_background" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:31:55 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_background", elapsed time 0.008294s.[0m
+2026-10-08 17:32:05 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_zoomed".[0m
+2026-10-08 17:32:05 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_zoomed" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/anatMRIQC/anat_report_wf/867c4dee1c01330cc041483ba84642cbd1c2d8b1/ds_report_zoomed".[0m
+2026-10-08 17:32:05 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_zoomed".[0m
+2026-10-08 17:32:05 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_zoomed" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:05 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_zoomed", elapsed time 0.005361s.[0m
+2026-10-08 17:32:05 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_bmask".[0m
+2026-10-08 17:32:05 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_bmask" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/anatMRIQC/anat_report_wf/867c4dee1c01330cc041483ba84642cbd1c2d8b1/ds_report_bmask".[0m
+2026-10-08 17:32:05 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_bmask".[0m
+2026-10-08 17:32:05 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_bmask" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:05 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_bmask", elapsed time 0.005041s.[0m
+2026-10-08 17:32:07 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_norm".[0m
+2026-10-08 17:32:07 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_norm" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/anatMRIQC/anat_report_wf/867c4dee1c01330cc041483ba84642cbd1c2d8b1/ds_report_norm".[0m
+2026-10-08 17:32:07 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_norm".[0m
+2026-10-08 17:32:07 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_norm" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:07 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_norm", elapsed time 0.005444s.[0m
+2026-10-08 17:32:13 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.funcMRIQC.func_report_wf.ds_report_mean".[0m
+2026-10-08 17:32:13 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.funcMRIQC.func_report_wf.ds_report_mean".[0m
+2026-10-08 17:32:13 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_ds_report_mean0" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/funcMRIQC/func_report_wf/31cb705173c95b4fbebf2ff1b1a2240a80bc1460/ds_report_mean/mapflow/_ds_report_mean0".[0m
+2026-10-08 17:32:13 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "_ds_report_mean0".[0m
+2026-10-08 17:32:13 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_ds_report_mean0" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:13 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_ds_report_mean0", elapsed time 0.005388s.[0m
+2026-10-08 17:32:13 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.funcMRIQC.func_report_wf.ds_report_background".[0m
+2026-10-08 17:32:13 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.funcMRIQC.func_report_wf.ds_report_background".[0m
+2026-10-08 17:32:13 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_ds_report_background0" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/funcMRIQC/func_report_wf/31cb705173c95b4fbebf2ff1b1a2240a80bc1460/ds_report_background/mapflow/_ds_report_background0".[0m
+2026-10-08 17:32:13 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "_ds_report_background0".[0m
+2026-10-08 17:32:13 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_ds_report_background0" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:13 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_ds_report_background0", elapsed time 0.005267s.[0m
+2026-10-08 17:32:14 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.funcMRIQC.func_report_wf.ds_report_stdev".[0m
+2026-10-08 17:32:14 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.funcMRIQC.func_report_wf.ds_report_stdev".[0m
+2026-10-08 17:32:14 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_ds_report_stdev0" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/funcMRIQC/func_report_wf/31cb705173c95b4fbebf2ff1b1a2240a80bc1460/ds_report_stdev/mapflow/_ds_report_stdev0".[0m
+2026-10-08 17:32:14 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "_ds_report_stdev0".[0m
+2026-10-08 17:32:14 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_ds_report_stdev0" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:14 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_ds_report_stdev0", elapsed time 0.00524s.[0m
+2026-10-08 17:32:21 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.dwiMRIQC.dwi_report_wf.ds_report_fa".[0m
+2026-10-08 17:32:21 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.dwiMRIQC.dwi_report_wf.ds_report_fa" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/dwiMRIQC/dwi_report_wf/edbb42c7bf5828aa552d68da572c7aebc01fdb50/ds_report_fa".[0m
+2026-10-08 17:32:21 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.dwiMRIQC.dwi_report_wf.ds_report_fa".[0m
+2026-10-08 17:32:21 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_fa" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:21 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_fa", elapsed time 0.005364s.[0m
+2026-10-08 17:32:21 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.dwiMRIQC.dwi_report_wf.ds_report_md".[0m
+2026-10-08 17:32:21 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.dwiMRIQC.dwi_report_wf.ds_report_md" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/dwiMRIQC/dwi_report_wf/edbb42c7bf5828aa552d68da572c7aebc01fdb50/ds_report_md".[0m
+2026-10-08 17:32:21 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.dwiMRIQC.dwi_report_wf.ds_report_md".[0m
+2026-10-08 17:32:21 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_md" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:21 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_md", elapsed time 0.005489s.[0m
+2026-10-08 17:32:22 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.dwiMRIQC.dwi_report_wf.ds_report_hm".[0m
+2026-10-08 17:32:22 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.dwiMRIQC.dwi_report_wf.ds_report_hm" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/dwiMRIQC/dwi_report_wf/edbb42c7bf5828aa552d68da572c7aebc01fdb50/ds_report_hm".[0m
+2026-10-08 17:32:22 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.dwiMRIQC.dwi_report_wf.ds_report_hm".[0m
+2026-10-08 17:32:22 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_hm" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:22 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_hm", elapsed time 0.005706s.[0m
+2026-10-08 17:32:23 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.funcMRIQC.func_report_wf.ds_report_norm".[0m
+2026-10-08 17:32:23 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.funcMRIQC.func_report_wf.ds_report_norm" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/funcMRIQC/func_report_wf/31cb705173c95b4fbebf2ff1b1a2240a80bc1460/ds_report_norm".[0m
+2026-10-08 17:32:23 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.funcMRIQC.func_report_wf.ds_report_norm".[0m
+2026-10-08 17:32:23 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_norm" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:23 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_norm", elapsed time 0.006016s.[0m
+2026-10-08 17:32:25 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.funcMRIQC.func_report_wf.ds_report_zoomed".[0m
+2026-10-08 17:32:25 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.funcMRIQC.func_report_wf.ds_report_zoomed".[0m
+2026-10-08 17:32:25 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_ds_report_zoomed0" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/funcMRIQC/func_report_wf/31cb705173c95b4fbebf2ff1b1a2240a80bc1460/ds_report_zoomed/mapflow/_ds_report_zoomed0".[0m
+2026-10-08 17:32:25 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "_ds_report_zoomed0".[0m
+2026-10-08 17:32:25 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_ds_report_zoomed0" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:25 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_ds_report_zoomed0", elapsed time 0.005492s.[0m
+2026-10-08 17:32:25 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.funcMRIQC.func_report_wf.ds_report_bmask".[0m
+2026-10-08 17:32:25 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.funcMRIQC.func_report_wf.ds_report_bmask" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/funcMRIQC/func_report_wf/31cb705173c95b4fbebf2ff1b1a2240a80bc1460/ds_report_bmask".[0m
+2026-10-08 17:32:25 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.funcMRIQC.func_report_wf.ds_report_bmask".[0m
+2026-10-08 17:32:25 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_bmask" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:25 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_bmask", elapsed time 0.005593s.[0m
+2026-10-08 17:32:26 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_datasink0" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/funcMRIQC/ComputeIQMs/31cb705173c95b4fbebf2ff1b1a2240a80bc1460/datasink/mapflow/_datasink0".[0m
+2026-10-08 17:32:26 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_datasink0" <mriqc.interfaces.bids.IQMFileSink>[0m
+2026-10-08 17:32:26 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_datasink0", elapsed time 0.001026s.[0m
+2026-10-08 17:32:26 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_ds_timeseries0" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/funcMRIQC/ComputeIQMs/31cb705173c95b4fbebf2ff1b1a2240a80bc1460/ds_timeseries/mapflow/_ds_timeseries0".[0m
+2026-10-08 17:32:26 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_ds_timeseries0" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:26 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_ds_timeseries0", elapsed time 0.005273s.[0m
+2026-10-08 17:32:29 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.funcMRIQC.func_report_wf.ds_report_carpet".[0m
+2026-10-08 17:32:29 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.funcMRIQC.func_report_wf.ds_report_carpet".[0m
+2026-10-08 17:32:29 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_ds_report_carpet0" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/funcMRIQC/func_report_wf/31cb705173c95b4fbebf2ff1b1a2240a80bc1460/ds_report_carpet/mapflow/_ds_report_carpet0".[0m
+2026-10-08 17:32:29 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "_ds_report_carpet0".[0m
+2026-10-08 17:32:29 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_ds_report_carpet0" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:29 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_ds_report_carpet0", elapsed time 0.005854s.[0m
+2026-10-08 17:32:33 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_headmask".[0m
+2026-10-08 17:32:33 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_headmask" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/anatMRIQC/anat_report_wf/867c4dee1c01330cc041483ba84642cbd1c2d8b1/ds_report_headmask".[0m
+2026-10-08 17:32:33 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_headmask".[0m
+2026-10-08 17:32:33 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_headmask" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:33 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_headmask", elapsed time 0.005142s.[0m
+2026-10-08 17:32:37 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_segm".[0m
+2026-10-08 17:32:37 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_segm" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/anatMRIQC/anat_report_wf/867c4dee1c01330cc041483ba84642cbd1c2d8b1/ds_report_segm".[0m
+2026-10-08 17:32:37 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_segm".[0m
+2026-10-08 17:32:37 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_segm" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:37 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_segm", elapsed time 0.004928s.[0m
+2026-10-08 17:32:37 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_noisefit".[0m
+2026-10-08 17:32:37 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_noisefit" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/anatMRIQC/anat_report_wf/867c4dee1c01330cc041483ba84642cbd1c2d8b1/ds_report_noisefit".[0m
+2026-10-08 17:32:37 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_noisefit".[0m
+2026-10-08 17:32:37 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_noisefit" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:37 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_noisefit", elapsed time 0.005148s.[0m
+2026-10-08 17:32:37 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_airmask".[0m
+2026-10-08 17:32:37 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_airmask" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/anatMRIQC/anat_report_wf/867c4dee1c01330cc041483ba84642cbd1c2d8b1/ds_report_airmask".[0m
+2026-10-08 17:32:37 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_airmask".[0m
+2026-10-08 17:32:37 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_airmask" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:37 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_airmask", elapsed time 0.005688s.[0m
+2026-10-08 17:32:38 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_artmask".[0m
+2026-10-08 17:32:38 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_artmask" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/anatMRIQC/anat_report_wf/867c4dee1c01330cc041483ba84642cbd1c2d8b1/ds_report_artmask".[0m
+2026-10-08 17:32:38 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.anatMRIQC.anat_report_wf.ds_report_artmask".[0m
+2026-10-08 17:32:38 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "ds_report_artmask" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:38 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "ds_report_artmask", elapsed time 0.007391s.[0m
+2026-10-08 17:32:38 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.anatMRIQC.ComputeIQMs.datasink" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/anatMRIQC/ComputeIQMs/867c4dee1c01330cc041483ba84642cbd1c2d8b1/datasink".[0m
+2026-10-08 17:32:38 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "datasink" <mriqc.interfaces.bids.IQMFileSink>[0m
+2026-10-08 17:32:38 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "datasink", elapsed time 0.000755s.[0m
+2026-10-08 17:32:51 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "_ds_report_noise0".[0m
+2026-10-08 17:32:51 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_ds_report_noise0" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/dwiMRIQC/dwi_report_wf/edbb42c7bf5828aa552d68da572c7aebc01fdb50/ds_report_noise/mapflow/_ds_report_noise0".[0m
+2026-10-08 17:32:51 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "_ds_report_noise0".[0m
+2026-10-08 17:32:51 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_ds_report_noise0" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:51 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_ds_report_noise0", elapsed time 0.005537s.[0m
+2026-10-08 17:32:51 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "_ds_report_noise1".[0m
+2026-10-08 17:32:51 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_ds_report_noise1" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/dwiMRIQC/dwi_report_wf/edbb42c7bf5828aa552d68da572c7aebc01fdb50/ds_report_noise/mapflow/_ds_report_noise1".[0m
+2026-10-08 17:32:51 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "_ds_report_noise1".[0m
+2026-10-08 17:32:51 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_ds_report_noise1" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:51 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_ds_report_noise1", elapsed time 0.005447s.[0m
+2026-10-08 17:32:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "_ds_report_noise2".[0m
+2026-10-08 17:32:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_ds_report_noise2" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/dwiMRIQC/dwi_report_wf/edbb42c7bf5828aa552d68da572c7aebc01fdb50/ds_report_noise/mapflow/_ds_report_noise2".[0m
+2026-10-08 17:32:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "_ds_report_noise2".[0m
+2026-10-08 17:32:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_ds_report_noise2" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_ds_report_noise2", elapsed time 0.005631s.[0m
+2026-10-08 17:32:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "_ds_report_noise3".[0m
+2026-10-08 17:32:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_ds_report_noise3" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/dwiMRIQC/dwi_report_wf/edbb42c7bf5828aa552d68da572c7aebc01fdb50/ds_report_noise/mapflow/_ds_report_noise3".[0m
+2026-10-08 17:32:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "_ds_report_noise3".[0m
+2026-10-08 17:32:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_ds_report_noise3" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:52 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_ds_report_noise3", elapsed time 0.005242s.[0m
+2026-10-08 17:32:53 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.dwiMRIQC.dwi_report_wf.ds_report_noise".[0m
+2026-10-08 17:32:53 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.dwiMRIQC.dwi_report_wf.ds_report_noise".[0m
+2026-10-08 17:32:53 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_ds_report_noise0" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/dwiMRIQC/dwi_report_wf/edbb42c7bf5828aa552d68da572c7aebc01fdb50/ds_report_noise/mapflow/_ds_report_noise0".[0m
+2026-10-08 17:32:53 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_ds_report_noise0" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:53 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_ds_report_noise0", elapsed time 0.005061s.[0m
+2026-10-08 17:32:53 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_ds_report_noise1" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/dwiMRIQC/dwi_report_wf/edbb42c7bf5828aa552d68da572c7aebc01fdb50/ds_report_noise/mapflow/_ds_report_noise1".[0m
+2026-10-08 17:32:53 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_ds_report_noise1" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:53 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_ds_report_noise1", elapsed time 0.005493s.[0m
+2026-10-08 17:32:53 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_ds_report_noise2" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/dwiMRIQC/dwi_report_wf/edbb42c7bf5828aa552d68da572c7aebc01fdb50/ds_report_noise/mapflow/_ds_report_noise2".[0m
+2026-10-08 17:32:53 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_ds_report_noise2" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:53 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_ds_report_noise2", elapsed time 0.005035s.[0m
+2026-10-08 17:32:53 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_ds_report_noise3" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/dwiMRIQC/dwi_report_wf/edbb42c7bf5828aa552d68da572c7aebc01fdb50/ds_report_noise/mapflow/_ds_report_noise3".[0m
+2026-10-08 17:32:53 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_ds_report_noise3" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:53 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_ds_report_noise3", elapsed time 0.004985s.[0m
+2026-10-08 17:32:53 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "mriqc_wf.dwiMRIQC.ComputeIQMs.datasink" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/dwiMRIQC/ComputeIQMs/edbb42c7bf5828aa552d68da572c7aebc01fdb50/datasink".[0m
+2026-10-08 17:32:53 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "datasink" <mriqc.interfaces.bids.IQMFileSink>[0m
+2026-10-08 17:32:53 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "datasink", elapsed time 0.000627s.[0m
+2026-10-08 17:32:59 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "_ds_report_snr0".[0m
+2026-10-08 17:32:59 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_ds_report_snr0" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/dwiMRIQC/dwi_report_wf/edbb42c7bf5828aa552d68da572c7aebc01fdb50/ds_report_snr/mapflow/_ds_report_snr0".[0m
+2026-10-08 17:32:59 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "_ds_report_snr0".[0m
+2026-10-08 17:32:59 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_ds_report_snr0" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:59 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_ds_report_snr0", elapsed time 0.005928s.[0m
+2026-10-08 17:32:59 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "_ds_report_snr1".[0m
+2026-10-08 17:32:59 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_ds_report_snr1" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/dwiMRIQC/dwi_report_wf/edbb42c7bf5828aa552d68da572c7aebc01fdb50/ds_report_snr/mapflow/_ds_report_snr1".[0m
+2026-10-08 17:32:59 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "_ds_report_snr1".[0m
+2026-10-08 17:32:59 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_ds_report_snr1" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:59 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_ds_report_snr1", elapsed time 0.005303s.[0m
+2026-10-08 17:32:59 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "_ds_report_snr2".[0m
+2026-10-08 17:32:59 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_ds_report_snr2" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/dwiMRIQC/dwi_report_wf/edbb42c7bf5828aa552d68da572c7aebc01fdb50/ds_report_snr/mapflow/_ds_report_snr2".[0m
+2026-10-08 17:32:59 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "_ds_report_snr2".[0m
+2026-10-08 17:32:59 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_ds_report_snr2" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:32:59 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_ds_report_snr2", elapsed time 0.005303s.[0m
+2026-10-08 17:33:00 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "_ds_report_snr3".[0m
+2026-10-08 17:33:00 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_ds_report_snr3" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/dwiMRIQC/dwi_report_wf/edbb42c7bf5828aa552d68da572c7aebc01fdb50/ds_report_snr/mapflow/_ds_report_snr3".[0m
+2026-10-08 17:33:00 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "_ds_report_snr3".[0m
+2026-10-08 17:33:00 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_ds_report_snr3" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:33:00 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_ds_report_snr3", elapsed time 0.005398s.[0m
+2026-10-08 17:33:01 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.dwiMRIQC.dwi_report_wf.ds_report_snr".[0m
+2026-10-08 17:33:01 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Outdated cache found for "mriqc_wf.dwiMRIQC.dwi_report_wf.ds_report_snr".[0m
+2026-10-08 17:33:01 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_ds_report_snr0" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/dwiMRIQC/dwi_report_wf/edbb42c7bf5828aa552d68da572c7aebc01fdb50/ds_report_snr/mapflow/_ds_report_snr0".[0m
+2026-10-08 17:33:01 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_ds_report_snr0" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:33:01 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_ds_report_snr0", elapsed time 0.005274s.[0m
+2026-10-08 17:33:01 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_ds_report_snr1" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/dwiMRIQC/dwi_report_wf/edbb42c7bf5828aa552d68da572c7aebc01fdb50/ds_report_snr/mapflow/_ds_report_snr1".[0m
+2026-10-08 17:33:01 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_ds_report_snr1" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:33:01 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_ds_report_snr1", elapsed time 0.005471s.[0m
+2026-10-08 17:33:01 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_ds_report_snr2" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/dwiMRIQC/dwi_report_wf/edbb42c7bf5828aa552d68da572c7aebc01fdb50/ds_report_snr/mapflow/_ds_report_snr2".[0m
+2026-10-08 17:33:01 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_ds_report_snr2" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:33:01 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_ds_report_snr2", elapsed time 0.004823s.[0m
+2026-10-08 17:33:01 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Setting-up "_ds_report_snr3" in "/home/jovyan/workspace/books/examples/workflows/MRIQC_workdir/mriqc_wf/dwiMRIQC/dwi_report_wf/edbb42c7bf5828aa552d68da572c7aebc01fdb50/ds_report_snr/mapflow/_ds_report_snr3".[0m
+2026-10-08 17:33:01 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Executing "_ds_report_snr3" <mriqc.interfaces.DerivativesDataSink>[0m
+2026-10-08 17:33:01 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m [Node] Finished "_ds_report_snr3", elapsed time 0.004709s.[0m
+2026-10-08 17:33:03 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m Generating reports...[0m
+2026-10-08 17:33:04 |[34;20m INFO     [0m|[34;20m nipype.workflow  [0m|[34;20m Report generation finished (3 reports).[0m
+2026-10-08 17:33:04 |[33;20m IMPORTANT [0m|[33;20m mriqc            [0m|[33;20m Participant level finished successfully averaging 00h 00min 31s per subject.[0m
+2026-10-08 17:33:04 |[34;20m INFO     [0m|[34;20m mriqc            [0m|[34;20m Generating BIDS derivatives metadata.[0m
+----------------------------------------------------------------
+  MRIQC completed (elapsed time 00h 01min 33s).
+----------------------------------------------------------------
+

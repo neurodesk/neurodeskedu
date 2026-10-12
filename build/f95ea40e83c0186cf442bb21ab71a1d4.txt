@@ -1,0 +1,395 @@
+
+--
+Spinal Cord Toolbox (5.8)
+
+sct_register_multimodal -i mt0.nii.gz -d t1w_crop.nii.gz -param step=1,type=im,algo=rigid,slicewise=1,metric=CC -x spline
+--
+
+[0m
+Input parameters:[0m
+[0m  Source .............. mt0.nii.gz (192, 192, 22)[0m
+[0m  Destination ......... t1w_crop.nii.gz (45, 43, 17)[0m
+[0m  Init transfo ........ [0m
+[0m  Mask ................ [0m
+[0m  Output name ......... [0m
+[0m  Remove temp files ... 1[0m
+[0m  Verbose ............. 1[0m
+[0m
+Check if input data are 3D...[0m
+Creating temporary folder (/tmp/sct-20260409013941.900872-register-4ooc0iqf)
+[0m
+Copying input data to tmp folder and convert to nii...[0m
+[0m
+--
+ESTIMATE TRANSFORMATION FOR STEP #0[0m
+[0mRegistration parameters:[0m
+[0m  type ........... im[0m
+[0m  algo ........... syn[0m
+[0m  slicewise ...... 0[0m
+[0m  metric ......... MI[0m
+[0m  samplStrategy .. None[0m
+[0m  samplPercent ... 0.2[0m
+[0m  iter ........... 0[0m
+[0m  smooth ......... 0[0m
+[0m  laplacian ...... 0[0m
+[0m  shrink ......... 1[0m
+[0m  gradStep ....... 0.5[0m
+[0m  deformation .... 1x1x0[0m
+[0m  init ........... [0m
+[0m  poly ........... 5[0m
+[0m  filter_size .... 5[0m
+[0m  dof ............ Tx_Ty_Tz_Rx_Ry_Rz[0m
+[0m  smoothWarpXY ... 2[0m
+[0m  rot_method ..... pca[0m
+
+Estimate transformation
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 3 --transform 'syn[0.5,3,0]' --metric 'MI[dest_RPI.nii,src.nii,1,32]' --convergence 0 --shrink-factors 1 --smoothing-sigmas 0mm --restrict-deformation 1x1x0 --output '[step0,src_regStep0.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409013941.900872-register-4ooc0iqf[0m
+[0m
+--
+ESTIMATE TRANSFORMATION FOR STEP #1[0m
+[0m
+Apply transformation from previous step[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsApplyTransforms -d 3 -i src.nii -o src_reg.nii -t warp_forward_0.nii.gz -r dest_RPI.nii -n 'BSpline[3]' # in /tmp/sct-20260409013941.900872-register-4ooc0iqf[0m
+[0mRegistration parameters:[0m
+[0m  type ........... im[0m
+[0m  algo ........... rigid[0m
+[0m  slicewise ...... 1[0m
+[0m  metric ......... CC[0m
+[0m  samplStrategy .. None[0m
+[0m  samplPercent ... 0.2[0m
+[0m  iter ........... 10[0m
+[0m  smooth ......... 0[0m
+[0m  laplacian ...... 0[0m
+[0m  shrink ......... 1[0m
+[0m  gradStep ....... 0.5[0m
+[0m  deformation .... 1x1x0[0m
+[0m  init ........... [0m
+[0m  poly ........... 5[0m
+[0m  filter_size .... 5[0m
+[0m  dof ............ Tx_Ty_Tz_Rx_Ry_Rz[0m
+[0m  smoothWarpXY ... 2[0m
+[0m  rot_method ..... pca[0m
+Creating temporary folder (/tmp/sct-20260409013943.689160-register-e7f3g01r)
+
+Copy input data to temp folder...
+
+Get image dimensions of destination image...
+  matrix size: 45 x 43 x 17
+  voxel size: 0.8958333mm x 0.8958333mm x 17mm
+
+Split input volume...
+
+Split destination volume...
+Registering slice 0/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0000.nii,src_Z0000.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0000,src_Z0000_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0000.nii,src_Z0000.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00000Warp.nii.gz -R dest_Z0000.nii warp2d_null0Warp.nii.gz warp2d_00000GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00000InverseWarp.nii.gz -R src_Z0000.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00000GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+Registering slice 1/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0001.nii,src_Z0001.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0001,src_Z0001_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0001.nii,src_Z0001.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00010Warp.nii.gz -R dest_Z0001.nii warp2d_null0Warp.nii.gz warp2d_00010GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00010InverseWarp.nii.gz -R src_Z0001.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00010GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+Registering slice 2/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0002.nii,src_Z0002.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0002,src_Z0002_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0002.nii,src_Z0002.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00020Warp.nii.gz -R dest_Z0002.nii warp2d_null0Warp.nii.gz warp2d_00020GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00020InverseWarp.nii.gz -R src_Z0002.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00020GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+Registering slice 3/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0003.nii,src_Z0003.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0003,src_Z0003_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0003.nii,src_Z0003.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00030Warp.nii.gz -R dest_Z0003.nii warp2d_null0Warp.nii.gz warp2d_00030GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00030InverseWarp.nii.gz -R src_Z0003.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00030GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+Registering slice 4/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0004.nii,src_Z0004.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0004,src_Z0004_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0004.nii,src_Z0004.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00040Warp.nii.gz -R dest_Z0004.nii warp2d_null0Warp.nii.gz warp2d_00040GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00040InverseWarp.nii.gz -R src_Z0004.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00040GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+Registering slice 5/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0005.nii,src_Z0005.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0005,src_Z0005_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0005.nii,src_Z0005.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00050Warp.nii.gz -R dest_Z0005.nii warp2d_null0Warp.nii.gz warp2d_00050GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00050InverseWarp.nii.gz -R src_Z0005.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00050GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+Registering slice 6/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0006.nii,src_Z0006.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0006,src_Z0006_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0006.nii,src_Z0006.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00060Warp.nii.gz -R dest_Z0006.nii warp2d_null0Warp.nii.gz warp2d_00060GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00060InverseWarp.nii.gz -R src_Z0006.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00060GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+Registering slice 7/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0007.nii,src_Z0007.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0007,src_Z0007_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0007.nii,src_Z0007.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00070Warp.nii.gz -R dest_Z0007.nii warp2d_null0Warp.nii.gz warp2d_00070GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00070InverseWarp.nii.gz -R src_Z0007.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00070GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+Registering slice 8/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0008.nii,src_Z0008.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0008,src_Z0008_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0008.nii,src_Z0008.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00080Warp.nii.gz -R dest_Z0008.nii warp2d_null0Warp.nii.gz warp2d_00080GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00080InverseWarp.nii.gz -R src_Z0008.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00080GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+Registering slice 9/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0009.nii,src_Z0009.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0009,src_Z0009_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0009.nii,src_Z0009.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00090Warp.nii.gz -R dest_Z0009.nii warp2d_null0Warp.nii.gz warp2d_00090GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00090InverseWarp.nii.gz -R src_Z0009.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00090GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+Registering slice 10/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0010.nii,src_Z0010.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0010,src_Z0010_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0010.nii,src_Z0010.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00100Warp.nii.gz -R dest_Z0010.nii warp2d_null0Warp.nii.gz warp2d_00100GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00100InverseWarp.nii.gz -R src_Z0010.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00100GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+Registering slice 11/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0011.nii,src_Z0011.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0011,src_Z0011_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0011.nii,src_Z0011.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00110Warp.nii.gz -R dest_Z0011.nii warp2d_null0Warp.nii.gz warp2d_00110GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00110InverseWarp.nii.gz -R src_Z0011.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00110GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+Registering slice 12/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0012.nii,src_Z0012.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0012,src_Z0012_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0012.nii,src_Z0012.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00120Warp.nii.gz -R dest_Z0012.nii warp2d_null0Warp.nii.gz warp2d_00120GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00120InverseWarp.nii.gz -R src_Z0012.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00120GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+Registering slice 13/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0013.nii,src_Z0013.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0013,src_Z0013_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0013.nii,src_Z0013.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00130Warp.nii.gz -R dest_Z0013.nii warp2d_null0Warp.nii.gz warp2d_00130GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00130InverseWarp.nii.gz -R src_Z0013.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00130GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+Registering slice 14/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0014.nii,src_Z0014.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0014,src_Z0014_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0014.nii,src_Z0014.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00140Warp.nii.gz -R dest_Z0014.nii warp2d_null0Warp.nii.gz warp2d_00140GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00140InverseWarp.nii.gz -R src_Z0014.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00140GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+Registering slice 15/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0015.nii,src_Z0015.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0015,src_Z0015_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0015.nii,src_Z0015.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00150Warp.nii.gz -R dest_Z0015.nii warp2d_null0Warp.nii.gz warp2d_00150GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00150InverseWarp.nii.gz -R src_Z0015.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00150GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+Registering slice 16/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0016.nii,src_Z0016.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0016,src_Z0016_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0016.nii,src_Z0016.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00160Warp.nii.gz -R dest_Z0016.nii warp2d_null0Warp.nii.gz warp2d_00160GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00160InverseWarp.nii.gz -R src_Z0016.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00160GenericAffine.mat # in /tmp/sct-20260409013943.689160-register-e7f3g01r[0m
+
+Merge warping fields along z...
+
+Move warping fields...
+cp step1Warp.nii.gz /tmp/sct-20260409013941.900872-register-4ooc0iqf
+cp step1InverseWarp.nii.gz /tmp/sct-20260409013941.900872-register-4ooc0iqf
+rm -rf /tmp/sct-20260409013943.689160-register-e7f3g01r
+[0m
+Concatenate transformations...[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 3 warp_src2dest.nii.gz -R dest.nii warp_forward_1.nii.gz warp_forward_0.nii.gz # in /tmp/sct-20260409013941.900872-register-4ooc0iqf[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 3 warp_dest2src.nii.gz -R src.nii warp_inverse_0.nii.gz warp_inverse_1.nii.gz # in /tmp/sct-20260409013941.900872-register-4ooc0iqf[0m
+[0m
+Apply transfo source --> dest...[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsApplyTransforms -d 3 -i src.nii -o src_reg.nii -t warp_src2dest.nii.gz -r dest.nii -n 'BSpline[3]' # in /tmp/sct-20260409013941.900872-register-4ooc0iqf[0m
+[0m
+Apply transfo dest --> source...[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsApplyTransforms -d 3 -i dest.nii -o dest_reg.nii -t warp_dest2src.nii.gz -r src.nii -n 'BSpline[3]' # in /tmp/sct-20260409013941.900872-register-4ooc0iqf[0m
+[0m
+Generate output files...[0m
+File created: mt0_reg.nii.gz
+[94mmv /tmp/sct-20260409013941.900872-register-4ooc0iqf/warp_src2dest.nii.gz warp_mt02t1w_crop.nii.gz[0m
+File created: warp_mt02t1w_crop.nii.gz
+File created: t1w_crop_reg.nii.gz
+[94mmv /tmp/sct-20260409013941.900872-register-4ooc0iqf/warp_dest2src.nii.gz warp_t1w_crop2mt0.nii.gz[0m
+File created: warp_t1w_crop2mt0.nii.gz
+[0m
+Remove temporary files...[0m
+[94mrm -rf /tmp/sct-20260409013941.900872-register-4ooc0iqf[0m
+[0m
+Finished! Elapsed time: 18s[0m
+
+--
+Spinal Cord Toolbox (5.8)
+
+sct_register_multimodal -i mt1.nii.gz -d t1w_crop.nii.gz -param step=1,type=im,algo=rigid,slicewise=1,metric=CC -x spline
+--
+
+[0m
+Input parameters:[0m
+[0m  Source .............. mt1.nii.gz (192, 192, 22)[0m
+[0m  Destination ......... t1w_crop.nii.gz (45, 43, 17)[0m
+[0m  Init transfo ........ [0m
+[0m  Mask ................ [0m
+[0m  Output name ......... [0m
+[0m  Remove temp files ... 1[0m
+[0m  Verbose ............. 1[0m
+[0m
+Check if input data are 3D...[0m
+Creating temporary folder (/tmp/sct-20260409014006.347280-register-qu932cow)
+[0m
+Copying input data to tmp folder and convert to nii...[0m
+[0m
+--
+ESTIMATE TRANSFORMATION FOR STEP #0[0m
+[0mRegistration parameters:[0m
+[0m  type ........... im[0m
+[0m  algo ........... syn[0m
+[0m  slicewise ...... 0[0m
+[0m  metric ......... MI[0m
+[0m  samplStrategy .. None[0m
+[0m  samplPercent ... 0.2[0m
+[0m  iter ........... 0[0m
+[0m  smooth ......... 0[0m
+[0m  laplacian ...... 0[0m
+[0m  shrink ......... 1[0m
+[0m  gradStep ....... 0.5[0m
+[0m  deformation .... 1x1x0[0m
+[0m  init ........... [0m
+[0m  poly ........... 5[0m
+[0m  filter_size .... 5[0m
+[0m  dof ............ Tx_Ty_Tz_Rx_Ry_Rz[0m
+[0m  smoothWarpXY ... 2[0m
+[0m  rot_method ..... pca[0m
+
+Estimate transformation
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 3 --transform 'syn[0.5,3,0]' --metric 'MI[dest_RPI.nii,src.nii,1,32]' --convergence 0 --shrink-factors 1 --smoothing-sigmas 0mm --restrict-deformation 1x1x0 --output '[step0,src_regStep0.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409014006.347280-register-qu932cow[0m
+[0m
+--
+ESTIMATE TRANSFORMATION FOR STEP #1[0m
+[0m
+Apply transformation from previous step[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsApplyTransforms -d 3 -i src.nii -o src_reg.nii -t warp_forward_0.nii.gz -r dest_RPI.nii -n 'BSpline[3]' # in /tmp/sct-20260409014006.347280-register-qu932cow[0m
+[0mRegistration parameters:[0m
+[0m  type ........... im[0m
+[0m  algo ........... rigid[0m
+[0m  slicewise ...... 1[0m
+[0m  metric ......... CC[0m
+[0m  samplStrategy .. None[0m
+[0m  samplPercent ... 0.2[0m
+[0m  iter ........... 10[0m
+[0m  smooth ......... 0[0m
+[0m  laplacian ...... 0[0m
+[0m  shrink ......... 1[0m
+[0m  gradStep ....... 0.5[0m
+[0m  deformation .... 1x1x0[0m
+[0m  init ........... [0m
+[0m  poly ........... 5[0m
+[0m  filter_size .... 5[0m
+[0m  dof ............ Tx_Ty_Tz_Rx_Ry_Rz[0m
+[0m  smoothWarpXY ... 2[0m
+[0m  rot_method ..... pca[0m
+Creating temporary folder (/tmp/sct-20260409014007.040819-register-0e59z81p)
+
+Copy input data to temp folder...
+
+Get image dimensions of destination image...
+  matrix size: 45 x 43 x 17
+  voxel size: 0.8958333mm x 0.8958333mm x 17mm
+
+Split input volume...
+
+Split destination volume...
+Registering slice 0/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0000.nii,src_Z0000.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0000,src_Z0000_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0000.nii,src_Z0000.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00000Warp.nii.gz -R dest_Z0000.nii warp2d_null0Warp.nii.gz warp2d_00000GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00000InverseWarp.nii.gz -R src_Z0000.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00000GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+Registering slice 1/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0001.nii,src_Z0001.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0001,src_Z0001_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0001.nii,src_Z0001.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00010Warp.nii.gz -R dest_Z0001.nii warp2d_null0Warp.nii.gz warp2d_00010GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00010InverseWarp.nii.gz -R src_Z0001.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00010GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+Registering slice 2/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0002.nii,src_Z0002.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0002,src_Z0002_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0002.nii,src_Z0002.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00020Warp.nii.gz -R dest_Z0002.nii warp2d_null0Warp.nii.gz warp2d_00020GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00020InverseWarp.nii.gz -R src_Z0002.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00020GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+Registering slice 3/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0003.nii,src_Z0003.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0003,src_Z0003_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0003.nii,src_Z0003.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00030Warp.nii.gz -R dest_Z0003.nii warp2d_null0Warp.nii.gz warp2d_00030GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00030InverseWarp.nii.gz -R src_Z0003.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00030GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+Registering slice 4/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0004.nii,src_Z0004.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0004,src_Z0004_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0004.nii,src_Z0004.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00040Warp.nii.gz -R dest_Z0004.nii warp2d_null0Warp.nii.gz warp2d_00040GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00040InverseWarp.nii.gz -R src_Z0004.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00040GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+Registering slice 5/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0005.nii,src_Z0005.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0005,src_Z0005_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0005.nii,src_Z0005.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00050Warp.nii.gz -R dest_Z0005.nii warp2d_null0Warp.nii.gz warp2d_00050GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00050InverseWarp.nii.gz -R src_Z0005.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00050GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+Registering slice 6/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0006.nii,src_Z0006.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0006,src_Z0006_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0006.nii,src_Z0006.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00060Warp.nii.gz -R dest_Z0006.nii warp2d_null0Warp.nii.gz warp2d_00060GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00060InverseWarp.nii.gz -R src_Z0006.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00060GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+Registering slice 7/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0007.nii,src_Z0007.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0007,src_Z0007_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0007.nii,src_Z0007.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00070Warp.nii.gz -R dest_Z0007.nii warp2d_null0Warp.nii.gz warp2d_00070GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00070InverseWarp.nii.gz -R src_Z0007.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00070GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+Registering slice 8/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0008.nii,src_Z0008.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0008,src_Z0008_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0008.nii,src_Z0008.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00080Warp.nii.gz -R dest_Z0008.nii warp2d_null0Warp.nii.gz warp2d_00080GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00080InverseWarp.nii.gz -R src_Z0008.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00080GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+Registering slice 9/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0009.nii,src_Z0009.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0009,src_Z0009_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0009.nii,src_Z0009.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00090Warp.nii.gz -R dest_Z0009.nii warp2d_null0Warp.nii.gz warp2d_00090GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00090InverseWarp.nii.gz -R src_Z0009.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00090GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+Registering slice 10/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0010.nii,src_Z0010.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0010,src_Z0010_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0010.nii,src_Z0010.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00100Warp.nii.gz -R dest_Z0010.nii warp2d_null0Warp.nii.gz warp2d_00100GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00100InverseWarp.nii.gz -R src_Z0010.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00100GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+Registering slice 11/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0011.nii,src_Z0011.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0011,src_Z0011_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0011.nii,src_Z0011.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00110Warp.nii.gz -R dest_Z0011.nii warp2d_null0Warp.nii.gz warp2d_00110GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00110InverseWarp.nii.gz -R src_Z0011.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00110GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+Registering slice 12/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0012.nii,src_Z0012.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0012,src_Z0012_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0012.nii,src_Z0012.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00120Warp.nii.gz -R dest_Z0012.nii warp2d_null0Warp.nii.gz warp2d_00120GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00120InverseWarp.nii.gz -R src_Z0012.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00120GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+Registering slice 13/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0013.nii,src_Z0013.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0013,src_Z0013_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0013.nii,src_Z0013.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00130Warp.nii.gz -R dest_Z0013.nii warp2d_null0Warp.nii.gz warp2d_00130GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00130InverseWarp.nii.gz -R src_Z0013.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00130GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+Registering slice 14/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0014.nii,src_Z0014.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0014,src_Z0014_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0014.nii,src_Z0014.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00140Warp.nii.gz -R dest_Z0014.nii warp2d_null0Warp.nii.gz warp2d_00140GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00140InverseWarp.nii.gz -R src_Z0014.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00140GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+Registering slice 15/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0015.nii,src_Z0015.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0015,src_Z0015_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0015.nii,src_Z0015.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00150Warp.nii.gz -R dest_Z0015.nii warp2d_null0Warp.nii.gz warp2d_00150GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00150InverseWarp.nii.gz -R src_Z0015.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00150GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+Registering slice 16/16...
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration --dimensionality 2 --transform 'Rigid[0.5]' --metric 'CC[dest_Z0016.nii,src_Z0016.nii,1,4]' --convergence 10 --shrink-factors 1 --smoothing-sigmas 0mm --output '[warp2d_0016,src_Z0016_reg.nii]' --interpolation 'BSpline[3]' --verbose 1 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsRegistration -d 2 -t 'SyN[1,1,1]' -c 0 -m 'MI[dest_Z0016.nii,src_Z0016.nii,1,32]' -o warp2d_null -f 1 -s 0 # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00160Warp.nii.gz -R dest_Z0016.nii warp2d_null0Warp.nii.gz warp2d_00160GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 2 warp2d_00160InverseWarp.nii.gz -R src_Z0016.nii warp2d_null0InverseWarp.nii.gz -i warp2d_00160GenericAffine.mat # in /tmp/sct-20260409014007.040819-register-0e59z81p[0m
+
+Merge warping fields along z...
+
+Move warping fields...
+cp step1Warp.nii.gz /tmp/sct-20260409014006.347280-register-qu932cow
+cp step1InverseWarp.nii.gz /tmp/sct-20260409014006.347280-register-qu932cow
+rm -rf /tmp/sct-20260409014007.040819-register-0e59z81p
+[0m
+Concatenate transformations...[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 3 warp_src2dest.nii.gz -R dest.nii warp_forward_1.nii.gz warp_forward_0.nii.gz # in /tmp/sct-20260409014006.347280-register-qu932cow[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_ComposeMultiTransform 3 warp_dest2src.nii.gz -R src.nii warp_inverse_0.nii.gz warp_inverse_1.nii.gz # in /tmp/sct-20260409014006.347280-register-qu932cow[0m
+[0m
+Apply transfo source --> dest...[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsApplyTransforms -d 3 -i src.nii -o src_reg.nii -t warp_src2dest.nii.gz -r dest.nii -n 'BSpline[3]' # in /tmp/sct-20260409014006.347280-register-qu932cow[0m
+[0m
+Apply transfo dest --> source...[0m
+[94m/opt/spinalcordtoolbox-5.8/bin/isct_antsApplyTransforms -d 3 -i dest.nii -o dest_reg.nii -t warp_dest2src.nii.gz -r src.nii -n 'BSpline[3]' # in /tmp/sct-20260409014006.347280-register-qu932cow[0m
+[0m
+Generate output files...[0m
+File created: mt1_reg.nii.gz
+[94mmv /tmp/sct-20260409014006.347280-register-qu932cow/warp_src2dest.nii.gz warp_mt12t1w_crop.nii.gz[0m
+File created: warp_mt12t1w_crop.nii.gz
+[33mFile t1w_crop_reg.nii.gz already exists. Deleting it..[0m
+File created: t1w_crop_reg.nii.gz
+[94mmv /tmp/sct-20260409014006.347280-register-qu932cow/warp_dest2src.nii.gz warp_t1w_crop2mt1.nii.gz[0m
+File created: warp_t1w_crop2mt1.nii.gz
+[0m
+Remove temporary files...[0m
+[94mrm -rf /tmp/sct-20260409014006.347280-register-qu932cow[0m
+[0m
+Finished! Elapsed time: 17s[0m

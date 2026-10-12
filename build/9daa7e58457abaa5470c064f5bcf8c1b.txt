@@ -1,0 +1,433 @@
+[01;34mds000102[0m
+├── [00mCHANGES[0m
+├── [00mREADME[0m
+├── [00mT1w.json[0m
+├── [00mdataset_description.json[0m
+├── [01;34mderivatives[0m
+│   └── [01;34mmriqc[0m
+│       ├── [40;31;01maMRIQC.csv[0m -> [00m../../.git/annex/objects/Q4/jv/MD5E-s14180--3addf0456b803b7c5ec5147481ecdd62.csv/MD5E-s14180--3addf0456b803b7c5ec5147481ecdd62.csv[0m
+│       ├── [40;31;01manatomical_group.pdf[0m -> [00m../../.git/annex/objects/6m/q9/MD5E-s98927--d11151f65ae061833e7fd4373adfec3f.pdf/MD5E-s98927--d11151f65ae061833e7fd4373adfec3f.pdf[0m
+│       ├── [40;31;01manatomical_sub-01.pdf[0m -> [00m../../.git/annex/objects/K3/7x/MD5E-s2747349--5d40f2a54fb4194ac4a79f0295ff51c0.pdf/MD5E-s2747349--5d40f2a54fb4194ac4a79f0295ff51c0.pdf[0m
+│       ├── [40;31;01manatomical_sub-02.pdf[0m -> [00m../../.git/annex/objects/Kx/Kv/MD5E-s2803965--56f6b768362bd9b7f0ef501b8cb6dde6.pdf/MD5E-s2803965--56f6b768362bd9b7f0ef501b8cb6dde6.pdf[0m
+│       ├── [40;31;01manatomical_sub-03.pdf[0m -> [00m../../.git/annex/objects/kx/g5/MD5E-s2809843--e90d7a4859ed4be986b55e23f93ca89d.pdf/MD5E-s2809843--e90d7a4859ed4be986b55e23f93ca89d.pdf[0m
+│       ├── [40;31;01manatomical_sub-04.pdf[0m -> [00m../../.git/annex/objects/JK/Zm/MD5E-s2846770--4869146771178dbb01ac79b95b35a8a1.pdf/MD5E-s2846770--4869146771178dbb01ac79b95b35a8a1.pdf[0m
+│       ├── [40;31;01manatomical_sub-05.pdf[0m -> [00m../../.git/annex/objects/zm/FG/MD5E-s2824086--fda634d34556c83005a5eb2ca8c498dd.pdf/MD5E-s2824086--fda634d34556c83005a5eb2ca8c498dd.pdf[0m
+│       ├── [40;31;01manatomical_sub-06.pdf[0m -> [00m../../.git/annex/objects/92/q0/MD5E-s2798058--fdddf0aff1eca8f61ed7c8b04ada9735.pdf/MD5E-s2798058--fdddf0aff1eca8f61ed7c8b04ada9735.pdf[0m
+│       ├── [40;31;01manatomical_sub-07.pdf[0m -> [00m../../.git/annex/objects/39/3K/MD5E-s2795270--29ce2e2352596df940e5f3fae45b5a38.pdf/MD5E-s2795270--29ce2e2352596df940e5f3fae45b5a38.pdf[0m
+│       ├── [40;31;01manatomical_sub-08.pdf[0m -> [00m../../.git/annex/objects/Fx/F4/MD5E-s2727492--b55dad8ffe22fc035110ecf4119d2960.pdf/MD5E-s2727492--b55dad8ffe22fc035110ecf4119d2960.pdf[0m
+│       ├── [40;31;01manatomical_sub-09.pdf[0m -> [00m../../.git/annex/objects/4M/pz/MD5E-s2887144--28ea830af2a4d741147d18ea9c7fda84.pdf/MD5E-s2887144--28ea830af2a4d741147d18ea9c7fda84.pdf[0m
+│       ├── [40;31;01manatomical_sub-10.pdf[0m -> [00m../../.git/annex/objects/0z/Vw/MD5E-s2874045--6542a57a9fc58f97f2a03c2384663c62.pdf/MD5E-s2874045--6542a57a9fc58f97f2a03c2384663c62.pdf[0m
+│       ├── [40;31;01manatomical_sub-11.pdf[0m -> [00m../../.git/annex/objects/wm/76/MD5E-s2781221--1071b83e3c1b4532879521c37c3329da.pdf/MD5E-s2781221--1071b83e3c1b4532879521c37c3329da.pdf[0m
+│       ├── [40;31;01manatomical_sub-12.pdf[0m -> [00m../../.git/annex/objects/GF/19/MD5E-s2817233--bfd24ca3274fa5efd654e2afd927f9ef.pdf/MD5E-s2817233--bfd24ca3274fa5efd654e2afd927f9ef.pdf[0m
+│       ├── [40;31;01manatomical_sub-13.pdf[0m -> [00m../../.git/annex/objects/9Q/X2/MD5E-s2796088--ed299ab7e1662cb03aa01299eed2602b.pdf/MD5E-s2796088--ed299ab7e1662cb03aa01299eed2602b.pdf[0m
+│       ├── [40;31;01manatomical_sub-14.pdf[0m -> [00m../../.git/annex/objects/Wg/55/MD5E-s2558074--cadc9bd81856dcd02677de84e7e6ca90.pdf/MD5E-s2558074--cadc9bd81856dcd02677de84e7e6ca90.pdf[0m
+│       ├── [40;31;01manatomical_sub-15.pdf[0m -> [00m../../.git/annex/objects/43/Q3/MD5E-s2847293--0c678a4b309d055ad9ba4ba25b77351b.pdf/MD5E-s2847293--0c678a4b309d055ad9ba4ba25b77351b.pdf[0m
+│       ├── [40;31;01manatomical_sub-16.pdf[0m -> [00m../../.git/annex/objects/xq/qj/MD5E-s2890454--87c62253c1711f30d53c41b3ac38dc66.pdf/MD5E-s2890454--87c62253c1711f30d53c41b3ac38dc66.pdf[0m
+│       ├── [40;31;01manatomical_sub-17.pdf[0m -> [00m../../.git/annex/objects/zK/M1/MD5E-s2825765--0a91015e22836a3076641b963e1ccfc6.pdf/MD5E-s2825765--0a91015e22836a3076641b963e1ccfc6.pdf[0m
+│       ├── [40;31;01manatomical_sub-18.pdf[0m -> [00m../../.git/annex/objects/w2/Vk/MD5E-s2821624--1d9a3f0b21ce1f9a3b490d44d36f1f11.pdf/MD5E-s2821624--1d9a3f0b21ce1f9a3b490d44d36f1f11.pdf[0m
+│       ├── [40;31;01manatomical_sub-19.pdf[0m -> [00m../../.git/annex/objects/J2/Jq/MD5E-s2453814--533411f3353cb3fa0264485e81f3fcf6.pdf/MD5E-s2453814--533411f3353cb3fa0264485e81f3fcf6.pdf[0m
+│       ├── [40;31;01manatomical_sub-20.pdf[0m -> [00m../../.git/annex/objects/MF/9X/MD5E-s2881144--176c560778c55db87e8468b3246d373c.pdf/MD5E-s2881144--176c560778c55db87e8468b3246d373c.pdf[0m
+│       ├── [40;31;01manatomical_sub-21.pdf[0m -> [00m../../.git/annex/objects/XQ/p1/MD5E-s2330589--b7546dfe5fb43a974cd23111b860c493.pdf/MD5E-s2330589--b7546dfe5fb43a974cd23111b860c493.pdf[0m
+│       ├── [40;31;01manatomical_sub-22.pdf[0m -> [00m../../.git/annex/objects/Fx/k8/MD5E-s2505165--55f0661ad209b742c517cc5b5469436a.pdf/MD5E-s2505165--55f0661ad209b742c517cc5b5469436a.pdf[0m
+│       ├── [40;31;01manatomical_sub-23.pdf[0m -> [00m../../.git/annex/objects/qj/8K/MD5E-s2784018--7e8697a7d4601547a899a27af132166d.pdf/MD5E-s2784018--7e8697a7d4601547a899a27af132166d.pdf[0m
+│       ├── [40;31;01manatomical_sub-24.pdf[0m -> [00m../../.git/annex/objects/G8/Kw/MD5E-s2828817--e86be931adef2a7b0297d557d827d629.pdf/MD5E-s2828817--e86be931adef2a7b0297d557d827d629.pdf[0m
+│       ├── [40;31;01manatomical_sub-25.pdf[0m -> [00m../../.git/annex/objects/XG/kg/MD5E-s2447908--3d392b9d27929dc4146d2b47be16e8dc.pdf/MD5E-s2447908--3d392b9d27929dc4146d2b47be16e8dc.pdf[0m
+│       ├── [40;31;01manatomical_sub-26.pdf[0m -> [00m../../.git/annex/objects/8P/42/MD5E-s2850007--6d2f87a305b30d5704aaf4be9b8ff1e6.pdf/MD5E-s2850007--6d2f87a305b30d5704aaf4be9b8ff1e6.pdf[0m
+│       ├── [40;31;01mfMRIQC.csv[0m -> [00m../../.git/annex/objects/2Z/Ff/MD5E-s21038--cbe73db3db1beb0a1977583cff2a724b.csv/MD5E-s21038--cbe73db3db1beb0a1977583cff2a724b.csv[0m
+│       ├── [40;31;01mfunctional_group.pdf[0m -> [00m../../.git/annex/objects/Kq/xg/MD5E-s90712--7058c3db328fecb86303bc27a9ef0110.pdf/MD5E-s90712--7058c3db328fecb86303bc27a9ef0110.pdf[0m
+│       ├── [40;31;01mfunctional_sub-01.pdf[0m -> [00m../../.git/annex/objects/k2/vQ/MD5E-s1157925--e055f942b72b9aabad7a5e3d7b25b201.pdf/MD5E-s1157925--e055f942b72b9aabad7a5e3d7b25b201.pdf[0m
+│       ├── [40;31;01mfunctional_sub-02.pdf[0m -> [00m../../.git/annex/objects/X3/X6/MD5E-s1235840--cb32b7f8f1274af250b4f0fc15dacecb.pdf/MD5E-s1235840--cb32b7f8f1274af250b4f0fc15dacecb.pdf[0m
+│       ├── [40;31;01mfunctional_sub-03.pdf[0m -> [00m../../.git/annex/objects/Vp/0x/MD5E-s1228507--73ab1cc4cb27712892fcb10a0853ba7c.pdf/MD5E-s1228507--73ab1cc4cb27712892fcb10a0853ba7c.pdf[0m
+│       ├── [40;31;01mfunctional_sub-04.pdf[0m -> [00m../../.git/annex/objects/xk/jz/MD5E-s1252659--8ae6d1b02767c1ddb72dd7e6afefe696.pdf/MD5E-s1252659--8ae6d1b02767c1ddb72dd7e6afefe696.pdf[0m
+│       ├── [40;31;01mfunctional_sub-05.pdf[0m -> [00m../../.git/annex/objects/Zm/VJ/MD5E-s1258815--dd043691d548a501dd63d1aaf420e43c.pdf/MD5E-s1258815--dd043691d548a501dd63d1aaf420e43c.pdf[0m
+│       ├── [40;31;01mfunctional_sub-06.pdf[0m -> [00m../../.git/annex/objects/M5/gq/MD5E-s1247345--9c06bc69792b812ab8deffb01c6656c2.pdf/MD5E-s1247345--9c06bc69792b812ab8deffb01c6656c2.pdf[0m
+│       ├── [40;31;01mfunctional_sub-07.pdf[0m -> [00m../../.git/annex/objects/25/35/MD5E-s1229731--99cc64e99df0025ccb0341cd0dcf688b.pdf/MD5E-s1229731--99cc64e99df0025ccb0341cd0dcf688b.pdf[0m
+│       ├── [40;31;01mfunctional_sub-08.pdf[0m -> [00m../../.git/annex/objects/MX/vQ/MD5E-s1222308--e13c56f17109d3f142c9c4db60fea674.pdf/MD5E-s1222308--e13c56f17109d3f142c9c4db60fea674.pdf[0m
+│       ├── [40;31;01mfunctional_sub-09.pdf[0m -> [00m../../.git/annex/objects/90/0F/MD5E-s1265097--41a69211a0569413917ce3825eac95d6.pdf/MD5E-s1265097--41a69211a0569413917ce3825eac95d6.pdf[0m
+│       ├── [40;31;01mfunctional_sub-10.pdf[0m -> [00m../../.git/annex/objects/FZ/gq/MD5E-s1299358--12ccfc4a5f52b077b99481fe25aa8ef1.pdf/MD5E-s1299358--12ccfc4a5f52b077b99481fe25aa8ef1.pdf[0m
+│       ├── [40;31;01mfunctional_sub-11.pdf[0m -> [00m../../.git/annex/objects/MJ/mQ/MD5E-s1166014--3465ef6b18514d3cd361c0bffe2b73fc.pdf/MD5E-s1166014--3465ef6b18514d3cd361c0bffe2b73fc.pdf[0m
+│       ├── [40;31;01mfunctional_sub-12.pdf[0m -> [00m../../.git/annex/objects/xp/1f/MD5E-s1177325--6fe4937d5aa567fb5b3c3977362fc9af.pdf/MD5E-s1177325--6fe4937d5aa567fb5b3c3977362fc9af.pdf[0m
+│       ├── [40;31;01mfunctional_sub-13.pdf[0m -> [00m../../.git/annex/objects/4g/vW/MD5E-s1178873--96f341322d21e2bdeb709edc5b047df0.pdf/MD5E-s1178873--96f341322d21e2bdeb709edc5b047df0.pdf[0m
+│       ├── [40;31;01mfunctional_sub-14.pdf[0m -> [00m../../.git/annex/objects/5p/6X/MD5E-s1206987--729f64cf514c9103556c53ccb5430bc4.pdf/MD5E-s1206987--729f64cf514c9103556c53ccb5430bc4.pdf[0m
+│       ├── [40;31;01mfunctional_sub-15.pdf[0m -> [00m../../.git/annex/objects/m1/k9/MD5E-s1223617--9239a1c2d968ed18093b69d28fd9e654.pdf/MD5E-s1223617--9239a1c2d968ed18093b69d28fd9e654.pdf[0m
+│       ├── [40;31;01mfunctional_sub-16.pdf[0m -> [00m../../.git/annex/objects/jq/wP/MD5E-s1294856--5eb7ec97924a22c7e68fd95373694e7e.pdf/MD5E-s1294856--5eb7ec97924a22c7e68fd95373694e7e.pdf[0m
+│       ├── [40;31;01mfunctional_sub-17.pdf[0m -> [00m../../.git/annex/objects/0m/3Q/MD5E-s1238563--129db424a50b7889278024828c08c736.pdf/MD5E-s1238563--129db424a50b7889278024828c08c736.pdf[0m
+│       ├── [40;31;01mfunctional_sub-18.pdf[0m -> [00m../../.git/annex/objects/VF/Fm/MD5E-s1197868--3b23e8d53b11d98d49b1adf62ff559df.pdf/MD5E-s1197868--3b23e8d53b11d98d49b1adf62ff559df.pdf[0m
+│       ├── [40;31;01mfunctional_sub-19.pdf[0m -> [00m../../.git/annex/objects/Jj/m8/MD5E-s1164028--aea7dfa78e9be2e83a9b313f2ebdc4bd.pdf/MD5E-s1164028--aea7dfa78e9be2e83a9b313f2ebdc4bd.pdf[0m
+│       ├── [40;31;01mfunctional_sub-20.pdf[0m -> [00m../../.git/annex/objects/x1/ZQ/MD5E-s1292308--8869b1b640797a2be2aa03be69b89840.pdf/MD5E-s1292308--8869b1b640797a2be2aa03be69b89840.pdf[0m
+│       ├── [40;31;01mfunctional_sub-21.pdf[0m -> [00m../../.git/annex/objects/MG/zW/MD5E-s1216271--3d5c5ca0f8f4ba06b3289e197a40defd.pdf/MD5E-s1216271--3d5c5ca0f8f4ba06b3289e197a40defd.pdf[0m
+│       ├── [40;31;01mfunctional_sub-22.pdf[0m -> [00m../../.git/annex/objects/5m/pj/MD5E-s1142289--4f9e57d8bfe3d39881c43b959189d69f.pdf/MD5E-s1142289--4f9e57d8bfe3d39881c43b959189d69f.pdf[0m
+│       ├── [40;31;01mfunctional_sub-23.pdf[0m -> [00m../../.git/annex/objects/m7/Z2/MD5E-s1233046--7758914aecbf2b5d01cd0825952609be.pdf/MD5E-s1233046--7758914aecbf2b5d01cd0825952609be.pdf[0m
+│       ├── [40;31;01mfunctional_sub-24.pdf[0m -> [00m../../.git/annex/objects/mz/5m/MD5E-s1265224--c188bd88fc1c99308389f528ea4df71e.pdf/MD5E-s1265224--c188bd88fc1c99308389f528ea4df71e.pdf[0m
+│       ├── [40;31;01mfunctional_sub-25.pdf[0m -> [00m../../.git/annex/objects/Mk/G6/MD5E-s1260984--1b16abcbbf55ccc7763f1d704d76628f.pdf/MD5E-s1260984--1b16abcbbf55ccc7763f1d704d76628f.pdf[0m
+│       └── [40;31;01mfunctional_sub-26.pdf[0m -> [00m../../.git/annex/objects/1m/zq/MD5E-s1285726--6838f727d5c4b5593a7b5e0e6b20483a.pdf/MD5E-s1285726--6838f727d5c4b5593a7b5e0e6b20483a.pdf[0m
+├── [01;32mmake_Timings.sh[0m
+├── [00mparticipants.tsv[0m
+├── [01;34msub-01[0m
+│   ├── [01;34manat[0m
+│   │   └── [01;36msub-01_T1w.nii.gz[0m -> [01;31m../../.git/annex/objects/Pf/6k/MD5E-s10581116--757e697a01eeea5c97a7d6fbc7153373.nii.gz/MD5E-s10581116--757e697a01eeea5c97a7d6fbc7153373.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [01;36msub-01_task-flanker_run-1_bold.nii.gz[0m -> [01;31m../../.git/annex/objects/5m/w9/MD5E-s28061534--8e8c44ff53f9b5d46f2caae5916fa4ef.nii.gz/MD5E-s28061534--8e8c44ff53f9b5d46f2caae5916fa4ef.nii.gz[0m
+│       ├── [00msub-01_task-flanker_run-1_events.tsv[0m
+│       ├── [01;36msub-01_task-flanker_run-2_bold.nii.gz[0m -> [01;31m../../.git/annex/objects/2F/58/MD5E-s28143286--f0bcf782c3688e2cf7149b4665949484.nii.gz/MD5E-s28143286--f0bcf782c3688e2cf7149b4665949484.nii.gz[0m
+│       └── [00msub-01_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-02[0m
+│   ├── [01;34manat[0m
+│   │   └── [01;36msub-02_T1w.nii.gz[0m -> [01;31m../../.git/annex/objects/3m/FF/MD5E-s10737123--cbd4181ee26559e8ec0a441fa2f834a7.nii.gz/MD5E-s10737123--cbd4181ee26559e8ec0a441fa2f834a7.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [01;36msub-02_task-flanker_run-1_bold.nii.gz[0m -> [01;31m../../.git/annex/objects/8v/2j/MD5E-s29188378--80050f0deb13562c24f2fc23f8d095bd.nii.gz/MD5E-s29188378--80050f0deb13562c24f2fc23f8d095bd.nii.gz[0m
+│       ├── [00msub-02_task-flanker_run-1_events.tsv[0m
+│       ├── [01;36msub-02_task-flanker_run-2_bold.nii.gz[0m -> [01;31m../../.git/annex/objects/fM/Kw/MD5E-s29193540--cc013f2d7d148b448edca8aada349d02.nii.gz/MD5E-s29193540--cc013f2d7d148b448edca8aada349d02.nii.gz[0m
+│       └── [00msub-02_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-03[0m
+│   ├── [01;34manat[0m
+│   │   └── [01;36msub-03_T1w.nii.gz[0m -> [01;31m../../.git/annex/objects/7W/9z/MD5E-s10707026--8f1858934cc7c7457e3a4a71cc2131fc.nii.gz/MD5E-s10707026--8f1858934cc7c7457e3a4a71cc2131fc.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [01;36msub-03_task-flanker_run-1_bold.nii.gz[0m -> [01;31m../../.git/annex/objects/q6/kF/MD5E-s28755729--b19466702eee6b9385bd6e19e362f94c.nii.gz/MD5E-s28755729--b19466702eee6b9385bd6e19e362f94c.nii.gz[0m
+│       ├── [00msub-03_task-flanker_run-1_events.tsv[0m
+│       ├── [01;36msub-03_task-flanker_run-2_bold.nii.gz[0m -> [01;31m../../.git/annex/objects/zV/K1/MD5E-s28782544--8d9700a435d08c90f0c1d534efdc8b69.nii.gz/MD5E-s28782544--8d9700a435d08c90f0c1d534efdc8b69.nii.gz[0m
+│       └── [00msub-03_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-04[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-04_T1w.nii.gz[0m -> [00m../../.git/annex/objects/FW/14/MD5E-s10738444--2a9a2ba4ea7d2324c84bf5a2882f196c.nii.gz/MD5E-s10738444--2a9a2ba4ea7d2324c84bf5a2882f196c.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-04_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/9Z/0Q/MD5E-s29062799--27171406951ea275cb5857ea0dc32345.nii.gz/MD5E-s29062799--27171406951ea275cb5857ea0dc32345.nii.gz[0m
+│       ├── [00msub-04_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-04_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/FW/FZ/MD5E-s29071279--f89b61fe3ebab26df1374f2564bd95c2.nii.gz/MD5E-s29071279--f89b61fe3ebab26df1374f2564bd95c2.nii.gz[0m
+│       └── [00msub-04_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-05[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-05_T1w.nii.gz[0m -> [00m../../.git/annex/objects/k2/Kj/MD5E-s10753867--c4b5788da5f4c627f0f5862da5f46c35.nii.gz/MD5E-s10753867--c4b5788da5f4c627f0f5862da5f46c35.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-05_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/VZ/z5/MD5E-s29667270--0ce9ac78b6aa9a77fc94c655a6ff5a06.nii.gz/MD5E-s29667270--0ce9ac78b6aa9a77fc94c655a6ff5a06.nii.gz[0m
+│       ├── [00msub-05_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-05_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/z7/MP/MD5E-s29660544--752750dabb21e2cf28e87d1d550a71b9.nii.gz/MD5E-s29660544--752750dabb21e2cf28e87d1d550a71b9.nii.gz[0m
+│       └── [00msub-05_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-06[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-06_T1w.nii.gz[0m -> [00m../../.git/annex/objects/5w/G0/MD5E-s10620585--1132eab3830fe59b8a10b6582bb49004.nii.gz/MD5E-s10620585--1132eab3830fe59b8a10b6582bb49004.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-06_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/3x/qj/MD5E-s29386982--e671c0c647ce7d0d4596e35b702ee970.nii.gz/MD5E-s29386982--e671c0c647ce7d0d4596e35b702ee970.nii.gz[0m
+│       ├── [00msub-06_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-06_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/9j/6P/MD5E-s29379265--e513a2746d2b5c603f96044cf48c557c.nii.gz/MD5E-s29379265--e513a2746d2b5c603f96044cf48c557c.nii.gz[0m
+│       └── [00msub-06_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-07[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-07_T1w.nii.gz[0m -> [00m../../.git/annex/objects/08/fF/MD5E-s10718092--38481fbc489dfb1ec4b174b57591a074.nii.gz/MD5E-s10718092--38481fbc489dfb1ec4b174b57591a074.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-07_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/z1/7W/MD5E-s28946009--5baf7a314874b280543fc0f91f2731af.nii.gz/MD5E-s28946009--5baf7a314874b280543fc0f91f2731af.nii.gz[0m
+│       ├── [00msub-07_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-07_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/Jf/W7/MD5E-s28960603--682e13963bfc49cc6ae05e9ba5c62619.nii.gz/MD5E-s28960603--682e13963bfc49cc6ae05e9ba5c62619.nii.gz[0m
+│       └── [00msub-07_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-08[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-08_T1w.nii.gz[0m -> [00m../../.git/annex/objects/mw/MM/MD5E-s10561256--b94dddd8dc1c146aa8cd97f8d9994146.nii.gz/MD5E-s10561256--b94dddd8dc1c146aa8cd97f8d9994146.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-08_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/zX/v9/MD5E-s28641609--47314e6d1a14b8545686110b5b67f8b8.nii.gz/MD5E-s28641609--47314e6d1a14b8545686110b5b67f8b8.nii.gz[0m
+│       ├── [00msub-08_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-08_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/WZ/F0/MD5E-s28636310--4535bf26281e1c5556ad0d3468e7fe4e.nii.gz/MD5E-s28636310--4535bf26281e1c5556ad0d3468e7fe4e.nii.gz[0m
+│       └── [00msub-08_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-09[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-09_T1w.nii.gz[0m -> [00m../../.git/annex/objects/QJ/ZZ/MD5E-s10775967--e6a18e64bc0a6b17254a9564cf9b8f82.nii.gz/MD5E-s10775967--e6a18e64bc0a6b17254a9564cf9b8f82.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-09_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/k9/1X/MD5E-s29200533--59e86a903e0ab3d1d320c794ba1f0777.nii.gz/MD5E-s29200533--59e86a903e0ab3d1d320c794ba1f0777.nii.gz[0m
+│       ├── [00msub-09_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-09_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/W3/94/MD5E-s29223017--7f3fb9e260d3bd28e29b0b586ce4c344.nii.gz/MD5E-s29223017--7f3fb9e260d3bd28e29b0b586ce4c344.nii.gz[0m
+│       └── [00msub-09_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-10[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-10_T1w.nii.gz[0m -> [00m../../.git/annex/objects/5F/3f/MD5E-s10750712--bde2309077bffe22cb65e42ebdce5bfa.nii.gz/MD5E-s10750712--bde2309077bffe22cb65e42ebdce5bfa.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-10_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/3p/qp/MD5E-s29732696--339715d5cec387f4d44dfe94f304a429.nii.gz/MD5E-s29732696--339715d5cec387f4d44dfe94f304a429.nii.gz[0m
+│       ├── [00msub-10_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-10_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/11/Zx/MD5E-s29724034--16f2bf452524a315182f188becc1866d.nii.gz/MD5E-s29724034--16f2bf452524a315182f188becc1866d.nii.gz[0m
+│       └── [00msub-10_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-11[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-11_T1w.nii.gz[0m -> [00m../../.git/annex/objects/kj/xX/MD5E-s10534963--9e5bff7ec0b5df2850e1d05b1af281ba.nii.gz/MD5E-s10534963--9e5bff7ec0b5df2850e1d05b1af281ba.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-11_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/35/fk/MD5E-s28226875--d5012074c2c7a0a394861b010bcf9a8f.nii.gz/MD5E-s28226875--d5012074c2c7a0a394861b010bcf9a8f.nii.gz[0m
+│       ├── [00msub-11_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-11_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/j7/ff/MD5E-s28198976--c0a64e3b549568c44bb40b1588027c9a.nii.gz/MD5E-s28198976--c0a64e3b549568c44bb40b1588027c9a.nii.gz[0m
+│       └── [00msub-11_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-12[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-12_T1w.nii.gz[0m -> [00m../../.git/annex/objects/kx/2F/MD5E-s10550168--a7f651adc817b6678148b575654532a4.nii.gz/MD5E-s10550168--a7f651adc817b6678148b575654532a4.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-12_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/M0/fX/MD5E-s28403807--f1c3eb2e519020f4315a696ea845fc01.nii.gz/MD5E-s28403807--f1c3eb2e519020f4315a696ea845fc01.nii.gz[0m
+│       ├── [00msub-12_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-12_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/vW/V0/MD5E-s28424992--8740628349be3c056a0411bf4a852b25.nii.gz/MD5E-s28424992--8740628349be3c056a0411bf4a852b25.nii.gz[0m
+│       └── [00msub-12_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-13[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-13_T1w.nii.gz[0m -> [00m../../.git/annex/objects/wM/Xw/MD5E-s10609761--440413c3251d182086105649164222c6.nii.gz/MD5E-s10609761--440413c3251d182086105649164222c6.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-13_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/mf/M4/MD5E-s28180916--aa35f4ad0cf630d6396a8a2dd1f3dda6.nii.gz/MD5E-s28180916--aa35f4ad0cf630d6396a8a2dd1f3dda6.nii.gz[0m
+│       ├── [00msub-13_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-13_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/XP/76/MD5E-s28202786--8caf1ac548c87b2b35f85e8ae2bf72c1.nii.gz/MD5E-s28202786--8caf1ac548c87b2b35f85e8ae2bf72c1.nii.gz[0m
+│       └── [00msub-13_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-14[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-14_T1w.nii.gz[0m -> [00m../../.git/annex/objects/Zw/0z/MD5E-s9223596--33abfb5da565f3487e3a7aebc15f940c.nii.gz/MD5E-s9223596--33abfb5da565f3487e3a7aebc15f940c.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-14_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/Jp/29/MD5E-s29001492--250f1e4daa9be1d95e06af0d56629cc9.nii.gz/MD5E-s29001492--250f1e4daa9be1d95e06af0d56629cc9.nii.gz[0m
+│       ├── [00msub-14_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-14_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/PK/V2/MD5E-s29068193--5621a3b0af8132c509420b4ad9aaf8fb.nii.gz/MD5E-s29068193--5621a3b0af8132c509420b4ad9aaf8fb.nii.gz[0m
+│       └── [00msub-14_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-15[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-15_T1w.nii.gz[0m -> [00m../../.git/annex/objects/Mz/qq/MD5E-s10752891--ddd2622f115ec0d29a0c7ab2366f6f95.nii.gz/MD5E-s10752891--ddd2622f115ec0d29a0c7ab2366f6f95.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-15_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/08/JJ/MD5E-s28285239--feda22c4526af1910fcee58d4c42f07e.nii.gz/MD5E-s28285239--feda22c4526af1910fcee58d4c42f07e.nii.gz[0m
+│       ├── [00msub-15_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-15_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/9f/0W/MD5E-s28289760--433000a1def662e72d8433dba151c61b.nii.gz/MD5E-s28289760--433000a1def662e72d8433dba151c61b.nii.gz[0m
+│       └── [00msub-15_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-16[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-16_T1w.nii.gz[0m -> [00m../../.git/annex/objects/4g/8k/MD5E-s10927450--a196f7075c793328dd6ff3cebf36ea6b.nii.gz/MD5E-s10927450--a196f7075c793328dd6ff3cebf36ea6b.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-16_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/9z/g2/MD5E-s29757991--1a1648b2fa6cc74e31c94f109d8137ba.nii.gz/MD5E-s29757991--1a1648b2fa6cc74e31c94f109d8137ba.nii.gz[0m
+│       ├── [00msub-16_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-16_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/k8/4F/MD5E-s29773832--fe08739ea816254395b985ee704aaa99.nii.gz/MD5E-s29773832--fe08739ea816254395b985ee704aaa99.nii.gz[0m
+│       └── [00msub-16_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-17[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-17_T1w.nii.gz[0m -> [00m../../.git/annex/objects/jQ/MQ/MD5E-s10826014--8e2a6b062df4d1c4327802f2b905ef36.nii.gz/MD5E-s10826014--8e2a6b062df4d1c4327802f2b905ef36.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-17_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/Wz/2P/MD5E-s28991563--9845f461a017a39d1f6e18baaa0c9c41.nii.gz/MD5E-s28991563--9845f461a017a39d1f6e18baaa0c9c41.nii.gz[0m
+│       ├── [00msub-17_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-17_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/jF/3m/MD5E-s29057821--84ccc041163bcc5b3a9443951e2a5a78.nii.gz/MD5E-s29057821--84ccc041163bcc5b3a9443951e2a5a78.nii.gz[0m
+│       └── [00msub-17_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-18[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-18_T1w.nii.gz[0m -> [00m../../.git/annex/objects/3v/pK/MD5E-s10571510--6fc4b5792bc50ea4d14eb5247676fafe.nii.gz/MD5E-s10571510--6fc4b5792bc50ea4d14eb5247676fafe.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-18_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/94/P2/MD5E-s28185776--5b3879ec6fc4bbe1e48efc64984f88cf.nii.gz/MD5E-s28185776--5b3879ec6fc4bbe1e48efc64984f88cf.nii.gz[0m
+│       ├── [00msub-18_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-18_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/qp/6K/MD5E-s28234699--58019d798a133e5d7806569374dd8160.nii.gz/MD5E-s28234699--58019d798a133e5d7806569374dd8160.nii.gz[0m
+│       └── [00msub-18_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-19[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-19_T1w.nii.gz[0m -> [00m../../.git/annex/objects/Zw/p8/MD5E-s8861893--d338005753d8af3f3d7bd8dc293e2a97.nii.gz/MD5E-s8861893--d338005753d8af3f3d7bd8dc293e2a97.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-19_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/04/k6/MD5E-s28178448--3874e748258cf19aa69a05a7c37ad137.nii.gz/MD5E-s28178448--3874e748258cf19aa69a05a7c37ad137.nii.gz[0m
+│       ├── [00msub-19_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-19_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/mz/P4/MD5E-s28190932--91e6b3e4318ca28f01de8cb967cf8421.nii.gz/MD5E-s28190932--91e6b3e4318ca28f01de8cb967cf8421.nii.gz[0m
+│       └── [00msub-19_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-20[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-20_T1w.nii.gz[0m -> [00m../../.git/annex/objects/g1/FF/MD5E-s11025608--5929806a7aa5720fc755687e1450b06c.nii.gz/MD5E-s11025608--5929806a7aa5720fc755687e1450b06c.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-20_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/v5/ZJ/MD5E-s29931631--bf9abb057367ce66961f0b7913e8e707.nii.gz/MD5E-s29931631--bf9abb057367ce66961f0b7913e8e707.nii.gz[0m
+│       ├── [00msub-20_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-20_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/J3/KW/MD5E-s29945590--96cfd5b77cd096f6c6a3530015fea32d.nii.gz/MD5E-s29945590--96cfd5b77cd096f6c6a3530015fea32d.nii.gz[0m
+│       └── [00msub-20_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-21[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-21_T1w.nii.gz[0m -> [00m../../.git/annex/objects/K6/6K/MD5E-s8662805--77b262ddd929fa08d78591bfbe558ac6.nii.gz/MD5E-s8662805--77b262ddd929fa08d78591bfbe558ac6.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-21_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/Wz/p9/MD5E-s28756041--9ae556d4e3042532d25af5dc4ab31840.nii.gz/MD5E-s28756041--9ae556d4e3042532d25af5dc4ab31840.nii.gz[0m
+│       ├── [00msub-21_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-21_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/xF/M3/MD5E-s28758438--81866411fc6b6333ec382a20ff0be718.nii.gz/MD5E-s28758438--81866411fc6b6333ec382a20ff0be718.nii.gz[0m
+│       └── [00msub-21_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-22[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-22_T1w.nii.gz[0m -> [00m../../.git/annex/objects/JG/ZV/MD5E-s9282392--9e7296a6a5b68df46b77836182b6681a.nii.gz/MD5E-s9282392--9e7296a6a5b68df46b77836182b6681a.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-22_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/qW/Gw/MD5E-s28002098--c6bea10177a38667ceea3261a642b3c6.nii.gz/MD5E-s28002098--c6bea10177a38667ceea3261a642b3c6.nii.gz[0m
+│       ├── [00msub-22_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-22_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/VX/Zj/MD5E-s28027568--b34d0df9ad62485aba25296939429885.nii.gz/MD5E-s28027568--b34d0df9ad62485aba25296939429885.nii.gz[0m
+│       └── [00msub-22_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-23[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-23_T1w.nii.gz[0m -> [00m../../.git/annex/objects/4Z/4x/MD5E-s10626062--db5a6ba6730b319c6425f2e847ce9b14.nii.gz/MD5E-s10626062--db5a6ba6730b319c6425f2e847ce9b14.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-23_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/VK/8F/MD5E-s28965005--4a9a96d9322563510ca14439e7fd6cea.nii.gz/MD5E-s28965005--4a9a96d9322563510ca14439e7fd6cea.nii.gz[0m
+│       ├── [00msub-23_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-23_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/56/20/MD5E-s29050413--753b0d2c23c4af6592501219c2e2c6bd.nii.gz/MD5E-s29050413--753b0d2c23c4af6592501219c2e2c6bd.nii.gz[0m
+│       └── [00msub-23_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-24[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-24_T1w.nii.gz[0m -> [00m../../.git/annex/objects/jQ/fV/MD5E-s10739691--458f0046eff18ee8c43456637766a819.nii.gz/MD5E-s10739691--458f0046eff18ee8c43456637766a819.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-24_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/km/fV/MD5E-s29354610--29ebfa60e52d49f7dac6814cb5fdc2bc.nii.gz/MD5E-s29354610--29ebfa60e52d49f7dac6814cb5fdc2bc.nii.gz[0m
+│       ├── [00msub-24_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-24_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/Wj/KK/MD5E-s29423307--fedaa1d7c6e34420735bb3bbe5a2fe38.nii.gz/MD5E-s29423307--fedaa1d7c6e34420735bb3bbe5a2fe38.nii.gz[0m
+│       └── [00msub-24_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-25[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-25_T1w.nii.gz[0m -> [00m../../.git/annex/objects/Gk/FQ/MD5E-s8998578--f560d832f13e757b485c16d570bf6ebc.nii.gz/MD5E-s8998578--f560d832f13e757b485c16d570bf6ebc.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-25_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/XW/1v/MD5E-s29473003--49b04e7e4b450ec5ef93ff02d4158775.nii.gz/MD5E-s29473003--49b04e7e4b450ec5ef93ff02d4158775.nii.gz[0m
+│       ├── [00msub-25_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-25_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/Qm/M7/MD5E-s29460132--b0e9039e9f33510631f229c8c2193285.nii.gz/MD5E-s29460132--b0e9039e9f33510631f229c8c2193285.nii.gz[0m
+│       └── [00msub-25_task-flanker_run-2_events.tsv[0m
+├── [01;34msub-26[0m
+│   ├── [01;34manat[0m
+│   │   └── [40;31;01msub-26_T1w.nii.gz[0m -> [00m../../.git/annex/objects/kf/9F/MD5E-s10850250--5f103b2660f488e4afa193f9307c1291.nii.gz/MD5E-s10850250--5f103b2660f488e4afa193f9307c1291.nii.gz[0m
+│   └── [01;34mfunc[0m
+│       ├── [00mcongruent.1D[0m
+│       ├── [00mcongruent_run1.txt[0m
+│       ├── [00mcongruent_run2.txt[0m
+│       ├── [00mincongruent.1D[0m
+│       ├── [00mincongruent_run1.txt[0m
+│       ├── [00mincongruent_run2.txt[0m
+│       ├── [40;31;01msub-26_task-flanker_run-1_bold.nii.gz[0m -> [00m../../.git/annex/objects/QV/10/MD5E-s30127491--8e30aa4bbfcc461bac8598bf621283c5.nii.gz/MD5E-s30127491--8e30aa4bbfcc461bac8598bf621283c5.nii.gz[0m
+│       ├── [00msub-26_task-flanker_run-1_events.tsv[0m
+│       ├── [40;31;01msub-26_task-flanker_run-2_bold.nii.gz[0m -> [00m../../.git/annex/objects/3G/Q6/MD5E-s30162480--80fd132e7cb1600ab248249e78f6f1aa.nii.gz/MD5E-s30162480--80fd132e7cb1600ab248249e78f6f1aa.nii.gz[0m
+│       └── [00msub-26_task-flanker_run-2_events.tsv[0m
+├── [00msubjList.txt[0m
+└── [00mtask-flanker_bold.json[0m
+
+81 directories, 350 files
