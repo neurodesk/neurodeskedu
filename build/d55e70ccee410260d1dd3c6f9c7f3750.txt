@@ -1,0 +1,3566 @@
+Cloning: 100%|██████████████████████| 2.00/2.00 [00:00<00:00, 5.66 candidates/s]
+Enumerating: 0.00 Objects [00:00, ? Objects/s][A
+                                              [A
+Counting:   0%|                              | 0.00/12.4k [00:00<?, ? Objects/s][A
+                                                                                [A
+Compressing:   0%|                           | 0.00/6.00k [00:00<?, ? Objects/s][A
+                                                                                [A
+Receiving:   0%|                             | 0.00/12.4k [00:00<?, ? Objects/s][A
+Receiving:   9%|█▊                  | 1.11k/12.4k [00:00<00:01, 10.4k Objects/s][A
+Receiving:  19%|███▊                | 2.35k/12.4k [00:00<00:01, 8.68k Objects/s][A
+Receiving:  36%|███████▏            | 4.45k/12.4k [00:00<00:00, 13.4k Objects/s][A
+Receiving:  75%|███████████████     | 9.28k/12.4k [00:00<00:00, 21.8k Objects/s][A
+                                                                                [A
+Resolving:   0%|                              | 0.00/3.17k [00:00<?, ? Deltas/s][A
+[1;1minstall[0m([1;32mok[0m): /home/jovyan/Git_repositories/neurodeskedu/books/examples/workflows/heudiconv-reproin-example ([1;35mdataset[0m)
+Total:   0%|                                   | 0.00/75.4M [00:00<?, ? Bytes/s]
+Get REPROIN/ .. 001-0002.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0004.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0001.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0003.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0004.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 336k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0001.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 369k Bytes/s][A[A[A
+Get REPROIN/ .. 001-0002.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 317k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0003.dcm:  25%|█▎   | 55.9k/223k [00:00<00:00, 322k Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0002.dcm:  50%|███   | 112k/223k [00:00<00:00, 449k Bytes/s][A
+
+Get REPROIN/ .. 001-0004.dcm:  50%|███   | 112k/223k [00:00<00:00, 447k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0001.dcm:  50%|███   | 112k/223k [00:00<00:00, 440k Bytes/s][A[A[A
+                                                                                [A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0003.dcm:  75%|████▌ | 168k/223k [00:00<00:00, 515k Bytes/s][A[A[A[A
+
+
+
+Total:   0%|                           | 223k/75.4M [00:07<42:47, 29.3k Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0017.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0007.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0016.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0008.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0017.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 312k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0016.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 272k Bytes/s][A[A[A
+
+Get REPROIN/ .. 001-0007.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 243k Bytes/s][A[A
+
+
+
+Get REPROIN/ .. 001-0008.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 296k Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0017.dcm:  50%|███   | 112k/223k [00:00<00:00, 453k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0016.dcm:  50%|███   | 112k/223k [00:00<00:00, 464k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0008.dcm:  50%|███   | 112k/223k [00:00<00:00, 456k Bytes/s][A[A[A[A
+Total:   1%|▍                          | 1.11M/75.4M [00:08<09:19, 133k Bytes/s][A
+
+Get REPROIN/ .. 001-0007.dcm:  61%|███▋  | 136k/223k [00:00<00:00, 432k Bytes/s][A[A
+
+
+                                                                                [A[A[A
+
+                                                                                [A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0020.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0019.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0009.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0006.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0020.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 324k Bytes/s][A
+
+Get REPROIN/ .. 001-0019.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 284k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0009.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 363k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0006.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 293k Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0020.dcm:  50%|███   | 112k/223k [00:00<00:00, 450k Bytes/s][A
+
+Get REPROIN/ .. 001-0019.dcm:  50%|███   | 112k/223k [00:00<00:00, 460k Bytes/s][A[A
+Total:   3%|▋                          | 2.00M/75.4M [00:09<05:36, 218k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0009.dcm:  50%|███   | 112k/223k [00:00<00:00, 442k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+
+Get REPROIN/ .. 001-0006.dcm:  50%|███   | 112k/223k [00:00<00:00, 457k Bytes/s][A[A[A[A
+
+
+                                                                                [A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0022.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0012.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0027.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0022.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 270k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0013.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0012.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 267k Bytes/s][A[A
+Get REPROIN/ .. 001-0022.dcm:  50%|███   | 112k/223k [00:00<00:00, 465k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0027.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 315k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0013.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 323k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0012.dcm:  50%|███   | 112k/223k [00:00<00:00, 465k Bytes/s][A[A
+Total:   4%|█                          | 2.89M/75.4M [00:09<04:09, 291k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0027.dcm:  50%|███   | 112k/223k [00:00<00:00, 451k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+
+Get REPROIN/ .. 001-0013.dcm:  50%|███   | 112k/223k [00:00<00:00, 450k Bytes/s][A[A[A[A
+
+
+                                                                                [A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0021.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0029.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+Get REPROIN/ .. 001-0021.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 253k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0030.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0026.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0029.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 283k Bytes/s][A[A
+Get REPROIN/ .. 001-0021.dcm:  50%|███   | 112k/223k [00:00<00:00, 471k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0030.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 355k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0026.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 246k Bytes/s][A[A[A[A
+Total:   5%|█▎                         | 3.79M/75.4M [00:10<03:22, 354k Bytes/s][A
+
+Get REPROIN/ .. 001-0029.dcm:  50%|███   | 112k/223k [00:00<00:00, 459k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0030.dcm:  50%|███   | 112k/223k [00:00<00:00, 442k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+
+Get REPROIN/ .. 001-0026.dcm:  65%|███▉  | 144k/223k [00:00<00:00, 524k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+
+
+                                                                                [A[A[A
+Get REPROIN/ .. 001-0011.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0010.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0025.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0031.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0011.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 278k Bytes/s][A
+
+Get REPROIN/ .. 001-0010.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 269k Bytes/s][A[A
+Get REPROIN/ .. 001-0011.dcm:  50%|███   | 112k/223k [00:00<00:00, 462k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0025.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 255k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0031.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 309k Bytes/s][A[A[A[A
+Total:   6%|█▋                         | 4.68M/75.4M [00:11<02:54, 406k Bytes/s][A
+
+Get REPROIN/ .. 001-0010.dcm:  50%|███   | 112k/223k [00:00<00:00, 465k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0025.dcm:  50%|███   | 112k/223k [00:00<00:00, 470k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0031.dcm:  50%|███   | 112k/223k [00:00<00:00, 452k Bytes/s][A[A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0014.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0023.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0015.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0035.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0014.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 278k Bytes/s][A
+
+Get REPROIN/ .. 001-0023.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 324k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0015.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 305k Bytes/s][A[A[A
+Get REPROIN/ .. 001-0014.dcm:  50%|███   | 112k/223k [00:00<00:00, 463k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0035.dcm:  25%|█▎   | 55.9k/223k [00:00<00:00, 321k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0023.dcm:  50%|███   | 112k/223k [00:00<00:00, 449k Bytes/s][A[A
+Total:   7%|█▉                         | 5.57M/75.4M [00:12<02:34, 451k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0015.dcm:  50%|███   | 112k/223k [00:00<00:00, 454k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0035.dcm:  83%|████▉ | 184k/223k [00:00<00:00, 570k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0040.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0033.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0038.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0043.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0040.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 270k Bytes/s][A
+
+Get REPROIN/ .. 001-0033.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 329k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0038.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 316k Bytes/s][A[A[A
+Get REPROIN/ .. 001-0040.dcm:  50%|███   | 112k/223k [00:00<00:00, 465k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0043.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 280k Bytes/s][A[A[A[A
+Total:   9%|██▎                        | 6.46M/75.4M [00:13<02:20, 492k Bytes/s][A
+
+Get REPROIN/ .. 001-0033.dcm:  50%|███   | 112k/223k [00:00<00:00, 448k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0038.dcm:  50%|███   | 112k/223k [00:00<00:00, 451k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0043.dcm:  50%|███   | 112k/223k [00:00<00:00, 462k Bytes/s][A[A[A[A
+
+                                                                                [A[A
+
+
+
+                                                                                [A[A[A[A
+
+
+                                                                                [A[A[A
+Get REPROIN/ .. 001-0034.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0036.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0039.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0046.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0034.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 276k Bytes/s][A
+
+Get REPROIN/ .. 001-0036.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 261k Bytes/s][A[A
+
+
+
+Get REPROIN/ .. 001-0046.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 314k Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0034.dcm:  50%|███   | 112k/223k [00:00<00:00, 463k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0039.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 278k Bytes/s][A[A[A
+
+Get REPROIN/ .. 001-0036.dcm:  50%|███   | 112k/223k [00:00<00:00, 468k Bytes/s][A[A
+Total:  10%|██▋                        | 7.35M/75.4M [00:13<02:08, 529k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0039.dcm:  50%|███   | 112k/223k [00:00<00:00, 462k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0046.dcm:  50%|███   | 112k/223k [00:00<00:00, 452k Bytes/s][A[A[A[A
+
+                                                                                [A[A
+
+
+
+                                                                                [A[A[A[A
+
+
+                                                                                [A[A[A
+Get REPROIN/ .. 001-0018.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0044.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0050.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0048.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0018.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 256k Bytes/s][A
+
+Get REPROIN/ .. 001-0044.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 358k Bytes/s][A[A
+Get REPROIN/ .. 001-0018.dcm:  50%|███   | 112k/223k [00:00<00:00, 470k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0048.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 289k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 001-0050.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 270k Bytes/s][A[A[A
+Total:  11%|██▉                        | 8.24M/75.4M [00:14<01:59, 562k Bytes/s][A
+
+Get REPROIN/ .. 001-0044.dcm:  50%|███   | 112k/223k [00:00<00:00, 443k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0050.dcm:  50%|███   | 112k/223k [00:00<00:00, 466k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0048.dcm:  50%|███   | 112k/223k [00:00<00:00, 458k Bytes/s][A[A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0041.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0052.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0051.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0041.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 267k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0037.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0041.dcm:  50%|███   | 112k/223k [00:00<00:00, 468k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0037.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 336k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0052.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 252k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0051.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 275k Bytes/s][A[A[A
+Total:  12%|███▎                       | 9.13M/75.4M [00:15<01:51, 592k Bytes/s][A
+
+Get REPROIN/ .. 001-0052.dcm:  50%|███   | 112k/223k [00:00<00:00, 471k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0051.dcm:  50%|███   | 112k/223k [00:00<00:00, 463k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0037.dcm:  50%|███   | 112k/223k [00:00<00:00, 446k Bytes/s][A[A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0056.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0053.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+Get REPROIN/ .. 001-0056.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 389k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0054.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0042.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0053.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 255k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0054.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 312k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0042.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 358k Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0056.dcm:  50%|███   | 112k/223k [00:00<00:00, 438k Bytes/s][A
+
+Get REPROIN/ .. 001-0053.dcm:  50%|███   | 112k/223k [00:00<00:00, 471k Bytes/s][A[A
+Total:  13%|███▌                       | 10.0M/75.4M [00:16<01:45, 618k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0054.dcm:  50%|███   | 112k/223k [00:00<00:00, 452k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0042.dcm:  50%|███   | 112k/223k [00:00<00:00, 442k Bytes/s][A[A[A[A
+
+                                                                                [A[A
+
+
+
+                                                                                [A[A[A[A
+
+
+                                                                                [A[A[A
+Get REPROIN/ .. 001-0045.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0028.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0024.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0060.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0045.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 253k Bytes/s][A
+
+Get REPROIN/ .. 001-0028.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 255k Bytes/s][A[A
+
+
+
+Get REPROIN/ .. 001-0060.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 331k Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0045.dcm:  50%|███   | 112k/223k [00:00<00:00, 471k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0024.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 246k Bytes/s][A[A[A
+
+Get REPROIN/ .. 001-0028.dcm:  50%|███   | 112k/223k [00:00<00:00, 470k Bytes/s][A[A
+Total:  14%|███▉                       | 10.9M/75.4M [00:16<01:40, 643k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0060.dcm:  50%|███   | 112k/223k [00:00<00:00, 447k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+
+                                                                                [A[A
+
+
+Get REPROIN/ .. 001-0024.dcm:  65%|███▉  | 144k/223k [00:00<00:00, 461k Bytes/s][A[A[A
+
+
+                                                                                [A[A[A
+Get REPROIN/ .. 001-0064.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0061.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0005.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0058.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0064.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 263k Bytes/s][A
+
+Get REPROIN/ .. 001-0061.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 351k Bytes/s][A[A
+Get REPROIN/ .. 001-0064.dcm:  50%|███   | 112k/223k [00:00<00:00, 468k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0058.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 339k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 001-0005.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 296k Bytes/s][A[A[A
+Total:  16%|████▏                      | 11.8M/75.4M [00:17<01:35, 665k Bytes/s][A
+
+Get REPROIN/ .. 001-0061.dcm:  50%|███   | 112k/223k [00:00<00:00, 444k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0005.dcm:  50%|███   | 112k/223k [00:00<00:00, 456k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0058.dcm:  50%|███   | 112k/223k [00:00<00:00, 446k Bytes/s][A[A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0066.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0062.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+Get REPROIN/ .. 001-0066.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 272k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0065.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0055.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0062.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 278k Bytes/s][A[A
+Get REPROIN/ .. 001-0066.dcm:  50%|███   | 112k/223k [00:00<00:00, 464k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0055.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 307k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 001-0065.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 284k Bytes/s][A[A[A
+Total:  17%|████▌                      | 12.7M/75.4M [00:18<01:31, 686k Bytes/s][A
+
+Get REPROIN/ .. 001-0062.dcm:  50%|███   | 112k/223k [00:00<00:00, 462k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0065.dcm:  50%|███   | 112k/223k [00:00<00:00, 460k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0055.dcm:  50%|███   | 112k/223k [00:00<00:00, 453k Bytes/s][A[A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0067.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0070.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+Get REPROIN/ .. 001-0067.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 242k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0074.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0068.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0070.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 257k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0074.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 312k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0068.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 381k Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0067.dcm:  57%|███▍  | 128k/223k [00:00<00:00, 403k Bytes/s][A
+Total:  18%|████▊                      | 13.6M/75.4M [00:19<01:27, 706k Bytes/s][A
+
+Get REPROIN/ .. 001-0070.dcm:  50%|███   | 112k/223k [00:00<00:00, 470k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0074.dcm:  50%|███   | 112k/223k [00:00<00:00, 452k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+
+Get REPROIN/ .. 001-0068.dcm:  50%|███   | 112k/223k [00:00<00:00, 438k Bytes/s][A[A[A[A
+
+
+                                                                                [A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0069.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0069.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 312k Bytes/s][A
+
+Get REPROIN/ .. 001-0072.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0073.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0079.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0072.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 381k Bytes/s][A[A
+Get REPROIN/ .. 001-0069.dcm:  50%|███   | 112k/223k [00:00<00:00, 452k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0073.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 260k Bytes/s][A[A[A
+                                                                                [A
+
+
+
+Total:  19%|█████▏                     | 14.5M/75.4M [00:20<01:24, 722k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0072.dcm:  50%|███   | 112k/223k [00:00<00:00, 438k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0073.dcm:  50%|███   | 112k/223k [00:00<00:00, 468k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+
+Get REPROIN/ .. 001-0079.dcm:  50%|███   | 112k/223k [00:00<00:00, 442k Bytes/s][A[A[A[A
+
+
+                                                                                [A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0057.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0057.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 285k Bytes/s][A
+
+Get REPROIN/ .. 001-0082.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+Get REPROIN/ .. 001-0057.dcm:  50%|███   | 112k/223k [00:00<00:00, 459k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0081.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0075.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Total:  20%|█████▌                     | 15.4M/75.4M [00:20<01:21, 738k Bytes/s][A
+
+Get REPROIN/ .. 001-0082.dcm:  22%|█    | 47.9k/223k [00:00<00:00, 275k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0081.dcm:  22%|█    | 47.9k/223k [00:00<00:00, 275k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0075.dcm:  22%|█    | 47.9k/223k [00:00<00:00, 275k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0082.dcm:  65%|███▉  | 144k/223k [00:00<00:00, 440k Bytes/s][A[A
+
+                                                                                [A[A
+
+
+Get REPROIN/ .. 001-0081.dcm:  61%|███▋  | 136k/223k [00:00<00:00, 413k Bytes/s][A[A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0075.dcm:  65%|███▉  | 144k/223k [00:00<00:00, 440k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0059.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0059.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 339k Bytes/s][A
+
+Get REPROIN/ .. 001-0076.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0071.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0059.dcm:  50%|███   | 112k/223k [00:00<00:00, 446k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0078.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Total:  22%|█████▊                     | 16.3M/75.4M [00:21<01:18, 752k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0071.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 362k Bytes/s][A[A[A
+
+Get REPROIN/ .. 001-0076.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 251k Bytes/s][A[A
+
+
+
+Get REPROIN/ .. 001-0078.dcm:  25%|█▎   | 55.9k/223k [00:00<00:00, 322k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0076.dcm:  50%|███   | 112k/223k [00:00<00:00, 472k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0071.dcm:  50%|███   | 112k/223k [00:00<00:00, 442k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0078.dcm:  83%|████▉ | 184k/223k [00:00<00:00, 570k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0032.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0032.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 307k Bytes/s][A
+
+Get REPROIN/ .. 001-0087.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0086.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0083.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0032.dcm:  50%|███   | 112k/223k [00:00<00:00, 453k Bytes/s][A
+Total:  23%|██████▏                    | 17.1M/75.4M [00:22<01:16, 766k Bytes/s][A
+
+Get REPROIN/ .. 001-0087.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 261k Bytes/s][A[A
+
+
+
+Get REPROIN/ .. 001-0083.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 299k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 001-0086.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 235k Bytes/s][A[A[A
+
+Get REPROIN/ .. 001-0087.dcm:  50%|███   | 112k/223k [00:00<00:00, 467k Bytes/s][A[A
+
+
+
+Get REPROIN/ .. 001-0083.dcm:  50%|███   | 112k/223k [00:00<00:00, 454k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 001-0086.dcm:  57%|███▍  | 128k/223k [00:00<00:00, 299k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0077.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0077.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 268k Bytes/s][A
+
+Get REPROIN/ .. 001-0092.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0089.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0093.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0077.dcm:  50%|███   | 112k/223k [00:00<00:00, 465k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0089.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 299k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0093.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 351k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0092.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 277k Bytes/s][A[A
+Total:  24%|██████▍                    | 18.0M/75.4M [00:23<01:14, 773k Bytes/s][A
+
+Get REPROIN/ .. 001-0092.dcm:  50%|███   | 112k/223k [00:00<00:00, 462k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0089.dcm:  50%|███   | 112k/223k [00:00<00:00, 455k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0093.dcm:  50%|███   | 112k/223k [00:00<00:00, 443k Bytes/s][A[A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0080.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0080.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 274k Bytes/s][A
+
+Get REPROIN/ .. 001-0090.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0085.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0047.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0080.dcm:  50%|███   | 112k/223k [00:00<00:00, 463k Bytes/s][A
+
+Get REPROIN/ .. 001-0090.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 305k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0085.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 290k Bytes/s][A[A[A
+Total:  25%|██████▊                    | 18.9M/75.4M [00:24<01:11, 786k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0047.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 338k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0090.dcm:  50%|███   | 112k/223k [00:00<00:00, 454k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0085.dcm:  50%|███   | 112k/223k [00:00<00:00, 458k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0047.dcm:  50%|███   | 112k/223k [00:00<00:00, 446k Bytes/s][A[A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0097.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0097.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 247k Bytes/s][A
+
+Get REPROIN/ .. 001-0084.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0098.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0101.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0097.dcm:  57%|███▍  | 128k/223k [00:00<00:00, 406k Bytes/s][A
+Total:  26%|███████                    | 19.8M/75.4M [00:24<01:09, 798k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0098.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 348k Bytes/s][A[A[A
+
+Get REPROIN/ .. 001-0084.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 295k Bytes/s][A[A
+
+
+
+Get REPROIN/ .. 001-0101.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 303k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0084.dcm:  50%|███   | 112k/223k [00:00<00:00, 456k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0098.dcm:  50%|███   | 112k/223k [00:00<00:00, 444k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0101.dcm:  50%|███   | 112k/223k [00:00<00:00, 454k Bytes/s][A[A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0088.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0088.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 266k Bytes/s][A
+
+Get REPROIN/ .. 001-0103.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0099.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0088.dcm:  50%|███   | 112k/223k [00:00<00:00, 465k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0107.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Total:  27%|███████▍                   | 20.7M/75.4M [00:25<01:07, 809k Bytes/s][A
+
+Get REPROIN/ .. 001-0103.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 249k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0099.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 273k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0107.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 277k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 001-0099.dcm:  50%|███   | 112k/223k [00:00<00:00, 463k Bytes/s][A[A[A
+
+Get REPROIN/ .. 001-0103.dcm:  61%|███▋  | 136k/223k [00:00<00:00, 487k Bytes/s][A[A
+
+
+
+Get REPROIN/ .. 001-0107.dcm:  50%|███   | 112k/223k [00:00<00:00, 462k Bytes/s][A[A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0049.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0049.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 251k Bytes/s][A
+
+Get REPROIN/ .. 001-0095.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0091.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0102.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0049.dcm:  50%|███   | 112k/223k [00:00<00:00, 472k Bytes/s][A
+Total:  29%|███████▋                   | 21.6M/75.4M [00:26<01:05, 819k Bytes/s][A
+
+Get REPROIN/ .. 001-0095.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 257k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0091.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 246k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0102.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 255k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0095.dcm:  50%|███   | 112k/223k [00:00<00:00, 470k Bytes/s][A[A
+
+
+
+Get REPROIN/ .. 001-0102.dcm:  50%|███   | 112k/223k [00:00<00:00, 470k Bytes/s][A[A[A[A
+
+                                                                                [A[A
+
+
+Get REPROIN/ .. 001-0091.dcm:  61%|███▋  | 136k/223k [00:00<00:00, 434k Bytes/s][A[A[A
+
+
+
+                                                                                [A[A[A[A
+
+
+                                                                                [A[A[A
+Get REPROIN/ .. 001-0100.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0100.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 245k Bytes/s][A
+
+Get REPROIN/ .. 001-0104.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0106.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0100.dcm:  68%|████  | 152k/223k [00:00<00:00, 554k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0109.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Total:  30%|████████                   | 22.5M/75.4M [00:27<01:03, 829k Bytes/s][A
+
+Get REPROIN/ .. 001-0104.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 289k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0106.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 260k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0109.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 255k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0104.dcm:  50%|███   | 112k/223k [00:00<00:00, 458k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0106.dcm:  50%|███   | 112k/223k [00:00<00:00, 469k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+
+Get REPROIN/ .. 001-0109.dcm:  50%|███   | 112k/223k [00:00<00:00, 470k Bytes/s][A[A[A[A
+
+
+                                                                                [A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0113.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0113.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 384k Bytes/s][A
+
+Get REPROIN/ .. 001-0111.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0118.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0113.dcm:  50%|███   | 112k/223k [00:00<00:00, 438k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0115.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Total:  31%|████████▎                  | 23.4M/75.4M [00:27<01:01, 839k Bytes/s][A
+
+Get REPROIN/ .. 001-0111.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 240k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0118.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 284k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0115.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 234k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 001-0118.dcm:  50%|███   | 112k/223k [00:00<00:00, 459k Bytes/s][A[A[A
+
+Get REPROIN/ .. 001-0111.dcm:  61%|███▋  | 136k/223k [00:00<00:00, 428k Bytes/s][A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0115.dcm:  61%|███▋  | 136k/223k [00:00<00:00, 425k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0114.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0114.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 268k Bytes/s][A
+
+Get REPROIN/ .. 001-0121.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+Get REPROIN/ .. 001-0114.dcm:  50%|███   | 112k/223k [00:00<00:00, 465k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0122.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0119.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Total:  32%|████████▋                  | 24.3M/75.4M [00:28<01:00, 848k Bytes/s][A
+
+Get REPROIN/ .. 001-0121.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 261k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0122.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 257k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0119.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 242k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0121.dcm:  50%|███   | 112k/223k [00:00<00:00, 468k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0122.dcm:  50%|███   | 112k/223k [00:00<00:00, 469k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0119.dcm:  65%|███▉  | 144k/223k [00:00<00:00, 458k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0124.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0124.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 252k Bytes/s][A
+
+Get REPROIN/ .. 001-0125.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+Get REPROIN/ .. 001-0124.dcm:  50%|███   | 112k/223k [00:00<00:00, 471k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0105.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0108.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Total:  33%|█████████                  | 25.2M/75.4M [00:29<00:58, 856k Bytes/s][A
+
+Get REPROIN/ .. 001-0125.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 266k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0105.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 240k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0108.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 249k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0125.dcm:  50%|███   | 112k/223k [00:00<00:00, 465k Bytes/s][A[A
+
+                                                                                [A[A
+
+
+Get REPROIN/ .. 001-0105.dcm:  65%|███▉  | 144k/223k [00:00<00:00, 457k Bytes/s][A[A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0108.dcm:  65%|███▉  | 144k/223k [00:00<00:00, 518k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0120.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0120.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 241k Bytes/s][A
+
+Get REPROIN/ .. 001-0127.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0063.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0120.dcm:  61%|███▋  | 136k/223k [00:00<00:00, 429k Bytes/s][A
+                                                                                [A
+Total:  35%|█████████▎                 | 26.1M/75.4M [00:30<00:57, 865k Bytes/s][A
+
+Get REPROIN/ .. 001-0127.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 244k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0063.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 249k Bytes/s][A[A[A
+Get REPROIN/ .. 001-0117.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 305k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0063.dcm:  61%|███▋  | 136k/223k [00:00<00:00, 479k Bytes/s][A[A[A
+
+Get REPROIN/ .. 001-0127.dcm:  61%|███▋  | 136k/223k [00:00<00:00, 432k Bytes/s][A[A
+
+                                                                                [A[A
+Get REPROIN/ .. 001-0117.dcm:  50%|███   | 112k/223k [00:00<00:00, 453k Bytes/s][A
+
+
+                                                                                [A[A[A
+                                                                                [A
+Get REPROIN/ .. 001-0096.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0096.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 259k Bytes/s][A
+Get REPROIN/ .. 001-0096.dcm:  50%|███   | 112k/223k [00:00<00:00, 468k Bytes/s][A
+
+Get REPROIN/ .. 001-0128.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0134.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Total:  36%|█████████▋                 | 26.9M/75.4M [00:30<00:55, 872k Bytes/s][A
+Get REPROIN/ .. 001-0116.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0128.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 316k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0134.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 276k Bytes/s][A[A[A
+Get REPROIN/ .. 001-0116.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 262k Bytes/s][A
+
+Get REPROIN/ .. 001-0128.dcm:  50%|███   | 112k/223k [00:00<00:00, 450k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0134.dcm:  50%|███   | 112k/223k [00:00<00:00, 462k Bytes/s][A[A[A
+Get REPROIN/ .. 001-0116.dcm:  50%|███   | 112k/223k [00:00<00:00, 467k Bytes/s][A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+                                                                                [A
+Get REPROIN/ .. 001-0130.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0130.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 239k Bytes/s][A
+
+Get REPROIN/ .. 001-0094.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0137.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0130.dcm:  57%|███▍  | 128k/223k [00:00<00:00, 401k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0129.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Total:  37%|█████████▉                 | 27.8M/75.4M [00:31<00:54, 880k Bytes/s][A
+
+Get REPROIN/ .. 001-0094.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 235k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0137.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 244k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0129.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 235k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0094.dcm:  65%|███▉  | 144k/223k [00:00<00:00, 453k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0137.dcm:  65%|███▉  | 144k/223k [00:00<00:00, 460k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0129.dcm:  65%|███▉  | 144k/223k [00:00<00:00, 453k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0112.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0112.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 250k Bytes/s][A
+
+Get REPROIN/ .. 001-0133.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0136.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Total:  38%|██████████▎                | 28.7M/75.4M [00:32<00:52, 887k Bytes/s][A
+Get REPROIN/ .. 001-0131.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0133.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 268k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0136.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 271k Bytes/s][A[A[A
+Get REPROIN/ .. 001-0131.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 293k Bytes/s][A
+
+Get REPROIN/ .. 001-0133.dcm:  50%|███   | 112k/223k [00:00<00:00, 465k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0136.dcm:  50%|███   | 112k/223k [00:00<00:00, 464k Bytes/s][A[A[A
+Get REPROIN/ .. 001-0131.dcm:  50%|███   | 112k/223k [00:00<00:00, 457k Bytes/s][A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+                                                                                [A
+Get REPROIN/ .. 001-0141.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0141.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 254k Bytes/s][A
+Get REPROIN/ .. 001-0141.dcm:  50%|███   | 112k/223k [00:00<00:00, 470k Bytes/s][A
+
+Get REPROIN/ .. 001-0123.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0132.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Total:  39%|██████████▌                | 29.6M/75.4M [00:33<00:51, 893k Bytes/s][A
+Get REPROIN/ .. 001-0146.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+
+Get REPROIN/ .. 001-0132.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 258k Bytes/s][A[A[A
+
+Get REPROIN/ .. 001-0123.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 245k Bytes/s][A[A
+Get REPROIN/ .. 001-0146.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 282k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0132.dcm:  50%|███   | 112k/223k [00:00<00:00, 470k Bytes/s][A[A[A
+
+Get REPROIN/ .. 001-0123.dcm:  61%|███▋  | 136k/223k [00:00<00:00, 432k Bytes/s][A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+Get REPROIN/ .. 001-0146.dcm:  50%|███   | 112k/223k [00:00<00:00, 461k Bytes/s][A
+                                                                                [A
+Get REPROIN/ .. 001-0142.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0142.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 242k Bytes/s][A
+
+Get REPROIN/ .. 001-0148.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0143.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0142.dcm:  61%|███▋  | 136k/223k [00:00<00:00, 431k Bytes/s][A
+Total:  40%|██████████▉                | 30.5M/75.4M [00:33<00:49, 900k Bytes/s][A
+Get REPROIN/ .. 001-0151.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+
+Get REPROIN/ .. 001-0143.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 265k Bytes/s][A[A[A
+
+Get REPROIN/ .. 001-0148.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 251k Bytes/s][A[A
+Get REPROIN/ .. 001-0151.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 251k Bytes/s][A
+
+Get REPROIN/ .. 001-0148.dcm:  50%|███   | 112k/223k [00:00<00:00, 473k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0143.dcm:  50%|███   | 112k/223k [00:00<00:00, 466k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+Get REPROIN/ .. 001-0151.dcm:  50%|███   | 112k/223k [00:00<00:00, 472k Bytes/s][A
+                                                                                [A
+Get REPROIN/ .. 001-0147.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0147.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 268k Bytes/s][A
+Get REPROIN/ .. 001-0147.dcm:  50%|███   | 112k/223k [00:00<00:00, 465k Bytes/s][A
+
+Get REPROIN/ .. 001-0154.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0150.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Total:  42%|███████████▏               | 31.4M/75.4M [00:34<00:48, 906k Bytes/s][A
+Get REPROIN/ .. 001-0155.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+
+Get REPROIN/ .. 001-0150.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 296k Bytes/s][A[A[A
+
+Get REPROIN/ .. 001-0154.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 259k Bytes/s][A[A
+Get REPROIN/ .. 001-0155.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 237k Bytes/s][A
+
+Get REPROIN/ .. 001-0154.dcm:  50%|███   | 112k/223k [00:00<00:00, 468k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0150.dcm:  50%|███   | 112k/223k [00:00<00:00, 456k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+Get REPROIN/ .. 001-0155.dcm:  61%|███▋  | 136k/223k [00:00<00:00, 427k Bytes/s][A
+                                                                                [A
+Get REPROIN/ .. 001-0149.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0149.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 275k Bytes/s][A
+Get REPROIN/ .. 001-0149.dcm:  50%|███   | 112k/223k [00:00<00:00, 463k Bytes/s][A
+
+Get REPROIN/ .. 001-0157.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0158.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0153.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Total:  43%|███████████▌               | 32.3M/75.4M [00:35<00:47, 911k Bytes/s][A
+
+Get REPROIN/ .. 001-0157.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 271k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0158.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 271k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0153.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 242k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0157.dcm:  50%|███   | 112k/223k [00:00<00:00, 464k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0158.dcm:  50%|███   | 112k/223k [00:00<00:00, 464k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0153.dcm:  65%|███▉  | 144k/223k [00:00<00:00, 458k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0145.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0145.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 293k Bytes/s][A
+Get REPROIN/ .. 001-0145.dcm:  50%|███   | 112k/223k [00:00<00:00, 457k Bytes/s][A
+
+Get REPROIN/ .. 001-0156.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0162.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0163.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0145.dcm:  79%|████▋ | 176k/223k [00:00<00:00, 466k Bytes/s][A
+
+Get REPROIN/ .. 001-0156.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 261k Bytes/s][A[A
+                                                                                [A
+
+
+Total:  44%|███████████▉               | 33.2M/75.4M [00:36<00:46, 914k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0163.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 316k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0156.dcm:  50%|███   | 112k/223k [00:00<00:00, 468k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0162.dcm:  50%|███   | 112k/223k [00:00<00:00, 456k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0163.dcm:  50%|███   | 112k/223k [00:00<00:00, 450k Bytes/s][A[A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0160.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0160.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 257k Bytes/s][A
+
+Get REPROIN/ .. 001-0164.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0152.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0160.dcm:  50%|███   | 112k/223k [00:00<00:00, 470k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0167.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0164.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 276k Bytes/s][A[A
+Total:  45%|████████████▏              | 34.1M/75.4M [00:37<00:44, 920k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0152.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 239k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0167.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 246k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0164.dcm:  50%|███   | 112k/223k [00:00<00:00, 462k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0152.dcm:  65%|███▉  | 144k/223k [00:00<00:00, 456k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0167.dcm:  65%|███▉  | 144k/223k [00:00<00:00, 461k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0139.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0139.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 253k Bytes/s][A
+
+Get REPROIN/ .. 001-0159.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0161.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0139.dcm:  50%|███   | 112k/223k [00:00<00:00, 472k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0169.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Total:  46%|████████████▌              | 35.0M/75.4M [00:37<00:43, 925k Bytes/s][A
+
+Get REPROIN/ .. 001-0159.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 244k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0161.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 265k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0169.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 270k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 001-0161.dcm:  50%|███   | 112k/223k [00:00<00:00, 466k Bytes/s][A[A[A
+
+Get REPROIN/ .. 001-0159.dcm:  65%|███▉  | 144k/223k [00:00<00:00, 460k Bytes/s][A[A
+
+
+
+Get REPROIN/ .. 001-0169.dcm:  50%|███   | 112k/223k [00:00<00:00, 464k Bytes/s][A[A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0165.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0165.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 353k Bytes/s][A
+
+Get REPROIN/ .. 001-0170.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0168.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0166.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0165.dcm:  50%|███   | 112k/223k [00:00<00:00, 443k Bytes/s][A
+
+Get REPROIN/ .. 001-0170.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 294k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0168.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 276k Bytes/s][A[A[A
+Total:  48%|████████████▊              | 35.9M/75.4M [00:38<00:42, 929k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0166.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 272k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0170.dcm:  50%|███   | 112k/223k [00:00<00:00, 456k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0168.dcm:  50%|███   | 112k/223k [00:00<00:00, 463k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0166.dcm:  50%|███   | 112k/223k [00:00<00:00, 464k Bytes/s][A[A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0135.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0135.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 246k Bytes/s][A
+
+Get REPROIN/ .. 001-0177.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0140.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0179.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0177.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 267k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0140.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 272k Bytes/s][A[A[A
+Get REPROIN/ .. 001-0135.dcm:  61%|███▋  | 136k/223k [00:00<00:00, 433k Bytes/s][A
+Total:  49%|█████████████▏             | 36.7M/75.4M [00:39<00:41, 933k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0179.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 258k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0177.dcm:  50%|███   | 112k/223k [00:00<00:00, 465k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0140.dcm:  50%|███   | 112k/223k [00:00<00:00, 463k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0179.dcm:  50%|███   | 112k/223k [00:00<00:00, 469k Bytes/s][A[A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0178.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 001-0178.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 246k Bytes/s][A
+
+Get REPROIN/ .. 001-0181.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0174.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0110.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0178.dcm:  57%|███▍  | 128k/223k [00:00<00:00, 405k Bytes/s][A
+
+Get REPROIN/ .. 001-0181.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 237k Bytes/s][A[A
+Total:  50%|█████████████▍             | 37.6M/75.4M [00:40<00:40, 938k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0174.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 252k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0110.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 262k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 001-0174.dcm:  50%|███   | 112k/223k [00:00<00:00, 472k Bytes/s][A[A[A
+
+Get REPROIN/ .. 001-0181.dcm:  61%|███▋  | 136k/223k [00:00<00:00, 427k Bytes/s][A[A
+
+                                                                                [A[A
+
+
+
+Get REPROIN/ .. 001-0110.dcm:  50%|███   | 112k/223k [00:00<00:00, 467k Bytes/s][A[A[A[A
+
+
+                                                                                [A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0171.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0172.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0186.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0171.dcm:  22%|█    | 47.9k/223k [00:00<00:00, 275k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0144.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0172.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 251k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0186.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 265k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0144.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 247k Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0171.dcm:  65%|███▉  | 144k/223k [00:00<00:00, 440k Bytes/s][A
+                                                                                [A
+
+Total:  51%|█████████████▊             | 38.5M/75.4M [00:40<00:39, 941k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0186.dcm:  50%|███   | 112k/223k [00:00<00:00, 466k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0144.dcm:  65%|███▉  | 144k/223k [00:00<00:00, 462k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0184.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0182.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0188.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0184.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 244k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0138.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0182.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 246k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0188.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 241k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0138.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 278k Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0184.dcm:  57%|███▍  | 128k/223k [00:00<00:00, 404k Bytes/s][A
+Total:  52%|██████████████             | 39.4M/75.4M [00:41<00:38, 945k Bytes/s][A
+
+Get REPROIN/ .. 001-0182.dcm:  72%|████▎ | 160k/223k [00:00<00:00, 517k Bytes/s][A[A
+
+                                                                                [A[A
+
+
+
+Get REPROIN/ .. 001-0138.dcm:  50%|███   | 112k/223k [00:00<00:00, 461k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 001-0188.dcm:  61%|███▋  | 136k/223k [00:00<00:00, 430k Bytes/s][A[A[A
+
+
+                                                                                [A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0191.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0190.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0194.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0191.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 253k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0187.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0190.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 239k Bytes/s][A[A
+Get REPROIN/ .. 001-0191.dcm:  50%|███   | 112k/223k [00:00<00:00, 471k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0194.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 239k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0187.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 248k Bytes/s][A[A[A[A
+Total:  53%|██████████████▍            | 40.3M/75.4M [00:42<00:36, 949k Bytes/s][A
+
+Get REPROIN/ .. 001-0190.dcm:  57%|███▍  | 128k/223k [00:00<00:00, 401k Bytes/s][A[A
+
+                                                                                [A[A
+
+
+Get REPROIN/ .. 001-0194.dcm:  61%|███▋  | 136k/223k [00:00<00:00, 429k Bytes/s][A[A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0187.dcm:  65%|███▉  | 144k/223k [00:00<00:00, 462k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0180.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0175.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0193.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0180.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 264k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0192.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0175.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 278k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0193.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 255k Bytes/s][A[A[A
+Get REPROIN/ .. 001-0180.dcm:  50%|███   | 112k/223k [00:00<00:00, 467k Bytes/s][A
+Total:  55%|██████████████▊            | 41.2M/75.4M [00:43<00:35, 954k Bytes/s][A
+
+Get REPROIN/ .. 001-0175.dcm:  50%|███   | 112k/223k [00:00<00:00, 462k Bytes/s][A[A
+
+
+
+Get REPROIN/ .. 001-0192.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 288k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 001-0193.dcm:  50%|███   | 112k/223k [00:00<00:00, 470k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0192.dcm:  50%|███   | 112k/223k [00:00<00:00, 459k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0198.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0189.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0201.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0198.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 276k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0199.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0189.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 248k Bytes/s][A[A
+Get REPROIN/ .. 001-0198.dcm:  50%|███   | 112k/223k [00:00<00:00, 462k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0201.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 242k Bytes/s][A[A[A
+Total:  56%|███████████████            | 42.1M/75.4M [00:43<00:34, 957k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0199.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 248k Bytes/s][A[A[A[A
+
+                                                                                [A[A
+
+
+Get REPROIN/ .. 001-0201.dcm:  57%|███▍  | 128k/223k [00:00<00:00, 402k Bytes/s][A[A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0199.dcm:  65%|███▉  | 144k/223k [00:00<00:00, 463k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0196.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0204.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0197.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0196.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 245k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0200.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0204.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 246k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0197.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 254k Bytes/s][A[A[A
+Get REPROIN/ .. 001-0196.dcm:  61%|███▋  | 136k/223k [00:00<00:00, 432k Bytes/s][A
+Total:  57%|███████████████▍           | 43.0M/75.4M [00:44<00:33, 961k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0200.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 270k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 001-0197.dcm:  50%|███   | 112k/223k [00:00<00:00, 470k Bytes/s][A[A[A
+
+Get REPROIN/ .. 001-0204.dcm:  57%|███▍  | 128k/223k [00:00<00:00, 446k Bytes/s][A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0200.dcm:  50%|███   | 112k/223k [00:00<00:00, 464k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0195.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0183.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0209.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0195.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 358k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0210.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0183.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 248k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0209.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 285k Bytes/s][A[A[A
+Get REPROIN/ .. 001-0195.dcm:  50%|███   | 112k/223k [00:00<00:00, 441k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0210.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 285k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 001-0209.dcm:  50%|███   | 112k/223k [00:00<00:00, 460k Bytes/s][A[A[A
+Total:  58%|███████████████▋           | 43.9M/75.4M [00:45<00:32, 964k Bytes/s][A
+
+Get REPROIN/ .. 001-0183.dcm:  61%|███▋  | 136k/223k [00:00<00:00, 435k Bytes/s][A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0210.dcm:  50%|███   | 112k/223k [00:00<00:00, 459k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0126.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0205.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0203.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0126.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 276k Bytes/s][A
+
+Get REPROIN/ .. 001-0205.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 277k Bytes/s][A[A
+
+
+
+Get REPROIN/ .. 001-0213.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 001-0203.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 274k Bytes/s][A[A[A
+Get REPROIN/ .. 001-0126.dcm:  50%|███   | 112k/223k [00:00<00:00, 463k Bytes/s][A
+
+Get REPROIN/ .. 001-0205.dcm:  50%|███   | 112k/223k [00:00<00:00, 462k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0203.dcm:  50%|███   | 112k/223k [00:00<00:00, 463k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0213.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 270k Bytes/s][A[A[A[A
+Total:  59%|████████████████           | 44.8M/75.4M [00:46<00:31, 967k Bytes/s][A
+
+
+                                                                                [A[A[A
+
+                                                                                [A[A
+
+
+
+Get REPROIN/ .. 001-0213.dcm:  50%|███   | 112k/223k [00:00<00:00, 465k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0202.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0214.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0215.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0202.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 253k Bytes/s][A
+
+Get REPROIN/ .. 001-0214.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 274k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0215.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 276k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0208.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0202.dcm:  50%|███   | 112k/223k [00:00<00:00, 472k Bytes/s][A
+
+Get REPROIN/ .. 001-0214.dcm:  50%|███   | 112k/223k [00:00<00:00, 463k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0215.dcm:  50%|███   | 112k/223k [00:00<00:00, 462k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0208.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 292k Bytes/s][A[A[A[A
+Total:  61%|████████████████▎          | 45.7M/75.4M [00:47<00:30, 971k Bytes/s][A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0208.dcm:  50%|███   | 112k/223k [00:00<00:00, 457k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0211.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0176.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0222.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0211.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 243k Bytes/s][A
+
+Get REPROIN/ .. 001-0176.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 244k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0222.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 270k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0218.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 001-0222.dcm:  50%|███   | 112k/223k [00:00<00:00, 464k Bytes/s][A[A[A
+Get REPROIN/ .. 001-0211.dcm:  61%|███▋  | 136k/223k [00:00<00:00, 431k Bytes/s][A
+Total:  62%|████████████████▋          | 46.5M/75.4M [00:47<00:29, 974k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0218.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 265k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0176.dcm:  57%|███▍  | 128k/223k [00:00<00:00, 404k Bytes/s][A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0218.dcm:  50%|███   | 112k/223k [00:00<00:00, 466k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0207.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0220.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0219.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0207.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 249k Bytes/s][A
+
+Get REPROIN/ .. 001-0220.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 250k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0219.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 253k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0227.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0207.dcm:  54%|███▏  | 120k/223k [00:00<00:00, 508k Bytes/s][A
+
+Get REPROIN/ .. 001-0220.dcm:  54%|███▏  | 120k/223k [00:00<00:00, 509k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0219.dcm:  50%|███   | 112k/223k [00:00<00:00, 471k Bytes/s][A[A[A
+Total:  63%|████████████████▉          | 47.4M/75.4M [00:48<00:28, 977k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0227.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 323k Bytes/s][A[A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0227.dcm:  50%|███   | 112k/223k [00:00<00:00, 449k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0221.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0228.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0185.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0221.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 271k Bytes/s][A
+
+Get REPROIN/ .. 001-0228.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 279k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0185.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 284k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0212.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0221.dcm:  50%|███   | 112k/223k [00:00<00:00, 465k Bytes/s][A
+
+Get REPROIN/ .. 001-0228.dcm:  50%|███   | 112k/223k [00:00<00:00, 461k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0185.dcm:  50%|███   | 112k/223k [00:00<00:00, 460k Bytes/s][A[A[A
+Total:  64%|█████████████████▎         | 48.3M/75.4M [00:49<00:27, 980k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0212.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 274k Bytes/s][A[A[A[A
+
+
+                                                                                [A[A[A
+
+Get REPROIN/ .. 001-0228.dcm:  83%|████▉ | 184k/223k [00:00<00:00, 484k Bytes/s][A[A
+
+                                                                                [A[A
+
+
+
+Get REPROIN/ .. 001-0212.dcm:  50%|███   | 112k/223k [00:00<00:00, 463k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0232.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0217.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0233.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0232.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 320k Bytes/s][A
+
+Get REPROIN/ .. 001-0217.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 241k Bytes/s][A[A
+
+
+
+Get REPROIN/ .. 001-0229.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0232.dcm:  50%|███   | 112k/223k [00:00<00:00, 449k Bytes/s][A
+
+
+Get REPROIN/ .. 001-0233.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 274k Bytes/s][A[A[A
+
+Get REPROIN/ .. 001-0217.dcm:  61%|███▋  | 136k/223k [00:00<00:00, 429k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0233.dcm:  50%|███   | 112k/223k [00:00<00:00, 463k Bytes/s][A[A[A
+
+Total:  65%|█████████████████▌         | 49.2M/75.4M [00:50<00:26, 982k Bytes/s][A[A
+Get REPROIN/ .. 001-0232.dcm:  83%|████▉ | 184k/223k [00:00<00:00, 509k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0229.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 256k Bytes/s][A[A[A[A
+                                                                                [A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0229.dcm:  50%|███   | 112k/223k [00:00<00:00, 470k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0206.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0237.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0225.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0206.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 253k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0231.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0237.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 300k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0225.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 246k Bytes/s][A[A[A
+Get REPROIN/ .. 001-0206.dcm:  50%|███   | 112k/223k [00:00<00:00, 471k Bytes/s][A
+
+Get REPROIN/ .. 001-0237.dcm:  50%|███   | 112k/223k [00:00<00:00, 455k Bytes/s][A[A
+Total:  66%|█████████████████▉         | 50.1M/75.4M [00:50<00:25, 985k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0231.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 259k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 001-0225.dcm:  57%|███▍  | 128k/223k [00:00<00:00, 405k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0231.dcm:  50%|███   | 112k/223k [00:00<00:00, 468k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0235.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0226.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0224.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0235.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 271k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 001-0224.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 297k Bytes/s][A[A[A
+
+Get REPROIN/ .. 001-0226.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 279k Bytes/s][A[A
+Get REPROIN/ .. 001-0235.dcm:  50%|███   | 112k/223k [00:00<00:00, 465k Bytes/s][A
+
+Get REPROIN/ .. 001-0226.dcm:  50%|███   | 112k/223k [00:00<00:00, 462k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0224.dcm:  50%|███   | 112k/223k [00:00<00:00, 456k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 001-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 278k Bytes/s][A[A[A[A
+Total:  68%|██████████████████▎        | 51.0M/75.4M [00:51<00:24, 987k Bytes/s][A
+
+
+                                                                                [A[A[A
+
+                                                                                [A[A
+
+
+
+Get REPROIN/ .. 001-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 461k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0216.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 002-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 281k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0173.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0216.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 251k Bytes/s][A[A
+
+
+Get REPROIN/ .. 002-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 268k Bytes/s][A[A[A
+Get REPROIN/ .. 001-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 461k Bytes/s][A
+
+Get REPROIN/ .. 001-0216.dcm:  50%|███   | 112k/223k [00:00<00:00, 471k Bytes/s][A[A
+
+
+
+Get REPROIN/ .. 001-0173.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 249k Bytes/s][A[A[A[A
+                                                                                [A
+
+
+Get REPROIN/ .. 002-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 465k Bytes/s][A[A[A
+
+Total:  69%|██████████████████▌        | 52.0M/75.4M [00:52<00:23, 991k Bytes/s][A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0173.dcm:  57%|███▍  | 128k/223k [00:00<00:00, 546k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 004-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0230.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 005-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 004-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 297k Bytes/s][A
+
+
+
+Get REPROIN/ .. 006-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0230.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 246k Bytes/s][A[A
+
+
+Get REPROIN/ .. 005-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 262k Bytes/s][A[A[A
+Get REPROIN/ .. 004-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 456k Bytes/s][A
+                                                                                [A
+
+
+Get REPROIN/ .. 005-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 467k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 006-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 262k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0230.dcm:  57%|███▍  | 128k/223k [00:00<00:00, 405k Bytes/s][A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 006-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 467k Bytes/s][A[A[A[A
+
+
+
+Total:  70%|██████████████████▉        | 53.0M/75.4M [00:53<00:22, 994k Bytes/s][A[A[A[A
+Get REPROIN/ .. 003-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 007-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 003-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 003-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 284k Bytes/s][A
+
+
+
+Get REPROIN/ .. 008-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 003-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 302k Bytes/s][A[A[A
+
+Get REPROIN/ .. 007-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 250k Bytes/s][A[A
+Get REPROIN/ .. 003-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 460k Bytes/s][A
+                                                                                [A
+
+Get REPROIN/ .. 007-0002.dcm:  80%|████▊ | 120k/149k [00:00<00:00, 510k Bytes/s][A[A
+
+
+
+Get REPROIN/ .. 008-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 277k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 003-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 454k Bytes/s][A[A[A
+
+
+                                                                                [A[A[A
+
+                                                                                [A[A
+
+
+
+Get REPROIN/ .. 008-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 462k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 002-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 009-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 007-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 002-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 250k Bytes/s][A
+
+
+
+Get REPROIN/ .. 005-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 009-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 299k Bytes/s][A[A
+
+
+Get REPROIN/ .. 007-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 342k Bytes/s][A[A[A
+Get REPROIN/ .. 002-0002.dcm:  80%|████▊ | 120k/149k [00:00<00:00, 510k Bytes/s][A
+                                                                                [A
+
+
+
+Get REPROIN/ .. 005-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 307k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 009-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 455k Bytes/s][A[A
+
+
+Get REPROIN/ .. 007-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 445k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+Total:  72%|███████████████████▎       | 54.1M/75.4M [00:54<00:21, 989k Bytes/s][A[A[A
+
+
+
+Get REPROIN/ .. 005-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 453k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 010-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 011-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0234.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 010-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 290k Bytes/s][A
+
+
+
+Get REPROIN/ .. 012-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 011-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 289k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0234.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 311k Bytes/s][A[A[A
+Get REPROIN/ .. 010-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 459k Bytes/s][A
+                                                                                [A
+
+
+
+Get REPROIN/ .. 012-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 296k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 011-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 458k Bytes/s][A[A
+
+
+Get REPROIN/ .. 001-0234.dcm:  50%|███   | 112k/223k [00:00<00:00, 452k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 012-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 456k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 008-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0240.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 010-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 008-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 277k Bytes/s][A
+
+
+
+Get REPROIN/ .. 012-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0240.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 257k Bytes/s][A[A
+Get REPROIN/ .. 008-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 463k Bytes/s][A
+
+
+Get REPROIN/ .. 010-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 290k Bytes/s][A[A[A
+
+Get REPROIN/ .. 001-0240.dcm:  50%|███   | 112k/223k [00:00<00:00, 469k Bytes/s][A[A
+                                                                                [A
+
+
+
+Get REPROIN/ .. 012-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 291k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 010-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 458k Bytes/s][A[A[A
+
+Total:  73%|███████████████████▊       | 55.2M/75.4M [00:56<00:20, 984k Bytes/s][A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 012-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 458k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 014-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 013-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 011-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 014-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 298k Bytes/s][A
+
+
+
+Get REPROIN/ .. 016-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 013-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 293k Bytes/s][A[A
+
+
+Get REPROIN/ .. 011-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 308k Bytes/s][A[A[A
+Get REPROIN/ .. 014-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 455k Bytes/s][A
+                                                                                [A
+
+
+
+Get REPROIN/ .. 016-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 278k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 013-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 457k Bytes/s][A[A
+
+
+Get REPROIN/ .. 011-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 452k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 016-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 461k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0238.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 001-0236.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 015-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0238.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 280k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0239.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 001-0236.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 245k Bytes/s][A[A
+
+
+Get REPROIN/ .. 015-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 272k Bytes/s][A[A[A
+Get REPROIN/ .. 001-0238.dcm:  50%|███   | 112k/223k [00:00<00:00, 461k Bytes/s][A
+
+
+
+Get REPROIN/ .. 001-0239.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 239k Bytes/s][A[A[A[A
+                                                                                [A
+
+
+Get REPROIN/ .. 015-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 464k Bytes/s][A[A[A
+
+Get REPROIN/ .. 001-0236.dcm:  61%|███▋  | 136k/223k [00:00<00:00, 433k Bytes/s][A[A
+
+Total:  75%|████████████████████▎      | 56.6M/75.4M [00:57<00:19, 982k Bytes/s][A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 001-0239.dcm:  65%|███▉  | 144k/223k [00:00<00:00, 456k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 016-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 019-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 018-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 016-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 293k Bytes/s][A
+
+
+
+Get REPROIN/ .. 009-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 019-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 265k Bytes/s][A[A
+
+
+Get REPROIN/ .. 018-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 291k Bytes/s][A[A[A
+Get REPROIN/ .. 016-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 457k Bytes/s][A
+                                                                                [A
+
+
+
+Get REPROIN/ .. 009-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 287k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 019-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 466k Bytes/s][A[A
+
+
+Get REPROIN/ .. 018-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 458k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 009-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 459k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 020-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 020-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 004-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 020-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 268k Bytes/s][A
+
+
+
+Get REPROIN/ .. 022-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 020-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 275k Bytes/s][A[A
+Get REPROIN/ .. 020-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 466k Bytes/s][A
+
+
+Get REPROIN/ .. 004-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 249k Bytes/s][A[A[A
+                                                                                [A
+
+
+
+Get REPROIN/ .. 022-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 274k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 020-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 463k Bytes/s][A[A
+
+
+                                                                                [A[A[A
+
+Total:  77%|████████████████████▊      | 58.0M/75.4M [00:59<00:17, 981k Bytes/s][A[A
+
+
+
+Get REPROIN/ .. 022-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 463k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 021-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 013-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 017-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 021-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 275k Bytes/s][A
+
+
+
+Get REPROIN/ .. 014-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 017-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 331k Bytes/s][A[A[A
+Get REPROIN/ .. 021-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 463k Bytes/s][A
+
+Get REPROIN/ .. 013-0001.dcm:  32%|█▌   | 47.9k/149k [00:00<00:00, 274k Bytes/s][A[A
+                                                                                [A
+
+
+
+Get REPROIN/ .. 014-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 319k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 017-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 447k Bytes/s][A[A[A
+
+
+                                                                                [A[A[A
+
+Get REPROIN/ .. 013-0001.dcm:  91%|█████▍| 136k/149k [00:00<00:00, 476k Bytes/s][A[A
+
+                                                                                [A[A
+
+
+
+Get REPROIN/ .. 014-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 450k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 006-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 025-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 017-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 006-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 333k Bytes/s][A
+
+
+
+Get REPROIN/ .. 026-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 025-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 251k Bytes/s][A[A
+
+
+Get REPROIN/ .. 017-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 320k Bytes/s][A[A[A
+Get REPROIN/ .. 006-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 447k Bytes/s][A
+                                                                                [A
+
+
+
+Get REPROIN/ .. 026-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 266k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 025-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 472k Bytes/s][A[A
+
+
+Get REPROIN/ .. 017-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 449k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 026-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 466k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 018-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 027-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 022-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 018-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 250k Bytes/s][A
+
+
+
+Get REPROIN/ .. 019-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 022-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 273k Bytes/s][A[A[A
+
+Get REPROIN/ .. 027-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 255k Bytes/s][A[A
+Get REPROIN/ .. 018-0001.dcm:  91%|█████▍| 136k/149k [00:00<00:00, 436k Bytes/s][A
+Total:  79%|█████████████████████▎     | 59.5M/75.4M [01:01<00:16, 971k Bytes/s][A
+
+
+
+Get REPROIN/ .. 019-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 254k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 027-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 468k Bytes/s][A[A
+
+
+Get REPROIN/ .. 022-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 463k Bytes/s][A[A[A
+
+
+                                                                                [A[A[A
+
+                                                                                [A[A
+
+
+
+Get REPROIN/ .. 019-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 473k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 026-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 028-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 024-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 026-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 249k Bytes/s][A
+
+
+
+Get REPROIN/ .. 030-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 028-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 249k Bytes/s][A[A
+
+
+Get REPROIN/ .. 024-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 269k Bytes/s][A[A[A
+Get REPROIN/ .. 026-0002.dcm:  91%|█████▍| 136k/149k [00:00<00:00, 436k Bytes/s][A
+                                                                                [A
+
+
+
+Get REPROIN/ .. 030-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 245k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 024-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 464k Bytes/s][A[A[A
+
+
+                                                                                [A[A[A
+
+                                                                                [A[A
+
+
+
+Get REPROIN/ .. 030-0001.dcm:  96%|█████▊| 144k/149k [00:00<00:00, 460k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 029-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 027-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 023-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 029-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 252k Bytes/s][A
+
+
+
+Get REPROIN/ .. 031-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 029-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 471k Bytes/s][A
+
+
+Get REPROIN/ .. 023-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 286k Bytes/s][A[A[A
+
+Get REPROIN/ .. 027-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 258k Bytes/s][A[A
+                                                                                [A
+
+
+
+Get REPROIN/ .. 031-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 249k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 027-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 469k Bytes/s][A[A
+
+
+Get REPROIN/ .. 023-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 459k Bytes/s][A[A[A
+
+
+                                                                                [A[A[A
+
+Total:  81%|█████████████████████▊     | 61.0M/75.4M [01:02<00:14, 971k Bytes/s][A[A
+
+
+
+Get REPROIN/ .. 031-0002.dcm:  86%|█████▏| 128k/149k [00:00<00:00, 545k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 001-0223.dcm:   0%|             | 0.00/223k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 033-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 028-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 001-0223.dcm:  18%|▉    | 39.9k/223k [00:00<00:00, 250k Bytes/s][A
+
+
+
+Get REPROIN/ .. 024-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 001-0223.dcm:  50%|███   | 112k/223k [00:00<00:00, 472k Bytes/s][A
+
+
+Get REPROIN/ .. 028-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 252k Bytes/s][A[A[A
+
+Get REPROIN/ .. 033-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 247k Bytes/s][A[A
+                                                                                [A
+
+
+
+Get REPROIN/ .. 024-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 253k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 028-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 472k Bytes/s][A[A[A
+
+
+                                                                                [A[A[A
+
+Get REPROIN/ .. 033-0001.dcm:  91%|█████▍| 136k/149k [00:00<00:00, 434k Bytes/s][A[A
+
+                                                                                [A[A
+
+
+
+Get REPROIN/ .. 024-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 471k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 034-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 021-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 023-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 034-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 245k Bytes/s][A
+
+
+
+Get REPROIN/ .. 036-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 021-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 241k Bytes/s][A[A
+
+
+Get REPROIN/ .. 023-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 252k Bytes/s][A[A[A
+Get REPROIN/ .. 034-0002.dcm:  91%|█████▍| 136k/149k [00:00<00:00, 433k Bytes/s][A
+                                                                                [A
+
+
+
+Get REPROIN/ .. 036-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 240k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 023-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 471k Bytes/s][A[A[A
+
+Get REPROIN/ .. 021-0001.dcm:  96%|█████▊| 144k/149k [00:00<00:00, 457k Bytes/s][A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 036-0001.dcm:  96%|█████▊| 144k/149k [00:00<00:00, 456k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 015-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 034-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 033-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 015-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 257k Bytes/s][A
+
+
+
+Get REPROIN/ .. 037-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 033-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 254k Bytes/s][A[A[A
+
+Get REPROIN/ .. 034-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 249k Bytes/s][A[A
+Get REPROIN/ .. 015-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 469k Bytes/s][A
+Total:  83%|██████████████████████▍    | 62.6M/75.4M [01:04<00:13, 963k Bytes/s][A
+
+
+
+Get REPROIN/ .. 037-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 238k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 033-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 470k Bytes/s][A[A[A
+
+
+                                                                                [A[A[A
+
+Get REPROIN/ .. 034-0001.dcm:  91%|█████▍| 136k/149k [00:00<00:00, 435k Bytes/s][A[A
+
+                                                                                [A[A
+
+
+
+Get REPROIN/ .. 037-0001.dcm:  96%|█████▊| 144k/149k [00:00<00:00, 455k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 038-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 029-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 035-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 038-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 244k Bytes/s][A
+
+
+
+Get REPROIN/ .. 038-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 029-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 244k Bytes/s][A[A
+
+
+Get REPROIN/ .. 035-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 252k Bytes/s][A[A[A
+                                                                                [A
+
+
+
+Get REPROIN/ .. 038-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 247k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 035-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 471k Bytes/s][A[A[A
+
+Get REPROIN/ .. 029-0001.dcm:  91%|█████▍| 136k/149k [00:00<00:00, 432k Bytes/s][A[A
+
+
+                                                                                [A[A[A
+
+                                                                                [A[A
+
+
+
+Get REPROIN/ .. 038-0001.dcm:  91%|█████▍| 136k/149k [00:00<00:00, 434k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 036-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 035-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 039-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 036-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 250k Bytes/s][A
+
+
+
+Get REPROIN/ .. 039-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A[A
+Get REPROIN/ .. 036-0002.dcm:  80%|████▊ | 120k/149k [00:00<00:00, 508k Bytes/s][A
+
+Get REPROIN/ .. 035-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 244k Bytes/s][A[A
+
+
+Get REPROIN/ .. 039-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 258k Bytes/s][A[A[A
+                                                                                [A
+
+
+
+Get REPROIN/ .. 039-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 254k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 039-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 468k Bytes/s][A[A[A
+
+
+                                                                                [A[A[A
+
+Get REPROIN/ .. 035-0001.dcm:  91%|█████▍| 136k/149k [00:00<00:00, 432k Bytes/s][A[A
+
+                                                                                [A[A
+
+
+
+Get REPROIN/ .. 039-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 471k Bytes/s][A[A[A[A
+
+
+
+Total:  85%|██████████████████████▉    | 64.2M/75.4M [01:06<00:11, 964k Bytes/s][A[A[A[A
+Get REPROIN/ .. 037-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 041-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 032-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 037-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 249k Bytes/s][A
+
+
+
+Get REPROIN/ .. 025-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 041-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 235k Bytes/s][A[A
+
+
+Get REPROIN/ .. 032-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 235k Bytes/s][A[A[A
+Get REPROIN/ .. 037-0002.dcm:  91%|█████▍| 136k/149k [00:00<00:00, 435k Bytes/s][A
+                                                                                [A
+
+
+
+Get REPROIN/ .. 025-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 237k Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 041-0001.dcm:  96%|█████▊| 144k/149k [00:00<00:00, 453k Bytes/s][A[A
+
+                                                                                [A[A
+
+
+Get REPROIN/ .. 032-0002.dcm:  91%|█████▍| 136k/149k [00:00<00:00, 425k Bytes/s][A[A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 025-0002.dcm:  96%|█████▊| 144k/149k [00:00<00:00, 455k Bytes/s][A[A[A[A
+
+
+
+                                                                                [A[A[A[A
+Get REPROIN/ .. 044-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 042-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 011-0002.dcm:   0%|             | 0.00/555k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 044-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 240k Bytes/s][A
+
+
+
+Get REPROIN/ .. 011-0003.dcm:   0%|             | 0.00/555k [00:00<?, ? Bytes/s][A[A[A[A
+
+Get REPROIN/ .. 042-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 242k Bytes/s][A[A
+
+
+Get REPROIN/ .. 011-0002.dcm:   7%|▎    | 39.9k/555k [00:00<00:01, 285k Bytes/s][A[A[A
+Get REPROIN/ .. 044-0002.dcm:  91%|█████▍| 136k/149k [00:00<00:00, 429k Bytes/s][A
+                                                                                [A
+
+
+
+Get REPROIN/ .. 011-0003.dcm:   7%|▎    | 39.9k/555k [00:00<00:01, 298k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 011-0002.dcm:  20%|█▏    | 112k/555k [00:00<00:00, 460k Bytes/s][A[A[A
+
+Get REPROIN/ .. 042-0002.dcm:  91%|█████▍| 136k/149k [00:00<00:00, 431k Bytes/s][A[A
+
+                                                                                [A[A
+
+
+
+Get REPROIN/ .. 011-0003.dcm:  20%|█▏    | 112k/555k [00:00<00:00, 455k Bytes/s][A[A[A[A
+
+
+Get REPROIN/ .. 011-0002.dcm:  49%|██▉   | 272k/555k [00:00<00:00, 818k Bytes/s][A[A[A
+
+
+                                                                                [A[A[A
+
+
+
+Get REPROIN/ .. 011-0003.dcm:  52%|███   | 288k/555k [00:00<00:00, 860k Bytes/s][A[A[A[A
+
+
+
+Total:  88%|███████████████████████▋   | 66.2M/75.4M [01:08<00:09, 970k Bytes/s][A[A[A[A
+Get REPROIN/ .. 030-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 011-0004.dcm:   0%|             | 0.00/555k [00:00<?, ? Bytes/s][A[A
+Get REPROIN/ .. 030-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 253k Bytes/s][A
+
+Get REPROIN/ .. 011-0004.dcm:   7%|▎    | 39.9k/555k [00:00<00:02, 255k Bytes/s][A[A
+Get REPROIN/ .. 030-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 471k Bytes/s][A
+
+
+Get REPROIN/ .. 040-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+                                                                                [A
+
+Get REPROIN/ .. 011-0004.dcm:  20%|█▏    | 112k/555k [00:00<00:00, 470k Bytes/s][A[A
+Get REPROIN/ .. 042-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+
+Get REPROIN/ .. 040-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 249k Bytes/s][A[A[A
+
+Get REPROIN/ .. 011-0004.dcm:  53%|███▏  | 296k/555k [00:00<00:00, 836k Bytes/s][A[A
+Get REPROIN/ .. 042-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 249k Bytes/s][A
+
+
+                                                                                [A[A[A
+
+                                                                                [A[A
+Get REPROIN/ .. 042-0001.dcm:  86%|█████▏| 128k/149k [00:00<00:00, 455k Bytes/s][A
+                                                                                [A
+Get REPROIN/ .. 043-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 043-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 252k Bytes/s][A
+
+Get REPROIN/ .. 041-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+Get REPROIN/ .. 043-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 471k Bytes/s][A
+                                                                                [A
+Get REPROIN/ .. 032-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+
+Get REPROIN/ .. 003-0004.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+
+Get REPROIN/ .. 041-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 249k Bytes/s][A[A
+
+
+Get REPROIN/ .. 003-0004.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 248k Bytes/s][A[A[A
+Get REPROIN/ .. 032-0001.dcm:  37%|█▊   | 55.9k/149k [00:00<00:00, 321k Bytes/s][A
+
+Get REPROIN/ .. 041-0002.dcm:  91%|█████▍| 136k/149k [00:00<00:00, 435k Bytes/s][A[A
+
+                                                                                [A[A
+                                                                                [A
+
+
+Get REPROIN/ .. 003-0004.dcm:  91%|█████▍| 136k/149k [00:00<00:00, 435k Bytes/s][A[A[A
+
+
+                                                                                [A[A[A
+Get REPROIN/ .. 003-0005.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 003-0005.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 235k Bytes/s][A
+
+Get REPROIN/ .. 031-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 003-0010.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 003-0005.dcm:  91%|█████▍| 136k/149k [00:00<00:00, 426k Bytes/s][A
+                                                                                [A
+Get REPROIN/ .. 003-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 031-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 286k Bytes/s][A[A
+
+
+Get REPROIN/ .. 003-0010.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 264k Bytes/s][A[A[A
+Get REPROIN/ .. 003-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 244k Bytes/s][A
+
+Get REPROIN/ .. 031-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 459k Bytes/s][A[A
+
+
+Get REPROIN/ .. 003-0010.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 466k Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+Total:  91%|████████████████████████▍  | 68.3M/75.4M [01:10<00:07, 970k Bytes/s][A[A[A
+Get REPROIN/ .. 003-0002.dcm:  96%|█████▊| 144k/149k [00:00<00:00, 460k Bytes/s][A
+                                                                                [A
+Get REPROIN/ .. 003-0009.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+Get REPROIN/ .. 003-0009.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 258k Bytes/s][A
+Get REPROIN/ .. 003-0009.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 469k Bytes/s][A
+
+Get REPROIN/ .. 003-0006.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 003-0008.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+                                                                                [A
+Get REPROIN/ .. 011-0001.dcm:   0%|             | 0.00/555k [00:00<?, ? Bytes/s][A
+
+
+Get REPROIN/ .. 003-0008.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 304k Bytes/s][A[A[A
+
+Get REPROIN/ .. 003-0006.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 253k Bytes/s][A[A
+Get REPROIN/ .. 011-0001.dcm:   7%|▎    | 39.9k/555k [00:00<00:01, 284k Bytes/s][A
+
+Get REPROIN/ .. 003-0006.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 471k Bytes/s][A[A
+
+
+Get REPROIN/ .. 003-0008.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 454k Bytes/s][A[A[A
+
+
+                                                                                [A[A[A
+
+                                                                                [A[A
+Get REPROIN/ .. 011-0001.dcm:  20%|█▏    | 112k/555k [00:00<00:00, 460k Bytes/s][A
+
+Get REPROIN/ .. 003-0011.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+Get REPROIN/ .. 011-0001.dcm:  55%|███▎  | 304k/555k [00:00<00:00, 899k Bytes/s][A
+                                                                                [A
+
+Get REPROIN/ .. 003-0011.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 251k Bytes/s][A[A
+Get REPROIN/ .. 003-0003.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 003-0011.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 472k Bytes/s][A[A
+
+
+Get REPROIN/ .. 003-0018.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+
+                                                                                [A[A
+Get REPROIN/ .. 003-0003.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 248k Bytes/s][A
+
+
+Get REPROIN/ .. 003-0018.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 244k Bytes/s][A[A[A
+
+Get REPROIN/ .. 043-0002.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+Get REPROIN/ .. 003-0003.dcm:  96%|█████▊| 144k/149k [00:00<00:00, 463k Bytes/s][A
+                                                                                [A
+
+
+                                                                                [A[A[A
+
+Get REPROIN/ .. 043-0002.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 267k Bytes/s][A[A
+
+Get REPROIN/ .. 043-0002.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 467k Bytes/s][A[A
+Get REPROIN/ .. 003-0015.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+                                                                                [A[A
+Get REPROIN/ .. 003-0015.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 254k Bytes/s][A
+Get REPROIN/ .. 003-0015.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 471k Bytes/s][A
+
+Get REPROIN/ .. 003-0013.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 003-0021.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+                                                                                [A
+
+
+Get REPROIN/ .. 003-0021.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 302k Bytes/s][A[A[A
+
+Get REPROIN/ .. 003-0013.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 244k Bytes/s][A[A
+Get REPROIN/ .. 003-0017.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+
+Get REPROIN/ .. 003-0021.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 454k Bytes/s][A[A[A
+
+
+Total:  93%|█████████████████████████▏ | 70.3M/75.4M [01:12<00:05, 969k Bytes/s][A[A[A
+
+Get REPROIN/ .. 003-0013.dcm:  91%|█████▍| 136k/149k [00:00<00:00, 431k Bytes/s][A[A
+
+                                                                                [A[A
+Get REPROIN/ .. 003-0017.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 249k Bytes/s][A
+
+Get REPROIN/ .. 003-0019.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+Get REPROIN/ .. 003-0017.dcm:  80%|████▊ | 120k/149k [00:00<00:00, 508k Bytes/s][A
+                                                                                [A
+
+Get REPROIN/ .. 003-0019.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 273k Bytes/s][A[A
+
+Get REPROIN/ .. 003-0019.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 463k Bytes/s][A[A
+Get REPROIN/ .. 044-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+
+Get REPROIN/ .. 003-0016.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+
+                                                                                [A[A
+Get REPROIN/ .. 044-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 259k Bytes/s][A
+
+
+Get REPROIN/ .. 003-0016.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 235k Bytes/s][A[A[A
+
+Get REPROIN/ .. 003-0023.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+Get REPROIN/ .. 044-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 468k Bytes/s][A
+                                                                                [A
+
+
+Get REPROIN/ .. 003-0016.dcm:  91%|█████▍| 136k/149k [00:00<00:00, 425k Bytes/s][A[A[A
+
+
+                                                                                [A[A[A
+
+Get REPROIN/ .. 003-0023.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 258k Bytes/s][A[A
+Get REPROIN/ .. 003-0026.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 003-0023.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 468k Bytes/s][A[A
+
+                                                                                [A[A
+Get REPROIN/ .. 003-0026.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 253k Bytes/s][A
+Get REPROIN/ .. 003-0026.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 471k Bytes/s][A
+
+Get REPROIN/ .. 040-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+                                                                                [A
+Get REPROIN/ .. 003-0029.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 040-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 266k Bytes/s][A[A
+
+
+Get REPROIN/ .. 003-0031.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 003-0029.dcm:  37%|█▊   | 55.9k/149k [00:00<00:00, 322k Bytes/s][A
+
+Get REPROIN/ .. 040-0001.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 466k Bytes/s][A[A
+                                                                                [A
+
+                                                                                [A[A
+
+
+Get REPROIN/ .. 003-0031.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 275k Bytes/s][A[A[A
+Get REPROIN/ .. 003-0032.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+
+Get REPROIN/ .. 003-0031.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 462k Bytes/s][A[A[A
+
+
+                                                                                [A[A[A
+Get REPROIN/ .. 003-0032.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 251k Bytes/s][A
+Get REPROIN/ .. 003-0032.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 472k Bytes/s][A
+
+Get REPROIN/ .. 003-0012.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+                                                                                [A
+Get REPROIN/ .. 003-0034.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 003-0012.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 256k Bytes/s][A[A
+Get REPROIN/ .. 003-0034.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 307k Bytes/s][A
+
+
+Get REPROIN/ .. 003-0028.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+
+Get REPROIN/ .. 003-0012.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 470k Bytes/s][A[A
+Get REPROIN/ .. 003-0034.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 453k Bytes/s][A
+
+                                                                                [A[A
+                                                                                [A
+
+
+Get REPROIN/ .. 003-0028.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 252k Bytes/s][A[A[A
+Get REPROIN/ .. 003-0027.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+
+Get REPROIN/ .. 003-0028.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 471k Bytes/s][A[A[A
+
+
+Total:  96%|█████████████████████████▉ | 72.4M/75.4M [01:15<00:03, 965k Bytes/s][A[A[A
+Get REPROIN/ .. 003-0027.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 253k Bytes/s][A
+Get REPROIN/ .. 003-0027.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 471k Bytes/s][A
+
+Get REPROIN/ .. 003-0022.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 003-0025.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+                                                                                [A
+
+Get REPROIN/ .. 003-0022.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 235k Bytes/s][A[A
+
+
+Get REPROIN/ .. 003-0025.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 259k Bytes/s][A[A[A
+Get REPROIN/ .. 003-0020.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+
+Get REPROIN/ .. 003-0025.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 468k Bytes/s][A[A[A
+
+Get REPROIN/ .. 003-0022.dcm:  91%|█████▍| 136k/149k [00:00<00:00, 426k Bytes/s][A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+Get REPROIN/ .. 003-0020.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 239k Bytes/s][A
+
+Get REPROIN/ .. 003-0036.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+Get REPROIN/ .. 003-0020.dcm:  96%|█████▊| 144k/149k [00:00<00:00, 456k Bytes/s][A
+                                                                                [A
+
+Get REPROIN/ .. 003-0036.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 275k Bytes/s][A[A
+
+Get REPROIN/ .. 003-0036.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 463k Bytes/s][A[A
+Get REPROIN/ .. 003-0033.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+                                                                                [A[A
+
+Get REPROIN/ .. 003-0038.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+Get REPROIN/ .. 003-0033.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 305k Bytes/s][A
+
+Get REPROIN/ .. 003-0038.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 304k Bytes/s][A[A
+
+
+Get REPROIN/ .. 003-0024.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 003-0033.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 454k Bytes/s][A
+
+Get REPROIN/ .. 003-0038.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 454k Bytes/s][A[A
+                                                                                [A
+
+                                                                                [A[A
+
+
+Get REPROIN/ .. 003-0024.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 263k Bytes/s][A[A[A
+
+
+Get REPROIN/ .. 003-0024.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 467k Bytes/s][A[A[A
+Get REPROIN/ .. 003-0037.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+
+                                                                                [A[A[A
+Get REPROIN/ .. 003-0037.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 380k Bytes/s][A
+
+Get REPROIN/ .. 003-0043.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 003-0041.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+Get REPROIN/ .. 003-0037.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 438k Bytes/s][A
+                                                                                [A
+
+Get REPROIN/ .. 003-0043.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 273k Bytes/s][A[A
+
+
+Get REPROIN/ .. 003-0041.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 247k Bytes/s][A[A[A
+Get REPROIN/ .. 003-0040.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 003-0043.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 464k Bytes/s][A[A
+
+                                                                                [A[A
+
+
+Get REPROIN/ .. 003-0041.dcm:  91%|█████▍| 136k/149k [00:00<00:00, 434k Bytes/s][A[A[A
+
+
+                                                                                [A[A[A
+Get REPROIN/ .. 003-0040.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 252k Bytes/s][A
+
+Get REPROIN/ .. 003-0014.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+Get REPROIN/ .. 003-0040.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 471k Bytes/s][A
+                                                                                [A
+
+Get REPROIN/ .. 003-0014.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 253k Bytes/s][A[A
+
+Get REPROIN/ .. 003-0014.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 470k Bytes/s][A[A
+Get REPROIN/ .. 003-0039.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+
+Get REPROIN/ .. 003-0007.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+
+                                                                                [A[A
+
+
+Get REPROIN/ .. 003-0007.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 288k Bytes/s][A[A[A
+Get REPROIN/ .. 003-0039.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 241k Bytes/s][A
+
+Get REPROIN/ .. 003-0001.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 003-0007.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 458k Bytes/s][A[A[A
+
+
+Total:  99%|██████████████████████████▋| 74.5M/75.4M [01:17<00:00, 958k Bytes/s][A[A[A
+Get REPROIN/ .. 003-0039.dcm:  96%|█████▊| 144k/149k [00:00<00:00, 458k Bytes/s][A
+                                                                                [A
+
+Get REPROIN/ .. 003-0001.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 240k Bytes/s][A[A
+Get REPROIN/ .. 003-0044.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+Get REPROIN/ .. 003-0001.dcm:  96%|█████▊| 144k/149k [00:00<00:00, 457k Bytes/s][A[A
+
+                                                                                [A[A
+Get REPROIN/ .. 003-0044.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 278k Bytes/s][A
+Get REPROIN/ .. 003-0044.dcm:  75%|████▍ | 112k/149k [00:00<00:00, 461k Bytes/s][A
+
+Get REPROIN/ .. 003-0035.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A
+
+
+Get REPROIN/ .. 003-0042.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A[A[A
+                                                                                [A
+
+Get REPROIN/ .. 003-0035.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 241k Bytes/s][A[A
+
+
+Get REPROIN/ .. 003-0042.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 236k Bytes/s][A[A[A
+Get REPROIN/ .. 003-0030.dcm:   0%|             | 0.00/149k [00:00<?, ? Bytes/s][A
+
+
+Get REPROIN/ .. 003-0042.dcm:  80%|████▊ | 120k/149k [00:00<00:00, 451k Bytes/s][A[A[A
+
+Get REPROIN/ .. 003-0035.dcm:  91%|█████▍| 136k/149k [00:00<00:00, 430k Bytes/s][A[A
+
+                                                                                [A[A
+
+
+                                                                                [A[A[A
+Get REPROIN/ .. 003-0030.dcm:  27%|█▎   | 39.9k/149k [00:00<00:00, 230k Bytes/s][A
+Get REPROIN/ .. 003-0030.dcm:  91%|█████▍| 136k/149k [00:00<00:00, 421k Bytes/s][A
+[1;1mget[0m([1;32mok[0m): REPROIN/dicom/001/Patterson_Coben - 1/anatT1w_acqMPRAGE_6/IM-0001-0002.dcm ([1;35mfile[0m) [from origin...]
+[1;1mget[0m([1;32mok[0m): REPROIN/dicom/001/Patterson_Coben - 1/anatT1w_acqMPRAGE_6/IM-0001-0004.dcm ([1;35mfile[0m) [from origin...]
+[1;1mget[0m([1;32mok[0m): REPROIN/dicom/001/Patterson_Coben - 1/anatT1w_acqMPRAGE_6/IM-0001-0001.dcm ([1;35mfile[0m) [from origin...]
+[1;1mget[0m([1;32mok[0m): REPROIN/dicom/001/Patterson_Coben - 1/anatT1w_acqMPRAGE_6/IM-0001-0003.dcm ([1;35mfile[0m) [from origin...]
+[1;1mget[0m([1;32mok[0m): REPROIN/dicom/001/Patterson_Coben - 1/anatT1w_acqMPRAGE_6/IM-0001-0017.dcm ([1;35mfile[0m) [from origin...]
+[1;1mget[0m([1;32mok[0m): REPROIN/dicom/001/Patterson_Coben - 1/anatT1w_acqMPRAGE_6/IM-0001-0016.dcm ([1;35mfile[0m) [from origin...]
+[1;1mget[0m([1;32mok[0m): REPROIN/dicom/001/Patterson_Coben - 1/anatT1w_acqMPRAGE_6/IM-0001-0007.dcm ([1;35mfile[0m) [from origin...]
+[1;1mget[0m([1;32mok[0m): REPROIN/dicom/001/Patterson_Coben - 1/anatT1w_acqMPRAGE_6/IM-0001-0008.dcm ([1;35mfile[0m) [from origin...]
+[1;1mget[0m([1;32mok[0m): REPROIN/dicom/001/Patterson_Coben - 1/anatT1w_acqMPRAGE_6/IM-0001-0020.dcm ([1;35mfile[0m) [from origin...]
+[1;1mget[0m([1;32mok[0m): REPROIN/dicom/001/Patterson_Coben - 1/anatT1w_acqMPRAGE_6/IM-0001-0019.dcm ([1;35mfile[0m) [from origin...]
+  [366 similar messages have been suppressed; disable with datalad.ui.suppress-similar-results=off]
+[1;1mget[0m([1;32mok[0m): REPROIN/dicom/001/Patterson_Coben - 1/anatT1w_acqMPRAGE_6 ([1;35mdirectory[0m)
+[1;1mget[0m([1;32mok[0m): REPROIN/dicom/001/Patterson_Coben - 1/fmap_acq4mm_7 ([1;35mdirectory[0m)
+[1;1mget[0m([1;32mok[0m): REPROIN/dicom/001/Patterson_Coben - 1/func_taskrest_16 ([1;35mdirectory[0m)
+[1;1mget[0m([1;32mok[0m): REPROIN/dicom/001/Patterson_Coben - 1/fmap_acq4mm_8 ([1;35mdirectory[0m)
+action summary:
+  get (ok: 380)
+[0m

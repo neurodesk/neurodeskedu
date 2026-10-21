@@ -1,0 +1,124 @@
+---
+title: 'FSL-MRS: fit and inspect a public MRSI dataset'
+linkTitle: FSL-MRS
+weight: 2
+tags:
+- spectroscopy
+- FSL-MRS
+- MRSI
+description: Fit the public FSL-MRS example and inspect spectra and metabolite maps in FSLeyes.
+authors:
+- name: Michèle Masson-Trottier
+date: '2026-10-21'
+---
+# FSL-MRS: fit and inspect a public MRSI dataset
+
+:::{admonition} Learning Objectives
+:class: tip
+
+By the end of this tutorial you will be able to:
+
+- Download a public MRSI dataset with its matching basis set and structural images.
+- Fit the selected voxels using FSL-MRS in Neurodesk.
+- Inspect spectra, fitted signals and metabolite maps in FSLeyes.
+:::
+
+Tested in Neurodesk with **FSL 6.0.7.23**, **FSL-MRS 2.4.16** and **FSLeyes 1.20.1**.
+
+This worked example adapts Will Clarke's **Example MRSI fitting** notebook supplied with FSL-MRS. The input is already reconstructed spectroscopy data; it does not demonstrate reconstruction from scanner raw data. The archive includes the matching basis spectra, water reference, mask and structural segmentation.
+
+## 1. Download the public example
+
+Open **Firefox inside Neurodesk** and visit the [authors' archived FSL-MRS 2.1.0 release on Zenodo](https://zenodo.org/records/7956237). In **Files**, click **Download (1)** beside **fsl_mrs-2.1.0.zip** (approximately 360 MB). Wait for the download to finish in **Downloads**. The archive supplies the example data; the processing software comes from Neurodesk.
+
+![Download the authors' example archive inside Neurodesk](/static/tutorials/spectroscopy/fsl-mrs/download-annotated.svg)
+
+Open a **Neurodesktop terminal** using the terminal icon in its bottom panel. Paste each Bash command below into this terminal and press **Enter**:
+
+```bash
+mkdir -p ~/neurodesktop-storage/fsl-mrs-demo
+unzip -nq ~/Downloads/fsl_mrs-2.1.0.zip -d ~/neurodesktop-storage/fsl-mrs-demo
+cd ~/neurodesktop-storage/fsl-mrs-demo/fsl_mrs-2.1.0/example_usage
+ml fsl/6.0.7.23
+ls example_data/example_mrsi
+```
+
+![The FSL environment and the extracted public inputs](/static/tutorials/spectroscopy/fsl-mrs/inputs.png)
+
+Keep this **FSL-loaded Neurodesktop terminal** open for the remaining commands. The spectroscopy file contains a **48 × 48 × 1** grid with **1,024 time points per voxel**. The supplied mask selects **96 voxels**. Use the supplied basis set for this example; a different acquisition requires a matching basis set.
+
+## 2. Inspect the input spectra
+
+In the **FSL-loaded terminal**, run:
+
+```bash
+fsleyes -smrs example_data/example_mrsi/T1.anat/T1.nii.gz example_data/example_mrsi/mrsi.nii.gz
+```
+
+Wait for FSLeyes to finish opening, then maximise it. This Neurodesk build includes the MRS plugin. The left panel shows anatomy and the right panel shows spectra for the selected location.
+
+In **Location (1)**, set the world coordinates to **X = 0, Y = 0, Z = 42.67385**. This selects the spectroscopy plane. Click the **eye beside `mrsi` in the plot's overlay list (2)** if its spectrum is hidden. An empty plot at another slice does not mean that the data are missing.
+
+![A spectrum at the selected spectroscopy voxel in FSLeyes](/static/tutorials/spectroscopy/fsl-mrs/input-spectrum-annotated.svg)
+
+Close FSLeyes to return to the terminal before starting the fit. Choose **No** if asked whether to save the window layout.
+
+## 3. Fit the selected voxels
+
+Download [run_fsl_mrsi.sh](/static/tutorials/spectroscopy/fsl-mrs/run_fsl_mrsi.sh) in **Firefox inside Neurodesk**, saving it in **Downloads**. Run it from the **Neurodesktop terminal**:
+
+```bash
+bash ~/Downloads/run_fsl_mrsi.sh
+```
+
+The script checks the input folder, loads **fsl/6.0.7.23**, creates tissue-fraction images in the MRSI grid, then fits the **96 masked voxels**. It writes to **MRSI/fsl_mrsi_fit** and stops if that output folder already exists, preserving previous results.
+
+The serial fit took approximately **39 minutes** in the tested instance. Wait for the shell prompt to return before checking the output.
+
+It uses the original example's metabolite combinations and macromolecule groups with the current baseline syntax, **`--baseline poly,2`**. Read the downloadable script to see the complete command.
+
+**Tested compatibility fix:** use **`--parallel off`** with this container. The parallel run completed voxel fitting but failed during Dask/Bokeh shutdown before saving maps, with `Cannot synchronously wait on a running event loop`. The serial option avoids that shutdown path. A **100%** progress bar alone is insufficient: check that the output folders below were saved.
+
+![The completed fit and its output folders](/static/tutorials/spectroscopy/fsl-mrs/completed.png)
+
+## 4. Inspect the fitted results
+
+After processing finishes, check the output in the **FSL-loaded terminal**:
+
+```bash
+ls MRSI/fsl_mrsi_fit
+```
+
+The output contains **concs** (concentrations under different referencing methods), **fit** (model prediction, baseline and residual), **qc** (fit-quality measures), **uncertainties**, and an average-spectrum preview. Inspect individual voxels as well as the average; a clean average can hide a poor local fit.
+
+Open the input again in FSLeyes:
+
+```bash
+fsleyes -smrs example_data/example_mrsi/T1.anat/T1.nii.gz example_data/example_mrsi/mrsi.nii.gz
+```
+
+Set **Location** back to **X = 0, Y = 0, Z = 42.67385**, as in Step 2.
+
+Choose **Tools (1) → Load MRSI fit (2)** and select **MRSI/fsl_mrsi_fit** from the example folder. If the new map controls do not draw completely, restore and maximise FSLeyes once to refresh its layout.
+
+![Load the fitted results through the Tools menu](/static/tutorials/spectroscopy/fsl-mrs/load-fit-menu-annotated.svg)
+
+The **MRS View** now overlays the fitted signal, baseline and residual on the measured spectrum. The legend identifies each line. The curves update as you select other voxels in the anatomical view.
+
+![Inspect the fitted spectrum and residual in FSLeyes](/static/tutorials/spectroscopy/fsl-mrs/fitted-spectrum.png)
+
+In **MRSI map control** (marked **1** in the final screenshot below), set **Metabolite** to **NAA+NAAG** and **Type** to **conc-internal**. Leave **Replace?** checked to replace the previous map when changing the selection. This displays combined NAA and NAAG relative to total creatine, rather than an absolute concentration.
+
+For the same colour scale as the example, select the NAA+NAAG overlay and click the **cog beside its name above the anatomical views**. Collapse **General display settings** and **Colour settings**, then expand **Display ranges**. Set the **display range (1)** to **0.9–1.7** and the **clipping minimum (2)** to **0.001**. Clipping hides zero-valued background voxels. Close the settings window.
+
+![Set the map display range and clip the zero background](/static/tutorials/spectroscopy/fsl-mrs/map-display-annotated.svg)
+
+In the **left Overlay list**, use the **eye icons (2)** to hide the **residual**, **baseline**, **fit** and **mrsi** image planes. Keep the **NAA+NAAG** map and **T1** enabled, and select the NAA+NAAG row so its colour bar is shown. The plotted curves in the right MRS View remain visible.
+
+![Inspect an internally referenced NAA+NAAG map and its fitted spectrum](/static/tutorials/spectroscopy/fsl-mrs/metabolite-map-annotated.svg)
+
+Move through voxels inside the mask and check the fit, residual and QC maps together. Concentration values depend on referencing, model and acquisition assumptions; use the [FSL-MRS fitting documentation](https://pages.fmrib.ox.ac.uk/fsl/fsl_mrs/fitting.html) before interpreting them quantitatively.
+
+## Source and credit
+
+Data and original example: [Clarke, Stagg and Jbabdi, FSL-MRS 2.1.0 archive](https://zenodo.org/records/7956237), including Will Clarke's **Example MRSI fitting** notebook. See the [FSL-MRS documentation](https://pages.fmrib.ox.ac.uk/fsl/fsl_mrs/) for methods, citation instructions and advanced examples. The [MRS plugin guide](https://open.oxcin.ox.ac.uk/pages/wclarke/fsleyes-plugin-mrs/mrsi_results.html) explains the fit and map controls.
