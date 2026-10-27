@@ -164,7 +164,7 @@ def embed_widgets(notebook: dict, stage: Path, source: Path, base_url: str) -> N
             'const state = document.createElement("script");'
             'state.type = "application/vnd.jupyter.widget-state+json"; state.textContent = JSON.stringify(data);'
             'document.body.append(state); const embed = document.createElement("script");'
-            'embed.src = "https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@1.0.14/dist/embed-amd.js";'
+            'embed.src = "https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@1.0.15/dist/embed-amd.js";'
             'document.body.append(embed);}).catch(error => {document.body.textContent = '
             '"This interactive output could not be loaded (" + error.message + ").";});</script></body></html>'
         )
