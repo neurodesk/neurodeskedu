@@ -152,7 +152,7 @@ def embed_widgets(notebook: dict, stage: Path, source: Path, base_url: str) -> N
             # Fit the iframe to the rendered widget; a fixed height leaves a gap under short viewers.
             '<script>new ResizeObserver(() => {const height = document.body.offsetHeight;'
             'if (height && frameElement) frameElement.style.height = height + "px";}).observe(document.body);</script>'
-            '<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>'
+            '<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.8/require.min.js"></script>'
             f'<script type="{mime}">{widget_view}</script>'
             '<script>const load = path => fetch(path).then(response => {'
             'if (!response.ok) throw new Error(path + ": " + response.status); return response.text();});'
@@ -164,7 +164,7 @@ def embed_widgets(notebook: dict, stage: Path, source: Path, base_url: str) -> N
             'const state = document.createElement("script");'
             'state.type = "application/vnd.jupyter.widget-state+json"; state.textContent = JSON.stringify(data);'
             'document.body.append(state); const embed = document.createElement("script");'
-            'embed.src = "https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@1.0.14/dist/embed-amd.js";'
+            'embed.src = "https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@1.0.15/dist/embed-amd.js";'
             'document.body.append(embed);}).catch(error => {document.body.textContent = '
             '"This interactive output could not be loaded (" + error.message + ").";});</script></body></html>'
         )
