@@ -1,0 +1,403 @@
+Processing single subject: sub-wlsubj001
+Log files location: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/logs
+Output log: deepRetinotopy_20261008_165138_output.log
+Error log: deepRetinotopy_20261008_165138_error.log
+--------------------------------------------------------------------------------
+DeepRetinotopy: retinotopic mapping using deep learning
+--------------------------------------------------------------------------------
+Log files: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/logs/deepRetinotopy_20261008_165138_output.log and deepRetinotopy_20261008_165138_error.log
+--------------------------------------------------------------------------------
+Directories and parameters:
+
+Path to FreeSurfer directory: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer
+Path to fs_LR-deformed_to-fsaverage template surfaces: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/templates
+Dataset name: nyu
+Maps: polarAngle eccentricity
+Processing mode: Single subject (sub-wlsubj001)
+Fast midthickness generation: yes
+Output mode: In-place (within FreeSurfer directory structure)
+Execution mode: Complete pipeline (Steps 1, 2, and 3)
+--------------------------------------------------------------------------------
+Processing left hemisphere
+--------------------------------------------------------------------------------
+[Step 1] Generating mid-thickness surface and curvature data...
+Hemisphere: lh
+Processing single subject: sub-wlsubj001
+Output mode: In-place (within FreeSurfer directory structure)
+Processing subject: sub-wlsubj001
+=== Processing Step 1 for subject: sub-wlsubj001 ===
+[sub-wlsubj001] Using FreeSurfer directory: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/surf
+[sub-wlsubj001] Fast mode enabled.
+[sub-wlsubj001] [Step 1.1] Generating mid-thickness surface and curvature data if not available...
+[sub-wlsubj001] Converting surfaces...
+Saving /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/surf/lh.white.gii as a surface
+Saving /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/surf/lh.pial.gii as a surface
+[sub-wlsubj001] Generating midthickness surface...
+Midthickness surface saved at /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/surf/lh.graymid.gii
+** DA[1] has coordsys with intent NIFTI_INTENT_TRIANGLE (should be NIFTI_INTENT_POINTSET)
+Saving /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/surf/lh.graymid as a surface
+[sub-wlsubj001] Computing curvature...
+total integrated curvature = -2.905*4pi (-36.505) --> 4 handles
+ICI = 155.2, FI = 1392.0, variation=22879.765
+writing Gaussian curvature to /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/surf/lh.graymid.K...done.
+writing mean curvature to /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/surf/lh.graymid.H...done.
+[sub-wlsubj001] Mid-thickness surface has been generated
+[sub-wlsubj001] [Step 1.2] Preparing native surfaces for resampling...
+[sub-wlsubj001] Running freesurfer-resample-prep...
+Saving /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/surf/lh.midthickness.surf.gii.temp36510.white.surf.gii as a surface
+Saving /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/surf/lh.midthickness.surf.gii.temp36510.pial.surf.gii as a surface
+Saving /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/surf/lh.sphere.reg.surf.gii as a surface
+[sub-wlsubj001] Converting curvature data...
+[sub-wlsubj001] Resampling native data to fsaverage space...
+[sub-wlsubj001] Data resampling complete
+=== Subject sub-wlsubj001 completed in 0 minutes ===
+
+===============================================
+[Step 1] COMPLETED!
+Total execution time: 0m 29s
+Subject processed: sub-wlsubj001
+Output location: In-place within FreeSurfer directory
+===============================================
+--------------------------------------------------------------------------------
+Map: polarAngle
+--------------------------------------------------------------------------------
+[Step 2] Retinotopy prediction...
+/opt/miniconda-latest/lib/python3.12/site-packages/torch_geometric/typing.py:68: UserWarning: An issue occurred while importing 'pyg-lib'. Disabling its usage. Stacktrace: /usr/lib64/libm.so.6: version `GLIBC_2.29' not found (required by /opt/miniconda-latest/lib/python3.12/site-packages/libpyg.so)
+  warnings.warn(f"An issue occurred while importing 'pyg-lib'. "
+/opt/miniconda-latest/lib/python3.12/site-packages/torch_geometric/typing.py:124: UserWarning: An issue occurred while importing 'torch-sparse'. Disabling its usage. Stacktrace: /usr/lib64/libm.so.6: version `GLIBC_2.29' not found (required by /opt/miniconda-latest/lib/python3.12/site-packages/libpyg.so)
+  warnings.warn(f"An issue occurred while importing 'torch-sparse'. "
+Processing...
+Done!
+===============================================
+[Step 2] STARTING INFERENCE
+Prediction type: polarAngle
+Hemisphere: lh
+Dataset: nyu
+Stimulus: original
+Output mode: In-place (within FreeSurfer directory structure)
+===============================================
+Output directory not specified, using input path: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer
+Data path: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer
+Temporary processed directory: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/processed_36626_aedcffea_14959
+Processing single subject: sub-wlsubj001
+Found 1 subjects to process: ['sub-wlsubj001']
+Final subject list after validation: 1 subjects: ['sub-wlsubj001']
+[Step 2.1] Loading the dataset...
+Dataset loaded successfully
+Dataset loading time: 0.35 minutes
+[Step 2.2] Generating predictions with pre-trained models...
+Loading model 1/1...
+Using device: cpu
+Loading model from: deepRetinotopy_polarAngle_LH_model.pt
+Running inference for model 1...
+Inference completed in 0.22 minutes
+Saving predictions for 1 subjects...
+[sub-wlsubj001] Saving predictions to: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/deepRetinotopy
+[sub-wlsubj001] Created output directory
+[sub-wlsubj001] Completed in 0.0s
+Model 1 processing completed in 0.43 minutes
+
+===============================================
+[Step 2] COMPLETED!
+Total execution time: 0m 46s
+Subject processed: sub-wlsubj001
+Prediction type: polarAngle | Hemisphere: lh | Dataset: nyu
+Output location: In-place within FreeSurfer directory
+===============================================
+Cleaned up temporary directory: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/processed_36626_aedcffea_14959
+[Step 3] Resampling predictions to native space...
+Model: model
+Map: polarAngle
+Hemisphere: lh
+Processing single subject: sub-wlsubj001
+Output mode: In-place (within FreeSurfer directory structure)
+Processing subject: sub-wlsubj001
+=== Processing Step 3 for subject: sub-wlsubj001 ===
+[sub-wlsubj001] Using FreeSurfer directory: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/deepRetinotopy
+[sub-wlsubj001] Resampling ROI from fsaverage to native space for the left hemisphere...
+[sub-wlsubj001] Resampling predicted map from fsaverage to native space for the left hemisphere...
+
+WARNING: Metric File: /opt/deepRetinotopy_TheToolbox/main/../labels/ROI_WangPlusFovea/ROI.fs_lh.label.gii contains data array with NIFTI_INTENT_LABEL !!!
+
+[sub-wlsubj001] Transforming polar angle map of the left hemisphere...
+[sub-wlsubj001] Applying mask to the predicted map of the left hemisphere...
+
+WARNING: Metric File: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/deepRetinotopy/sub-wlsubj001.ROI.lh.native.label.gii contains data array with NIFTI_INTENT_LABEL !!!
+
+=== Subject sub-wlsubj001 completed in 0 minutes ===
+
+===============================================
+[Step 3] COMPLETED!
+Total execution time: 0m 3s
+Subject processed: sub-wlsubj001
+Map: polarAngle | Model: model | Hemisphere: lh
+Output location: In-place within FreeSurfer directory
+===============================================
+polarAngle resampling completed for lh hemisphere
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Map: eccentricity
+--------------------------------------------------------------------------------
+[Step 2] Retinotopy prediction...
+/opt/miniconda-latest/lib/python3.12/site-packages/torch_geometric/typing.py:68: UserWarning: An issue occurred while importing 'pyg-lib'. Disabling its usage. Stacktrace: /usr/lib64/libm.so.6: version `GLIBC_2.29' not found (required by /opt/miniconda-latest/lib/python3.12/site-packages/libpyg.so)
+  warnings.warn(f"An issue occurred while importing 'pyg-lib'. "
+/opt/miniconda-latest/lib/python3.12/site-packages/torch_geometric/typing.py:124: UserWarning: An issue occurred while importing 'torch-sparse'. Disabling its usage. Stacktrace: /usr/lib64/libm.so.6: version `GLIBC_2.29' not found (required by /opt/miniconda-latest/lib/python3.12/site-packages/libpyg.so)
+  warnings.warn(f"An issue occurred while importing 'torch-sparse'. "
+Processing...
+Done!
+===============================================
+[Step 2] STARTING INFERENCE
+Prediction type: eccentricity
+Hemisphere: lh
+Dataset: nyu
+Stimulus: original
+Output mode: In-place (within FreeSurfer directory structure)
+===============================================
+Output directory not specified, using input path: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer
+Data path: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer
+Temporary processed directory: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/processed_36774_340e50a0_69839
+Processing single subject: sub-wlsubj001
+Found 1 subjects to process: ['sub-wlsubj001']
+Final subject list after validation: 1 subjects: ['sub-wlsubj001']
+[Step 2.1] Loading the dataset...
+Dataset loaded successfully
+Dataset loading time: 0.34 minutes
+[Step 2.2] Generating predictions with pre-trained models...
+Loading model 1/1...
+Using device: cpu
+Loading model from: deepRetinotopy_eccentricity_LH_model.pt
+Running inference for model 1...
+Inference completed in 0.22 minutes
+Saving predictions for 1 subjects...
+[sub-wlsubj001] Saving predictions to: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/deepRetinotopy
+[sub-wlsubj001] Completed in 0.0s
+Model 1 processing completed in 0.40 minutes
+
+===============================================
+[Step 2] COMPLETED!
+Total execution time: 0m 44s
+Subject processed: sub-wlsubj001
+Prediction type: eccentricity | Hemisphere: lh | Dataset: nyu
+Output location: In-place within FreeSurfer directory
+===============================================
+Cleaned up temporary directory: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/processed_36774_340e50a0_69839
+[Step 3] Resampling predictions to native space...
+Model: model
+Map: eccentricity
+Hemisphere: lh
+Processing single subject: sub-wlsubj001
+Output mode: In-place (within FreeSurfer directory structure)
+Processing subject: sub-wlsubj001
+=== Processing Step 3 for subject: sub-wlsubj001 ===
+[sub-wlsubj001] Using FreeSurfer directory: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/deepRetinotopy
+[sub-wlsubj001] Resampling ROI from fsaverage to native space for the left hemisphere...
+[sub-wlsubj001] Resampling predicted map from fsaverage to native space for the left hemisphere...
+
+WARNING: Metric File: /opt/deepRetinotopy_TheToolbox/main/../labels/ROI_WangPlusFovea/ROI.fs_lh.label.gii contains data array with NIFTI_INTENT_LABEL !!!
+
+[sub-wlsubj001] Applying mask to the predicted map of the left hemisphere...
+
+WARNING: Metric File: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/deepRetinotopy/sub-wlsubj001.ROI.lh.native.label.gii contains data array with NIFTI_INTENT_LABEL !!!
+
+=== Subject sub-wlsubj001 completed in 0 minutes ===
+
+===============================================
+[Step 3] COMPLETED!
+Total execution time: 0m 2s
+Subject processed: sub-wlsubj001
+Map: eccentricity | Model: model | Hemisphere: lh
+Output location: In-place within FreeSurfer directory
+===============================================
+eccentricity resampling completed for lh hemisphere
+--------------------------------------------------------------------------------
+Processing right hemisphere
+--------------------------------------------------------------------------------
+[Step 1] Generating mid-thickness surface and curvature data...
+Hemisphere: rh
+Processing single subject: sub-wlsubj001
+Output mode: In-place (within FreeSurfer directory structure)
+Processing subject: sub-wlsubj001
+=== Processing Step 1 for subject: sub-wlsubj001 ===
+[sub-wlsubj001] Using FreeSurfer directory: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/surf
+[sub-wlsubj001] Fast mode enabled.
+[sub-wlsubj001] [Step 1.1] Generating mid-thickness surface and curvature data if not available...
+[sub-wlsubj001] Converting surfaces...
+Saving /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/surf/rh.white.gii as a surface
+Saving /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/surf/rh.pial.gii as a surface
+[sub-wlsubj001] Generating midthickness surface...
+Midthickness surface saved at /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/surf/rh.graymid.gii
+** DA[1] has coordsys with intent NIFTI_INTENT_TRIANGLE (should be NIFTI_INTENT_POINTSET)
+Saving /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/surf/rh.graymid as a surface
+[sub-wlsubj001] Computing curvature...
+total integrated curvature = -3.967*4pi (-49.856) --> 5 handles
+ICI = 149.7, FI = 1361.8, variation=22336.733
+writing Gaussian curvature to /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/surf/rh.graymid.K...done.
+writing mean curvature to /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/surf/rh.graymid.H...done.
+[sub-wlsubj001] Mid-thickness surface has been generated
+[sub-wlsubj001] [Step 1.2] Preparing native surfaces for resampling...
+[sub-wlsubj001] Running freesurfer-resample-prep...
+Saving /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/surf/rh.midthickness.surf.gii.temp36909.white.surf.gii as a surface
+Saving /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/surf/rh.midthickness.surf.gii.temp36909.pial.surf.gii as a surface
+Saving /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/surf/rh.sphere.reg.surf.gii as a surface
+[sub-wlsubj001] Converting curvature data...
+[sub-wlsubj001] Resampling native data to fsaverage space...
+[sub-wlsubj001] Data resampling complete
+=== Subject sub-wlsubj001 completed in 0 minutes ===
+
+===============================================
+[Step 1] COMPLETED!
+Total execution time: 0m 14s
+Subject processed: sub-wlsubj001
+Output location: In-place within FreeSurfer directory
+===============================================
+--------------------------------------------------------------------------------
+Map: polarAngle
+--------------------------------------------------------------------------------
+[Step 2] Retinotopy prediction...
+/opt/miniconda-latest/lib/python3.12/site-packages/torch_geometric/typing.py:68: UserWarning: An issue occurred while importing 'pyg-lib'. Disabling its usage. Stacktrace: /usr/lib64/libm.so.6: version `GLIBC_2.29' not found (required by /opt/miniconda-latest/lib/python3.12/site-packages/libpyg.so)
+  warnings.warn(f"An issue occurred while importing 'pyg-lib'. "
+/opt/miniconda-latest/lib/python3.12/site-packages/torch_geometric/typing.py:124: UserWarning: An issue occurred while importing 'torch-sparse'. Disabling its usage. Stacktrace: /usr/lib64/libm.so.6: version `GLIBC_2.29' not found (required by /opt/miniconda-latest/lib/python3.12/site-packages/libpyg.so)
+  warnings.warn(f"An issue occurred while importing 'torch-sparse'. "
+Processing...
+Done!
+===============================================
+[Step 2] STARTING INFERENCE
+Prediction type: polarAngle
+Hemisphere: rh
+Dataset: nyu
+Stimulus: original
+Output mode: In-place (within FreeSurfer directory structure)
+===============================================
+Output directory not specified, using input path: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer
+Data path: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer
+Temporary processed directory: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/processed_37025_16143238_35669
+Processing single subject: sub-wlsubj001
+Found 1 subjects to process: ['sub-wlsubj001']
+Final subject list after validation: 1 subjects: ['sub-wlsubj001']
+[Step 2.1] Loading the dataset...
+Dataset loaded successfully
+Dataset loading time: 0.35 minutes
+[Step 2.2] Generating predictions with pre-trained models...
+Loading model 1/1...
+Using device: cpu
+Loading model from: deepRetinotopy_polarAngle_RH_model.pt
+Running inference for model 1...
+Inference completed in 0.22 minutes
+Saving predictions for 1 subjects...
+[sub-wlsubj001] Saving predictions to: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/deepRetinotopy
+[sub-wlsubj001] Completed in 0.0s
+Model 1 processing completed in 0.39 minutes
+
+===============================================
+[Step 2] COMPLETED!
+Total execution time: 0m 44s
+Subject processed: sub-wlsubj001
+Prediction type: polarAngle | Hemisphere: rh | Dataset: nyu
+Output location: In-place within FreeSurfer directory
+===============================================
+Cleaned up temporary directory: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/processed_37025_16143238_35669
+[Step 3] Resampling predictions to native space...
+Model: model
+Map: polarAngle
+Hemisphere: rh
+Processing single subject: sub-wlsubj001
+Output mode: In-place (within FreeSurfer directory structure)
+Processing subject: sub-wlsubj001
+=== Processing Step 3 for subject: sub-wlsubj001 ===
+[sub-wlsubj001] Using FreeSurfer directory: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/deepRetinotopy
+[sub-wlsubj001] Resampling ROI from fsaverage to native space for the right hemisphere...
+[sub-wlsubj001] Resampling predicted map from fsaverage to native space for the right hemisphere...
+
+WARNING: Metric File: /opt/deepRetinotopy_TheToolbox/main/../labels/ROI_WangPlusFovea/ROI.fs_rh.label.gii contains data array with NIFTI_INTENT_LABEL !!!
+
+[sub-wlsubj001] Applying mask to the predicted map of the right hemisphere...
+
+WARNING: Metric File: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/deepRetinotopy/sub-wlsubj001.ROI.rh.native.label.gii contains data array with NIFTI_INTENT_LABEL !!!
+
+=== Subject sub-wlsubj001 completed in 0 minutes ===
+
+===============================================
+[Step 3] COMPLETED!
+Total execution time: 0m 3s
+Subject processed: sub-wlsubj001
+Map: polarAngle | Model: model | Hemisphere: rh
+Output location: In-place within FreeSurfer directory
+===============================================
+polarAngle resampling completed for rh hemisphere
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Map: eccentricity
+--------------------------------------------------------------------------------
+[Step 2] Retinotopy prediction...
+/opt/miniconda-latest/lib/python3.12/site-packages/torch_geometric/typing.py:68: UserWarning: An issue occurred while importing 'pyg-lib'. Disabling its usage. Stacktrace: /usr/lib64/libm.so.6: version `GLIBC_2.29' not found (required by /opt/miniconda-latest/lib/python3.12/site-packages/libpyg.so)
+  warnings.warn(f"An issue occurred while importing 'pyg-lib'. "
+/opt/miniconda-latest/lib/python3.12/site-packages/torch_geometric/typing.py:124: UserWarning: An issue occurred while importing 'torch-sparse'. Disabling its usage. Stacktrace: /usr/lib64/libm.so.6: version `GLIBC_2.29' not found (required by /opt/miniconda-latest/lib/python3.12/site-packages/libpyg.so)
+  warnings.warn(f"An issue occurred while importing 'torch-sparse'. "
+Processing...
+Done!
+===============================================
+[Step 2] STARTING INFERENCE
+Prediction type: eccentricity
+Hemisphere: rh
+Dataset: nyu
+Stimulus: original
+Output mode: In-place (within FreeSurfer directory structure)
+===============================================
+Output directory not specified, using input path: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer
+Data path: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer
+Temporary processed directory: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/processed_37136_9f45696d_86615
+Processing single subject: sub-wlsubj001
+Found 1 subjects to process: ['sub-wlsubj001']
+Final subject list after validation: 1 subjects: ['sub-wlsubj001']
+[Step 2.1] Loading the dataset...
+Dataset loaded successfully
+Dataset loading time: 0.35 minutes
+[Step 2.2] Generating predictions with pre-trained models...
+Loading model 1/1...
+Using device: cpu
+Loading model from: deepRetinotopy_eccentricity_RH_model.pt
+Running inference for model 1...
+Inference completed in 0.21 minutes
+Saving predictions for 1 subjects...
+[sub-wlsubj001] Saving predictions to: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/deepRetinotopy
+[sub-wlsubj001] Completed in 0.0s
+Model 1 processing completed in 0.42 minutes
+
+===============================================
+[Step 2] COMPLETED!
+Total execution time: 0m 45s
+Subject processed: sub-wlsubj001
+Prediction type: eccentricity | Hemisphere: rh | Dataset: nyu
+Output location: In-place within FreeSurfer directory
+===============================================
+Cleaned up temporary directory: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/processed_37136_9f45696d_86615
+[Step 3] Resampling predictions to native space...
+Model: model
+Map: eccentricity
+Hemisphere: rh
+Processing single subject: sub-wlsubj001
+Output mode: In-place (within FreeSurfer directory structure)
+Processing subject: sub-wlsubj001
+=== Processing Step 3 for subject: sub-wlsubj001 ===
+[sub-wlsubj001] Using FreeSurfer directory: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/deepRetinotopy
+[sub-wlsubj001] Resampling ROI from fsaverage to native space for the right hemisphere...
+[sub-wlsubj001] Resampling predicted map from fsaverage to native space for the right hemisphere...
+
+WARNING: Metric File: /opt/deepRetinotopy_TheToolbox/main/../labels/ROI_WangPlusFovea/ROI.fs_rh.label.gii contains data array with NIFTI_INTENT_LABEL !!!
+
+[sub-wlsubj001] Applying mask to the predicted map of the right hemisphere...
+
+WARNING: Metric File: /home/jovyan/workspace/books/examples/functional_imaging/data/ds003787/derivatives/freesurfer/sub-wlsubj001/deepRetinotopy/sub-wlsubj001.ROI.rh.native.label.gii contains data array with NIFTI_INTENT_LABEL !!!
+
+=== Subject sub-wlsubj001 completed in 0 minutes ===
+
+===============================================
+[Step 3] COMPLETED!
+Total execution time: 0m 3s
+Subject processed: sub-wlsubj001
+Map: eccentricity | Model: model | Hemisphere: rh
+Output location: In-place within FreeSurfer directory
+===============================================
+eccentricity resampling completed for rh hemisphere
+--------------------------------------------------------------------------------
+Execution completed!
