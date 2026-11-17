@@ -1,0 +1,11 @@
+---
+title: "Workflows"
+---
+
+# Workflows
+
+Example notebooks demonstrating common preprocessing and workflow tools.
+
+```{toc}
+:context: children
+```
