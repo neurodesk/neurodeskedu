@@ -71,10 +71,14 @@
   overflow-wrap: anywhere;
 }
 
-/* Make the theme's frontmatter DOI (under the authors) stand out as a labelled badge. */
+/* Make the theme's frontmatter DOI (under the authors) stand out as a labelled badge.
+   It shares a flex row with the date, so centre the row and keep the badge free of vertical margin. */
+.myst-fm-block-date-doi {
+  align-items: center;
+}
+
 .myst-fm-doi-badge {
   display: inline-block;
-  margin: 0.5rem 0;
   padding: 0.25rem 0.6rem;
   border-radius: 0.5rem;
   font-size: 0.9rem;
