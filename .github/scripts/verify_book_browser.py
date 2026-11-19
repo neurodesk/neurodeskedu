@@ -102,7 +102,8 @@ def verify(url: str, executable: str | None, widgets: bool, screenshot: str | No
         assert "nd-launch" not in str(raw), "Download includes generated controls"
         page.keyboard.press("Escape")
 
-        page.get_by_role("link", name=re.compile("^Structural imaging$", re.IGNORECASE)).click()
+        toc = page.locator(".myst-toc:visible")
+        toc.get_by_role("link", name=re.compile("^Structural imaging$", re.IGNORECASE)).click()
         expect(page.locator(".nd-launch")).to_have_count(0)
         expect(page.locator(".nd-launch-menu")).to_have_count(0)
         expect(page.locator(".nd-review-badge")).to_have_count(0)
