@@ -1,0 +1,701 @@
+[01;34mbids[0m
+├── [01;34mderivatives[0m
+│   ├── [01;34mqsmxt-2026-10-07-121200[0m
+│   │   ├── [00mcommand.txt[0m
+│   │   ├── [00mpypeline.log[0m
+│   │   ├── [00mqsmxt.log[0m
+│   │   ├── [00mreferences.txt[0m
+│   │   ├── [00msettings.json[0m
+│   │   ├── [01;34msub-1[0m
+│   │   │   └── [01;34mses-20170705[0m
+│   │   │       ├── [01;34manat[0m
+│   │   │       │   ├── [00msub-1_ses-20170705_acq-acqmp2ragehighres0p5isoslab_T1w_space-orig_dseg.nii[0m
+│   │   │       │   ├── [00msub-1_ses-20170705_acq-acqmp2ragehighres0p5isoslab_T1w_space-qsm_dseg.nii[0m
+│   │   │       │   ├── [00msub-1_ses-20170705_acq-acqqsmp21mmisote20_T2starw_Chimap.json[0m
+│   │   │       │   ├── [00msub-1_ses-20170705_acq-acqqsmp21mmisote20_T2starw_Chimap.nii[0m
+│   │   │       │   ├── [00msub-1_ses-20170705_acq-acqqsmp21mmisote20_T2starw_space-orig_dseg.nii[0m
+│   │   │       │   └── [00msub-1_ses-20170705_acq-acqqsmp21mmisote20_T2starw_space-qsm_dseg.nii[0m
+│   │   │       └── [01;34mextra_data[0m
+│   │   │           ├── [00msub-1_ses-20170705_acq-acqmp2ragehighres0p5isoslab_T1w_desc-t1w-to-qsm_transform.mat[0m
+│   │   │           ├── [00msub-1_ses-20170705_acq-acqqsmp21mmisote20_T2starw_desc-t1w-to-qsm_transform.mat[0m
+│   │   │           └── [00msub-1_ses-20170705_acq-acqqsmp21mmisote20_T2starw_qsm-analysis.csv[0m
+│   │   └── [01;34msub-2[0m
+│   │       └── [01;34mses-20170705[0m
+│   │           ├── [01;34manat[0m
+│   │           │   ├── [00msub-2_ses-20170705_acq-acqmp2ragehighres0p5isoslab_T1w_space-orig_dseg.nii[0m
+│   │           │   ├── [00msub-2_ses-20170705_acq-acqmp2ragehighres0p5isoslab_T1w_space-qsm_dseg.nii[0m
+│   │           │   ├── [00msub-2_ses-20170705_acq-acqqsmp21mmisote20_T2starw_Chimap.json[0m
+│   │           │   ├── [00msub-2_ses-20170705_acq-acqqsmp21mmisote20_T2starw_Chimap.nii[0m
+│   │           │   ├── [00msub-2_ses-20170705_acq-acqqsmp21mmisote20_T2starw_space-orig_dseg.nii[0m
+│   │           │   └── [00msub-2_ses-20170705_acq-acqqsmp21mmisote20_T2starw_space-qsm_dseg.nii[0m
+│   │           └── [01;34mextra_data[0m
+│   │               ├── [00msub-2_ses-20170705_acq-acqmp2ragehighres0p5isoslab_T1w_desc-t1w-to-qsm_transform.mat[0m
+│   │               ├── [00msub-2_ses-20170705_acq-acqqsmp21mmisote20_T2starw_desc-t1w-to-qsm_transform.mat[0m
+│   │               └── [00msub-2_ses-20170705_acq-acqqsmp21mmisote20_T2starw_qsm-analysis.csv[0m
+│   └── [01;34mworkflow[0m
+│       └── [01;34mqsmxt-workflow[0m
+│           ├── [00md3.js[0m
+│           ├── [00mgraph.json[0m
+│           ├── [00mgraph1.json[0m
+│           ├── [00mindex.html[0m
+│           ├── [01;34msub-1[0m
+│           │   └── [01;34mses-20170705[0m
+│           │       ├── [01;34mqsm_acq-acqmp2ragehighres0p5isoslab_T1w[0m
+│           │       │   ├── [01;34mants_register-t1-to-qsm[0m
+│           │       │   │   ├── [00m_0x9609807adb414fa80f8b20b8c0a3c121.json[0m
+│           │       │   │   ├── [00m_inputs.pklz[0m
+│           │       │   │   ├── [00m_node.pklz[0m
+│           │       │   │   ├── [01;34m_report[0m
+│           │       │   │   │   └── [00mreport.rst[0m
+│           │       │   │   ├── [00mcommand.txt[0m
+│           │       │   │   ├── [00mresult_ants_register-t1-to-qsm.pklz[0m
+│           │       │   │   └── [00msub-1_ses-20170705_acq-acqmp2ragehighres0p5isoslab_T1w_0GenericAffine.mat[0m
+│           │       │   ├── [01;34mants_transform-segmentation-to-qsm[0m
+│           │       │   │   ├── [00m_0x7e1c82de04b577df5f3a536539b573e0.json[0m
+│           │       │   │   ├── [00m_inputs.pklz[0m
+│           │       │   │   ├── [00m_node.pklz[0m
+│           │       │   │   ├── [01;34m_report[0m
+│           │       │   │   │   └── [00mreport.rst[0m
+│           │       │   │   ├── [00mcommand.txt[0m
+│           │       │   │   ├── [00mresult_ants_transform-segmentation-to-qsm.pklz[0m
+│           │       │   │   └── [00msub-1_ses-20170705_acq-acqmp2ragehighres0p5isoslab_T1w_segmentation_trans.nii[0m
+│           │       │   ├── [01;34mcopyfile[0m
+│           │       │   │   ├── [00m_0xb787ae172ce31d76f225fff8f59eeda9.json[0m
+│           │       │   │   ├── [00m_inputs.pklz[0m
+│           │       │   │   ├── [00m_node.pklz[0m
+│           │       │   │   ├── [01;34m_report[0m
+│           │       │   │   │   └── [00mreport.rst[0m
+│           │       │   │   └── [00mresult_copyfile.pklz[0m
+│           │       │   ├── [01;34mfastsurfer_segment-t1[0m
+│           │       │   │   ├── [00m_0xdd71f426cb00fc17a8d61be541dc3149.json[0m
+│           │       │   │   ├── [00m_inputs.pklz[0m
+│           │       │   │   ├── [00m_node.pklz[0m
+│           │       │   │   ├── [01;34m_report[0m
+│           │       │   │   │   └── [00mreport.rst[0m
+│           │       │   │   ├── [00mcommand.txt[0m
+│           │       │   │   ├── [01;34moutput[0m
+│           │       │   │   │   ├── [01;34mmri[0m
+│           │       │   │   │   │   └── [01;34morig[0m
+│           │       │   │   │   └── [01;34mscripts[0m
+│           │       │   │   ├── [00mresult_fastsurfer_segment-t1.pklz[0m
+│           │       │   │   ├── [00msub-1_ses-20170705_acq-acqmp2ragehighres0p5isoslab_part-mag_T1w_dseg.mgz[0m
+│           │       │   │   └── [00msub-1_ses-20170705_acq-acqmp2ragehighres0p5isoslab_part-mag_T1w_dseg_nii.nii[0m
+│           │       │   ├── [01;34mfunc_getfirst-canonical-magnitude[0m
+│           │       │   │   ├── [00m_0x1b2cf90ce437865c4bbaf59e15fe04d2.json[0m
+│           │       │   │   ├── [00m_inputs.pklz[0m
+│           │       │   │   ├── [00m_node.pklz[0m
+│           │       │   │   ├── [01;34m_report[0m
+│           │       │   │   │   └── [00mreport.rst[0m
+│           │       │   │   └── [00mresult_func_getfirst-canonical-magnitude.pklz[0m
+│           │       │   ├── [01;34mfunc_read-json-me[0m
+│           │       │   │   ├── [00m_0xae671277bd4396abe436db716e15b638.json[0m
+│           │       │   │   ├── [00m_inputs.pklz[0m
+│           │       │   │   ├── [00m_node.pklz[0m
+│           │       │   │   ├── [01;34m_report[0m
+│           │       │   │   │   └── [00mreport.rst[0m
+│           │       │   │   └── [00mresult_func_read-json-me.pklz[0m
+│           │       │   ├── [01;34mfunc_read-json-se[0m
+│           │       │   │   ├── [00m_0x2415339058f50fe0c2840e85ffa5264b.json[0m
+│           │       │   │   ├── [00m_inputs.pklz[0m
+│           │       │   │   ├── [00m_node.pklz[0m
+│           │       │   │   ├── [01;34m_report[0m
+│           │       │   │   │   └── [00mreport.rst[0m
+│           │       │   │   └── [00mresult_func_read-json-se.pklz[0m
+│           │       │   ├── [01;34mnibabel_as-canonical[0m
+│           │       │   │   ├── [00m_0x8bce68dca1d0a4989c714a3ae8d0595e.json[0m
+│           │       │   │   ├── [00m_inputs.pklz[0m
+│           │       │   │   ├── [00m_node.pklz[0m
+│           │       │   │   ├── [01;34m_report[0m
+│           │       │   │   │   └── [00mreport.rst[0m
+│           │       │   │   └── [00mresult_nibabel_as-canonical.pklz[0m
+│           │       │   ├── [01;34mnibabel_numpy_nilearn_t1w-seg-resampled[0m
+│           │       │   │   ├── [00m_0x2d1862f84a976efb589c8010c155b5ca.json[0m
+│           │       │   │   ├── [00m_inputs.pklz[0m
+│           │       │   │   ├── [00m_node.pklz[0m
+│           │       │   │   ├── [01;34m_report[0m
+│           │       │   │   │   └── [00mreport.rst[0m
+│           │       │   │   ├── [00mresult_nibabel_numpy_nilearn_t1w-seg-resampled.pklz[0m
+│           │       │   │   └── [00msub-1_ses-20170705_acq-acqmp2ragehighres0p5isoslab_part-mag_T1w_dseg_nii_resampled.nii[0m
+│           │       │   ├── [01;34mnibabel_read-nii[0m
+│           │       │   │   ├── [00m_0x3e76f0d5c7ad730401ebf7757293f997.json[0m
+│           │       │   │   ├── [00m_inputs.pklz[0m
+│           │       │   │   ├── [00m_node.pklz[0m
+│           │       │   │   ├── [01;34m_report[0m
+│           │       │   │   │   └── [00mreport.rst[0m
+│           │       │   │   └── [00mresult_nibabel_read-nii.pklz[0m
+│           │       │   └── [01;34mnumpy_numpy_nibabel_mgz2nii[0m
+│           │       │       ├── [00m_0xbcfe0c74be454c4250d38a1feba3b501.json[0m
+│           │       │       ├── [00m_inputs.pklz[0m
+│           │       │       ├── [00m_node.pklz[0m
+│           │       │       ├── [01;34m_report[0m
+│           │       │       │   └── [00mreport.rst[0m
+│           │       │       └── [00mresult_numpy_numpy_nibabel_mgz2nii.pklz[0m
+│           │       └── [01;34mqsm_acq-acqqsmp21mmisote20_T2starw[0m
+│           │           ├── [01;34mants_register-t1-to-qsm[0m
+│           │           │   ├── [00m_0xd44df8cdc1ceb4009f12ca5961edd812.json[0m
+│           │           │   ├── [00m_inputs.pklz[0m
+│           │           │   ├── [00m_node.pklz[0m
+│           │           │   ├── [01;34m_report[0m
+│           │           │   │   └── [00mreport.rst[0m
+│           │           │   ├── [00mcommand.txt[0m
+│           │           │   ├── [00mresult_ants_register-t1-to-qsm.pklz[0m
+│           │           │   └── [00msub-1_ses-20170705_acq-acqqsmp21mmisote20_T2starw_0GenericAffine.mat[0m
+│           │           ├── [01;34mants_transform-segmentation-to-qsm[0m
+│           │           │   ├── [00m_0xe6729f847e745b25b2f9672c049381a3.json[0m
+│           │           │   ├── [00m_inputs.pklz[0m
+│           │           │   ├── [00m_node.pklz[0m
+│           │           │   ├── [01;34m_report[0m
+│           │           │   │   └── [00mreport.rst[0m
+│           │           │   ├── [00mcommand.txt[0m
+│           │           │   ├── [00mresult_ants_transform-segmentation-to-qsm.pklz[0m
+│           │           │   └── [00msub-1_ses-20170705_acq-acqqsmp21mmisote20_T2starw_segmentation_trans.nii[0m
+│           │           ├── [01;34mcombine_lists1[0m
+│           │           │   ├── [00m_0x6e39036b47d2ecfb03480598c7854a3f.json[0m
+│           │           │   ├── [00m_inputs.pklz[0m
+│           │           │   ├── [00m_node.pklz[0m
+│           │           │   ├── [01;34m_report[0m
+│           │           │   │   └── [00mreport.rst[0m
+│           │           │   └── [00mresult_combine_lists1.pklz[0m
+│           │           ├── [01;34mcombine_lists2[0m
+│           │           │   ├── [00m_0x6c24d20917b54c7e4b003c6adebb281a.json[0m
+│           │           │   ├── [00m_inputs.pklz[0m
+│           │           │   ├── [00m_node.pklz[0m
+│           │           │   ├── [01;34m_report[0m
+│           │           │   │   └── [00mreport.rst[0m
+│           │           │   └── [00mresult_combine_lists2.pklz[0m
+│           │           ├── [01;34mcopy_qsm_json_sidecar[0m
+│           │           │   ├── [00m_0x76fa3a085f211b37a6d98ed7a45e8bb6.json[0m
+│           │           │   ├── [00m_inputs.pklz[0m
+│           │           │   ├── [00m_node.pklz[0m
+│           │           │   ├── [01;34m_report[0m
+│           │           │   │   └── [00mreport.rst[0m
+│           │           │   └── [00mresult_copy_qsm_json_sidecar.pklz[0m
+│           │           ├── [01;34mcopyfile[0m
+│           │           │   ├── [00m_0xe92f61243aec7ad1c628c8ee39cba311.json[0m
+│           │           │   ├── [00m_inputs.pklz[0m
+│           │           │   ├── [00m_node.pklz[0m
+│           │           │   ├── [01;34m_report[0m
+│           │           │   │   └── [00mreport.rst[0m
+│           │           │   └── [00mresult_copyfile.pklz[0m
+│           │           ├── [01;34mcreate_permutations[0m
+│           │           │   ├── [00m_0x6de9a1c568f097d35b70c4462b312a15.json[0m
+│           │           │   ├── [00m_inputs.pklz[0m
+│           │           │   ├── [00m_node.pklz[0m
+│           │           │   ├── [01;34m_report[0m
+│           │           │   │   └── [00mreport.rst[0m
+│           │           │   └── [00mresult_create_permutations.pklz[0m
+│           │           ├── [01;34mfastsurfer_segment-t1[0m
+│           │           │   ├── [00m_0xdd71f426cb00fc17a8d61be541dc3149.json[0m
+│           │           │   ├── [00m_inputs.pklz[0m
+│           │           │   ├── [00m_node.pklz[0m
+│           │           │   ├── [01;34m_report[0m
+│           │           │   │   └── [00mreport.rst[0m
+│           │           │   ├── [00mcommand.txt[0m
+│           │           │   ├── [01;34moutput[0m
+│           │           │   │   ├── [01;34mmri[0m
+│           │           │   │   │   └── [01;34morig[0m
+│           │           │   │   └── [01;34mscripts[0m
+│           │           │   ├── [00mresult_fastsurfer_segment-t1.pklz[0m
+│           │           │   ├── [00msub-1_ses-20170705_acq-acqmp2ragehighres0p5isoslab_part-mag_T1w_dseg.mgz[0m
+│           │           │   └── [00msub-1_ses-20170705_acq-acqmp2ragehighres0p5isoslab_part-mag_T1w_dseg_nii.nii[0m
+│           │           ├── [01;34mfunc_getfirst-canonical-magnitude[0m
+│           │           │   ├── [00m_0xd273e7ed796e9da940d4ab7e95d52a72.json[0m
+│           │           │   ├── [00m_inputs.pklz[0m
+│           │           │   ├── [00m_node.pklz[0m
+│           │           │   ├── [01;34m_report[0m
+│           │           │   │   └── [00mreport.rst[0m
+│           │           │   └── [00mresult_func_getfirst-canonical-magnitude.pklz[0m
+│           │           ├── [01;34mfunc_read-json-me[0m
+│           │           │   ├── [00m_0x53f9af7f7c9874d7860954b11b5a40db.json[0m
+│           │           │   ├── [00m_inputs.pklz[0m
+│           │           │   ├── [00m_node.pklz[0m
+│           │           │   ├── [01;34m_report[0m
+│           │           │   │   └── [00mreport.rst[0m
+│           │           │   └── [00mresult_func_read-json-me.pklz[0m
+│           │           ├── [01;34mfunc_read-json-se[0m
+│           │           │   ├── [00m_0x3db48c78b859541b7397769b44b6289c.json[0m
+│           │           │   ├── [00m_inputs.pklz[0m
+│           │           │   ├── [00m_node.pklz[0m
+│           │           │   ├── [01;34m_report[0m
+│           │           │   │   └── [00mreport.rst[0m
+│           │           │   └── [00mresult_func_read-json-se.pklz[0m
+│           │           ├── [01;34mmask_workflow[0m
+│           │           │   ├── [01;34mfsl-bet[0m
+│           │           │   │   ├── [00m_0xc48491a5bfe7c4c225b079c50f6d7bdb.json[0m
+│           │           │   │   ├── [00m_inputs.pklz[0m
+│           │           │   │   ├── [00m_node.pklz[0m
+│           │           │   │   ├── [01;34m_report[0m
+│           │           │   │   │   └── [00mreport.rst[0m
+│           │           │   │   ├── [00mcommand.txt[0m
+│           │           │   │   ├── [00mresult_fsl-bet.pklz[0m
+│           │           │   │   └── [01;31msub-1_ses-20170705_acq-acqqsmp21mmisote20_part-mag_T2starw_bet-mask.nii.gz[0m
+│           │           │   └── [01;34mscipy_numpy_nibabel_bet_erode[0m
+│           │           │       ├── [00m_0x2bb48ada401accefe59db3cce5c97d38.json[0m
+│           │           │       ├── [00m_inputs.pklz[0m
+│           │           │       ├── [00m_node.pklz[0m
+│           │           │       ├── [01;34m_report[0m
+│           │           │       │   └── [00mreport.rst[0m
+│           │           │       ├── [00mresult_scipy_numpy_nibabel_bet_erode.pklz[0m
+│           │           │       └── [01;31msub-1_ses-20170705_acq-acqqsmp21mmisote20_part-mag_T2starw_bet-mask_ero.nii.gz[0m
+│           │           ├── [01;34mnibabel_as-canonical[0m
+│           │           │   ├── [00m_0x3b21c6fc813c657bce8de2f2013772b8.json[0m
+│           │           │   ├── [00m_inputs.pklz[0m
+│           │           │   ├── [00m_node.pklz[0m
+│           │           │   ├── [01;34m_report[0m
+│           │           │   │   └── [00mreport.rst[0m
+│           │           │   └── [00mresult_nibabel_as-canonical.pklz[0m
+│           │           ├── [01;34mnibabel_numpy_analyse-qsm[0m
+│           │           │   ├── [00m_0x6393358d8e98258314ec404388bc5c41.json[0m
+│           │           │   ├── [00m_inputs.pklz[0m
+│           │           │   ├── [00m_node.pklz[0m
+│           │           │   ├── [01;34m_report[0m
+│           │           │   │   └── [00mreport.rst[0m
+│           │           │   ├── [01;34mmapflow[0m
+│           │           │   │   └── [01;34m_nibabel_numpy_analyse-qsm0[0m
+│           │           │   │       ├── [00m_0xabb0feca98dc9d7f9b94a4890c12c77a.json[0m
+│           │           │   │       ├── [00m_inputs.pklz[0m
+│           │           │   │       ├── [00m_node.pklz[0m
+│           │           │   │       ├── [01;34m_report[0m
+│           │           │   │       │   └── [00mreport.rst[0m
+│           │           │   │       ├── [00mresult__nibabel_numpy_analyse-qsm0.pklz[0m
+│           │           │   │       └── [00msub-1_ses-20170705_desc-qsmxt-2026-10-07-121200_Chimap_sub-1_ses-20170705_space-qsm_desc-qsmxt-2026-10-07-121200_dseg_analysis.csv[0m
+│           │           │   └── [00mresult_nibabel_numpy_analyse-qsm.pklz[0m
+│           │           ├── [01;34mnibabel_numpy_nilearn_axial-resampling[0m
+│           │           │   ├── [00m_0x9a1bd49c86883317aa78f7f3f77ebbad.json[0m
+│           │           │   ├── [00m_inputs.pklz[0m
+│           │           │   ├── [00m_node.pklz[0m
+│           │           │   ├── [01;34m_report[0m
+│           │           │   │   └── [00mreport.rst[0m
+│           │           │   └── [00mresult_nibabel_numpy_nilearn_axial-resampling.pklz[0m
+│           │           ├── [01;34mnibabel_numpy_nilearn_qsm-resampled[0m
+│           │           │   ├── [00m_0x069fdc6ccc70da3bf8fe09c07abe4377.json[0m
+│           │           │   ├── [00m_inputs.pklz[0m
+│           │           │   ├── [00m_node.pklz[0m
+│           │           │   ├── [01;34m_report[0m
+│           │           │   │   └── [00mreport.rst[0m
+│           │           │   └── [00mresult_nibabel_numpy_nilearn_qsm-resampled.pklz[0m
+│           │           ├── [01;34mnibabel_numpy_nilearn_t1w-seg-resampled[0m
+│           │           │   ├── [00m_0xc69677964c7b7458e4a390feb304d8c0.json[0m
+│           │           │   ├── [00m_inputs.pklz[0m
+│           │           │   ├── [00m_node.pklz[0m
+│           │           │   ├── [01;34m_report[0m
+│           │           │   │   └── [00mreport.rst[0m
+│           │           │   ├── [00mresult_nibabel_numpy_nilearn_t1w-seg-resampled.pklz[0m
+│           │           │   └── [00msub-1_ses-20170705_acq-acqmp2ragehighres0p5isoslab_part-mag_T1w_dseg_nii_resampled.nii[0m
+│           │           ├── [01;34mnibabel_numpy_qsm-average[0m
+│           │           │   ├── [00m_0xc19cdfa5d4330c8e7a4e2ed4cf04901e.json[0m
+│           │           │   ├── [00m_inputs.pklz[0m
+│           │           │   ├── [00m_node.pklz[0m
+│           │           │   ├── [01;34m_report[0m
+│           │           │   │   └── [00mreport.rst[0m
+│           │           │   └── [00mresult_nibabel_numpy_qsm-average.pklz[0m
+│           │           ├── [01;34mnibabel_numpy_qsm-referenced[0m
+│           │           │   ├── [00m_0x188cceead2908c0df95f877f6b67d1f2.json[0m
+│           │           │   ├── [00m_inputs.pklz[0m
+│           │           │   ├── [00m_node.pklz[0m
+│           │           │   ├── [01;34m_report[0m
+│           │           │   │   └── [00mreport.rst[0m
+│           │           │   ├── [00mresult_nibabel_numpy_qsm-referenced.pklz[0m
+│           │           │   ├── [00msub-1_ses-20170705_acq-acqqsmp21mmisote20_part-phase_T2starw_scaled_romeo-unwrapped_normalized_vsharp_rts_ref.json[0m
+│           │           │   └── [00msub-1_ses-20170705_acq-acqqsmp21mmisote20_part-phase_T2starw_scaled_romeo-unwrapped_normalized_vsharp_rts_ref.nii[0m
+│           │           ├── [01;34mnibabel_numpy_scale-phase[0m
+│           │           │   ├── [00m_0x52d5a662ad24af63c90fdf2fba3daebd.json[0m
+│           │           │   ├── [00m_inputs.pklz[0m
+│           │           │   ├── [00m_node.pklz[0m
+│           │           │   ├── [01;34m_report[0m
+│           │           │   │   └── [00mreport.rst[0m
+│           │           │   ├── [00mresult_nibabel_numpy_scale-phase.pklz[0m
+│           │           │   └── [00msub-1_ses-20170705_acq-acqqsmp21mmisote20_part-phase_T2starw_scaled.nii[0m
+│           │           ├── [01;34mnibabel_read-nii[0m
+│           │           │   ├── [00m_0xc090ba5aaf6225200067c1d680ff4571.json[0m
+│           │           │   ├── [00m_inputs.pklz[0m
+│           │           │   ├── [00m_node.pklz[0m
+│           │           │   ├── [01;34m_report[0m
+│           │           │   │   └── [00mreport.rst[0m
+│           │           │   └── [00mresult_nibabel_read-nii.pklz[0m
+│           │           ├── [01;34mnumpy_numpy_nibabel_mgz2nii[0m
+│           │           │   ├── [00m_0x61e5258c05bea826a15a7533b9c8ba48.json[0m
+│           │           │   ├── [00m_inputs.pklz[0m
+│           │           │   ├── [00m_node.pklz[0m
+│           │           │   ├── [01;34m_report[0m
+│           │           │   │   └── [00mreport.rst[0m
+│           │           │   └── [00mresult_numpy_numpy_nibabel_mgz2nii.pklz[0m
+│           │           └── [01;34mqsm_workflow[0m
+│           │               ├── [01;34mmrt_romeo[0m
+│           │               │   ├── [00m_0x385ce8785e9d73963997a728d6ace979.json[0m
+│           │               │   ├── [00m_inputs.pklz[0m
+│           │               │   ├── [00m_node.pklz[0m
+│           │               │   ├── [01;34m_report[0m
+│           │               │   │   └── [00mreport.rst[0m
+│           │               │   ├── [00mcommand.txt[0m
+│           │               │   ├── [00mresult_mrt_romeo.pklz[0m
+│           │               │   └── [00msub-1_ses-20170705_acq-acqqsmp21mmisote20_part-phase_T2starw_scaled_romeo-unwrapped.nii[0m
+│           │               ├── [01;34mnibabel-numpy_normalize-phase[0m
+│           │               │   ├── [00m_0x438fb6a00ef4bbcb2a3e3e1be532e194.json[0m
+│           │               │   ├── [00m_inputs.pklz[0m
+│           │               │   ├── [00m_node.pklz[0m
+│           │               │   ├── [01;34m_report[0m
+│           │               │   │   └── [00mreport.rst[0m
+│           │               │   ├── [00mresult_nibabel-numpy_normalize-phase.pklz[0m
+│           │               │   └── [00msub-1_ses-20170705_acq-acqqsmp21mmisote20_part-phase_T2starw_scaled_romeo-unwrapped_normalized.nii[0m
+│           │               ├── [01;34mqsmjl_rts[0m
+│           │               │   ├── [00m_0x8e0504ac2f991fd2be16cd5899c8e0c8.json[0m
+│           │               │   ├── [00m_inputs.pklz[0m
+│           │               │   ├── [00m_node.pklz[0m
+│           │               │   ├── [01;34m_report[0m
+│           │               │   │   └── [00mreport.rst[0m
+│           │               │   ├── [00mcommand.txt[0m
+│           │               │   ├── [00mresult_qsmjl_rts.pklz[0m
+│           │               │   └── [00msub-1_ses-20170705_acq-acqqsmp21mmisote20_part-phase_T2starw_scaled_romeo-unwrapped_normalized_vsharp_rts.nii[0m
+│           │               └── [01;34mqsmjl_vsharp[0m
+│           │                   ├── [00m_0x040ca7f4bd7852d63a31f74e34c95c35.json[0m
+│           │                   ├── [00m_inputs.pklz[0m
+│           │                   ├── [00m_node.pklz[0m
+│           │                   ├── [01;34m_report[0m
+│           │                   │   └── [00mreport.rst[0m
+│           │                   ├── [00mcommand.txt[0m
+│           │                   ├── [00mresult_qsmjl_vsharp.pklz[0m
+│           │                   ├── [00msub-1_ses-20170705_acq-acqqsmp21mmisote20_part-mag_T2starw_bet-mask_ero_vsharp-mask.nii[0m
+│           │                   └── [00msub-1_ses-20170705_acq-acqqsmp21mmisote20_part-phase_T2starw_scaled_romeo-unwrapped_normalized_vsharp.nii[0m
+│           └── [01;34msub-2[0m
+│               └── [01;34mses-20170705[0m
+│                   ├── [01;34mqsm_acq-acqmp2ragehighres0p5isoslab_T1w[0m
+│                   │   ├── [01;34mants_register-t1-to-qsm[0m
+│                   │   │   ├── [00m_0xbf7e0052416e7431648957cc3a006c1b.json[0m
+│                   │   │   ├── [00m_inputs.pklz[0m
+│                   │   │   ├── [00m_node.pklz[0m
+│                   │   │   ├── [01;34m_report[0m
+│                   │   │   │   └── [00mreport.rst[0m
+│                   │   │   ├── [00mcommand.txt[0m
+│                   │   │   ├── [00mresult_ants_register-t1-to-qsm.pklz[0m
+│                   │   │   └── [00msub-2_ses-20170705_acq-acqmp2ragehighres0p5isoslab_T1w_0GenericAffine.mat[0m
+│                   │   ├── [01;34mants_transform-segmentation-to-qsm[0m
+│                   │   │   ├── [00m_0x06abd9a5918e2d1d6e5df05a20f76c4e.json[0m
+│                   │   │   ├── [00m_inputs.pklz[0m
+│                   │   │   ├── [00m_node.pklz[0m
+│                   │   │   ├── [01;34m_report[0m
+│                   │   │   │   └── [00mreport.rst[0m
+│                   │   │   ├── [00mcommand.txt[0m
+│                   │   │   ├── [00mresult_ants_transform-segmentation-to-qsm.pklz[0m
+│                   │   │   └── [00msub-2_ses-20170705_acq-acqmp2ragehighres0p5isoslab_T1w_segmentation_trans.nii[0m
+│                   │   ├── [01;34mcopyfile[0m
+│                   │   │   ├── [00m_0xbaba596771d52dcd7a0532837bbd7457.json[0m
+│                   │   │   ├── [00m_inputs.pklz[0m
+│                   │   │   ├── [00m_node.pklz[0m
+│                   │   │   ├── [01;34m_report[0m
+│                   │   │   │   └── [00mreport.rst[0m
+│                   │   │   └── [00mresult_copyfile.pklz[0m
+│                   │   ├── [01;34mfastsurfer_segment-t1[0m
+│                   │   │   ├── [00m_0xbfbcfbcd34b284c8f754342292cb6b51.json[0m
+│                   │   │   ├── [00m_inputs.pklz[0m
+│                   │   │   ├── [00m_node.pklz[0m
+│                   │   │   ├── [01;34m_report[0m
+│                   │   │   │   └── [00mreport.rst[0m
+│                   │   │   ├── [00mcommand.txt[0m
+│                   │   │   ├── [01;34moutput[0m
+│                   │   │   │   ├── [01;34mmri[0m
+│                   │   │   │   │   └── [01;34morig[0m
+│                   │   │   │   └── [01;34mscripts[0m
+│                   │   │   ├── [00mresult_fastsurfer_segment-t1.pklz[0m
+│                   │   │   ├── [00msub-2_ses-20170705_acq-acqmp2ragehighres0p5isoslab_part-mag_T1w_dseg.mgz[0m
+│                   │   │   └── [00msub-2_ses-20170705_acq-acqmp2ragehighres0p5isoslab_part-mag_T1w_dseg_nii.nii[0m
+│                   │   ├── [01;34mfunc_getfirst-canonical-magnitude[0m
+│                   │   │   ├── [00m_0x1d2bc52a8bb2975675dd70eacb9af4af.json[0m
+│                   │   │   ├── [00m_inputs.pklz[0m
+│                   │   │   ├── [00m_node.pklz[0m
+│                   │   │   ├── [01;34m_report[0m
+│                   │   │   │   └── [00mreport.rst[0m
+│                   │   │   └── [00mresult_func_getfirst-canonical-magnitude.pklz[0m
+│                   │   ├── [01;34mfunc_read-json-me[0m
+│                   │   │   ├── [00m_0xaa603d2ca27f22cd31c71880c400e75c.json[0m
+│                   │   │   ├── [00m_inputs.pklz[0m
+│                   │   │   ├── [00m_node.pklz[0m
+│                   │   │   ├── [01;34m_report[0m
+│                   │   │   │   └── [00mreport.rst[0m
+│                   │   │   └── [00mresult_func_read-json-me.pklz[0m
+│                   │   ├── [01;34mfunc_read-json-se[0m
+│                   │   │   ├── [00m_0x2b4f946aeda31995715850b53f1e2cff.json[0m
+│                   │   │   ├── [00m_inputs.pklz[0m
+│                   │   │   ├── [00m_node.pklz[0m
+│                   │   │   ├── [01;34m_report[0m
+│                   │   │   │   └── [00mreport.rst[0m
+│                   │   │   └── [00mresult_func_read-json-se.pklz[0m
+│                   │   ├── [01;34mnibabel_as-canonical[0m
+│                   │   │   ├── [00m_0xbe22ed835fa371d9e99689144a3ef608.json[0m
+│                   │   │   ├── [00m_inputs.pklz[0m
+│                   │   │   ├── [00m_node.pklz[0m
+│                   │   │   ├── [01;34m_report[0m
+│                   │   │   │   └── [00mreport.rst[0m
+│                   │   │   └── [00mresult_nibabel_as-canonical.pklz[0m
+│                   │   ├── [01;34mnibabel_numpy_nilearn_t1w-seg-resampled[0m
+│                   │   │   ├── [00m_0x340393f1a2f31a10a7c444004e31ffed.json[0m
+│                   │   │   ├── [00m_inputs.pklz[0m
+│                   │   │   ├── [00m_node.pklz[0m
+│                   │   │   ├── [01;34m_report[0m
+│                   │   │   │   └── [00mreport.rst[0m
+│                   │   │   ├── [00mresult_nibabel_numpy_nilearn_t1w-seg-resampled.pklz[0m
+│                   │   │   └── [00msub-2_ses-20170705_acq-acqmp2ragehighres0p5isoslab_part-mag_T1w_dseg_nii_resampled.nii[0m
+│                   │   ├── [01;34mnibabel_read-nii[0m
+│                   │   │   ├── [00m_0xfd0cc8780e62881cdb13137bfc3ad6e9.json[0m
+│                   │   │   ├── [00m_inputs.pklz[0m
+│                   │   │   ├── [00m_node.pklz[0m
+│                   │   │   ├── [01;34m_report[0m
+│                   │   │   │   └── [00mreport.rst[0m
+│                   │   │   └── [00mresult_nibabel_read-nii.pklz[0m
+│                   │   └── [01;34mnumpy_numpy_nibabel_mgz2nii[0m
+│                   │       ├── [00m_0x081f1ef7ee44aa09ff059dc130be1f13.json[0m
+│                   │       ├── [00m_inputs.pklz[0m
+│                   │       ├── [00m_node.pklz[0m
+│                   │       ├── [01;34m_report[0m
+│                   │       │   └── [00mreport.rst[0m
+│                   │       └── [00mresult_numpy_numpy_nibabel_mgz2nii.pklz[0m
+│                   └── [01;34mqsm_acq-acqqsmp21mmisote20_T2starw[0m
+│                       ├── [01;34mants_register-t1-to-qsm[0m
+│                       │   ├── [00m_0xce9d22214fbe34527a1aaf336fcf0839.json[0m
+│                       │   ├── [00m_inputs.pklz[0m
+│                       │   ├── [00m_node.pklz[0m
+│                       │   ├── [01;34m_report[0m
+│                       │   │   └── [00mreport.rst[0m
+│                       │   ├── [00mcommand.txt[0m
+│                       │   ├── [00mresult_ants_register-t1-to-qsm.pklz[0m
+│                       │   └── [00msub-2_ses-20170705_acq-acqqsmp21mmisote20_T2starw_0GenericAffine.mat[0m
+│                       ├── [01;34mants_transform-segmentation-to-qsm[0m
+│                       │   ├── [00m_0x894fc7568114642b79cf3b24cfa2707b.json[0m
+│                       │   ├── [00m_inputs.pklz[0m
+│                       │   ├── [00m_node.pklz[0m
+│                       │   ├── [01;34m_report[0m
+│                       │   │   └── [00mreport.rst[0m
+│                       │   ├── [00mcommand.txt[0m
+│                       │   ├── [00mresult_ants_transform-segmentation-to-qsm.pklz[0m
+│                       │   └── [00msub-2_ses-20170705_acq-acqqsmp21mmisote20_T2starw_segmentation_trans.nii[0m
+│                       ├── [01;34mcombine_lists1[0m
+│                       │   ├── [00m_0xbcd269978c8c7b57ba5a2d195c9e2ecd.json[0m
+│                       │   ├── [00m_inputs.pklz[0m
+│                       │   ├── [00m_node.pklz[0m
+│                       │   ├── [01;34m_report[0m
+│                       │   │   └── [00mreport.rst[0m
+│                       │   └── [00mresult_combine_lists1.pklz[0m
+│                       ├── [01;34mcombine_lists2[0m
+│                       │   ├── [00m_0x4ae8ba9ae4fbb21a678c4d2b907a3714.json[0m
+│                       │   ├── [00m_inputs.pklz[0m
+│                       │   ├── [00m_node.pklz[0m
+│                       │   ├── [01;34m_report[0m
+│                       │   │   └── [00mreport.rst[0m
+│                       │   └── [00mresult_combine_lists2.pklz[0m
+│                       ├── [01;34mcopy_qsm_json_sidecar[0m
+│                       │   ├── [00m_0xd7c08afa14807b538726467107ab7b97.json[0m
+│                       │   ├── [00m_inputs.pklz[0m
+│                       │   ├── [00m_node.pklz[0m
+│                       │   ├── [01;34m_report[0m
+│                       │   │   └── [00mreport.rst[0m
+│                       │   └── [00mresult_copy_qsm_json_sidecar.pklz[0m
+│                       ├── [01;34mcopyfile[0m
+│                       │   ├── [00m_0x89382fc77fc2d0b30eeb7702c6157398.json[0m
+│                       │   ├── [00m_inputs.pklz[0m
+│                       │   ├── [00m_node.pklz[0m
+│                       │   ├── [01;34m_report[0m
+│                       │   │   └── [00mreport.rst[0m
+│                       │   └── [00mresult_copyfile.pklz[0m
+│                       ├── [01;34mcreate_permutations[0m
+│                       │   ├── [00m_0x80a12aec2bb9c1d2140c546a7e26f2a4.json[0m
+│                       │   ├── [00m_inputs.pklz[0m
+│                       │   ├── [00m_node.pklz[0m
+│                       │   ├── [01;34m_report[0m
+│                       │   │   └── [00mreport.rst[0m
+│                       │   └── [00mresult_create_permutations.pklz[0m
+│                       ├── [01;34mfastsurfer_segment-t1[0m
+│                       │   ├── [00m_0xbfbcfbcd34b284c8f754342292cb6b51.json[0m
+│                       │   ├── [00m_inputs.pklz[0m
+│                       │   ├── [00m_node.pklz[0m
+│                       │   ├── [01;34m_report[0m
+│                       │   │   └── [00mreport.rst[0m
+│                       │   ├── [00mcommand.txt[0m
+│                       │   ├── [01;34moutput[0m
+│                       │   │   ├── [01;34mmri[0m
+│                       │   │   │   └── [01;34morig[0m
+│                       │   │   └── [01;34mscripts[0m
+│                       │   ├── [00mresult_fastsurfer_segment-t1.pklz[0m
+│                       │   ├── [00msub-2_ses-20170705_acq-acqmp2ragehighres0p5isoslab_part-mag_T1w_dseg.mgz[0m
+│                       │   └── [00msub-2_ses-20170705_acq-acqmp2ragehighres0p5isoslab_part-mag_T1w_dseg_nii.nii[0m
+│                       ├── [01;34mfunc_getfirst-canonical-magnitude[0m
+│                       │   ├── [00m_0x1ae9afdb546cd330ad28e04089d83c3e.json[0m
+│                       │   ├── [00m_inputs.pklz[0m
+│                       │   ├── [00m_node.pklz[0m
+│                       │   ├── [01;34m_report[0m
+│                       │   │   └── [00mreport.rst[0m
+│                       │   └── [00mresult_func_getfirst-canonical-magnitude.pklz[0m
+│                       ├── [01;34mfunc_read-json-me[0m
+│                       │   ├── [00m_0x152a751ebf819706d326cac0e846f973.json[0m
+│                       │   ├── [00m_inputs.pklz[0m
+│                       │   ├── [00m_node.pklz[0m
+│                       │   ├── [01;34m_report[0m
+│                       │   │   └── [00mreport.rst[0m
+│                       │   └── [00mresult_func_read-json-me.pklz[0m
+│                       ├── [01;34mfunc_read-json-se[0m
+│                       │   ├── [00m_0x10fe2ccb33745c356c87bf6fa6fc1a21.json[0m
+│                       │   ├── [00m_inputs.pklz[0m
+│                       │   ├── [00m_node.pklz[0m
+│                       │   ├── [01;34m_report[0m
+│                       │   │   └── [00mreport.rst[0m
+│                       │   └── [00mresult_func_read-json-se.pklz[0m
+│                       ├── [01;34mmask_workflow[0m
+│                       │   ├── [01;34mfsl-bet[0m
+│                       │   │   ├── [00m_0x7426c90bcfa1bd60b98c9b842d45677c.json[0m
+│                       │   │   ├── [00m_inputs.pklz[0m
+│                       │   │   ├── [00m_node.pklz[0m
+│                       │   │   ├── [01;34m_report[0m
+│                       │   │   │   └── [00mreport.rst[0m
+│                       │   │   ├── [00mcommand.txt[0m
+│                       │   │   ├── [00mresult_fsl-bet.pklz[0m
+│                       │   │   └── [01;31msub-2_ses-20170705_acq-acqqsmp21mmisote20_part-mag_T2starw_bet-mask.nii.gz[0m
+│                       │   └── [01;34mscipy_numpy_nibabel_bet_erode[0m
+│                       │       ├── [00m_0x6f87e584d77854ff80ddad366ecbd02b.json[0m
+│                       │       ├── [00m_inputs.pklz[0m
+│                       │       ├── [00m_node.pklz[0m
+│                       │       ├── [01;34m_report[0m
+│                       │       │   └── [00mreport.rst[0m
+│                       │       ├── [00mresult_scipy_numpy_nibabel_bet_erode.pklz[0m
+│                       │       └── [01;31msub-2_ses-20170705_acq-acqqsmp21mmisote20_part-mag_T2starw_bet-mask_ero.nii.gz[0m
+│                       ├── [01;34mnibabel_as-canonical[0m
+│                       │   ├── [00m_0x4570b21133c5c52aa8d1237855323d67.json[0m
+│                       │   ├── [00m_inputs.pklz[0m
+│                       │   ├── [00m_node.pklz[0m
+│                       │   ├── [01;34m_report[0m
+│                       │   │   └── [00mreport.rst[0m
+│                       │   └── [00mresult_nibabel_as-canonical.pklz[0m
+│                       ├── [01;34mnibabel_numpy_analyse-qsm[0m
+│                       │   ├── [00m_0x992d0148782bf05f8f336c7a49a7c1df.json[0m
+│                       │   ├── [00m_inputs.pklz[0m
+│                       │   ├── [00m_node.pklz[0m
+│                       │   ├── [01;34m_report[0m
+│                       │   │   └── [00mreport.rst[0m
+│                       │   ├── [01;34mmapflow[0m
+│                       │   │   └── [01;34m_nibabel_numpy_analyse-qsm0[0m
+│                       │   │       ├── [00m_0x9306689452f262523eeb751ef150d3e2.json[0m
+│                       │   │       ├── [00m_inputs.pklz[0m
+│                       │   │       ├── [00m_node.pklz[0m
+│                       │   │       ├── [01;34m_report[0m
+│                       │   │       │   └── [00mreport.rst[0m
+│                       │   │       ├── [00mresult__nibabel_numpy_analyse-qsm0.pklz[0m
+│                       │   │       └── [00msub-2_ses-20170705_desc-qsmxt-2026-10-07-121200_Chimap_sub-2_ses-20170705_space-qsm_desc-qsmxt-2026-10-07-121200_dseg_analysis.csv[0m
+│                       │   └── [00mresult_nibabel_numpy_analyse-qsm.pklz[0m
+│                       ├── [01;34mnibabel_numpy_nilearn_axial-resampling[0m
+│                       │   ├── [00m_0xb1886527a7c719f75a5e6a8cd730d31d.json[0m
+│                       │   ├── [00m_inputs.pklz[0m
+│                       │   ├── [00m_node.pklz[0m
+│                       │   ├── [01;34m_report[0m
+│                       │   │   └── [00mreport.rst[0m
+│                       │   └── [00mresult_nibabel_numpy_nilearn_axial-resampling.pklz[0m
+│                       ├── [01;34mnibabel_numpy_nilearn_qsm-resampled[0m
+│                       │   ├── [00m_0xaaefcb407e57e41e0103769a56132424.json[0m
+│                       │   ├── [00m_inputs.pklz[0m
+│                       │   ├── [00m_node.pklz[0m
+│                       │   ├── [01;34m_report[0m
+│                       │   │   └── [00mreport.rst[0m
+│                       │   └── [00mresult_nibabel_numpy_nilearn_qsm-resampled.pklz[0m
+│                       ├── [01;34mnibabel_numpy_nilearn_t1w-seg-resampled[0m
+│                       │   ├── [00m_0xd9d38e81de7974f5665636e55f876517.json[0m
+│                       │   ├── [00m_inputs.pklz[0m
+│                       │   ├── [00m_node.pklz[0m
+│                       │   ├── [01;34m_report[0m
+│                       │   │   └── [00mreport.rst[0m
+│                       │   ├── [00mresult_nibabel_numpy_nilearn_t1w-seg-resampled.pklz[0m
+│                       │   └── [00msub-2_ses-20170705_acq-acqmp2ragehighres0p5isoslab_part-mag_T1w_dseg_nii_resampled.nii[0m
+│                       ├── [01;34mnibabel_numpy_qsm-average[0m
+│                       │   ├── [00m_0x0127e3f400426f348c5c0dac3dd0274b.json[0m
+│                       │   ├── [00m_inputs.pklz[0m
+│                       │   ├── [00m_node.pklz[0m
+│                       │   ├── [01;34m_report[0m
+│                       │   │   └── [00mreport.rst[0m
+│                       │   └── [00mresult_nibabel_numpy_qsm-average.pklz[0m
+│                       ├── [01;34mnibabel_numpy_qsm-referenced[0m
+│                       │   ├── [00m_0xc23bbd90ba3760ec682b74fc048b95a4.json[0m
+│                       │   ├── [00m_inputs.pklz[0m
+│                       │   ├── [00m_node.pklz[0m
+│                       │   ├── [01;34m_report[0m
+│                       │   │   └── [00mreport.rst[0m
+│                       │   ├── [00mresult_nibabel_numpy_qsm-referenced.pklz[0m
+│                       │   ├── [00msub-2_ses-20170705_acq-acqqsmp21mmisote20_part-phase_T2starw_scaled_romeo-unwrapped_normalized_vsharp_rts_ref.json[0m
+│                       │   └── [00msub-2_ses-20170705_acq-acqqsmp21mmisote20_part-phase_T2starw_scaled_romeo-unwrapped_normalized_vsharp_rts_ref.nii[0m
+│                       ├── [01;34mnibabel_numpy_scale-phase[0m
+│                       │   ├── [00m_0x42c0b998ff22011bdfc5b1438a0f646d.json[0m
+│                       │   ├── [00m_inputs.pklz[0m
+│                       │   ├── [00m_node.pklz[0m
+│                       │   ├── [01;34m_report[0m
+│                       │   │   └── [00mreport.rst[0m
+│                       │   ├── [00mresult_nibabel_numpy_scale-phase.pklz[0m
+│                       │   └── [00msub-2_ses-20170705_acq-acqqsmp21mmisote20_part-phase_T2starw_scaled.nii[0m
+│                       ├── [01;34mnibabel_read-nii[0m
+│                       │   ├── [00m_0x088449b2e0a21db87850f22e04d19a7f.json[0m
+│                       │   ├── [00m_inputs.pklz[0m
+│                       │   ├── [00m_node.pklz[0m
+│                       │   ├── [01;34m_report[0m
+│                       │   │   └── [00mreport.rst[0m
+│                       │   └── [00mresult_nibabel_read-nii.pklz[0m
+│                       ├── [01;34mnumpy_numpy_nibabel_mgz2nii[0m
+│                       │   ├── [00m_0x8d8280506141af7af4acdf2d7db58cd5.json[0m
+│                       │   ├── [00m_inputs.pklz[0m
+│                       │   ├── [00m_node.pklz[0m
+│                       │   ├── [01;34m_report[0m
+│                       │   │   └── [00mreport.rst[0m
+│                       │   └── [00mresult_numpy_numpy_nibabel_mgz2nii.pklz[0m
+│                       └── [01;34mqsm_workflow[0m
+│                           ├── [01;34mmrt_romeo[0m
+│                           │   ├── [00m_0xcaeb98337abc1e3d9810ba27b36a124e.json[0m
+│                           │   ├── [00m_inputs.pklz[0m
+│                           │   ├── [00m_node.pklz[0m
+│                           │   ├── [01;34m_report[0m
+│                           │   │   └── [00mreport.rst[0m
+│                           │   ├── [00mcommand.txt[0m
+│                           │   ├── [00mresult_mrt_romeo.pklz[0m
+│                           │   └── [00msub-2_ses-20170705_acq-acqqsmp21mmisote20_part-phase_T2starw_scaled_romeo-unwrapped.nii[0m
+│                           ├── [01;34mnibabel-numpy_normalize-phase[0m
+│                           │   ├── [00m_0x3c245ddb9ab8c235b5287e06af0fc982.json[0m
+│                           │   ├── [00m_inputs.pklz[0m
+│                           │   ├── [00m_node.pklz[0m
+│                           │   ├── [01;34m_report[0m
+│                           │   │   └── [00mreport.rst[0m
+│                           │   ├── [00mresult_nibabel-numpy_normalize-phase.pklz[0m
+│                           │   └── [00msub-2_ses-20170705_acq-acqqsmp21mmisote20_part-phase_T2starw_scaled_romeo-unwrapped_normalized.nii[0m
+│                           ├── [01;34mqsmjl_rts[0m
+│                           │   ├── [00m_0x038cfb25edad7e5ac46d143109453560.json[0m
+│                           │   ├── [00m_inputs.pklz[0m
+│                           │   ├── [00m_node.pklz[0m
+│                           │   ├── [01;34m_report[0m
+│                           │   │   └── [00mreport.rst[0m
+│                           │   ├── [00mcommand.txt[0m
+│                           │   ├── [00mresult_qsmjl_rts.pklz[0m
+│                           │   └── [00msub-2_ses-20170705_acq-acqqsmp21mmisote20_part-phase_T2starw_scaled_romeo-unwrapped_normalized_vsharp_rts.nii[0m
+│                           └── [01;34mqsmjl_vsharp[0m
+│                               ├── [00m_0x9cba80a203ed56ffb57dec76306f90ba.json[0m
+│                               ├── [00m_inputs.pklz[0m
+│                               ├── [00m_node.pklz[0m
+│                               ├── [01;34m_report[0m
+│                               │   └── [00mreport.rst[0m
+│                               ├── [00mcommand.txt[0m
+│                               ├── [00mresult_qsmjl_vsharp.pklz[0m
+│                               ├── [00msub-2_ses-20170705_acq-acqqsmp21mmisote20_part-mag_T2starw_bet-mask_ero_vsharp-mask.nii[0m
+│                               └── [00msub-2_ses-20170705_acq-acqqsmp21mmisote20_part-phase_T2starw_scaled_romeo-unwrapped_normalized_vsharp.nii[0m
+├── [00mlog_2026-10-07_12-11-22951931.txt[0m
+├── [00mlog_2026-10-07_12-34-18233925.txt[0m
+├── [00mreferences.txt[0m
+├── [01;34msub-1[0m
+│   └── [01;34mses-20170705[0m
+│       └── [01;34manat[0m
+│           ├── [00msub-1_ses-20170705_acq-acqmp2ragehighres0p5isoslab_part-mag_T1w.json[0m
+│           ├── [00msub-1_ses-20170705_acq-acqmp2ragehighres0p5isoslab_part-mag_T1w.nii[0m
+│           ├── [00msub-1_ses-20170705_acq-acqqsmp21mmisote20_part-mag_T2starw.json[0m
+│           ├── [00msub-1_ses-20170705_acq-acqqsmp21mmisote20_part-mag_T2starw.nii[0m
+│           ├── [00msub-1_ses-20170705_acq-acqqsmp21mmisote20_part-phase_T2starw.json[0m
+│           └── [00msub-1_ses-20170705_acq-acqqsmp21mmisote20_part-phase_T2starw.nii[0m
+└── [01;34msub-2[0m
+    └── [01;34mses-20170705[0m
+        └── [01;34manat[0m
+            ├── [00msub-2_ses-20170705_acq-acqmp2ragehighres0p5isoslab_part-mag_T1w.json[0m
+            ├── [00msub-2_ses-20170705_acq-acqmp2ragehighres0p5isoslab_part-mag_T1w.nii[0m
+            ├── [00msub-2_ses-20170705_acq-acqqsmp21mmisote20_part-mag_T2starw.json[0m
+            ├── [00msub-2_ses-20170705_acq-acqqsmp21mmisote20_part-mag_T2starw.nii[0m
+            ├── [00msub-2_ses-20170705_acq-acqqsmp21mmisote20_part-phase_T2starw.json[0m
+            └── [00msub-2_ses-20170705_acq-acqqsmp21mmisote20_part-phase_T2starw.nii[0m
+
+205 directories, 494 files
